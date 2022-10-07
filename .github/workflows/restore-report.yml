@@ -49,7 +49,7 @@ jobs:
 
       - name: "🚧 Verify snippet exists in snippets folder"
         run: |
-          test -d ./${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }}/ && echo "✅ Folder exists" || (echo ❌ Folder not found && exit 1)
+          test -d ./.archive/${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }}/ && echo "✅ Folder exists" || (echo ❌ Folder not found && exit 1)
 
   folder_restore:
     needs: [input_check]
