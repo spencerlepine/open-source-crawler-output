@@ -1,0 +1,3 @@
+## Detected Typos Diff
+```diff
+```
