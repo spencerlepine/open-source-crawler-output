@@ -1,0 +1,84 @@
+name: Restore Report
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo_user:
+        type: string
+        description: <github_username>
+        required: true
+      repo_name:
+        type: string
+        description: <github_repository>
+        required: true
+
+jobs:
+  input_check:
+    name: "🚧 Validate Action Inputs"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "🚧 Test [repo_user] input with regex"
+        uses: actions-ecosystem/action-regex-match@v2
+        id: user-regex-check
+        with:
+          text: ${{ github.event.inputs.repo_user }}
+          regex: '[\w,\-]'
+
+      - name: "🚫 Deny invalid snippet [repo_name] input"
+        if: ${{ steps.user-regex-check.outputs.match == '' }}
+        run: |
+          echo "Invalid user folder path"
+          exit 1
+          
+      - name: "🚧 Test [repo_name] input with regex"
+        uses: actions-ecosystem/action-regex-match@v2
+        id: name-regex-check
+        with:
+          text: ${{ github.event.inputs.repo_name }}
+          regex: '[\w,\-,\_]'
+
+      - name: "🚫 Deny invalid snippet [repo_name] input"
+        if: ${{ steps.name-regex-check.outputs.match == '' }}
+        run: |
+          echo "Invalid repo name folder path"
+          exit 1
+
+      - name: "☁️ Check out Git Repository"
+        uses: actions/checkout@v2
+
+      - name: "🚧 Verify snippet exists in snippets folder"
+        run: |
+          test -d ./${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }}/ && echo "✅ Folder exists" || (echo ❌ Folder not found && exit 1)
+
+  folder_restore:
+    needs: [input_check]
+    name: "🗑️ Archive Report"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "☁️ Check out Git Repository"
+        uses: actions/checkout@v3
+
+      - name: "🚗 Restore report folder"
+        run: |
+          mkdir -p ./${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }}
+          cp -a ./.archive/${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }}/. ./${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }}
+
+      - name: "❌ Delete the archived folder"
+        run: |
+          rm -rf ./.archive/${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }}
+
+      - name: "🚀 Commit [${{ github.event.inputs.repo_name }}] archive"
+        run: |
+          git config pull.rebase false
+          git pull
+          git add .
+          git config --global user.name "SpencerBot"
+          git config --global user.email "spencerbot@example.com"
+          git commit -m "1️⃣🍄 [Automated] Restored report folder (${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }})"
+
+      - name: "🚀 Push changes to repo"
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
