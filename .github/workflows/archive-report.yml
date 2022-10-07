@@ -1,4 +1,4 @@
-name: Archive Report
+name: Archive Report 🗑
 
 on:
   workflow_dispatch:
