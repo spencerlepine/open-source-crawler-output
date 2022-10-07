@@ -1,4 +1,4 @@
-name: Restore Report 1️⃣🍄
+name: Restore Report ♻️
 
 on:
   workflow_dispatch:
@@ -53,7 +53,7 @@ jobs:
 
   folder_restore:
     needs: [input_check]
-    name: "🗑️ Archive Report"
+    name: "♻️ Restore Report"
     runs-on: ubuntu-latest
 
     steps:
@@ -76,7 +76,7 @@ jobs:
           git add .
           git config --global user.name "SpencerBot"
           git config --global user.email "spencerbot@example.com"
-          git commit -m "1️⃣🍄 [Automated] Restored report folder (${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }})"
+          git commit -m "♻️ [Automated] Restored report folder (${{ github.event.inputs.repo_user }}/${{ github.event.inputs.repo_name }})"
 
       - name: "🚀 Push changes to repo"
         uses: ad-m/github-push-action@master
