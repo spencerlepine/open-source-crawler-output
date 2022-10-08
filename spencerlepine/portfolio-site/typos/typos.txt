@@ -1,0 +1,85 @@
+## Detected Typos
+error: `Sqaure` should be `Square`
+  --> ./src/components/icons/icon.js:53:19
+   |
+53 |     case 'LinkedinSqaure':
+   |                   ^^^^^^
+   |
+error: `TOOD` should be `TODO`
+  --> ./src/templates/post.js:25:13
+   |
+25 |         {/* TOOD */}
+   |             ^^^^
+   |
+error: `Pallete` should be `Palette`
+  --> ./src/styles/bubbleLink.js:6:12
+  |
+6 | const colorPallete = {
+  |            ^^^^^^^
+  |
+error: `Pallete` should be `Palette`
+  --> ./src/styles/bubbleLink.js:28:26
+   |
+28 |   const colors = `${colorPallete[color][isOutlined ? 'outlined' : 'fill']}`;
+   |                          ^^^^^^^
+   |
+error: `Improvments` should be `Improvements`
+  --> ./content/blog/building-llama-as-a-service/index.md:115:11
+    |
+115 | ![Latency Improvments Chart](https://user-images.githubusercontent.com/60903378/179846777-3518451f-33f2-4638-b4d9-c614db7d52e5.png)
+    |           ^^^^^^^^^^^
+    |
+error: `aquired` should be `acquired`
+  --> ./content/blog/what-i-learned-during-100-days-of-code/what-i-learning-during-100-days-of-code.md:3:51
+  |
+3 | description: A recap of the concepts and skills I aquired during this challenge
+  |                                                   ^^^^^^^
+  |
+error: `psuedocode` should be `pseudocode`
+  --> ./content/blog/what-i-learned-during-100-days-of-code/what-i-learning-during-100-days-of-code.md:196:36
+    |
+196 | *   Procedure for problem solving (psuedocode, breaking it down)
+    |                                    ^^^^^^^^^^
+    |
+error: `breif` should be `brief`
+  --> ./content/portfolio/hellohealth/hellohealth.md:51:16
+   |
+51 | I maintained a breif engineering journal for this projects, find it here on [Google Docs](https://docs.google.com/document/d/1V629qfaWTz82iCCIzR79HN17oolk1Q6brsBBwApAPXk/edit?usp=sharing).
+   |                ^^^^^
+   |
+error: `documenation` should be `documentation`
+  --> ./content/portfolio/woofer/woofer.md:40:143
+   |
+40 | Check out the Woofer [Wiki](https://github.com/spencerlepine/woofer/wiki) to view all project documentation. You can find the Whitepaper, API documenation, diagrams, and more.
+   |                                                                                                                                               ^^^^^^^^^^^^
+   |
+error: `exisiting` should be `existing`
+  --> ./content/portfolio/atelier/atelier.md:31:65
+   |
+31 | This frontend project is built to serve product records from an exisiting API.
+   |                                                                 ^^^^^^^^^
+   |
+error: `Libary` should be `Library`
+  --> ./content/portfolio/quickcart/quickcart.md:55:18
+   |
+55 | - [React Testing Libary](https://testing-library.com/)
+   |                  ^^^^^^
+   |
+error: `Preformance` should be `Performance`
+  --> ./content/portfolio/atelier-api/atelier-api.md:34:6
+   |
+34 | ## 📈 Preformance Results
+   |       ^^^^^^^^^^^
+   |
+error: `Preformance` should be `Performance`
+  --> ./content/portfolio/atelier-api/atelier-api.md:36:13
+   |
+36 | #### Target Preformance
+   |             ^^^^^^^^^^^
+   |
+error: `Preformance` should be `Performance`
+  --> ./content/portfolio/atelier-api/atelier-api.md:41:13
+   |
+41 | #### Actual Preformance
+   |             ^^^^^^^^^^^
+   |
