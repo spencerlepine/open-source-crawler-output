@@ -1,0 +1,127 @@
+## Detected Typos
+error: `Libary` should be `Library`
+  --> ./README.md:26:18
+   |
+26 | - [React Testing Libary](https://testing-library.com/)
+   |                  ^^^^^^
+   |
+error: `convient` should be `convenient`
+  --> ./README.md:40:30
+   |
+40 | - Save product images with a convient image searching pop-up connected to Google CSE
+   |                              ^^^^^^^^
+   |
+error: `reccomendations` should be `recommendations`
+  --> ./whitepaper/TODO:14:22
+   |
+14 |  - Implement product reccomendations widget
+   |                      ^^^^^^^^^^^^^^^
+   |
+error: `Heigt` should be `Height`
+  --> ./client/src/components/FormContainer/ProductInfoEntry/ServingsPerInput/styles.js:18:11
+   |
+18 |       lineHeigt: '26px',
+   |           ^^^^^
+   |
+error: `exisiting` should be `existing`
+  --> ./client/src/components/FormContainer/FormContainer.test.js:38:49
+   |
+38 |   test('should update a product when editing an exisiting item', () => {
+   |                                                 ^^^^^^^^^
+   |
+error: `Contianer` should be `Container`
+  --> ./client/src/components/settings/ViewCartLogsButton/ViewCartLogsButton.js:10:54
+   |
+10 |     <div className={`viewCartLogsButton ${classes.logContianer}`}>
+   |                                                      ^^^^^^^^^
+   |
+error: `Contianer` should be `Container`
+  --> ./client/src/components/settings/ViewCartLogsButton/styles.js:4:6
+  |
+4 |   logContianer: {
+  |      ^^^^^^^^^
+  |
+error: `Acount` should be `Account`
+  --> ./client/src/components/settings/AccountDetails/AccountDetails.js:23:17
+   |
+23 |           <p><b>Acount Created:</b> {accountDetails['joinDate'].toString()}</p>
+   |                 ^^^^^^
+   |
+error: `conent` should be `content`
+  --> ./client/src/components/ui/Popup/styles.js:20:17
+   |
+20 |     width: 'fit-conent',
+   |                 ^^^^^^
+   |
+error: `Veiw` should be `View`
+  --> ./client/src/components/cart/CartViewer/CartViewer.test.js:49:61
+   |
+49 |   test('clicking the "Analyze Cart" button changes text to "Veiw List"', done => {
+   |                                                             ^^^^
+   |
+error: `Detials` should be `Details`
+  --> ./client/src/components/ProductDetails/styles.js:152:12
+    |
+152 |   nutritionDetials: {
+    |            ^^^^^^^
+    |
+error: `Detials` should be `Details`
+  --> ./client/src/components/ProductDetails/styles.js:160:8
+    |
+160 |   extraDetials: {
+    |        ^^^^^^^
+    |
+error: `Detials` should be `Details`
+  --> ./client/src/components/ProductDetails/ProductDetails.js:44:42
+   |
+44 |             <div className={classes.extraDetials}>
+   |                                          ^^^^^^^
+   |
+error: `Detials` should be `Details`
+  --> ./client/src/components/ProductDetails/ProductDetails.js:60:42
+   |
+60 |         <div className={classes.nutritionDetials}>
+   |                                          ^^^^^^^
+   |
+error: `contructor` should be `constructor`
+  --> ./client/src/test-utils/testContextExports.js:22:64
+   |
+22 |   it('expectedExports should contain "targetInstance" key with contructor value', () => {
+   |                                                                ^^^^^^^^^^
+   |
+error: `authenicated` should be `authenticated`
+  --> ./client/src/context/AuthContext/AuthContext.js:13:31
+   |
+13 |     authUser.checkLoginStatus(authenicatedUser => {
+   |                               ^^^^^^^^^^^^
+   |
+error: `authenicated` should be `authenticated`
+  --> ./client/src/context/AuthContext/AuthContext.js:14:11
+   |
+14 |       if (authenicatedUser) {
+   |           ^^^^^^^^^^^^
+   |
+error: `authenicated` should be `authenticated`
+  --> ./client/src/context/AuthContext/AuthContext.js:15:24
+   |
+15 |         setCurrentUser(authenicatedUser);
+   |                        ^^^^^^^^^^^^
+   |
+error: `defualt` should be `default`
+  --> ./client/src/hooks/useAuthRedirect/useAuthRedirect.test.js:8:9
+  |
+8 |   const defualtValues = {};
+  |         ^^^^^^^
+  |
+error: `defualt` should be `default`
+  --> ./client/src/hooks/useAuthRedirect/useAuthRedirect.test.js:10:39
+   |
+10 |     <AuthContext.Provider value={{ ...defualtValues, ...contextValue }}>
+   |                                       ^^^^^^^
+   |
+error: `gziped` should be `gzipped`
+  --> ./webpack.prod.config.js:83:28
+   |
+83 |     // Calculates sizes of gziped bundles.
+   |                            ^^^^^^
+   |
