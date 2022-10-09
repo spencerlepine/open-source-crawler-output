@@ -1,0 +1,13 @@
+## Detected Typos
+error: `regulares` should be `regulars`
+  --> ./README ESP-MX.md:14:104
+   |
+14 | Las solicitudes se pueden realizar con curl u otras bibliotecas auxiliares siguiendo las llamadas REST regulares. Se proporcionan ejemplos para Ruby y Python con un caso de uso en Haskell. Por ejemplo, aquí se muestra cómo OBTENER el recurso para la película My Neighbor Tororo:
+   |                                                                                                        ^^^^^^^^^
+   |
+error: `ue` should be `use`, `due`
+  --> ./data.json:347:44
+    |
+347 |       "original_title_romanised": "Gake no ue no Ponyo",
+    |                                            ^^
+    |

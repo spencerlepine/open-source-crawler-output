@@ -1,0 +1,3 @@
+{"Package": "has-property-descriptors", "Used?": "No", "Risk Score": "0.84", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "safe-regex-test", "Used?": "No", "Risk Score": "0.84", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "supports-preserve-symlinks-flag", "Used?": "No", "Risk Score": "0.73", "Identified Risks": "Has fewer versions, Has fewer maintainers, Outdated Node version"}
