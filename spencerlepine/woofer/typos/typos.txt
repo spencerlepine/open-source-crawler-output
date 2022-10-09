@@ -1,0 +1,333 @@
+## Detected Typos
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:3:16
+  |
+3 | ## Create `CI` enviroment with test coverage uploads
+  |                ^^^^^^^^^^
+  |
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:6:1
+  |
+6 | enviroment:
+  | ^^^^^^^^^^
+  |
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:12:25
+   |
+12 | ## Create `development` enviroment with development ENV vars
+   |                         ^^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:15:1
+   |
+15 | enviroment: development
+   | ^^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:31:21
+   |
+31 | ## Create `staging` enviroment with pre-production info
+   |                     ^^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:34:1
+   |
+34 | enviroment:
+   | ^^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:45:24
+   |
+45 | ## Create `production` enviroment with production ENV vars
+   |                        ^^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./resources/REPOSITORY_SECRETS.md:48:1
+   |
+48 | enviroment: production
+   | ^^^^^^^^^^
+   |
+error: `Seperate` should be `Separate`
+  --> ./resources/challenges.txt:14:11
+   |
+14 |         - Seperate database for chats?
+   |           ^^^^^^^^
+   |
+error: `Statuss` should be `Status`
+  --> ./resources/WOOFER_API.md:356:18
+    |
+356 | ## Verify Server Statuss
+    |                  ^^^^^^^
+    |
+error: `enviroment` should be `environment`
+  --> ./resources/challenges.txt:44:15
+   |
+44 | Context: Need enviroment variables for tokens and config.
+   |               ^^^^^^^^^^
+   |
+error: `enviroments` should be `environments`
+  --> ./resources/challenges.txt:53:68
+   |
+53 | Problem: SLOW GitHub Actions => Installing packages and setting up enviroments OVER and OVER
+   |                                                                    ^^^^^^^^^^^
+   |
+error: `Stragety` should be `Strategy`
+  --> ./resources/challenges.txt:73:23
+   |
+73 | Challenge: Deployment Stragety, Continuous Delivery with GitHub Actions to EC2 Instance
+   |                       ^^^^^^^^
+   |
+error: `Enviroment` should be `Environment`
+  --> ./resources/challenges.txt:115:18
+    |
+115 | Docker Image and Enviroment Variables
+    |                  ^^^^^^^^^^
+    |
+error: `enviroment` should be `environment`
+  --> ./resources/challenges.txt:116:40
+    |
+116 | Context: docker image unable to access enviroment variables
+    |                                        ^^^^^^^^^^
+    |
+error: `enviroment` should be `environment`
+  --> ./resources/challenges.txt:117:24
+    |
+117 | Problem: have file for enviroment variables, it is pushing env files into images to DockerHub
+    |                        ^^^^^^^^^^
+    |
+error: `Enviroment` should be `Environment`
+  --> ./resources/challenges.txt:153:20
+    |
+153 | # Docker + Webpack Enviroment Variables Challenge
+    |                    ^^^^^^^^^^
+    |
+error: `cuases` should be `causes`
+  --> ./resources/challenges.txt:161:101
+    |
+161 | My setup for this project is to read directly from a `.env` file. When building Docker images, this cuases problems, since different libaries handle `process.env` differently.
+    |                                                                                                     ^^^^^^
+    |
+error: `libaries` should be `libraries`
+  --> ./resources/challenges.txt:161:134
+    |
+161 | My setup for this project is to read directly from a `.env` file. When building Docker images, this cuases problems, since different libaries handle `process.env` differently.
+    |                                                                                                                                      ^^^^^^^^
+    |
+error: `refrence` should be `reference`
+  --> ./resources/challenges.txt:170:52
+    |
+170 | - [x] Refactored the Docker file for the client to refrence build ARGS and set ENV varaibles.
+    |                                                    ^^^^^^^^
+    |
+error: `varaibles` should be `variables`
+  --> ./resources/challenges.txt:170:84
+    |
+170 | - [x] Refactored the Docker file for the client to refrence build ARGS and set ENV varaibles.
+    |                                                                                    ^^^^^^^^^
+    |
+error: `workfows` should be `workflows`
+  --> ./resources/challenges.txt:172:33
+    |
+172 | - [x] Updated the GitHub Action workfows to pass build-args when building the client image
+    |                                 ^^^^^^^^
+    |
+error: `workfows` should be `workflows`
+  --> ./resources/challenges.txt:173:33
+    |
+173 | - [x] Updated the GitHub Action workfows to pass env variables when running the client container
+    |                                 ^^^^^^^^
+    |
+error: `refrences` should be `references`
+  --> ./resources/challenges.txt:174:22
+    |
+174 | - [x] Removed broken refrences to .env file on the EC2 server. Only use ENV variables in the Node.js runtime, not storing a `.env` file on the EC2.
+    |                      ^^^^^^^^^
+    |
+error: `enviroment` should be `environment`
+  --> ./resources/challenges.txt:184:17
+    |
+184 | Now, the GitHub enviroment will store the secrets, and the GitHub Action will set the ENV vars during the deployment.
+    |                 ^^^^^^^^^^
+    |
+error: `Vulnerabilites` should be `Vulnerabilities`
+  --> ./resources/development/resources.md:150:23
+    |
+150 | > TOCHECKOUT: Project Vulnerabilites Check w/ Synk - [GitHub Action](https://github.com/snyk/actions)
+    |                       ^^^^^^^^^^^^^^
+    |
+error: `Enviroments` should be `Environments`
+  --> ./resources/development/resources.md:153:13
+    |
+153 | > Accessing Enviroments in workflows: - [Stack Overflow](https://stackoverflow.com/questions/66521958/how-to-access-environment-secrets-from-a-github-workflow)
+    |             ^^^^^^^^^^^
+    |
+error: `Libary` should be `Library`
+  --> ./resources/development/other/PORTFOLIO_SITE/projects/woofer/woofer.md:76:18
+   |
+76 | - [React Testing Libary](https://testing-library.com/)
+   |                  ^^^^^^
+   |
+error: `Compnent` should be `Component`
+  --> ./client/src/components/pages/ChatListPage/ChatList/ChatList.test.js:5:16
+  |
+5 | import ChatListCompnent from "./ChatList"
+  |                ^^^^^^^^
+  |
+error: `Compnent` should be `Component`
+  --> ./client/src/components/pages/ChatListPage/ChatList/ChatList.test.js:9:14
+  |
+9 |     <ChatListCompnent {...props} />
+  |              ^^^^^^^^
+  |
+error: `somthing` should be `something`
+  --> ./client/src/components/pages/ProfilePage/Profile/ImagesTab/ImagesTab.js:28:23
+   |
+28 |     // on reader load somthing...
+   |                       ^^^^^^^^
+   |
+error: `Erorr` should be `Error`
+  --> ./client/src/components/ui/StatusChecker/StatusChecker.js:17:13
+   |
+17 |   const [apiErorr, setApiError] = useState("")
+   |             ^^^^^
+   |
+error: `Erorr` should be `Error`
+  --> ./client/src/components/ui/StatusChecker/StatusChecker.js:136:39
+    |
+136 |                       {console.log(apiErorr)}
+    |                                       ^^^^^
+    |
+error: `Erorr` should be `Error`
+  --> ./client/src/components/ui/StatusChecker/StatusChecker.js:138:32
+    |
+138 |                         <p>{apiErorr}</p>
+    |                                ^^^^^
+    |
+error: `authenicated` should be `authenticated`
+  --> ./client/src/context/AuthContext/AuthContext.js:34:32
+   |
+34 |     authUser.checkLoginStatus((authenicatedUser) => {
+   |                                ^^^^^^^^^^^^
+   |
+error: `authenicated` should be `authenticated`
+  --> ./client/src/context/AuthContext/AuthContext.js:35:11
+   |
+35 |       if (authenicatedUser) {
+   |           ^^^^^^^^^^^^
+   |
+error: `authenicated` should be `authenticated`
+  --> ./client/src/context/AuthContext/AuthContext.js:36:24
+   |
+36 |         setCurrentUser(authenicatedUser)
+   |                        ^^^^^^^^^^^^
+   |
+error: `inavlid` should be `invalid`
+  --> ./client/src/utils/helpers.test.js:16:28
+   |
+16 |       expect(formatAgeStr("inavlid date")).toBe("? y/o")
+   |                            ^^^^^^^
+   |
+error: `defualt` should be `default`
+  --> ./client/src/utils/test-utils.js:35:16
+   |
+35 | // Replace the defualt render function
+   |                ^^^^^^^
+   |
+error: `contructor` should be `constructor`
+  --> ./client/src/utils/test-utils.js:61:64
+   |
+61 |   it('expectedExports should contain "targetInstance" key with contructor value', () => {
+   |                                                                ^^^^^^^^^^
+   |
+error: `defualt` should be `default`
+  --> ./client/src/hooks/useAuthRedirect/useAuthRedirect.test.js:8:9
+  |
+8 |   const defualtValues = {}
+  |         ^^^^^^^
+  |
+error: `defualt` should be `default`
+  --> ./client/src/hooks/useAuthRedirect/useAuthRedirect.test.js:10:39
+   |
+10 |     <AuthContext.Provider value={{ ...defualtValues, ...contextValue }}>
+   |                                       ^^^^^^^
+   |
+error: `gziped` should be `gzipped`
+  --> ./client/webpack.ci.config.js:112:28
+    |
+112 |     // Calculates sizes of gziped bundles.
+    |                            ^^^^^^
+    |
+error: `gziped` should be `gzipped`
+  --> ./client/webpack.prod.config.js:118:28
+    |
+118 |     // Calculates sizes of gziped bundles.
+    |                            ^^^^^^
+    |
+error: `databse` should be `database`
+  --> ./server/src/database.test.js:4:34
+  |
+4 |   test("should be connected to a databse", (done) => {
+  |                                  ^^^^^^^
+  |
+error: `Feild` should be `Field`
+  --> ./server/src/app.js:56:88
+   |
+56 |     "Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild"
+   |                                                                                        ^^^^^
+   |
+error: `Successfuly` should be `Successfully`
+  --> ./server/src/controllers/chats/deleteChatRoom/index.js:11:19
+   |
+11 |         message: "Successfuly delete chat room",
+   |                   ^^^^^^^^^^^
+   |
+error: `aadd` should be `add`
+  --> ./server/src/controllers/chats/createNewChat/createNewChat.test.js:56:30
+   |
+56 |     test("should resolve and aadd chatIds to user profiles", (done) => {
+   |                              ^^^^
+   |
+error: `Prefence` should be `Preference`
+  --> ./server/src/controllers/matches/generateMoreQueueMatches/index.js:69:24
+   |
+69 |               let validPrefenceStatus = false
+   |                        ^^^^^^^^
+   |
+error: `Prefence` should be `Preference`
+  --> ./server/src/controllers/matches/generateMoreQueueMatches/index.js:76:24
+   |
+76 |                   validPrefenceStatus = true
+   |                        ^^^^^^^^
+   |
+error: `Prefence` should be `Preference`
+  --> ./server/src/controllers/matches/generateMoreQueueMatches/index.js:80:22
+   |
+80 |                 validPrefenceStatus,
+   |                      ^^^^^^^^
+   |
+error: `Prefence` should be `Preference`
+  --> ./server/src/controllers/matches/generateMoreQueueMatches/index.js:98:44
+   |
+98 |         genderCheckObjects.forEach(({ validPrefenceStatus, userId }) => {
+   |                                            ^^^^^^^^
+   |
+error: `Prefence` should be `Preference`
+  --> ./server/src/controllers/matches/generateMoreQueueMatches/index.js:99:20
+   |
+99 |           if (validPrefenceStatus) {
+   |                    ^^^^^^^^
+   |
+error: `Previos` should be `Previous`
+  --> ./server/src/controllers/matches/gatherPreviosUserMatches/gatherPreviosUserMatches.test.js:7
+error: `udpate` should be `update`
+  --> ./server/src/controllers/zipcodes/addUserZipCode/addUserZipCode.test.js:57:18
+   |
+57 |     test("should udpate user profile", (done) => {
+   |                  ^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./server/config/config.js:3:4
+  |
+3 |  * enviroment variables exists
+  |    ^^^^^^^^^^
+  |
