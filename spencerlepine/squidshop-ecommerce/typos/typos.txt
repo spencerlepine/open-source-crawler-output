@@ -1,0 +1,181 @@
+## Detected Typos
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:21:176
+   |
+21 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('7376b4aa-3dc4-44f0-a544-648aea542688', 'WOMENS HAPPY WAVES LONG SLEEVE TEE', 34.5, undefined, 'Soft, comfy, and made to last. Our Crusher Tees are made for all-day comfort with a feels-like-you-had-it forever fit. Choose between our original heavyweight Crusher Tee or the new lightweight and layer-able Crusher-Lite.', 'tees', 'https://res.cloudinary.com/teepublic/image/private/s--3YwI62eG--/t_Resized%20Artwork/c_crop,x_10,y_10/c_fit,h_626/c_crop,g_north_west,h_626,w_470,x_-71,y_0/g_north_west,u_upload:v1462829024:production:blanks:a59x1cgomgu5lprfjlmi,x_-466,y_-325/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1532808826/production/designs/2949905_0.jpg', 2.2, 305, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:22:176
+   |
+22 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('ecff4330-01a3-485a-9b93-88ce87d164e6', 'WOMENS TIE DYE I LIKE IT HERE SHORT SLEEVE VEE', 29.5, undefined, 'Soft, comfy, and made to last. Our Crusher Tees are made for all-day comfort with a feels-like-you-had-it forever fit. Choose between our original heavyweight Crusher Tee or the new lightweight and layer-able Crusher-Lite.', 'tees', 'https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/5620045537997-1?fmt=jpeg&qlt=90&wid=652&hei=652', 1.5, 101, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:23:176
+   |
+23 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('f966424b-2b2d-49a3-9aea-798250b86ec1', 'WOMENS TIE DYE I LIKE IT HERE SLEEVELESS HIGH-LOW TANK', 24.5, undefined, 'Soft, comfy, and made to last. Our Crusher Tees are made for all-day comfort with a feels-like-you-had-it forever fit. Choose between our original heavyweight Crusher Tee or the new lightweight and layer-able Crusher-Lite.', 'tees', 'https://d3o2e4jr3mxnm3.cloudfront.net/Womens-Tie-Dye-I-Like-It-Here-Sleeveless-HighLow-Crusher-Tank_100569_1_lg.png', 5, 142, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:24:176
+   |
+24 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('961d3761-2d63-49d2-8847-79af0dc2e836', 'WOMENS OCEAN VISTA CRUSHER VEE', 29.5, undefined, 'Instant classics dont just happen. Weve spent over 20 years perfecting our original Crusher Tee, and its laid-back style has the staying power to prove it. Washed for everyday softness, this v-neck customer favorite barely skims the body for a look thats as easygoing as you are.', 'tees', 'https://d3o2e4jr3mxnm3.cloudfront.net/Womens-Ocean-Vista-Short-Sleeve-Crusher-Vee_92289_1_lg.png', 4.3, 330, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:25:176
+   |
+25 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('10fb3750-6080-4cb8-838f-430b7974457e', 'WOMENS MANDALA TURTLE SHORT SLEEVE VEE', 29.5, undefined, 'Soft, comfy, and made to last. Our Crusher Tees are made for all-day comfort with a feels-like-you-had-it forever fit. Choose between our original heavyweight Crusher Tee or the new lightweight and layer-able Crusher-Lite.', 'tees', 'https://d3o2e4jr3mxnm3.cloudfront.net/Womens-Mandala-Turtle-Crusher-Vee_93622_1_lg.png', 3.2, 281, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:26:176
+   |
+26 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('cbdc30c3-4ea9-48d6-a3b5-b3f8614ce8e7', 'WOMENS TAKE ME TO THE OCEAN WATERCOLOR CRUSHER VEE', 29.5, undefined, 'Instant classics dont just happen. Weve spent over 20 years perfecting our original Crusher Tee, and its laid-back style has the staying power to prove it. Washed for everyday softness, this v-neck customer favorite barely skims the body for a look thats as easygoing as you are.', 'tees', 'https://d3o2e4jr3mxnm3.cloudfront.net/Womens-Take-Me-to-the-Ocean-Watercolor-Short-Sleeve-Crusher-Vee_98578_1_lg.png', 1, 92, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:27:176
+   |
+27 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('1f79b41c-2723-4dba-9b6b-5fd1a79e9386', 'WOMENS BEACH WORD GAME SHORT SLEEVE TEE', 29.5, undefined, 'Soft, comfy, and made to last. Our Crusher Tees are made for all-day comfort with a feels-like-you-had-it forever fit. Choose between our original heavyweight Crusher Tee or the new lightweight and layer-able Crusher-Lite.', 'tees', 'https://d3o2e4jr3mxnm3.cloudfront.net/Womens-Beach-Word-Game-Short-Sleeve-Crusher-Tee_96827_1_lg.png', 0.7, 110, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:28:176
+   |
+28 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('95bce5ff-0403-482f-8aaa-471369d142f4', 'WOMENS EVERY LITTLE THING FLAMINGO SHORT SLEEVE VEE', 29.5, undefined, 'Soft, comfy, and made to last. Our Crusher Tees are made for all-day comfort with a feels-like-you-had-it forever fit. Choose between our original heavyweight Crusher Tee or the new lightweight and layer-able Crusher-Lite.', 'tees', 'https://i5.walmartimages.com/asr/1188fd0a-bfff-44f0-94b9-799bd76f1673_1.ed5ee32aa46febc0bcbbddf1a5b96fb0.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF', 2.3, 163, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/products/src/database/scripts/init.cql:29:176
+   |
+29 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('74c9258f-250b-4769-bf41-245289cb9eb1', 'WOMENS TAKE ME TO THE OCEAN WATERCOLOR SLEEVELESS HIGH-LOW TANK', 24.5, undefined, 'Soft, comfy, and made to last. Our Crusher Tees are made for all-day comfort with a feels-like-you-had-it forever fit. Choose between our original heavyweight Crusher Tee or the new lightweight and layer-able Crusher-Lite.', 'tees', 'https://d3o2e4jr3mxnm3.cloudfront.net/Womens-Take-Me-to-the-Ocean-Watercolor-Sleeveless-HighLow-CrusherLITE-Tank_101602_1_lg.png', 3.1, 278, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                ^^^^^^
+   |
+error: `varius` should be `various`
+  --> ./apps/products/__tests__/mockProduct.json:4:43
+  |
+4 |   "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+  |                                           ^^^^^^
+  |
+error: `youre` should be `your`
+  --> ./apps/products/src/database/scripts/init.cql:66:662
+   |
+66 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('dd6e8940-f5d6-47cc-8575-d880155ec3fa', 'Juvale Wooden Wall Ornament - 2-Piece Small Hanging Decorations Under The Sea Seashells Design', 25.79, 17.99, 'When you cant find time to escape away to a tranquil beach, hanging one of these 2 uniquely and creatively designed beach ornaments is a great way to transport you there. Complete with a jute rope that adds to the nautical vibes, these ornaments will transport you straight to the beach when you hang them in your home, office or any other space where you want to feel like youre taking in ocean air.', 'decor', 'https://b3h2.scene7.com/is/image/BedBathandBeyond/mktplace-s-77914784-ed2d-4a81-8b70-2b1ac5536c25?$529$&wid=529&hei=529', 0.4, 72, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+   |
+error: `unkown` should be `unknown`
+  --> ./apps/client/src/components/Cart/CartItemCard.tsx:91:75
+   |
+91 |   const productPageLink = `/product/${product.productId || product.id || 'unkown'}`
+   |                                                                           ^^^^^^
+   |
+error: `Womens` should be `Women`
+  --> ./apps/products/src/database/scripts/init.cql:82:199
+   |
+82 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('bae9e3f5-fca6-4c3d-838e-566a141e8884', 'Aqua Lung Aquaflex 5mm Womens', 359.99, undefined, 'The name AquaFlex has become synonymous the world over for stretch, comfort, and warmth. This line of wetsuits represents the best value and quality on the market today. All AquaFlex suits are made of four-way stretch neoprene, canadian seals on 5mm and 7mm styles to limit water entry and provide extra warmth. Available in 7mm, 5mm and 3mm with different color options per thickness.', 'gear', 'https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/85925c642/aqua-lung-aquaflex-5mm-womens.jpg', 4.8, 66, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                                       ^^^^^^
+   |
+error: `unkown` should be `unknown`
+  --> ./apps/client/src/components/Orders/OrderItemCard.tsx:88:64
+   |
+88 |                   <Link to={`/product/${cartItem.productId || 'unkown'}`} component={RouterLink} style={{ color: 'inherit', textDecoration: 'inherit' }}>
+   |                                                                ^^^^^^
+   |
+error: `Womens` should be `Women`
+  --> ./apps/products/src/database/scripts/init.cql:91:186
+   |
+91 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('ee60d041-df71-4eb0-9fa2-c7d702c066e9', 'Aqua Lung Womens Scuba Gear Package', 1349.15, undefined, 'The Pearl BCD is an integrated, womens specific hybrid BCD that combines a wraparound jacket and back inflation.', 'gear', 'https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/58269d7c6/aqua-lung-women-s-scuba-gear-package.jpg', 3.1, 141, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                          ^^^^^^
+   |
+error: `womens` should be `women`
+  --> ./apps/products/src/database/scripts/init.cql:91:267
+   |
+91 | insert into Product (id, title, price, sale_price, description, category, image, rating_rate, rating_count, created, updated) values ('ee60d041-df71-4eb0-9fa2-c7d702c066e9', 'Aqua Lung Womens Scuba Gear Package', 1349.15, undefined, 'The Pearl BCD is an integrated, womens specific hybrid BCD that combines a wraparound jacket and back inflation.', 'gear', 'https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/58269d7c6/aqua-lung-women-s-scuba-gear-package.jpg', 3.1, 141, toTimestamp(now()), toTimestamp(now()));
+   |                                                                                                                                                                                                                                                                           ^^^^^^
+   |
+error: `unkown` should be `unknown`
+  --> ./apps/client/src/components/Product/ProductCard.tsx:62:42
+   |
+62 |     <Link to={`/product/${product.id || 'unkown'}`} component={RouterLink} style={{ color: 'inherit', textDecoration: 'inherit' }}>
+   |                                          ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:4:13
+  |
+4 |   "title": "WOMENS HAPPY WAVES LONG SLEEVE TEE",
+  |             ^^^^^^
+  |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:14:13
+   |
+14 |   "title": "WOMENS TIE DYE I LIKE IT HERE SHORT SLEEVE VEE",
+   |             ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:24:13
+   |
+24 |   "title": "WOMENS TIE DYE I LIKE IT HERE SLEEVELESS HIGH-LOW TANK",
+   |             ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:34:13
+   |
+34 |   "title": "WOMENS OCEAN VISTA CRUSHER VEE",
+   |             ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:44:13
+   |
+44 |   "title": "WOMENS MANDALA TURTLE SHORT SLEEVE VEE",
+   |             ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:54:13
+   |
+54 |   "title": "WOMENS TAKE ME TO THE OCEAN WATERCOLOR CRUSHER VEE",
+   |             ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:64:13
+   |
+64 |   "title": "WOMENS BEACH WORD GAME SHORT SLEEVE TEE",
+   |             ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:74:13
+   |
+74 |   "title": "WOMENS EVERY LITTLE THING FLAMINGO SHORT SLEEVE VEE",
+   |             ^^^^^^
+   |
+error: `WOMENS` should be `WOMEN`
+  --> ./apps/client/src/hooks/demoData.ts:84:13
+   |
+84 |   "title": "WOMENS TAKE ME TO THE OCEAN WATERCOLOR SLEEVELESS HIGH-LOW TANK",
+   |             ^^^^^^
+   |
+error: `youre` should be `your`
+  --> ./apps/client/src/hooks/demoData.ts:464:393
+    |
+464 |   "description": "When you cant find time to escape away to a tranquil beach, hanging one of these 2 uniquely and creatively designed beach ornaments is a great way to transport you there. Complete with a jute rope that adds to the nautical vibes, these ornaments will transport you straight to the beach when you hang them in your home, office or any other space where you want to feel like youre taking in ocean air.",
+    |                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^
+    |
+error: `Womens` should be `Women`
+  --> ./apps/client/src/hooks/demoData.ts:630:36
+    |
+630 |   "title": "Aqua Lung Aquaflex 5mm Womens",
+    |                                    ^^^^^^
+    |
+error: `Womens` should be `Women`
+  --> ./apps/client/src/hooks/demoData.ts:724:23
+    |
+724 |   "title": "Aqua Lung Womens Scuba Gear Package",
+    |                       ^^^^^^
+    |
+error: `womens` should be `women`
+  --> ./apps/client/src/hooks/demoData.ts:725:51
+    |
+725 |   "description": "The Pearl BCD is an integrated, womens specific hybrid BCD that combines a wraparound jacket and back inflation.",
+    |                                                   ^^^^^^
+    |

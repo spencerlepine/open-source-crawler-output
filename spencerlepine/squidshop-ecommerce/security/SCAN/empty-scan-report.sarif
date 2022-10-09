@@ -1,0 +1,69 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Empty Scan Ignore",
+          "version": "1.0.0-scan",
+          "fullName": "Empty Scan Ignore"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [],
+          "executionSuccessful": true,
+          "commandLine": "",
+          "endTimeUtc": "2022-10-09T17:32:08Z",
+          "workingDirectory": {
+            "uri": "https://github.com/spencerlepine/squidshop-ecommerce"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-09T17:32:08Z",
+          "workingDirectory": {
+            "uri": "https://github.com/spencerlepine/squidshop-ecommerce"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "e1810dae-bb4f-45f5-a2ae-25683b2b32a1"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "559ea3540043833790d124a3e0d0519191fbbe56"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "e1810dae-bb4f-45f5-a2ae-25683b2b32a1",
+      "runGuid": "ed32095b-7f49-46bc-9504-7202fdd1559c"
+    }
+  ]
+}
