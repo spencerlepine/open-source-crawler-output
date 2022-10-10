@@ -2,7 +2,11 @@
 
 [![Archive Report 🗑](https://github.com/spencerlepine/open-source-crawler-output/actions/workflows/archive-report.yml/badge.svg?branch=main)](https://github.com/spencerlepine/open-source-crawler-output/actions/workflows/archive-report.yml) [![Restore Report ♻️](https://github.com/spencerlepine/open-source-crawler-output/actions/workflows/restore-report.yml/badge.svg?branch=main)](https://github.com/spencerlepine/open-source-crawler-output/actions/workflows/restore-report.yml)
 
-> An archive of the [web crawler + code scanner](https://github.com/spencerlepine/open-source-crawler) for open source repos found across GitHub.
+A file dump of the [web crawler + code scanner](https://github.com/spencerlepine/open-source-crawler) from open source repos found across GitHub.
+
+![Spencer's GitHub stats](https://github-readme-stats.vercel.app/api?username=spencerlepine&show_icons=true&theme=radical)
+
+<!-- https://github.com/anuraghazra/github-readme-stats -->
 
 ## 🌟 Features
 - Create folder for every repository analyzed, under `<rootDir>/username/reponame` convention
