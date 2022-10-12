@@ -1,0 +1,25 @@
+## Detected Typos
+error: `Acceses` should be `Accesses`
+  --> ./README.md:45:1
+   |
+45 | Acceses the `/drafts` folder and attempts to generate a snippet
+   | ^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./FORK_WALKTHROUGH.md:8:43
+  |
+8 | GitHub Actions is referencing the `admin` enviroment with protected permissions. This requires the owner to approve a workflow run.
+  |                                           ^^^^^^^^^^
+  |
+error: `Enviroments` should be `Environments`
+  --> ./FORK_WALKTHROUGH.md:11:38
+   |
+11 | - Navigate to Repository `Settings > Enviroments`
+   |                                      ^^^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./FORK_WALKTHROUGH.md:12:16
+   |
+12 | - Create a new enviroment called `admin`
+   |                ^^^^^^^^^^
+   |
