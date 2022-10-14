@@ -1,0 +1,13 @@
+## Detected Typos
+error: `Gruop` should be `Group`
+  --> ./src/emoji/emoji.service.ts:30:20
+   |
+30 |         const validGruop: string = group.replace(/_/g, " ");
+   |                    ^^^^^
+   |
+error: `Gruop` should be `Group`
+  --> ./src/emoji/emoji.service.ts:32:33
+   |
+32 |             .find({ group: validGruop }, { _id: 0 })
+   |                                 ^^^^^
+   |
