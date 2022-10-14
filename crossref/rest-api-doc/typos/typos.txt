@@ -1,0 +1,193 @@
+## Detected Typos
+error: `identifing` should be `identifying`
+  --> ./api_format.md:76:119
+   |
+76 | | DOI | String | No | Optional [Open Funder Registry](http://www.crossref.org/fundingdata/registry.html) DOI uniquely identifing the funding body |
+   |                                                                                                                       ^^^^^^^^^^
+   |
+error: `regsitry` should be `registry`
+  --> ./api_format.md:85:55
+   |
+85 | | registry | String | Yes | DOI of the clinical trial regsitry that assigned the trial number |
+   |                                                       ^^^^^^^^
+   |
+error: `metdata` should be `metadata`
+  --> ./api_tips.md:26:165
+   |
+26 | What? No, seriously- Crossref periodically releases [public data file](https://www.crossref.org/blog/new-public-data-file-120-million-metadata-records/) of all the metdata that is available via our public API. You can download this file from [Academic Torrents](https://academictorrents.com/) with your favorite torrent client and do a lot of work locally if you want to. At the very least, having the local file will allow you to focus on using the API only for metadata records that have been updated since the last public data file was released.
+   |                                                                                                                                                                     ^^^^^^^
+   |
+error: `subsciber` should be `subscriber`
+  --> ./deprecated/scratch.md:96:10
+   |
+96 | crawler="subsciber"
+   |          ^^^^^^^^^
+   |
+error: `abou` should be `about`, `abound`
+  --> ./deprecated/scratch.md:110:75
+    |
+110 | In theory, this resource can point to "the thing itself" or to "something abou"
+    |                                                                           ^^^^
+    |
+error: `distnguish` should be `distinguish`
+  --> ./deprecated/scratch.md:118:28
+    |
+118 | What are things we want to distnguish:
+    |                            ^^^^^^^^^^
+    |
+error: `aquisition` should be `acquisition`
+  --> ./deprecated/scratch.md:126:26
+    |
+126 | OPDS has what they call "aquisition links" where rel attribute is set to a URI indicating what is being pointed to. They have the following types:
+    |                          ^^^^^^^^^^
+    |
+error: `faciliate` should be `facilitate`
+  --> ./deprecated/archive_query_api.md:37:4
+   |
+37 | To faciliate archive arrangement verification, a common query API is proposed that
+   |    ^^^^^^^^^
+   |
+error: `implimented` should be `implemented`
+  --> ./api_tips.md:80:22
+   |
+80 | Note much to say. We implimented rows/offsets early in the development of the API and regretted it emmediately. So we implimented cursors instead and kept rows/offsets so as to not break existing scripts. But NOBODY should use them.
+   |                      ^^^^^^^^^^^
+   |
+error: `emmediately` should be `immediately`
+  --> ./api_tips.md:80:100
+   |
+80 | Note much to say. We implimented rows/offsets early in the development of the API and regretted it emmediately. So we implimented cursors instead and kept rows/offsets so as to not break existing scripts. But NOBODY should use them.
+   |                                                                                                    ^^^^^^^^^^^
+   |
+error: `implimented` should be `implemented`
+  --> ./api_tips.md:80:119
+   |
+80 | Note much to say. We implimented rows/offsets early in the development of the API and regretted it emmediately. So we implimented cursors instead and kept rows/offsets so as to not break existing scripts. But NOBODY should use them.
+   |                                                                                                                       ^^^^^^^^^^^
+   |
+error: `programatically` should be `programmatically`
+  --> ./deprecated/ad_hoc_deposits.md:21:16
+   |
+21 | 2. Manually or programatically alter or create deposit XML.
+   |                ^^^^^^^^^^^^^^^
+   |
+error: `programatically` should be `programmatically`
+  --> ./deprecated/deposit_api.md:18:19
+   |
+18 | - an inability to programatically track the status of a deposit
+   |                   ^^^^^^^^^^^^^^^
+   |
+error: `programatically` should be `programmatically`
+  --> ./deprecated/deposit_api.md:21:13
+   |
+21 | - no way of programatically querying for a historic list of deposits
+   |             ^^^^^^^^^^^^^^^
+   |
+error: `programatically` should be `programmatically`
+  --> ./deprecated/deposit_api.md:22:13
+   |
+22 | - no way of programatically retrieveing previously deposited XML.
+   |             ^^^^^^^^^^^^^^^
+   |
+error: `reasearcher` should be `researcher`
+  --> ./deprecated/rest_api_tour.md:183:22
+    |
+183 | What licenses does a reasearcher with a particular ORCID publish under
+    |                      ^^^^^^^^^^^
+    |
+error: `faciliate` should be `facilitate`
+  --> ./deprecated/deposit_api.md:70:68
+   |
+70 | Deposits are modified slightly from the submitted form. This is to faciliate
+   |                                                                    ^^^^^^^^^
+   |
+error: `paramter` should be `parameter`
+  --> ./deprecated/deposit_api.md:112:16
+    |
+112 | Set the `test` paramter to `true`, `t` or `1` (any other value is considered false)
+    |                ^^^^^^^^
+    |
+error: `avaialble` should be `available`
+  --> ./funder_kpi_metadata_best_practice.md:22:83
+   |
+22 |   - [Assigning and registering DOIs for manuscripts that the publisher *has* made avaialble online](#assigning-and-registering-dois-for-manuscripts-that-the-publisher-has-made-avaialble-online)
+   |                                                                                   ^^^^^^^^^
+   |
+error: `avaialble` should be `available`
+  --> ./funder_kpi_metadata_best_practice.md:22:177
+   |
+22 |   - [Assigning and registering DOIs for manuscripts that the publisher *has* made avaialble online](#assigning-and-registering-dois-for-manuscripts-that-the-publisher-has-made-avaialble-online)
+   |                                                                                                                                                                                 ^^^^^^^^^
+   |
+error: `Ded` should be `Dead`
+  --> ./README.md:374:6
+    |
+374 | is ANDed with the others:
+    |      ^^^
+    |
+error: `nunber` should be `number`
+  --> ./README.md:505:82
+    |
+505 | | `award.number` | `{award_number}` | metadata for records with a matching award nunber. Optionally combine with `award.funder` |
+    |                                                                                  ^^^^^^
+    |
+error: `organisaton` should be `organisation`
+  --> ./README.md:565:202
+    |
+565 | Crossref also has member IDs for depositing organisations. A single member may control multiple owner prefixes, which in turn may control a number of DOIs. When looking at works published by a certain organisaton, member IDs and the member routes should be used.
+    |                                                                                                                                                                                                          ^^^^^^^^^^^
+    |
+error: `publically` should be `publicly`
+  --> ./funder_kpi_metadata_best_practice.md:339:146
+    |
+339 | - __must__ must be replaced with appropriate full metadata using an appropriate schema for the content type when the publisher makes the content publically available
+    |                                                                                                                                                  ^^^^^^^^^^
+    |
+error: `diplay` should be `display`
+  --> ./funder_kpi_metadata_best_practice.md:341:29
+    |
+341 | - __may__ include a logo to diplay at the top of the landing page
+    |                             ^^^^^^
+    |
+error: `mutliple` should be `multiple`
+  --> ./README.md:744:33
+    |
+744 | - v23, 2014-09-01, semantics of mutliple filters, dot filters
+    |                                 ^^^^^^^^
+    |
+error: `lables` should be `labels`
+  --> ./README.md:749:53
+    |
+749 | - v28, 2016-05-09, added link to source of category lables
+    |                                                     ^^^^^^
+    |
+error: `reqeusts` should be `requests`
+  --> ./README.md:756:41
+    |
+756 | - v35, 2017-04-26, document use of head reqeusts to determine `existence`
+    |                                         ^^^^^^^^
+    |
+error: `veiwing` should be `viewing`
+  --> ./demos/crossref-api-demo.ipynb:44:11
+   |
+44 |     "# If veiwing in pineapple notebook, uncomment the next two lines and then run the cell.\n",
+   |           ^^^^^^^
+   |
+error: `orthoganal` should be `orthogonal`
+  --> ./demos/crossref-api-demo.ipynb:156:236
+    |
+156 |     "Note that above I said \"How many Crossref DOIs\". There are several other [DOI registration agencies](https://www.doi.org/registration_agencies.html). Crossref is by far he largest DOI RA, and the other RAs tend to specialize in orthoganal areas (e.g. Music & Video, Local language translations of publications, etc.) but it is important to not that this API will not work with non-Crossref DOIs (though [DataCite](https://www.datacite.org/), another RA, provides a very similar API).\n",
+    |                                                                                                                                                                                                                                            ^^^^^^^^^^
+    |
+error: `particualr` should be `particular`
+  --> ./demos/crossref-api-demo.ipynb:306:694
+    |
+306 |     "**TIP:** Publishers sometimes record information for multiple versions of the content identified by a DOI. These versions should be interchaneable from the point of view of citation, but sometimes one version has more \"features\" than another. For example, it might be typset or have references linked, etc. The two versions might also have different licenses and different URLs. The terminology publishers use for identifying versions comes from the [NISO standard call JAV (Journal Article Version)](http://www.niso.org/publications/rp/RP-8-2008.pdf) and, although this terminology is [sometimes problematic](https://f1000research.com/articles/6-608/v1), you should be aware of it. In particualr, you will see two terms used  in Crossref metadata:\n",
+    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^
+    |
+error: `transfered` should be `transferred`
+  --> ./demos/crossref-api-demo.ipynb:428:322
+    |
+428 |     "**TIP:** Many people make the mistake of thinking that a \"DOI prefix\" can be used to identify the member responsible for a Crossref DOI. This is not true. DOI prefixes merely serve as a namespace form which a member can create new DOIs without worrying about collisions. But, once created, Crossref DOIs are often transfered between publishers and so a Crossref member will often be responsible for DOIs with a variety of prefixes. So, for example, above, Hindawi is responsible for several prefixes:"
+    |                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^
+    |
