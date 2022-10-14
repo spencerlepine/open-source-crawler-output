@@ -1,0 +1,37 @@
+## Detected Typos
+error: `existance` should be `existence`
+  --> ./README.md:58:285
+   |
+58 | The `next` and `prev` fields in the info block provide a handy shortcut for paging forward and backward through records. They will contain a fully formed URL to the next and previous pages of records. Send a new request to the value in the `next` field to move forward. Check for the existance of the `next` and `prev` fields to determine if you are at the begining or end of your results.
+   |                                                                                                                                                                                                                                                                                             ^^^^^^^^^
+   |
+error: `begining` should be `beginning`
+  --> ./README.md:58:358
+   |
+58 | The `next` and `prev` fields in the info block provide a handy shortcut for paging forward and backward through records. They will contain a fully formed URL to the next and previous pages of records. Send a new request to the value in the `next` field to move forward. Check for the existance of the `next` and `prev` fields to determine if you are at the begining or end of your results.
+   |                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^
+   |
+error: `availabe` should be `available`
+  --> ./README.md:116:108
+    |
+116 | Please note that our IIIF presentation service is very much a work in progress. The code for the server is availabe at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit them through the feedback links listed below.
+    |                                                                                                            ^^^^^^^^
+    |
+error: `possiblities` should be `possibilities`
+  --> ./README.md:189:34
+    |
+189 | > Playful projects that show the possiblities with computer vision and IIIF.
+    |                                  ^^^^^^^^^^^^
+    |
+error: `Archiv` should be `Archive`
+  --> ./sections/object.md:840:127
+    |
+840 |         "citation": "Elizabeth Otto, <em>Tempo, Tempo!  The Bauhaus Photomontages of Marianne Brandt</em>, exh. cat., Bauhaus-Archiv and jovis Verlag (Berlin, 2005)",
+    |                                                                                                                               ^^^^^^
+    |
+error: `activites` should be `activities`
+  --> ./sections/activity.md:23:18
+   |
+23 | Several types of activites are available via this endpoint. They are described in the `activitytype` field.
+   |                  ^^^^^^^^^
+   |
