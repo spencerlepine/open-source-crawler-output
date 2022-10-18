@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:5ac8b504-44be-4f25-81fb-c522c6f6300e" version="1">
+  <metadata>
+    <timestamp>2022-10-18T08:52:05.191Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.41</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:gem/bson@4.10.0">
+      <group/>
+      <name>bson</name>
+      <version>4.10.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/bson@4.10.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/json@2.2.0">
+      <group/>
+      <name>json</name>
+      <version>2.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/json@2.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/kgio@2.11.2">
+      <group/>
+      <name>kgio</name>
+      <version>2.11.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/kgio@2.11.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/mongo@2.13.0">
+      <group/>
+      <name>mongo</name>
+      <version>2.13.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/mongo@2.13.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/mustermann@1.0.3">
+      <group/>
+      <name>mustermann</name>
+      <version>1.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/mustermann@1.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/rack@2.2.2">
+      <group/>
+      <name>rack</name>
+      <version>2.2.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/rack@2.2.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/rack-protection@2.0.5">
+      <group/>
+      <name>rack-protection</name>
+      <version>2.0.5</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/rack-protection@2.0.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/raindrops@0.19.0">
+      <group/>
+      <name>raindrops</name>
+      <version>0.19.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/raindrops@0.19.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/sinatra@2.0.5">
+      <group/>
+      <name>sinatra</name>
+      <version>2.0.5</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/sinatra@2.0.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/tilt@2.0.9">
+      <group/>
+      <name>tilt</name>
+      <version>2.0.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/tilt@2.0.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:gem/unicorn@5.4.1">
+      <group/>
+      <name>unicorn</name>
+      <version>5.4.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:gem/unicorn@5.4.1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/app/Gemfile.lock</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

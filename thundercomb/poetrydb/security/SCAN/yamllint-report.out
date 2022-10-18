@@ -1,0 +1,3 @@
+/github/workspace/docker-compose.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker-compose.yml:24:81: [error] line too long (86 > 80 characters) (line-length)
+/github/workspace/app/mongoid.yml:1:1: [warning] missing document start "---" (document-start)

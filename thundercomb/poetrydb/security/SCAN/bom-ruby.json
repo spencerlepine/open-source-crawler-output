@@ -1,0 +1,146 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:5ac8b504-44be-4f25-81fb-c522c6f6300e",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-10-18T08:52:05.187Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.41"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "bson",
+      "version": "4.10.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/bson@4.10.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/bson@4.10.0"
+    },
+    {
+      "group": "",
+      "name": "json",
+      "version": "2.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/json@2.2.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/json@2.2.0"
+    },
+    {
+      "group": "",
+      "name": "kgio",
+      "version": "2.11.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/kgio@2.11.2",
+      "type": "library",
+      "bom-ref": "pkg:gem/kgio@2.11.2"
+    },
+    {
+      "group": "",
+      "name": "mongo",
+      "version": "2.13.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/mongo@2.13.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/mongo@2.13.0"
+    },
+    {
+      "group": "",
+      "name": "mustermann",
+      "version": "1.0.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/mustermann@1.0.3",
+      "type": "library",
+      "bom-ref": "pkg:gem/mustermann@1.0.3"
+    },
+    {
+      "group": "",
+      "name": "rack",
+      "version": "2.2.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/rack@2.2.2",
+      "type": "library",
+      "bom-ref": "pkg:gem/rack@2.2.2"
+    },
+    {
+      "group": "",
+      "name": "rack-protection",
+      "version": "2.0.5",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/rack-protection@2.0.5",
+      "type": "library",
+      "bom-ref": "pkg:gem/rack-protection@2.0.5"
+    },
+    {
+      "group": "",
+      "name": "raindrops",
+      "version": "0.19.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/raindrops@0.19.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/raindrops@0.19.0"
+    },
+    {
+      "group": "",
+      "name": "sinatra",
+      "version": "2.0.5",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/sinatra@2.0.5",
+      "type": "library",
+      "bom-ref": "pkg:gem/sinatra@2.0.5"
+    },
+    {
+      "group": "",
+      "name": "tilt",
+      "version": "2.0.9",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/tilt@2.0.9",
+      "type": "library",
+      "bom-ref": "pkg:gem/tilt@2.0.9"
+    },
+    {
+      "group": "",
+      "name": "unicorn",
+      "version": "5.4.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:gem/unicorn@5.4.1",
+      "type": "library",
+      "bom-ref": "pkg:gem/unicorn@5.4.1"
+    }
+  ],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/app/Gemfile.lock",
+      "comment": "Package file"
+    }
+  ]
+}
