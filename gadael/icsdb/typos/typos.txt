@@ -1,0 +1,259 @@
+## Detected Typos
+error: `serie` should be `series`
+  --> ./src/specialevents.js:282:9
+    |
+282 |     let serie = [];
+    |         ^^^^^
+    |
+error: `serie` should be `series`
+  --> ./src/specialevents.js:285:9
+    |
+285 |         serie.push(new Date(y, 10, 1+ getThanksGiving(y)));
+    |         ^^^^^
+    |
+error: `serie` should be `series`
+  --> ./src/specialevents.js:288:44
+    |
+288 |     afterThanksgiving.setProperty('RDATE', serie, { VALUE: 'DATE' });
+    |                                            ^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./i18n/fr/nonworkingdays.json:32:20
+   |
+32 |     "Assumption": "Assomption",
+   |                    ^^^^^^^^^^
+   |
+error: `Chanel` should be `Channel`
+  --> ./i18n/fr/nonworkingdays.json:55:19
+   |
+55 |     "Saint-Pierre-Chanel": "Saint-Pierre-Chanel",
+   |                   ^^^^^^
+   |
+error: `Chanel` should be `Channel`
+  --> ./i18n/fr/nonworkingdays.json:55:42
+   |
+55 |     "Saint-Pierre-Chanel": "Saint-Pierre-Chanel",
+   |                                          ^^^^^^
+   |
+error: `Chanel` should be `Channel`
+  --> ./i18n/fr/nonworkingdays.json:65:19
+   |
+65 |     "Saint-Pierre-Chanel": "Saint-Pierre-Chanel",
+   |                   ^^^^^^
+   |
+error: `Chanel` should be `Channel`
+  --> ./i18n/fr/nonworkingdays.json:65:42
+   |
+65 |     "Saint-Pierre-Chanel": "Saint-Pierre-Chanel",
+   |                                          ^^^^^^
+   |
+error: `patriotes` should be `patriots`
+  --> ./i18n/fr/nonworkingdays.json:98:45
+   |
+98 |     "Patriots' Day": "Journée nationale des patriotes",
+   |                                             ^^^^^^^^^
+   |
+error: `offical` should be `official`
+  --> ./README.md:26:128
+   |
+26 | Warning, this set of ICS files is suject to move to his own domain in the near future. The github url will probably remain but offical permalinks will be modified
+   |                                                                                                                                ^^^^^^^
+   |
+error: `recuring` should be `recurring`
+  --> ./README.md:39:21
+   |
+39 | More generally, all recuring dates start from 1970 or more to prevent some bugs while decoding the events with various icalendar libraries.
+   |                     ^^^^^^^^
+   |
+error: `Chanel` should be `Channel`
+  --> ./data/france-wallis-futuna-nonworkingdays.ics:54:22
+   |
+54 | SUMMARY:Saint-Pierre-Chanel
+   |                      ^^^^^^
+   |
+error: `Chanel` should be `Channel`
+  --> ./build/en-US/france-wallis-futuna-nonworkingdays.ics:65:22
+   |
+65 | SUMMARY:Saint-Pierre-Chanel
+   |                      ^^^^^^
+   |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/germany-saarland-nonworkingdays.ics:205:9
+    |
+205 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-appenzell innerrhoden-nonworkingdays.ics:284:9
+    |
+284 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Chanel` should be `Channel`
+  --> ./build/fr-FR/france-wallis-futuna-nonworkingdays.ics:65:22
+   |
+65 | SUMMARY:Saint-Pierre-Chanel
+   |                      ^^^^^^
+   |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-wallis-futuna-nonworkingdays.ics:202:9
+    |
+202 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-polynesia-nonworkingdays.ics:218:9
+    |
+218 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-martinique-nonworkingdays.ics:233:9
+    |
+233 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-schwyz-nonworkingdays.ics:316:9
+    |
+316 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-guyane-nonworkingdays.ics:187:9
+    |
+187 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `patriotes` should be `patriots`
+  --> ./build/fr-FR/us-all-nonworkingdays.ics:275:31
+    |
+275 | SUMMARY:Journée nationale des patriotes
+    |                               ^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-moselle-rhin-nonworkingdays.ics:203:9
+    |
+203 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-solothurn-nonworkingdays.ics:317:9
+    |
+317 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-obwalden-nonworkingdays.ics:301:9
+    |
+301 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-jura-nonworkingdays.ics:317:9
+    |
+317 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-zug-nonworkingdays.ics:301:9
+    |
+301 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/germany-all-nonworkingdays.ics:239:9
+    |
+239 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-all-nonworkingdays.ics:399:9
+    |
+399 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `patriotes` should be `patriots`
+  --> ./build/fr-FR/us-maine-nonworkingdays.ics:64:31
+   |
+64 | SUMMARY:Journée nationale des patriotes
+   |                               ^^^^^^^^^
+   |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-reunion-nonworkingdays.ics:172:9
+    |
+172 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-newcaledonia-nonworkingdays.ics:172:9
+    |
+172 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-aargau-nonworkingdays.ics:301:9
+    |
+301 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `patriotes` should be `patriots`
+  --> ./build/fr-FR/us-wisconsin-nonworkingdays.ics:64:31
+   |
+64 | SUMMARY:Journée nationale des patriotes
+   |                               ^^^^^^^^^
+   |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-valais-nonworkingdays.ics:268:9
+    |
+268 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-guadeloupe-nonworkingdays.ics:233:9
+    |
+233 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-nidwalden-nonworkingdays.ics:300:9
+    |
+300 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `patriotes` should be `patriots`
+  --> ./build/fr-FR/us-massachusetts-nonworkingdays.ics:80:31
+   |
+80 | SUMMARY:Journée nationale des patriotes
+   |                               ^^^^^^^^^
+   |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-ticino-nonworkingdays.ics:332:9
+    |
+332 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-uri-nonworkingdays.ics:316:9
+    |
+316 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/belgium-nonworkingdays.ics:157:9
+    |
+157 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/france-nonworkingdays.ics:172:9
+    |
+172 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
+error: `Assomption` should be `Assumption`
+  --> ./build/fr-FR/switzerland-fribourg-nonworkingdays.ics:301:9
+    |
+301 | SUMMARY:Assomption
+    |         ^^^^^^^^^^
+    |
