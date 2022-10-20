@@ -1,0 +1,6 @@
+/github/workspace/docker-compose.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker-compose.yml:2:1: [error] trailing spaces (trailing-spaces)
+/github/workspace/docker-compose.yml:5:4: [error] wrong indentation: expected 2 but found 3 (indentation)
+/github/workspace/docker-compose.yml:8:6: [error] wrong indentation: expected 4 but found 5 (indentation)
+/github/workspace/docker-compose.yml:10:6: [error] wrong indentation: expected 4 but found 5 (indentation)
+/github/workspace/docker-compose.yml:12:6: [error] wrong indentation: expected 4 but found 5 (indentation)

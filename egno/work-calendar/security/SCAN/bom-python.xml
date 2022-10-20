@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:94d5b92c-1a90-461d-bd3d-f3ade96dd47b" version="1">
+  <metadata>
+    <timestamp>2022-10-20T08:46:04.374Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.41</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/requests@2.28.1">
+      <group/>
+      <name>requests</name>
+      <version>2.28.1</version>
+      <description><![CDATA[Python HTTP for Humans.]]></description>
+      <hashes>
+        <hash alg="SHA-256">8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/requests@2.28.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://requests.readthedocs.io</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/lxml@4.9.1">
+      <group/>
+      <name>lxml</name>
+      <version>4.9.1</version>
+      <description><![CDATA[Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.]]></description>
+      <hashes>
+        <hash alg="SHA-256">98cafc618614d72b02185ac583c6f7796202062c41d2eeecdf07820bad3295ed</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>0BSD</id>
+          <url>https://opensource.org/licenses/0BSD</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/lxml@4.9.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://lxml.de/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/python-dateutil@2.8.2">
+      <group/>
+      <name>python-dateutil</name>
+      <version>2.8.2</version>
+      <description><![CDATA[Extensions to the standard Python datetime module]]></description>
+      <hashes>
+        <hash alg="SHA-256">961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Dual License</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/python-dateutil@2.8.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/dateutil/dateutil</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask-restful@0.3.9">
+      <group/>
+      <name>Flask_restful</name>
+      <version>0.3.9</version>
+      <description><![CDATA[Simple framework for creating REST APIs]]></description>
+      <hashes>
+        <hash alg="SHA-256">4970c49b6488e46c520b325f54833374dc2b98e211f1b272bd4b0c516232afe2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>0BSD</id>
+          <url>https://opensource.org/licenses/0BSD</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flask-restful@0.3.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://www.github.com/flask-restful/flask-restful/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask-cors@3.0.10">
+      <group/>
+      <name>flask_cors</name>
+      <version>3.0.10</version>
+      <description><![CDATA[A Flask extension adding a decorator for CORS support]]></description>
+      <hashes>
+        <hash alg="SHA-256">74efc975af1194fc7891ff5cd85b0f7478be4f7f59fe158102e91abb72bb4438</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flask-cors@3.0.10</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/corydolphin/flask-cors</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/gunicorn@20.1.0">
+      <group/>
+      <name>gunicorn</name>
+      <version>20.1.0</version>
+      <description><![CDATA[WSGI HTTP Server for UNIX]]></description>
+      <hashes>
+        <hash alg="SHA-256">9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/gunicorn@20.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://gunicorn.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/inotify@0.2.10">
+      <group/>
+      <name>inotify</name>
+      <version>0.2.10</version>
+      <description><![CDATA[An adapter to Linux kernel support for inotify directory-watching.]]></description>
+      <hashes>
+        <hash alg="SHA-256">397f8785450e41f606fe4eb6f5e8e0a1c70b354b56495225fc6c6fe7e07db0c9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>GPL 2</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/inotify@0.2.10</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/dsoprea/PyInotify</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/requirements.txt</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
