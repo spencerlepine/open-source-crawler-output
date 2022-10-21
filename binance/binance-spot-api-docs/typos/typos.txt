@@ -1,0 +1,295 @@
+## Detected Typos
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG_CN.md:370:49
+    |
+370 |   *  POST api/v3/order `RESULT` 与 `FULL` 响应中增加 `cummulativeQuoteQty`
+    |                                                       ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG_CN.md:378:17
+    |
+378 |   *  订单查询结果中增加 `cummulativeQuoteQty`字段. 负值表示尚无任何成交，该字段不可用.
+    |                          ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG_CN.md:382:19
+    |
+382 |   *  订单报告与成交报告中增加`cummulativeQuoteQty` 字段 (`Z`). 表示已经成交的金额， 即已经花费的金额(买入订单)或已经收到的金额(卖出订单)，均未计算手续费. 此功能增加之前成交的订单在历史订单接口中查询到的该字段可能小于零.
+    |                               ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG_CN.md:383:7
+    |
+383 |   *  `cummulativeQuoteQty`/`cummulativeQty` 可以用来计算该订单已经成交部分的平均价格。
+    |       ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG_CN.md:383:29
+    |
+383 |   *  `cummulativeQuoteQty`/`cummulativeQty` 可以用来计算该订单已经成交部分的平均价格。
+    |                             ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1418:4
+     |
+1418 |   "cummulativeQuoteQty": "10.00000000",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1439:4
+     |
+1439 |   "cummulativeQuoteQty": "10.00000000",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1569:6
+     |
+1569 |     "cummulativeQuoteQty": "0.00000000",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1584:6
+     |
+1584 |     "cummulativeQuoteQty": "0.00000000",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1628:8
+     |
+1628 |       "cummulativeQuoteQty": "0.000000",
+     |        ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1706:9
+     |
+1706 | * 某些订单中`cummulativeQuoteQty`<0，是由于这些订单是cummulativeQuoteQty功能上线之前的订单。
+     |              ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1706:40
+     |
+1706 | * 某些订单中`cummulativeQuoteQty`<0，是由于这些订单是cummulativeQuoteQty功能上线之前的订单。
+     |                                                      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1720:4
+     |
+1720 |   "cummulativeQuoteQty": "0.0",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1769:4
+     |
+1769 |   "cummulativeQuoteQty": "8.00000000",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1811:4
+     |
+1811 |   "cummulativeQuoteQty": "0.0", // 累计交易的金额
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1859:6
+     |
+1859 |     "cummulativeQuoteQty": "0.0",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1895:11
+     |
+1895 | * 一些历史订单 `cummulativeQuoteQty`  < 0, 是指数据此时不存在。
+     |                 ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:1911:6
+     |
+1911 |     "cummulativeQuoteQty": "0.0",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:2037:8
+     |
+2037 |       "cummulativeQuoteQty": "0.00000000",
+     |        ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api_CN.md:2053:8
+     |
+2053 |       "cummulativeQuoteQty": "0.00000000",
+     |        ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG.md:601:62
+    |
+601 | *  POST api/v3/order `RESULT` and `FULL` responses now have `cummulativeQuoteQty`
+    |                                                              ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG.md:609:44
+    |
+609 | *  Order lookup endpoints will now return `cummulativeQuoteQty`. If `cummulativeQuoteQty` is < 0, it means the data isn't available for this order at this time.
+    |                                            ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG.md:609:70
+    |
+609 | *  Order lookup endpoints will now return `cummulativeQuoteQty`. If `cummulativeQuoteQty` is < 0, it means the data isn't available for this order at this time.
+    |                                                                      ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG.md:613:5
+    |
+613 | *  `cummulativeQuoteQty` field added to order responses and execution reports (as variable `Z`). Represents the cummulative amount of the `quote` that has been spent (with a `BUY` order) or received (with a `SELL` order). Historical orders will have a value < 0 in this field indicating the data is not available at this time. `cummulativeQuoteQty` divided by `cummulativeQty` will give the average price for an order.
+    |     ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG.md:613:113
+    |
+613 | *  `cummulativeQuoteQty` field added to order responses and execution reports (as variable `Z`). Represents the cummulative amount of the `quote` that has been spent (with a `BUY` order) or received (with a `SELL` order). Historical orders will have a value < 0 in this field indicating the data is not available at this time. `cummulativeQuoteQty` divided by `cummulativeQty` will give the average price for an order.
+    |                                                                                                                 ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG.md:613:329
+    |
+613 | *  `cummulativeQuoteQty` field added to order responses and execution reports (as variable `Z`). Represents the cummulative amount of the `quote` that has been spent (with a `BUY` order) or received (with a `SELL` order). Historical orders will have a value < 0 in this field indicating the data is not available at this time. `cummulativeQuoteQty` divided by `cummulativeQty` will give the average price for an order.
+    |                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^
+    |
+error: `cummulative` should be `cumulative`
+  --> ./CHANGELOG.md:613:362
+    |
+613 | *  `cummulativeQuoteQty` field added to order responses and execution reports (as variable `Z`). Represents the cummulative amount of the `quote` that has been spent (with a `BUY` order) or received (with a `SELL` order). Historical orders will have a value < 0 in this field indicating the data is not available at this time. `cummulativeQuoteQty` divided by `cummulativeQty` will give the average price for an order.
+    |                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^
+    |
+error: `occured` should be `occurred`
+  --> ./errors.md:14:21
+   |
+14 |  * An unknown error occured while processing the request.
+   |                     ^^^^^^^
+   |
+error: `cummulative` should be `cumulative`
+  --> ./faqs/spot_glossary_cn.md:60:2
+   |
+60 | `cummulativeQuoteQty`
+   |  ^^^^^^^^^^^
+   |
+error: `cummulative` should be `cumulative`
+  --> ./faqs/spot_glossary.md:60:2
+   |
+60 | `cummulativeQuoteQty`
+   |  ^^^^^^^^^^^
+   |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1481:4
+     |
+1481 |   "cummulativeQuoteQty": "10.00000000",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1502:4
+     |
+1502 |   "cummulativeQuoteQty": "10.00000000",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1592:31
+     |
+1592 | * For some historical orders `cummulativeQuoteQty` will be < 0, meaning the data is not available at this time.
+     |                               ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1607:4
+     |
+1607 |   "cummulativeQuoteQty": "0.0",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1658:4
+     |
+1658 |   "cummulativeQuoteQty": "0.00000000",
+     |    ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1697:6
+     |
+1697 |     "cummulativeQuoteQty": "0.000000",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1712:6
+     |
+1712 |     "cummulativeQuoteQty": "0.000000",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1748:10
+     |
+1748 |         "cummulativeQuoteQty": "0.000000",
+     |          ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1765:10
+     |
+1765 |         "cummulativeQuoteQty": "0.000000",
+     |          ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1839:6
+     |
+1839 |     "cummulativeQuoteQty": "0.00000000",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1854:6
+     |
+1854 |     "cummulativeQuoteQty": "0.00000000",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1898:8
+     |
+1898 |       "cummulativeQuoteQty": "0.000000",
+     |        ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:1991:6
+     |
+1991 |     "cummulativeQuoteQty": "0.0",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:2032:31
+     |
+2032 | * For some historical orders `cummulativeQuoteQty` will be < 0, meaning the data is not available at this time.
+     |                               ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:2046:6
+     |
+2046 |     "cummulativeQuoteQty": "0.0",
+     |      ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:2143:8
+     |
+2143 |       "cummulativeQuoteQty": "0.000000",
+     |        ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:2159:8
+     |
+2159 |       "cummulativeQuoteQty": "0.000000",
+     |        ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:2231:8
+     |
+2231 |       "cummulativeQuoteQty": "0.00000000",
+     |        ^^^^^^^^^^^
+     |
+error: `cummulative` should be `cumulative`
+  --> ./rest-api.md:2247:8
+     |
+2247 |       "cummulativeQuoteQty": "0.00000000",
+     |        ^^^^^^^^^^^
+     |

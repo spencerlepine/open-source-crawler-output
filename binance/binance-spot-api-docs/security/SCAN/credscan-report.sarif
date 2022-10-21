@@ -1,0 +1,266 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Secrets Audit",
+          "rules": [
+            {
+              "id": "CWE-312",
+              "help": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information.",
+                "markdown": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information."
+              },
+              "name": "High Entropy",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/312.html",
+              "shortDescription": {
+                "text": "Cleartext Storage of Sensitive Information."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Secrets Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "--config-path=/usr/local/src/lib/../credscan-config.toml",
+            "--path=/github/workspace",
+            "--leaks-exit-code=0",
+            "--no-git",
+            "--report=/github/workspace/reports/credscan-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "--config-path=/usr/local/src/lib/../credscan-config.toml --path=/github/workspace --leaks-exit-code=0 --no-git --report=/github/workspace/reports/credscan-report.json",
+          "endTimeUtc": "2022-10-21T08:47:16Z",
+          "workingDirectory": {
+            "uri": "https://github.com/binance/binance-spot-api-docs"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-21T08:47:16Z",
+          "workingDirectory": {
+            "uri": "https://github.com/binance/binance-spot-api-docs"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 4,
+          "critical": 0,
+          "high": 4,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine: apiKey | vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "apiKey | vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A"
+                  },
+                  "startLine": 213
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/binance/binance-spot-api-docs/rest-api.md"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "apiKey | vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A"
+                  },
+                  "endLine": 213,
+                  "startLine": 213
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "77fdf4bf14afa790",
+            "scanFileHash": "c3eb3daaf460a35a"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine: secretKey | NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7H5fATj0j\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "secretKey | NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7H5fATj0j"
+                  },
+                  "startLine": 214
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/binance/binance-spot-api-docs/rest-api.md"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "secretKey | NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7H5fATj0j"
+                  },
+                  "endLine": 214,
+                  "startLine": 214
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c79b2258a056aa93",
+            "scanFileHash": "c3eb3daaf460a35a"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine: apiKey | vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "apiKey | vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A"
+                  },
+                  "startLine": 129
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/binance/binance-spot-api-docs/rest-api_CN.md"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "apiKey | vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A"
+                  },
+                  "endLine": 129,
+                  "startLine": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "77fdf4bf14afa790",
+            "scanFileHash": "33463ce315060938"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine: secretKey | NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7H5fATj0j\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "secretKey | NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7H5fATj0j"
+                  },
+                  "startLine": 130
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/binance/binance-spot-api-docs/rest-api_CN.md"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "secretKey | NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7H5fATj0j"
+                  },
+                  "endLine": 130,
+                  "startLine": 130
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c79b2258a056aa93",
+            "scanFileHash": "33463ce315060938"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "fc3a10e6-5eb8-4ae7-a902-730d588b842e"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "ab5de54225d7224ee9f844d320facde2aaf087cf"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "fc3a10e6-5eb8-4ae7-a902-730d588b842e",
+      "runGuid": "5d58d1d6-d586-4589-aa5c-8222c6d552d7"
+    }
+  ]
+}
