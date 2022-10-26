@@ -1,0 +1,212 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Security Audit for Infrastructure",
+          "rules": [
+            {
+              "id": "CKV_DOCKER_3",
+              "help": {
+                "text": "Ensure that a user for the container has been created.",
+                "markdown": "Ensure that a user for the container has been created."
+              },
+              "name": "UserExists",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Ensure that a user for the container has been created."
+              },
+              "helpUri": "https://slscan.io?q=CKV_DOCKER_3",
+              "shortDescription": {
+                "text": "Ensure that a user for the container has been created."
+              }
+            },
+            {
+              "id": "CKV_DOCKER_2",
+              "help": {
+                "text": "Ensure that HEALTHCHECK instructions have been added to container images.",
+                "markdown": "Ensure that HEALTHCHECK instructions have been added to container images."
+              },
+              "name": "HealthcheckExists",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+              },
+              "helpUri": "https://slscan.io?q=CKV_DOCKER_2",
+              "shortDescription": {
+                "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Security Audit for Infrastructure"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-s",
+            "--framework",
+            "dockerfile",
+            "--quiet",
+            "--no-guide",
+            "-o",
+            "json",
+            "-d",
+            "/github/workspace"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-s --framework dockerfile --quiet --no-guide -o json -d /github/workspace",
+          "endTimeUtc": "2022-10-26T20:53:23Z",
+          "workingDirectory": {
+            "uri": "https://github.com/freeCodeCamp/news"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-26T20:53:23Z",
+          "workingDirectory": {
+            "uri": "https://github.com/freeCodeCamp/news"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 2,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 2
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that a user for the container has been created."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 FROM node:16-alpine\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/freeCodeCamp/news/docker/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 FROM node:16-alpine\nRUN npm install -g --progress=false serve@13\n\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0d2be1f2c6e85060",
+            "scanFileHash": "b14a0ce7ff569e97"
+          },
+          "ruleId": "CKV_DOCKER_3",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 FROM node:16-alpine\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/freeCodeCamp/news/docker/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 FROM node:16-alpine\nRUN npm install -g --progress=false serve@13\n\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0d2be1f2c6e85060",
+            "scanFileHash": "b14a0ce7ff569e97"
+          },
+          "ruleId": "CKV_DOCKER_2",
+          "ruleIndex": 1
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "581a5987-0cd6-426f-a9e9-93f578dbaca4"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "581a5987-0cd6-426f-a9e9-93f578dbaca4",
+      "runGuid": "aaa54811-01c5-45f3-8571-ea5827e994f3"
+    }
+  ]
+}

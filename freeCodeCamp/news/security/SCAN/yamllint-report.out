@@ -1,0 +1,5 @@
+/github/workspace/docker/ghost/content/espanol/settings/routes.yaml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker/ghost/content/english/settings/routes.yaml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker/ghost/content/chinese/settings/routes.yaml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker/docker-compose.test.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker/ghost/docker-compose.yml:1:1: [warning] missing document start "---" (document-start)

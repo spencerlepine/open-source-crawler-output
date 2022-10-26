@@ -1,0 +1,1291 @@
+## Detected Typos
+error: `Modifed` should be `Modified`
+  --> ./src/sitemaps/schemas/siteindex.xsd:10:12
+   |
+10 |       Last Modifed 2009-04-08
+   |            ^^^^^^^
+   |
+error: `Modifed` should be `Modified`
+  --> ./src/sitemaps/schemas/sitemap.xsd:13:12
+   |
+13 |       Last Modifed 2008-03-26
+   |            ^^^^^^^
+   |
+error: `defered` should be `deferred`
+  --> ./src/_includes/layouts/default.njk:58:65
+   |
+58 |         {# Pulls scripts that can be safely cached and placed / defered
+   |                                                                 ^^^^^^^
+   |
+error: `ture` should be `true`
+  --> ./src/amp-pages/amp-pages.njk:6:29
+  |
+6 |   addAllPagesToCollections: ture
+  |                             ^^^^
+  |
+error: `Autor` should be `Author`
+  --> ./config/i18n/locales/portuguese/translations.json:47:18
+   |
+47 |       "author": "Autor: {{ name }} (em {{ locale }})",
+   |                  ^^^^^
+   |
+error: `autor` should be `author`
+  --> ./config/i18n/locales/portuguese/translations.json:88:45
+   |
+88 |       "copyright": "Política de direitos de autor"
+   |                                             ^^^^^
+   |
+error: `regulares` should be `regulars`
+  --> ./config/i18n/locales/portuguese/meta-tags.json:3:86
+  |
+3 |   "keywords": "freeCodeCamp, programação, front-end, programador, artigo, expressões regulares, Python, JavaScript, AWS, JSON, HTML, CSS, Bootstrap, React, Vue, Webpack",
+  |                                                                                      ^^^^^^^^^
+  |
+error: `supportare` should be `supporters`
+  --> ./config/i18n/locales/italian/translations.json:17:40
+   |
+17 |     "authenticated-donor": "Grazie per supportare freeCodeCamp con le {{ <0> }}tue donazioni{{ </0> }}."
+   |                                        ^^^^^^^^^^
+   |
+error: `programmare` should be `programmer`
+  --> ./config/i18n/locales/italian/translations.json:44:34
+   |
+44 |   "learn-to-code-cta": "Impara a programmare gratuitamente. Il curriculum open source di freeCodeCamp ha aiutato più di 40.ooo persone ad ottenere un lavoro come programmatori. {{ <0> }}Inizia{{ </0> }}",
+   |                                  ^^^^^^^^^^^
+   |
+error: `Stati` should be `Statuses`
+  --> ./config/i18n/locales/italian/translations.json:68:169
+   |
+68 |     "tax-exempt-status": "freeCodeCamp è una organizazione no-profit 501(c)(3) esentasse supportata da donazioni (Numero di identificazione per le tasse federali negli Stati Uniti d'America: 82-0779546)",
+   |                                                                                                                                                                         ^^^^^
+   |
+error: `studi` should be `study`, `studio`
+  --> ./config/i18n/locales/italian/translations.json:69:301
+   |
+69 |     "mission-statement": "La nostra missione: aiutare le persone a imparare a programamre gratuitamente. Portiamo avanti la nostra missione creando centinaia di video, articoli, e lezioni di programmazione interattive, tutto disponibile gratuitamente al pubblico. Abbiamo anche migliaia di gruppi di studi di freeCodeCamp attorno al mondo.",
+   |                                                                                                                                                                                                                                                                                                             ^^^^^
+   |
+error: `programmare` should be `programmer`
+  --> ./config/i18n/locales/italian/meta-tags.json:4:28
+  |
+4 |   "description": "Impara a programmare gratuitamente! Tutorial di programmazione su Python, JavaScript, Linux e molto altro."
+  |                            ^^^^^^^^^^^
+  |
+error: `sytax` should be `syntax`
+  --> ./config/i18n/locales/english/serve.json:84:50
+   |
+84 |       "source": "/sql-order-by-statement-example-sytax",
+   |                                                  ^^^^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:489:73
+    |
+489 |       "source": "/how-to-get-up-and-running-with-angular-on-windows-7405ba745c25",
+    |                                                                         ^^
+    |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:494:23
+    |
+494 |       "source": "/7405ba745c25",
+    |                       ^^
+    |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:1524:25
+     |
+1524 |       "source": "/9935a0ba074b",
+     |                         ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:1529:89
+     |
+1529 |       "source": "/why-net-technologies-are-and-will-keep-powering-our-application-9935a0ba074b",
+     |                                                                                         ^^
+     |
+error: `cace` should be `cache`
+  --> ./config/i18n/locales/english/serve.json:1659:22
+     |
+1659 |       "source": "/7c1cace99de5",
+     |                      ^^^^
+     |
+error: `deine` should be `define`
+  --> ./config/i18n/locales/german/translations.json:9:31
+  |
+9 |     "accessible-name": "Sende deine Suchanfrage ab",
+  |                               ^^^^^
+  |
+error: `alle` should be `all`, `alley`
+  --> ./config/i18n/locales/german/translations.json:11:27
+   |
+11 |     "see-results": "Zeige alle Ergebnisse für {{ searchQuery }}",
+   |                           ^^^^
+   |
+error: `deine` should be `define`
+  --> ./config/i18n/locales/german/translations.json:17:84
+   |
+17 |     "authenticated-donor": "Vielen Dank dafür, dass du freeCodeCamp durch {{ <0> }}deine Spenden{{ </0> }} unterstützt."
+   |                                                                                    ^^^^^
+   |
+error: `Autor` should be `Author`
+  --> ./config/i18n/locales/german/translations.json:36:71
+   |
+36 |       "tweet-a-thanks": "Wenn du bis hierher gelesen hast, tweete dem Autor, um ihm zu zeigen, dass du ihn schätzt. {{ <0> }}Tweete ein Dankeschön{{ </0> }}",
+   |                                                                       ^^^^^
+   |
+error: `als` should be `also`
+  --> ./config/i18n/locales/german/translations.json:44:113
+   |
+44 |   "learn-to-code-cta": "Lerne kostenlos programmieren. Der Open-Source-Lehrplan von freeCodeCamp hat schon mehr als 40.000 Menschen geholfen, einen Job als Entwickler zu finden. Los geht's {{ <0> }}Beginnen{{ </0> }}",
+   |                                                                                                                 ^^^
+   |
+error: `als` should be `also`
+  --> ./config/i18n/locales/german/translations.json:44:153
+   |
+44 |   "learn-to-code-cta": "Lerne kostenlos programmieren. Der Open-Source-Lehrplan von freeCodeCamp hat schon mehr als 40.000 Menschen geholfen, einen Job als Entwickler zu finden. Los geht's {{ <0> }}Beginnen{{ </0> }}",
+   |                                                                                                                                                         ^^^
+   |
+error: `Autor` should be `Author`
+  --> ./config/i18n/locales/german/translations.json:47:18
+   |
+47 |       "author": "Autor: {{ name }} ({{ locale }})",
+   |                  ^^^^^
+   |
+error: `Spanisch` should be `Spanish`
+  --> ./config/i18n/locales/german/translations.json:59:19
+   |
+59 |       "espanol": "Spanisch",
+   |                   ^^^^^^^^
+   |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./config/i18n/locales/german/translations.json:71:40
+   |
+71 |     "tax-exempt-status": "freeCodeCamp ist eine von Spenden unterstützte, steuerbefreite 501(c)(3) gemeinnützige Organisation (United States Federal Tax Identification Number: 82-0779546)",
+   |                                        ^^^
+   |
+error: `deine` should be `define`
+  --> ./config/i18n/locales/german/meta-tags.json:4:189
+  |
+4 |   "description": "Stöbere in Tausenden von Programmiertutorials, die von Experten geschrieben wurden. Lerne Webentwicklung, Data Science, DevOps, Software-Sicherheit und hol dir Tipps für deine Karriere als Entwickler."
+  |                                                                                                                                                                                             ^^^^^
+  |
+error: `als` should be `also`
+  --> ./config/i18n/locales/german/meta-tags.json:4:204
+  |
+4 |   "description": "Stöbere in Tausenden von Programmiertutorials, die von Experten geschrieben wurden. Lerne Webentwicklung, Data Science, DevOps, Software-Sicherheit und hol dir Tipps für deine Karriere als Entwickler."
+  |                                                                                                                                                                                                            ^^^
+  |
+error: `tutoriales` should be `tutorials`
+  --> ./config/i18n/locales/espanol/translations.json:10:33
+   |
+10 |     "placeholder": "Buscar 300+ tutoriales",
+   |                                 ^^^^^^^^^^
+   |
+error: `tutoriales` should be `tutorials`
+  --> ./config/i18n/locales/espanol/translations.json:12:40
+   |
+12 |     "no-tutorials": "No se encontraron tutoriales"
+   |                                        ^^^^^^^^^^
+   |
+error: `autor` should be `author`
+  --> ./config/i18n/locales/espanol/translations.json:36:64
+   |
+36 |       "tweet-a-thanks": "Si leíste hasta aquí, haz un tweet al autor para mostrarle que te importa su trabajo. {{ <0> }}Realiza un Tweet de agradecimiento{{ </0> }}",
+   |                                                                ^^^^^
+   |
+error: `Autor` should be `Author`
+  --> ./config/i18n/locales/espanol/translations.json:47:18
+   |
+47 |       "author": "Autor: {{ name }} ({{ locale }})",
+   |                  ^^^^^
+   |
+error: `tendencias` should be `tendencies`
+  --> ./config/i18n/locales/espanol/translations.json:72:34
+   |
+72 |     "trending-guides": "Guías de tendencias",
+   |                                  ^^^^^^^^^^
+   |
+error: `autor` should be `author`
+  --> ./config/i18n/locales/espanol/translations.json:85:45
+   |
+85 |       "copyright": "Política de derechos de autor"
+   |                                             ^^^^^
+   |
+error: `Cursos` should be `Cursors`, `Cursor`
+  --> ./config/i18n/locales/espanol/meta-tags.json:2:13
+  |
+2 |   "title": "Cursos de programación freeCodeCamp en Español: Python, JavaScript, Git y más",
+  |             ^^^^^^
+  |
+error: `regulares` should be `regulars`
+  --> ./config/i18n/locales/espanol/meta-tags.json:3:90
+  |
+3 |   "keywords": "freeCodeCamp, programación, front-end, programador, artículo, expresiones regulares, Python, JavaScript, AWS, JSON, HTML, CSS, Bootstrap, React, Vue, Webpack",
+  |                                                                                          ^^^^^^^^^
+  |
+error: `cursos` should be `cursors`, `cursor`
+  --> ./config/i18n/locales/espanol/meta-tags.json:4:37
+  |
+4 |   "description": "Descubre miles de cursos de programación escritos por expertos. Aprende Desarrollo Web, Ciencia de Datos, DevOps, Seguridad y obtén asesoramiento profesional para desarrolladores."
+  |                                     ^^^^^^
+  |
+error: `expertos` should be `experts`
+  --> ./config/i18n/locales/espanol/meta-tags.json:4:73
+  |
+4 |   "description": "Descubre miles de cursos de programación escritos por expertos. Aprende Desarrollo Web, Ciencia de Datos, DevOps, Seguridad y obtén asesoramiento profesional para desarrolladores."
+  |                                                                         ^^^^^^^^
+  |
+error: `cace` should be `cache`
+  --> ./config/i18n/locales/english/serve.json:1664:92
+     |
+1664 |       "source": "/components-testing-in-react-what-and-how-to-test-with-jest-and-enzyme-7c1cace99de5",
+     |                                                                                            ^^^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:2554:24
+     |
+2554 |       "source": "/6fc42ba7c4a3",
+     |                        ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:2559:70
+     |
+2559 |       "source": "/a-simplified-introduction-to-dart-and-flutter-6fc42ba7c4a3",
+     |                                                                      ^^
+     |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:2799:74
+     |
+2799 |       "source": "/how-to-choose-the-right-online-course-or-platform-when-youre-learning-to-code-9ae77fd3504a",
+     |                                                                          ^^^^^
+     |
+error: `whos` should be `whose`
+  --> ./config/i18n/locales/english/serve.json:2869:38
+     |
+2869 |       "source": "/if-you-a-developer-whos-obsessed-with-learning-check-out-these-resources-94dd26ed5dbd",
+     |                                      ^^^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:2984:29
+     |
+2984 |       "source": "/f1364e2e77ba",
+     |                             ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:2985:89
+     |
+2985 |       "destination": "/news/how-to-columnize-your-code-to-improve-readability-f1364e2e77ba",
+     |                                                                                         ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:2989:101
+     |
+2989 |       "source": "/why-you-should-use-column-indentation-to-improve-your-codes-readability-f1364e2e77ba",
+     |                                                                                                     ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:2990:89
+     |
+2990 |       "destination": "/news/how-to-columnize-your-code-to-improve-readability-f1364e2e77ba",
+     |                                                                                         ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:3104:25
+     |
+3104 |       "source": "/cc6936ba0b99",
+     |                         ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:3109:86
+     |
+3109 |       "source": "/what-you-need-to-know-about-the-future-of-bitcoin-technology-cc6936ba0b99",
+     |                                                                                      ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:3374:28
+     |
+3374 |       "source": "/d0d23fa06ba4",
+     |                            ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:3379:59
+     |
+3379 |       "source": "/javascript-closures-simplified-d0d23fa06ba4",
+     |                                                           ^^
+     |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:3749:24
+     |
+3749 |       "source": "/fae94ded9c84",
+     |                        ^^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:4524:19
+     |
+4524 |       "source": "/ba8bb6975597",
+     |                   ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:5214:24
+     |
+5214 |       "source": "/68d28ba22f92",
+     |                        ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:5394:22
+     |
+5394 |       "source": "/6a9ba6d8bbd0",
+     |                      ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:5395:119
+     |
+5395 |       "destination": "/news/all-2017-flagship-phones-have-glaring-compromises-heres-what-they-tell-us-about-design-6a9ba6d8bbd0",
+     |                                                                                                                       ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:5439:29
+     |
+5439 |       "source": "/5ee6bc2f40ba",
+     |                             ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:5574:28
+     |
+5574 |       "source": "/7b07d84e7ba5",
+     |                            ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:6104:22
+     |
+6104 |       "source": "/918ba054c004",
+     |                      ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:6105:72
+     |
+6105 |       "destination": "/news/asl-recognition-using-transfer-learning-918ba054c004",
+     |                                                                        ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:6124:20
+     |
+6124 |       "source": "/2ba02ae077b3",
+     |                    ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:6294:28
+     |
+6294 |       "source": "/719549789ba4",
+     |                            ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:6379:21
+     |
+6379 |       "source": "/41ba0c1b2789",
+     |                     ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:6639:25
+     |
+6639 |       "source": "/b7de33ba088",
+     |                         ^^
+     |
+error: `ede` should be `edge`
+  --> ./config/i18n/locales/english/serve.json:6669:22
+     |
+6669 |       "source": "/a49ede90d8e9",
+     |                      ^^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:7149:24
+     |
+7149 |       "source": "/f0660ba69add",
+     |                        ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8089:23
+     |
+8089 |       "source": "/d996ba8c3889",
+     |                       ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8159:29
+     |
+8159 |       "source": "/aaa8605902ba",
+     |                             ^^
+     |
+error: `ede` should be `edge`
+  --> ./config/i18n/locales/english/serve.json:8254:28
+     |
+8254 |       "source": "/d2f7cdb55ede",
+     |                            ^^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8349:24
+     |
+8349 |       "source": "/40165ba3aee2",
+     |                        ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8499:26
+     |
+8499 |       "source": "/c779043ba655",
+     |                          ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8824:23
+     |
+8824 |       "source": "/7c77ba0eaa35",
+     |                       ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8825:83
+     |
+8825 |       "destination": "/news/express-js-and-aws-lambda-a-serverless-love-story-7c77ba0eaa35",
+     |                                                                                   ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8924:29
+     |
+8924 |       "source": "/1712f651e5ba",
+     |                             ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:8925:96
+     |
+8925 |       "destination": "/news/finding-your-first-open-source-project-or-bug-to-work-on-1712f651e5ba",
+     |                                                                                                ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:9374:22
+     |
+9374 |       "source": "/650ba23dc6d9",
+     |                      ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:9375:94
+     |
+9375 |       "destination": "/news/get-sheet-done-using-google-spreadsheets-as-your-data-backend-650ba23dc6d9",
+     |                                                                                              ^^
+     |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:9579:23
+     |
+9579 |       "source": "/d401ba346eeb",
+     |                       ^^
+     |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:9679:25
+     |
+9679 |       "source": "/68e9d9ded283",
+     |                         ^^^
+     |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:9680:71
+     |
+9680 |       "destination": "/news/graphql-front-end-queries-made-easy-68e9d9ded283",
+     |                                                                       ^^^
+     |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:10129:25
+      |
+10129 |       "source": "/7ee187ded22d",
+      |                         ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:10199:25
+      |
+10199 |       "source": "/103846ba640e",
+      |                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:10200:113
+      |
+10200 |       "destination": "/news/how-65-new-developers-with-no-previous-coding-experience-got-their-first-jobs-103846ba640e",
+      |                                                                                                                 ^^
+      |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:10219:24
+      |
+10219 |       "source": "/50226ded1708",
+      |                        ^^^
+      |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:10220:110
+      |
+10220 |       "destination": "/news/how-a-hackathon-is-kind-of-like-real-life-triathalon-but-with-more-caffeine-50226ded1708",
+      |                                                                                                              ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:10254:19
+      |
+10254 |       "source": "/ba692cb6eae4",
+      |                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:10255:75
+      |
+10255 |       "destination": "/news/how-ai-can-learn-to-generate-pictures-of-cats-ba692cb6eae4",
+      |                                                                           ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:10774:22
+      |
+10774 |       "source": "/3d4ba04dee9f",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:10775:102
+      |
+10775 |       "destination": "/news/how-i-created-a-python-bot-to-automatically-log-into-a-captive-portal-3d4ba04dee9f",
+      |                                                                                                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:11674:29
+      |
+11674 |       "source": "/6389959265ba",
+      |                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:11675:102
+      |
+11675 |       "destination": "/news/how-to-add-support-for-gift-cards-on-your-ethereum-based-dapps-6389959265ba",
+      |                                                                                                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:11869:24
+      |
+11869 |       "source": "/a5df9ba9436e",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:11870:89
+      |
+11870 |       "destination": "/news/how-to-become-a-web-developer-without-losing-your-mind-a5df9ba9436e",
+      |                                                                                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:11904:19
+      |
+11904 |       "source": "/ba54651182c8",
+      |                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:11905:92
+      |
+11905 |       "destination": "/news/how-to-boost-your-app-store-rating-with-a-simple-easy-approach-ba54651182c8",
+      |                                                                                            ^^
+      |
+error: `andriod` should be `android`
+  --> ./config/i18n/locales/english/serve.json:12530:88
+      |
+12530 |       "destination": "/news/how-to-build-cross-origin-communication-bridges-in-ios-and-andriod-7baef82b3f02",
+      |                                                                                        ^^^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:12544:28
+      |
+12544 |       "source": "/72214aaf6ba3",
+      |                            ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:12545:86
+      |
+12545 |       "destination": "/news/how-to-build-historical-price-charts-with-d3-js-72214aaf6ba3",
+      |                                                                                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:12654:20
+      |
+12654 |       "source": "/8ba6ffa2573d",
+      |                    ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:12655:74
+      |
+12655 |       "destination": "/news/how-to-build-your-own-uber-for-x-app-part-2-8ba6ffa2573d",
+      |                                                                          ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:12874:19
+      |
+12874 |       "source": "/ba985eaae66e",
+      |                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:12875:98
+      |
+12875 |       "destination": "/news/how-to-convert-an-angular-app-to-a-react-app-one-component-at-a-time-ba985eaae66e",
+      |                                                                                                  ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:13484:29
+      |
+13484 |       "source": "/95d4d7fad9ba",
+      |                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:13485:74
+      |
+13485 |       "destination": "/news/how-to-develop-your-data-instincts-95d4d7fad9ba",
+      |                                                                          ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:13679:22
+      |
+13679 |       "source": "/bb0ba779e21c",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:13680:71
+      |
+13680 |       "destination": "/news/how-to-get-a-grip-on-cross-validations-bb0ba779e21c",
+      |                                                                       ^^
+      |
+error: `addd` should be `add`
+  --> ./config/i18n/locales/english/serve.json:13689:21
+      |
+13689 |       "source": "/32addd16349e",
+      |                     ^^^^
+      |
+error: `addd` should be `add`
+  --> ./config/i18n/locales/english/serve.json:13690:93
+      |
+13690 |       "destination": "/news/how-to-get-a-grip-on-the-four-constructs-of-an-rxjava-routine-32addd16349e",
+      |                                                                                             ^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:13714:20
+      |
+13714 |       "source": "/8ba291d11c62",
+      |                    ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:13715:92
+      |
+13715 |       "destination": "/news/how-to-get-a-technical-talk-accepted-at-a-conference-or-event-8ba291d11c62",
+      |                                                                                            ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:13945:53
+      |
+13945 |       "destination": "/news/how-to-get-unstuck-when-youre-feeling-overwhelmed-by-all-those-helpful-online-programming-courses-3bdc5023ffb",
+      |                                                     ^^^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:13964:25
+      |
+13964 |       "source": "/342db1daa39",
+      |                         ^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:13965:106
+      |
+13965 |       "destination": "/news/how-to-get-your-first-tag-badge-on-stackoverflow-and-why-its-important-342db1daa39",
+      |                                                                                                          ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14099:25
+      |
+14099 |       "source": "/ed06d3ba6257",
+      |                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14100:91
+      |
+14100 |       "destination": "/news/how-to-implement-an-object-pool-with-an-actor-in-kotlin-ed06d3ba6257",
+      |                                                                                           ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:14290:69
+      |
+14290 |       "destination": "/news/how-to-interview-your-interviewers-when-youre-looking-for-a-job-d848bc3a910",
+      |                                                                     ^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14549:19
+      |
+14549 |       "source": "/ba16515a32fa",
+      |                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14550:88
+      |
+14550 |       "destination": "/news/how-to-make-an-augmented-reality-app-using-arkit-and-unity-ba16515a32fa",
+      |                                                                                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14884:26
+      |
+14884 |       "source": "/d5eade9ba89f",
+      |                          ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14885:85
+      |
+14885 |       "destination": "/news/how-to-optimize-your-javascript-apps-using-loops-d5eade9ba89f",
+      |                                                                                     ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14929:25
+      |
+14929 |       "source": "/e9b607ba6173",
+      |                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:14930:108
+      |
+14930 |       "destination": "/news/how-to-pass-oracles-java-certifications-a-practical-guide-for-developers-e9b607ba6173",
+      |                                                                                                            ^^
+      |
+error: `pyton` should be `python`
+  --> ./config/i18n/locales/english/serve.json:15040:46
+      |
+15040 |       "destination": "/news/how-to-publish-a-pyton-package-on-pypi-a89e9522ce24",
+      |                                              ^^^^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:15160:81
+      |
+15160 |       "destination": "/news/how-to-run-a-successful-development-process-even-if-youre-not-technical-185d0558c89a",
+      |                                                                                 ^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:15214:25
+      |
+15214 |       "source": "/f691b7ba3acf",
+      |                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:15215:109
+      |
+15215 |       "destination": "/news/how-to-scale-microservices-with-message-queues-spring-boot-and-kubernetes-f691b7ba3acf",
+      |                                                                                                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:15279:19
+      |
+15279 |       "source": "/ba490b893292",
+      |                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:15280:84
+      |
+15280 |       "destination": "/news/how-to-send-notifications-to-your-web-app-using-python-ba490b893292",
+      |                                                                                    ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:15290:57
+      |
+15290 |       "destination": "/news/how-to-set-up-a-database-if-youre-a-front-end-developer-3ed945221219",
+      |                                                         ^^^^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:15365:79
+      |
+15365 |       "destination": "/news/how-to-set-up-gulp-sass-using-the-command-line-if-youre-a-beginner-17729f53249",
+      |                                                                               ^^^^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:15525:61
+      |
+15525 |       "destination": "/news/how-to-solve-a-cms-problem-when-youre-caught-between-restful-wordpress-and-a-hard-place-77bbebe49e1b",
+      |                                                             ^^^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:15614:26
+      |
+15614 |       "source": "/84b5ad0daa51",
+      |                          ^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:15615:87
+      |
+15615 |       "destination": "/news/how-to-stress-test-your-website-with-apache-jmeter-84b5ad0daa51",
+      |                                                                                       ^^^
+      |
+error: `afe` should be `safe`
+  --> ./config/i18n/locales/english/serve.json:15749:23
+      |
+15749 |       "source": "/6905afe4fd5a",
+      |                       ^^^
+      |
+error: `afe` should be `safe`
+  --> ./config/i18n/locales/english/serve.json:15750:99
+      |
+15750 |       "destination": "/news/how-to-train-your-own-faceid-cnn-using-tensorflow-eager-execution-6905afe4fd5a",
+      |                                                                                                   ^^^
+      |
+error: `theyre` should be `their`, `there`
+  --> ./config/i18n/locales/english/serve.json:15990:60
+      |
+15990 |       "destination": "/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773",
+      |                                                            ^^^^^^
+      |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:16119:24
+      |
+16119 |       "source": "/b40f4ded87ef",
+      |                        ^^^
+      |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:16120:115
+      |
+16120 |       "destination": "/news/how-to-use-the-browser-console-to-scrape-and-save-data-in-a-file-with-javascript-b40f4ded87ef",
+      |                                                                                                                   ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:16684:29
+      |
+16684 |       "source": "/7a592ea287ba",
+      |                             ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:16685:68
+      |
+16685 |       "destination": "/news/how-you-can-learn-git-and-github-while-youre-learning-to-code-7a592ea287ba",
+      |                                                                    ^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:16685:101
+      |
+16685 |       "destination": "/news/how-you-can-learn-git-and-github-while-youre-learning-to-code-7a592ea287ba",
+      |                                                                                                     ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:16789:19
+      |
+16789 |       "source": "/ba8f979ebd96",
+      |                   ^^
+      |
+error: `afe` should be `safe`
+  --> ./config/i18n/locales/english/serve.json:16874:19
+      |
+16874 |       "source": "/afe36a99d309",
+      |                   ^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:17259:22
+      |
+17259 |       "source": "/cb0daa1aa76b",
+      |                      ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:17639:25
+      |
+17639 |       "source": "/6b5577ba2bc2",
+      |                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:17804:26
+      |
+17804 |       "source": "/a7d0158ba9a3",
+      |                          ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:17829:21
+      |
+17829 |       "source": "/27ba3d9a2839",
+      |                     ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:17954:24
+      |
+17954 |       "source": "/1de22ba168f3",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:18284:24
+      |
+18284 |       "source": "/c94e0ba1c57a",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:18419:27
+      |
+18419 |       "source": "/ac2ada05ba14",
+      |                           ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:18420:113
+      |
+18420 |       "destination": "/news/lessons-i-learned-in-my-first-months-as-a-non-traditional-software-engineer-ac2ada05ba14",
+      |                                                                                                                 ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:18504:20
+      |
+18504 |       "source": "/8ba3266c29ae",
+      |                    ^^
+      |
+error: `ded` should be `dead`
+  --> ./config/i18n/locales/english/serve.json:18549:28
+      |
+18549 |       "source": "/90f2e1f68ded",
+      |                            ^^^
+      |
+error: `eacf` should be `each`
+  --> ./config/i18n/locales/english/serve.json:18684:20
+      |
+18684 |       "source": "/5eacf3eb00ca",
+      |                    ^^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:19214:27
+      |
+19214 |       "source": "/f82f88b5daa1",
+      |                           ^^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:19490:38
+      |
+19490 |       "destination": "/news/now-that-youre-not-afraid-of-git-anymore-here-s-how-to-leverage-what-you-know-11e710c7f37b",
+      |                                      ^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:19599:21
+      |
+19599 |       "source": "/c0ba7b32ffd",
+      |                     ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:19604:29
+      |
+19604 |       "source": "/7d87038362ba",
+      |                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:19904:22
+      |
+19904 |       "source": "/f54ba4d51891",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:19905:67
+      |
+19905 |       "destination": "/news/prototyping-the-future-of-devtools-f54ba4d51891",
+      |                                                                   ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:20555:73
+      |
+20555 |       "destination": "/news/science-backed-methods-to-keep-in-mind-when-youre-learning-new-things-34c00b35cbf",
+      |                                                                         ^^^^^
+      |
+error: `neccessary` should be `necessary`
+  --> ./config/i18n/locales/english/serve.json:20650:48
+      |
+20650 |       "destination": "/news/seo-vs-react-is-it-neccessary-to-render-react-pages-in-the-backend-74ce5015c0c9",
+      |                                                ^^^^^^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:20669:23
+      |
+20669 |       "source": "/e0b7ba37653f",
+      |                       ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:20684:28
+      |
+20684 |       "source": "/b23cca2b2ba2",
+      |                            ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:20929:21
+      |
+20929 |       "source": "/a1ba1e0b9575",
+      |                     ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:21549:25
+      |
+21549 |       "source": "/88d6a5ba1862",
+      |                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:21550:77
+      |
+21550 |       "destination": "/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862",
+      |                                                                             ^^
+      |
+error: `theyre` should be `their`, `there`
+  --> ./config/i18n/locales/english/serve.json:21570:81
+      |
+21570 |       "destination": "/news/the-2018-new-coder-survey-31-000-people-told-us-how-theyre-learning-to-code-and-getting-dev-jobs-e10feb9ed419",
+      |                                                                                 ^^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:21604:22
+      |
+21604 |       "source": "/d87ba925549b",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:21605:97
+      |
+21605 |       "destination": "/news/the-absolute-beginners-guide-to-learning-web-development-in-2018-d87ba925549b",
+      |                                                                                                 ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:22264:29
+      |
+22264 |       "source": "/faec2c8bc7ba",
+      |                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:22265:65
+      |
+22265 |       "destination": "/news/the-machine-made-playlist-faec2c8bc7ba",
+      |                                                                 ^^
+      |
+error: `africas` should be `africans`
+  --> ./config/i18n/locales/english/serve.json:22465:55
+      |
+22465 |       "destination": "/news/the-phenomenal-mindset-of-africas-future-leaders-6045176bb54b",
+      |                                                       ^^^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:22484:29
+      |
+22484 |       "source": "/2902d074f5ba",
+      |                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:22485:79
+      |
+22485 |       "destination": "/news/the-post-i-hoped-to-write-for-18-months-2902d074f5ba",
+      |                                                                               ^^
+      |
+error: `aadd` should be `add`
+  --> ./config/i18n/locales/english/serve.json:22689:19
+      |
+22689 |       "source": "/aadd93b09849",
+      |                   ^^^^
+      |
+error: `aadd` should be `add`
+  --> ./config/i18n/locales/english/serve.json:22690:74
+      |
+22690 |       "destination": "/news/the-tactical-networking-guide-for-introverts-aadd93b09849",
+      |                                                                          ^^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:22799:19
+      |
+22799 |       "source": "/daa2027dcd3",
+      |                   ^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:22800:77
+      |
+22800 |       "destination": "/news/the-ultimate-guide-to-web-scraping-with-node-js-daa2027dcd3",
+      |                                                                             ^^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:22820:89
+      |
+22820 |       "destination": "/news/the-ups-and-downs-of-building-and-marketing-a-chat-bot-when-youre-14-8a072830b43c",
+      |                                                                                         ^^^^^
+      |
+error: `daa` should be `data`
+  --> ./config/i18n/locales/english/serve.json:23074:23
+      |
+23074 |       "source": "/c5d4daa8519",
+      |                       ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:23189:22
+      |
+23189 |       "source": "/4f7ba5db8795",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:23924:24
+      |
+23924 |       "source": "/fa0a8ba753c",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24129:20
+      |
+24129 |       "source": "/2ba6133ca4ed",
+      |                    ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24130:86
+      |
+24130 |       "destination": "/news/web-caching-explained-by-buying-milk-at-the-supermarket-2ba6133ca4ed",
+      |                                                                                      ^^
+      |
+error: `afe` should be `safe`
+  --> ./config/i18n/locales/english/serve.json:24134:25
+      |
+24134 |       "source": "/d5eb27afe632",
+      |                         ^^^
+      |
+error: `afe` should be `safe`
+  --> ./config/i18n/locales/english/serve.json:24135:106
+      |
+24135 |       "destination": "/news/web-dev-bootcamp-grads-things-to-know-when-starting-your-first-dev-job-d5eb27afe632",
+      |                                                                                                          ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24374:26
+      |
+24374 |       "source": "/952e756ba586",
+      |                          ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24414:21
+      |
+24414 |       "source": "/29ba49c9b851",
+      |                     ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24474:20
+      |
+24474 |       "source": "/3ba36107fd13",
+      |                    ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24629:24
+      |
+24629 |       "source": "/22431ba27d78",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24679:23
+      |
+24679 |       "source": "/6b92ba13070d",
+      |                       ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24729:24
+      |
+24729 |       "source": "/b05a3ba0ca7b",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24889:19
+      |
+24889 |       "source": "/ba615b19fb3b",
+      |                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24939:23
+      |
+24939 |       "source": "/e806ba55a81f",
+      |                       ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:24954:28
+      |
+24954 |       "source": "/e7ccb6629ba7",
+      |                            ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25014:29
+      |
+25014 |       "source": "/128221d302ba",
+      |                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25015:80
+      |
+25015 |       "destination": "/news/why-clojurescript-works-so-well-with-npm-128221d302ba",
+      |                                                                                ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25099:26
+      |
+25099 |       "source": "/1f308a2ba7b5",
+      |                          ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25100:84
+      |
+25100 |       "destination": "/news/why-feeling-uncomfortable-is-the-key-to-success-1f308a2ba7b5",
+      |                                                                                    ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25124:29
+      |
+25124 |       "source": "/58dbc16959ba",
+      |                             ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25125:83
+      |
+25125 |       "destination": "/news/why-i-avoid-developing-app-idea-for-friends-58dbc16959ba",
+      |                                                                                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25269:22
+      |
+25269 |       "source": "/f74ba3f174e3",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25270:90
+      |
+25270 |       "destination": "/news/why-im-teaching-younger-students-at-my-school-how-to-code-f74ba3f174e3",
+      |                                                                                          ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:25290:67
+      |
+25290 |       "destination": "/news/why-learn-by-dates-make-you-fail-when-youre-learning-to-code-f1ac2bc41ea5",
+      |                                                                   ^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25324:19
+      |
+25324 |       "source": "/ba586038949e",
+      |                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25325:105
+      |
+25325 |       "destination": "/news/why-open-source-projects-sadly-favor-new-users-and-what-you-can-do-about-it-ba586038949e",
+      |                                                                                                         ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25379:22
+      |
+25379 |       "source": "/239ba37209e",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25380:72
+      |
+25380 |       "destination": "/news/why-side-projects-are-so-damn-important-239ba37209e",
+      |                                                                        ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:25485:71
+      |
+25485 |       "destination": "/news/why-you-learn-the-most-when-you-feel-like-youre-struggling-as-a-developer-7513327c8ee4",
+      |                                                                       ^^^^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:25590:70
+      |
+25590 |       "destination": "/news/why-you-should-write-merge-requests-like-youre-posting-to-instagram-765e32a3ec9c",
+      |                                                                      ^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25854:22
+      |
+25854 |       "source": "/be0ba9697885",
+      |                      ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./config/i18n/locales/english/serve.json:25855:76
+      |
+25855 |       "destination": "/news/you-might-not-need-that-15k-coding-bootcamp-be0ba9697885",
+      |                                                                            ^^
+      |
+error: `youre` should be `your`
+  --> ./config/i18n/locales/english/serve.json:25870:60
+      |
+25870 |       "destination": "/news/you-need-these-cheat-sheets-if-youre-tackling-machine-learning-algorithms-45da5743888e",
+      |                                                            ^^^^^
+      |
