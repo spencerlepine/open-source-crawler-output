@@ -1,0 +1,5 @@
+{"Package": "@nicolo-ribaudo/eslint-scope-5-internals", "Used?": "No", "Risk Score": "0.79", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "@snyk/github-codeowners", "Used?": "No", "Risk Score": "0.84", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "es-shim-unscopables", "Used?": "No", "Risk Score": "0.84", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "has-property-descriptors", "Used?": "No", "Risk Score": "0.84", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "supports-preserve-symlinks-flag", "Used?": "No", "Risk Score": "0.73", "Identified Risks": "Has fewer versions, Has fewer maintainers, Outdated Node version"}

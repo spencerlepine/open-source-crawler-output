@@ -1,0 +1,79 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Security Audit for Infrastructure",
+          "version": "1.0.0-scan",
+          "fullName": "Security Audit for Infrastructure"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-s",
+            "--framework",
+            "kubernetes",
+            "--quiet",
+            "--no-guide",
+            "-o",
+            "json",
+            "-d",
+            "/github/workspace"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-s --framework kubernetes --quiet --no-guide -o json -d /github/workspace",
+          "endTimeUtc": "2022-10-26T21:02:27Z",
+          "workingDirectory": {
+            "uri": "https://github.com/freeCodeCamp/freeCodeCamp"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-26T21:02:27Z",
+          "workingDirectory": {
+            "uri": "https://github.com/freeCodeCamp/freeCodeCamp"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "e86d424d-0720-493c-9b8b-b957728a9dc6"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "e86d424d-0720-493c-9b8b-b957728a9dc6",
+      "runGuid": "3ba34562-dd36-414e-a5e9-e6007afa49c4"
+    }
+  ]
+}
