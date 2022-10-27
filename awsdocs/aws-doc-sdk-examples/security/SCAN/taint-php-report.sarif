@@ -1,0 +1,149 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "PHP Security Analysis",
+          "rules": [
+            {
+              "id": "255",
+              "help": {
+                "text": "Detected tainted file handling: $_GET['Id']\\nconcat\\n$status_file\\ncall to file_get_contents.",
+                "markdown": "Detected tainted file handling: $_GET['Id']\\nconcat\\n$status_file\\ncall to file_get_contents."
+              },
+              "name": "TaintedFile",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Detected tainted file handling: $_GET['Id']\\nconcat\\n$status_file\\ncall to file_get_contents."
+              },
+              "helpUri": "https://psalm.dev/255",
+              "shortDescription": {
+                "text": "Detected tainted file handling: $_GET['Id']\\nconcat\\n$status_file\\ncall to file_get_contents."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "PHP Security Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "/opt/phpsast/vendor/bin/psalm",
+            "--report-show-info=false",
+            "--show-snippet=true",
+            "--taint-analysis",
+            "-m",
+            "--no-progress",
+            "--no-file-cache",
+            "--no-suggestions",
+            "--no-cache",
+            "--root=/github/workspace",
+            "--report=/github/workspace/reports/taint-php-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "/opt/phpsast/vendor/bin/psalm --report-show-info=false --show-snippet=true --taint-analysis -m --no-progress --no-file-cache --no-suggestions --no-cache --root=/github/workspace --report=/github/workspace/reports/taint-php-report.json",
+          "endTimeUtc": "2022-10-27T21:25:40Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:25:40Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 1,
+          "critical": 1,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Detected tainted file handling: $_GET['Id']\\nconcat\\n$status_file\\ncall to file_get_contents."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  $status_file = \"$tmp_path/{$_GET['Id']}\";\n"
+                  },
+                  "startLine": 75
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/php/example_code/elastictranscoder/JobStatusNotificationSample.php"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  // If the request method is GET and 'Id' has been specified, then set the status file.\n  $status_file = \"$tmp_path/{$_GET['Id']}\";\n"
+                  },
+                  "endLine": 75,
+                  "startLine": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0cae36b84400878c",
+            "scanFileHash": "e93755ea6bb08dd5"
+          },
+          "ruleId": "255",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "0a0e2e4b-d148-42fc-a1ff-bcf8258e5b2a"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "0a0e2e4b-d148-42fc-a1ff-bcf8258e5b2a",
+      "runGuid": "bf032426-c51f-47f5-ad82-3509f4b984d2"
+    }
+  ]
+}

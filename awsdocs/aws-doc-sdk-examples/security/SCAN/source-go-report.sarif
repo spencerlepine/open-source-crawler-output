@@ -1,0 +1,1120 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Security Audit",
+          "rules": [
+            {
+              "id": "CWE-338",
+              "help": {
+                "text": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.\nWhen a non-cryptographic PRNG is used in a cryptographic context, it can expose the cryptography to certain types of attacks. Often a pseudo-random number generator (PRNG) is not designed for cryptography. Sometimes a mediocre source of randomness is sufficient or preferable for algorithms that use random numbers. Weak generators generally take less processing power and/or do not use the precious, finite, entropy sources on a system. While such PRNGs might have very useful features, these same features could be used to break the cryptography.",
+                "markdown": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.\nWhen a non-cryptographic PRNG is used in a cryptographic context, it can expose the cryptography to certain types of attacks. Often a pseudo-random number generator (PRNG) is not designed for cryptography. Sometimes a mediocre source of randomness is sufficient or preferable for algorithms that use random numbers. Weak generators generally take less processing power and/or do not use the precious, finite, entropy sources on a system. While such PRNGs might have very useful features, these same features could be used to break the cryptography."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/338.html",
+              "shortDescription": {
+                "text": "Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)."
+              }
+            },
+            {
+              "id": "CWE-326",
+              "help": {
+                "text": "The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required.\nA weak encryption scheme can be subjected to brute force attacks that have a reasonable chance of succeeding using current attack methods and resources.",
+                "markdown": "The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required.\nA weak encryption scheme can be subjected to brute force attacks that have a reasonable chance of succeeding using current attack methods and resources."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/326.html",
+              "shortDescription": {
+                "text": "Inadequate Encryption Strength."
+              }
+            },
+            {
+              "id": "CWE-22",
+              "help": {
+                "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.\nMany file operations are intended to take place within a restricted directory. By using special elements such as .. and / separators, attackers can escape outside of the restricted location to access files or directories that are elsewhere on the system. One of the most common special elements is the ../ sequence, which in most modern operating systems is interpreted as the parent directory of the current location. This is referred to as relative path traversal. Path traversal also covers the use of absolute pathnames such as /usr/local/bin, which may also be useful in accessing unexpected files. This is referred to as absolute path traversal. In many programming languages, the injection of a null byte (the 0 or NUL) may allow an attacker to truncate a generated filename to widen the scope of attack. For example, the software may add .txt to any pathname, thus limiting the attacker to text files, but a null injection may effectively remove this restriction.",
+                "markdown": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.\nMany file operations are intended to take place within a restricted directory. By using special elements such as .. and / separators, attackers can escape outside of the restricted location to access files or directories that are elsewhere on the system. One of the most common special elements is the ../ sequence, which in most modern operating systems is interpreted as the parent directory of the current location. This is referred to as relative path traversal. Path traversal also covers the use of absolute pathnames such as /usr/local/bin, which may also be useful in accessing unexpected files. This is referred to as absolute path traversal. In many programming languages, the injection of a null byte (the 0 or NUL) may allow an attacker to truncate a generated filename to widen the scope of attack. For example, the software may add .txt to any pathname, thus limiting the attacker to text files, but a null injection may effectively remove this restriction."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/22.html",
+              "shortDescription": {
+                "text": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+              }
+            },
+            {
+              "id": "CWE-703",
+              "help": {
+                "text": "The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software.",
+                "markdown": "The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/703.html",
+              "shortDescription": {
+                "text": "Improper Check or Handling of Exceptional Conditions."
+              }
+            },
+            {
+              "id": "CWE-327",
+              "help": {
+                "text": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.\nThe use of a non-standard algorithm is dangerous because a determined attacker may be able to break the algorithm and compromise whatever data has been protected. Well-known techniques may exist to break the algorithm.",
+                "markdown": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.\nThe use of a non-standard algorithm is dangerous because a determined attacker may be able to break the algorithm and compromise whatever data has been protected. Well-known techniques may exist to break the algorithm."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
+              "shortDescription": {
+                "text": "Use of a Broken or Risky Cryptographic Algorithm."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Security Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-fmt=json",
+            "-confidence=medium",
+            "-severity=medium",
+            "-no-fail",
+            "-out=/github/workspace/reports/source-go-report.json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-fmt=json -confidence=medium -severity=medium -no-fail -out=/github/workspace/reports/source-go-report.json ./...",
+          "endTimeUtc": "2022-10-27T21:27:05Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:27:05Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 23,
+          "critical": 0,
+          "high": 1,
+          "medium": 22,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of weak random number generator (math/rand instead of crypto/rand)."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tsnow, err := snowflake.NewNode(rand.Int63n(1023))\n"
+                  },
+                  "startLine": 21
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/shared/types.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t// the snowflake. Here, we use a random node number.\n\tsnow, err := snowflake.NewNode(rand.Int63n(1023))\n"
+                  },
+                  "endLine": 21,
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "eb0403c943585050",
+            "scanFileHash": "cdf872cf0dd7b315"
+          },
+          "ruleId": "CWE-338",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    h := md5.New()\n"
+                  },
+                  "startLine": 44
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/s3/EnforceMD5/EnforceMD5Content.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    h := md5.New()\n"
+                  },
+                  "endLine": 44,
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "740e0f8d26e054dc",
+            "scanFileHash": "f12bcbafaa78c135"
+          },
+          "ruleId": "CWE-326",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    h := md5.New()\n"
+                  },
+                  "startLine": 46
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/s3/enforce_content_md5.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "func main() {\n    h := md5.New()\n"
+                  },
+                  "endLine": 46,
+                  "startLine": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "740e0f8d26e054dc",
+            "scanFileHash": "0055dbbabb8cbf54"
+          },
+          "ruleId": "CWE-326",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treader, err := os.Open(filename)\n"
+                  },
+                  "startLine": 138
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\treader, err := os.Open(filename)\n"
+                  },
+                  "endLine": 138,
+                  "startLine": 137
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e7e4c8934907334e",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tfile, err := os.Open(filename)\n"
+                  },
+                  "startLine": 74
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tfile, err := os.Open(filename)\n"
+                  },
+                  "endLine": 74,
+                  "startLine": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "151697c27e680548",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tcontent, err := ioutil.ReadFile(eventFile)\n"
+                  },
+                  "startLine": 41
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/PutEvent/PutEventv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tcontent, err := ioutil.ReadFile(eventFile)\n"
+                  },
+                  "endLine": 41,
+                  "startLine": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e50cc5ef0d4a2916",
+            "scanFileHash": "e1c50f0f2d8a40d1"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    outFile, err := os.Create(mp3File)\n"
+                  },
+                  "startLine": 81
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/polly/SynthesizeSpeech/SynthesizeSpeech.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    outFile, err := os.Create(mp3File)\n"
+                  },
+                  "endLine": 81,
+                  "startLine": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "aabdcf176947ff1a",
+            "scanFileHash": "9c47e1b8e9e08f9a"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    file, err := os.Open(filename)\n"
+                  },
+                  "startLine": 52
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/s3/s3_upload_object.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    file, err := os.Open(filename)\n"
+                  },
+                  "endLine": 52,
+                  "startLine": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "151697c27e680548",
+            "scanFileHash": "fdc5ac07a33f096d"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    file, err := os.Create(item)\n"
+                  },
+                  "startLine": 54
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/s3/s3_download_object.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    file, err := os.Create(item)\n"
+                  },
+                  "endLine": 54,
+                  "startLine": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "643382954377a6fb",
+            "scanFileHash": "f787591443ee54e8"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    outFile, err := os.Create(mp3File)\n"
+                  },
+                  "startLine": 84
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/polly/pollySynthesizeSpeech.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    outFile, err := os.Create(mp3File)\n"
+                  },
+                  "endLine": 84,
+                  "startLine": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "aabdcf176947ff1a",
+            "scanFileHash": "c13b3dbbe8c59dda"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    contents, err := ioutil.ReadFile(fileName)\n"
+                  },
+                  "startLine": 50
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/polly/pollySynthesizeSpeech.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    // Open text file and get it's contents as a string\n    contents, err := ioutil.ReadFile(fileName)\n"
+                  },
+                  "endLine": 50,
+                  "startLine": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f3e72f71500ed350",
+            "scanFileHash": "c13b3dbbe8c59dda"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    content, err := ioutil.ReadFile(template)\n"
+                  },
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/cloudformation/CfnCrudOps.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    // Get entire file as a string\n    content, err := ioutil.ReadFile(template)\n"
+                  },
+                  "endLine": 33,
+                  "startLine": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "937699fb45a84666",
+            "scanFileHash": "90a619ac482d1822"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer file.Close()\n"
+                  },
+                  "startLine": 368
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/rekognition/DetectLabels/DetectLabels.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tdefer file.Close()\n"
+                  },
+                  "endLine": 368,
+                  "startLine": 367
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "7965881ae1111e91"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer file.Close()\n"
+                  },
+                  "startLine": 78
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tdefer file.Close()\n"
+                  },
+                  "endLine": 78,
+                  "startLine": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    defer file.Close()\n"
+                  },
+                  "startLine": 46
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/s3/UploadObject/UploadObject.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    defer file.Close()\n"
+                  },
+                  "endLine": 46,
+                  "startLine": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "87cc39bc11599f92"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    defer file.Close()\n"
+                  },
+                  "startLine": 46
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/s3/DownloadObject/DownloadObject.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    defer file.Close()\n"
+                  },
+                  "endLine": 46,
+                  "startLine": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "1d81dd637891ebd1"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    defer outFile.Close()\n"
+                  },
+                  "startLine": 88
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/polly/SynthesizeSpeech/SynthesizeSpeech.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    defer outFile.Close()\n"
+                  },
+                  "endLine": 88,
+                  "startLine": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "26319ed1aeedee98",
+            "scanFileHash": "9c47e1b8e9e08f9a"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    defer file.Close()\n"
+                  },
+                  "startLine": 37
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/glacier/UploadArchive/UploadArchive.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    // snippet-start:[glacier.go.upload_archive.read]\n    defer file.Close()\n"
+                  },
+                  "endLine": 37,
+                  "startLine": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "ca071cbb2642596a"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    defer file.Close()\n"
+                  },
+                  "startLine": 57
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/s3/s3_upload_object.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    defer file.Close()\n"
+                  },
+                  "endLine": 57,
+                  "startLine": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "fdc5ac07a33f096d"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    defer file.Close()\n"
+                  },
+                  "startLine": 59
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/s3/s3_download_object.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    defer file.Close()\n"
+                  },
+                  "endLine": 59,
+                  "startLine": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "f787591443ee54e8"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    defer outFile.Close()\n"
+                  },
+                  "startLine": 91
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/polly/pollySynthesizeSpeech.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    defer outFile.Close()\n"
+                  },
+                  "endLine": 91,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "26319ed1aeedee98",
+            "scanFileHash": "c13b3dbbe8c59dda"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Blocklisted import crypto/md5: weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"crypto/md5\"\n"
+                  },
+                  "startLine": 19
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/s3/EnforceMD5/EnforceMD5Content.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "import (\n    \"crypto/md5\"\n"
+                  },
+                  "endLine": 19,
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "aae7b9bcb6bd6a86",
+            "scanFileHash": "f12bcbafaa78c135"
+          },
+          "ruleId": "CWE-327",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Blocklisted import crypto/md5: weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"crypto/md5\"\n"
+                  },
+                  "startLine": 34
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/s3/enforce_content_md5.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"fmt\"\n    \"crypto/md5\"\n"
+                  },
+                  "endLine": 34,
+                  "startLine": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "aae7b9bcb6bd6a86",
+            "scanFileHash": "0055dbbabb8cbf54"
+          },
+          "ruleId": "CWE-327",
+          "ruleIndex": 4
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "72895f19-f979-4ed2-9e23-357e241263fe"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "72895f19-f979-4ed2-9e23-357e241263fe",
+      "runGuid": "bf032426-c51f-47f5-ad82-3509f4b984d2"
+    }
+  ]
+}

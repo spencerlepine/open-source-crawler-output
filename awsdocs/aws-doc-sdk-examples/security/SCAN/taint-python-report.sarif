@@ -1,0 +1,786 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Python Security Analysis",
+          "rules": [
+            {
+              "id": "taint-rce",
+              "help": {
+                "text": "The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component.\nThis could allow attackers to execute unexpected, dangerous commands directly on the operating system. This weakness can lead to a vulnerability in environments in which the attacker does not have direct access to the operating system, such as in web applications. Alternately, if the weakness occurs in a privileged program, it could allow the attacker to specify commands that normally would not be accessible, or to call alternate commands with privileges that the attacker does not have. The problem is exacerbated if the compromised process does not follow the principle of least privilege, because the attacker-controlled commands may run with special system privileges that increases the amount of damage. There are at least two subtypes of OS command injection: The application intends to execute a single, fixed program that is under its own control. It intends to use externally-supplied inputs as arguments to that program. For example, the program might use system(nslookup [HOSTNAME]) to run nslookup and allow the user to supply a HOSTNAME, which is used as an argument. Attackers cannot prevent nslookup from executing. However, if the program does not remove command separators from the HOSTNAME argument, attackers could place the separators into the arguments, which allows them to execute their own program after nslookup has finished executing. The application accepts an input that it uses to fully select which program to run, as well as which commands to use. The application simply redirects this entire command to the operating system. For example, the program might use exec([COMMAND]) to execute the [COMMAND] that was supplied by the user. If the COMMAND is under attacker control, then the attacker can execute arbitrary commands or programs. If the command is being executed using functions like exec() and CreateProcess(), the attacker might not be able to combine multiple commands together in the same line. From a weakness standpoint, these variants represent distinct programmer errors. In the first variant, the programmer clearly intends that input from untrusted parties will be part of the arguments in the command to be executed. In the second variant, the programmer does not intend for the command to be accessible to any untrusted party, but the programmer probably has not accounted for alternate ways in which malicious attackers can provide input.",
+                "markdown": "The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component.\nThis could allow attackers to execute unexpected, dangerous commands directly on the operating system. This weakness can lead to a vulnerability in environments in which the attacker does not have direct access to the operating system, such as in web applications. Alternately, if the weakness occurs in a privileged program, it could allow the attacker to specify commands that normally would not be accessible, or to call alternate commands with privileges that the attacker does not have. The problem is exacerbated if the compromised process does not follow the principle of least privilege, because the attacker-controlled commands may run with special system privileges that increases the amount of damage. There are at least two subtypes of OS command injection: The application intends to execute a single, fixed program that is under its own control. It intends to use externally-supplied inputs as arguments to that program. For example, the program might use system(nslookup [HOSTNAME]) to run nslookup and allow the user to supply a HOSTNAME, which is used as an argument. Attackers cannot prevent nslookup from executing. However, if the program does not remove command separators from the HOSTNAME argument, attackers could place the separators into the arguments, which allows them to execute their own program after nslookup has finished executing. The application accepts an input that it uses to fully select which program to run, as well as which commands to use. The application simply redirects this entire command to the operating system. For example, the program might use exec([COMMAND]) to execute the [COMMAND] that was supplied by the user. If the COMMAND is under attacker control, then the attacker can execute arbitrary commands or programs. If the command is being executed using functions like exec() and CreateProcess(), the attacker might not be able to combine multiple commands together in the same line. From a weakness standpoint, these variants represent distinct programmer errors. In the first variant, the programmer clearly intends that input from untrusted parties will be part of the arguments in the command to be executed. In the second variant, the programmer does not intend for the command to be accessible to any untrusted party, but the programmer probably has not accounted for alternate ways in which malicious attackers can provide input."
+              },
+              "name": "Remote Code Execution",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "shortDescription": {
+                "text": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+              }
+            },
+            {
+              "id": "taint-basic-xss",
+              "help": {
+                "text": "The software receives input from an upstream component, but it does not neutralize or incorrectly neutralizes special characters such as <, >, and & that could be interpreted as web-scripting elements when they are sent to a downstream component that processes web pages.\nThis may allow such characters to be treated as control characters, which are executed client-side in the context of the user's session. Although this can be classified as an injection problem, the more pertinent issue is the improper conversion of such special characters to respective context-appropriate entities before displaying them to the user.",
+                "markdown": "The software receives input from an upstream component, but it does not neutralize or incorrectly neutralizes special characters such as <, >, and & that could be interpreted as web-scripting elements when they are sent to a downstream component that processes web pages.\nThis may allow such characters to be treated as control characters, which are executed client-side in the context of the user's session. Although this can be classified as an injection problem, the more pertinent issue is the improper conversion of such special characters to respective context-appropriate entities before displaying them to the user."
+              },
+              "name": "Potential XSS",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software receives input from an upstream component, but it does not neutralize or incorrectly neutralizes special characters such as <, >, and & that could be interpreted as web-scripting elements when they are sent to a downstream component that processes web pages."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/80.html",
+              "shortDescription": {
+                "text": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)."
+              }
+            },
+            {
+              "id": "taint-traversal",
+              "help": {
+                "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.\nMany file operations are intended to take place within a restricted directory. By using special elements such as .. and / separators, attackers can escape outside of the restricted location to access files or directories that are elsewhere on the system. One of the most common special elements is the ../ sequence, which in most modern operating systems is interpreted as the parent directory of the current location. This is referred to as relative path traversal. Path traversal also covers the use of absolute pathnames such as /usr/local/bin, which may also be useful in accessing unexpected files. This is referred to as absolute path traversal. In many programming languages, the injection of a null byte (the 0 or NUL) may allow an attacker to truncate a generated filename to widen the scope of attack. For example, the software may add .txt to any pathname, thus limiting the attacker to text files, but a null injection may effectively remove this restriction.",
+                "markdown": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.\nMany file operations are intended to take place within a restricted directory. By using special elements such as .. and / separators, attackers can escape outside of the restricted location to access files or directories that are elsewhere on the system. One of the most common special elements is the ../ sequence, which in most modern operating systems is interpreted as the parent directory of the current location. This is referred to as relative path traversal. Path traversal also covers the use of absolute pathnames such as /usr/local/bin, which may also be useful in accessing unexpected files. This is referred to as absolute path traversal. In many programming languages, the injection of a null byte (the 0 or NUL) may allow an attacker to truncate a generated filename to widen the scope of attack. For example, the software may add .txt to any pathname, thus limiting the attacker to text files, but a null injection may effectively remove this restriction."
+              },
+              "name": "Directory Traversal",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/22.html",
+              "shortDescription": {
+                "text": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+              }
+            },
+            {
+              "id": "flask-misconfiguration-controls",
+              "help": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.",
+                "markdown": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data."
+              },
+              "name": "Missing Security Controls",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/732.html",
+              "shortDescription": {
+                "text": "Incorrect Permission Assignment for Critical Resource."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Python Security Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-j",
+            "-a",
+            "e",
+            "-o",
+            "/github/workspace/reports/taint-python-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-j -a e -o /github/workspace/reports/taint-python-report.json",
+          "endTimeUtc": "2022-10-27T21:25:51Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:25:51Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 13,
+          "critical": 9,
+          "high": 0,
+          "medium": 1,
+          "low": 3
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Remote Code Execution via shell with user data from `examples_folder in api_report.py:62` used for constructing the command at `api_report.py:74`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def gather_data(examples_folder):\n"
+                  },
+                  "startLine": 62
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/scripts/legacy/api_report.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ndef gather_data(examples_folder):\n    \"\"\"\n    Scan a folder and its subfolders for metadata files and read them into a\n"
+                  },
+                  "endLine": 64,
+                  "startLine": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "examples_folder",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "os.walk(",
+              "sink_label": "for (folder_name, _, file_list) in os.walk(examples_folder):",
+              "sink_type": "RemoteCodeExecution"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "cfa9a70cebc4c9ac",
+            "scanTagsHash": "df1af4fd15b035f6",
+            "scanFileHash": "a2fc73b62aea58fd"
+          },
+          "ruleId": "taint-rce",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Remote Code Execution via shell with user data from `examples_folder in cleanup_report.py:90` used for constructing the command at `cleanup_report.py:104`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def gather_data(examples_folder):\n"
+                  },
+                  "startLine": 90
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/scripts/cleanup_report.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ndef gather_data(examples_folder):\n    \"\"\"\n    Scan a folder and its subfolders for metadata files and read them into a\n"
+                  },
+                  "endLine": 92,
+                  "startLine": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "examples_folder",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "os.walk(",
+              "sink_label": "for (folder_name, dirs, file_list) in os.walk(examples_folder,topdown=True):",
+              "sink_type": "RemoteCodeExecution"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "cfa9a70cebc4c9ac",
+            "scanTagsHash": "4b99912d51af1099",
+            "scanFileHash": "faeea9c594dbb088"
+          },
+          "ruleId": "taint-rce",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Possibility for Cross-site scripting (XSS) when the http data at `message_attributes in message_wrapper.py:25` is returned to the user via `message_wrapper.py:39` without sanitization."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def send_message(queue, message_body, message_attributes=None):\n"
+                  },
+                  "startLine": 25
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/example_code/sqs/message_wrapper.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "# snippet-start:[python.example_code.sqs.SendMessage]\ndef send_message(queue, message_body, message_attributes=None):\n    \"\"\"\n    Send a message to an Amazon SQS queue.\n"
+                  },
+                  "endLine": 27,
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "message_attributes",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "send_message(",
+              "sink_label": "~call_1 = ret_queue.send_message(MessageBody=message_body, MessageAttributes=message_attributes)",
+              "sink_type": "ReturnedToUser"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2bfae7c554be5f79",
+            "scanTagsHash": "57a76190e193c5b2",
+            "scanFileHash": "3ce8eea8d3d01222"
+          },
+          "ruleId": "taint-basic-xss",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Exfiltration of data (Path Traversal) due to user data from `data in object_wrapper.py:34` influencing file operations in `object_wrapper.py:45`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    def put(self, data):\n"
+                  },
+                  "startLine": 34
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/example_code/s3/s3_basics/object_wrapper.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "# snippet-start:[python.example_code.s3.PutObject]\n    def put(self, data):\n        \"\"\"\n        Upload data to the object.\n"
+                  },
+                  "endLine": 36,
+                  "startLine": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "data",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "open(",
+              "sink_label": "~call_1 = ret_open(data, rb)",
+              "sink_type": "Exfiltration"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "74a5d03b09c3a84b",
+            "scanTagsHash": "bcfbb59396d18474",
+            "scanFileHash": "ecc7fee6585b3d80"
+          },
+          "ruleId": "taint-traversal",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Remote Code Execution via shell with user data from `duplicates_file in custom_labels_csv_to_manifest.py:26` used for constructing the command at `custom_labels_csv_to_manifest.py:70`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def check_duplicates(csv_file, deduplicated_file, duplicates_file):\n"
+                  },
+                  "startLine": 26
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/example_code/rekognition/custom_labels_csv_to_manifest.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ndef check_duplicates(csv_file, deduplicated_file, duplicates_file):\n    \"\"\"\n    Checks for duplicate images in a CSV file. If duplicate images\n"
+                  },
+                  "endLine": 28,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "duplicates_file",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "os.remove(",
+              "sink_label": "~call_9 = ret_os.remove(duplicates_file)",
+              "sink_type": "RemoteCodeExecution"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "67f64c55a37af6cc",
+            "scanTagsHash": "04f25e16e1c8a3f2",
+            "scanFileHash": "176bfad2647567ff"
+          },
+          "ruleId": "taint-rce",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Remote Code Execution via shell with user data from `deduplicated_file in custom_labels_csv_to_manifest.py:26` used for constructing the command at `custom_labels_csv_to_manifest.py:71`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def check_duplicates(csv_file, deduplicated_file, duplicates_file):\n"
+                  },
+                  "startLine": 26
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/example_code/rekognition/custom_labels_csv_to_manifest.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ndef check_duplicates(csv_file, deduplicated_file, duplicates_file):\n    \"\"\"\n    Checks for duplicate images in a CSV file. If duplicate images\n"
+                  },
+                  "endLine": 28,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "deduplicated_file",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "os.remove(",
+              "sink_label": "~call_10 = ret_os.remove(deduplicated_file)",
+              "sink_type": "RemoteCodeExecution"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "67f64c55a37af6cc",
+            "scanTagsHash": "7b39df6791828e2e",
+            "scanFileHash": "176bfad2647567ff"
+          },
+          "ruleId": "taint-rce",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Remote Code Execution via shell with user data from `csv_file in csv_to_manifest.py:27` used for constructing the command at `csv_to_manifest.py:77`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def check_errors(csv_file):\n"
+                  },
+                  "startLine": 27
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/example_code/lookoutvision/csv_to_manifest.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ndef check_errors(csv_file):\n    \"\"\"\n    Checks for duplicate images and incorrect classifications in a CSV file.\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "csv_file",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "os.remove(",
+              "sink_label": "~call_10 = ret_os.remove(errors_file)",
+              "sink_type": "RemoteCodeExecution"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "89aaa6c4c10d1ae1",
+            "scanTagsHash": "335825a19157a66a",
+            "scanFileHash": "0541d1a183fccc37"
+          },
+          "ruleId": "taint-rce",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Remote Code Execution via shell with user data from `csv_file in csv_to_manifest.py:27` used for constructing the command at `csv_to_manifest.py:78`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def check_errors(csv_file):\n"
+                  },
+                  "startLine": 27
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/example_code/lookoutvision/csv_to_manifest.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ndef check_errors(csv_file):\n    \"\"\"\n    Checks for duplicate images and incorrect classifications in a CSV file.\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "csv_file",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "os.remove(",
+              "sink_label": "~call_11 = ret_os.remove(deduplicated_file)",
+              "sink_type": "RemoteCodeExecution"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "89aaa6c4c10d1ae1",
+            "scanTagsHash": "cd9f902a8125bf72",
+            "scanFileHash": "0541d1a183fccc37"
+          },
+          "ruleId": "taint-rce",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Exfiltration of data (Path Traversal) due to user data from `image_bytes in textract_app.py:149` influencing file operations in `textract_app.py:158`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    def load_document(self, image_bytes=None):\n"
+                  },
+                  "startLine": 149
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/cross_service/textract_explorer/textract_app.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    def load_document(self, image_bytes=None):\n        \"\"\"\n        Loads a document image from the local file system and displays it in the\n"
+                  },
+                  "endLine": 151,
+                  "startLine": 148
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "image_bytes",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "open(",
+              "sink_label": "~call_3 = ret_PIL.Image.open(image_bytes)",
+              "sink_type": "Exfiltration"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "159a463396ace6d7",
+            "scanTagsHash": "c299a6e674d815b2",
+            "scanFileHash": "ffa17acc62d39bc8"
+          },
+          "ruleId": "taint-traversal",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Remote Code Execution via shell with user data from `stack_name in library_demo.py:239` used for constructing the command at `library_demo.py:252`."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "def do_cleanup(stack_name, cluster_name, secret_name):\n"
+                  },
+                  "startLine": 239
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/cross_service/aurora_rest_lending_library/library_demo.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ndef do_cleanup(stack_name, cluster_name, secret_name):\n    \"\"\"\n    Cleans up all resources created by the demo.\n"
+                  },
+                  "endLine": 241,
+                  "startLine": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {
+              "source_trigger_word": "Framework function URL parameter",
+              "source_label": "stack_name",
+              "source_type": "Framework_Parameter",
+              "sink_trigger_word": "os.system(",
+              "sink_label": "~call_4 = ret_os.system(f'aws cloudformation delete-stack --stack-name {stack_name}')",
+              "sink_type": "RemoteCodeExecution"
+            }
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "56000c06cada3b49",
+            "scanTagsHash": "e31d76c252364038",
+            "scanFileHash": "75753ca873e1aadf"
+          },
+          "ruleId": "taint-rce",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/cross_service/photo_analyzer/api/app.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n# SPDX-License-Identifier: Apache-2.0\n\n\"\"\"\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "920d20ddae570964",
+            "scanFileHash": "c65067208c100e2b"
+          },
+          "ruleId": "flask-misconfiguration-controls",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/cross_service/dynamodb_item_tracker/app.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n# SPDX-License-Identifier: Apache-2.0\n\n\"\"\"\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "920d20ddae570964",
+            "scanFileHash": "bc19501281f05524"
+          },
+          "ruleId": "flask-misconfiguration-controls",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/python/cross_service/aurora_item_tracker/app.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n# SPDX-License-Identifier: Apache-2.0\n\n\"\"\"\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "920d20ddae570964",
+            "scanFileHash": "a0be918d36a26328"
+          },
+          "ruleId": "flask-misconfiguration-controls",
+          "ruleIndex": 3
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "514a3b30-ca2d-4a60-ab8d-0ac34333949e"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "514a3b30-ca2d-4a60-ab8d-0ac34333949e",
+      "runGuid": "bf032426-c51f-47f5-ad82-3509f4b984d2"
+    }
+  ]
+}

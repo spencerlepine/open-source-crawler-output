@@ -1,0 +1,842 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Kotlin Static Analysis",
+          "rules": [
+            {
+              "id": "detekt.ComplexMethod",
+              "help": {
+                "text": "The function getOpenReport appears to be too complex (13). Defined complexity threshold for methods is set to '10'.",
+                "markdown": "The function getOpenReport appears to be too complex (13). Defined complexity threshold for methods is set to '10'."
+              },
+              "name": "The function getOpenReport appears to be too complex (13). Defined complexity threshold for methods is set to '10'",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The function getOpenReport appears to be too complex (13). Defined complexity threshold for methods is set to '10'."
+              },
+              "helpUri": "https://slscan.io?q=detekt.ComplexMethod",
+              "shortDescription": {
+                "text": "The function getOpenReport appears to be too complex (13)"
+              }
+            },
+            {
+              "id": "detekt.LongParameterList",
+              "help": {
+                "text": "The function putItemInTable2(ddb: DynamoDbClient, tableNameVal: String, key: String, keyVal: String, moneyTotal: String, moneyTotalValue: String, name: String, nameValue: String, email: String, emailVal: String, date: String, dateVal: String) has too many parameters. The current threshold is set to 8.",
+                "markdown": "The function putItemInTable2(ddb: DynamoDbClient, tableNameVal: String, key: String, keyVal: String, moneyTotal: String, moneyTotalValue: String, name: String, nameValue: String, email: String, emailVal: String, date: String, dateVal: String) has too many parameters. The current threshold is set to 8."
+              },
+              "name": "The function putItemInTable2(ddb: DynamoDbClient, tableNameVal: String, key: String, keyVal: String, moneyTotal: String, moneyTotalValue: String, name: String, nameValue: String, email: String, emailVal: String, date: String, dateVal: String) has too many parameters. The current threshold is set to 8.",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The function putItemInTable2(ddb: DynamoDbClient, tableNameVal: String, key: String, keyVal: String, moneyTotal: String, moneyTotalValue: String, name: String, nameValue: String, email: String, emailVal: String, date: String, dateVal: String) has too many parameters. The current threshold is set to 8."
+              },
+              "helpUri": "https://slscan.io?q=detekt.LongParameterList",
+              "shortDescription": {
+                "text": "The function putItemInTable2(ddb: DynamoDbClient, tableNameVal: String, key: String, keyVal: String, moneyTotal: String, moneyTotalValue: String, name: String, nameValue: String, email: String, emailVal: String, date: String, dateVal: String) has too many parameters"
+              }
+            },
+            {
+              "id": "detekt.NestedBlockDepth",
+              "help": {
+                "text": "Function displayGear is nested too deeply.",
+                "markdown": "Function displayGear is nested too deeply."
+              },
+              "name": "Function displayGear is nested too deeply.",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "Function displayGear is nested too deeply."
+              },
+              "helpUri": "https://slscan.io?q=detekt.NestedBlockDepth",
+              "shortDescription": {
+                "text": "Function displayGear is nested too deeply."
+              }
+            },
+            {
+              "id": "detekt.LongMethod",
+              "help": {
+                "text": "The function createFleet is too long (81). The maximum length is 80.",
+                "markdown": "The function createFleet is too long (81). The maximum length is 80."
+              },
+              "name": "The function createFleet is too long (81). The maximum length is 80.",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The function createFleet is too long (81). The maximum length is 80."
+              },
+              "helpUri": "https://slscan.io?q=detekt.LongMethod",
+              "shortDescription": {
+                "text": "The function createFleet is too long (81)"
+              }
+            },
+            {
+              "id": "detekt.SpreadOperator",
+              "help": {
+                "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty.",
+                "markdown": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+              },
+              "name": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty.",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+              },
+              "helpUri": "https://slscan.io?q=detekt.SpreadOperator",
+              "shortDescription": {
+                "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method"
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Kotlin Static Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "java",
+            "-jar",
+            "/usr/local/bin/detekt-cli.jar",
+            "-c",
+            "/usr/local/src/lib/../detekt-config.yml",
+            "-i",
+            "/github/workspace",
+            "-r",
+            "xml:/github/workspace/reports/source-kt-report.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "java -jar /usr/local/bin/detekt-cli.jar -c /usr/local/src/lib/../detekt-config.yml -i /github/workspace -r xml:/github/workspace/reports/source-kt-report.xml",
+          "endTimeUtc": "2022-10-27T21:26:20Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:26:20Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 16,
+          "critical": 0,
+          "high": 0,
+          "medium": 16,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function getOpenReport appears to be too complex (13). Defined complexity threshold for methods is set to '10'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    suspend fun getOpenReport(myArc: Boolean): String? {\n"
+                  },
+                  "startLine": 118
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/itemtracker_dynamodb/src/main/kotlin/com/aws/rest/DynamoDBService.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    // Get items to go into the email report.\n    suspend fun getOpenReport(myArc: Boolean): String? {\n"
+                  },
+                  "endLine": 118,
+                  "startLine": 117
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8d74d1273c058cae",
+            "scanFileHash": "3d1314d1e027c319"
+          },
+          "ruleId": "detekt.ComplexMethod",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function putItemInTable2(ddb: DynamoDbClient, tableNameVal: String, key: String, keyVal: String, moneyTotal: String, moneyTotalValue: String, name: String, nameValue: String, email: String, emailVal: String, date: String, dateVal: String) has too many parameters. The current threshold is set to 8."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    suspend fun putItemInTable2(\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/first_android_app/src/main/kotlin/com/example/awsapp/Database.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    suspend fun putItemInTable2(\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e414925a29a9a535",
+            "scanFileHash": "a10ec05801538eea"
+          },
+          "ruleId": "detekt.LongParameterList",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function getResultsXML appears to be too complex (12). Defined complexity threshold for methods is set to '10'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    suspend fun getResultsXML(statementId: String?): String? {\n"
+                  },
+                  "startLine": 98
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/creating_redshift_application/src/main/kotlin/com/aws/rest/RetrieveItems.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    // Returns open items within XML.\n    suspend fun getResultsXML(statementId: String?): String? {\n"
+                  },
+                  "endLine": 98,
+                  "startLine": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "b7c947aafface72e",
+            "scanFileHash": "2b956320b0f6f534"
+          },
+          "ruleId": "detekt.ComplexMethod",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function getItemsDataSQLReport appears to be too complex (11). Defined complexity threshold for methods is set to '10'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    suspend fun getItemsDataSQLReport(username: String, arch: Int): String? {\n"
+                  },
+                  "startLine": 98
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/serverless_rds/src/main/kotlin/com/example/demo/RetrieveItems.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    // Get Items data.\n    suspend fun getItemsDataSQLReport(username: String, arch: Int): String? {\n"
+                  },
+                  "endLine": 98,
+                  "startLine": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8821e11cf039f979",
+            "scanFileHash": "61e3013b0763676f"
+          },
+          "ruleId": "detekt.ComplexMethod",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function scanItemsUsingFilter appears to be too complex (11). Defined complexity threshold for methods is set to '10'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "suspend fun scanItemsUsingFilter(tableNameVal: String) {\n"
+                  },
+                  "startLine": 48
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/services/dynamodb/src/main/kotlin/com/kotlin/dynamodb/DynamoDBScanItemsFilter.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "// snippet-start:[dynamodb.kotlin.scan_items_filter.main]\nsuspend fun scanItemsUsingFilter(tableNameVal: String) {\n"
+                  },
+                  "endLine": 48,
+                  "startLine": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "be3e2dedb1d910de",
+            "scanFileHash": "07117fabc4144906"
+          },
+          "ruleId": "detekt.ComplexMethod",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function putItemInTable(tableNameVal: String, key: String, keyVal: String, albumTitle: String, albumTitleValue: String, awards: String, awardVal: String, songTitle: String, songTitleVal: String) has too many parameters. The current threshold is set to 8."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "suspend fun putItemInTable(\n"
+                  },
+                  "startLine": 64
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/services/dynamodb/src/main/kotlin/com/kotlin/dynamodb/PutItem.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "// snippet-start:[dynamodb.kotlin.put_item.main]\nsuspend fun putItemInTable(\n"
+                  },
+                  "endLine": 64,
+                  "startLine": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a97eb34ba50d92e0",
+            "scanFileHash": "e6bc9a35f82179eb"
+          },
+          "ruleId": "detekt.LongParameterList",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function main appears to be too complex (10). Defined complexity threshold for methods is set to '10'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "suspend fun main() {\n"
+                  },
+                  "startLine": 30
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/services/dynamodb/src/main/kotlin/com/kotlin/dynamodb/DynamoDBPartiQ.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "// snippet-start:[dynamodb.kotlin.partiql.main]\nsuspend fun main() {\n"
+                  },
+                  "endLine": 30,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "487484a19b9644af",
+            "scanFileHash": "dd1b681cbe8e4dde"
+          },
+          "ruleId": "detekt.ComplexMethod",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Function displayGear is nested too deeply."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "suspend fun displayGear(sourceImage: String) {\n"
+                  },
+                  "startLine": 50
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/services/rekognition/src/main/kotlin/com/kotlin/rekognition/DetectPPE.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "// snippet-start:[rekognition.kotlin.detect_ppe.main]\nsuspend fun displayGear(sourceImage: String) {\n"
+                  },
+                  "endLine": 50,
+                  "startLine": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d787374d01632d8f",
+            "scanFileHash": "f17ad0a467671fa7"
+          },
+          "ruleId": "detekt.NestedBlockDepth",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function createFleet is too long (81). The maximum length is 80."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "suspend fun createFleet() {\n"
+                  },
+                  "startLine": 38
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/services/emr/src/main/kotlin/com/kotlin/emr/CreateEmrFleet.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "// snippet-start:[erm.kotlin.create_fleet.main]\nsuspend fun createFleet() {\n"
+                  },
+                  "endLine": 38,
+                  "startLine": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "44148116aa7243f5",
+            "scanFileHash": "77b578ee2de80dde"
+          },
+          "ruleId": "detekt.LongMethod",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function createOutput is too long (112). The maximum length is 80."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "fun createOutput(\n"
+                  },
+                  "startLine": 395
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/services/mediaconvert/src/main/kotlin/com/kotlin/mediaconvert/CreateJob.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfun createOutput(\n"
+                  },
+                  "endLine": 395,
+                  "startLine": 394
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9821782bfe5b640c",
+            "scanFileHash": "4594b04e7019e9d0"
+          },
+          "ruleId": "detekt.LongMethod",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    runApplication<PhotoApp>(*args)\n"
+                  },
+                  "startLine": 27
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/creating_photo_analyzer_app/src/main/kotlin/com/aws/photo/PhotoApp.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "fun main(args: Array<String>) {\n    runApplication<PhotoApp>(*args)\n"
+                  },
+                  "endLine": 27,
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "34370d564d5d9b24",
+            "scanFileHash": "33989bb700884f20"
+          },
+          "ruleId": "detekt.SpreadOperator",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    runApplication<SubApplication>(*args)\n"
+                  },
+                  "startLine": 21
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/subpub_app/src/main/kotlin/com/aws/kotlin/SubApplication.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "fun main(args: Array<String>) {\n    runApplication<SubApplication>(*args)\n"
+                  },
+                  "endLine": 21,
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "191de1685991ffda",
+            "scanFileHash": "1a6cc7a2f3f5f814"
+          },
+          "ruleId": "detekt.SpreadOperator",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    runApplication<App>(*args)\n"
+                  },
+                  "startLine": 26
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/itemtracker_dynamodb/src/main/kotlin/com/aws/rest/App.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "fun main(args: Array<String>) {\n    runApplication<App>(*args)\n"
+                  },
+                  "endLine": 26,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "72becc5f6d1a89eb",
+            "scanFileHash": "d6d418f613c0e8a4"
+          },
+          "ruleId": "detekt.SpreadOperator",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    runApplication<App>(*args)\n"
+                  },
+                  "startLine": 26
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/creating_redshift_application/src/main/kotlin/com/aws/rest/App.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "fun main(args: Array<String>) {\n    runApplication<App>(*args)\n"
+                  },
+                  "endLine": 26,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "72becc5f6d1a89eb",
+            "scanFileHash": "debbc71233143843"
+          },
+          "ruleId": "detekt.SpreadOperator",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    runApplication<DemoApplication>(*args)\n"
+                  },
+                  "startLine": 25
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/serverless_rds/src/main/kotlin/com/example/demo/DemoApplication.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "fun main(args: Array<String>) {\n    runApplication<DemoApplication>(*args)\n"
+                  },
+                  "endLine": 25,
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c8e864aa14369d34",
+            "scanFileHash": "90c1605ff7f6da34"
+          },
+          "ruleId": "detekt.SpreadOperator",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    runApplication<App>(*args)\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/kotlin/usecases/creating_message_application/src/main/kotlin/com/example/sqs/App.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "fun main(args: Array<String>) {\n    runApplication<App>(*args)\n"
+                  },
+                  "endLine": 24,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "72becc5f6d1a89eb",
+            "scanFileHash": "6bbfa46987f24882"
+          },
+          "ruleId": "detekt.SpreadOperator",
+          "ruleIndex": 4
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "81f047a4-a92b-43a2-9f2a-889dc026e9cc"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "81f047a4-a92b-43a2-9f2a-889dc026e9cc",
+      "runGuid": "bf032426-c51f-47f5-ad82-3509f4b984d2"
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:27291e67-f16f-432d-a6e2-719e8a5e3c02",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-10-27T21:27:47.136Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.41"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "boto3",
+      "version": "1.13.2",
+      "description": "The AWS SDK for Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fc8511eda662d7b4b10bce55153cf65b89c41d86b65162bc0d15b89547d3d837"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/boto3@1.13.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/boto/boto3"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/boto3@1.13.2"
+    },
+    {
+      "group": "",
+      "name": "boto3",
+      "version": "1.18.50",
+      "description": "The AWS SDK for Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6c9f2b50827ba9233a143b71746b7f1caee0467cf5004d7b43d5a7d5f468827b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/boto3@1.18.50",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/boto/boto3"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/boto3@1.18.50"
+    },
+    {
+      "group": "",
+      "name": "botocore",
+      "version": "1.21.50",
+      "description": "Low-level, data-driven core of boto 3.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3c24e20ad2b155c5a031db2ed060191df282369c5e59225ef20126cdfa6f082f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/botocore@1.21.50",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/boto/botocore"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/botocore@1.21.50"
+    },
+    {
+      "group": "",
+      "name": "flask",
+      "version": "2.0.2",
+      "description": "A simple framework for building complex web applications.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cb90f62f1d8e4dc4621f52106613488b5ba826b2e1e10a33eac92f723093ab6a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "url": "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/flask@2.0.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/p/flask"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask@2.0.2"
+    },
+    {
+      "group": "",
+      "name": "flask-cors",
+      "version": "3.0.10",
+      "description": "A Flask extension adding a decorator for CORS support",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "74efc975af1194fc7891ff5cd85b0f7478be4f7f59fe158102e91abb72bb4438"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/flask-cors@3.0.10",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/corydolphin/flask-cors"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask-cors@3.0.10"
+    },
+    {
+      "group": "",
+      "name": "flask-restful",
+      "version": "0.3.9",
+      "description": "Simple framework for creating REST APIs",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4970c49b6488e46c520b325f54833374dc2b98e211f1b272bd4b0c516232afe2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD",
+            "url": "https://opensource.org/licenses/0BSD"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/flask-restful@0.3.9",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://www.github.com/flask-restful/flask-restful/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask-restful@0.3.9"
+    },
+    {
+      "group": "",
+      "name": "pytest",
+      "version": "6.0.2",
+      "description": "pytest: simple powerful testing with Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0e37f61339c4578776e090c3b8f6b16ce4db333889d65d0efb305243ec544b40"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pytest@6.0.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://docs.pytest.org/en/latest/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest@6.0.2"
+    },
+    {
+      "group": "",
+      "name": "boto3",
+      "version": "1.14.47",
+      "description": "The AWS SDK for Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0d9cbeb5c8ca67650cc963c77e2e3b3ab5dffeeee16e03d61d740755f8fc7c44"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/boto3@1.14.47",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/boto/boto3"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/boto3@1.14.47"
+    },
+    {
+      "group": "",
+      "name": "boto3",
+      "version": "1.23.0",
+      "description": "The AWS SDK for Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a5b7cce2473cb7f61a9684a68799f80b049236de62e63e7b4cd2bb0d1e9c58ad"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/boto3@1.23.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/boto/boto3"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/boto3@1.23.0"
+    },
+    {
+      "group": "",
+      "name": "botocore",
+      "version": "1.26.0",
+      "description": "Low-level, data-driven core of boto 3.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "25c43b8a7950d785daf3840bb10277378f36d41b208be3e01614537bdb419fe7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/botocore@1.26.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/boto/botocore"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/botocore@1.26.0"
+    },
+    {
+      "group": "",
+      "name": "qrcode",
+      "version": "7.3.1",
+      "description": "QR Code image generator",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "375a6ff240ca9bd41adc070428b5dfc1dcfbb0f2507f1ac848f6cded38956578"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD",
+            "url": "https://opensource.org/licenses/0BSD"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/qrcode@7.3.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/lincolnloop/python-qrcode"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/qrcode@7.3.1"
+    },
+    {
+      "group": "",
+      "name": "warrant",
+      "version": "0.6.1",
+      "description": "Python class to integrate Boto3's Cognito client so it is easy to login users. With SRP support.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a4099c566086be45d616ed4f58ed1567893ac74de125e201fc89c9023d8adf7d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/warrant@0.6.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/capless/warrant"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/warrant@0.6.1"
+    },
+    {
+      "group": "",
+      "name": "amazon-dax-client",
+      "version": "1.1.7",
+      "description": "Amazon DAX Client for Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c04edd83e40d6a1523fc63c5865c4a04cff40d4b892cc17bbbfc206a96ba6e3c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/amazon-dax-client@1.1.7",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://aws.amazon.com/dynamodb/dax/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/amazon-dax-client@1.1.7"
+    },
+    {
+      "group": "",
+      "name": "requests",
+      "version": "2.25.1",
+      "description": "Python HTTP for Humans.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/requests@2.25.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://requests.readthedocs.io"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.25.1"
+    }
+  ],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/python/cross_service/apigateway_covid-19_tracker/requirements.txt, /github/workspace/python/cross_service/aurora_item_tracker/requirements.txt, /github/workspace/python/cross_service/aurora_rest_lending_library/library_api/requirements.txt, /github/workspace/python/cross_service/photo_analyzer/api/requirements.txt, /github/workspace/python/example_code/cognito/requirements.txt, /github/workspace/python/example_code/dynamodb/requirements.txt",
+      "comment": "Package file"
+    }
+  ]
+}

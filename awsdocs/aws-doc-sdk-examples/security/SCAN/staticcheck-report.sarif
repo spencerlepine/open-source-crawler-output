@@ -1,0 +1,4860 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Static Analysis",
+          "rules": [
+            {
+              "id": "compile",
+              "help": {
+                "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/session\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOPATH).",
+                "markdown": "cannot find package \"github.com/aws/aws-sdk-go/aws/session\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOPATH)."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/session\" in any of:."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#compile",
+              "shortDescription": {
+                "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/session\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOPATH)."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Static Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-f",
+            "json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-f json ./...",
+          "endTimeUtc": "2022-10-27T21:27:13Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:27:13Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 119,
+          "critical": 0,
+          "high": 0,
+          "medium": 119,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/session\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudformation/CreateStack/CreateStack.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    \"github.com/aws/aws-sdk-go/aws/session\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "343cd3cc6d270ae8",
+            "scanFileHash": "0d9b795f9ac0f1d8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/cloudformation\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/cloudformation (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/cloudformation (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudformation\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudformation/CreateStack/CreateStack.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/cloudformation\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1e4095cde3f8479c",
+            "scanFileHash": "0d9b795f9ac0f1d8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudformation/CreateStack/CreateStack.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudformation\"\n    \"github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9dcd1c67ef6bee7d",
+            "scanFileHash": "0d9b795f9ac0f1d8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/aws\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudformation/ListStacks/ListStacks.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    \"github.com/aws/aws-sdk-go/aws\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c2d4f480b30ed378",
+            "scanFileHash": "7faa1224ee7efcae"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/cloudtrail\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/cloudtrail (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/cloudtrail (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudtrail\"\n"
+                  },
+                  "startLine": 26
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudtrail/cloudtrailOps.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/cloudtrail\"\n"
+                  },
+                  "endLine": 26,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "abbeb9b54356e047",
+            "scanFileHash": "e7854c2b8264c453"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/s3\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/s3 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/s3 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/s3\"\n"
+                  },
+                  "startLine": 27
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudtrail/cloudtrailOps.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudtrail\"\n    \"github.com/aws/aws-sdk-go/service/s3\"\n"
+                  },
+                  "endLine": 27,
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "441e700629e36ea7",
+            "scanFileHash": "e7854c2b8264c453"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/sts\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/sts (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/sts (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/sts\"\n"
+                  },
+                  "startLine": 28
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudtrail/cloudtrailOps.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/s3\"\n    \"github.com/aws/aws-sdk-go/service/sts\"\n"
+                  },
+                  "endLine": 28,
+                  "startLine": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9e6e760765fe054d",
+            "scanFileHash": "e7854c2b8264c453"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/cloudwatch\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/cloudwatch (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/cloudwatch (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudwatch\"\n"
+                  },
+                  "startLine": 23
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudwatch/CreateCustomMetric/CreateCustomMetric.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/cloudwatch\"\n"
+                  },
+                  "endLine": 23,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d327836dcbba677a",
+            "scanFileHash": "bd8803a6097da3b8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/iam\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/iam (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/iam (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/iam\"\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudwatch/CreateRole/CreateRole.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/iam\"\n"
+                  },
+                  "endLine": 24,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "502302cd6d66c366",
+            "scanFileHash": "a41f5368c10dd431"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/cloudwatchevents\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/cloudwatchevents (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/cloudwatchevents (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudwatchevents\"\n"
+                  },
+                  "startLine": 23
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudwatch/CreateRule/CreateRule.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/cloudwatchevents\"\n"
+                  },
+                  "endLine": 23,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "b0b6091abcce286d",
+            "scanFileHash": "77a5af10e49fe01e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/cloudwatchlogs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/cloudwatchlogs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/cloudwatchlogs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cloudwatchlogs\"\n"
+                  },
+                  "startLine": 23
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudwatch/GetLogEvents/GetLogEvents.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/cloudwatchlogs\"\n"
+                  },
+                  "endLine": 23,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "dd1643ea57eb38a9",
+            "scanFileHash": "f3b711ca1a41acc2"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-lambda-go/events\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/events (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/events (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-lambda-go/events\"\n"
+                  },
+                  "startLine": 8
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudwatch/Lambda/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    \"github.com/aws/aws-lambda-go/events\"\n"
+                  },
+                  "endLine": 8,
+                  "startLine": 7
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8e1d50cade97582b",
+            "scanFileHash": "c2eb3c6f95496b2b"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-lambda-go/lambda\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/lambda (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/lambda (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-lambda-go/lambda\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/cloudwatch/Lambda/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-lambda-go/events\"\n    \"github.com/aws/aws-lambda-go/lambda\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "73085acc97c07ec4",
+            "scanFileHash": "c2eb3c6f95496b2b"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/codebuild\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/codebuild (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/codebuild (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/codebuild\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/codebuild/BuildProject/BuildProject.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/codebuild\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0feeee6d81587884",
+            "scanFileHash": "9000ac06ebbc4ef5"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/codebuild/codebuildiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/codebuild/codebuildiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/codebuild/codebuildiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/codebuild/codebuildiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/codebuild/BuildProject/BuildProject.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/codebuild\"\n    \"github.com/aws/aws-sdk-go/service/codebuild/codebuildiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e8d0680753006b4c",
+            "scanFileHash": "9000ac06ebbc4ef5"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/dynamodb\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/dynamodb (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/dynamodb (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/dynamodb\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/dynamodb/CreateTable/CreateTable.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/dynamodb\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ad310aad5881388b",
+            "scanFileHash": "95951cc5fd154823"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/dynamodb/CreateTable/CreateTable.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/dynamodb\"\n    \"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1aaf9e819dd780b5",
+            "scanFileHash": "95951cc5fd154823"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/dynamodb/CreateTableItem/CreateTableItem.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/dynamodb\"\n    \"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a53608b8b1eea65d",
+            "scanFileHash": "1bc138d4e5731144"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/dynamodb/expression\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/dynamodb/expression (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/dynamodb/expression (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/dynamodb/expression\"\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/dynamodb/ScanItems/ScanItems.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute\"\n    \"github.com/aws/aws-sdk-go/service/dynamodb/expression\"\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "498ec7414aaf46fa",
+            "scanFileHash": "81a9ecdb0d6d667f"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/ec2\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/ec2 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/ec2 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/ec2\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/ec2/AllocateAddress/AllocateAddress.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/ec2\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "688f3067015faa25",
+            "scanFileHash": "2d3fce62eba22263"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/ec2/ec2iface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/ec2/ec2iface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/ec2/ec2iface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/ec2/ec2iface\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/ec2/AllocateAddress/AllocateAddress.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/ec2\"\n    \"github.com/aws/aws-sdk-go/service/ec2/ec2iface\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "686ac371e20cfb5d",
+            "scanFileHash": "2d3fce62eba22263"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/awserr\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/awserr (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/awserr (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/awserr\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/ec2/MonitorInstances/MonitorInstances.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws\"\n    \"github.com/aws/aws-sdk-go/aws/awserr\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "dd2bb63a4bc3374f",
+            "scanFileHash": "d3139f0164c6d593"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/google/uuid\" in any of:\n\t/usr/local/go/src/github.com/google/uuid (from $GOROOT)\n\t/opt/app-root/go/src/github.com/google/uuid (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/google/uuid\"\n"
+                  },
+                  "startLine": 21
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/cloudformation/CfnCrudOps.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    \"github.com/google/uuid\"\n"
+                  },
+                  "endLine": 21,
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2498d0a4d3242673",
+            "scanFileHash": "90a619ac482d1822"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/cognitoidentityprovider\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/cognitoidentityprovider (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/cognitoidentityprovider (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/cognitoidentityprovider\"\n"
+                  },
+                  "startLine": 32
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/cognito/CognitoCreateUser.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/cognitoidentityprovider\"\n"
+                  },
+                  "endLine": 32,
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "23be6c5bdd295109",
+            "scanFileHash": "1545a15eefeaaf57"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/costexplorer\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/costexplorer (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/costexplorer (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/service/costexplorer\"\n"
+                  },
+                  "startLine": 34
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/costexplorer/get_cost_and_usage.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/aws/session\"\n\t\"github.com/aws/aws-sdk-go/service/costexplorer\"\n"
+                  },
+                  "endLine": 34,
+                  "startLine": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "288fa65d68c925e3",
+            "scanFileHash": "5b6259ad131583d9"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/endpoints\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/endpoints (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/endpoints (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/endpoints\"\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/ec2/get_console_output.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws\"\n    \"github.com/aws/aws-sdk-go/aws/endpoints\"\n"
+                  },
+                  "endLine": 24,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8b6c3d9f2bd76d57",
+            "scanFileHash": "2c4230df8485bd0e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/request\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/request (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/request (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/request\"\n"
+                  },
+                  "startLine": 31
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/extending_sdk/addHeader.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws\"\n    \"github.com/aws/aws-sdk-go/aws/request\"\n"
+                  },
+                  "endLine": 31,
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4d8e43a5056e1e93",
+            "scanFileHash": "1bf7db7a9cc099d3"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/ecs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/ecs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/ecs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/ecs\"\n"
+                  },
+                  "startLine": 29
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/extending_sdk/ecs/update_deployment_with_setters.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/ecs\"\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4a8ed44e21fa5bb1",
+            "scanFileHash": "ccf57f2893c31323"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/sqs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/sqs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/sqs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/sqs\"\n"
+                  },
+                  "startLine": 28
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/extending_sdk/request_context.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/sqs\"\n"
+                  },
+                  "endLine": 28,
+                  "startLine": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "7ddd9a196cb0c141",
+            "scanFileHash": "0929c7598339b956"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/glacier\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/glacier (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/glacier (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/glacier\"\n"
+                  },
+                  "startLine": 32
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/glacier/create_vault.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/glacier\"\n"
+                  },
+                  "endLine": 32,
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9f9d5f8d2c86279f",
+            "scanFileHash": "dc745a20c2ba0bf1"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/kms\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/kms (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/kms (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/kms\"\n"
+                  },
+                  "startLine": 31
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/kms/kms_create_key.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/kms\"\n"
+                  },
+                  "endLine": 31,
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5fa55a3686738fa1",
+            "scanFileHash": "5867a603d2feb24a"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/lambda\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/lambda (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/lambda (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/lambda\"\n"
+                  },
+                  "startLine": 36
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/lambda/aws-go-sdk-lambda-example-configure-function-for-notification.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/lambda\"\n"
+                  },
+                  "endLine": 36,
+                  "startLine": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "081dc890eaccfcd1",
+            "scanFileHash": "8dbfdbcaf5c7c95a"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/polly\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/polly (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/polly (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/polly\"\n"
+                  },
+                  "startLine": 31
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/polly/pollyDescribeVoices.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/polly\"\n"
+                  },
+                  "endLine": 31,
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "09d81adaba766bb5",
+            "scanFileHash": "647eb3a9d4a122f7"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/rds\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/rds (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/rds (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/service/rds\"\n"
+                  },
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/rds/rds_copy_snapshot_to_s3.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/aws/session\"\n\t\"github.com/aws/aws-sdk-go/service/rds\"\n"
+                  },
+                  "endLine": 35,
+                  "startLine": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "78239904f3519f4b",
+            "scanFileHash": "1e63a933b555e93e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/rekognition\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/rekognition (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/rekognition (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/service/rekognition\"\n"
+                  },
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/rekognition/detect_faces.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/aws/session\"\n\t\"github.com/aws/aws-sdk-go/service/rekognition\"\n"
+                  },
+                  "endLine": 33,
+                  "startLine": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d2ebe34c226c54b4",
+            "scanFileHash": "7be1c1805f02675c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/s3/s3manager\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/s3/s3manager (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/s3/s3manager (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/s3/s3manager\"\n"
+                  },
+                  "startLine": 34
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/s3/s3_delete_objects.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/s3\"\n    \"github.com/aws/aws-sdk-go/service/s3/s3manager\"\n"
+                  },
+                  "endLine": 34,
+                  "startLine": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "516606acc455f509",
+            "scanFileHash": "4c92179776dae342"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/ses\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/ses (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/ses (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/ses\"\n"
+                  },
+                  "startLine": 36
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/ses/ses_delete_address.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/ses\"\n"
+                  },
+                  "endLine": 36,
+                  "startLine": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d0c7d23b4525cedc",
+            "scanFileHash": "68de85ebb72dd6a1"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/sns\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/sns (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/sns (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/sns\"\n"
+                  },
+                  "startLine": 32
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/sns/SnsCreateTopic.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/sns\"\n"
+                  },
+                  "endLine": 32,
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2d36e40460f8dae2",
+            "scanFileHash": "64508225ccea31f8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/workdocs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/workdocs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/workdocs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/workdocs\"\n"
+                  },
+                  "startLine": 34
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/example_code/workdocs/wd_list_user_docs.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/aws/session\"\n    \"github.com/aws/aws-sdk-go/service/workdocs\"\n"
+                  },
+                  "endLine": 34,
+                  "startLine": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "750abe8e7c65d001",
+            "scanFileHash": "621734154630bf8f"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/glacier/glacieriface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/glacier/glacieriface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/glacier/glacieriface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/glacier/glacieriface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/glacier/CreateVault/CreateVault.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/glacier\"\n    \"github.com/aws/aws-sdk-go/service/glacier/glacieriface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "db8df561ed9f2c14",
+            "scanFileHash": "6f0fcc971898e6d4"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/iam/iamiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/iam/iamiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/iam/iamiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/iam/iamiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/iam/AccessKeyLastUsed/AccessKeyLastUsed.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/iam\"\n    \"github.com/aws/aws-sdk-go/service/iam/iamiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4f6283859f67d0d5",
+            "scanFileHash": "9f505d911014fad0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/kms/kmsiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/kms/kmsiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/kms/kmsiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/kms/kmsiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/kms/CreateKey/CreateKey.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/kms\"\n    \"github.com/aws/aws-sdk-go/service/kms/kmsiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "392b3a4a7a521f72",
+            "scanFileHash": "4fd4b0113f16a808"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/lambda/lambdaiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/lambda/lambdaiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/lambda/lambdaiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/lambda/lambdaiface\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/lambda/ConfigureFunction/ConfigureFunction.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/lambda\"\n    \"github.com/aws/aws-sdk-go/service/lambda/lambdaiface\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "b1d0742286cccca3",
+            "scanFileHash": "939a2bdf4f1b2c6f"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/polly/pollyiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/polly/pollyiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/polly/pollyiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/polly/pollyiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/polly/DescribeVoices/DescribeVoices.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/polly\"\n    \"github.com/aws/aws-sdk-go/service/polly/pollyiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "06152847b1eb047d",
+            "scanFileHash": "b10f7e017deeaee6"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/rds/rdsiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/rds/rdsiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/rds/rdsiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/rds/rdsiface\"\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/rds/CopySnapshotToS3/CopySnapshotToS3.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/rds\"\n    \"github.com/aws/aws-sdk-go/service/rds/rdsiface\"\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "028eb42385ecf8bf",
+            "scanFileHash": "cc5b23ae084ce386"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/s3/s3iface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/s3/s3iface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/s3/s3iface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/s3/s3iface\"\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/s3/CRUD/S3CrudOps.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/s3\"\n    \"github.com/aws/aws-sdk-go/service/s3/s3iface\"\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1a11c2a8abf8af3b",
+            "scanFileHash": "07df320a61e8ea5f"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"golang.org/x/net/http2\" in any of:\n\t/usr/local/go/src/golang.org/x/net/http2 (from $GOROOT)\n\t/opt/app-root/go/src/golang.org/x/net/http2 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"golang.org/x/net/http2\"\n"
+                  },
+                  "startLine": 32
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/s3/CustomClient/CustomHttpClient.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    \"golang.org/x/net/http2\"\n"
+                  },
+                  "endLine": 32,
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "47a19545b475b284",
+            "scanFileHash": "42ef4d50d7d7d656"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/ses/sesiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/ses/sesiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/ses/sesiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/ses/sesiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/ses/DeleteAddress/DeleteAddress.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/ses\"\n    \"github.com/aws/aws-sdk-go/service/ses/sesiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ca483ac7b72a38e3",
+            "scanFileHash": "b7dd3167589a319c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/sns/snsiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/sns/snsiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/sns/snsiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/sns/snsiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/sns/MakeTopic/MakeTopic.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/sns\"\n    \"github.com/aws/aws-sdk-go/service/sns/snsiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "93ca47a35d4eb166",
+            "scanFileHash": "949430ac76cf9a1f"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/ssm\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/ssm (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/ssm (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/service/ssm\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/ssm/DeleteParameter/DeleteParameter.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/aws/session\"\n\t\"github.com/aws/aws-sdk-go/service/ssm\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5b40bd18dc034bfc",
+            "scanFileHash": "9ad037150050f3b1"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/ssm/ssmiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/ssm/ssmiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/ssm/ssmiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/service/ssm/ssmiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/ssm/DeleteParameter/DeleteParameter.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/service/ssm\"\n\t\"github.com/aws/aws-sdk-go/service/ssm/ssmiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4465b5a5f3bf10c6",
+            "scanFileHash": "9ad037150050f3b1"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/sts/stsiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/sts/stsiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/sts/stsiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/sts/stsiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/sts/TakeRole/TakeRole.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/sts\"\n    \"github.com/aws/aws-sdk-go/service/sts/stsiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c27de1afafd43e85",
+            "scanFileHash": "a35f1f49f26646a4"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/workdocs/workdocsiface\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/workdocs/workdocsiface (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/workdocs/workdocsiface (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/workdocs/workdocsiface\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/go/workdocs/ShowUsers/ShowUsers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \"github.com/aws/aws-sdk-go/service/workdocs\"\n    \"github.com/aws/aws-sdk-go/service/workdocs/workdocsiface\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "de3f54037421e09f",
+            "scanFileHash": "15589b24d3d86b73"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/config\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/config (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/config (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/CreateCustomMetric/CreateCustomMetricv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/aws/aws-sdk-go-v2/config\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ca41c842002944e1",
+            "scanFileHash": "bc11efb5f0b38dae"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/cloudwatch\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatch (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatch (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatch\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/CreateCustomMetric/CreateCustomMetricv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatch\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "042631dea3496242",
+            "scanFileHash": "bc11efb5f0b38dae"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/cloudwatch/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatch/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatch/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatch/types\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/CreateCustomMetric/CreateCustomMetricv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatch\"\n\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatch/types\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d11aad92e4af2e11",
+            "scanFileHash": "bc11efb5f0b38dae"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/aws\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/aws (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/aws (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/aws\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/CreateEnableMetricAlarm/CreateEnableMetricAlarmv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/aws/aws-sdk-go-v2/aws\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e24b596c4a58252c",
+            "scanFileHash": "e2f868d9dfc1126b"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/GetLogEvents/GetLogEventsv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0ba5aefab7a9faa7",
+            "scanFileHash": "12e2d4bd419ccb6c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/cloudwatchevents\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatchevents (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatchevents (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatchevents\"\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/PutEvent/PutEventv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatchevents\"\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0eb6580ead362a6e",
+            "scanFileHash": "e1c50f0f2d8a40d1"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/cloudwatchevents/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatchevents/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/cloudwatchevents/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatchevents/types\"\n"
+                  },
+                  "startLine": 17
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cloudwatch/PutEvent/PutEventv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatchevents\"\n\t\"github.com/aws/aws-sdk-go-v2/service/cloudwatchevents/types\"\n"
+                  },
+                  "endLine": 17,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f74aedd6b9cfc3f1",
+            "scanFileHash": "e1c50f0f2d8a40d1"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/codebuild\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/codebuild (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/codebuild (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/codebuild\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/codebuild/common/ListBuildsv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/aws/aws-sdk-go-v2/service/codebuild\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "169c77167fd947e4",
+            "scanFileHash": "e8c330b0749a406d"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/codebuild/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/codebuild/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/codebuild/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/codebuild/types\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/codebuild/common/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/codebuild\"\n\t\"github.com/aws/aws-sdk-go-v2/service/codebuild/types\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "fd98a16ee77bd6a6",
+            "scanFileHash": "7040a0f3095b9207"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk\"\n"
+                  },
+                  "startLine": 6
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "import (\n\t\"github.com/aws/aws-cdk-go/awscdk\"\n"
+                  },
+                  "endLine": 6,
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e33aa4860c7e2c35",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awsecs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awsecs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awsecs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsecs\"\n"
+                  },
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awsecs\"\n"
+                  },
+                  "endLine": 7,
+                  "startLine": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "85ce6cbbe2a05c53",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awsecspatterns\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awsecspatterns (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awsecspatterns (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsecspatterns\"\n"
+                  },
+                  "startLine": 8
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsecs\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awsecspatterns\"\n"
+                  },
+                  "endLine": 8,
+                  "startLine": 7
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "b618404a44fb2817",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awsiam\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awsiam (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awsiam (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsiam\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsecspatterns\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awsiam\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c671b895b47c3bd7",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awss3\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awss3 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awss3 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awss3\"\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsiam\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awss3\"\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8dc9ec6e6b069028",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awss3notifications\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awss3notifications (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awss3notifications (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awss3notifications\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awss3\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awss3notifications\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d1cf5f45675684c9",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awssqs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awssqs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awssqs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awssqs\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awss3notifications\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awssqs\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e9b5bc305d6d1912",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/constructs-go/constructs/v3\" in any of:\n\t/usr/local/go/src/github.com/aws/constructs-go/constructs/v3 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/constructs-go/constructs/v3 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/constructs-go/constructs/v3\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awssqs\"\n\t\"github.com/aws/constructs-go/constructs/v3\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f98d80d4c0d81f07",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/jsii-runtime-go\" in any of:\n\t/usr/local/go/src/github.com/aws/jsii-runtime-go (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/jsii-runtime-go (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/jsii-runtime-go\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/constructs-go/constructs/v3\"\n\t\"github.com/aws/jsii-runtime-go\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a683b9005c2abbfa",
+            "scanFileHash": "2a8d639489c64333"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"example.aws/go-v2/examples/cross_service/wordfreq/service/shared\" in any of:\n\t/usr/local/go/src/example.aws/go-v2/examples/cross_service/wordfreq/service/shared (from $GOROOT)\n\t/opt/app-root/go/src/example.aws/go-v2/examples/cross_service/wordfreq/service/shared (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\twordfreq \"example.aws/go-v2/examples/cross_service/wordfreq/service/shared\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\twordfreq \"example.aws/go-v2/examples/cross_service/wordfreq/service/shared\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "04508ad069e41c81",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/credentials/stscreds\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/credentials/stscreds (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/credentials/stscreds (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/credentials/stscreds\"\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tawsConfig \"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/credentials/stscreds\"\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "869fe40ec2ccafd8",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/s3\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/s3 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/s3 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/s3\"\n"
+                  },
+                  "startLine": 17
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/credentials/stscreds\"\n\t\"github.com/aws/aws-sdk-go-v2/service/s3\"\n"
+                  },
+                  "endLine": 17,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1c3275d4739a0e14",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/sqs\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/sqs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/sqs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sqs\"\n"
+                  },
+                  "startLine": 18
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/s3\"\n\t\"github.com/aws/aws-sdk-go-v2/service/sqs\"\n"
+                  },
+                  "endLine": 18,
+                  "startLine": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ea716da0c4b95905",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/sts\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/sts (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/sts (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sts\"\n"
+                  },
+                  "startLine": 19
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sqs\"\n\t\"github.com/aws/aws-sdk-go-v2/service/sts\"\n"
+                  },
+                  "endLine": 19,
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "60c5281c4cb4502d",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"go.uber.org/zap\" in any of:\n\t/usr/local/go/src/go.uber.org/zap (from $GOROOT)\n\t/opt/app-root/go/src/go.uber.org/zap (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"go.uber.org/zap\"\n"
+                  },
+                  "startLine": 21
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/uploader/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/google/uuid\"\n\t\"go.uber.org/zap\"\n"
+                  },
+                  "endLine": 21,
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f5c5f301a1069c97",
+            "scanFileHash": "b55213824aa6e7e0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/feature/ec2/imds\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/feature/ec2/imds (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/feature/ec2/imds (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/feature/ec2/imds\"\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/worker/config.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tawsConfig \"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/feature/ec2/imds\"\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "74df7815b29f4c95",
+            "scanFileHash": "fb84e62623358d13"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"example.aws/go-v2/examples/cross_service/wordfreq/service/shared/s3\" in any of:\n\t/usr/local/go/src/example.aws/go-v2/examples/cross_service/wordfreq/service/shared/s3 (from $GOROOT)\n\t/opt/app-root/go/src/example.aws/go-v2/examples/cross_service/wordfreq/service/shared/s3 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tparser \"example.aws/go-v2/examples/cross_service/wordfreq/service/shared/s3\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/cmd/worker/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"example.aws/go-v2/examples/cross_service/wordfreq/service/shared\"\n\tparser \"example.aws/go-v2/examples/cross_service/wordfreq/service/shared/s3\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a391395d784a3fdb",
+            "scanFileHash": "c088a4c6b1ccd485"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/tidwall/gjson\" in any of:\n\t/usr/local/go/src/github.com/tidwall/gjson (from $GOROOT)\n\t/opt/app-root/go/src/github.com/tidwall/gjson (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/tidwall/gjson\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/shared/s3/parser.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/tidwall/gjson\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e0a409296c299c18",
+            "scanFileHash": "655de0c0a794dd98"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/bwmarrin/snowflake\" in any of:\n\t/usr/local/go/src/github.com/bwmarrin/snowflake (from $GOROOT)\n\t/opt/app-root/go/src/github.com/bwmarrin/snowflake (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/bwmarrin/snowflake\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/shared/types.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\ts3events \"example.aws/go-v2/examples/cross_service/wordfreq/service/shared/s3\"\n\t\"github.com/bwmarrin/snowflake\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "efee28905e641b70",
+            "scanFileHash": "cdf872cf0dd7b315"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue\"\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions/movie.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue\"\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8fc1bbb770ac0086",
+            "scanFileHash": "a6e3f3799c1ffe96"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/dynamodb/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/dynamodb/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/dynamodb/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/dynamodb/types\"\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions/movie.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue\"\n\t\"github.com/aws/aws-sdk-go-v2/service/dynamodb/types\"\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5ab73137ae7d1ab9",
+            "scanFileHash": "a6e3f3799c1ffe96"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/dynamodb\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/dynamodb (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/dynamodb (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/dynamodb\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions/partiql.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue\"\n\t\"github.com/aws/aws-sdk-go-v2/service/dynamodb\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "111870c89c4c2ce4",
+            "scanFileHash": "d083058317e8c0fa"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/stubs\" in any of:\n\t/usr/local/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/stubs (from $GOROOT)\n\t/opt/app-root/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/stubs (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/stubs\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions/partiql_test.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/dynamodb\"\n\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/stubs\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "961e0d8286671e71",
+            "scanFileHash": "18d682772af31d47"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/feature/dynamodb/expression\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/feature/dynamodb/expression (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/feature/dynamodb/expression (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/feature/dynamodb/expression\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions/table_basics.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue\"\n\t\"github.com/aws/aws-sdk-go-v2/feature/dynamodb/expression\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "bf2f575b1be4babe",
+            "scanFileHash": "af094f556c580767"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/awsdocs/aws-doc-sdk-examples/gov2/demotools\" in any of:\n\t/usr/local/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/demotools (from $GOROOT)\n\t/opt/app-root/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/demotools (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/demotools\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/cmd/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/demotools\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e672917e3c799eb1",
+            "scanFileHash": "dc432da80cf09757"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions\" in any of:\n\t/usr/local/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions (from $GOROOT)\n\t/opt/app-root/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions\"\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/cmd/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/demotools\"\n\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions\"\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "34b6f202ffb7a87d",
+            "scanFileHash": "dc432da80cf09757"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/scenarios\" in any of:\n\t/usr/local/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/scenarios (from $GOROOT)\n\t/opt/app-root/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/scenarios (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/scenarios\"\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/cmd/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/actions\"\n\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/scenarios\"\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2532221dd083dced",
+            "scanFileHash": "dc432da80cf09757"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/awsdocs/aws-doc-sdk-examples/gov2/testtools\" in any of:\n\t/usr/local/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/testtools (from $GOROOT)\n\t/opt/app-root/go/src/github.com/awsdocs/aws-doc-sdk-examples/gov2/testtools (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/testtools\"\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/dynamodb/stubs/partiql_stubs.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/dynamodb/types\"\n\t\"github.com/awsdocs/aws-doc-sdk-examples/gov2/testtools\"\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "dbf1a499c8311625",
+            "scanFileHash": "10a7cd2dd8be5c21"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/ec2\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/ec2 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/ec2 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/ec2\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/ec2/common/CreateImagev2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/ec2\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e88381accf2e5a4a",
+            "scanFileHash": "8ce6d8edcce814cd"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/ec2/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/ec2/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/ec2/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/ec2/types\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/ec2/common/CreateImagev2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/ec2\"\n\t\"github.com/aws/aws-sdk-go-v2/service/ec2/types\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d44648c16b397e3a",
+            "scanFileHash": "8ce6d8edcce814cd"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/smithy-go\" in any of:\n\t/usr/local/go/src/github.com/aws/smithy-go (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/smithy-go (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/smithy-go\"\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/ec2/common/MonitorInstancesv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/ec2\"\n\t\"github.com/aws/smithy-go\"\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "dff6f05f0930fed8",
+            "scanFileHash": "59cfd9daacc40e2e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/iam\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/iam (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/iam (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/iam\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/iam/AccessKeyLastUsed/AccessKeyLastUsedv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/iam\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c6ee3485dcf88afb",
+            "scanFileHash": "6baa81241cfcb290"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/iam/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/iam/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/iam/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/iam/types\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/iam/ListAdmins/ListAdminsv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/iam\"\n\t\"github.com/aws/aws-sdk-go-v2/service/iam/types\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1a913d836c52a122",
+            "scanFileHash": "7844e4ef2c7136b1"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/credentials\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/credentials (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/credentials (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/credentials\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/iam/common/scenario.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/credentials\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "581ae187c54b4b5c",
+            "scanFileHash": "76dba51052d2b97a"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/kinesis\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/kinesis (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/kinesis (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/kinesis\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/kinesis/PutRecord/PutRecordv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/kinesis\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d96a407fde37fd5c",
+            "scanFileHash": "39eee63ea4a0c118"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/kms\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/kms (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/kms (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/kms\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/kms/CreateKey/CreateKeyv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/kms\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "3ccc108f6f042819",
+            "scanFileHash": "7d3fff978360f011"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/kms/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/kms/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/kms/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/kms/types\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/kms/CreateKey/CreateKeyv2_test.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/kms\"\n\t\"github.com/aws/aws-sdk-go-v2/service/kms/types\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8767e5e28d988c92",
+            "scanFileHash": "ac8cd89a363e3da0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/rekognition\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/rekognition (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/rekognition (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/rekognition\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/rekognition/DetectFaces/DetectFaces.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/rekognition\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5ca58a1442492c5b",
+            "scanFileHash": "535c73d763cf379b"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/rekognition/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/rekognition/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/rekognition/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/rekognition/types\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/rekognition/DetectFaces/DetectFaces.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/rekognition\"\n\t\"github.com/aws/aws-sdk-go-v2/service/rekognition/types\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ff2548aba26143a8",
+            "scanFileHash": "535c73d763cf379b"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/nfnt/resize\" in any of:\n\t/usr/local/go/src/github.com/nfnt/resize (from $GOROOT)\n\t/opt/app-root/go/src/github.com/nfnt/resize (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/nfnt/resize\"\n"
+                  },
+                  "startLine": 26
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/rekognition/DetectLabels/DetectLabels.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/s3\"\n\t\"github.com/nfnt/resize\"\n"
+                  },
+                  "endLine": 26,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e5d349aee48ac421",
+            "scanFileHash": "7965881ae1111e91"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/rwcarlsen/goexif/exif\" in any of:\n\t/usr/local/go/src/github.com/rwcarlsen/goexif/exif (from $GOROOT)\n\t/opt/app-root/go/src/github.com/rwcarlsen/goexif/exif (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/rwcarlsen/goexif/exif\"\n"
+                  },
+                  "startLine": 29
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/rekognition/DetectLabels/DetectLabels.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/aws\"\n\t\"github.com/rwcarlsen/goexif/exif\"\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "bb6240f9d2a23021",
+            "scanFileHash": "7965881ae1111e91"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/rwcarlsen/goexif/tiff\" in any of:\n\t/usr/local/go/src/github.com/rwcarlsen/goexif/tiff (from $GOROOT)\n\t/opt/app-root/go/src/github.com/rwcarlsen/goexif/tiff (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/rwcarlsen/goexif/tiff\"\n"
+                  },
+                  "startLine": 30
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/rekognition/DetectLabels/DetectLabels.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/rwcarlsen/goexif/exif\"\n\t\"github.com/rwcarlsen/goexif/tiff\"\n"
+                  },
+                  "endLine": 30,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a8f7695da3ef3261",
+            "scanFileHash": "7965881ae1111e91"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/s3/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/s3/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/s3/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/s3/types\"\n"
+                  },
+                  "startLine": 17
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/s3/common/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/s3\"\n\t\"github.com/aws/aws-sdk-go-v2/service/s3/types\"\n"
+                  },
+                  "endLine": 17,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "75ec189f4fdad2c6",
+            "scanFileHash": "9a2472de0bdae61d"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/rs/xid\" in any of:\n\t/usr/local/go/src/github.com/rs/xid (from $GOROOT)\n\t/opt/app-root/go/src/github.com/rs/xid (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/rs/xid\"\n"
+                  },
+                  "startLine": 18
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/s3/common/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/s3/types\"\n\t\"github.com/rs/xid\"\n"
+                  },
+                  "endLine": 18,
+                  "startLine": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a51b79027c5636fd",
+            "scanFileHash": "9a2472de0bdae61d"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/secretsmanager\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/secretsmanager (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/secretsmanager (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/secretsmanager\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/secretsmanager/common/create.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/aws\"\n\t\"github.com/aws/aws-sdk-go-v2/service/secretsmanager\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "528394029895e807",
+            "scanFileHash": "13b72bca3323831a"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"example.aws/go-v2/examples/secretsmanager/common\" in any of:\n\t/usr/local/go/src/example.aws/go-v2/examples/secretsmanager/common (from $GOROOT)\n\t/opt/app-root/go/src/example.aws/go-v2/examples/secretsmanager/common (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"example.aws/go-v2/examples/secretsmanager/common\"\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/secretsmanager/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"example.aws/go-v2/examples/secretsmanager/common\"\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "14e763cb743e7a2c",
+            "scanFileHash": "ecc26fad4b404e4c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/sns\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/sns (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/sns (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sns\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/sns/CreateTopic/CreateTopicv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/sns\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ea18d31f508dde92",
+            "scanFileHash": "1d9a4d265e9cc37d"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/sns/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/sns/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/sns/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sns/types\"\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/sns/ListSubscriptions/ListSubscriptionsv2_test.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sns\"\n\t\"github.com/aws/aws-sdk-go-v2/service/sns/types\"\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0e53ab2ecff63816",
+            "scanFileHash": "9329fe7381cade6e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/sqs/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/sqs/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/sqs/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sqs/types\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/sqs/ReceiveLPMessage/ReceiveLPMessagev2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sqs\"\n\t\"github.com/aws/aws-sdk-go-v2/service/sqs/types\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5978952f7676977f",
+            "scanFileHash": "b08c4667a7941e84"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/ssm\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/ssm (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/ssm (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/ssm\"\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/ssm/DeleteParameter/DeleteParameterv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/aws-sdk-go-v2/service/ssm\"\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "19b42796780c5f2b",
+            "scanFileHash": "e85b7b5e9e81b3f4"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/ssm/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/ssm/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/ssm/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/ssm/types\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/ssm/PutParameter/PutParameterv2.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/ssm\"\n\t\"github.com/aws/aws-sdk-go-v2/service/ssm/types\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5d483444c3c9576b",
+            "scanFileHash": "124cd0143e8c8d7c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/service/sts/types\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/service/sts/types (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/service/sts/types (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sts/types\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/sts/AssumeRole/AssumeRolev2_test.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/service/sts\"\n\t\"github.com/aws/aws-sdk-go-v2/service/sts/types\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c4c7f8b617cac7a1",
+            "scanFileHash": "0e927e7388cc6864"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go-v2/aws/middleware\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go-v2/aws/middleware (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go-v2/aws/middleware (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tsdkmiddleware \"github.com/aws/aws-sdk-go-v2/aws/middleware\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/testtools/awsm_stubber.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/aws\"\n\tsdkmiddleware \"github.com/aws/aws-sdk-go-v2/aws/middleware\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9897186567b1d7bc",
+            "scanFileHash": "1ffd481beffa30d8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/smithy-go/middleware\" in any of:\n\t/usr/local/go/src/github.com/aws/smithy-go/middleware (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/smithy-go/middleware (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/smithy-go/middleware\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/testtools/awsm_stubber.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go-v2/config\"\n\t\"github.com/aws/smithy-go/middleware\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8b7a23d8c1fc5608",
+            "scanFileHash": "1ffd481beffa30d8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/gofiber/fiber/v2\" in any of:\n\t/usr/local/go/src/github.com/gofiber/fiber/v2 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/gofiber/fiber/v2 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/gofiber/fiber/v2\"\n"
+                  },
+                  "startLine": 6
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/resources/cdk/go-apprunner/app/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/gofiber/fiber/v2\"\n"
+                  },
+                  "endLine": 6,
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1b894096c1aec1d6",
+            "scanFileHash": "43ac2a984877e2cf"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awsapprunner\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awsapprunner (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awsapprunner (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsapprunner\"\n"
+                  },
+                  "startLine": 5
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/resources/cdk/go-apprunner/go-arcdk.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awsapprunner\"\n"
+                  },
+                  "endLine": 5,
+                  "startLine": 4
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "57ba42ec129d3fb1",
+            "scanFileHash": "868f29f63e5d1d1e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-cdk-go/awscdk/awsecrassets\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-cdk-go/awscdk/awsecrassets (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-cdk-go/awscdk/awsecrassets (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsecrassets\"\n"
+                  },
+                  "startLine": 6
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/resources/cdk/go-apprunner/go-arcdk.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-cdk-go/awscdk/awsapprunner\"\n\t\"github.com/aws/aws-cdk-go/awscdk/awsecrassets\"\n"
+                  },
+                  "endLine": 6,
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ac6aa21fe4bd9b2b",
+            "scanFileHash": "868f29f63e5d1d1e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "2f517757-16e3-48d9-ae45-f6d6a21ddb0e"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "2f517757-16e3-48d9-ae45-f6d6a21ddb0e",
+      "runGuid": "bf032426-c51f-47f5-ad82-3509f4b984d2"
+    }
+  ]
+}

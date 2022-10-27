@@ -1,0 +1,482 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Security Audit for Infrastructure",
+          "rules": [
+            {
+              "id": "CKV_DOCKER_7",
+              "help": {
+                "text": "Ensure the base image uses a non latest version tag.",
+                "markdown": "Ensure the base image uses a non latest version tag."
+              },
+              "name": "ReferenceLatestTag",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Ensure the base image uses a non latest version tag."
+              },
+              "helpUri": "https://slscan.io?q=CKV_DOCKER_7",
+              "shortDescription": {
+                "text": "Ensure the base image uses a non latest version tag."
+              }
+            },
+            {
+              "id": "CKV_DOCKER_3",
+              "help": {
+                "text": "Ensure that a user for the container has been created.",
+                "markdown": "Ensure that a user for the container has been created."
+              },
+              "name": "UserExists",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Ensure that a user for the container has been created."
+              },
+              "helpUri": "https://slscan.io?q=CKV_DOCKER_3",
+              "shortDescription": {
+                "text": "Ensure that a user for the container has been created."
+              }
+            },
+            {
+              "id": "CKV_DOCKER_2",
+              "help": {
+                "text": "Ensure that HEALTHCHECK instructions have been added to container images.",
+                "markdown": "Ensure that HEALTHCHECK instructions have been added to container images."
+              },
+              "name": "HealthcheckExists",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+              },
+              "helpUri": "https://slscan.io?q=CKV_DOCKER_2",
+              "shortDescription": {
+                "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Security Audit for Infrastructure"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-s",
+            "--framework",
+            "dockerfile",
+            "--quiet",
+            "--no-guide",
+            "-o",
+            "json",
+            "-d",
+            "/github/workspace"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-s --framework dockerfile --quiet --no-guide -o json -d /github/workspace",
+          "endTimeUtc": "2022-10-27T21:27:17Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:27:17Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-doc-sdk-examples"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 8,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 8
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure the base image uses a non latest version tag."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 FROM golang AS builder\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 FROM golang AS builder\n"
+                  },
+                  "endLine": 1,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "44ab049e72c2c4d9",
+            "scanFileHash": "a4287890b8d3a814"
+          },
+          "ruleId": "CKV_DOCKER_7",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that a user for the container has been created."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 FROM golang AS builder\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 FROM golang AS builder\nCOPY . src/\nRUN cd src && ls && GOPROXY=direct go build -o ../bin/worker ./cmd/worker/\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "44ab049e72c2c4d9",
+            "scanFileHash": "a4287890b8d3a814"
+          },
+          "ruleId": "CKV_DOCKER_3",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 FROM golang AS builder\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/gov2/cross_service/wordfreq/wordfreq/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 FROM golang AS builder\nCOPY . src/\nRUN cd src && ls && GOPROXY=direct go build -o ../bin/worker ./cmd/worker/\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "44ab049e72c2c4d9",
+            "scanFileHash": "a4287890b8d3a814"
+          },
+          "ruleId": "CKV_DOCKER_2",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that a user for the container has been created."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 FROM maven:3.6.3-jdk-8\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/javav2/example_code/emr/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 FROM maven:3.6.3-jdk-8\n\nCOPY . /app/\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4f945a9bf99e53bb",
+            "scanFileHash": "b9de9907bed0d598"
+          },
+          "ruleId": "CKV_DOCKER_3",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 FROM maven:3.6.3-jdk-8\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/javav2/example_code/emr/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 FROM maven:3.6.3-jdk-8\n\nCOPY . /app/\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4f945a9bf99e53bb",
+            "scanFileHash": "b9de9907bed0d598"
+          },
+          "ruleId": "CKV_DOCKER_2",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure the base image uses a non latest version tag."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "3 FROM golang AS builder\n"
+                  },
+                  "startLine": 3
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/resources/cdk/go-apprunner/app/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "3 FROM golang AS builder\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "59dc83729c8ab2b5",
+            "scanFileHash": "ccbb5398ae82f009"
+          },
+          "ruleId": "CKV_DOCKER_7",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that a user for the container has been created."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 # This dockerfile is a two-stage build.\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/resources/cdk/go-apprunner/app/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 # This dockerfile is a two-stage build.\n#In the first, we build our actual application using go build.\nFROM golang AS builder\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1127dbce95f05134",
+            "scanFileHash": "ccbb5398ae82f009"
+          },
+          "ruleId": "CKV_DOCKER_3",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Ensure that HEALTHCHECK instructions have been added to container images."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "1 # This dockerfile is a two-stage build.\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-doc-sdk-examples/resources/cdk/go-apprunner/app/Dockerfile"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "1 # This dockerfile is a two-stage build.\n#In the first, we build our actual application using go build.\nFROM golang AS builder\n"
+                  },
+                  "endLine": 3,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1127dbce95f05134",
+            "scanFileHash": "ccbb5398ae82f009"
+          },
+          "ruleId": "CKV_DOCKER_2",
+          "ruleIndex": 2
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "72304730-530e-4209-99bc-01154f079708"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "72304730-530e-4209-99bc-01154f079708",
+      "runGuid": "bf032426-c51f-47f5-ad82-3509f4b984d2"
+    }
+  ]
+}

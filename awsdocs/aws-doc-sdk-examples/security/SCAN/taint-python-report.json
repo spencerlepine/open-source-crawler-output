@@ -1,0 +1,386 @@
+{
+  "generated_at": "2022-10-27T21:25:51Z",
+  "vulnerabilities": [
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "examples_folder",
+        "line_number": 62,
+        "path": "/github/workspace/scripts/legacy/api_report.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "examples_folder",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "for (folder_name, _, file_list) in os.walk(examples_folder):",
+        "line_number": 74,
+        "path": "/github/workspace/scripts/legacy/api_report.py"
+      },
+      "sink_trigger_word": "os.walk(",
+      "sink_label": "for (folder_name, _, file_list) in os.walk(examples_folder):",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [
+        {
+          "label": "save_3_examples = examples",
+          "line_number": 82,
+          "path": "/github/workspace/scripts/legacy/api_report.py"
+        },
+        {
+          "label": "temp_3_examples = examples",
+          "line_number": 78,
+          "path": "/github/workspace/scripts/legacy/api_report.py"
+        }
+      ],
+      "description": "Remote Code Execution via shell with user data from `examples_folder in api_report.py:62` used for constructing the command at `api_report.py:74`.",
+      "short_description": "Remote Code Execution via shell with user data from `examples_folder in api_report.py:62` used for constructing the command at `api_report.py:74`."
+    },
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "examples_folder",
+        "line_number": 90,
+        "path": "/github/workspace/scripts/cleanup_report.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "examples_folder",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "for (folder_name, dirs, file_list) in os.walk(examples_folder,topdown=True):",
+        "line_number": 104,
+        "path": "/github/workspace/scripts/cleanup_report.py"
+      },
+      "sink_trigger_word": "os.walk(",
+      "sink_label": "for (folder_name, dirs, file_list) in os.walk(examples_folder,topdown=True):",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [
+        {
+          "label": "dirs[] = [d for d in dirs]",
+          "line_number": 105,
+          "path": "/github/workspace/scripts/cleanup_report.py"
+        },
+        {
+          "label": "save_2_ = ",
+          "line_number": 74,
+          "path": "/github/workspace/scripts/cleanup_report.py"
+        },
+        {
+          "label": " = save_2_",
+          "line_number": 74,
+          "path": "/github/workspace/scripts/cleanup_report.py"
+        }
+      ],
+      "description": "Remote Code Execution via shell with user data from `examples_folder in cleanup_report.py:90` used for constructing the command at `cleanup_report.py:104`.",
+      "short_description": "Remote Code Execution via shell with user data from `examples_folder in cleanup_report.py:90` used for constructing the command at `cleanup_report.py:104`."
+    },
+    {
+      "rule_id": "taint-basic-xss",
+      "rule_name": "Potential XSS",
+      "severity": "MEDIUM",
+      "cwe_category": "CWE-80",
+      "owasp_category": "a7-xss",
+      "source": {
+        "label": "message_attributes",
+        "line_number": 25,
+        "path": "/github/workspace/python/example_code/sqs/message_wrapper.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "message_attributes",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_1 = ret_queue.send_message(MessageBody=message_body, MessageAttributes=message_attributes)",
+        "line_number": 39,
+        "path": "/github/workspace/python/example_code/sqs/message_wrapper.py"
+      },
+      "sink_trigger_word": "send_message(",
+      "sink_label": "~call_1 = ret_queue.send_message(MessageBody=message_body, MessageAttributes=message_attributes)",
+      "sink_type": "ReturnedToUser",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "Possibility for Cross-site scripting (XSS) when the http data at `message_attributes in message_wrapper.py:25` is returned to the user via `message_wrapper.py:39` without sanitization.",
+      "short_description": "Possibility for Cross-site scripting (XSS) when the http data at `message_attributes in message_wrapper.py:25` is returned to the user via `message_wrapper.py:39` without sanitization."
+    },
+    {
+      "rule_id": "taint-traversal",
+      "rule_name": "Directory Traversal",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-22",
+      "owasp_category": "a5-broken-access-control",
+      "source": {
+        "label": "data",
+        "line_number": 34,
+        "path": "/github/workspace/python/example_code/s3/s3_basics/object_wrapper.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "data",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_1 = ret_open(data, rb)",
+        "line_number": 45,
+        "path": "/github/workspace/python/example_code/s3/s3_basics/object_wrapper.py"
+      },
+      "sink_trigger_word": "open(",
+      "sink_label": "~call_1 = ret_open(data, rb)",
+      "sink_type": "Exfiltration",
+      "type": "Vulnerability",
+      "reassignment_nodes": [
+        {
+          "label": "put_data = data",
+          "line_number": 42,
+          "path": "/github/workspace/python/example_code/s3/s3_basics/object_wrapper.py"
+        }
+      ],
+      "description": "Exfiltration of data (Path Traversal) due to user data from `data in object_wrapper.py:34` influencing file operations in `object_wrapper.py:45`.",
+      "short_description": "Exfiltration of data (Path Traversal) due to user data from `data in object_wrapper.py:34` influencing file operations in `object_wrapper.py:45`."
+    },
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "duplicates_file",
+        "line_number": 26,
+        "path": "/github/workspace/python/example_code/rekognition/custom_labels_csv_to_manifest.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "duplicates_file",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_9 = ret_os.remove(duplicates_file)",
+        "line_number": 70,
+        "path": "/github/workspace/python/example_code/rekognition/custom_labels_csv_to_manifest.py"
+      },
+      "sink_trigger_word": "os.remove(",
+      "sink_label": "~call_9 = ret_os.remove(duplicates_file)",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "Remote Code Execution via shell with user data from `duplicates_file in custom_labels_csv_to_manifest.py:26` used for constructing the command at `custom_labels_csv_to_manifest.py:70`.",
+      "short_description": "Remote Code Execution via shell with user data from `duplicates_file in custom_labels_csv_to_manifest.py:26` used for constructing the command at `custom_labels_csv_to_manifest.py:70`."
+    },
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "deduplicated_file",
+        "line_number": 26,
+        "path": "/github/workspace/python/example_code/rekognition/custom_labels_csv_to_manifest.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "deduplicated_file",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_10 = ret_os.remove(deduplicated_file)",
+        "line_number": 71,
+        "path": "/github/workspace/python/example_code/rekognition/custom_labels_csv_to_manifest.py"
+      },
+      "sink_trigger_word": "os.remove(",
+      "sink_label": "~call_10 = ret_os.remove(deduplicated_file)",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "Remote Code Execution via shell with user data from `deduplicated_file in custom_labels_csv_to_manifest.py:26` used for constructing the command at `custom_labels_csv_to_manifest.py:71`.",
+      "short_description": "Remote Code Execution via shell with user data from `deduplicated_file in custom_labels_csv_to_manifest.py:26` used for constructing the command at `custom_labels_csv_to_manifest.py:71`."
+    },
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "csv_file",
+        "line_number": 27,
+        "path": "/github/workspace/python/example_code/lookoutvision/csv_to_manifest.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "csv_file",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_10 = ret_os.remove(errors_file)",
+        "line_number": 77,
+        "path": "/github/workspace/python/example_code/lookoutvision/csv_to_manifest.py"
+      },
+      "sink_trigger_word": "os.remove(",
+      "sink_label": "~call_10 = ret_os.remove(errors_file)",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [
+        {
+          "label": "errors_file = f'{os.path.splitext(csv_file)[0]}_errors.csv'",
+          "line_number": 40,
+          "path": "/github/workspace/python/example_code/lookoutvision/csv_to_manifest.py"
+        }
+      ],
+      "description": "Remote Code Execution via shell with user data from `csv_file in csv_to_manifest.py:27` used for constructing the command at `csv_to_manifest.py:77`.",
+      "short_description": "Remote Code Execution via shell with user data from `csv_file in csv_to_manifest.py:27` used for constructing the command at `csv_to_manifest.py:77`."
+    },
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "csv_file",
+        "line_number": 27,
+        "path": "/github/workspace/python/example_code/lookoutvision/csv_to_manifest.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "csv_file",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_11 = ret_os.remove(deduplicated_file)",
+        "line_number": 78,
+        "path": "/github/workspace/python/example_code/lookoutvision/csv_to_manifest.py"
+      },
+      "sink_trigger_word": "os.remove(",
+      "sink_label": "~call_11 = ret_os.remove(deduplicated_file)",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [
+        {
+          "label": "deduplicated_file = f'{os.path.splitext(csv_file)[0]}_deduplicated.csv'",
+          "line_number": 41,
+          "path": "/github/workspace/python/example_code/lookoutvision/csv_to_manifest.py"
+        }
+      ],
+      "description": "Remote Code Execution via shell with user data from `csv_file in csv_to_manifest.py:27` used for constructing the command at `csv_to_manifest.py:78`.",
+      "short_description": "Remote Code Execution via shell with user data from `csv_file in csv_to_manifest.py:27` used for constructing the command at `csv_to_manifest.py:78`."
+    },
+    {
+      "rule_id": "taint-traversal",
+      "rule_name": "Directory Traversal",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-22",
+      "owasp_category": "a5-broken-access-control",
+      "source": {
+        "label": "image_bytes",
+        "line_number": 149,
+        "path": "/github/workspace/python/cross_service/textract_explorer/textract_app.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "image_bytes",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_3 = ret_PIL.Image.open(image_bytes)",
+        "line_number": 158,
+        "path": "/github/workspace/python/cross_service/textract_explorer/textract_app.py"
+      },
+      "sink_trigger_word": "open(",
+      "sink_label": "~call_3 = ret_PIL.Image.open(image_bytes)",
+      "sink_type": "Exfiltration",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "Exfiltration of data (Path Traversal) due to user data from `image_bytes in textract_app.py:149` influencing file operations in `textract_app.py:158`.",
+      "short_description": "Exfiltration of data (Path Traversal) due to user data from `image_bytes in textract_app.py:149` influencing file operations in `textract_app.py:158`."
+    },
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "stack_name",
+        "line_number": 239,
+        "path": "/github/workspace/python/cross_service/aurora_rest_lending_library/library_demo.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "stack_name",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_4 = ret_os.system(f'aws cloudformation delete-stack --stack-name {stack_name}')",
+        "line_number": 252,
+        "path": "/github/workspace/python/cross_service/aurora_rest_lending_library/library_demo.py"
+      },
+      "sink_trigger_word": "os.system(",
+      "sink_label": "~call_4 = ret_os.system(f'aws cloudformation delete-stack --stack-name {stack_name}')",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "Remote Code Execution via shell with user data from `stack_name in library_demo.py:239` used for constructing the command at `library_demo.py:252`.",
+      "short_description": "Remote Code Execution via shell with user data from `stack_name in library_demo.py:239` used for constructing the command at `library_demo.py:252`."
+    },
+    {
+      "rule_id": "flask-misconfiguration-controls",
+      "rule_name": "Missing Security Controls",
+      "short_description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "recommendation": "Flask-Security allows you to quickly add common security mechanisms to your Flask application. Flask-Social can also be used to add social or OAuth login and connection management.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Flask Security](https://flask-security.readthedocs.io/en/develop/index.html)**\n\n**[Flask Configuration](https://flask.palletsprojects.com/en/1.1.x/api/#configuration)**\n\n**[Flask Talisman](https://github.com/GoogleCloudPlatform/flask-talisman)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "flask_security",
+        "line_number": 1,
+        "label": "flask_security",
+        "path": "/github/workspace/python/cross_service/photo_analyzer/api/app.py"
+      },
+      "sink": {
+        "trigger_word": null,
+        "line_number": 1,
+        "label": null,
+        "path": "/github/workspace/python/cross_service/photo_analyzer/api/app.py"
+      }
+    },
+    {
+      "rule_id": "flask-misconfiguration-controls",
+      "rule_name": "Missing Security Controls",
+      "short_description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "recommendation": "Flask-Security allows you to quickly add common security mechanisms to your Flask application. Flask-Social can also be used to add social or OAuth login and connection management.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Flask Security](https://flask-security.readthedocs.io/en/develop/index.html)**\n\n**[Flask Configuration](https://flask.palletsprojects.com/en/1.1.x/api/#configuration)**\n\n**[Flask Talisman](https://github.com/GoogleCloudPlatform/flask-talisman)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "flask_security",
+        "line_number": 1,
+        "label": "flask_security",
+        "path": "/github/workspace/python/cross_service/dynamodb_item_tracker/app.py"
+      },
+      "sink": {
+        "trigger_word": null,
+        "line_number": 1,
+        "label": null,
+        "path": "/github/workspace/python/cross_service/dynamodb_item_tracker/app.py"
+      }
+    },
+    {
+      "rule_id": "flask-misconfiguration-controls",
+      "rule_name": "Missing Security Controls",
+      "short_description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "recommendation": "Flask-Security allows you to quickly add common security mechanisms to your Flask application. Flask-Social can also be used to add social or OAuth login and connection management.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Flask Security](https://flask-security.readthedocs.io/en/develop/index.html)**\n\n**[Flask Configuration](https://flask.palletsprojects.com/en/1.1.x/api/#configuration)**\n\n**[Flask Talisman](https://github.com/GoogleCloudPlatform/flask-talisman)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "flask_security",
+        "line_number": 1,
+        "label": "flask_security",
+        "path": "/github/workspace/python/cross_service/aurora_item_tracker/app.py"
+      },
+      "sink": {
+        "trigger_word": null,
+        "line_number": 1,
+        "label": null,
+        "path": "/github/workspace/python/cross_service/aurora_item_tracker/app.py"
+      }
+    }
+  ]
+}

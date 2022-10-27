@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:27291e67-f16f-432d-a6e2-719e8a5e3c02" version="1">
+  <metadata>
+    <timestamp>2022-10-27T21:27:47.143Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.41</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/boto3@1.13.2">
+      <group/>
+      <name>boto3</name>
+      <version>1.13.2</version>
+      <description><![CDATA[The AWS SDK for Python]]></description>
+      <hashes>
+        <hash alg="SHA-256">fc8511eda662d7b4b10bce55153cf65b89c41d86b65162bc0d15b89547d3d837</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/boto3@1.13.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/boto/boto3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/boto3@1.18.50">
+      <group/>
+      <name>boto3</name>
+      <version>1.18.50</version>
+      <description><![CDATA[The AWS SDK for Python]]></description>
+      <hashes>
+        <hash alg="SHA-256">6c9f2b50827ba9233a143b71746b7f1caee0467cf5004d7b43d5a7d5f468827b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/boto3@1.18.50</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/boto/boto3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/botocore@1.21.50">
+      <group/>
+      <name>botocore</name>
+      <version>1.21.50</version>
+      <description><![CDATA[Low-level, data-driven core of boto 3.]]></description>
+      <hashes>
+        <hash alg="SHA-256">3c24e20ad2b155c5a031db2ed060191df282369c5e59225ef20126cdfa6f082f</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/botocore@1.21.50</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/boto/botocore</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask@2.0.2">
+      <group/>
+      <name>flask</name>
+      <version>2.0.2</version>
+      <description><![CDATA[A simple framework for building complex web applications.]]></description>
+      <hashes>
+        <hash alg="SHA-256">cb90f62f1d8e4dc4621f52106613488b5ba826b2e1e10a33eac92f723093ab6a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flask@2.0.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://palletsprojects.com/p/flask</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask-cors@3.0.10">
+      <group/>
+      <name>flask-cors</name>
+      <version>3.0.10</version>
+      <description><![CDATA[A Flask extension adding a decorator for CORS support]]></description>
+      <hashes>
+        <hash alg="SHA-256">74efc975af1194fc7891ff5cd85b0f7478be4f7f59fe158102e91abb72bb4438</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flask-cors@3.0.10</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/corydolphin/flask-cors</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask-restful@0.3.9">
+      <group/>
+      <name>flask-restful</name>
+      <version>0.3.9</version>
+      <description><![CDATA[Simple framework for creating REST APIs]]></description>
+      <hashes>
+        <hash alg="SHA-256">4970c49b6488e46c520b325f54833374dc2b98e211f1b272bd4b0c516232afe2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>0BSD</id>
+          <url>https://opensource.org/licenses/0BSD</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flask-restful@0.3.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://www.github.com/flask-restful/flask-restful/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pytest@6.0.2">
+      <group/>
+      <name>pytest</name>
+      <version>6.0.2</version>
+      <description><![CDATA[pytest: simple powerful testing with Python]]></description>
+      <hashes>
+        <hash alg="SHA-256">0e37f61339c4578776e090c3b8f6b16ce4db333889d65d0efb305243ec544b40</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/pytest@6.0.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://docs.pytest.org/en/latest/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/boto3@1.14.47">
+      <group/>
+      <name>boto3</name>
+      <version>1.14.47</version>
+      <description><![CDATA[The AWS SDK for Python]]></description>
+      <hashes>
+        <hash alg="SHA-256">0d9cbeb5c8ca67650cc963c77e2e3b3ab5dffeeee16e03d61d740755f8fc7c44</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/boto3@1.14.47</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/boto/boto3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/boto3@1.23.0">
+      <group/>
+      <name>boto3</name>
+      <version>1.23.0</version>
+      <description><![CDATA[The AWS SDK for Python]]></description>
+      <hashes>
+        <hash alg="SHA-256">a5b7cce2473cb7f61a9684a68799f80b049236de62e63e7b4cd2bb0d1e9c58ad</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/boto3@1.23.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/boto/boto3</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/botocore@1.26.0">
+      <group/>
+      <name>botocore</name>
+      <version>1.26.0</version>
+      <description><![CDATA[Low-level, data-driven core of boto 3.]]></description>
+      <hashes>
+        <hash alg="SHA-256">25c43b8a7950d785daf3840bb10277378f36d41b208be3e01614537bdb419fe7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/botocore@1.26.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/boto/botocore</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/qrcode@7.3.1">
+      <group/>
+      <name>qrcode</name>
+      <version>7.3.1</version>
+      <description><![CDATA[QR Code image generator]]></description>
+      <hashes>
+        <hash alg="SHA-256">375a6ff240ca9bd41adc070428b5dfc1dcfbb0f2507f1ac848f6cded38956578</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>0BSD</id>
+          <url>https://opensource.org/licenses/0BSD</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/qrcode@7.3.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/lincolnloop/python-qrcode</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/warrant@0.6.1">
+      <group/>
+      <name>warrant</name>
+      <version>0.6.1</version>
+      <description><![CDATA[Python class to integrate Boto3's Cognito client so it is easy to login users. With SRP support.]]></description>
+      <hashes>
+        <hash alg="SHA-256">a4099c566086be45d616ed4f58ed1567893ac74de125e201fc89c9023d8adf7d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/warrant@0.6.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/capless/warrant</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/amazon-dax-client@1.1.7">
+      <group/>
+      <name>amazon-dax-client</name>
+      <version>1.1.7</version>
+      <description><![CDATA[Amazon DAX Client for Python]]></description>
+      <hashes>
+        <hash alg="SHA-256">c04edd83e40d6a1523fc63c5865c4a04cff40d4b892cc17bbbfc206a96ba6e3c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/amazon-dax-client@1.1.7</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://aws.amazon.com/dynamodb/dax/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests@2.25.1">
+      <group/>
+      <name>requests</name>
+      <version>2.25.1</version>
+      <description><![CDATA[Python HTTP for Humans.]]></description>
+      <hashes>
+        <hash alg="SHA-256">c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/requests@2.25.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://requests.readthedocs.io</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/python/cross_service/apigateway_covid-19_tracker/requirements.txt, /github/workspace/python/cross_service/aurora_item_tracker/requirements.txt, /github/workspace/python/cross_service/aurora_rest_lending_library/library_api/requirements.txt, /github/workspace/python/cross_service/photo_analyzer/api/requirements.txt, /github/workspace/python/example_code/cognito/requirements.txt, /github/workspace/python/example_code/dynamodb/requirements.txt</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
