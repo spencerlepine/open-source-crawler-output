@@ -1,0 +1,206 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3b5e7a92-d49d-4e39-a03a-dcd6a6baf63e",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-10-27T21:24:37.357Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.41"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "Newtonsoft.Json",
+      "version": "12.0.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Newtonsoft.Json@12.0.3",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Newtonsoft.Json@12.0.3"
+    },
+    {
+      "group": "",
+      "name": "Amazon.Lambda.Core",
+      "version": "1.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Amazon.Lambda.Core@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Amazon.Lambda.Core@1.1.0"
+    },
+    {
+      "group": "",
+      "name": "Amazon.Lambda.SQSEvents",
+      "version": "1.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Amazon.Lambda.SQSEvents@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Amazon.Lambda.SQSEvents@1.1.0"
+    },
+    {
+      "group": "",
+      "name": "Amazon.Lambda.Serialization.Json",
+      "version": "1.7.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Amazon.Lambda.Serialization.Json@1.7.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Amazon.Lambda.Serialization.Json@1.7.0"
+    },
+    {
+      "group": "",
+      "name": "AWSSDK.Core",
+      "version": "3.3.104.38",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSSDK.Core@3.3.104.38",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSSDK.Core@3.3.104.38"
+    },
+    {
+      "group": "",
+      "name": "AWSSDK.Lambda",
+      "version": "3.3.108.11",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSSDK.Lambda@3.3.108.11",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSSDK.Lambda@3.3.108.11"
+    },
+    {
+      "group": "",
+      "name": "AWSXRayRecorder.Core",
+      "version": "2.6.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSXRayRecorder.Core@2.6.2",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSXRayRecorder.Core@2.6.2"
+    },
+    {
+      "group": "",
+      "name": "AWSXRayRecorder.Handlers.AwsSdk",
+      "version": "2.7.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.2",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.2"
+    },
+    {
+      "group": "",
+      "name": "Amazon.Lambda.TestUtilities",
+      "version": "1.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Amazon.Lambda.TestUtilities@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Amazon.Lambda.TestUtilities@1.1.0"
+    },
+    {
+      "group": "",
+      "name": "Microsoft.NET.Test.Sdk",
+      "version": "15.5.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.5.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Microsoft.NET.Test.Sdk@15.5.0"
+    },
+    {
+      "group": "",
+      "name": "xunit",
+      "version": "2.3.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/xunit@2.3.1",
+      "type": "library",
+      "bom-ref": "pkg:nuget/xunit@2.3.1"
+    },
+    {
+      "group": "",
+      "name": "xunit.runner.visualstudio",
+      "version": "2.3.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/xunit.runner.visualstudio@2.3.1",
+      "type": "library",
+      "bom-ref": "pkg:nuget/xunit.runner.visualstudio@2.3.1"
+    },
+    {
+      "group": "",
+      "name": "Amazon.Lambda.Serialization.Json",
+      "version": "1.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Amazon.Lambda.Serialization.Json@1.6.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Amazon.Lambda.Serialization.Json@1.6.0"
+    },
+    {
+      "group": "",
+      "name": "AWSSDK.Core",
+      "version": "3.3.103.32",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSSDK.Core@3.3.103.32",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSSDK.Core@3.3.103.32"
+    },
+    {
+      "group": "",
+      "name": "AWSSDK.EC2",
+      "version": "3.3.127.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSSDK.EC2@3.3.127.1",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSSDK.EC2@3.3.127.1"
+    },
+    {
+      "group": "",
+      "name": "AWSXRayRecorder.Core",
+      "version": "2.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSXRayRecorder.Core@2.6.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSXRayRecorder.Core@2.6.0"
+    },
+    {
+      "group": "",
+      "name": "AWSXRayRecorder.Handlers.AwsSdk",
+      "version": "2.7.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.0",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.0"
+    }
+  ],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/sample-apps/blank-csharp/src/blank-csharp/blank-csharp.csproj, /github/workspace/sample-apps/blank-csharp/test/blank-csharp.Tests/blank-csharp.Tests.csproj, /github/workspace/sample-apps/ec2-spot/src/ec2spot/ec2spot.csproj, /github/workspace/sample-apps/ec2-spot/test/ec2spot.Tests/ec2spot.Tests.csproj",
+      "comment": "Package file"
+    }
+  ]
+}

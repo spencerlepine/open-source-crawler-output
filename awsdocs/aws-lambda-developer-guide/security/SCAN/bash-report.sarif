@@ -1,0 +1,169 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Shell Script Analysis",
+          "version": "1.0.0-scan",
+          "fullName": "Shell Script Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-a",
+            "--shell=bash",
+            "-f",
+            "json",
+            "-S",
+            "error",
+            "--color=never",
+            "/github/workspace/sample-apps/nodejs-apig/2-deploy.sh",
+            "/github/workspace/sample-apps/nodejs-apig/4-get.sh",
+            "/github/workspace/sample-apps/nodejs-apig/1-create-bucket.sh",
+            "/github/workspace/sample-apps/nodejs-apig/5-cleanup.sh",
+            "/github/workspace/sample-apps/nodejs-apig/3-invoke.sh",
+            "/github/workspace/sample-apps/blank-go/2-deploy.sh",
+            "/github/workspace/sample-apps/blank-go/1-create-bucket.sh",
+            "/github/workspace/sample-apps/blank-go/4-cleanup.sh",
+            "/github/workspace/sample-apps/blank-go/3-invoke.sh",
+            "/github/workspace/sample-apps/blank-go/0-run-tests.sh",
+            "/github/workspace/sample-apps/blank-python/3-deploy.sh",
+            "/github/workspace/sample-apps/blank-python/2-build-layer.sh",
+            "/github/workspace/sample-apps/blank-python/1-create-bucket.sh",
+            "/github/workspace/sample-apps/blank-python/4-invoke.sh",
+            "/github/workspace/sample-apps/blank-python/5-cleanup.sh",
+            "/github/workspace/sample-apps/blank-python/0-run-tests.sh",
+            "/github/workspace/sample-apps/list-manager/5-create-dbtable.sh",
+            "/github/workspace/sample-apps/list-manager/1-create-bucket.sh",
+            "/github/workspace/sample-apps/list-manager/6-invoke.sh",
+            "/github/workspace/sample-apps/list-manager/3-deploy-vpc.sh",
+            "/github/workspace/sample-apps/list-manager/2-create-dbpasswordsecret.sh",
+            "/github/workspace/sample-apps/list-manager/7-put-records.sh",
+            "/github/workspace/sample-apps/list-manager/8-cleanup.sh",
+            "/github/workspace/sample-apps/list-manager/4-deploy.sh",
+            "/github/workspace/sample-apps/list-manager/bin/get-stack-status.sh",
+            "/github/workspace/sample-apps/list-manager/bin/get-stack-event.sh",
+            "/github/workspace/sample-apps/list-manager/bin/get-kinesis-stream.sh",
+            "/github/workspace/sample-apps/rds-mysql/5-create-dbtable.sh",
+            "/github/workspace/sample-apps/rds-mysql/7-cleanup.sh",
+            "/github/workspace/sample-apps/rds-mysql/1-create-bucket.sh",
+            "/github/workspace/sample-apps/rds-mysql/6-invoke.sh",
+            "/github/workspace/sample-apps/rds-mysql/3-deploy-vpc.sh",
+            "/github/workspace/sample-apps/rds-mysql/2-create-dbpasswordsecret.sh",
+            "/github/workspace/sample-apps/rds-mysql/4-deploy.sh",
+            "/github/workspace/sample-apps/java-basic/2-deploy.sh",
+            "/github/workspace/sample-apps/java-basic/1-create-bucket.sh",
+            "/github/workspace/sample-apps/java-basic/4-cleanup.sh",
+            "/github/workspace/sample-apps/java-basic/3-invoke.sh",
+            "/github/workspace/sample-apps/java-events/2-deploy.sh",
+            "/github/workspace/sample-apps/java-events/1-create-bucket.sh",
+            "/github/workspace/sample-apps/java-events/4-cleanup.sh",
+            "/github/workspace/sample-apps/java-events/3-invoke.sh",
+            "/github/workspace/sample-apps/error-processor/3-deploy.sh",
+            "/github/workspace/sample-apps/error-processor/2-build-layer.sh",
+            "/github/workspace/sample-apps/error-processor/1-create-bucket.sh",
+            "/github/workspace/sample-apps/error-processor/4-invoke.sh",
+            "/github/workspace/sample-apps/error-processor/5-cleanup.sh",
+            "/github/workspace/sample-apps/s3-java/6-cleanup.sh",
+            "/github/workspace/sample-apps/s3-java/5-invoke.sh",
+            "/github/workspace/sample-apps/s3-java/3-deploy.sh",
+            "/github/workspace/sample-apps/s3-java/2-build-layer.sh",
+            "/github/workspace/sample-apps/s3-java/1-create-bucket.sh",
+            "/github/workspace/sample-apps/s3-java/4-upload.sh",
+            "/github/workspace/sample-apps/blank-ruby/3-deploy.sh",
+            "/github/workspace/sample-apps/blank-ruby/2-build-layer.sh",
+            "/github/workspace/sample-apps/blank-ruby/1-create-bucket.sh",
+            "/github/workspace/sample-apps/blank-ruby/4-invoke.sh",
+            "/github/workspace/sample-apps/blank-ruby/5-cleanup.sh",
+            "/github/workspace/sample-apps/blank-ruby/0-run-tests.sh",
+            "/github/workspace/sample-apps/blank-java/3-deploy.sh",
+            "/github/workspace/sample-apps/blank-java/2-build-layer.sh",
+            "/github/workspace/sample-apps/blank-java/1-create-bucket.sh",
+            "/github/workspace/sample-apps/blank-java/4-invoke.sh",
+            "/github/workspace/sample-apps/blank-java/5-cleanup.sh",
+            "/github/workspace/sample-apps/blank-nodejs/3-deploy.sh",
+            "/github/workspace/sample-apps/blank-nodejs/2-build-layer.sh",
+            "/github/workspace/sample-apps/blank-nodejs/1-create-bucket.sh",
+            "/github/workspace/sample-apps/blank-nodejs/4-invoke.sh",
+            "/github/workspace/sample-apps/blank-nodejs/5-cleanup.sh",
+            "/github/workspace/sample-apps/blank-nodejs/0-run-tests.sh",
+            "/github/workspace/sample-apps/java-events-v1sdk/3-deploy.sh",
+            "/github/workspace/sample-apps/java-events-v1sdk/2-build-layer.sh",
+            "/github/workspace/sample-apps/java-events-v1sdk/1-create-bucket.sh",
+            "/github/workspace/sample-apps/java-events-v1sdk/4-invoke.sh",
+            "/github/workspace/sample-apps/java-events-v1sdk/5-cleanup.sh",
+            "/github/workspace/sample-apps/blank-powershell/2-deploy.sh",
+            "/github/workspace/sample-apps/blank-powershell/1-create-bucket.sh",
+            "/github/workspace/sample-apps/blank-powershell/4-cleanup.sh",
+            "/github/workspace/sample-apps/blank-powershell/3-invoke.sh",
+            "/github/workspace/sample-apps/blank-csharp/2-deploy.sh",
+            "/github/workspace/sample-apps/blank-csharp/1-create-bucket.sh",
+            "/github/workspace/sample-apps/blank-csharp/4-cleanup.sh",
+            "/github/workspace/sample-apps/blank-csharp/3-invoke.sh",
+            "/github/workspace/sample-apps/ec2-spot/2-deploy.sh",
+            "/github/workspace/sample-apps/ec2-spot/1-create-bucket.sh",
+            "/github/workspace/sample-apps/ec2-spot/4-cleanup.sh",
+            "/github/workspace/sample-apps/ec2-spot/3-invoke.sh",
+            "/github/workspace/sample-apps/efs-nodejs/3-deploy.sh",
+            "/github/workspace/sample-apps/efs-nodejs/1-create-bucket.sh",
+            "/github/workspace/sample-apps/efs-nodejs/2-deploy-vpc.sh",
+            "/github/workspace/sample-apps/efs-nodejs/4-invoke.sh",
+            "/github/workspace/sample-apps/efs-nodejs/5-cleanup.sh"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-a --shell=bash -f json -S error --color=never /github/workspace/sample-apps/nodejs-apig/2-deploy.sh /github/workspace/sample-apps/nodejs-apig/4-get.sh /github/workspace/sample-apps/nodejs-apig/1-create-bucket.sh /github/workspace/sample-apps/nodejs-apig/5-cleanup.sh /github/workspace/sample-apps/nodejs-apig/3-invoke.sh /github/workspace/sample-apps/blank-go/2-deploy.sh /github/workspace/sample-apps/blank-go/1-create-bucket.sh /github/workspace/sample-apps/blank-go/4-cleanup.sh /github/workspace/sample-apps/blank-go/3-invoke.sh /github/workspace/sample-apps/blank-go/0-run-tests.sh /github/workspace/sample-apps/blank-python/3-deploy.sh /github/workspace/sample-apps/blank-python/2-build-layer.sh /github/workspace/sample-apps/blank-python/1-create-bucket.sh /github/workspace/sample-apps/blank-python/4-invoke.sh /github/workspace/sample-apps/blank-python/5-cleanup.sh /github/workspace/sample-apps/blank-python/0-run-tests.sh /github/workspace/sample-apps/list-manager/5-create-dbtable.sh /github/workspace/sample-apps/list-manager/1-create-bucket.sh /github/workspace/sample-apps/list-manager/6-invoke.sh /github/workspace/sample-apps/list-manager/3-deploy-vpc.sh /github/workspace/sample-apps/list-manager/2-create-dbpasswordsecret.sh /github/workspace/sample-apps/list-manager/7-put-records.sh /github/workspace/sample-apps/list-manager/8-cleanup.sh /github/workspace/sample-apps/list-manager/4-deploy.sh /github/workspace/sample-apps/list-manager/bin/get-stack-status.sh /github/workspace/sample-apps/list-manager/bin/get-stack-event.sh /github/workspace/sample-apps/list-manager/bin/get-kinesis-stream.sh /github/workspace/sample-apps/rds-mysql/5-create-dbtable.sh /github/workspace/sample-apps/rds-mysql/7-cleanup.sh /github/workspace/sample-apps/rds-mysql/1-create-bucket.sh /github/workspace/sample-apps/rds-mysql/6-invoke.sh /github/workspace/sample-apps/rds-mysql/3-deploy-vpc.sh /github/workspace/sample-apps/rds-mysql/2-create-dbpasswordsecret.sh /github/workspace/sample-apps/rds-mysql/4-deploy.sh /github/workspace/sample-apps/java-basic/2-deploy.sh /github/workspace/sample-apps/java-basic/1-create-bucket.sh /github/workspace/sample-apps/java-basic/4-cleanup.sh /github/workspace/sample-apps/java-basic/3-invoke.sh /github/workspace/sample-apps/java-events/2-deploy.sh /github/workspace/sample-apps/java-events/1-create-bucket.sh /github/workspace/sample-apps/java-events/4-cleanup.sh /github/workspace/sample-apps/java-events/3-invoke.sh /github/workspace/sample-apps/error-processor/3-deploy.sh /github/workspace/sample-apps/error-processor/2-build-layer.sh /github/workspace/sample-apps/error-processor/1-create-bucket.sh /github/workspace/sample-apps/error-processor/4-invoke.sh /github/workspace/sample-apps/error-processor/5-cleanup.sh /github/workspace/sample-apps/s3-java/6-cleanup.sh /github/workspace/sample-apps/s3-java/5-invoke.sh /github/workspace/sample-apps/s3-java/3-deploy.sh /github/workspace/sample-apps/s3-java/2-build-layer.sh /github/workspace/sample-apps/s3-java/1-create-bucket.sh /github/workspace/sample-apps/s3-java/4-upload.sh /github/workspace/sample-apps/blank-ruby/3-deploy.sh /github/workspace/sample-apps/blank-ruby/2-build-layer.sh /github/workspace/sample-apps/blank-ruby/1-create-bucket.sh /github/workspace/sample-apps/blank-ruby/4-invoke.sh /github/workspace/sample-apps/blank-ruby/5-cleanup.sh /github/workspace/sample-apps/blank-ruby/0-run-tests.sh /github/workspace/sample-apps/blank-java/3-deploy.sh /github/workspace/sample-apps/blank-java/2-build-layer.sh /github/workspace/sample-apps/blank-java/1-create-bucket.sh /github/workspace/sample-apps/blank-java/4-invoke.sh /github/workspace/sample-apps/blank-java/5-cleanup.sh /github/workspace/sample-apps/blank-nodejs/3-deploy.sh /github/workspace/sample-apps/blank-nodejs/2-build-layer.sh /github/workspace/sample-apps/blank-nodejs/1-create-bucket.sh /github/workspace/sample-apps/blank-nodejs/4-invoke.sh /github/workspace/sample-apps/blank-nodejs/5-cleanup.sh /github/workspace/sample-apps/blank-nodejs/0-run-tests.sh /github/workspace/sample-apps/java-events-v1sdk/3-deploy.sh /github/workspace/sample-apps/java-events-v1sdk/2-build-layer.sh /github/workspace/sample-apps/java-events-v1sdk/1-create-bucket.sh /github/workspace/sample-apps/java-events-v1sdk/4-invoke.sh /github/workspace/sample-apps/java-events-v1sdk/5-cleanup.sh /github/workspace/sample-apps/blank-powershell/2-deploy.sh /github/workspace/sample-apps/blank-powershell/1-create-bucket.sh /github/workspace/sample-apps/blank-powershell/4-cleanup.sh /github/workspace/sample-apps/blank-powershell/3-invoke.sh /github/workspace/sample-apps/blank-csharp/2-deploy.sh /github/workspace/sample-apps/blank-csharp/1-create-bucket.sh /github/workspace/sample-apps/blank-csharp/4-cleanup.sh /github/workspace/sample-apps/blank-csharp/3-invoke.sh /github/workspace/sample-apps/ec2-spot/2-deploy.sh /github/workspace/sample-apps/ec2-spot/1-create-bucket.sh /github/workspace/sample-apps/ec2-spot/4-cleanup.sh /github/workspace/sample-apps/ec2-spot/3-invoke.sh /github/workspace/sample-apps/efs-nodejs/3-deploy.sh /github/workspace/sample-apps/efs-nodejs/1-create-bucket.sh /github/workspace/sample-apps/efs-nodejs/2-deploy-vpc.sh /github/workspace/sample-apps/efs-nodejs/4-invoke.sh /github/workspace/sample-apps/efs-nodejs/5-cleanup.sh",
+          "endTimeUtc": "2022-10-27T21:23:10Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-lambda-developer-guide"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:23:10Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-lambda-developer-guide"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "343a65ad-5091-4bbb-9a5e-9d8030c284f8"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "343a65ad-5091-4bbb-9a5e-9d8030c284f8",
+      "runGuid": "6fd6c904-03aa-4073-9a48-0c87e9b39af0"
+    }
+  ]
+}

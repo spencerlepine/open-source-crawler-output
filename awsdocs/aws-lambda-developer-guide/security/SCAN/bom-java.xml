@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:d56ff11e-e372-46d8-8871-6a20342e3fc8" version="1">
+  <metadata>
+    <timestamp>2022-10-27T21:24:20.638Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.41</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/bom@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>bom</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/bom@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/lambda@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>lambda</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/lambda@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/aws-json-protocol@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>aws-json-protocol</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/aws-json-protocol@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/protocol-core@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>protocol-core</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/protocol-core@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/sdk-core@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>sdk-core</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/sdk-core@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/auth@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>auth</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/auth@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/http-client-spi@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>http-client-spi</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/http-client-spi@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/regions@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>regions</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/regions@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/annotations@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>annotations</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/annotations@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/utils@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>utils</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/utils@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/aws-core@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>aws-core</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/aws-core@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/profiles@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>profiles</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/profiles@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.4.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-bom</name>
+      <version>2.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.4.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-core</name>
+      <version>2.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.4.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk-core</name>
+      <version>2.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2@2.4.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk-v2</name>
+      <version>2.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2@2.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2-instrumentor@2.4.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk-v2-instrumentor</name>
+      <version>2.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2-instrumentor@2.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.reactivestreams/reactive-streams@1.0.2?type=jar">
+      <group>org.reactivestreams</group>
+      <name>reactive-streams</name>
+      <version>1.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.reactivestreams/reactive-streams@1.0.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.slf4j/slf4j-api@1.7.28?type=jar">
+      <group>org.slf4j</group>
+      <name>slf4j-api</name>
+      <version>1.7.28</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.slf4j/slf4j-api@1.7.28?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.0?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-core</name>
+      <version>2.10.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.0?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-databind</name>
+      <version>2.10.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.0?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-annotations</name>
+      <version>2.10.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.eventstream/eventstream@1.0.1?type=jar">
+      <group>software.amazon.eventstream</group>
+      <name>eventstream</name>
+      <version>1.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.eventstream/eventstream@1.0.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.398?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-xray</name>
+      <version>1.11.398</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.398?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.398?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-core</name>
+      <version>1.11.398</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.398?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar">
+      <group>commons-logging</group>
+      <name>commons-logging</name>
+      <version>1.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/commons-logging/commons-logging@1.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.5?type=jar">
+      <group>org.apache.httpcomponents</group>
+      <name>httpclient</name>
+      <version>4.5.5</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpclient@4.5.5?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpcore@4.4.9?type=jar">
+      <group>org.apache.httpcomponents</group>
+      <name>httpcore</name>
+      <version>4.4.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpcore@4.4.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-codec/commons-codec@1.10?type=jar">
+      <group>commons-codec</group>
+      <name>commons-codec</name>
+      <version>1.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/commons-codec/commons-codec@1.10?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.ion/ion-java@1.0.2?type=jar">
+      <group>software.amazon.ion</group>
+      <name>ion-java</name>
+      <version>1.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.ion/ion-java@1.0.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor@2.6.7?type=jar">
+      <group>com.fasterxml.jackson.dataformat</group>
+      <name>jackson-dataformat-cbor</name>
+      <version>2.6.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor@2.6.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/joda-time/joda-time@2.8.1?type=jar">
+      <group>joda-time</group>
+      <name>joda-time</name>
+      <version>2.8.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/joda-time/joda-time@2.8.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/jmespath-java@1.11.398?type=jar">
+      <group>com.amazonaws</group>
+      <name>jmespath-java</name>
+      <version>1.11.398</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/jmespath-java@1.11.398?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-lambda-java-core@1.2.1?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-lambda-java-core</name>
+      <version>1.2.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-lambda-java-core@1.2.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-lambda-java-events@2.2.9?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-lambda-java-events</name>
+      <version>2.2.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-lambda-java-events@2.2.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.code.gson/gson@2.8.6?type=jar">
+      <group>com.google.code.gson</group>
+      <name>gson</name>
+      <version>2.8.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.code.gson/gson@2.8.6?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-api</name>
+      <version>2.19.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-core@2.19.0?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-core</name>
+      <version>2.19.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-core@2.19.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-api@[2.17.1,)?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-api</name>
+      <version>[2.17.1,)</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-api@[2.17.1,)?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-core@[2.17.1,)?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-core</name>
+      <version>[2.17.1,)</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-core@[2.17.1,)?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/apache-client@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>apache-client</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/apache-client@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/netty-nio-client@2.10.73?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>netty-nio-client</name>
+      <version>2.10.73</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/netty-nio-client@2.10.73?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.reactivestreams/reactive-streams@1.0.3?type=jar">
+      <group>org.reactivestreams</group>
+      <name>reactive-streams</name>
+      <version>1.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.reactivestreams/reactive-streams@1.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.slf4j/slf4j-api@1.8.0-beta4?type=jar">
+      <group>org.slf4j</group>
+      <name>slf4j-api</name>
+      <version>1.8.0-beta4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.slf4j/slf4j-api@1.8.0-beta4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.9?type=jar">
+      <group>org.apache.httpcomponents</group>
+      <name>httpclient</name>
+      <version>4.5.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpclient@4.5.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpcore@4.4.11?type=jar">
+      <group>org.apache.httpcomponents</group>
+      <name>httpcore</name>
+      <version>4.4.11</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpcore@4.4.11?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-codec/commons-codec@1.11?type=jar">
+      <group>commons-codec</group>
+      <name>commons-codec</name>
+      <version>1.11</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/commons-codec/commons-codec@1.11?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-codec-http@4.1.43.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-http</name>
+      <version>4.1.43.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-codec-http@4.1.43.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-common@4.1.43.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-common</name>
+      <version>4.1.43.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-common@4.1.43.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-buffer@4.1.43.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-buffer</name>
+      <version>4.1.43.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-buffer@4.1.43.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-transport@4.1.43.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport</name>
+      <version>4.1.43.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-transport@4.1.43.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-resolver@4.1.43.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-resolver</name>
+      <version>4.1.43.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-resolver@4.1.43.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-codec@4.1.43.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec</name>
+      <version>4.1.43.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-codec@4.1.43.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-handler@4.1.43.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-handler</name>
+      <version>4.1.43.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-handler@4.1.43.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-codec-http2@4.1.42.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-http2</name>
+      <version>4.1.42.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-codec-http2@4.1.42.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-transport-native-epoll@4.1.42.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport-native-epoll</name>
+      <version>4.1.42.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-transport-native-epoll@4.1.42.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-transport-native-unix-common@4.1.42.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport-native-unix-common</name>
+      <version>4.1.42.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-transport-native-unix-common@4.1.42.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.typesafe.netty/netty-reactive-streams-http@2.0.4?type=jar">
+      <group>com.typesafe.netty</group>
+      <name>netty-reactive-streams-http</name>
+      <version>2.0.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.typesafe.netty/netty-reactive-streams-http@2.0.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.typesafe.netty/netty-reactive-streams@2.0.4?type=jar">
+      <group>com.typesafe.netty</group>
+      <name>netty-reactive-streams</name>
+      <version>2.0.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.typesafe.netty/netty-reactive-streams@2.0.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-api@2.18.0?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-api</name>
+      <version>2.18.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-api@2.18.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-core@2.18.0?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-core</name>
+      <version>2.18.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-core@2.18.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@2.18.0?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-slf4j18-impl</name>
+      <version>2.18.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@2.18.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-lambda-java-log4j2</name>
+      <version>1.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@[2.17.1,)?type=jar">
+      <group>org.apache.logging.log4j</group>
+      <name>log4j-slf4j18-impl</name>
+      <version>[2.17.1,)</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@[2.17.1,)?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.6.0?type=jar">
+      <group>org.junit.jupiter</group>
+      <name>junit-jupiter-api</name>
+      <version>5.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.jupiter/junit-jupiter-api@5.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit/junit-bom@5.6.0?type=jar">
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>5.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit/junit-bom@5.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.platform/junit-platform-commons@1.6.0?type=jar">
+      <group>org.junit.platform</group>
+      <name>junit-platform-commons</name>
+      <version>1.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.platform/junit-platform-commons@1.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apiguardian/apiguardian-api@1.1.0?type=jar">
+      <group>org.apiguardian</group>
+      <name>apiguardian-api</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apiguardian/apiguardian-api@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar">
+      <group>org.opentest4j</group>
+      <name>opentest4j</name>
+      <version>1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.6.0?type=jar">
+      <group>org.junit.jupiter</group>
+      <name>junit-jupiter-engine</name>
+      <version>5.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.platform/junit-platform-engine@1.6.0?type=jar">
+      <group>org.junit.platform</group>
+      <name>junit-platform-engine</name>
+      <version>1.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.platform/junit-platform-engine@1.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.4.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk</name>
+      <version>2.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.4.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk-instrumentor</name>
+      <version>2.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-s3@1.11.578?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-s3</name>
+      <version>1.11.578</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-s3@1.11.578?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-kms@1.11.578?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-kms</name>
+      <version>1.11.578</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-kms@1.11.578?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.578?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-core</name>
+      <version>1.11.578</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.578?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.6.7.2?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-databind</name>
+      <version>2.6.7.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.6.7.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.6.0?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-annotations</name>
+      <version>2.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.6.7?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-core</name>
+      <version>2.6.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-core@2.6.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/jmespath-java@1.11.578?type=jar">
+      <group>com.amazonaws</group>
+      <name>jmespath-java</name>
+      <version>1.11.578</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/jmespath-java@1.11.578?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-kinesis@1.11.578?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-kinesis</name>
+      <version>1.11.578</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-kinesis@1.11.578?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-dynamodb@1.11.578?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-dynamodb</name>
+      <version>1.11.578</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-dynamodb@1.11.578?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-lambda-java-events@3.9.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-lambda-java-events</name>
+      <version>3.9.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-lambda-java-events@3.9.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/joda-time/joda-time@2.6?type=jar">
+      <group>joda-time</group>
+      <name>joda-time</name>
+      <version>2.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/joda-time/joda-time@2.6?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/bom@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>bom</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/bom@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/s3@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>s3</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/s3@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/aws-xml-protocol@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>aws-xml-protocol</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/aws-xml-protocol@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/protocol-core@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>protocol-core</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/protocol-core@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/arns@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>arns</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/arns@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/profiles@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>profiles</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/profiles@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/sdk-core@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>sdk-core</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/sdk-core@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/auth@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>auth</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/auth@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/http-client-spi@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>http-client-spi</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/http-client-spi@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/regions@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>regions</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/regions@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/annotations@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>annotations</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/annotations@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/utils@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>utils</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/utils@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/aws-core@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>aws-core</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/aws-core@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/aws-query-protocol@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>aws-query-protocol</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/aws-query-protocol@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.11.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-bom</name>
+      <version>2.11.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.11.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.11.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk</name>
+      <version>2.11.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.11.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.11.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk-instrumentor</name>
+      <version>2.11.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.11.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.11.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-core</name>
+      <version>2.11.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.11.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/metrics-spi@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>metrics-spi</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/metrics-spi@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.4?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-core</name>
+      <version>2.10.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.4?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-databind</name>
+      <version>2.10.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.4?type=jar">
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-annotations</name>
+      <version>2.10.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-lambda-java-events@3.11.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-lambda-java-events</name>
+      <version>3.11.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-lambda-java-events@3.11.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.903?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-xray</name>
+      <version>1.11.903</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.903?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.1000?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-java-sdk-core</name>
+      <version>1.11.1000</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.1000?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-codec/commons-codec@1.15?type=jar">
+      <group>commons-codec</group>
+      <name>commons-codec</name>
+      <version>1.15</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/commons-codec/commons-codec@1.15?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.13?type=jar">
+      <group>org.apache.httpcomponents</group>
+      <name>httpclient</name>
+      <version>4.5.13</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpclient@4.5.13?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpcore@4.4.13?type=jar">
+      <group>org.apache.httpcomponents</group>
+      <name>httpcore</name>
+      <version>4.4.13</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpcore@4.4.13?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/jmespath-java@1.11.903?type=jar">
+      <group>com.amazonaws</group>
+      <name>jmespath-java</name>
+      <version>1.11.903</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/jmespath-java@1.11.903?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/apache-client@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>apache-client</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/apache-client@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/software.amazon.awssdk/netty-nio-client@2.15.0?type=jar">
+      <group>software.amazon.awssdk</group>
+      <name>netty-nio-client</name>
+      <version>2.15.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/software.amazon.awssdk/netty-nio-client@2.15.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.11.0?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-xray-recorder-sdk-aws-sdk-core</name>
+      <version>2.11.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.11.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-codec-http@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-http</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-codec-http@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-common@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-common</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-common@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-buffer@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-buffer</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-buffer@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-transport@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-transport@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-resolver@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-resolver</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-resolver@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-codec@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-codec@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-handler@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-handler</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-handler@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-codec-http2@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-codec-http2</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-codec-http2@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-transport-native-epoll@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport-native-epoll</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-transport-native-epoll@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.netty/netty-transport-native-unix-common@4.1.46.Final?type=jar">
+      <group>io.netty</group>
+      <name>netty-transport-native-unix-common</name>
+      <version>4.1.46.Final</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/io.netty/netty-transport-native-unix-common@4.1.46.Final?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.1?type=jar">
+      <group>com.amazonaws</group>
+      <name>aws-lambda-java-log4j2</name>
+      <version>1.5.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.1?type=jar</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/sample-apps/blank-java/build.gradle, /github/workspace/sample-apps/java-basic/build.gradle, /github/workspace/sample-apps/java-events-v1sdk/build.gradle, /github/workspace/sample-apps/java-events/build.gradle, /github/workspace/sample-apps/s3-java/build.gradle</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

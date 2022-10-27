@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:3b5e7a92-d49d-4e39-a03a-dcd6a6baf63e" version="1">
+  <metadata>
+    <timestamp>2022-10-27T21:24:37.361Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.41</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:nuget/Newtonsoft.Json@12.0.3">
+      <group/>
+      <name>Newtonsoft.Json</name>
+      <version>12.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Newtonsoft.Json@12.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Amazon.Lambda.Core@1.1.0">
+      <group/>
+      <name>Amazon.Lambda.Core</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Amazon.Lambda.Core@1.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Amazon.Lambda.SQSEvents@1.1.0">
+      <group/>
+      <name>Amazon.Lambda.SQSEvents</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Amazon.Lambda.SQSEvents@1.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Amazon.Lambda.Serialization.Json@1.7.0">
+      <group/>
+      <name>Amazon.Lambda.Serialization.Json</name>
+      <version>1.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Amazon.Lambda.Serialization.Json@1.7.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSSDK.Core@3.3.104.38">
+      <group/>
+      <name>AWSSDK.Core</name>
+      <version>3.3.104.38</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSSDK.Core@3.3.104.38</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSSDK.Lambda@3.3.108.11">
+      <group/>
+      <name>AWSSDK.Lambda</name>
+      <version>3.3.108.11</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSSDK.Lambda@3.3.108.11</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSXRayRecorder.Core@2.6.2">
+      <group/>
+      <name>AWSXRayRecorder.Core</name>
+      <version>2.6.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSXRayRecorder.Core@2.6.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.2">
+      <group/>
+      <name>AWSXRayRecorder.Handlers.AwsSdk</name>
+      <version>2.7.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Amazon.Lambda.TestUtilities@1.1.0">
+      <group/>
+      <name>Amazon.Lambda.TestUtilities</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Amazon.Lambda.TestUtilities@1.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.NET.Test.Sdk@15.5.0">
+      <group/>
+      <name>Microsoft.NET.Test.Sdk</name>
+      <version>15.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Microsoft.NET.Test.Sdk@15.5.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/xunit@2.3.1">
+      <group/>
+      <name>xunit</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/xunit@2.3.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/xunit.runner.visualstudio@2.3.1">
+      <group/>
+      <name>xunit.runner.visualstudio</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/xunit.runner.visualstudio@2.3.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Amazon.Lambda.Serialization.Json@1.6.0">
+      <group/>
+      <name>Amazon.Lambda.Serialization.Json</name>
+      <version>1.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Amazon.Lambda.Serialization.Json@1.6.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSSDK.Core@3.3.103.32">
+      <group/>
+      <name>AWSSDK.Core</name>
+      <version>3.3.103.32</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSSDK.Core@3.3.103.32</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSSDK.EC2@3.3.127.1">
+      <group/>
+      <name>AWSSDK.EC2</name>
+      <version>3.3.127.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSSDK.EC2@3.3.127.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSXRayRecorder.Core@2.6.0">
+      <group/>
+      <name>AWSXRayRecorder.Core</name>
+      <version>2.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSXRayRecorder.Core@2.6.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.0">
+      <group/>
+      <name>AWSXRayRecorder.Handlers.AwsSdk</name>
+      <version>2.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.0</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/sample-apps/blank-csharp/src/blank-csharp/blank-csharp.csproj, /github/workspace/sample-apps/blank-csharp/test/blank-csharp.Tests/blank-csharp.Tests.csproj, /github/workspace/sample-apps/ec2-spot/src/ec2spot/ec2spot.csproj, /github/workspace/sample-apps/ec2-spot/test/ec2spot.Tests/ec2spot.Tests.csproj</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:bd29a5f5-ac69-4ec7-98db-5baf1ac70ad3" version="1">
+  <metadata>
+    <timestamp>2022-10-27T21:23:11.440Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.41</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/jsonpickle@1.3">
+      <group/>
+      <name>jsonpickle</name>
+      <version>1.3</version>
+      <description><![CDATA[Python library for serializing any arbitrary object graph into JSON]]></description>
+      <hashes>
+        <hash alg="SHA-256">efc6839cb341985f0c24f98650a4c1063a2877c236ffd3d7e1662f0c482bac93</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:pypi/jsonpickle@1.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/jsonpickle/jsonpickle</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/aws-xray-sdk@2.4.3">
+      <group/>
+      <name>aws-xray-sdk</name>
+      <version>2.4.3</version>
+      <description><![CDATA[The AWS X-Ray SDK for Python (the SDK) enables Python developers to record and emit information from within their applications to the AWS X-Ray service.]]></description>
+      <hashes>
+        <hash alg="SHA-256">612dba6efc3704ef224ac0747b05488b8aad94e71be3ece4edbc051189d50482</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/aws-xray-sdk@2.4.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/aws/aws-xray-sdk-python</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/sample-apps/blank-python/function/requirements.txt</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

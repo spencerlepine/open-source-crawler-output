@@ -1,0 +1,1306 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:d56ff11e-e372-46d8-8871-6a20342e3fc8",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-10-27T21:24:20.630Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.41"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "software.amazon.awssdk",
+      "name": "bom",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/bom@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/bom@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "lambda",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/lambda@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/lambda@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "aws-json-protocol",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/aws-json-protocol@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/aws-json-protocol@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "protocol-core",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/protocol-core@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/protocol-core@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "sdk-core",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/sdk-core@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/sdk-core@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "auth",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/auth@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/auth@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "http-client-spi",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/http-client-spi@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/http-client-spi@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "regions",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/regions@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/regions@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "annotations",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/annotations@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/annotations@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "utils",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/utils@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/utils@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "aws-core",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/aws-core@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/aws-core@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "profiles",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/profiles@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/profiles@2.10.73?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-bom",
+      "version": "2.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.4.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.4.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-core",
+      "version": "2.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.4.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.4.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk-core",
+      "version": "2.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.4.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.4.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk-v2",
+      "version": "2.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2@2.4.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2@2.4.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk-v2-instrumentor",
+      "version": "2.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2-instrumentor@2.4.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-v2-instrumentor@2.4.0?type=jar"
+    },
+    {
+      "group": "org.reactivestreams",
+      "name": "reactive-streams",
+      "version": "1.0.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.reactivestreams/reactive-streams@1.0.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.reactivestreams/reactive-streams@1.0.2?type=jar"
+    },
+    {
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "1.7.28",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@1.7.28?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@1.7.28?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.10.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.0?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.10.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.0?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.10.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.0?type=jar"
+    },
+    {
+      "group": "software.amazon.eventstream",
+      "name": "eventstream",
+      "version": "1.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.eventstream/eventstream@1.0.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.eventstream/eventstream@1.0.1?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-xray",
+      "version": "1.11.398",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.398?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.398?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-core",
+      "version": "1.11.398",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.398?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.398?type=jar"
+    },
+    {
+      "group": "commons-logging",
+      "name": "commons-logging",
+      "version": "1.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/commons-logging/commons-logging@1.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/commons-logging/commons-logging@1.2?type=jar"
+    },
+    {
+      "group": "org.apache.httpcomponents",
+      "name": "httpclient",
+      "version": "4.5.5",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.5?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.5?type=jar"
+    },
+    {
+      "group": "org.apache.httpcomponents",
+      "name": "httpcore",
+      "version": "4.4.9",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.9?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.9?type=jar"
+    },
+    {
+      "group": "commons-codec",
+      "name": "commons-codec",
+      "version": "1.10",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.10?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/commons-codec/commons-codec@1.10?type=jar"
+    },
+    {
+      "group": "software.amazon.ion",
+      "name": "ion-java",
+      "version": "1.0.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.ion/ion-java@1.0.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.ion/ion-java@1.0.2?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.dataformat",
+      "name": "jackson-dataformat-cbor",
+      "version": "2.6.7",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor@2.6.7?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor@2.6.7?type=jar"
+    },
+    {
+      "group": "joda-time",
+      "name": "joda-time",
+      "version": "2.8.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/joda-time/joda-time@2.8.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/joda-time/joda-time@2.8.1?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "jmespath-java",
+      "version": "1.11.398",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/jmespath-java@1.11.398?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/jmespath-java@1.11.398?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-lambda-java-core",
+      "version": "1.2.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-lambda-java-core@1.2.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-lambda-java-core@1.2.1?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-lambda-java-events",
+      "version": "2.2.9",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-lambda-java-events@2.2.9?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-lambda-java-events@2.2.9?type=jar"
+    },
+    {
+      "group": "com.google.code.gson",
+      "name": "gson",
+      "version": "2.8.6",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.google.code.gson/gson@2.8.6?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.code.gson/gson@2.8.6?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "2.19.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-core",
+      "version": "2.19.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.19.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-core@2.19.0?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "[2.17.1,)",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@[2.17.1,)?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@[2.17.1,)?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-core",
+      "version": "[2.17.1,)",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@[2.17.1,)?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-core@[2.17.1,)?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "apache-client",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/apache-client@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/apache-client@2.10.73?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "netty-nio-client",
+      "version": "2.10.73",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/netty-nio-client@2.10.73?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/netty-nio-client@2.10.73?type=jar"
+    },
+    {
+      "group": "org.reactivestreams",
+      "name": "reactive-streams",
+      "version": "1.0.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.reactivestreams/reactive-streams@1.0.3?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.reactivestreams/reactive-streams@1.0.3?type=jar"
+    },
+    {
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "1.8.0-beta4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@1.8.0-beta4?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@1.8.0-beta4?type=jar"
+    },
+    {
+      "group": "org.apache.httpcomponents",
+      "name": "httpclient",
+      "version": "4.5.9",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.9?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.9?type=jar"
+    },
+    {
+      "group": "org.apache.httpcomponents",
+      "name": "httpcore",
+      "version": "4.4.11",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.11?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.11?type=jar"
+    },
+    {
+      "group": "commons-codec",
+      "name": "commons-codec",
+      "version": "1.11",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.11?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/commons-codec/commons-codec@1.11?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-http",
+      "version": "4.1.43.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-codec-http@4.1.43.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-codec-http@4.1.43.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-common",
+      "version": "4.1.43.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-common@4.1.43.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-common@4.1.43.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-buffer",
+      "version": "4.1.43.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-buffer@4.1.43.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-buffer@4.1.43.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport",
+      "version": "4.1.43.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-transport@4.1.43.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-transport@4.1.43.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-resolver",
+      "version": "4.1.43.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-resolver@4.1.43.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-resolver@4.1.43.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec",
+      "version": "4.1.43.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-codec@4.1.43.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-codec@4.1.43.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-handler",
+      "version": "4.1.43.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-handler@4.1.43.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-handler@4.1.43.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-http2",
+      "version": "4.1.42.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-codec-http2@4.1.42.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-codec-http2@4.1.42.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport-native-epoll",
+      "version": "4.1.42.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-transport-native-epoll@4.1.42.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-transport-native-epoll@4.1.42.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport-native-unix-common",
+      "version": "4.1.42.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.42.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.42.Final?type=jar"
+    },
+    {
+      "group": "com.typesafe.netty",
+      "name": "netty-reactive-streams-http",
+      "version": "2.0.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.typesafe.netty/netty-reactive-streams-http@2.0.4?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.typesafe.netty/netty-reactive-streams-http@2.0.4?type=jar"
+    },
+    {
+      "group": "com.typesafe.netty",
+      "name": "netty-reactive-streams",
+      "version": "2.0.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.typesafe.netty/netty-reactive-streams@2.0.4?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.typesafe.netty/netty-reactive-streams@2.0.4?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "2.18.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.18.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.18.0?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-core",
+      "version": "2.18.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.18.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-core@2.18.0?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-slf4j18-impl",
+      "version": "2.18.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@2.18.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@2.18.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-lambda-java-log4j2",
+      "version": "1.5.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.0?type=jar"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-slf4j18-impl",
+      "version": "[2.17.1,)",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@[2.17.1,)?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-slf4j18-impl@[2.17.1,)?type=jar"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-api",
+      "version": "5.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.6.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.6.0?type=jar"
+    },
+    {
+      "group": "org.junit",
+      "name": "junit-bom",
+      "version": "5.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.junit/junit-bom@5.6.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit/junit-bom@5.6.0?type=jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-commons",
+      "version": "1.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.6.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.6.0?type=jar"
+    },
+    {
+      "group": "org.apiguardian",
+      "name": "apiguardian-api",
+      "version": "1.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.0?type=jar"
+    },
+    {
+      "group": "org.opentest4j",
+      "name": "opentest4j",
+      "version": "1.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-engine",
+      "version": "5.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.6.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.6.0?type=jar"
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-engine",
+      "version": "1.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.6.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.6.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk",
+      "version": "2.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.4.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.4.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk-instrumentor",
+      "version": "2.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.4.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.4.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-s3",
+      "version": "1.11.578",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-s3@1.11.578?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-s3@1.11.578?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-kms",
+      "version": "1.11.578",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-kms@1.11.578?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-kms@1.11.578?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-core",
+      "version": "1.11.578",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.578?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.578?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.6.7.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.6.7.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.6.7.2?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.6.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.6.0?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.6.7",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.6.7?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.6.7?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "jmespath-java",
+      "version": "1.11.578",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/jmespath-java@1.11.578?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/jmespath-java@1.11.578?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-kinesis",
+      "version": "1.11.578",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-kinesis@1.11.578?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-kinesis@1.11.578?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-dynamodb",
+      "version": "1.11.578",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-dynamodb@1.11.578?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-dynamodb@1.11.578?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-lambda-java-events",
+      "version": "3.9.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-lambda-java-events@3.9.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-lambda-java-events@3.9.0?type=jar"
+    },
+    {
+      "group": "joda-time",
+      "name": "joda-time",
+      "version": "2.6",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/joda-time/joda-time@2.6?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/joda-time/joda-time@2.6?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "bom",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/bom@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/bom@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "s3",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/s3@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/s3@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "aws-xml-protocol",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/aws-xml-protocol@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/aws-xml-protocol@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "protocol-core",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/protocol-core@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/protocol-core@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "arns",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/arns@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/arns@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "profiles",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/profiles@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/profiles@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "sdk-core",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/sdk-core@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/sdk-core@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "auth",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/auth@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/auth@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "http-client-spi",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/http-client-spi@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/http-client-spi@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "regions",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/regions@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/regions@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "annotations",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/annotations@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/annotations@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "utils",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/utils@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/utils@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "aws-core",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/aws-core@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/aws-core@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "aws-query-protocol",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/aws-query-protocol@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/aws-query-protocol@2.15.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-bom",
+      "version": "2.11.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.11.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-bom@2.11.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk",
+      "version": "2.11.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.11.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk@2.11.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk-instrumentor",
+      "version": "2.11.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.11.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-instrumentor@2.11.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-core",
+      "version": "2.11.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.11.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-core@2.11.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "metrics-spi",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/metrics-spi@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/metrics-spi@2.15.0?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.10.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.4?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.4?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.10.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.4?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.4?type=jar"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.10.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.4?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.4?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-lambda-java-events",
+      "version": "3.11.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-lambda-java-events@3.11.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-lambda-java-events@3.11.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-xray",
+      "version": "1.11.903",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.903?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-xray@1.11.903?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-java-sdk-core",
+      "version": "1.11.1000",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.1000?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-java-sdk-core@1.11.1000?type=jar"
+    },
+    {
+      "group": "commons-codec",
+      "name": "commons-codec",
+      "version": "1.15",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.15?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/commons-codec/commons-codec@1.15?type=jar"
+    },
+    {
+      "group": "org.apache.httpcomponents",
+      "name": "httpclient",
+      "version": "4.5.13",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.13?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.13?type=jar"
+    },
+    {
+      "group": "org.apache.httpcomponents",
+      "name": "httpcore",
+      "version": "4.4.13",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.13?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.13?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "jmespath-java",
+      "version": "1.11.903",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/jmespath-java@1.11.903?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/jmespath-java@1.11.903?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "apache-client",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/apache-client@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/apache-client@2.15.0?type=jar"
+    },
+    {
+      "group": "software.amazon.awssdk",
+      "name": "netty-nio-client",
+      "version": "2.15.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/software.amazon.awssdk/netty-nio-client@2.15.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/software.amazon.awssdk/netty-nio-client@2.15.0?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-xray-recorder-sdk-aws-sdk-core",
+      "version": "2.11.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.11.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-xray-recorder-sdk-aws-sdk-core@2.11.0?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-http",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-codec-http@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-codec-http@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-common",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-common@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-common@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-buffer",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-buffer@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-buffer@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-transport@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-transport@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-resolver",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-resolver@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-resolver@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-codec@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-codec@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-handler",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-handler@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-handler@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-http2",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-codec-http2@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-codec-http2@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport-native-epoll",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-transport-native-epoll@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-transport-native-epoll@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport-native-unix-common",
+      "version": "4.1.46.Final",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.46.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.46.Final?type=jar"
+    },
+    {
+      "group": "com.amazonaws",
+      "name": "aws-lambda-java-log4j2",
+      "version": "1.5.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.amazonaws/aws-lambda-java-log4j2@1.5.1?type=jar"
+    }
+  ],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/sample-apps/blank-java/build.gradle, /github/workspace/sample-apps/java-basic/build.gradle, /github/workspace/sample-apps/java-events-v1sdk/build.gradle, /github/workspace/sample-apps/java-events/build.gradle, /github/workspace/sample-apps/s3-java/build.gradle",
+      "comment": "Package file"
+    }
+  ]
+}

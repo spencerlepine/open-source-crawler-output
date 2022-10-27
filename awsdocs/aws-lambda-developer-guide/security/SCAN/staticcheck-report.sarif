@@ -1,0 +1,300 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Static Analysis",
+          "rules": [
+            {
+              "id": "compile",
+              "help": {
+                "text": "cannot find package \"github.com/aws/aws-lambda-go/events\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/events (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/events (from $GOPATH).",
+                "markdown": "cannot find package \"github.com/aws/aws-lambda-go/events\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/events (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/events (from $GOPATH)."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "cannot find package \"github.com/aws/aws-lambda-go/events\" in any of:."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#compile",
+              "shortDescription": {
+                "text": "cannot find package \"github.com/aws/aws-lambda-go/events\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/events (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/events (from $GOPATH)."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Static Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-f",
+            "json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-f json ./...",
+          "endTimeUtc": "2022-10-27T21:23:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-lambda-developer-guide"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-10-27T21:23:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/awsdocs/aws-lambda-developer-guide"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 5,
+          "critical": 0,
+          "high": 0,
+          "medium": 5,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-lambda-go/events\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/events (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/events (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-lambda-go/events\"\n"
+                  },
+                  "startLine": 6
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-lambda-developer-guide/sample-apps/blank-go/function/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"encoding/json\"\n\t\"github.com/aws/aws-lambda-go/events\"\n"
+                  },
+                  "endLine": 6,
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8e1d50cade97582b",
+            "scanFileHash": "d500e9ac09438227"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-lambda-go/lambda\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/lambda (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/lambda (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\truntime \"github.com/aws/aws-lambda-go/lambda\"\n"
+                  },
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-lambda-developer-guide/sample-apps/blank-go/function/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-lambda-go/events\"\n\truntime \"github.com/aws/aws-lambda-go/lambda\"\n"
+                  },
+                  "endLine": 7,
+                  "startLine": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "13056fff2c761e4b",
+            "scanFileHash": "d500e9ac09438227"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-lambda-go/lambdacontext\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-lambda-go/lambdacontext (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-lambda-go/lambdacontext (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-lambda-go/lambdacontext\"\n"
+                  },
+                  "startLine": 8
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-lambda-developer-guide/sample-apps/blank-go/function/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\truntime \"github.com/aws/aws-lambda-go/lambda\"\n\t\"github.com/aws/aws-lambda-go/lambdacontext\"\n"
+                  },
+                  "endLine": 8,
+                  "startLine": 7
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "28dd829cffa9a314",
+            "scanFileHash": "d500e9ac09438227"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/aws/session\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/aws/session (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/aws/session\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-lambda-developer-guide/sample-apps/blank-go/function/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-lambda-go/lambdacontext\"\n\t\"github.com/aws/aws-sdk-go/aws/session\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "343cd3cc6d270ae8",
+            "scanFileHash": "d500e9ac09438227"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/aws/aws-sdk-go/service/lambda\" in any of:\n\t/usr/local/go/src/github.com/aws/aws-sdk-go/service/lambda (from $GOROOT)\n\t/opt/app-root/go/src/github.com/aws/aws-sdk-go/service/lambda (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/service/lambda\"\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/awsdocs/aws-lambda-developer-guide/sample-apps/blank-go/function/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/aws/aws-sdk-go/aws/session\"\n\t\"github.com/aws/aws-sdk-go/service/lambda\"\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "081dc890eaccfcd1",
+            "scanFileHash": "d500e9ac09438227"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "dc0ff4a3-cd0b-43d9-bf23-86d74835a135"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "dc0ff4a3-cd0b-43d9-bf23-86d74835a135",
+      "runGuid": "6fd6c904-03aa-4073-9a48-0c87e9b39af0"
+    }
+  ]
+}
