@@ -1,0 +1,7 @@
+## Detected Typos
+error: `splitted` should be `split`
+  --> ./README.md:16:31
+   |
+16 | sliver=Whether the request is splitted
+   |                               ^^^^^^^^
+   |
