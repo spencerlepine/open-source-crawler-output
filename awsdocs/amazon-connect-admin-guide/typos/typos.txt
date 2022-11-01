@@ -1,0 +1,195 @@
+## Detected Typos
+error: `ba` should be `by`, `be`
+  --> ./doc_source/contact-lens-rules-create-task.md:39:52
+   |
+39 |    1. **Name** = Action\-Required\-Contact Lens \- ba2cf8fe\.\.\.\.
+   |                                                    ^^
+   |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./doc_source/capacity-planning-review-output.md:22:16
+   |
+22 |   + **Required OT %**: if there is a supply deficit \(required FTEs higher than available FTEs\), required OT% indicates how much overtime would be needed to cover the deficit\.
+   |                ^^
+   |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./doc_source/capacity-planning-review-output.md:22:108
+   |
+22 |   + **Required OT %**: if there is a supply deficit \(required FTEs higher than available FTEs\), required OT% indicates how much overtime would be needed to cover the deficit\.
+   |                                                                                                            ^^
+   |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./doc_source/capacity-planning-review-output.md:23:16
+   |
+23 |   + **Required OT %**: If there is a supply surplus \(the number of required FTEs is lower than the available FTEs\), required VTO % indicates how much voluntary time off could be used to lower the amount of agent idle time and thus lower costs\.
+   |                ^^
+   |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./doc_source/scheduling-roles.md:11:125
+   |
+11 | 1. **Supervisor** – Manages agents and schedules, updates schedules, manages requests for time off, shift swaps, overtime \(OT\), and voluntary time off \(VTO\)\.
+   |                                                                                                                             ^^
+   |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./doc_source/scheduling-roles.md:13:119
+   |
+13 | 1. **Agent** – Answers contacts, views the generated schedule, manages requests for time off, shift swaps, overtime \(OT\), and voluntary time off \(VTO\)\.
+   |                                                                                                                       ^^
+   |
+error: `foward` should be `forward`
+  --> ./doc_source/mobile-devices-not-supported.md:5:167
+  |
+5 | You can set up your CCP to forward the audio portion of the call to your mobile device\. For instructions, see [Forward calls to a mobile device \(iPhone, Android\)](foward-calls-to-mobile-device.md)\.
+  |                                                                                                                                                                       ^^^^^^
+  |
+error: `telphony` should be `telephony`
+  --> ./doc_source/connect-attrib-list.md:106:201
+    |
+106 | | Call\-Forwarding\-Indicator | Call Forwarding Indicators \(for example, Diversion header\)\. Indicates domestic or international origin of call\.  Example value: sip:\+15555555555@public\-vip\.us2\.telphony\-provider\.com;reason=unconditional  | System | $\.Media\.Sip\.Headers\.Call\-Forwarding\-Indicator |
+    |                                                                                                                                                                                                         ^^^^^^^^
+    |
+error: `foward` should be `forward`
+  --> ./doc_source/foward-calls-to-mobile-device.md:1
+error: `foward` should be `forward`
+  --> ./doc_source/foward-calls-to-mobile-device.md:1:64
+  |
+1 | # Forward calls to a mobile device \(iPhone, Android\)<a name="foward-calls-to-mobile-device"></a>
+  |                                                                ^^^^^^
+  |
+error: `fowarding` should be `forwarding`
+  --> ./doc_source/troubleshoot-pause-rewind-fastforward-recording.md:1:54
+  |
+1 | # Troubleshoot problems pausing, rewinding, or fast\-fowarding recordings<a name="troubleshoot-pause-rewind-fastforward-recording"></a>
+  |                                                      ^^^^^^^^^
+  |
+error: `distinquish` should be `distinguish`
+  --> ./doc_source/create-object-type-mapping.md:72:202
+   |
+72 | + **Unique identifier**: You must have a unique identifier for your data in order to avoid an error when it is ingested\. This identifier is also known as the unique key\. Customer Profiles uses it to distinquish this data from other data source objects, and to index for search and update data\.
+   |                                                                                                                                                                                                          ^^^^^^^^^^^
+   |
+error: `mutliple` should be `multiple`
+  --> ./doc_source/create-object-type-mapping.md:79:16
+   |
+79 |   You can have mutliple customer identifiers\.
+   |                ^^^^^^^^
+   |
+error: `distinquish` should be `distinguish`
+  --> ./doc_source/create-object-type-mapping.md:82:32
+   |
+82 |   Customer Profiles uses it to distinquish this data from other customer product purchase data\. It is also used to determine if the data can be associated to an existing profile or used to create a new profile by searching other profiles for this identifier\.
+   |                                ^^^^^^^^^^^
+   |
+error: `distinquish` should be `distinguish`
+  --> ./doc_source/create-object-type-mapping.md:87:32
+   |
+87 |   Customer Profiles uses it to distinquish this data from other customer case data\. It is also used to determine if the data can be associated to an existing profile or used to create a new profile by searching other profiles for this identifier\.
+   |                                ^^^^^^^^^^^
+   |
+error: `distinquish` should be `distinguish`
+  --> ./doc_source/create-object-type-mapping.md:92:32
+   |
+92 |   Customer Profiles uses it to distinquish this data from other customer order data\. It is also used to determine if the data can be associated to an existing profile or used to create a new profile by searching other profiles for this identifier\.
+   |                                ^^^^^^^^^^^
+   |
+error: `objec` should be `object`
+  --> ./doc_source/customerprofiles-s3-integration.md:68:29
+   |
+68 |     "ObjectTypeName": "your objec type",
+   |                             ^^^^^
+   |
+error: `mutiple` should be `multiple`
+  --> ./doc_source/enable-wisdom.md:103:26
+    |
+103 | If you are going to have mutiple integrations from the same source, we recommend you develop a naming convention to make them easy to distinguish\.
+    |                          ^^^^^^^
+    |
+error: `follwoing` should be `following`
+  --> ./doc_source/contact-initiation-methods.md:100:42
+    |
+100 | To summarize, for callback contacts, the follwoing contact flow types are played:
+    |                                          ^^^^^^^^^
+    |
+error: `cyphertext` should be `ciphertext`
+  --> ./doc_source/encrypt-data.md:57:94
+   |
+57 |      * To use, provide the following command line arguments: [path-to-private-key] [key-id] [cyphertext]
+   |                                                                                              ^^^^^^^^^^
+   |
+error: `cyphertext` should be `ciphertext`
+  --> ./doc_source/encrypt-data.md:61:9
+   |
+61 |      *  cyphertext is the result of the encryption operation from Amazon Connect
+   |         ^^^^^^^^^^
+   |
+error: `signular` should be `singular`
+  --> ./doc_source/configure-saml.md:184:52
+    |
+184 |    1. Edit the trust relationship, and replace the signular `SAML:aud` condition with a multivalued condition\. For example:
+    |                                                    ^^^^^^^^
+    |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./doc_source/capacity-planning-create-scenarios.md:7:317
+  |
+7 | You can then use this scenario to generate a capacity plan that represents how many people you need to hire accordingly to meet your business goals\. The output includes the required FTE employees with and without shrinkage, forecasted occupancy rate, the gap between available required FTEs, and maximum overtime \(OT\) and voluntary time\-off \(VTO\) rate allowed\.
+  |                                                                                                                                                                                                                                                                                                                             ^^
+  |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./doc_source/capacity-planning-create-scenarios.md:37:24
+   |
+37 |    1. **Max overtime \(OT\) allowed \(optional\)**: Specify the maximum percent of overtime to plan for peaks\. As a planner, you don't want to burn out your workforce\.
+   |                        ^^
+   |
+error: `foward` should be `forward`
+  --> ./doc_source/review-recorded-conversations.md:32:28
+   |
+32 | ## Pause, rewind, or fast\-foward a recording<a name="pause-rewind-fastforward-recording"></a>
+   |                            ^^^^^^
+   |
+error: `fowarding` should be `forwarding`
+  --> ./doc_source/review-recorded-conversations.md:46:55
+   |
+46 | ## Troubleshoot problems pausing, rewinding, or fast\-fowarding<a name="problems-pause-rewind-fastforward-recording"></a>
+   |                                                       ^^^^^^^^^
+   |
+error: `foward` should be `forward`
+  --> ./doc_source/browsers.md:19:260
+   |
+19 | The Amazon Connect console and Contact Control Panel \(CCP\) do not work on mobile browsers\. However, your agents can forward the audio portion of the call to their mobile device\. For instructions, see [Forward calls to a mobile device \(iPhone, Android\)](foward-calls-to-mobile-device.md)\.
+   |                                                                                                                                                                                                                                                                    ^^^^^^
+   |
+error: `Admininstrator` should be `Administrator`
+  --> ./doc_source/doc-history.md:3:87
+  |
+3 | The following table describes important changes in each release of the Amazon Connect Admininstrator Guide\. For notification about updates to this documentation, you can subscribe to an RSS feed\.
+  |                                                                                       ^^^^^^^^^^^^^^
+  |
+error: `Contant` should be `Constant`, `Content`
+  --> ./doc_source/doc-history.md:64:4
+   |
+64 | | [Contant Lens rules create tasks and EventBridge events](#doc-history) | Contact Lens rules now allow you to generate tasks and EventBridge events based on uttered keywords, sentiment scores, customer attributes, and other criteria\. For more information, see [Build rule with Contact Lens](https://docs.aws.amazon.com/connect/latest/adminguide/build-rules-for-contact-lens.html)\. | August 5, 2021 |
+   |    ^^^^^^^
+   |
+error: `fowarding` should be `forwarding`
+  --> ./doc_source/troubleshooting.md:16:55
+   |
+16 | + [Troubleshoot problems pausing, rewinding, or fast\-fowarding recordings](troubleshoot-pause-rewind-fastforward-recording.md)
+   |                                                       ^^^^^^^^^
+   |
+error: `superviser` should be `supervisor`
+  --> ./doc_source/real-time-metrics-definitions.md:199:122
+    |
+199 | If a supervisor is using the Manager Monitor feature to monitor a particular agent as they interact with a customer, the superviser’s contact state is Monitoring; the agent’s contact state is Connected\.
+    |                                                                                                                          ^^^^^^^^^^
+    |
+error: `foward` should be `forward`
+  --> ./doc_source/index.md:578:59
+    |
+578 |    + [Forward calls to a mobile device (iPhone, Android)](foward-calls-to-mobile-device.md)
+    |                                                           ^^^^^^
+    |
+error: `fowarding` should be `forwarding`
+  --> ./doc_source/index.md:609:57
+    |
+609 |    + [Troubleshoot problems pausing, rewinding, or fast-fowarding recordings](troubleshoot-pause-rewind-fastforward-recording.md)
+    |                                                         ^^^^^^^^^
+    |
