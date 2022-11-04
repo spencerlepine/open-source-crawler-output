@@ -1,0 +1,31 @@
+## Detected Typos
+error: `specificially` should be `specifically`
+  --> ./docs/varnish-config.md:86:6
+   |
+86 | More specificially:
+   |      ^^^^^^^^^^^^^
+   |
+error: `progarm` should be `program`
+  --> ./docs/follower.md:60:46
+   |
+60 |   database so that we can optionally end our progarm when it has received
+   |                                              ^^^^^^^
+   |
+error: `regsitry` should be `registry`
+  --> ./docs/COUCHDB.md:18:68
+   |
+18 | Because npm cares deeply about backwards compatibility, as the npm regsitry
+   |                                                                    ^^^^^^^^
+   |
+error: `recieve` should be `receive`
+  --> ./docs/follower.md:324:41
+    |
+324 | Firstly, remember the `id`/`_id` key we recieve from our changes stream? We had
+    |                                         ^^^^^^^
+    |
+error: `foward` should be `forward`
+  --> ./docs/follower.md:385:1
+    |
+385 | foward with our app as it is currently written, however you'll likely have
+    | ^^^^^^
+    |
