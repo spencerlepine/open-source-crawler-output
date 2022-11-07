@@ -1,0 +1,413 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Static Analysis",
+          "rules": [
+            {
+              "id": "compile",
+              "help": {
+                "text": "unknown field IPv4 in struct literal.",
+                "markdown": "unknown field IPv4 in struct literal."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "unknown field IPv4 in struct literal."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#compile",
+              "shortDescription": {
+                "text": "unknown field IPv4 in struct literal."
+              }
+            },
+            {
+              "id": "S1023",
+              "help": {
+                "text": "redundant return statement.",
+                "markdown": "redundant return statement."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "redundant return statement."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1023",
+              "shortDescription": {
+                "text": "redundant return statement."
+              }
+            },
+            {
+              "id": "ST1005",
+              "help": {
+                "text": "error strings should not be capitalized.",
+                "markdown": "error strings should not be capitalized."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "error strings should not be capitalized."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#ST1005",
+              "shortDescription": {
+                "text": "error strings should not be capitalized."
+              }
+            },
+            {
+              "id": "SA4011",
+              "help": {
+                "text": "ineffective break statement. Did you mean to break out of the outer loop?.",
+                "markdown": "ineffective break statement. Did you mean to break out of the outer loop?."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "ineffective break statement. Did you mean to break out of the outer loop?."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#SA4011",
+              "shortDescription": {
+                "text": "ineffective break statement"
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Static Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-f",
+            "json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-f json ./...",
+          "endTimeUtc": "2022-11-07T08:40:05Z",
+          "workingDirectory": {
+            "uri": "https://github.com/cgboal/sonarsearch"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-11-07T08:40:05Z",
+          "workingDirectory": {
+            "uri": "https://github.com/cgboal/sonarsearch"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 6,
+          "critical": 0,
+          "high": 0,
+          "medium": 5,
+          "low": 1
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "unknown field IPv4 in struct literal."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                        IPv4: result.IPv4,\n"
+                  },
+                  "startLine": 77
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/cgboal/sonarsearch/cmd/crobat-server/grpc/server.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\tDomain: result.Domain,\n                        IPv4: result.IPv4,\n"
+                  },
+                  "endLine": 77,
+                  "startLine": 76
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "49e3bcdfc8011837",
+            "scanFileHash": "b5cc1e49a5dace00"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unknown field IPv4 in struct literal."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                        IPv4: result.IPv4,\n"
+                  },
+                  "startLine": 100
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/cgboal/sonarsearch/cmd/crobat-server/grpc/server.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\tDomain: result.Domain,\n                        IPv4: result.IPv4,\n"
+                  },
+                  "endLine": 100,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "49e3bcdfc8011837",
+            "scanFileHash": "b5cc1e49a5dace00"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 135
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/cgboal/sonarsearch/cmd/crobat-server/rest/server.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tc.JSON(http.StatusOK, response.Results)\n\treturn\n"
+                  },
+                  "endLine": 135,
+                  "startLine": 134
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "680aa698f63a463d"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\treturn 0, 0, errors.New(\"Invalid IPv4 address\")\n"
+                  },
+                  "startLine": 82
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/cgboal/sonarsearch/pkg/ipconv/ipconv.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif net.ParseIP(ipv4) == nil {\n\t\treturn 0, 0, errors.New(\"Invalid IPv4 address\")\n"
+                  },
+                  "endLine": 82,
+                  "startLine": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0b70806e31da10c2",
+            "scanFileHash": "7f4d2141f2eb305f"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "ineffective break statement. Did you mean to break out of the outer loop?."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tbreak\n"
+                  },
+                  "startLine": 124
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/cgboal/sonarsearch/pkg/search/domains.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tdefault:\n\t\t\tbreak\n"
+                  },
+                  "endLine": 124,
+                  "startLine": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4c58fc177d47eb85",
+            "scanFileHash": "7ceabf61cb36c091"
+          },
+          "ruleId": "SA4011",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "ineffective break statement. Did you mean to break out of the outer loop?."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tbreak\n"
+                  },
+                  "startLine": 148
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/cgboal/sonarsearch/pkg/search/reverse.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tdefault:\n\t\t\tbreak\n"
+                  },
+                  "endLine": 148,
+                  "startLine": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4c58fc177d47eb85",
+            "scanFileHash": "e070ce08f28f159a"
+          },
+          "ruleId": "SA4011",
+          "ruleIndex": 3
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "0bd002af-2756-4eb9-85d0-c9850fc78b35"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "0bd002af-2756-4eb9-85d0-c9850fc78b35",
+      "runGuid": "a6ec32dc-e859-49c5-b354-5b92f097dd49"
+    }
+  ]
+}

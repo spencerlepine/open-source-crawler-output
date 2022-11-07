@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:61683815-b7ca-493d-a6ad-30a0148e1f99" version="1">
+  <metadata>
+    <timestamp>2022-11-07T08:40:09.171Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.43</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:golang/google.golang.org/protobuf@v1.27.1">
+      <publisher/>
+      <group>google.golang.org</group>
+      <name>protobuf</name>
+      <version>v1.27.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-256">f6ad109932387913edcfa6e839098b630b7ea8282ad23b18c00427984d208af7</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/google.golang.org/protobuf@v1.27.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/golang/protobuf@v1.5.2">
+      <publisher/>
+      <group>github.com/golang</group>
+      <name>protobuf</name>
+      <version>v1.5.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-256">5d541ddd537033e26a0f7a06d947b68a9e1f38c524c177570dd8ae374bd1b266</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/golang/protobuf@v1.5.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/net@v0.0.0-20210428140749-89ef3d95e781">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>net</name>
+      <version>v0.0.0-20210428140749-89ef3d95e781</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-256">38902c15709697c52473b4a2093ffd292bb16f233be3bf7f015957151c6e3029</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/net@v0.0.0-20210428140749-89ef3d95e781</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/google.golang.org/grpc@v1.40.0">
+      <publisher/>
+      <group>google.golang.org</group>
+      <name>grpc</name>
+      <version>v1.40.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">a20cb16e23a85170243fee3ec5ae8f65213d0d98081ed4a9ce30d307d2802b7e</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/google.golang.org/grpc@v1.40.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/google.golang.org/genproto@v0.0.0-20210602131652-f16073e35f0c">
+      <publisher/>
+      <group>google.golang.org</group>
+      <name>genproto</name>
+      <version>v0.0.0-20210602131652-f16073e35f0c</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-256">50e0e80abc4709c0688ca2b05f5b5eac189151aa80b05a89885eb5e572f8debd</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/google.golang.org/genproto@v0.0.0-20210602131652-f16073e35f0c</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/sys@v0.0.0-20210823070655-63515b42dcdf">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>sys</name>
+      <version>v0.0.0-20210823070655-63515b42dcdf</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-256">a0f921a75309ae1ee751ea4205c939fa60337cef49adb02934d81a4dd1832138</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/sys@v0.0.0-20210823070655-63515b42dcdf</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/text@v0.3.7">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>text</name>
+      <version>v0.3.7</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-256">bbedbefface0fa2ef5ad0331e446227dccfa3022ae728f4d47a2482138827f34</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/text@v0.3.7</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/Cgboal/DomainParser@v0.0.0-20210827145802-99068439e39f">
+      <publisher/>
+      <group>github.com/Cgboal</group>
+      <name>DomainParser</name>
+      <version>v0.0.0-20210827145802-99068439e39f</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">6b4a82916123a38528a311f6675a14d645dcd70b7230815812968bc7c3b92720</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/Cgboal/DomainParser@v0.0.0-20210827145802-99068439e39f</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/brotherpowers/ipsubnet@v0.0.0-20170914094241-30bc98f0a5b1">
+      <publisher/>
+      <group>github.com/brotherpowers</group>
+      <name>ipsubnet</name>
+      <version>v0.0.0-20170914094241-30bc98f0a5b1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">9a6f5917a5bbe92c19b49a58ceb5664ccbb398884f5f4488b84a2c5bf39315de</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/brotherpowers/ipsubnet@v0.0.0-20170914094241-30bc98f0a5b1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/cespare/xxhash/v2@v2.1.1">
+      <publisher/>
+      <group>github.com/cespare/xxhash</group>
+      <name>v2</name>
+      <version>v2.1.1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">5465f40d0dd0ea45a2ec0a007990ed877fe3dc116d3994795cb14681cae308eb</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/cespare/xxhash/v2@v2.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/dgryski/go-rendezvous@v0.0.0-20200823014737-9f7001d12a5f">
+      <publisher/>
+      <group>github.com/dgryski</group>
+      <name>go-rendezvous</name>
+      <version>v0.0.0-20200823014737-9f7001d12a5f</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">72e5154576ac2d3185edaf2148b6f1c995e3cfed4a828077c0351beaf96ccc87</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/dgryski/go-rendezvous@v0.0.0-20200823014737-9f7001d12a5f</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/go-redis/redis/v8@v8.11.3">
+      <publisher/>
+      <group>github.com/go-redis/redis</group>
+      <name>v8</name>
+      <version>v8.11.3</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">c4d27dc431b4f45b083f08776d6764fb4a035876ed17dacf37417fa03f5778a7</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/go-redis/redis/v8@v8.11.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/fsnotify/fsnotify@v1.4.9">
+      <publisher/>
+      <group>github.com/fsnotify</group>
+      <name>fsnotify</name>
+      <version>v1.4.9</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">ce7a86e0413edd809d01a3dac44d99458ff4ea9654769d2d638220a6e2354994</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/fsnotify/fsnotify@v1.4.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/hashicorp/hcl@v1.0.0">
+      <publisher/>
+      <group>github.com/hashicorp</group>
+      <name>hcl</name>
+      <version>v1.0.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">139c9f2e4fbbb308a6a5bd8bfc095bfcf2665e2950feb87069462ce13db45844</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/hashicorp/hcl@v1.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/magiconair/properties@v1.8.5">
+      <publisher/>
+      <group>github.com/magiconair</group>
+      <name>properties</name>
+      <version>v1.8.5</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">cb7549bc2cb11fdb95bc94d61060042c5dda8983723ca779359de84b05eb17ad</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/magiconair/properties@v1.8.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/mitchellh/mapstructure@v1.4.1">
+      <publisher/>
+      <group>github.com/mitchellh</group>
+      <name>mapstructure</name>
+      <version>v1.4.1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">6c552d56b280e030b6c802a24b23bf414732edef91455d904d63b384fa29051a</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/mitchellh/mapstructure@v1.4.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/pelletier/go-toml@v1.9.3">
+      <publisher/>
+      <group>github.com/pelletier</group>
+      <name>go-toml</name>
+      <version>v1.9.3</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">bb59d1fc43dc1127de23fb3351929db49d3144d6d4a003429283ae68ec7563e7</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/pelletier/go-toml@v1.9.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/spf13/afero@v1.6.0">
+      <publisher/>
+      <group>github.com/spf13</group>
+      <name>afero</name>
+      <version>v1.6.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">022f05947938bff3c0451d36e94cd87b169f02df6ba09ecb70b30098ee99f772</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/spf13/afero@v1.6.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/spf13/cast@v1.3.1">
+      <publisher/>
+      <group>github.com/spf13</group>
+      <name>cast</name>
+      <version>v1.3.1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">431e5cc61d2ffb85166220629964be7b25b3a84aa8908102bb97ad8212e45091</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/spf13/cast@v1.3.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/spf13/jwalterweatherman@v1.1.0">
+      <publisher/>
+      <group>github.com/spf13</group>
+      <name>jwalterweatherman</name>
+      <version>v1.1.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">68d59950dd1d3c000efcb8ef6f9044770f7a893674117a303d80fde48a96206a</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/spf13/jwalterweatherman@v1.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/spf13/pflag@v1.0.5">
+      <publisher/>
+      <group>github.com/spf13</group>
+      <name>pflag</name>
+      <version>v1.0.5</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">31c5df227251af3e026575593812dbd1b4d9a844e488084cf48c34cb7027d818</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/spf13/pflag@v1.0.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/subosito/gotenv@v1.2.0">
+      <publisher/>
+      <group>github.com/subosito</group>
+      <name>gotenv</name>
+      <version>v1.2.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">3743d0695fd818dab00b4bb9d6c11e47f694b522c45ca5fd8afebdad1ca9a82c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/subosito/gotenv@v1.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/gopkg.in/ini.v1@v1.62.0">
+      <publisher/>
+      <group>gopkg.in</group>
+      <name>ini.v1</name>
+      <version>v1.62.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">a4d2dff16522c8d12d423baee46e6f4e6d3a4c4bfdb6c220780bcaf213ab3f89</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/gopkg.in/ini.v1@v1.62.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/gopkg.in/yaml.v2@v2.4.0">
+      <publisher/>
+      <group>gopkg.in</group>
+      <name>yaml.v2</name>
+      <version>v2.4.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">4439256e4efd0065a6c219efb7f8c1ced6a910e1833b1e996d7aa33fa72c1a74</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/gopkg.in/yaml.v2@v2.4.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/spf13/viper@v1.8.1">
+      <publisher/>
+      <group>github.com/spf13</group>
+      <name>viper</name>
+      <version>v1.8.1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">a343dc87cc09f4155258640c6eb6ba8b0d28439a24b522016ae8dfd6b247f4db</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/spf13/viper@v1.8.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/gin-contrib/sse@v0.1.0">
+      <publisher/>
+      <group>github.com/gin-contrib</group>
+      <name>sse</name>
+      <version>v0.1.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">447ad94075e73f6c633c5faed605bfd879d53bb9ef21af4f1b71a6f9f2c7bc62</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/gin-contrib/sse@v0.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/gin-gonic/gin@v1.7.4">
+      <publisher/>
+      <group>github.com/gin-gonic</group>
+      <name>gin</name>
+      <version>v1.7.4</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">8c3dada015b719952be5431c76bc10035d08ed1b9a14e97f4867838d791f52d6</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/gin-gonic/gin@v1.7.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/go-playground/locales@v0.14.0">
+      <publisher/>
+      <group>github.com/go-playground</group>
+      <name>locales</name>
+      <version>v0.14.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">b1ac1f71c21bcd94ea1031138055ea4e1a344326d26bb97efacd031fe2c388bb</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/go-playground/locales@v0.14.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/go-playground/universal-translator@v0.18.0">
+      <publisher/>
+      <group>github.com/go-playground</group>
+      <name>universal-translator</name>
+      <version>v0.18.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">52f443063fb13d4106ac5625fa5bbf1fdd27c835e98347ea781fc041418d4d50</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/go-playground/universal-translator@v0.18.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/leodido/go-urn@v1.2.1">
+      <publisher/>
+      <group>github.com/leodido</group>
+      <name>go-urn</name>
+      <version>v1.2.1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">cede23bc848ed877d406ac637c8b218dd313612e7a652feabf8f6272dc857f16</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/leodido/go-urn@v1.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/crypto@v0.0.0-20210817164053-32db794688a5">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>crypto</name>
+      <version>v0.0.0-20210817164053-32db794688a5</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-256">1afbe305144645dc0f2b9c9d04769f0d603130bfe918765b32f2aa459e7e01b7</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/crypto@v0.0.0-20210817164053-32db794688a5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/go-playground/validator/v10@v10.9.0">
+      <publisher/>
+      <group>github.com/go-playground/validator</group>
+      <name>v10</name>
+      <version>v10.9.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">ef8c788095acbd07b145d5bc3e7ddd5d21ab4cae27014b1b3e52c00efa49928b</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/go-playground/validator/v10@v10.9.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/ugorji/go/codec@v1.2.6">
+      <publisher/>
+      <group>github.com/ugorji/go</group>
+      <name>codec</name>
+      <version>v1.2.6</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">57a4c2359e0f1eaa0718566e486d56f27ac2cf37600360e8cd8c56145a6fc53c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/ugorji/go/codec@v1.2.6</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/mattn/go-isatty@v0.0.13">
+      <publisher/>
+      <group>github.com/mattn</group>
+      <name>go-isatty</name>
+      <version>v0.0.13</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">71b8bc3880e282fdb0bb128f3f9be545c43538065bab6084e0acac728e055295</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/mattn/go-isatty@v0.0.13</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd">
+      <publisher/>
+      <group>github.com/modern-go</group>
+      <name>concurrent</name>
+      <version>v0.0.0-20180306012644-bacd9c7ef1dd</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">e9d242d2600fe2291821bbf273b7e28e358975d4322e7f08837241e42aa807d4</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/modern-go/reflect2@v1.0.1">
+      <publisher/>
+      <group>github.com/modern-go</group>
+      <name>reflect2</name>
+      <version>v1.0.1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">6f1da5367930542baa048c458df9562566a75c86f74659666c2ca5c8caef82fd</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/modern-go/reflect2@v1.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/json-iterator/go@v1.1.11">
+      <publisher/>
+      <group>github.com/json-iterator</group>
+      <name>go</name>
+      <version>v1.1.11</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-256">29d4140afefd9bfe762af7fc016daf2b557c6a432e9354232bfb8e7475db028e</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/json-iterator/go@v1.1.11</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/go.mod</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

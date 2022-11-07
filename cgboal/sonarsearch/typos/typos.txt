@@ -1,0 +1,9 @@
+## Detected Typos
+error: `supproted` should be `supported`
+  --> ./pkg/ipconv/ipconv.go:78:40
+   |
+78 |   return 0, 0, errors.New("IPv6 is not supproted")
+   |                                        ^^^^^^^^^
+   |
+error: `indicies` should be `indices`
+  --> ./pkg/search/indicies.go:1
