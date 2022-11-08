@@ -1,0 +1,31 @@
+## Detected Typos
+error: `pathes` should be `paths`
+  --> ./cattleshed/test/jail.sh:14:37
+   |
+14 | # blockable accessing to disallowed pathes
+   |                                     ^^^^^^
+   |
+error: `intially` should be `initially`
+  --> ./canine/app/utils/mode-zig.ts:9:50
+  |
+9 |   // The start state contains the rules that are intially used
+  |                                                  ^^^^^^^^
+  |
+error: `intially` should be `initially`
+  --> ./canine/app/utils/mode-pony.ts:9:50
+  |
+9 |   // The start state contains the rules that are intially used
+  |                                                  ^^^^^^^^
+  |
+error: `responsed` should be `responded`, `responses`
+  --> ./kennel/src/kennel_session.h:654:23
+    |
+654 |     SPDLOG_INFO("[{}] responsed {}", req_.target().to_string(),
+    |                       ^^^^^^^^^
+    |
+error: `NEET` should be `NEED`, `NEAT`
+  --> ./kennel/sponsors.json:524:26
+    |
+524 |   , { "name": "100% Pure NEET"
+    |                          ^^^^
+    |

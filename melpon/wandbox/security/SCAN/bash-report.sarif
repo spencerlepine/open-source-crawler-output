@@ -1,0 +1,83 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Shell Script Analysis",
+          "version": "1.0.0-scan",
+          "fullName": "Shell Script Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-a",
+            "--shell=bash",
+            "-f",
+            "json",
+            "-S",
+            "error",
+            "--color=never",
+            "/github/workspace/deploy.sh",
+            "/github/workspace/install_deps.sh",
+            "/github/workspace/package.sh",
+            "/github/workspace/kennel/cmake.sh",
+            "/github/workspace/kennel/copy.sh",
+            "/github/workspace/cattleshed/cmake.sh"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-a --shell=bash -f json -S error --color=never /github/workspace/deploy.sh /github/workspace/install_deps.sh /github/workspace/package.sh /github/workspace/kennel/cmake.sh /github/workspace/kennel/copy.sh /github/workspace/cattleshed/cmake.sh",
+          "endTimeUtc": "2022-11-08T08:40:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/melpon/wandbox"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-11-08T08:40:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/melpon/wandbox"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "8d265a98-d48c-4c0f-b5f9-6d14288a99cc"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "867b6e17a329c00f6ee42fd986df8831206ddae6"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "8d265a98-d48c-4c0f-b5f9-6d14288a99cc",
+      "runGuid": "394b890e-2a8b-4bb4-841f-7b90c97be920"
+    }
+  ]
+}
