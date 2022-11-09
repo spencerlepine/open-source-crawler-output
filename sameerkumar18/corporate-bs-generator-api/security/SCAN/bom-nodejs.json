@@ -1,0 +1,974 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:356111fc-1007-460f-95d9-40aa1c31e57f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-09T08:39:02.328Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.43"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "ipaddr.js",
+      "version": "1.6.0",
+      "description": "IP address manipulation library in JavaScript (CoffeeScript, actually)",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ipaddr.js@1.6.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/ipaddr.js@1.6.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "accepts",
+      "version": "1.3.5",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "eb777df6011723a3b14e8a72c0805c8e86746bd2"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/accepts@1.3.5",
+      "type": "library",
+      "bom-ref": "pkg:npm/accepts@1.3.5"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "array-flatten",
+      "version": "1.1.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9a5f699051b1e7073328f2a008968b64ea2955d2"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/array-flatten@1.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/array-flatten@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "body-parser",
+      "version": "1.18.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "87678a19d84b47d859b83199bd59bce222b10454"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/body-parser@1.18.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/body-parser@1.18.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "bytes",
+      "version": "3.0.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d32815404d689699f85a4ea4fa8755dd13a96048"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/bytes@3.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/bytes@3.0.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "content-disposition",
+      "version": "0.5.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0cf68bb9ddf5f2be7961c3a85178cb85dba78cb4"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/content-disposition@0.5.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/content-disposition@0.5.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "content-type",
+      "version": "1.0.4",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "8483f71043ecf2d07d013d4bf8d52ab70380a6ce269366686fcf4c5973078c75a0f668a517f8f8a2c9e740b5c108114193fb6f206fed51cf663942623c184f5c"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/content-type@1.0.4",
+      "type": "library",
+      "bom-ref": "pkg:npm/content-type@1.0.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "cookie",
+      "version": "0.3.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/cookie@0.3.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/cookie@0.3.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "cookie-signature",
+      "version": "1.0.6",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e303a882b342cc3ee8ca513a79999734dab3ae2c"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/cookie-signature@1.0.6",
+      "type": "library",
+      "bom-ref": "pkg:npm/cookie-signature@1.0.6"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "cors",
+      "version": "2.8.5",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2881db2c9aaeef7446aff8676eb3bdb817a2c4d1aebd2423ba5fe3745bd2fca152207d615957759e0ef3387c7e62b11f2272c6eeae27e861d0f5c0edc6ffcfea"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/cors@2.8.5",
+      "type": "library",
+      "bom-ref": "pkg:npm/cors@2.8.5"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "debug",
+      "version": "2.6.9",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6c2ec496b7496899cf6c03fed44a2d62fa99b1bdde725e708ba05f8ba0494d470da30a7a72fb298348d7ce74532838e6fc4ec076014155e00f54c35c286b0730"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/debug@2.6.9",
+      "type": "library",
+      "bom-ref": "pkg:npm/debug@2.6.9"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "depd",
+      "version": "1.1.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9bcd52e14c097763e749b274c4346ed2e560b5a9"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/depd@1.1.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/depd@1.1.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "destroy",
+      "version": "1.0.4",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "978857442c44749e4206613e37946205826abd80"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/destroy@1.0.4",
+      "type": "library",
+      "bom-ref": "pkg:npm/destroy@1.0.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "ee-first",
+      "version": "1.1.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "590c61156b0ae2f4f0255732a158b266bc56b21d"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/ee-first@1.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/ee-first@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "encodeurl",
+      "version": "1.0.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/encodeurl@1.0.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/encodeurl@1.0.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "escape-html",
+      "version": "1.0.3",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0258eae4d3d0c0974de1c169188ef0051d1d1988"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/escape-html@1.0.3",
+      "type": "library",
+      "bom-ref": "pkg:npm/escape-html@1.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "etag",
+      "version": "1.8.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "41ae2eeb65efa62268aebfea83ac7d79299b0887"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/etag@1.8.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/etag@1.8.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "express",
+      "version": "4.16.3",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6af8a502350db3246ecc4becf6b5a34d22f7ed53"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/express@4.16.3",
+      "type": "library",
+      "bom-ref": "pkg:npm/express@4.16.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "finalhandler",
+      "version": "1.1.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6351940e8dfd7b3e1a1c0c3b332b27503e49cd85fe59a223f08e7b90edda10f4f57c544be2cafb9a37a2f7b1609f0840cb2cd16264196931dbdbef6e67574fb6"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/finalhandler@1.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/finalhandler@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "forwarded",
+      "version": "0.1.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "98c23dab1175657b8c0573e8ceccd91b0ff18c84"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/forwarded@0.1.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/forwarded@0.1.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "fresh",
+      "version": "0.5.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d8cadd90d976569fa835ab1f8e4b23a105605a7"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/fresh@0.5.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/fresh@0.5.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "http-errors",
+      "version": "1.6.3",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8b55680bb4be283a0b5bf4ea2e38580be1d9320d"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/http-errors@1.6.3",
+      "type": "library",
+      "bom-ref": "pkg:npm/http-errors@1.6.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "iconv-lite",
+      "version": "0.4.19",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "a1366ac1e20fe75c5a18f238b8f6b9ebf3eb8bfe3cd11fa6a3b49e53e6044c1c903610c6e79c9c17234b220b5af6f5e120baf15c3985ed91a1a9921cb8dd2025"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/iconv-lite@0.4.19",
+      "type": "library",
+      "bom-ref": "pkg:npm/iconv-lite@0.4.19"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "inherits",
+      "version": "2.0.3",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "633c2c83e3da42a502f52466022480f4208261de"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/inherits@2.0.3",
+      "type": "library",
+      "bom-ref": "pkg:npm/inherits@2.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "media-typer",
+      "version": "0.3.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8710d7af0aa626f8fffa1ce00168545263255748"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/media-typer@0.3.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/media-typer@0.3.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "merge-descriptors",
+      "version": "1.0.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/merge-descriptors@1.0.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/merge-descriptors@1.0.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "methods",
+      "version": "1.1.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5529a4d67654134edcc5266656835b0f851afcee"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/methods@1.1.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/methods@1.1.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "mime",
+      "version": "1.4.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "288d7ea8e66ee43716eb06b26074b347fb572820c2e4e9b8b35cf64098c350bccb7267f70efcd2ee896e6381c24eb73ef4588a99652078d2e0ed6dee210bf1b5"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/mime@1.4.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/mime@1.4.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "mime-db",
+      "version": "1.33.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "04727f10aaee348a897ff41a86fc704195caca0390db9ea6c9e37f130f931dc01ae6af8f8f24d330c78d402e03670e40c1fbde96c52b03a07aecd28ca970dbcd"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/mime-db@1.33.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/mime-db@1.33.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "mime-types",
+      "version": "2.1.18",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "95cfda6a19feb78fd2595fea726ba6623ca62ec59f37710b869995b9416382c391aeeb993d54b0010af2abe1c71af3bf488d8a557dba6f1f849fece133c83c85"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/mime-types@2.1.18",
+      "type": "library",
+      "bom-ref": "pkg:npm/mime-types@2.1.18"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "ms",
+      "version": "2.0.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5608aeadfc00be6c2901df5f9861788de0d597c8"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/ms@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/ms@2.0.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "negotiator",
+      "version": "0.6.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2b327184e8992101177b28563fb5e7102acd0ca9"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/negotiator@0.6.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/negotiator@0.6.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "object-assign",
+      "version": "4.1.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2109adc7965887cfc05cbbd442cac8bfbb360863"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/object-assign@4.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/object-assign@4.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "on-finished",
+      "version": "2.3.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "20f1336481b083cd75337992a16971aa2d906947"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/on-finished@2.3.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/on-finished@2.3.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "parseurl",
+      "version": "1.3.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fc289d4ed8993119460c156253262cdc8de65bf3"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/parseurl@1.3.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/parseurl@1.3.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "path-to-regexp",
+      "version": "0.1.7",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "df604178005f522f15eb4490e7247a1bfaa67f8c"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/path-to-regexp@0.1.7",
+      "type": "library",
+      "bom-ref": "pkg:npm/path-to-regexp@0.1.7"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "proxy-addr",
+      "version": "2.0.3",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "8d04c2862089b5ebac50bc63069f3e8dfb52404e4e6dd97793872798b03a597b4ae9716e5919ef54beda0a206a68b3ccf1ce298744b8b4a9daf17be62301275d"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/proxy-addr@2.0.3",
+      "type": "library",
+      "bom-ref": "pkg:npm/proxy-addr@2.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "qs",
+      "version": "6.5.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "791ce1acdd5648835808309baf3efdeb3dfb2ce7b79b9b665bb4507faa019edba4006d679a8bc9be19f01c744c01f7a822d7359b61e4d36584476690fe2aacf8"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/qs@6.5.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/qs@6.5.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "range-parser",
+      "version": "1.2.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f49be6b487894ddc40dcc94a322f611092e00d5e"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/range-parser@1.2.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/range-parser@1.2.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "raw-body",
+      "version": "2.3.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bcd60c77d3eb93cde0050295c3f379389bc88f89"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/raw-body@2.3.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/raw-body@2.3.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "depd",
+      "version": "1.1.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5783b4e1c459f06fa5ca27f991f3d06e7a310359"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/depd@1.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/depd@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "http-errors",
+      "version": "1.6.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0a002cc85707192a7e7946ceedc11155f60ec736"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/http-errors@1.6.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/http-errors@1.6.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "setprototypeof",
+      "version": "1.0.3",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "66567e37043eeb4f04d91bd658c0cbefb55b8e04"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/setprototypeof@1.0.3",
+      "type": "library",
+      "bom-ref": "pkg:npm/setprototypeof@1.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "safe-buffer",
+      "version": "5.1.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "90abcd267e8c9bdde001ccd654983bc07fb019858dac31dd5afa54987c84b200ad230c28ddba8fb55e2d479b6e3da5214cea3f92f855c1df17c303a59466246e"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/safe-buffer@5.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/safe-buffer@5.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "send",
+      "version": "0.16.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "13ae1814f52cb051c4141be96db8ebe383422ed23502887143c6528898d02ec90074abab89810fe95c8612c4431fc49ca331a991a5f5046be16a7a82c2470467"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/send@0.16.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/send@0.16.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "serve-static",
+      "version": "1.13.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "a7fb5d26b3b8537f3b47da0c8dbd688fba9231a31f98ec9de23f61385a3165ed9b690b338077125a3bb26bf0a24f9920659291b9d1cd380d296173a5f2b4399f"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/serve-static@1.13.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/serve-static@1.13.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "setprototypeof",
+      "version": "1.1.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "06f13f4f0a595f8157131c4ec59c9119042feb9d4c4b09962991aabe63dc4488c3a96b9bebb9132ae20cc78ddc659ad2fdc041cf005c3435a8171b765c4148a5"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/setprototypeof@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/setprototypeof@1.1.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "statuses",
+      "version": "1.4.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "ce1482b6df2fd8d0eb4653d0a4236dc3f85e64bb5f503ab104cd6e76a8a46ff1db939d8b2b89d04b0af5d2eefb8a8a425b92ecc87a6e5d2d069c4738f262de7b"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/statuses@1.4.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/statuses@1.4.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "type-is",
+      "version": "1.6.16",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1d1915bffe6a6361ba23c89a6fd708eefd5b3887619bde1d5634023c51255bd5bedc67833921e6cb610161ee154c0a6ece894f7268054cdddfb55251291d89f5"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/type-is@1.6.16",
+      "type": "library",
+      "bom-ref": "pkg:npm/type-is@1.6.16"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "unpipe",
+      "version": "1.0.0",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/unpipe@1.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/unpipe@1.0.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "utils-merge",
+      "version": "1.0.1",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9f95710f50a267947b2ccc124741c1028427e713"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/utils-merge@1.0.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/utils-merge@1.0.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "vary",
+      "version": "1.1.2",
+      "description": "",
+      "scope": "optional",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:npm/vary@1.1.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/vary@1.1.2"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/node_modules/ipaddr.js/ipaddr.min.js, /github/workspace/node_modules/ipaddr.js/bower.json, /github/workspace/package-lock.json",
+      "comment": "Package file"
+    }
+  ]
+}
