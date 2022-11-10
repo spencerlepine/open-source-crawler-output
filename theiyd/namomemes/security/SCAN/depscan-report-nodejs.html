@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShiftLeft Scan Report</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+  />
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    defer
+    type="text/javascript"
+  ></script>
+  <style>
+    .divider[data-content] {
+      margin: 1.6rem 0;
+    }
+
+    .bg-sl {
+      background-color: rgb(35, 46, 77);
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .flex-100 {
+      flex: 1;
+    }
+
+    .flex-50 {
+      flex: 0.5;
+    }
+
+    .flex-grow {
+      flex-grow: 1;
+    }
+    .flex-shrink {
+      flex-shrink: 0.5;
+    }
+
+    body {
+      background-color: #1c253e;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+
+    span {
+      word-break: break-word;
+    }
+
+    .hero .hero-body {
+      padding: 2em;
+      background-color: #3f4861;
+      margin: 2em;
+    }
+
+    .hero.hero-sm {
+      padding-bottom: 0rem;
+      padding-top: 0rem;
+      background: #232e4d;
+    }
+
+    .card {
+      background: #232e4d;
+      border: none;
+      padding-left: 1.5em;
+    }
+
+    .table tbody tr:nth-child(odd) {
+      background-color: rgba(35, 46, 77, 1);
+    }
+
+    .table tbody tr:nth-child(even) {
+      background-color: #1c253e;
+    }
+
+    .chip {
+      color: #000000;
+      display: revert;
+    }
+    .chip.bg-dark {
+      color: #ffffff;
+    }
+    a {
+      color: #4587d4;
+      display: revert;
+    }
+
+    details,
+    menu {
+      display: block;
+      background: #232e4d;
+      margin-top: 2em;
+      padding: 1em;
+    }
+
+    .panel {
+      border: 0;
+      margin: 0.5em;
+      background: #3f4861;
+    }
+    .accordion .accordion-body {
+      overflow-y: scroll;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.3rem;
+    }
+    .data-table {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .data-table > .table-head,
+    .data-table > .table-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .table-data-row,
+    .table-header-row {
+      display: flex;
+      flex-direction: row;
+      flex: 1 100%;
+      border-bottom: 0.05rem solid #dadee4;
+    }
+    .table-data-row > div {
+      padding: 0.6rem 0.4rem;
+      overflow: hidden;
+    }
+    .table-header-row > div {
+      padding: 0.6rem 0.4rem;
+      border-bottom-width: 0.1rem;
+      font-weight: bold;
+    }
+
+    .table-data-row:nth-child(odd) {
+      background-color: rgba(35, 46, 77, 1);
+    }
+
+    .table-data-row > div:nth-child(1),
+    .table-header-row > div:nth-child(1) {
+      flex: 0 0 20%;
+      width: 20%;
+      word-wrap: break-word;
+    }
+
+    .table-data-row > div:nth-child(2),
+    .table-header-row > div:nth-child(2) {
+      flex: 0 0 10%;
+      width: 10%;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(3),
+    .table-header-row > div:nth-child(3) {
+      flex: 0 0 20%;
+      width: 20%;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4),
+    .table-header-row > div:nth-child(4) {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+    .table-data-row > div span * {
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4) {
+      padding: 10px;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4) pre {
+      overflow-x: scroll;
+    }
+
+    .chip.d-inline-flex {
+      display: inline-flex;
+    }
+
+    .table-data-row > div:nth-child(1) .chip {
+      display: block;
+      width: fit-content;
+      max-width: unset;
+      height: auto;
+      border-radius: 5px;
+      font-size: 0.65rem;
+    }
+    .table-data-row > div:nth-child(1) .chip a {
+      word-break: break-all;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      white-space: pre-wrap;
+    }
+
+    .table-data-row h1 {
+      font-size: 1.5rem;
+    }
+
+    .table-data-row h2 {
+      font-size: 1.3rem;
+    }
+
+    .table-data-row h3,
+    .table-data-row h4 {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container grid-xl" style="min-height: 90vh;">
+  <header class="navbar" style="height: 4rem;">
+  <section class="navbar-section">
+    <a href="https://shiftleft.io" class="navbar-brand"><svg height="50px" viewBox="0 0 95 21"><g id="Styles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Components-I" transform="translate(-72.000000, -212.000000)"><g id="Group" transform="translate(48.000000, 48.000000)"><g id="Header-and-Nav"><g id="Main-Header" transform="translate(0.000000, 43.000000)"><g id="Main-Header-Hover-/-Selected" transform="translate(0.000000, 105.000000)"><g id="Logo" transform="translate(24.000000, 16.500000)"><path d="M94.40652,16.35992 C93.88612,16.55992 93.16612,16.67992 92.24652,16.67992 C89.88612,16.67992 88.96612,15.15992 88.96612,13.00032 L88.96612,9.11992 L86.04652,9.11992 L86.04652,16.47992 L83.20652,16.47992 L83.20652,9.11992 L81.88612,9.11992 L81.88612,6.95992 L83.20652,6.83992 L83.20652,6.31992 C83.20652,4.27992 84.12652,2.63992 86.76612,2.63992 C87.56612,2.63992 88.28612,2.83992 88.72652,2.95992 L88.20652,5.00032 C87.88612,4.87992 87.48612,4.80032 87.16612,4.80032 C86.44652,4.80032 86.04652,5.20032 86.04652,6.11992 L86.04652,6.71992 L89.20652,6.71992 L89.52652,4.15992 L91.88652,4.15992 L91.88652,6.71992 L94.24652,6.71992 L94.24652,8.95992 L91.88652,8.95992 L91.88652,12.83992 C91.88652,13.95992 92.40652,14.35992 93.12652,14.35992 C93.44652,14.35992 93.72652,14.23992 94.04652,14.15992 L94.40652,16.35992 Z" id="Fill-14" fill="#3ECF8E"></path><path d="M78.36628,10.64 C78.36628,9.52 77.84628,8.8 76.72628,8.8 C75.80668,8.8 75.08628,9.4 74.88628,10.64 L78.36628,10.64 Z M76.76628,6.56 C79.52628,6.56 80.84628,8.6 80.84628,11.16 C80.84628,11.68 80.72628,12.08 80.72628,12.4 L75.00668,12.4 C75.20668,13.84 76.24628,14.44 77.44628,14.44 C78.16628,14.44 78.76628,14.24 79.48628,13.84 L80.40668,15.56 C79.36628,16.28 78.16628,16.68 77.04628,16.68 C74.28628,16.68 72.12628,14.84 72.12628,11.68 C72.16628,8.52 74.40668,6.56 76.76628,6.56 L76.76628,6.56 Z" id="Fill-13" fill="#3ECF8E"></path><polygon id="Fill-12" fill="#3ECF8E" points="63.4862 3.79996 66.3266 3.79996 66.3266 13.99996 71.3266 13.99996 71.3266 16.43996 63.4462 16.43996"></polygon><path d="M61.64636,16.35992 C61.12636,16.55992 60.40636,16.67992 59.48636,16.67992 C57.12636,16.67992 56.20636,15.15992 56.20636,13.00032 L56.20636,9.11992 L53.24636,9.11992 L53.24636,16.47992 L50.40636,16.47992 L50.40636,9.11992 L49.08636,9.11992 L49.08636,6.95992 L50.40636,6.83992 L50.40636,6.31992 C50.40636,4.27992 51.32636,2.63992 53.96636,2.63992 C54.76636,2.63992 55.48636,2.83992 55.92636,2.95992 L55.40636,5.00032 C55.08636,4.87992 54.68636,4.80032 54.36636,4.80032 C53.64636,4.80032 53.24636,5.20032 53.24636,6.11992 L53.24636,6.71992 L56.40636,6.71992 L56.72636,4.15992 L59.08676,4.15992 L59.08676,6.71992 L61.44636,6.71992 L61.44636,8.95992 L59.08676,8.95992 L59.08676,12.83992 C59.08676,13.95992 59.60636,14.35992 60.32636,14.35992 C60.64636,14.35992 60.92636,14.23992 61.24636,14.15992 L61.64636,16.35992 Z" id="Fill-11" fill="#FFFFFF"></path><path d="M44.7664,16.48 L47.6068,16.48 L47.6068,6.88 L44.7664,6.88 L44.7664,16.48 Z M44.5664,3.92 C44.5664,3 45.2864,2.48 46.2064,2.48 C47.1264,2.48 47.8464,3.08 47.8464,3.92 C47.8464,4.84 47.1264,5.44 46.2064,5.44 C45.2864,5.44 44.5664,4.84 44.5664,3.92 L44.5664,3.92 Z" id="Fill-9" fill="#FFFFFF"></path><path d="M34.36632,2.88004 L37.20672,2.88004 L37.20672,6.24004 L37.08632,7.96004 C37.80672,7.36004 38.72632,6.64004 40.04632,6.64004 C42.08632,6.64004 43.00672,8.08004 43.00672,10.52004 L43.00672,16.44004 L40.16632,16.44004 L40.16632,10.84004 C40.16632,9.40004 39.76632,9.00004 38.92632,9.00004 C38.20672,9.00004 37.80672,9.32004 37.20672,9.92004 L37.20672,16.44004 L34.36632,16.44004 L34.36632,2.88004 Z" id="Fill-7" fill="#FFFFFF"></path><path d="M24.84636,12.87984 C25.76636,13.67984 26.88636,14.20024 27.92636,14.20024 C29.16636,14.20024 29.64636,13.67984 29.64636,12.95984 C29.64636,12.15984 28.92636,11.92024 27.80636,11.43984 L26.16636,10.72024 C24.84636,10.20024 23.60636,9.07984 23.60636,7.23984 C23.60636,5.20024 25.44636,3.47984 28.08636,3.47984 C29.52636,3.47984 31.04636,4.07984 32.16636,5.12024 L30.72636,6.95984 C29.92636,6.35984 29.08636,5.92024 28.08636,5.92024 C27.16636,5.92024 26.44636,6.32024 26.44636,7.03984 C26.44636,7.83984 27.24636,8.07984 28.40636,8.55984 L30.04636,9.15984 C31.56636,9.75984 32.48636,10.80024 32.48636,12.63984 C32.48636,14.67984 30.76636,16.52024 27.80636,16.52024 C26.16636,16.52024 24.44636,15.92024 23.12636,14.67984 L24.84636,12.87984 Z" id="Fill-5" fill="#FFFFFF"></path><g id="logomark"><path d="M9.44636,9.00016 L16.68636,3.48016 L16.08636,11.35976 C16.08636,12.80016 15.68636,14.00016 14.96636,15.04016 L9.44636,10.84016 C8.84636,10.44016 8.84636,9.52016 9.44636,9.00016 Z" id="Fill-1" fill="#3ECF8E"></path><path d="M4.32644,10.84 C3.72644,10.32 3.72644,9.52 4.32644,9 L14.72644,1.04 C13.08604,0.52 10.64644,0 8.28604,0 C5.72644,0 3.16644,0.6 1.64644,1.04 C0.60644,1.36 -0.07356,2.36 0.00644,3.48 L0.60644,11.36 C0.60644,16.28 5.60644,18.8 7.56644,19.72 C8.08604,19.92 8.60644,19.92 9.08604,19.72 C10.00644,19.32 11.52644,18.6 12.84644,17.36 L4.32644,10.84 Z" id="Fill-3" fill="#FFFFFF"></path></g></g></g></g></g></g></g></g></svg> </a>
+  </section>
+</header>
+  <div class="columns">
+    <div class="column col-12">
+      <div class="hero hero-sm">
+        <div class="hero-body">
+          <h1>Dependency Scan Status <button class="btn btn-error btn-action"><span class="tooltip tooltip-top" data-tooltip="Issues were found in this run"><i class="icon icon-cross"></i></span></button></h1>
+          <p>Report from the scan performed on <span class="text-dark chip"><i class="icon icon-time"> </i>&nbsp; 2022-11-10 at 08:47</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="divider text-center" data-content="Summary"></div> -->
+  <section id="#summary"></section>
+  <details class="accordion" open>
+    <summary class="accordion-header">
+        <h3>
+          <i class="icon icon-arrow-right mr-1"></i>
+          Executive Summary
+        </h3>
+    </summary>
+    <div class="accordion-body columns col-gapless">
+    <div class="column col-12">
+        <p>This report was generated by ShiftLeft from the Dependency Scan invocation on 2022-11-10 at 08:47. The scan used the ShiftLeft vulnerability database to audit the application dependencies for known vulnerabilities and exploits.
+        </p>
+        
+        <p>
+        Below is a summary of the issues identified:
+        </p>
+        <div class="container">
+          <div class="columns col-12">
+            <div class="column col-5">
+              <table class="table" id="severity-table">
+                <thead>
+                <tr>
+                  <th>Severity</th>
+                  <th>Count</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><span class="bg-error chip">CRITICAL</span></td>
+                  <td>5</td>
+                </tr><tr>
+                  <td><span class="bg-warning chip">HIGH</span></td>
+                  <td>10</td>
+                </tr><tr>
+                  <td><span class="bg-dark chip">MEDIUM</span></td>
+                  <td>13</td>
+                </tr><tr>
+                  <td><span class="bg-success chip">LOW</span></td>
+                  <td>3</td>
+                </tr><tr>
+                  <td><span class="bg-unspecified chip">UNSPECIFIED</span></td>
+                  <td>0</td>
+                </tr><tr>
+                  <td><span class="bg-total chip">TOTAL</span></td>
+                  <td>31</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="column col-6">
+              <canvas id="severity-chart" width="300" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+        
+      
+      <p>&nbsp;</p>
+        <p><i class="icon icon-flag icon-2x text-warning"></i>&nbsp; ShiftLeft recommends immediate remediation for the vulnerable dependencies before using this application in a live environment.</p><p>This would mostly involve updating the version numbers to a fixed version and performing the required functional and smoke tests. On rare occasions where a fix is not available, consider <i>either delaying the deployment or identifying a suitable well-supported alternative package</i>.</p>
+      
+    </div>
+  </div>
+  </details>
+  <!-- <div class="divider text-center" data-content="Packages List"></div> -->
+  <section id="#all_issues"></section>
+  <div class="columns col-gapless" style="margin-top: 2em;">
+    <div class="column col-12">
+      <h3><i class="icon icon-link"></i> Vulnerable Packages <span class="text-bold">(31)</span></h3>
+    </div>
+    <div class="column col-12">
+      <div class="filter">
+        <input type="radio" id="tag-0" class="filter-tag" name="filter-radio" hidden checked>
+        <input type="radio" id="tag-1" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-2" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-3" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-4" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-5" class="filter-tag" name="filter-radio" hidden>
+
+        <div class="filter-nav">
+          <label class="chip" for="tag-0">All (31)</label>
+          <label class="chip" for="tag-1">Critical (5)</label>
+          <label class="chip" for="tag-2">High (10)</label>
+          <label class="chip" for="tag-3">Medium (13)</label>
+          <label class="chip" for="tag-4">Low (3)</label>
+          <label class="chip" for="tag-5">Unspecified (0)</label>
+        </div>
+        <div class="filter-body">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Severity</th>
+              <th>Id</th>
+              <th>Package</th>
+              <th>Version</th>
+              <th>Fix Version</th>
+              <th>Risk Score</th>
+              <th>Description</th>
+              <th>More Information</th>
+            </tr>
+            </thead>
+            <tbody>
+          
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-44906</td>
+            <td>npm:minimist</td>
+            <td>&lt;1.2.6</td>
+            <td>1.2.6</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in minimist<br/>Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey() (lines 69 95).<br/>Upgrade to version 1.2.6 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-23438</td>
+            <td>npm:mpath</td>
+            <td>&lt;0.8.4</td>
+            <td>0.8.4</td>
+            <td>9.0</td>
+            <td># Type confusion in mpath<br/>This <b>affects</b> the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE 2018 16490. In particular, the condition ignoreProperties.indexOf(parts[i ) !==  1 returns  1 if parts[i  is ['__proto__' . This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input.<br/>Upgrade to version 0.8.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-3918</td>
+            <td>npm:json-schema</td>
+            <td>&lt;0.4.0</td>
+            <td>0.4.0</td>
+            <td>9.0</td>
+            <td># json schema is vulnerable to Prototype Pollution<br/>json schema before version 0.4.0 is vulnerable to Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution').<br/>Upgrade to version 0.4.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2020-7769</td>
+            <td>npm:nodemailer</td>
+            <td>&lt;6.4.16</td>
+            <td>6.4.16</td>
+            <td>9.0</td>
+            <td># Command injection in nodemailer<br/>This <b>affects</b> the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails.<br/>Upgrade to version 6.4.16 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-25944</td>
+            <td>npm:deep-defaults</td>
+            <td>&gt;=1.0.0-&lt;=1.0.5</td>
+            <td>None</td>
+            <td>9.8</td>
+            <td>Prototype pollution vulnerability in 'deep-defaults' versions 1.0.0 through 1.0.5 allows attacker to cause a denial of service and may lead to remote code execution.</td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.whitesourcesoftware.com/vulnerability-database/CVE-2021-25944" target="_blank">https://www.whitesourcesoftware.com/vulnerability-database/CVE-2021-25944</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-8203</td>
+            <td>npm:lodash</td>
+            <td>&lt;4.17.20</td>
+            <td>4.17.20</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in lodash<br/>Versions of lodash prior to 4.17.19 are vulnerable to Prototype Pollution. The function zipObjectDeep allows a malicious user to modify the prototype of Object if the property identifiers are user supplied. Being <b>affected</b> by this issue requires zipping objects based on user provided property arrays.<br/><br/>This vulnerability causes the addition or modification of an existing property that will exist on all objects and may lead to Denial of Service or Code Execution under specific circumstances.<br/>Upgrade to version 4.17.20 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-33623</td>
+            <td>npm:trim-newlines</td>
+            <td>&lt;3.0.1</td>
+            <td>3.0.1</td>
+            <td>7.5</td>
+            <td># Uncontrolled Resource Consumption in trim newlines<br/>@rkesters/gnuplot is an easy to use node module to draw charts using gnuplot and ps2pdf. The trim newlines package before 3.0.1 and 4.x before 4.0.1 for Node.js has an issue related to regular expression denial of service (ReDoS) for the .end() method.<br/>Upgrade to version 3.0.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-3803</td>
+            <td>npm:nth-check</td>
+            <td>&lt;2.0.1</td>
+            <td>2.0.1</td>
+            <td>7.5</td>
+            <td># Inefficient Regular Expression Complexity in nth check<br/>nth check is vulnerable to Inefficient Regular Expression Complexity<br/>Upgrade to version 2.0.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-7788</td>
+            <td>npm:ini</td>
+            <td>&lt;1.3.6</td>
+            <td>1.3.6</td>
+            <td>7.5</td>
+            <td># ini before 1.3.6 vulnerable to Prototype Pollution via ini.parse<br/>### Overview<br/>The `ini` npm package before version 1.3.6 has a Prototype Pollution vulnerability.<br/><br/>If an attacker submits a malicious INI file to an application that parses it with `ini.parse`, they will pollute the prototype on the application. This can be exploited further depending on the context.<br/><br/>### Patches<br/><br/>This has been patched in 1.3.6<br/><br/>### Steps to reproduce<br/><br/>payload.ini<br/>```<br/>[__proto__ <br/>polluted = "polluted"<br/>```<br/><br/>poc.js:<br/>```<br/>var fs = require('fs')<br/>var ini = require('ini')<br/><br/>var parsed = ini.parse(fs.readFileSync('./payload.ini', 'utf 8'))<br/>console.log(parsed)<br/>console.log(parsed.__proto__)<br/>console.log(polluted)<br/>```<br/><br/>```<br/>> node poc.js<br/>{}<br/>{ polluted: 'polluted' }<br/>{ polluted: 'polluted' }<br/>polluted<br/>```<br/>Upgrade to version 1.3.6 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-7610</td>
+            <td>npm:bson</td>
+            <td>&lt;1.1.4</td>
+            <td>1.1.4</td>
+            <td>7.5</td>
+            <td># Deserialization of Untrusted Data in bson<br/>All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type.<br/>Upgrade to version 1.1.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-4076</td>
+            <td>npm:electron</td>
+            <td>&lt;7.2.4</td>
+            <td>7.2.4</td>
+            <td>7.5</td>
+            <td># Context isolation bypass via leaked cross context objects in Electron<br/>### Impact<br/>Apps using `contextIsolation` are <b>affected</b>.<br/><br/>This is a context isolation bypass, meaning that code running in the main world context in the renderer can reach into the isolated Electron context and perform privileged actions.<br/><br/>### Workarounds<br/>There are no app side workarounds, you must update your Electron version to be protected.<br/><br/>### Fixed Versions<br/>* `9.0.0 beta.21`<br/>* `8.2.4`<br/>* `7.2.4`<br/><br/>### Non Impacted Versions<br/>* `9.0.0 beta.*`<br/><br/>### For more information<br/>If you have any questions or comments about this advisory:<br/>* Email us at [security@electronjs.org (mailto:security@electronjs.org)<br/>Upgrade to version 7.2.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-4077</td>
+            <td>npm:electron</td>
+            <td>&lt;7.2.4</td>
+            <td>7.2.4</td>
+            <td>7.5</td>
+            <td># Context isolation bypass via contextBridge in Electron<br/>### Impact<br/>Apps using both `contextIsolation` and `contextBridge` are <b>affected</b>.<br/><br/>This is a context isolation bypass, meaning that code running in the main world context in the renderer can reach into the isolated Electron context and perform privileged actions.<br/><br/>### Workarounds<br/>There are no app side workarounds, you must update your Electron version to be protected.<br/><br/>### Fixed Versions<br/>* `9.0.0 beta.21`<br/>* `8.2.4`<br/>* `7.2.4`<br/><br/>### For more information<br/>If you have any questions or comments about this advisory:<br/>* Email us at [security@electronjs.org (mailto:security@electronjs.org)<br/>Upgrade to version 7.2.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-23337</td>
+            <td>npm:lodash</td>
+            <td>&lt;4.17.21</td>
+            <td>4.17.21</td>
+            <td>7.5</td>
+            <td># Command Injection in lodash<br/>`lodash` versions prior to 4.17.21 are vulnerable to Command Injection via the template function.<br/>Upgrade to version 4.17.21 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2022-21222</td>
+            <td>npm:css-what</td>
+            <td>&lt;2.1.3</td>
+            <td>2.1.3</td>
+            <td>7.5</td>
+            <td># css what vulnerable to ReDoS due to use of insecure regular expression<br/>The package css what before 2.1.3 is vulnerable to Regular Expression Denial of Service (ReDoS) due to the use of insecure regular expression in the `re_attr` variable of index.js. The exploitation of this vulnerability could be triggered via the parse function.<br/>Upgrade to version 2.1.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2022-3517</td>
+            <td>npm:minimatch</td>
+            <td>&lt;3.0.5</td>
+            <td>3.0.5</td>
+            <td>7.5</td>
+            <td># minimatch ReDoS vulnerability<br/>A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service.<br/>Upgrade to version 3.0.5 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-21718</td>
+            <td>npm:electron</td>
+            <td>&lt;13.6.6</td>
+            <td>13.6.6</td>
+            <td>2.0</td>
+            <td># Renderers can obtain access to random bluetooth device without permission in Electron<br/>### Impact<br/>This vulnerability allows renderers to obtain access to a random bluetooth device via the [web bluetooth API (https://developer.mozilla.org/en US/docs/Web/API/Web_Bluetooth_API) if the app has not configured a custom `select bluetooth device` event handler.  The device that is accessed is random and the attacker would have no way of selecting a specific device.<br/><br/>All current stable versions of Electron are <b>affected</b>.<br/><br/>### Patches<br/>This has been patched and the following Electron versions contain the fix:<br/>* `17.0.0 alpha.6`<br/>* `16.0.6`<br/>* `15.3.5`<br/>* `14.2.4`<br/>* `13.6.6`<br/><br/>### Workarounds<br/>Adding this code to your app can workaround the issue.<br/><br/>```js<br/>app.on('web contents created', (event, webContents) => {<br/>  webContents.on('select bluetooth device', (event, devices, callback) => {<br/>    // Prevent default behavior<br/>    event.preventDefault();<br/>    // Cancel the request<br/>    callback('');<br/>  });<br/>});<br/>```<br/><br/>For more information<br/>If you have any questions or comments about this advisory, email us at security@electronjs.org.<br/>Upgrade to version 13.6.6 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-29247</td>
+            <td>npm:electron</td>
+            <td>&lt;15.5.5</td>
+            <td>15.5.5</td>
+            <td>2.0</td>
+            <td># Compromised child renderer processes could obtain IPC access without nodeIntegrationInSubFrames being enabled<br/>### Impact<br/>This vulnerability allows a renderer with JS execution to obtain access to a new renderer process with `nodeIntegrationInSubFrames` enabled which in turn allows effective access to `ipcRenderer`.<br/><br/>Please note the misleadingly named `nodeIntegrationInSubFrames` option does not implicitly grant Node.js access rather it depends on the existing `sandbox` setting.  If your application is sandboxed then `nodeIntegrationInSubFrames` just gives access to the sandboxed renderer APIs (which includes `ipcRenderer`).<br/><br/>If your application then additionally exposes IPC messages without IPC `senderFrame` validation that perform privileged actions or return confidential data this access to `ipcRenderer` can in turn compromise your application / user even with the sandbox enabled.<br/><br/>### Patches<br/>This has been patched and the following Electron versions contain the fix:<br/><br/>* `18.0.0 beta.6`<br/>* `17.2.0`<br/>* `16.2.6`<br/>* `15.5.5`<br/><br/>### Workarounds<br/>Ensure that all IPC message handlers appropriately validate `senderFrame` as per our [security tutorial here (https://github.com/electron/electron/blob/main/docs/tutorial/security.md#17 validate the sender of all ipc messages).<br/><br/>### For more information<br/><br/>If you have any questions or comments about this advisory, email us at [security@electronjs.org (mailto:security@electronjs.org).<br/>Upgrade to version 15.5.5 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2020-15096</td>
+            <td>npm:electron</td>
+            <td>&lt;6.1.11</td>
+            <td>6.1.11</td>
+            <td>2.0</td>
+            <td># Context isolation bypass via Promise in Electron<br/>### Impact<br/>Apps using `contextIsolation` are <b>affected</b>.<br/><br/>This is a context isolation bypass, meaning that code running in the main world context in the renderer can reach into the isolated Electron context and perform privileged actions.<br/><br/>### Workarounds<br/>There are no app side workarounds, you must update your Electron version to be protected.<br/><br/>### Fixed Versions<br/>* `9.0.0 beta.21`<br/>* `8.2.4`<br/>* `7.2.4`<br/>* `6.1.11`<br/><br/>### For more information<br/>If you have any questions or comments about this advisory:<br/>* Email us at [security@electronjs.org (mailto:security@electronjs.org)<br/>Upgrade to version 6.1.11 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2021-3765</td>
+            <td>npm:validator</td>
+            <td>&lt;13.7.0</td>
+            <td>13.7.0</td>
+            <td>5.0</td>
+            <td># Inefficient Regular Expression Complexity in validator.js<br/>validator.js prior to 13.7.0 is vulnerable to Inefficient Regular Expression Complexity<br/>Upgrade to version 13.7.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2021-23343</td>
+            <td>npm:path-parse</td>
+            <td>&lt;1.0.7</td>
+            <td>1.0.7</td>
+            <td>5.0</td>
+            <td># Regular Expression Denial of Service in path parse<br/>Affected versions of npm package `path parse` are vulnerable to Regular Expression Denial of Service (ReDoS) via splitDeviceRe, splitTailRe, and splitPathRe regular expressions. ReDoS exhibits polynomial worst case time complexity.<br/>Upgrade to version 1.0.7 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2021-23362</td>
+            <td>npm:hosted-git-info</td>
+            <td>&lt;2.8.9</td>
+            <td>2.8.9</td>
+            <td>5.0</td>
+            <td># Regular Expression Denial of Service in hosted git info<br/>The npm package `hosted git info` before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The <b>affected</b> regular expression exhibits polynomial worst case time complexity<br/>Upgrade to version 2.8.9 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-7598</td>
+            <td>npm:minimist</td>
+            <td>&lt;0.2.1</td>
+            <td>0.2.1</td>
+            <td>5.0</td>
+            <td># Prototype Pollution in minimist<br/>Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  <br/>Parsing the argument `  __proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `  __proto__=Polluted` raises and uncaught error and crashes the application.  <br/>This is exploitable if attackers have control over the arguments being passed to `minimist`.<br/><br/><br/><br/>## Recommendation<br/><br/>Upgrade to versions 0.2.1, 1.2.3 or later.<br/>Upgrade to version 0.2.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2022-29257</td>
+            <td>npm:electron</td>
+            <td>&lt;15.5.0</td>
+            <td>15.5.0</td>
+            <td>5.0</td>
+            <td># AutoUpdater module fails to validate certain nested components of the bundle<br/>### Impact<br/>This vulnerability allows attackers who have control over a given apps update server / update storage to serve maliciously crafted update packages that pass the code signing validation check but contain malicious code in some components.<br/><br/>Please note that this kind of attack would require **significant** privileges in your own auto updating infrastructure and the ease of that attack entirely depends on your infrastructure security.<br/><br/>### Patches<br/>This has been patched and the following Electron versions contain the fix:<br/><br/>* `18.0.0 beta.6`<br/>* `17.2.0`<br/>* `16.2.0`<br/>* `15.5.0`<br/><br/>### Workarounds<br/>There are no workarounds for this issue, please update to a patched version of Electron.<br/><br/>### For more information<br/>If you have any questions or comments about this advisory, email us at [security@electronjs.org (mailto:security@electronjs.org)<br/>Upgrade to version 15.5.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2021-39184</td>
+            <td>npm:electron</td>
+            <td>&lt;11.5.0</td>
+            <td>11.5.0</td>
+            <td>5.0</td>
+            <td># Electron's sandboxed renderers can obtain thumbnails of arbitrary files through the nativeImage API<br/>### Impact<br/>This vulnerability allows a sandboxed renderer to request a "thumbnail" image of an arbitrary file on the user's system. The thumbnail can potentially include significant parts of the original file, including textual data in many cases.<br/><br/>All current stable versions of Electron are <b>affected</b>.<br/><br/>### Patches<br/>This was fixed with #30728, and the following Electron versions contain the fix:<br/><br/>  15.0.0 alpha.10<br/>  14.0.0<br/>  13.3.0<br/>  12.1.0<br/>  11.5.0<br/><br/>### Workarounds<br/>If your app enables `contextIsolation`, this vulnerability is significantly more difficult for an attacker to exploit.<br/><br/>Further, if your app does not depend on the `createThumbnailFromPath` API, then you can simply disable the functionality. In the main process, before the 'ready' event:<br/>```js<br/>delete require('electron').nativeImage.createThumbnailFromPath<br/>```<br/><br/>### For more information<br/>If you have any questions or comments about this advisory, email us at [security@electronjs.org (mailto:security@electronjs.org).<br/>Upgrade to version 11.5.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2021-23400</td>
+            <td>npm:nodemailer</td>
+            <td>&lt;6.6.1</td>
+            <td>6.6.1</td>
+            <td>5.0</td>
+            <td># Header injection in nodemailer<br/>The package nodemailer before 6.6.1 are vulnerable to HTTP Header Injection if unsanitized user input that may contain newlines and carriage returns is passed into an address object.<br/>Upgrade to version 6.6.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-15366</td>
+            <td>npm:ajv</td>
+            <td>&lt;6.12.3</td>
+            <td>6.12.3</td>
+            <td>5.0</td>
+            <td># Prototype Pollution in Ajv<br/>An issue was discovered in ajv.validate() in Ajv (aka Another JSON Schema Validator) 6.12.2. A carefully crafted JSON schema could be provided that allows execution of other code by prototype pollution. (While untrusted schemas are recommended against, the worst case of an untrusted schema should be a denial of service, not execution of code.)<br/>Upgrade to version 6.12.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2019-2391</td>
+            <td>npm:bson</td>
+            <td>&lt;1.1.4</td>
+            <td>1.1.4</td>
+            <td>5.0</td>
+            <td># Deserialization of Untrusted Data in bson<br/>Incorrect parsing of certain JSON input may result in js bson not correctly serializing BSON. This may cause unexpected application behaviour including data disclosure.<br/>Upgrade to version 1.1.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-26272</td>
+            <td>npm:electron</td>
+            <td>&lt;9.4.0</td>
+            <td>9.4.0</td>
+            <td>5.0</td>
+            <td># IPC messages delivered to the wrong frame in Electron<br/>### Impact<br/>IPC messages sent from the main process to a subframe in the renderer process, through `webContents.sendToFrame`, `event.reply` or when using the `remote` module, can in some cases be delivered to the wrong frame.<br/><br/>If your app does ANY of the following, then it is <b>impacted</b> by this issue:<br/>  Uses `remote`<br/>  Calls `webContents.sendToFrame`<br/>  Calls `event.reply` in an IPC message handler<br/><br/>### Patches<br/>This has been fixed in the following versions:<br/><br/>  9.4.0<br/>  10.2.0<br/>  11.1.0<br/>  12.0.0 beta.9<br/><br/>### Workarounds<br/>There are no workarounds for this issue.<br/><br/>### For more information<br/>If you have any questions or comments about this advisory, email us at [security@electronjs.org (mailto:security@electronjs.org).<br/>Upgrade to version 9.4.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-35149</td>
+            <td>npm:mquery</td>
+            <td>&lt;3.2.3</td>
+            <td>3.2.3</td>
+            <td>5.0</td>
+            <td># Code Injection in mquery<br/>lib/utils.js in mquery before 3.2.3 allows a pollution attack because a special property (e.g., __proto__) can be copied during a merge or clone operation.<br/>Upgrade to version 3.2.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-4075</td>
+            <td>npm:electron</td>
+            <td>&lt;7.2.4</td>
+            <td>7.2.4</td>
+            <td>5.0</td>
+            <td># Arbitrary file read via window open IPC in Electron<br/>### Impact<br/>The vulnerability allows arbitrary local file read by defining unsafe window options on a child window opened via window.open.<br/><br/>### Workarounds<br/>Ensure you are calling `event.preventDefault()` on all [`new window` (https://electronjs.org/docs/api/web contents#event new window) events where the `url` or `options` is not something you expect.<br/><br/>### Fixed Versions<br/>* `9.0.0 beta.21`<br/>* `8.2.4`<br/>* `7.2.4`<br/><br/>### For more information<br/>If you have any questions or comments about this advisory:<br/>* Email us at [security@electronjs.org (mailto:security@electronjs.org)<br/>Upgrade to version 7.2.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-28500</td>
+            <td>npm:lodash</td>
+            <td>&lt;4.17.21</td>
+            <td>4.17.21</td>
+            <td>5.0</td>
+            <td># Regular Expression Denial of Service (ReDoS) in lodash<br/>All versions of package lodash prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions. Steps to reproduce (provided by reporter Liyuan Chen): var lo = require('lodash'); function build_blank (n) { var ret = "1" for (var i = 0; i < n; i++) { ret += " " } return ret + "1"; } var s = build_blank(50000) var time0 = Date.now(); lo.trim(s) var time_cost0 = Date.now()   time0; console.log("time_cost0: " + time_cost0) var time1 = Date.now(); lo.toNumber(s) var time_cost1 = Date.now()   time1; console.log("time_cost1: " + time_cost1) var time2 = Date.now(); lo.trimEnd(s) var time_cost2 = Date.now()   time2; console.log("time_cost2: " + time_cost2)<br/>Upgrade to version 4.17.21 or later<br/>            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container grid-xl" style="height: 3rem; margin-top: 0.8rem; color: #bcc3ce;">
+  <p>Thank you for using <a href="https://shiftleft.io" target="_blank">ShiftLeft</a>. Interested in a NextGen analyzer with higher quality results? Contact us <a href="https://www.shiftleft.io/contact/" target="_blank">here</a></p>
+</div>
+<script type="text/javascript">
+  window.addEventListener("DOMContentLoaded", function(event) {
+      const severityCanvas = document.getElementById("severity-chart");
+      const severityTable = document.getElementById("severity-table");
+      const data = [5, 10, 13, 3]
+      if(severityCanvas && Chart) {
+        Chart.platform.disableCSSInjection = true;
+        Chart.defaults.global.defaultFontColor='white';
+        const severityChart = new Chart(severityCanvas, {
+            type: 'bar',
+            data: {
+              labels: ['Critical', 'High', 'Medium', 'Low'],
+              datasets: [{
+                  label: 'Severity',
+                  data: data,
+                  backgroundColor: [
+                      '#e85600', // Critical
+                      '#ffb700', // High
+                      '#303742', // Medium
+                      '#32b643' // Low
+                  ],
+                  borderWidth: 1
+              }]
+            },
+            options: {
+              maintainAspectRatio: false,
+              scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: "white",
+                        fontSize: 12,
+                        stepSize: 1
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: "white",
+                        fontSize: 12
+                    }
+                }]
+              },
+              layout: {
+                padding: {
+                  left: 50,
+                  right: 0,
+                  top: 50,
+                  bottom: 0
+                }
+              }
+            }
+        });
+        severityChart.canvas.parentNode.style.width = severityTable.style.width - 10;
+      }
+  });
+</script>
+</body>
+</html>
