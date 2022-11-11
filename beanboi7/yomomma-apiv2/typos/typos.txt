@@ -1,0 +1,13 @@
+## Detected Typos
+error: `claus` should be `clause`
+  --> ./jokes.json:143:93
+    |
+143 |     "Yo momma is so fat that her butt drags on the ground and kids yell - 'there goes santa claus with his bag of toys!'",
+    |                                                                                             ^^^^^
+    |
+error: `Tequlia` should be `Tequila`
+  --> ./jokes.json:395:60
+    |
+395 |     "Yo momma's so stupid she thinks Patronus is a kind of Tequlia.",
+    |                                                            ^^^^^^^
+    |

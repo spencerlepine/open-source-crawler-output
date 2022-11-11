@@ -1,0 +1,137 @@
+{
+  "generated_at": "2022-11-11T08:39:05Z",
+  "vulnerabilities": [
+    {
+      "rule_id": "fastapi-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Consider using FastAPI security middleware SecurityScopes to improve overall security",
+      "description": "Consider using FastAPI security middleware SecurityScopes to improve overall security",
+      "recommendation": "FastAPI is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nFastAPI security middleware adds useful tools to add CORS headers as well as implement OAuth2 authentication in the API.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[FastAPI Security](https://fastapi.tiangolo.com/advanced/security/)**\n\n**[FastAPI Deployment - https](https://fastapi.tiangolo.com/deployment/#https)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "SecurityScopes",
+        "line_number": "1",
+        "label": "SecurityScopes",
+        "path": "/github/workspace/app/test.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": "1",
+        "label": "",
+        "path": "/github/workspace/app/test.py"
+      }
+    },
+    {
+      "rule_id": "fastapi-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Consider using FastAPI security middleware CORSMiddleware to improve overall security",
+      "description": "Consider using FastAPI security middleware CORSMiddleware to improve overall security",
+      "recommendation": "FastAPI is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nFastAPI security middleware adds useful tools to add CORS headers as well as implement OAuth2 authentication in the API.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[FastAPI Security](https://fastapi.tiangolo.com/advanced/security/)**\n\n**[FastAPI Deployment - https](https://fastapi.tiangolo.com/deployment/#https)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "CORSMiddleware",
+        "line_number": "1",
+        "label": "CORSMiddleware",
+        "path": "/github/workspace/app/test.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": "1",
+        "label": "",
+        "path": "/github/workspace/app/test.py"
+      }
+    },
+    {
+      "rule_id": "fastapi-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Consider using FastAPI security middleware TrustedHostMiddleware to improve overall security",
+      "description": "Consider using FastAPI security middleware TrustedHostMiddleware to improve overall security",
+      "recommendation": "FastAPI is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nFastAPI security middleware adds useful tools to add CORS headers as well as implement OAuth2 authentication in the API.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[FastAPI Security](https://fastapi.tiangolo.com/advanced/security/)**\n\n**[FastAPI Deployment - https](https://fastapi.tiangolo.com/deployment/#https)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "TrustedHostMiddleware",
+        "line_number": "1",
+        "label": "TrustedHostMiddleware",
+        "path": "/github/workspace/app/test.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": "1",
+        "label": "",
+        "path": "/github/workspace/app/test.py"
+      }
+    },
+    {
+      "rule_id": "fastapi-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Consider using FastAPI security middleware SecurityScopes to improve overall security",
+      "description": "Consider using FastAPI security middleware SecurityScopes to improve overall security",
+      "recommendation": "FastAPI is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nFastAPI security middleware adds useful tools to add CORS headers as well as implement OAuth2 authentication in the API.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[FastAPI Security](https://fastapi.tiangolo.com/advanced/security/)**\n\n**[FastAPI Deployment - https](https://fastapi.tiangolo.com/deployment/#https)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "SecurityScopes",
+        "line_number": "1",
+        "label": "SecurityScopes",
+        "path": "/github/workspace/app/main.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": "1",
+        "label": "",
+        "path": "/github/workspace/app/main.py"
+      }
+    },
+    {
+      "rule_id": "fastapi-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Consider using FastAPI security middleware CORSMiddleware to improve overall security",
+      "description": "Consider using FastAPI security middleware CORSMiddleware to improve overall security",
+      "recommendation": "FastAPI is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nFastAPI security middleware adds useful tools to add CORS headers as well as implement OAuth2 authentication in the API.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[FastAPI Security](https://fastapi.tiangolo.com/advanced/security/)**\n\n**[FastAPI Deployment - https](https://fastapi.tiangolo.com/deployment/#https)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "CORSMiddleware",
+        "line_number": "1",
+        "label": "CORSMiddleware",
+        "path": "/github/workspace/app/main.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": "1",
+        "label": "",
+        "path": "/github/workspace/app/main.py"
+      }
+    },
+    {
+      "rule_id": "fastapi-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Consider using FastAPI security middleware TrustedHostMiddleware to improve overall security",
+      "description": "Consider using FastAPI security middleware TrustedHostMiddleware to improve overall security",
+      "recommendation": "FastAPI is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nFastAPI security middleware adds useful tools to add CORS headers as well as implement OAuth2 authentication in the API.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[FastAPI Security](https://fastapi.tiangolo.com/advanced/security/)**\n\n**[FastAPI Deployment - https](https://fastapi.tiangolo.com/deployment/#https)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "TrustedHostMiddleware",
+        "line_number": "1",
+        "label": "TrustedHostMiddleware",
+        "path": "/github/workspace/app/main.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": "1",
+        "label": "",
+        "path": "/github/workspace/app/main.py"
+      }
+    }
+  ]
+}

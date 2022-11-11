@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:625fa558-5d06-4208-ab88-bfe76a7525f0" version="1">
+  <metadata>
+    <timestamp>2022-11-11T08:39:59.596Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.44</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/lakuapik/gh-actions-http-status@v1">
+      <publisher/>
+      <group>lakuapik</group>
+      <name>gh-actions-http-status</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/lakuapik/gh-actions-http-status@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/RubbaBoy/BYOB@v1.2.0">
+      <publisher/>
+      <group>RubbaBoy</group>
+      <name>BYOB</name>
+      <version>v1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/RubbaBoy/BYOB@v1.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/actions/setup-python@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-python</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-python@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/actions/cache@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>cache</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/cache@v2</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/schedule.yml, /github/workspace/.github/workflows/test.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

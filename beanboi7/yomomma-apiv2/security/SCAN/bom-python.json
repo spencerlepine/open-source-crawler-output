@@ -1,0 +1,707 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:5b78879e-05f9-4f8e-9db5-dd3f5a3f3e07",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-11T08:39:06.862Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.44"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "attrs",
+      "version": "20.3.0",
+      "description": "Classes Without Boilerplate",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "31b2eced602aa8423c2aea9c76a724617ed67cf9513173fd3a4f03e3a929c7e6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/attrs@20.3.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.attrs.org/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/attrs@20.3.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "certifi",
+      "version": "2020.12.5",
+      "description": "Python package for providing Mozilla's CA Bundle.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0",
+            "url": "https://opensource.org/licenses/MPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/certifi@2020.12.5",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/certifi/python-certifi"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/certifi@2020.12.5"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "chardet",
+      "version": "4.0.0",
+      "description": "Universal encoding detector for Python 3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/chardet@4.0.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/chardet/chardet"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/chardet@4.0.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "click",
+      "version": "7.1.2",
+      "description": "Composable command line interface toolkit",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "url": "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/click@7.1.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/p/click/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@7.1.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "fastapi",
+      "version": "0.63.0",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "98d8ea9591d8512fdadf255d2a8fa56515cdd8624dca4af369da73727409508e"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:pypi/fastapi@0.63.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/fastapi@0.63.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "h11",
+      "version": "0.12.0",
+      "description": "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "36a3cb8c0a032f56e2da7084577878a035d3b61d104230d4bd49c0c6b555a9c6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/h11@0.12.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/python-hyper/h11"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/h11@0.12.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "idna",
+      "version": "2.10",
+      "description": "Internationalized Domain Names in Applications (IDNA)",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:pypi/idna@2.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/idna@2.10"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "iniconfig",
+      "version": "1.1.1",
+      "description": "iniconfig: brain-dead simple config-ini parsing",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/iniconfig@1.1.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "http://github.com/RonnyPfannschmidt/iniconfig"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/iniconfig@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "limits",
+      "version": "1.5.1",
+      "description": "Rate limiting utilities",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0e5f8b10f18dd809eb2342f5046eb9aa5e4e69a0258567b5f4aa270647d438b3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/limits@1.5.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://limits.readthedocs.org"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/limits@1.5.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "packaging",
+      "version": "20.9",
+      "description": "Core utilities for Python packages",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-Clause or Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/packaging@20.9",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/pypa/packaging"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@20.9"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pluggy",
+      "version": "0.13.1",
+      "description": "plugin and hook calling mechanisms for python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pluggy@0.13.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/pytest-dev/pluggy"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/pluggy@0.13.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "py",
+      "version": "1.10.0",
+      "description": "library with cross-python path, ini-parsing, io, code, log facilities",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/py@1.10.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://py.readthedocs.io/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/py@1.10.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pydantic",
+      "version": "1.8.1",
+      "description": "Data validation and settings management using python type hints",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0c40162796fc8d0aa744875b60e4dc36834db9f2a25dbf9ba9664b1915a23850"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pydantic@1.8.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/pydantic/pydantic"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/pydantic@1.8.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pyparsing",
+      "version": "2.4.7",
+      "description": "pyparsing module - Classes and methods to define and execute parsing grammars",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:pypi/pyparsing@2.4.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyparsing@2.4.7"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pytest",
+      "version": "6.2.3",
+      "description": "pytest: simple powerful testing with Python",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6ad9c7bdf517a808242b998ac20063c41532a570d088d77eec1ee12b0b5574bc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/pytest@6.2.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://docs.pytest.org/en/latest/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest@6.2.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "redis",
+      "version": "3.5.3",
+      "description": "Python client for Redis database and key-value store",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "432b788c4530cfe16d8d943a09d40ca6c16149727e4afe8c2c9d5580c59d9f24"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/redis@3.5.3",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/redis/redis-py"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/redis@3.5.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "requests",
+      "version": "2.25.1",
+      "description": "Python HTTP for Humans.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/requests@2.25.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://requests.readthedocs.io"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.25.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "six",
+      "version": "1.16.0",
+      "description": "Python 2 and 3 compatibility utilities",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/six@1.16.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/benjaminp/six"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.16.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "slowapi",
+      "version": "0.1.4",
+      "description": "A rate limiting extension for Starlette and Fastapi",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8689e6fffd9e519877c22bc508520cff0b575e5d0f3e911eecbc1eaf6419e4e6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/slowapi@0.1.4",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/laurents/slowapi"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/slowapi@0.1.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "starlette",
+      "version": "0.13.6",
+      "description": "The little ASGI library that shines.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bd2ffe5e37fb75d014728511f8e68ebf2c80b0fa3d04ca1479f4dc752ae31ac9"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:pypi/starlette@0.13.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/starlette@0.13.6"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "toml",
+      "version": "0.10.2",
+      "description": "Python Library for Tom's Obvious, Minimal Language",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/toml@0.10.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/uiri/toml"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/toml@0.10.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "typing-extensions",
+      "version": "3.7.4.3",
+      "description": "Backported and Experimental Type Hints for Python 3.7+",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:pypi/typing-extensions@3.7.4.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@3.7.4.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "urllib3",
+      "version": "1.26.4",
+      "description": "HTTP library with thread-safe connection pooling, file post, and more.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/urllib3@1.26.4",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://urllib3.readthedocs.io/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@1.26.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "uvicorn",
+      "version": "0.13.4",
+      "description": "The lightning-fast ASGI server.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7587f7b08bd1efd2b9bad809a3d333e972f1d11af8a5e52a9371ee3a5de71524"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:pypi/uvicorn@0.13.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/uvicorn@0.13.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "uvloop",
+      "version": "0.15.3",
+      "description": "Fast implementation of asyncio event loop on top of libuv",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e71fb9038bfcd7646ca126c5ef19b17e48d4af9e838b2bcfda7a9f55a6552a32"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/uvloop@0.15.3",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "http://github.com/MagicStack/uvloop"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/uvloop@0.15.3"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/requirements.txt",
+      "comment": "Package file"
+    }
+  ]
+}

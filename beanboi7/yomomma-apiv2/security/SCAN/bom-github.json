@@ -1,0 +1,92 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:625fa558-5d06-4208-ab88-bfe76a7525f0",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-11T08:39:59.593Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.44"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "lakuapik",
+      "name": "gh-actions-http-status",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/lakuapik/gh-actions-http-status@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/lakuapik/gh-actions-http-status@v1"
+    },
+    {
+      "publisher": "",
+      "group": "RubbaBoy",
+      "name": "BYOB",
+      "version": "v1.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/RubbaBoy/BYOB@v1.2.0",
+      "type": "library",
+      "bom-ref": "pkg:github/RubbaBoy/BYOB@v1.2.0"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-python",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-python@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/setup-python@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "cache",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/cache@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/cache@v2"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/schedule.yml, /github/workspace/.github/workflows/test.yml",
+      "comment": "Package file"
+    }
+  ]
+}

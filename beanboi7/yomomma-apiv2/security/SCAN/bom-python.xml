@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:5b78879e-05f9-4f8e-9db5-dd3f5a3f3e07" version="1">
+  <metadata>
+    <timestamp>2022-11-11T08:39:06.868Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.44</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/attrs@20.3.0">
+      <publisher/>
+      <group/>
+      <name>attrs</name>
+      <version>20.3.0</version>
+      <description><![CDATA[Classes Without Boilerplate]]></description>
+      <hashes>
+        <hash alg="SHA-256">31b2eced602aa8423c2aea9c76a724617ed67cf9513173fd3a4f03e3a929c7e6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/attrs@20.3.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.attrs.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/certifi@2020.12.5">
+      <publisher/>
+      <group/>
+      <name>certifi</name>
+      <version>2020.12.5</version>
+      <description><![CDATA[Python package for providing Mozilla's CA Bundle.]]></description>
+      <hashes>
+        <hash alg="SHA-256">719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MPL-2.0</id>
+          <url>https://opensource.org/licenses/MPL-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/certifi@2020.12.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/certifi/python-certifi</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/chardet@4.0.0">
+      <publisher/>
+      <group/>
+      <name>chardet</name>
+      <version>4.0.0</version>
+      <description><![CDATA[Universal encoding detector for Python 3]]></description>
+      <hashes>
+        <hash alg="SHA-256">f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>LGPL</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/chardet@4.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/chardet/chardet</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/click@7.1.2">
+      <publisher/>
+      <group/>
+      <name>click</name>
+      <version>7.1.2</version>
+      <description><![CDATA[Composable command line interface toolkit]]></description>
+      <hashes>
+        <hash alg="SHA-256">dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/click@7.1.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://palletsprojects.com/p/click/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/fastapi@0.63.0">
+      <publisher/>
+      <group/>
+      <name>fastapi</name>
+      <version>0.63.0</version>
+      <description><![CDATA[FastAPI framework, high performance, easy to learn, fast to code, ready for production]]></description>
+      <hashes>
+        <hash alg="SHA-256">98d8ea9591d8512fdadf255d2a8fa56515cdd8624dca4af369da73727409508e</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:pypi/fastapi@0.63.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/h11@0.12.0">
+      <publisher/>
+      <group/>
+      <name>h11</name>
+      <version>0.12.0</version>
+      <description><![CDATA[A pure-Python, bring-your-own-I/O implementation of HTTP/1.1]]></description>
+      <hashes>
+        <hash alg="SHA-256">36a3cb8c0a032f56e2da7084577878a035d3b61d104230d4bd49c0c6b555a9c6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/h11@0.12.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/python-hyper/h11</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/idna@2.10">
+      <publisher/>
+      <group/>
+      <name>idna</name>
+      <version>2.10</version>
+      <description><![CDATA[Internationalized Domain Names in Applications (IDNA)]]></description>
+      <hashes>
+        <hash alg="SHA-256">b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:pypi/idna@2.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/iniconfig@1.1.1">
+      <publisher/>
+      <group/>
+      <name>iniconfig</name>
+      <version>1.1.1</version>
+      <description><![CDATA[iniconfig: brain-dead simple config-ini parsing]]></description>
+      <hashes>
+        <hash alg="SHA-256">011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/iniconfig@1.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>http://github.com/RonnyPfannschmidt/iniconfig</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/limits@1.5.1">
+      <publisher/>
+      <group/>
+      <name>limits</name>
+      <version>1.5.1</version>
+      <description><![CDATA[Rate limiting utilities]]></description>
+      <hashes>
+        <hash alg="SHA-256">0e5f8b10f18dd809eb2342f5046eb9aa5e4e69a0258567b5f4aa270647d438b3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/limits@1.5.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://limits.readthedocs.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/packaging@20.9">
+      <publisher/>
+      <group/>
+      <name>packaging</name>
+      <version>20.9</version>
+      <description><![CDATA[Core utilities for Python packages]]></description>
+      <hashes>
+        <hash alg="SHA-256">67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>BSD-2-Clause or Apache-2.0</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/packaging@20.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/pypa/packaging</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pluggy@0.13.1">
+      <publisher/>
+      <group/>
+      <name>pluggy</name>
+      <version>0.13.1</version>
+      <description><![CDATA[plugin and hook calling mechanisms for python]]></description>
+      <hashes>
+        <hash alg="SHA-256">966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/pluggy@0.13.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/pytest-dev/pluggy</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/py@1.10.0">
+      <publisher/>
+      <group/>
+      <name>py</name>
+      <version>1.10.0</version>
+      <description><![CDATA[library with cross-python path, ini-parsing, io, code, log facilities]]></description>
+      <hashes>
+        <hash alg="SHA-256">3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/py@1.10.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://py.readthedocs.io/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pydantic@1.8.1">
+      <publisher/>
+      <group/>
+      <name>pydantic</name>
+      <version>1.8.1</version>
+      <description><![CDATA[Data validation and settings management using python type hints]]></description>
+      <hashes>
+        <hash alg="SHA-256">0c40162796fc8d0aa744875b60e4dc36834db9f2a25dbf9ba9664b1915a23850</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/pydantic@1.8.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/pydantic/pydantic</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyparsing@2.4.7">
+      <publisher/>
+      <group/>
+      <name>pyparsing</name>
+      <version>2.4.7</version>
+      <description><![CDATA[pyparsing module - Classes and methods to define and execute parsing grammars]]></description>
+      <hashes>
+        <hash alg="SHA-256">ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:pypi/pyparsing@2.4.7</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pytest@6.2.3">
+      <publisher/>
+      <group/>
+      <name>pytest</name>
+      <version>6.2.3</version>
+      <description><![CDATA[pytest: simple powerful testing with Python]]></description>
+      <hashes>
+        <hash alg="SHA-256">6ad9c7bdf517a808242b998ac20063c41532a570d088d77eec1ee12b0b5574bc</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/pytest@6.2.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://docs.pytest.org/en/latest/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/redis@3.5.3">
+      <publisher/>
+      <group/>
+      <name>redis</name>
+      <version>3.5.3</version>
+      <description><![CDATA[Python client for Redis database and key-value store]]></description>
+      <hashes>
+        <hash alg="SHA-256">432b788c4530cfe16d8d943a09d40ca6c16149727e4afe8c2c9d5580c59d9f24</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/redis@3.5.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/redis/redis-py</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests@2.25.1">
+      <publisher/>
+      <group/>
+      <name>requests</name>
+      <version>2.25.1</version>
+      <description><![CDATA[Python HTTP for Humans.]]></description>
+      <hashes>
+        <hash alg="SHA-256">c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/requests@2.25.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://requests.readthedocs.io</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/six@1.16.0">
+      <publisher/>
+      <group/>
+      <name>six</name>
+      <version>1.16.0</version>
+      <description><![CDATA[Python 2 and 3 compatibility utilities]]></description>
+      <hashes>
+        <hash alg="SHA-256">8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/six@1.16.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/benjaminp/six</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/slowapi@0.1.4">
+      <publisher/>
+      <group/>
+      <name>slowapi</name>
+      <version>0.1.4</version>
+      <description><![CDATA[A rate limiting extension for Starlette and Fastapi]]></description>
+      <hashes>
+        <hash alg="SHA-256">8689e6fffd9e519877c22bc508520cff0b575e5d0f3e911eecbc1eaf6419e4e6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/slowapi@0.1.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laurents/slowapi</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/starlette@0.13.6">
+      <publisher/>
+      <group/>
+      <name>starlette</name>
+      <version>0.13.6</version>
+      <description><![CDATA[The little ASGI library that shines.]]></description>
+      <hashes>
+        <hash alg="SHA-256">bd2ffe5e37fb75d014728511f8e68ebf2c80b0fa3d04ca1479f4dc752ae31ac9</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:pypi/starlette@0.13.6</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/toml@0.10.2">
+      <publisher/>
+      <group/>
+      <name>toml</name>
+      <version>0.10.2</version>
+      <description><![CDATA[Python Library for Tom's Obvious, Minimal Language]]></description>
+      <hashes>
+        <hash alg="SHA-256">806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/toml@0.10.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/uiri/toml</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/typing-extensions@3.7.4.3">
+      <publisher/>
+      <group/>
+      <name>typing-extensions</name>
+      <version>3.7.4.3</version>
+      <description><![CDATA[Backported and Experimental Type Hints for Python 3.7+]]></description>
+      <hashes>
+        <hash alg="SHA-256">dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:pypi/typing-extensions@3.7.4.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/urllib3@1.26.4">
+      <publisher/>
+      <group/>
+      <name>urllib3</name>
+      <version>1.26.4</version>
+      <description><![CDATA[HTTP library with thread-safe connection pooling, file post, and more.]]></description>
+      <hashes>
+        <hash alg="SHA-256">2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/urllib3@1.26.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://urllib3.readthedocs.io/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/uvicorn@0.13.4">
+      <publisher/>
+      <group/>
+      <name>uvicorn</name>
+      <version>0.13.4</version>
+      <description><![CDATA[The lightning-fast ASGI server.]]></description>
+      <hashes>
+        <hash alg="SHA-256">7587f7b08bd1efd2b9bad809a3d333e972f1d11af8a5e52a9371ee3a5de71524</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:pypi/uvicorn@0.13.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/uvloop@0.15.3">
+      <publisher/>
+      <group/>
+      <name>uvloop</name>
+      <version>0.15.3</version>
+      <description><![CDATA[Fast implementation of asyncio event loop on top of libuv]]></description>
+      <hashes>
+        <hash alg="SHA-256">e71fb9038bfcd7646ca126c5ef19b17e48d4af9e838b2bcfda7a9f55a6552a32</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/uvloop@0.15.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>http://github.com/MagicStack/uvloop</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/requirements.txt</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
