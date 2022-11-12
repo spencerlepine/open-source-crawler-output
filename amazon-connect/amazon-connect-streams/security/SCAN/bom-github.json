@@ -1,0 +1,59 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:6fc9b4e5-6bde-4f6b-bdb6-78dde65779d2",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-12T02:07:14.919Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.44"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "ethomson",
+      "name": "issue-dashboard",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/ethomson/issue-dashboard@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/ethomson/issue-dashboard@v1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/manual_dashboard.yml",
+      "comment": "Package file"
+    }
+  ]
+}
