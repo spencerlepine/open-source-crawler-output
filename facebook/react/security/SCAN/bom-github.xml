@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:5367dee7-c1a7-42bf-9583-bd9177df9cb0" version="1">
+  <metadata>
+    <timestamp>2022-11-14T18:52:11.021Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>4.0.44</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:github/actions/github-script@v3">
+      <publisher/>
+      <group>actions</group>
+      <name>github-script</name>
+      <version>v3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/github-script@v3</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/devtools_check_repro.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

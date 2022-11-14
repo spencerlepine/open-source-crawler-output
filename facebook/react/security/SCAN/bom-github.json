@@ -1,0 +1,48 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:5367dee7-c1a7-42bf-9583-bd9177df9cb0",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-14T18:52:11.018Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "4.0.44"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "github-script",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/github-script@v3",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/github-script@v3"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/devtools_check_repro.yml",
+      "comment": "Package file"
+    }
+  ]
+}
