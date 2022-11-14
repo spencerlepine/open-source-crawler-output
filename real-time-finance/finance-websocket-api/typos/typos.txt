@@ -1,0 +1,823 @@
+## Detected Typos
+error: `datas` should be `data`
+  --> ./README.md:21:45
+   |
+21 | Use market name and stock symbol to receive datas. In this example we get quotations from Netflix (nasdaq) :
+   |                                             ^^^^^
+   |
+error: `AKS` should be `ASK`
+  --> ./companies_list.json:171:16
+    |
+171 |     "symbol": "AKS",
+    |                ^^^
+    |
+error: `Pont` should be `Point`
+  --> ./companies_list.json:292:19
+    |
+292 |     "name": "DowDuPont Inc.",
+    |                   ^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./companies_list.json:1011:16
+     |
+1011 |     "symbol": "BA",
+     |                ^^
+     |
+error: `ACN` should be `CAN`, `ACNE`
+  --> ./companies_list.json:1533:16
+     |
+1533 |     "symbol": "ACN",
+     |                ^^^
+     |
+error: `Berkley` should be `Berkeley`
+  --> ./companies_list.json:1948:19
+     |
+1948 |     "name": "W.R. Berkley Corporation",
+     |                   ^^^^^^^
+     |
+error: `WLL` should be `WILL`
+  --> ./companies_list.json:2193:16
+     |
+2193 |     "symbol": "WLL",
+     |                ^^^
+     |
+error: `IHS` should be `HIS`
+  --> ./companies_list.json:3994:14
+     |
+3994 |     "name": "IHS Markit Ltd.",
+     |              ^^^
+     |
+error: `UE` should be `USE`, `DUE`
+  --> ./companies_list.json:4209:16
+     |
+4209 |     "symbol": "UE",
+     |                ^^
+     |
+error: `Corporacion` should be `Corporation`
+  --> ./companies_list.json:4240:14
+     |
+4240 |     "name": "Corporacion America Airports SA",
+     |              ^^^^^^^^^^^
+     |
+error: `ARRY` should be `ARRAY`, `CARRY`
+  --> ./companies_list.json:4455:16
+     |
+4455 |     "symbol": "ARRY",
+     |                ^^^^
+     |
+error: `Limitied` should be `Limited`
+  --> ./companies_list.json:5884:72
+     |
+5884 |     "name": "Apollo Global Management LLC Class A Representing Class A Limitied Liability Company Interests",
+     |                                                                        ^^^^^^^^
+     |
+error: `OIS` should be `IS`
+  --> ./companies_list.json:6363:16
+     |
+6363 |     "symbol": "OIS",
+     |                ^^^
+     |
+error: `ALLE` should be `ALL`, `ALLEY`
+  --> ./companies_list.json:6423:16
+     |
+6423 |     "symbol": "ALLE",
+     |                ^^^^
+     |
+error: `Commom` should be `Common`
+  --> ./companies_list.json:7600:50
+     |
+7600 |     "name": "Camping World Holdings Inc. Class A Commom Stock",
+     |                                                  ^^^^^^
+     |
+error: `Representaciones` should be `Representations`
+  --> ./companies_list.json:9724:33
+     |
+9724 |     "name": "IRSA Inversiones Y Representaciones S.A.",
+     |                                 ^^^^^^^^^^^^^^^^
+     |
+error: `ARAY` should be `ARRAY`
+  --> ./companies_list.json:10557:16
+      |
+10557 |     "symbol": "ARAY",
+      |                ^^^^
+      |
+error: `Accuray` should be `Accuracy`, `Actuary`
+  --> ./companies_list.json:10558:14
+      |
+10558 |     "name": "Accuray Incorporated",
+      |              ^^^^^^^
+      |
+error: `THS` should be `THE`, `THIS`
+  --> ./companies_list.json:11013:16
+      |
+11013 |     "symbol": "THS",
+      |                ^^^
+      |
+error: `Varian` should be `Variant`
+  --> ./companies_list.json:11362:14
+      |
+11362 |     "name": "Varian Medical Systems Inc.",
+      |              ^^^^^^
+      |
+error: `Valu` should be `Value`
+  --> ./companies_list.json:11398:19
+      |
+11398 |     "name": "SuperValu Inc.",
+      |                   ^^^^
+      |
+error: `TAST` should be `TASTE`
+  --> ./companies_list.json:12621:16
+      |
+12621 |     "symbol": "TAST",
+      |                ^^^^
+      |
+error: `MIS` should be `MISS`
+  --> ./companies_list.json:13222:20
+      |
+13222 |     "name": "ConforMIS Inc.",
+      |                    ^^^
+      |
+error: `CONSOL` should be `CONSOLE`
+  --> ./companies_list.json:13522:14
+      |
+13522 |     "name": "CONSOL Energy Inc.",
+      |              ^^^^^^
+      |
+error: `Greif` should be `Grief`
+  --> ./companies_list.json:13648:14
+      |
+13648 |     "name": "Greif Inc. Class A",
+      |              ^^^^^
+      |
+error: `Comon` should be `Common`
+  --> ./companies_list.json:13810:42
+      |
+13810 |     "name": "Resolute Energy Corporation Comon Stock",
+      |                                          ^^^^^
+      |
+error: `ACI` should be `ACPI`
+  --> ./companies_list.json:14686:14
+      |
+14686 |     "name": "ACI Worldwide Inc.",
+      |              ^^^
+      |
+error: `Sponosred` should be `Sponsored`
+  --> ./companies_list.json:15418:42
+      |
+15418 |     "name": "Mizuho Financial Group Inc. Sponosred ADR (Japan)",
+      |                                          ^^^^^^^^^
+      |
+error: `Asure` should be `Assure`
+  --> ./companies_list.json:16450:14
+      |
+16450 |     "name": "Asure Software Inc",
+      |              ^^^^^
+      |
+error: `Synopsys` should be `Synopsis`
+  --> ./companies_list.json:16618:14
+      |
+16618 |     "name": "Synopsys Inc.",
+      |              ^^^^^^^^
+      |
+error: `ALO` should be `ALSO`
+  --> ./companies_list.json:17073:16
+      |
+17073 |     "symbol": "ALO",
+      |                ^^^
+      |
+error: `NWE` should be `NEW`
+  --> ./companies_list.json:17571:16
+      |
+17571 |     "symbol": "NWE",
+      |                ^^^
+      |
+error: `IIF` should be `IF`
+  --> ./companies_list.json:17673:16
+      |
+17673 |     "symbol": "IIF",
+      |                ^^^
+      |
+error: `SER` should be `SET`
+  --> ./companies_list.json:18838:64
+      |
+18838 |     "name": "HSBC Holdings plc PERP SUB CAP SECS EXCH PREF SHS SER 2 (United Kingdom)",
+      |                                                                ^^^
+      |
+error: `CNA` should be `CAN`
+  --> ./companies_list.json:19479:16
+      |
+19479 |     "symbol": "CNA",
+      |                ^^^
+      |
+error: `CNA` should be `CAN`
+  --> ./companies_list.json:19480:14
+      |
+19480 |     "name": "CNA Financial Corporation",
+      |              ^^^
+      |
+error: `Methode` should be `Method`
+  --> ./companies_list.json:19756:14
+      |
+19756 |     "name": "Methode Electronics Inc.",
+      |              ^^^^^^^
+      |
+error: `Limitied` should be `Limited`
+  --> ./companies_list.json:21562:51
+      |
+21562 |     "name": "Ellington Financial LLC representing Limitied Liability Company Interests no par valu",
+      |                                                   ^^^^^^^^
+      |
+error: `valu` should be `value`
+  --> ./companies_list.json:21562:95
+      |
+21562 |     "name": "Ellington Financial LLC representing Limitied Liability Company Interests no par valu",
+      |                                                                                               ^^^^
+      |
+error: `THQ` should be `THE`
+  --> ./companies_list.json:22941:16
+      |
+22941 |     "symbol": "THQ",
+      |                ^^^
+      |
+error: `BLOK` should be `BLOCK`, `BLOKE`
+  --> ./companies_list.json:22977:16
+      |
+22977 |     "symbol": "BLOK",
+      |                ^^^^
+      |
+error: `ALOG` should be `ALONG`
+  --> ./companies_list.json:23187:16
+      |
+23187 |     "symbol": "ALOG",
+      |                ^^^^
+      |
+error: `Opportunites` should be `Opportunities`
+  --> ./companies_list.json:23578:67
+      |
+23578 |     "name": "Eaton Vance Corporation Tax-Managed Global Buy-Write Opportunites Fund of Beneficial Interest",
+      |                                                                   ^^^^^^^^^^^^
+      |
+error: `USEG` should be `USER`, `USAGE`
+  --> ./companies_list.json:23811:16
+      |
+23811 |     "symbol": "USEG",
+      |                ^^^^
+      |
+error: `VALU` should be `VALUE`
+  --> ./companies_list.json:24831:16
+      |
+24831 |     "symbol": "VALU",
+      |                ^^^^
+      |
+error: `MYE` should be `MAY`, `MY`
+  --> ./companies_list.json:24861:16
+      |
+24861 |     "symbol": "MYE",
+      |                ^^^
+      |
+error: `FORR` should be `FOR`
+  --> ./companies_list.json:25215:16
+      |
+25215 |     "symbol": "FORR",
+      |                ^^^^
+      |
+error: `FOF` should be `FOR`
+  --> ./companies_list.json:25551:16
+      |
+25551 |     "symbol": "FOF",
+      |                ^^^
+      |
+error: `URE` should be `SURE`, `IRE`, `ARE`, `UREA`, `RUE`
+  --> ./companies_list.json:25731:16
+      |
+25731 |     "symbol": "URE",
+      |                ^^^
+      |
+error: `Resorces` should be `Resources`
+  --> ./companies_list.json:25978:24
+      |
+25978 |     "name": "SilverBow Resorces Inc.",
+      |                        ^^^^^^^^
+      |
+error: `Municiple` should be `Municipal`
+  --> ./companies_list.json:26272:23
+      |
+26272 |     "name": "Deutsche Municiple Income Trust",
+      |                       ^^^^^^^^^
+      |
+error: `Mor` should be `More`
+  --> ./companies_list.json:27160:19
+      |
+27160 |     "name": "StoneMor Partners L.P. Rep Limited Partnership Interests",
+      |                   ^^^
+      |
+error: `Municiple` should be `Municipal`
+  --> ./companies_list.json:29218:33
+      |
+29218 |     "name": "Deutsche Strategic Municiple Income Trust of Beneficial Interest",
+      |                                 ^^^^^^^^^
+      |
+error: `EDN` should be `END`
+  --> ./companies_list.json:30177:16
+      |
+30177 |     "symbol": "EDN",
+      |                ^^^
+      |
+error: `CHEK` should be `CHECK`
+  --> ./companies_list.json:30657:16
+      |
+30657 |     "symbol": "CHEK",
+      |                ^^^^
+      |
+error: `ESGE` should be `EDGE`
+  --> ./companies_list.json:30927:16
+      |
+30927 |     "symbol": "ESGE",
+      |                ^^^^
+      |
+error: `Ser` should be `Set`
+  --> ./companies_list.json:31780:36
+      |
+31780 |     "name": "Preferred Plus Trust (Ser CZN) Ser CZN-1 Tr Ctf 8.375% Maturity 10/01/2046",
+      |                                    ^^^
+      |
+error: `Ser` should be `Set`
+  --> ./companies_list.json:31780:45
+      |
+31780 |     "name": "Preferred Plus Trust (Ser CZN) Ser CZN-1 Tr Ctf 8.375% Maturity 10/01/2046",
+      |                                             ^^^
+      |
+error: `THW` should be `THE`, `THAW`
+  --> ./companies_list.json:32151:16
+      |
+32151 |     "symbol": "THW",
+      |                ^^^
+      |
+error: `CONSOL` should be `CONSOLE`
+  --> ./companies_list.json:34984:14
+      |
+34984 |     "name": "CONSOL Coal Resources LP representing limited partner interests",
+      |              ^^^^^^
+      |
+error: `DOTA` should be `DATA`
+  --> ./companies_list.json:36351:16
+      |
+36351 |     "symbol": "DOTA",
+      |                ^^^^
+      |
+error: `ECT` should be `ETC`
+  --> ./companies_list.json:36741:16
+      |
+36741 |     "symbol": "ECT",
+      |                ^^^
+      |
+error: `EMTY` should be `EMPTY`
+  --> ./companies_list.json:37071:16
+      |
+37071 |     "symbol": "EMTY",
+      |                ^^^^
+      |
+error: `Gloabl` should be `Global`
+  --> ./companies_list.json:37846:26
+      |
+37846 |     "name": "FI Enhanced Gloabl High Yield ETN",
+      |                          ^^^^^^
+      |
+error: `GARD` should be `GUARD`
+  --> ./companies_list.json:38643:16
+      |
+38643 |     "symbol": "GARD",
+      |                ^^^^
+      |
+error: `Montly` should be `Monthly`
+  --> ./companies_list.json:39376:21
+      |
+39376 |     "name": "ETRACS Montly Pay 2xLeveraged US High Dividend Low Volatility ETN due September 30 2044",
+      |                     ^^^^^^
+      |
+error: `HEVY` should be `HEAVY`
+  --> ./companies_list.json:39423:16
+      |
+39423 |     "symbol": "HEVY",
+      |                ^^^^
+      |
+error: `Industrias` should be `Industries`
+  --> ./companies_list.json:39868:14
+      |
+39868 |     "name": "Industrias Bachoco S.A.B. de C.V.",
+      |              ^^^^^^^^^^
+      |
+error: `MEAR` should be `WEAR`, `MERE`, `MARE`
+  --> ./companies_list.json:41937:16
+      |
+41937 |     "symbol": "MEAR",
+      |                ^^^^
+      |
+error: `ONS` should be `OWNS`
+  --> ./companies_list.json:43275:16
+      |
+43275 |     "symbol": "ONS",
+      |                ^^^
+      |
+error: `Psychemedics` should be `Psychedelics`
+  --> ./companies_list.json:43786:14
+      |
+43786 |     "name": "Psychemedics Corporation",
+      |              ^^^^^^^^^^^^
+      |
+error: `Ser` should be `Set`
+  --> ./companies_list.json:44182:51
+      |
+44182 |     "name": "Merrill Lynch Depositor Inc PPlus Tr Ser RRD-1 Tr Ctf Cl A",
+      |                                                   ^^^
+      |
+error: `SMLL` should be `SMALL`, `SMELL`
+  --> ./companies_list.json:45333:16
+      |
+45333 |     "symbol": "SMLL",
+      |                ^^^^
+      |
+error: `THST` should be `THAT`
+  --> ./companies_list.json:45981:16
+      |
+45981 |     "symbol": "THST",
+      |                ^^^^
+      |
+error: `Exchage` should be `Exchange`
+  --> ./companies_list.json:46192:47
+      |
+46192 |     "name": "PIMCO 1-3 Year US Treasury Index Exchage-Traded Fund",
+      |                                               ^^^^^^^
+      |
+error: `WIL` should be `WILL`, `WELL`
+  --> ./companies_list.json:47169:16
+      |
+47169 |     "symbol": "WIL",
+      |                ^^^
+      |
+error: `Cann` should be `Can`
+  --> ./companies_list.json:47854:14
+      |
+47854 |     "name": "CannTrust Holdings Inc.",
+      |              ^^^^
+      |
+error: `Pont` should be `Point`
+  --> ./companies_list.json:48058:16
+      |
+48058 |     "name": "DuPont de Nemours, Inc.",
+      |                ^^^^
+      |
+error: `Greif` should be `Grief`
+  --> ./companies_list.json:48232:14
+      |
+48232 |     "name": "Greif, Inc.",
+      |              ^^^^^
+      |
+error: `ALLK` should be `ALL`
+  --> ./companies_list.json:49149:16
+      |
+49149 |     "symbol": "ALLK",
+      |                ^^^^
+      |
+error: `Assertio` should be `Assertion`
+  --> ./companies_list.json:49354:14
+      |
+49354 |     "name": "Assertio Therapeutics, Inc.",
+      |              ^^^^^^^^
+      |
+error: `USIG` should be `USING`
+  --> ./companies_list.json:50697:16
+      |
+50697 |     "symbol": "USIG",
+      |                ^^^^
+      |
+error: `LEVL` should be `LEVEL`
+  --> ./companies_list.json:50829:16
+      |
+50829 |     "symbol": "LEVL",
+      |                ^^^^
+      |
+error: `MOR` should be `MORE`
+  --> ./companies_list.json:51039:16
+      |
+51039 |     "symbol": "MOR",
+      |                ^^^
+      |
+error: `Personalis` should be `Personas`
+  --> ./companies_list.json:51334:14
+      |
+51334 |     "name": "Personalis, Inc.",
+      |              ^^^^^^^^^^
+      |
+error: `Developpement` should be `Development`
+  --> ./companies_list.json:52570:22
+      |
+52570 |     "name": "Acanthe Developpement",
+      |                      ^^^^^^^^^^^^^
+      |
+error: `Developpement` should be `Development`
+  --> ./companies_list.json:52642:23
+      |
+52642 |     "name": "Alliance Developpement Capital SIIC",
+      |                       ^^^^^^^^^^^^^
+      |
+error: `ALO` should be `ALSO`
+  --> ./companies_list.json:52851:16
+      |
+52851 |     "symbol": "ALO.PA",
+      |                ^^^
+      |
+error: `AKE` should be `ACHE`
+  --> ./companies_list.json:53043:16
+      |
+53043 |     "symbol": "AKE.PA",
+      |                ^^^
+      |
+error: `Portugues` should be `Portuguese`
+  --> ./companies_list.json:53236:30
+      |
+53236 |     "name": "Banco Comercial Portugues, S.A.",
+      |                              ^^^^^^^^^
+      |
+error: `Confort` should be `Comfort`
+  --> ./companies_list.json:53320:25
+      |
+53320 |     "name": "Bastide Le Confort Medical SA",
+      |                         ^^^^^^^
+      |
+error: `Beter` should be `Better`
+  --> ./companies_list.json:53404:14
+      |
+53404 |     "name": "Beter Bed Holding N.V.",
+      |              ^^^^^
+      |
+error: `BEVER` should be `NEVER`
+  --> ./companies_list.json:53409:16
+      |
+53409 |     "symbol": "BEVER.AS",
+      |                ^^^^^
+      |
+error: `Bever` should be `Never`
+  --> ./companies_list.json:53410:14
+      |
+53410 |     "name": "Bever Holding NV",
+      |              ^^^^^
+      |
+error: `BOTHE` should be `BOTH`
+  --> ./companies_list.json:53535:16
+      |
+53535 |     "symbol": "BOTHE.BR",
+      |                ^^^^^
+      |
+error: `Gard` should be `Guard`
+  --> ./companies_list.json:53842:66
+      |
+53842 |     "name": "Societe des Chemins de Fer et Tramways du Var et du Gard",
+      |                                                                  ^^^^
+      |
+error: `CROS` should be `CROSS`
+  --> ./companies_list.json:54177:16
+      |
+54177 |     "symbol": "CROS.PA",
+      |                ^^^^
+      |
+error: `Ressources` should be `Resources`
+  --> ./companies_list.json:54718:19
+      |
+54718 |     "name": "Euro Ressources S.A.",
+      |                   ^^^^^^^^^^
+      |
+error: `ALERS` should be `ALERTS`
+  --> ./companies_list.json:54723:16
+      |
+54723 |     "symbol": "ALERS.PA",
+      |                ^^^^^
+      |
+error: `ECT` should be `ETC`
+  --> ./companies_list.json:54729:16
+      |
+54729 |     "symbol": "ECT.AS",
+      |                ^^^
+      |
+error: `Everset` should be `Everest`
+  --> ./companies_list.json:54820:14
+      |
+54820 |     "name": "Everset",
+      |              ^^^^^^^
+      |
+error: `FALG` should be `FLAG`
+  --> ./companies_list.json:54921:16
+      |
+54921 |     "symbol": "FALG.PA",
+      |                ^^^^
+      |
+error: `Africain` should be `African`
+  --> ./companies_list.json:54970:24
+      |
+54970 |     "name": "Fin.Ouest Africain",
+      |                        ^^^^^^^^
+      |
+error: `FLE` should be `FILE`
+  --> ./companies_list.json:55005:16
+      |
+55005 |     "symbol": "FLE.PA",
+      |                ^^^
+      |
+error: `Fle` should be `File`
+  --> ./companies_list.json:55018:14
+      |
+55018 |     "name": "FleXos Societe anonyme",
+      |              ^^^
+      |
+error: `Immobilier` should be `Immobile`
+  --> ./companies_list.json:55138:30
+      |
+55138 |     "name": "France Tourisme Immobilier SA",
+      |                              ^^^^^^^^^^
+      |
+error: `Environnement` should be `Environment`
+  --> ./companies_list.json:55360:30
+      |
+55360 |     "name": "Groupe Pizzorno Environnement",
+      |                              ^^^^^^^^^^^^^
+      |
+error: `Immobilier` should be `Immobile`
+  --> ./companies_list.json:55834:30
+      |
+55834 |     "name": "Societe Anonyme Immobilier Parisienne De La Perle Et Des Pierres Precieuses",
+      |                              ^^^^^^^^^^
+      |
+error: `MKEA` should be `MAKE`
+  --> ./companies_list.json:56505:16
+      |
+56505 |     "symbol": "MKEA.PA",
+      |                ^^^^
+      |
+error: `Developpement` should be `Development`
+  --> ./companies_list.json:56716:32
+      |
+56716 |     "name": "Montagne et Neige Developpement SA",
+      |                                ^^^^^^^^^^^^^
+      |
+error: `Environnement` should be `Environment`
+  --> ./companies_list.json:57850:20
+      |
+57850 |     "name": "Seche Environnement SA",
+      |                    ^^^^^^^^^^^^^
+      |
+error: `ALS` should be `ALSO`
+  --> ./companies_list.json:58125:16
+      |
+58125 |     "symbol": "ALS30.PA",
+      |                ^^^
+      |
+error: `Espace` should be `Escape`
+  --> ./companies_list.json:58264:22
+      |
+58264 |     "name": "Stradim Espace Finances SA",
+      |                      ^^^^^^
+      |
+error: `Toi` should be `To`, `Toy`
+  --> ./companies_list.json:58702:27
+      |
+58702 |     "name": "Un Toit Pour Toi Societe anonyme",
+      |                           ^^^
+      |
+error: `Environnement` should be `Environment`
+  --> ./companies_list.json:58846:21
+      |
+58846 |     "name": "Veolia Environnement S.A.",
+      |                     ^^^^^^^^^^^^^
+      |
+error: `ADN` should be `AND`
+  --> ./companies_list.json:59211:16
+      |
+59211 |     "symbol": "ADN.TO",
+      |                ^^^
+      |
+error: `ALS` should be `ALSO`
+  --> ./companies_list.json:59361:16
+      |
+59361 |     "symbol": "ALS.TO",
+      |                ^^^
+      |
+error: `BRE` should be `BE`, `BRIE`
+  --> ./companies_list.json:60201:16
+      |
+60201 |     "symbol": "BRE.TO",
+      |                ^^^
+      |
+error: `Corus` should be `Chorus`
+  --> ./companies_list.json:60754:14
+      |
+60754 |     "name": "Corus Entertainment Inc.",
+      |              ^^^^^
+      |
+error: `FPR` should be `FOR`, `FAR`, `FPS`
+  --> ./companies_list.json:61449:16
+      |
+61449 |     "symbol": "FPR.TO",
+      |                ^^^
+      |
+error: `GUD` should be `GOOD`
+  --> ./companies_list.json:63171:16
+      |
+63171 |     "symbol": "GUD.TO",
+      |                ^^^
+      |
+error: `Activ` should be `Active`
+  --> ./companies_list.json:63280:46
+      |
+63280 |     "name": "Lysander-Slater Preferred Share ActivETF",
+      |                                              ^^^^^
+      |
+error: `OLY` should be `ONLY`
+  --> ./companies_list.json:63765:16
+      |
+63765 |     "symbol": "OLY.TO",
+      |                ^^^
+      |
+error: `MIS` should be `MISS`
+  --> ./companies_list.json:64156:17
+      |
+64156 |     "name": "ProMIS Neurosciences, Inc.",
+      |                 ^^^
+      |
+error: `Ser` should be `Set`
+  --> ./companies_list.json:64228:62
+      |
+64228 |     "name": "Purpose International Tactical Hedged Equity Fd Ser ETF",
+      |                                                              ^^^
+      |
+error: `URE` should be `SURE`, `IRE`, `ARE`, `UREA`, `RUE`
+  --> ./companies_list.json:65229:16
+      |
+65229 |     "symbol": "URE.TO",
+      |                ^^^
+      |
+error: `PULS` should be `PULSE`, `PLUS`
+  --> ./companies_list.json:75837:16
+      |
+75837 |     "symbol": "PULS",
+      |                ^^^^
+      |
+error: `TAWK` should be `TALK`
+  --> ./companies_list.json:76125:16
+      |
+76125 |     "symbol": "TAWK",
+      |                ^^^^
+      |
+error: `Confort` should be `Comfort`
+  --> ./companies_list.json:79132:41
+      |
+79132 |     "name": "Gestion De Inmuebles Logis Confort Sa",
+      |                                         ^^^^^^^
+      |
+error: `Environnement` should be `Environment`
+  --> ./companies_list.json:79168:21
+      |
+79168 |     "name": "Finaxo Environnement Societe Anonyme",
+      |                     ^^^^^^^^^^^^^
+      |
+error: `Opps` should be `Oops`
+  --> ./companies_list.json:79840:39
+      |
+79840 |     "name": "Horizons Global Currency Opps ETF",
+      |                                       ^^^^
+      |
+error: `Allocat` should be `Allocate`
+  --> ./companies_list.json:81172:31
+      |
+81172 |     "name": "Strategic Income Allocat",
+      |                               ^^^^^^^
+      |
+error: `Greif` should be `Grief`
+  --> ./companies_list.json:82480:14
+      |
+82480 |     "name": "Greif, Inc. Class B",
+      |              ^^^^^
+      |
+error: `Ser` should be `Set`
+  --> ./companies_list.json:82876:42
+      |
+82876 |     "name": "Southern Company (The) 2019 Ser",
+      |                                          ^^^
+      |
+error: `SER` should be `SET`
+  --> ./companies_list.json:84406:32
+      |
+84406 |     "name": "ENBRIDGE INC PREF SER N",
+      |                                ^^^
+      |
+error: `SER` should be `SET`
+  --> ./companies_list.json:84460:32
+      |
+84460 |     "name": "ENBRIDGE INC PREF SER R",
+      |                                ^^^
+      |
+error: `ACI` should be `ACPI`
+  --> ./companies_list.json:85569:16
+      |
+85569 |     "symbol": "ACI",
+      |                ^^^
+      |
