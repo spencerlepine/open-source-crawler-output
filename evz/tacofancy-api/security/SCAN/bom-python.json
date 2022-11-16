@@ -1,0 +1,270 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:05a27e15-742f-4ef4-b533-8b44ce9f455a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-16T08:38:56.712Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.0.1"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "requests",
+      "version": "2.0.1",
+      "description": "Python HTTP for Humans.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f4ebc402e0ea5a87a3d42e300b76c292612d8467024f45f9858a8768f9fb6f6e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/requests@2.0.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://requests.readthedocs.io"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.0.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Flask",
+      "version": "0.10.1",
+      "description": "A simple framework for building complex web applications.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4c83829ff83d408b5e1d4995472265411d2c414112298f2eb4b359d9e4563373"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "url": "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/flask@0.10.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://palletsprojects.com/p/flask"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask@0.10.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "flask_sqlalchemy",
+      "version": "3.0.2",
+      "description": "Add SQLAlchemy support to your Flask application.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7d0cd9cf73e64a996bb881a1ebd01633fc5a6d11c36ea27f7b5e251dc45476e7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "url": "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/flask-sqlalchemy@3.0.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask-sqlalchemy@3.0.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "markdown2",
+      "version": "2.4.6",
+      "description": "A fast and complete Python implementation of Markdown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "528f978beb3dbcf529a139b6c76f6ac6ecf8bb96c131beab751bb095b3873b58"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/markdown2@2.4.6",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/trentm/python-markdown2"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/markdown2@2.4.6"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "beautifulsoup4",
+      "version": "4.11.1",
+      "description": "Screen-scraping library",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/beautifulsoup4@4.11.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.crummy.com/software/BeautifulSoup/bs4/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/beautifulsoup4@4.11.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "gunicorn",
+      "version": "20.1.0",
+      "description": "WSGI HTTP Server for UNIX",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/gunicorn@20.1.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://gunicorn.org"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/gunicorn@20.1.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "psycopg2",
+      "version": "2.9.5",
+      "description": "psycopg2 - Python-PostgreSQL Database Adapter",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d3ef67e630b0de0779c42912fe2cbae3805ebaba30cda27fea2a3de650a9414f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL with exceptions"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/psycopg2@2.9.5",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://psycopg.org/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/psycopg2@2.9.5"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "alembic",
+      "version": "1.8.1",
+      "description": "A database migration tool for SQLAlchemy.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0a024d7f2de88d738d7395ff866997314c837be6104e90c5724350313dee4da4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/alembic@1.8.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://alembic.sqlalchemy.org"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/alembic@1.8.1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/requirements.txt",
+      "comment": "Package file"
+    }
+  ]
+}

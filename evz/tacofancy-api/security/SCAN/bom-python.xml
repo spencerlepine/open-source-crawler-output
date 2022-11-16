@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:05a27e15-742f-4ef4-b533-8b44ce9f455a" version="1">
+  <metadata>
+    <timestamp>2022-11-16T08:38:56.720Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.0.1</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/requests@2.0.1">
+      <publisher/>
+      <group/>
+      <name>requests</name>
+      <version>2.0.1</version>
+      <description><![CDATA[Python HTTP for Humans.]]></description>
+      <hashes>
+        <hash alg="SHA-256">f4ebc402e0ea5a87a3d42e300b76c292612d8467024f45f9858a8768f9fb6f6e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/requests@2.0.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://requests.readthedocs.io</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask@0.10.1">
+      <publisher/>
+      <group/>
+      <name>Flask</name>
+      <version>0.10.1</version>
+      <description><![CDATA[A simple framework for building complex web applications.]]></description>
+      <hashes>
+        <hash alg="SHA-256">4c83829ff83d408b5e1d4995472265411d2c414112298f2eb4b359d9e4563373</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flask@0.10.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://palletsprojects.com/p/flask</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask-sqlalchemy@3.0.2">
+      <publisher/>
+      <group/>
+      <name>flask_sqlalchemy</name>
+      <version>3.0.2</version>
+      <description><![CDATA[Add SQLAlchemy support to your Flask application.]]></description>
+      <hashes>
+        <hash alg="SHA-256">7d0cd9cf73e64a996bb881a1ebd01633fc5a6d11c36ea27f7b5e251dc45476e7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flask-sqlalchemy@3.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/markdown2@2.4.6">
+      <publisher/>
+      <group/>
+      <name>markdown2</name>
+      <version>2.4.6</version>
+      <description><![CDATA[A fast and complete Python implementation of Markdown]]></description>
+      <hashes>
+        <hash alg="SHA-256">528f978beb3dbcf529a139b6c76f6ac6ecf8bb96c131beab751bb095b3873b58</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/markdown2@2.4.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/trentm/python-markdown2</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/beautifulsoup4@4.11.1">
+      <publisher/>
+      <group/>
+      <name>beautifulsoup4</name>
+      <version>4.11.1</version>
+      <description><![CDATA[Screen-scraping library]]></description>
+      <hashes>
+        <hash alg="SHA-256">58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/beautifulsoup4@4.11.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.crummy.com/software/BeautifulSoup/bs4/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/gunicorn@20.1.0">
+      <publisher/>
+      <group/>
+      <name>gunicorn</name>
+      <version>20.1.0</version>
+      <description><![CDATA[WSGI HTTP Server for UNIX]]></description>
+      <hashes>
+        <hash alg="SHA-256">9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/gunicorn@20.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://gunicorn.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/psycopg2@2.9.5">
+      <publisher/>
+      <group/>
+      <name>psycopg2</name>
+      <version>2.9.5</version>
+      <description><![CDATA[psycopg2 - Python-PostgreSQL Database Adapter]]></description>
+      <hashes>
+        <hash alg="SHA-256">d3ef67e630b0de0779c42912fe2cbae3805ebaba30cda27fea2a3de650a9414f</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>LGPL with exceptions</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/psycopg2@2.9.5</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://psycopg.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/alembic@1.8.1">
+      <publisher/>
+      <group/>
+      <name>alembic</name>
+      <version>1.8.1</version>
+      <description><![CDATA[A database migration tool for SQLAlchemy.]]></description>
+      <hashes>
+        <hash alg="SHA-256">0a024d7f2de88d738d7395ff866997314c837be6104e90c5724350313dee4da4</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/alembic@1.8.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://alembic.sqlalchemy.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/requirements.txt</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
