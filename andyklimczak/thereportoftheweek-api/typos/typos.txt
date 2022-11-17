@@ -1,0 +1,109 @@
+## Detected Typos
+error: `Ba` should be `By`, `Be`
+  --> ./seeds/reports.json:52:25
+   |
+52 |       "videoCode": "6mYvBa61U8c",
+   |                         ^^
+   |
+error: `Ue` should be `Use`, `Due`
+  --> ./seeds/reports.json:116:29
+    |
+116 |       "videoCode": "WYRJ0MueUeU",
+    |                             ^^
+    |
+error: `sandwhich` should be `sandwich`
+  --> ./seeds/reports.json:440:45
+    |
+440 |       "product": "Chicken Selected, Chicken sandwhich, fries",
+    |                                             ^^^^^^^^^
+    |
+error: `Sandwhich` should be `Sandwich`
+  --> ./seeds/reports.json:492:32
+    |
+492 |       "product": "Filet-O-Fish Sandwhich",
+    |                                ^^^^^^^^^
+    |
+error: `ND` should be `AND`
+  --> ./seeds/reports.json:1950:24
+     |
+1950 |       "videoCode": "9l2NDXci4YE",
+     |                        ^^
+     |
+error: `oyu` should be `you`
+  --> ./seeds/reports.json:1995:28
+     |
+1995 |       "videoCode": "UmxbXY3oyuA",
+     |                            ^^^
+     |
+error: `Ot` should be `To`, `Of`, `Or`
+  --> ./seeds/reports.json:2589:29
+     |
+2589 |       "videoCode": "ZF5HIJk8Ot8",
+     |                             ^^
+     |
+error: `Sandwhich` should be `Sandwich`
+  --> ./seeds/reports.json:3451:53
+     |
+3451 |       "videoTitle": "Hardees Beer Battered Cod Fish Sandwhich - Food Review",
+     |                                                     ^^^^^^^^^
+     |
+error: `Sandwhich` should be `Sandwich`
+  --> ./seeds/reports.json:3799:29
+     |
+3799 |       "product": "Flatbread Sandwhich",
+     |                             ^^^^^^^^^
+     |
+error: `Sandwhich` should be `Sandwich`
+  --> ./seeds/reports.json:3802:42
+     |
+3802 |       "videoTitle": "Taco Bell Flatbread Sandwhich - Food Review",
+     |                                          ^^^^^^^^^
+     |
+error: `Ons` should be `Owns`
+  --> ./seeds/reports.json:4172:22
+     |
+4172 |       "videoCode": "fOnsK6Vu7U4",
+     |                      ^^^
+     |
+error: `Sandwhich` should be `Sandwich`
+  --> ./seeds/reports.json:4483:42
+     |
+4483 |       "product": "Spicy Sriracha Chicken Sandwhich",
+     |                                          ^^^^^^^^^
+     |
+error: `Nd` should be `And`
+  --> ./seeds/reports.json:4577:26
+     |
+4577 |       "videoCode": "HCQ0cNd1syE",
+     |                          ^^
+     |
+error: `Nd` should be `And`
+  --> ./seeds/reports.json:4586:26
+     |
+4586 |       "videoCode": "HCQ0cNd1syE",
+     |                          ^^
+     |
+error: `UE` should be `USE`, `DUE`
+  --> ./seeds/reports.json:4631:28
+     |
+4631 |       "videoCode": "jrHrdRbUESc",
+     |                            ^^
+     |
+error: `Wth` should be `With`
+  --> ./seeds/reports.json:4964:21
+     |
+4964 |       "videoCode": "WthERhzaCQk",
+     |                     ^^^
+     |
+error: `nd` should be `and`
+  --> ./seeds/reports.json:5625:26
+     |
+5625 |       "videoCode": "jjuB_nd6tDE",
+     |                          ^^
+     |
+error: `Ot` should be `To`, `Of`, `Or`
+  --> ./seeds/reports.json:5767:24
+     |
+5767 |       "videoCode": "AEROtTqmbjg",
+     |                        ^^
+     |
