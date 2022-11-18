@@ -1,0 +1,7 @@
+## Detected Typos
+error: `Resistence` should be `Resistance`
+  --> ./readme.md:57:12
+   |
+57 |       magicResistence: [0, 0, 0],      // hero's magic resistance for star 1, 2, 3
+   |            ^^^^^^^^^^
+   |
