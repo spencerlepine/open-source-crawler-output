@@ -1,0 +1,2701 @@
+## Detected Typos
+error: `Ned` should be `Need`
+  --> ./data/items_titles.csv:665:61
+    |
+665 | "664","1","8990","Borderlands DLC: The Zombie Island of Dr. Ned","0",NULL
+    |                                                             ^^^
+    |
+error: `Mata` should be `Meta`, `Mater`
+  --> ./data/items_titles.csv:1280:21
+     |
+1280 | "1279","1","18480","Mata Hari","0",NULL
+     |                     ^^^^
+     |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:2037:19
+     |
+2037 | "2036","1","570","Dota 2","0",NULL
+     |                   ^^^^
+     |
+error: `Mak` should be `Make`, `Mask`
+  --> ./data/items_titles.csv:2163:59
+     |
+2163 | "2162","1","31230","Sam &amp; Max 302: The Tomb of Sammun-Mak","0",NULL
+     |                                                           ^^^
+     |
+error: `Magnetis` should be `Magnets`
+  --> ./data/items_titles.csv:3821:21
+     |
+3821 | "3820","1","37500","Magnetis","0",NULL
+     |                     ^^^^^^^^
+     |
+error: `Sentris` should be `Sentries`
+  --> ./data/items_titles.csv:4333:22
+     |
+4333 | "4332","1","303530","Sentris","0",NULL
+     |                      ^^^^^^^
+     |
+error: `Quater` should be `Quarter`
+  --> ./data/items_titles.csv:4601:48
+     |
+4601 | "4600","1","223314","Frontline Tactics - Close Quater Combat Soldier","0",NULL
+     |                                                ^^^^^^
+     |
+error: `Rezurrection` should be `Resurrection`
+  --> ./data/items_titles.csv:5367:45
+     |
+5367 | "5366","1","42719","Call of Duty: Black Ops Rezurrection DLC","0",NULL
+     |                                             ^^^^^^^^^^^^
+     |
+error: `Hel` should be `Help`, `Hell`, `Heal`
+  --> ./data/items_titles.csv:6209:53
+     |
+6209 | "6208","1","307540","Magicka: Wizard Wars - Flaming Hel Rider Pack","0",NULL
+     |                                                     ^^^
+     |
+error: `Nothin` should be `Nothing`
+  --> ./data/items_titles.csv:6417:48
+     |
+6417 | "6416","1","295030","Rocksmith 2014 - Poison - Nothin' But A Good Time","0",NULL
+     |                                                ^^^^^^
+     |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:8099:48
+     |
+8099 | "8098","1","265090","Ragnarok Online 2 - Santa Claus Essentials Pack","0",NULL
+     |                                                ^^^^^
+     |
+error: `Monstrum` should be `Monster`
+  --> ./data/items_titles.csv:8240:22
+     |
+8240 | "8239","1","296710","Monstrum","0",NULL
+     |                      ^^^^^^^^
+     |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:8367:61
+     |
+8367 | "8366","1","219136","Painkiller Hell &amp; Damnation: Satan Claus DLC","0",NULL
+     |                                                             ^^^^^
+     |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:8934:40
+     |
+8934 | "8933","1","229627","RE Rev. / BH REV. UE: RAID Outfit: &quot;Rachael Ooze&quot;","0",NULL
+     |                                        ^^
+     |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:9274:40
+     |
+9274 | "9273","1","229629","RE Rev. / BH REV. UE: Weapon: Jessica's G18 + Custom Part: &quot;BSAA&quot;","0",NULL
+     |                                        ^^
+     |
+error: `Jaques` should be `Jacques`
+  --> ./data/items_titles.csv:9577:22
+     |
+9577 | "9576","1","344960","Jaques Roque","0",NULL
+     |                      ^^^^^^
+     |
+error: `strat` should be `start`, `strata`
+  --> ./data/items_titles.csv:10015:23
+      |
+10015 | "10014","1","341680","stratO","0",NULL
+      |                       ^^^^^
+      |
+error: `Stationair` should be `Stationary`
+  --> ./data/items_titles.csv:10248:60
+      |
+10248 | "10247","1","339388","X-Plane 10 AddOn - Carenado - CT206H Stationair","0",NULL
+      |                                                            ^^^^^^^^^^
+      |
+error: `Flem` should be `Phlegm`
+  --> ./data/items_titles.csv:10278:23
+      |
+10278 | "10277","1","341760","Flem","0",NULL
+      |                       ^^^^
+      |
+error: `Vektor` should be `Vector`
+  --> ./data/items_titles.csv:10831:23
+      |
+10831 | "10830","1","365760","Vektor Wars","0",NULL
+      |                       ^^^^^^
+      |
+error: `Flem` should be `Phlegm`
+  --> ./data/items_titles.csv:10972:23
+      |
+10972 | "10971","1","369430","Flem - Soundtrack","0",NULL
+      |                       ^^^^
+      |
+error: `Rezurrection` should be `Resurrection`
+  --> ./data/items_titles.csv:11272:54
+      |
+11272 | "11271","1","214649","Call of Duty: Black Ops - OS X Rezurrection","0",NULL
+      |                                                      ^^^^^^^^^^^^
+      |
+error: `Creedence` should be `Credence`
+  --> ./data/items_titles.csv:11514:87
+      |
+11514 | "11513","1","222107","Rocksmith&trade; - &ldquo;Have You Ever Seen the Rain?&rdquo; - Creedence Clearwater Revival","0",NULL
+      |                                                                                       ^^^^^^^^^
+      |
+error: `Goin` should be `Going`
+  --> ./data/items_titles.csv:11538:68
+      |
+11538 | "11537","1","222083","Rocksmith&trade; - &ldquo;Sugar, We&rsquo;re Goin Down&rdquo; - Fall Out Boy","0",NULL
+      |                                                                    ^^^^
+      |
+error: `Creedence` should be `Credence`
+  --> ./data/items_titles.csv:11592:76
+      |
+11592 | "11591","1","206158","Rocksmith&trade; - &ldquo;Born on the Bayou&rdquo; - Creedence Clearwater Revival","0",NULL
+      |                                                                            ^^^^^^^^^
+      |
+error: `Fo` should be `Of`, `For`
+  --> ./data/items_titles.csv:11646:22
+      |
+11646 | "11645","1","80207","FoWextras","0",NULL
+      |                      ^^
+      |
+error: `Whos` should be `Whose`
+  --> ./data/items_titles.csv:12640:32
+      |
+12640 | "12639","1","5125","Far Cry 2: Whos Who","0",NULL
+      |                                ^^^^
+      |
+error: `Indepdence` should be `Independence`
+  --> ./data/items_titles.csv:12698:49
+      |
+12698 | "12697","1","5189","Empire: Total War - Road to Indepdence","0",NULL
+      |                                                 ^^^^^^^^^^
+      |
+error: `Offical` should be `Official`
+  --> ./data/items_titles.csv:12720:32
+      |
+12720 | "12719","1","5137","Multiwinia Offical Trailer","0",NULL
+      |                                ^^^^^^^
+      |
+error: `Guerrila` should be `Guerrilla`
+  --> ./data/items_titles.csv:12724:34
+      |
+12724 | "12723","1","5132","Red Faction: Guerrila Multiplayer Gameplay","0",NULL
+      |                                  ^^^^^^^^
+      |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:12857:41
+      |
+12857 | "12856","1","229626","RE Rev. / BH REV. UE: RAID Outfit: &quot;LADY HUNK&quot;","0",NULL
+      |                                         ^^
+      |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:12860:41
+      |
+12860 | "12859","1","229630","RE Rev. / BH REV. UE: Weapon: Jill's Samurai Edge + Custom Part: &quot;S.T.A.R.S.&quot;","0",NULL
+      |                                         ^^
+      |
+error: `Monstrum` should be `Monster`
+  --> ./data/items_titles.csv:13688:23
+      |
+13688 | "13687","1","385870","Monstrum - Original Soundtrack","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Airscape` should be `Airspace`
+  --> ./data/items_titles.csv:13767:23
+      |
+13767 | "13766","1","317250","Airscape: The Fall of Gravity","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `runnin` should be `running`
+  --> ./data/items_titles.csv:13845:33
+      |
+13845 | "13844","1","254582","Now we're runnin'!","0",NULL
+      |                                 ^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:14446:22
+      |
+14446 | "14445","1","81026","Dota 2 Teaser","0",NULL
+      |                      ^^^^
+      |
+error: `Rezurrection` should be `Resurrection`
+  --> ./data/items_titles.csv:14586:48
+      |
+14586 | "14585","1","81138","Call of Duty: Black Ops - Rezurrection Content Pack ESRB Trailer","0",NULL
+      |                                                ^^^^^^^^^^^^
+      |
+error: `Whos` should be `Whose`
+  --> ./data/items_titles.csv:15272:22
+      |
+15272 | "15271","1","80564","Whos that flying 1 Trailer","0",NULL
+      |                      ^^^^
+      |
+error: `Diamon` should be `Diamond`
+  --> ./data/items_titles.csv:15336:22
+      |
+15336 | "15335","1","80463","Diamon Dan ESRB Trailer","0",NULL
+      |                      ^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:15899:23
+      |
+15899 | "15898","1","315300","Dota 2 Advertising App","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:15902:23
+      |
+15902 | "15901","1","328620","Dota 2 Marketing App","0",NULL
+      |                       ^^^^
+      |
+error: `Rezurrection` should be `Resurrection`
+  --> ./data/items_titles.csv:15936:48
+      |
+15936 | "15935","1","81133","Call of Duty: Black Ops - Rezurrection Content Pack PEGI Trailer","0",NULL
+      |                                                ^^^^^^^^^^^^
+      |
+error: `Ancestory` should be `Ancestry`
+  --> ./data/items_titles.csv:16034:23
+      |
+16034 | "16033","1","349840","Ancestory","0",NULL
+      |                       ^^^^^^^^^
+      |
+error: `HSA` should be `HAS`
+  --> ./data/items_titles.csv:17518:39
+      |
+17518 | "17517","1","326017","TS Marketplace: HSA Scrap Wagons","0",NULL
+      |                                       ^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17540:23
+      |
+17540 | "17539","1","411180","Dota 2 Player Profiles","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17541:23
+      |
+17541 | "17540","1","411186","Dota 2 Player Profiles: Cloud9 - N0Tail","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17542:23
+      |
+17542 | "17541","1","411187","Dota 2 Player Profiles: Complexity - zfreek","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17543:23
+      |
+17543 | "17542","1","411181","Dota 2 Player Profiles: EG - Suma1L","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17544:23
+      |
+17544 | "17543","1","411185","Dota 2 Player Profiles: EHOME - ROTK","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17545:23
+      |
+17545 | "17544","1","411188","Dota 2 Player Profiles: Empire - Alohadance","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17546:23
+      |
+17546 | "17545","1","411189","Dota 2 Player Profiles: Fnatic - Kecik-Imba","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17547:23
+      |
+17547 | "17546","1","411183","Dota 2 Player Profiles: Invictus Gaming - Ferrari","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17548:23
+      |
+17548 | "17547","1","411190","Dota 2 Player Profiles: LGD - Xiao8","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17549:23
+      |
+17549 | "17548","1","411184","Dota 2 Player Profiles: MVPHot6 - HEEN","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17550:23
+      |
+17550 | "17549","1","411182","Dota 2 Player Profiles: Na'Vi - XBOCT","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17551:23
+      |
+17551 | "17550","1","411191","Dota 2 Player Profiles: Newbee - Mu","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17552:23
+      |
+17552 | "17551","1","411192","Dota 2 Player Profiles: Team Secret - S4","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17553:23
+      |
+17553 | "17552","1","411193","Dota 2 Player Profiles: Vici - fy","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17554:23
+      |
+17554 | "17553","1","411194","Dota 2 Player Profiles: Virtus.Pro - FNG","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17562:23
+      |
+17562 | "17561","1","419910","Dota 2 Player Profiles: CDEC's Journey to The Majors","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:17606:23
+      |
+17606 | "17605","1","420090","Dota 2 Player Profiles: EG Champions of TI5","0",NULL
+      |                       ^^^^
+      |
+error: `Algoorithm` should be `Algorithm`
+  --> ./data/items_titles.csv:18450:40
+      |
+18450 | "18449","1","431270","GooCubelets: The Algoorithm","0",NULL
+      |                                        ^^^^^^^^^^
+      |
+error: `Offical` should be `Official`
+  --> ./data/items_titles.csv:18702:36
+      |
+18702 | "18701","1","432630","Protoshift - Offical Soundtrack","0",NULL
+      |                                    ^^^^^^^
+      |
+error: `Runnin` should be `Running`
+  --> ./data/items_titles.csv:19350:73
+      |
+19350 | "19349","1","390453","Rocksmith 2014 - The Doobie Brothers - Long Train Runnin'","0",NULL
+      |                                                                         ^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:20176:23
+      |
+20176 | "20175","1","373030","Dota 2 - Short Film Contest 2015","0",NULL
+      |                       ^^^^
+      |
+error: `Automatron` should be `Automation`
+  --> ./data/items_titles.csv:20367:35
+      |
+20367 | "20366","1","435870","Fallout 4 - Automatron","0",NULL
+      |                                   ^^^^^^^^^^
+      |
+error: `Orgins` should be `Origins`, `Organs`
+  --> ./data/items_titles.csv:20405:39
+      |
+20405 | "20404","1","455250","Adam's Venture: Orgins Special Edition DLC","0",NULL
+      |                                       ^^^^^^
+      |
+error: `Discovr` should be `Discover`
+  --> ./data/items_titles.csv:20824:23
+      |
+20824 | "20823","1","459170","Discovr&trade; Egypt: King Tut's Tomb","0",NULL
+      |                       ^^^^^^^
+      |
+error: `Tha` should be `Than`, `That`, `The`
+  --> ./data/items_titles.csv:21258:42
+      |
+21258 | "21257","1","441120","Leprechaun: Back 2 Tha Hood","0",NULL
+      |                                          ^^^
+      |
+error: `Magnetis` should be `Magnets`
+  --> ./data/items_titles.csv:21564:22
+      |
+21564 | "21563","1","37510","Magnetis Demo","0",NULL
+      |                      ^^^^^^^^
+      |
+error: `Momento` should be `Memento`
+  --> ./data/items_titles.csv:23306:23
+      |
+23306 | "23305","1","496310","Momento Temporis: Light from the Deep","0",NULL
+      |                       ^^^^^^^
+      |
+error: `HALP` should be `HELP`
+  --> ./data/items_titles.csv:24044:23
+      |
+24044 | "24043","1","485230","HALP!","0",NULL
+      |                       ^^^^
+      |
+error: `Partical` should be `Particular`, `Partial`, `Particle`
+  --> ./data/items_titles.csv:24218:23
+      |
+24218 | "24217","1","496600","Partical City Guardians","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Greather` should be `Greater`
+  --> ./data/items_titles.csv:24715:35
+      |
+24715 | "24714","1","503830","The Life Of Greather","0",NULL
+      |                                   ^^^^^^^^
+      |
+error: `Nothin` should be `Nothing`
+  --> ./data/items_titles.csv:25056:23
+      |
+25056 | "25055","1","496790","Nothin' But Net","0",NULL
+      |                       ^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:25405:23
+      |
+25405 | "25404","1","401530","Dota 2 - OpenGL support for Windows","0",NULL
+      |                       ^^^^
+      |
+error: `Aiport` should be `Airport`
+  --> ./data/items_titles.csv:25409:53
+      |
+25409 | "25408","1","457085","FSX Steam Edition: Seychelles Aiport Add-On","0",NULL
+      |                                                     ^^^^^^
+      |
+error: `Immortaly` should be `Immortality`
+  --> ./data/items_titles.csv:25423:33
+      |
+25423 | "25422","1","515650","Straimium Immortaly","0",NULL
+      |                                 ^^^^^^^^^
+      |
+error: `ND` should be `AND`
+  --> ./data/items_titles.csv:25594:34
+      |
+25594 | "25593","1","527730","Bus Tycoon ND (Night and Day)","0",NULL
+      |                                  ^^
+      |
+error: `Oll` should be `All`, `Ole`, `Old`, `Olly`, `Oil`
+  --> ./data/items_titles.csv:26099:24
+      |
+26099 | "26098","1","521190","bOllO","0",NULL
+      |                        ^^^
+      |
+error: `Rezurrection` should be `Resurrection`
+  --> ./data/items_titles.csv:26205:48
+      |
+26205 | "26204","1","81137","Call of Duty: Black Ops - Rezurrection Content Pack Trailer","0",NULL
+      |                                                ^^^^^^^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:26223:23
+      |
+26223 | "26222","1","539760","Dota 2 - The Fall 2016 Battle Pass","0",NULL
+      |                       ^^^^
+      |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:26595:46
+      |
+26595 | "26594","1","518854","Kikoriki: &ldquo;Santa Claus&rdquo; Operation","0",NULL
+      |                                              ^^^^^
+      |
+error: `Ulitmate` should be `Ultimate`
+  --> ./data/items_titles.csv:26928:43
+      |
+26928 | "26927","1","546590","Space Click Miner - Ulitmate HD Clicker","0",NULL
+      |                                           ^^^^^^^^
+      |
+error: `Oll` should be `All`, `Ole`, `Old`, `Olly`, `Oil`
+  --> ./data/items_titles.csv:26950:24
+      |
+26950 | "26949","1","544320","bOllO Soundtrack","0",NULL
+      |                        ^^^
+      |
+error: `Comit` should be `Commit`
+  --> ./data/items_titles.csv:27377:23
+      |
+27377 | "27376","1","546790","Comit the Astrodian","0",NULL
+      |                       ^^^^^
+      |
+error: `Ded` should be `Dead`
+  --> ./data/items_titles.csv:28217:38
+      |
+28217 | "28216","1","525035","Watch_Dogs 2 - Ded Labs","0",NULL
+      |                                      ^^^
+      |
+error: `Creedence` should be `Credence`
+  --> ./data/items_titles.csv:28919:61
+      |
+28919 | "28918","1","509680","Rocksmith 2014 Edition - Remastered - Creedence Clearwater Revival - Fortunate Son","0",NULL
+      |                                                             ^^^^^^^^^
+      |
+error: `Creedence` should be `Credence`
+  --> ./data/items_titles.csv:28920:61
+      |
+28920 | "28919","1","509682","Rocksmith 2014 Edition - Remastered - Creedence Clearwater Revival Song Pack","0",NULL
+      |                                                             ^^^^^^^^^
+      |
+error: `Creedence` should be `Credence`
+  --> ./data/items_titles.csv:28921:61
+      |
+28921 | "28920","1","509681","Rocksmith 2014 Edition - Remastered - Creedence Clearwater Revival - Proud Mary","0",NULL
+      |                                                             ^^^^^^^^^
+      |
+error: `Creedence` should be `Credence`
+  --> ./data/items_titles.csv:28922:61
+      |
+28922 | "28921","1","509679","Rocksmith 2014 Edition - Remastered - Creedence Clearwater Revival - Bad Moon Rising","0",NULL
+      |                                                             ^^^^^^^^^
+      |
+error: `DED` should be `DEAD`
+  --> ./data/items_titles.csv:29006:23
+      |
+29006 | "29005","1","571350","DED","0",NULL
+      |                       ^^^
+      |
+error: `Lazer` should be `Laser`
+  --> ./data/items_titles.csv:30053:23
+      |
+30053 | "30052","1","565520","Lazer Team","0",NULL
+      |                       ^^^^^
+      |
+error: `DED` should be `DEAD`
+  --> ./data/items_titles.csv:30068:23
+      |
+30068 | "30067","1","573870","DED: Collection Edition","0",NULL
+      |                       ^^^
+      |
+error: `Momento` should be `Memento`
+  --> ./data/items_titles.csv:30901:23
+      |
+30901 | "30900","1","521070","Momento Temporis: Light from the Deep Demo","0",NULL
+      |                       ^^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:30920:23
+      |
+30920 | "30919","1","515780","Dota 2","0",NULL
+      |                       ^^^^
+      |
+error: `Wil` should be `Will`, `Well`
+  --> ./data/items_titles.csv:30986:59
+      |
+30986 | "30985","1","536093","Double Fine Adventure: Ep13 Bonus - Wil Wheaton Casting Reveal","0",NULL
+      |                                                           ^^^
+      |
+error: `Directon` should be `Direction`
+  --> ./data/items_titles.csv:31012:65
+      |
+31012 | "31011","1","536125","Double Fine Adventure: Ep06 Deleted - Art Directon","0",NULL
+      |                                                                 ^^^^^^^^
+      |
+error: `Pharoah` should be `Pharaoh`
+  --> ./data/items_titles.csv:31299:27
+      |
+31299 | "31298","1","600220","Jay Pharoah: Can I Be Me?","0",NULL
+      |                           ^^^^^^^
+      |
+error: `Stationair` should be `Stationary`
+  --> ./data/items_titles.csv:31585:55
+      |
+31585 | "31584","1","500237","FSX Steam Edition: Cessna CU206 Stationair Add-On","0",NULL
+      |                                                       ^^^^^^^^^^
+      |
+error: `Comit` should be `Commit`
+  --> ./data/items_titles.csv:31649:23
+      |
+31649 | "31648","1","597090","Comit the Astrodian 2","0",NULL
+      |                       ^^^^^
+      |
+error: `Cresent` should be `Crescent`
+  --> ./data/items_titles.csv:32714:47
+      |
+32714 | "32713","1","535051","Naruto Shippuden Uncut: Cresent Moon Night","0",NULL
+      |                                               ^^^^^^^
+      |
+error: `Suprise` should be `Surprise`
+  --> ./data/items_titles.csv:33333:54
+      |
+33333 | "33332","1","588261","SENRAN KAGURA ESTIVAL VERSUS - Suprise Pack","0",NULL
+      |                                                      ^^^^^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:33878:28
+      |
+33878 | "33877","1","407310","NEKO-NIN exHeart","0",NULL
+      |                            ^^^
+      |
+error: `Sountrack` should be `Soundtrack`
+  --> ./data/items_titles.csv:34588:51
+      |
+34588 | "34587","1","628600","Don't Get Hit In The Face - Sountrack","0",NULL
+      |                                                   ^^^^^^^^^
+      |
+error: `Wolrd` should be `World`
+  --> ./data/items_titles.csv:34959:39
+      |
+34959 | "34958","1","574964","Wars across the Wolrd: Bulge 1944","0",NULL
+      |                                       ^^^^^
+      |
+error: `Australiens` should be `Australians`
+  --> ./data/items_titles.csv:35683:23
+      |
+35683 | "35682","1","634250","Australiens","0",NULL
+      |                       ^^^^^^^^^^^
+      |
+error: `Lazer` should be `Laser`
+  --> ./data/items_titles.csv:36063:23
+      |
+36063 | "36062","1","624050","Lazer Cops","0",NULL
+      |                       ^^^^^
+      |
+error: `Partical` should be `Particular`, `Partial`, `Particle`
+  --> ./data/items_titles.csv:36682:23
+      |
+36682 | "36681","1","661540","Partical City Guardians: Tracks","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Appen` should be `Append`
+  --> ./data/items_titles.csv:36699:37
+      |
+36699 | "36698","1","662863","Trainz Route: Appen","0",NULL
+      |                                     ^^^^^
+      |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:37728:22
+      |
+37728 | "37727","2","18207","THQ Humble Bundle Core - Nov 2012","0",NULL
+      |                      ^^^
+      |
+error: `Sountrack` should be `Soundtrack`
+  --> ./data/items_titles.csv:37738:51
+      |
+37738 | "37737","1","345190","Resident Evil HD REMASTER - Sountrack selections","0",NULL
+      |                                                   ^^^^^^^^^
+      |
+error: `Premeir` should be `Premier`
+  --> ./data/items_titles.csv:38268:37
+      |
+38268 | "38267","1","217508","Borderlands 2 Premeir Pre-Order DLC RU","0",NULL
+      |                                     ^^^^^^^
+      |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:38539:73
+      |
+38539 | "38538","1","231250","Resident Evil Revelations / Biohazard Revelations UE Demo","0",NULL
+      |                                                                         ^^
+      |
+error: `Offsrping` should be `Offspring`
+  --> ./data/items_titles.csv:38949:22
+      |
+38949 | "38948","1","81645","Offsrping Fling Trailer","0",NULL
+      |                      ^^^^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39195:20
+      |
+39195 | "39194","1","575","Dota 2 - English Depot","0",NULL
+      |                    ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39331:23
+      |
+39331 | "39330","1","205790","Dota 2 Test","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39448:23
+      |
+39448 | "39447","1","313250","Dota 2 Workshop Tools DLC","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39626:23
+      |
+39626 | "39625","1","503590","DotaVR","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39671:23
+      |
+39671 | "39670","1","523480","Dota 2 Player Profiles: Vici Gaming Reborn - END","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39672:23
+      |
+39672 | "39671","1","523481","Dota 2 Player Profiles: OG - Fly","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39673:23
+      |
+39673 | "39672","1","523482","Dota 2 Player Profiles: EHOME - iceiceice","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39674:23
+      |
+39674 | "39673","1","523483","Dota 2 Player Profiles: Team Liquid - MATUMBAMAN","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39675:23
+      |
+39675 | "39674","1","523484","Dota 2 Player Profiles: LGD - Maybe","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39676:23
+      |
+39676 | "39675","1","523485","Dota 2 Player Profiles: MVP Phoenix - QO","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39677:23
+      |
+39677 | "39676","1","523486","Dota 2 Player Profiles: Not Playing Dota with Complexity","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39677:59
+      |
+39677 | "39676","1","523486","Dota 2 Player Profiles: Not Playing Dota with Complexity","0",NULL
+      |                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39678:23
+      |
+39678 | "39677","1","523487","Dota 2 Player Profiles: Not Playing Dota with Dendi","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39678:59
+      |
+39678 | "39677","1","523487","Dota 2 Player Profiles: Not Playing Dota with Dendi","0",NULL
+      |                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39679:23
+      |
+39679 | "39678","1","523488","Dota 2 Player Profiles: Not Playing Dota with END","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39679:59
+      |
+39679 | "39678","1","523488","Dota 2 Player Profiles: Not Playing Dota with END","0",NULL
+      |                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39680:23
+      |
+39680 | "39679","1","523489","Dota 2 Player Profiles: Not Playing Dota With MATUMBAMAN","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39680:59
+      |
+39680 | "39679","1","523489","Dota 2 Player Profiles: Not Playing Dota With MATUMBAMAN","0",NULL
+      |                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39681:23
+      |
+39681 | "39680","1","523490","Dota 2 Player Profiles: Not Playing Dota With QO","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39681:59
+      |
+39681 | "39680","1","523490","Dota 2 Player Profiles: Not Playing Dota With QO","0",NULL
+      |                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:39690:80
+      |
+39690 | "39689","1","534613","Steam Dev Days: In-Game Economies in Team Fortress 2 and Dota 2","0",NULL
+      |                                                                                ^^^^
+      |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:39739:39
+      |
+39739 | "39738","1","550783","Steam Dev Days: UE4 Development + Shipping an UE4 VR Game","0",NULL
+      |                                       ^^
+      |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:39739:69
+      |
+39739 | "39738","1","550783","Steam Dev Days: UE4 Development + Shipping an UE4 VR Game","0",NULL
+      |                                                                     ^^
+      |
+error: `Portugese` should be `Portuguese`
+  --> ./data/items_titles.csv:39790:84
+      |
+39790 | "39789","1","635688","Alien Covenant In Utero: ALIEN: COVENANT In Utero (Brazilian Portugese)","0",NULL
+      |                                                                                    ^^^^^^^^^
+      |
+error: `Challange` should be `Challenge`
+  --> ./data/items_titles.csv:40304:55
+      |
+40304 | "40303","1","73111","Magicka WOOT Triathlon of Terror Challange Map","0",NULL
+      |                                                       ^^^^^^^^^
+      |
+error: `Kake` should be `Cake`, `Take`
+  --> ./data/items_titles.csv:40848:33
+      |
+40848 | "40847","1","672050","Super Mr. Kake","0",NULL
+      |                                 ^^^^
+      |
+error: `Airbourne` should be `Airborne`
+  --> ./data/items_titles.csv:41062:78
+      |
+41062 | "41061","1","637720","Rocksmith&reg; 2014 Edition &ndash; Remastered &ndash; Airbourne Song Pack","0",NULL
+      |                                                                              ^^^^^^^^^
+      |
+error: `Airbourne` should be `Airborne`
+  --> ./data/items_titles.csv:41068:78
+      |
+41068 | "41067","1","637721","Rocksmith&reg; 2014 Edition &ndash; Remastered &ndash; Airbourne - &ldquo;Blonde, Bad and Beautiful&rdquo;","0",NULL
+      |                                                                              ^^^^^^^^^
+      |
+error: `Airbourne` should be `Airborne`
+  --> ./data/items_titles.csv:41081:78
+      |
+41081 | "41080","1","637722","Rocksmith&reg; 2014 Edition &ndash; Remastered &ndash; Airbourne - &ldquo;Runnin&rsquo; Wild&rdquo;","0",NULL
+      |                                                                              ^^^^^^^^^
+      |
+error: `Runnin` should be `Running`
+  --> ./data/items_titles.csv:41081:97
+      |
+41081 | "41080","1","637722","Rocksmith&reg; 2014 Edition &ndash; Remastered &ndash; Airbourne - &ldquo;Runnin&rsquo; Wild&rdquo;","0",NULL
+      |                                                                                                 ^^^^^^
+      |
+error: `Airbourne` should be `Airborne`
+  --> ./data/items_titles.csv:41141:78
+      |
+41141 | "41140","1","637723","Rocksmith&reg; 2014 Edition &ndash; Remastered &ndash; Airbourne - &ldquo;Too Much, Too Young, Too Fast&rdquo;","0",NULL
+      |                                                                              ^^^^^^^^^
+      |
+error: `noth` should be `north`
+  --> ./data/items_titles.csv:41370:75
+      |
+41370 | "41369","1","699930","Freshly fried shrimps seemed hot additionally named noth","0",NULL
+      |                                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41431:23
+      |
+41431 | "41430","1","702690","Dota 2 Player Profiles: OG - ANA","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41432:23
+      |
+41432 | "41431","1","702691","Dota 2 Player Profiles: Invictus Gaming -  BurNIng","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41433:23
+      |
+41433 | "41432","1","702692","Dota 2 Player Profiles: Team Liquid - Miracle-","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41434:23
+      |
+41434 | "41433","1","702693","Dota 2 Player Profiles: Virtus.Pro","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41435:23
+      |
+41435 | "41434","1","702694","Dota 2 Player Profiles: Not Playing Dota With ANA","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41435:59
+      |
+41435 | "41434","1","702694","Dota 2 Player Profiles: Not Playing Dota With ANA","0",NULL
+      |                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41436:23
+      |
+41436 | "41435","1","702695","Dota 2 Player Profiles: Not Playing Dota with Universe and Zai","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41436:59
+      |
+41436 | "41435","1","702695","Dota 2 Player Profiles: Not Playing Dota with Universe and Zai","0",NULL
+      |                                                           ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41437:23
+      |
+41437 | "41436","1","702696","Dota 2 Player Profiles: Not Playing Dota With Virtus.Pro","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:41437:59
+      |
+41437 | "41436","1","702696","Dota 2 Player Profiles: Not Playing Dota With Virtus.Pro","0",NULL
+      |                                                           ^^^^
+      |
+error: `Acess` should be `Access`
+  --> ./data/items_titles.csv:41736:40
+      |
+41736 | "41735","1","674010","Loneliness Early Acess","0",NULL
+      |                                        ^^^^^
+      |
+error: `Comit` should be `Commit`
+  --> ./data/items_titles.csv:42167:23
+      |
+42167 | "42166","1","698030","Comit the Astrodian 3","0",NULL
+      |                       ^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:42297:23
+      |
+42297 | "42296","1","318940","Dota 2 - Premium DLC","0",NULL
+      |                       ^^^^
+      |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:45368:20
+      |
+45368 | "45367","51",NULL,"THQ Nordic PlayStation Bundle $1","0",NULL
+      |                    ^^^
+      |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:45369:19
+      |
+45369 | "45368","78","0","THQ Nordic PlayStation Bundle BTA","0",NULL
+      |                   ^^^
+      |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:45370:20
+      |
+45370 | "45369","78",NULL,"THQ Nordic PlayStation Bundle $15+","0",NULL
+      |                    ^^^
+      |
+error: `BLOK` should be `BLOCK`, `BLOKE`
+  --> ./data/items_titles.csv:46045:23
+      |
+46045 | "46044","1","722680","BLOK DROP NEO","0",NULL
+      |                       ^^^^
+      |
+error: `EGE` should be `EDGE`
+  --> ./data/items_titles.csv:46052:23
+      |
+46052 | "46051","1","720950","EGE DistantPlanet NonXXX","0",NULL
+      |                       ^^^
+      |
+error: `ND` should be `AND`
+  --> ./data/items_titles.csv:46066:44
+      |
+46066 | "46065","4","1816849333","SHOCK TROOPERS: 2ND SQUAD","0",NULL
+      |                                            ^^
+      |
+error: `Pixes` should be `Pixels`
+  --> ./data/items_titles.csv:47240:30
+      |
+47240 | "47239","1","695460","Coffee Pixes","0",NULL
+      |                              ^^^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:47398:28
+      |
+47398 | "47397","1","744520","NEKO-NIN exHeart +PLUS Nachi","0",NULL
+      |                            ^^^
+      |
+error: `Ressource` should be `Resource`
+  --> ./data/items_titles.csv:47402:41
+      |
+47402 | "47401","1","713700","Defense Clicker - Ressource Collector","0",NULL
+      |                                         ^^^^^^^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:48353:28
+      |
+48353 | "48352","1","750990","NEKO-NIN exHeart +PLUS Saiha","0",NULL
+      |                            ^^^
+      |
+error: `Thte` should be `The`, `That`
+  --> ./data/items_titles.csv:48683:23
+      |
+48683 | "48682","1","536020","Thte World of Evo","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:48734:20
+      |
+48734 | "48733","1","576","Dota 2 - SteelSeries DLC","0",NULL
+      |                    ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:48735:20
+      |
+48735 | "48734","1","581","Dota 2 - Murrissey the Smeevil","0",NULL
+      |                    ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:48736:20
+      |
+48736 | "48735","1","582","Dota 2 - Lockjaw the Boxhound","0",NULL
+      |                    ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:48737:20
+      |
+48737 | "48736","1","583","Dota 2 - Drodo the Druffin","0",NULL
+      |                    ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:48738:20
+      |
+48738 | "48737","1","584","Dota 2 - Inflatable Donkey Courier","0",NULL
+      |                    ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:48739:20
+      |
+48739 | "48738","1","585","Dota 2 - Plush Donkey Courier","0",NULL
+      |                    ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:48740:20
+      |
+48740 | "48739","1","586","Dota 2 - International Axe","0",NULL
+      |                    ^^^^
+      |
+error: `Authenticy` should be `Authenticity`
+  --> ./data/items_titles.csv:48891:38
+      |
+48891 | "48890","1","5276","America's Army 3 Authenticy","0",NULL
+      |                                      ^^^^^^^^^^
+      |
+error: `Diamon` should be `Diamond`
+  --> ./data/items_titles.csv:49036:21
+      |
+49036 | "49035","1","5963","Diamon Dan Trailer","0",NULL
+      |                     ^^^^^^
+      |
+error: `Assasin` should be `Assassin`
+  --> ./data/items_titles.csv:49249:29
+      |
+49249 | "49248","1","22456","Hunted Assasin Pack","0",NULL
+      |                             ^^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:49908:22
+      |
+49908 | "49907","1","81031","Dota2 Gamescom Trailer","0",NULL
+      |                      ^^^^
+      |
+error: `Rezurrection` should be `Resurrection`
+  --> ./data/items_titles.csv:49933:47
+      |
+49933 | "49932","1","81131","Call of Duty Black Ops - Rezurrection Content Pack ESRB Trailer","0",NULL
+      |                                               ^^^^^^^^^^^^
+      |
+error: `Rezurrection` should be `Resurrection`
+  --> ./data/items_titles.csv:49934:47
+      |
+49934 | "49933","1","81132","Call of Duty Black Ops - Rezurrection Content Pack Trailer","0",NULL
+      |                                               ^^^^^^^^^^^^
+      |
+error: `Offsrping` should be `Offspring`
+  --> ./data/items_titles.csv:50108:22
+      |
+50108 | "50107","1","81616","Offsrping Fling","0",NULL
+      |                      ^^^^^^^^^
+      |
+error: `Tatoo` should be `Tattoo`
+  --> ./data/items_titles.csv:50362:54
+      |
+50362 | "50361","1","105410","Fable III - Rebel's Weapon and Tatoo Pack","0",NULL
+      |                                                      ^^^^^
+      |
+error: `Ded` should be `Dead`
+  --> ./data/items_titles.csv:50585:45
+      |
+50585 | "50584","1","216280","Serious Sam 3 - Linux DedServer","0",NULL
+      |                                             ^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50597:23
+      |
+50597 | "50596","1","218571","Dota 2 - Axe Shirt","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50598:23
+      |
+50598 | "50597","1","218572","Dota 2 - Axe shirt Jinx","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50599:23
+      |
+50599 | "50598","1","218573","Dota 2 - Drow shirt","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50600:23
+      |
+50600 | "50599","1","218574","Dota 2 - Drow shirt Jinx","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50601:23
+      |
+50601 | "50600","1","218579","Dota 2 - Portal 2 Soundtrack Bundle","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50602:23
+      |
+50602 | "50601","1","218582","Dota 2 - Winter Sale 2012","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50603:23
+      |
+50603 | "50602","1","218583","Dota 2 - Digital Giveaway Promo","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50604:23
+      |
+50604 | "50603","1","218585","Dota 2 - Compendium","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50728:44
+      |
+50728 | "50727","1","241340","Substance Designer 3 Dota 2 Template","0",NULL
+      |                                            ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:50951:23
+      |
+50951 | "50950","1","316570","Dota 2 Workshop Tools Alpha","0",NULL
+      |                       ^^^^
+      |
+error: `LOD` should be `LOAD`
+  --> ./data/items_titles.csv:51246:48
+      |
+51246 | "51245","1","374744","Blender: 8.3 Im/Export - LOD Creation","0",NULL
+      |                                                ^^^
+      |
+error: `nin` should be `inn`, `min`, `bin`, `nine`
+  --> ./data/items_titles.csv:51484:40
+      |
+51484 | "51483","1","410300","RTK13 - Hyakuman nin no Sangokushi Item 1 『100万人の三國志』連携特典１ 『三國志12』顔CG（劉備/関羽/張飛）","0",NULL
+      |                                        ^^^
+      |
+error: `nin` should be `inn`, `min`, `bin`, `nine`
+  --> ./data/items_titles.csv:51485:40
+      |
+51485 | "51484","1","410301","RTK13 - Hyakuman nin no Sangokushi Item 2 『100万人の三國志』連携特典２ 『三國志12』顔CG（曹操/夏侯惇/夏侯淵）","0",NULL
+      |                                        ^^^
+      |
+error: `nin` should be `inn`, `min`, `bin`, `nine`
+  --> ./data/items_titles.csv:51486:40
+      |
+51486 | "51485","1","410302","RTK13 - Hyakuman nin no Sangokushi Item 3 『100万人の三國志』連携特典３ 『三國志12』顔CG（孫策/周瑜/陸遜）","0",NULL
+      |                                        ^^^
+      |
+error: `nin` should be `inn`, `min`, `bin`, `nine`
+  --> ./data/items_titles.csv:51487:40
+      |
+51487 | "51486","1","410303","RTK13 - Hyakuman nin no Sangokushi Item 4 『100万人の三國志』連携特典４ シナリオ「英雄集結」","0",NULL
+      |                                        ^^^
+      |
+error: `nin` should be `inn`, `min`, `bin`, `nine`
+  --> ./data/items_titles.csv:51488:40
+      |
+51488 | "51487","1","410310","RTK13 - Hyakuman nin no Sangokushi Item 5 『100万人の三國志』連携特典５ 英傑伝クリアで開放される顔CG（孫策）","0",NULL
+      |                                        ^^^
+      |
+error: `nin` should be `inn`, `min`, `bin`, `nine`
+  --> ./data/items_titles.csv:51489:40
+      |
+51489 | "51488","1","410311","RTK13 - Hyakuman nin no Sangokushi Item 6 『100万人の三國志』連携特典６ 『100万人の三國志』顔CG（諸葛亮）","0",NULL
+      |                                        ^^^
+      |
+error: `nin` should be `inn`, `min`, `bin`, `nine`
+  --> ./data/items_titles.csv:51722:47
+      |
+51722 | "51721","1","439790","RTK13 - &ldquo;Hyakuman nin no Sangokushi&rdquo; 『100万人の三國志』『100万人の三國志 Special』連携特典","0",NULL
+      |                                               ^^^
+      |
+error: `Nothin` should be `Nothing`
+  --> ./data/items_titles.csv:51909:54
+      |
+51909 | "51908","1","470330","Dirty Grandpa - Unrated: I Got Nothin' To Hide: A Look at Daytona's Most Vibrant Dealer","0",NULL
+      |                                                      ^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:51926:23
+      |
+51926 | "51925","1","477220","Dota 2 - Short Film Contest 2016","0",NULL
+      |                       ^^^^
+      |
+error: `Nothin` should be `Nothing`
+  --> ./data/items_titles.csv:52617:23
+      |
+52617 | "52616","1","524000","Nothin' But Net Demo","0",NULL
+      |                       ^^^^^^
+      |
+error: `Agressive` should be `Aggressive`
+  --> ./data/items_titles.csv:52831:36
+      |
+52831 | "52830","1","530446","Battle Disc: Agressive Opponent Dink!","0",NULL
+      |                                    ^^^^^^^^^
+      |
+error: `Staggerwing` should be `Staggering`
+  --> ./data/items_titles.csv:54220:64
+      |
+54220 | "54219","1","609822","FSX: Steam Edition - Beechcraft&reg; D17 Staggerwing","0",NULL
+      |                                                                ^^^^^^^^^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:54317:28
+      |
+54317 | "54316","1","616730","NEKO-NIN exHeart Demo","0",NULL
+      |                            ^^^
+      |
+error: `Solf` should be `Solve`, `Sold`
+  --> ./data/items_titles.csv:54446:48
+      |
+54446 | "54445","1","626963","Sound Euphonium: Singing Solf&egrave;ge","0",NULL
+      |                                                ^^^^
+      |
+error: `Saxaphone` should be `Saxophone`
+  --> ./data/items_titles.csv:54449:48
+      |
+54449 | "54448","1","626966","Sound Euphonium: Crybaby Saxaphone","0",NULL
+      |                                                ^^^^^^^^^
+      |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:55483:41
+      |
+55483 | "55482","1","644232","Time Bokan: Santa Claus Was Actually ______!","0",NULL
+      |                                         ^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:55544:23
+      |
+55544 | "55543","1","647770","Dota 2 - Short Film 2017","0",NULL
+      |                       ^^^^
+      |
+error: `Carolan` should be `Carolina`
+  --> ./data/items_titles.csv:55594:57
+      |
+55594 | "55593","1","653173","Sing Street: Cast Auditions - Ben Carolan, &quot;Darren&quot;","0",NULL
+      |                                                         ^^^^^^^
+      |
+error: `Enciclopedia` should be `Encyclopedia`
+  --> ./data/items_titles.csv:57139:23
+      |
+57139 | "57138","1","752110","Enciclopedia Pack","0",NULL
+      |                       ^^^^^^^^^^^^
+      |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:57148:35
+      |
+57148 | "57147","1","752910","Cookies vs. Claus","0",NULL
+      |                                   ^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:57206:23
+      |
+57206 | "57205","1","373300","Dota 2 - Reborn Beta","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:57233:23
+      |
+57233 | "57232","1","476580","Dota 2 - Vulkan support","0",NULL
+      |                       ^^^^
+      |
+error: `Aquired` should be `Acquired`
+  --> ./data/items_titles.csv:57614:49
+      |
+57614 | "57613","1","743840","American Assassin: Target Aquired: Creating An American Assassin","0",NULL
+      |                                                 ^^^^^^^
+      |
+error: `Materiales` should be `Materials`
+  --> ./data/items_titles.csv:58728:61
+      |
+58728 | "58727","1","761270","iTowngameplay Universe &laquo;Pack de Materiales&raquo;","0",NULL
+      |                                                             ^^^^^^^^^^
+      |
+error: `Lifes` should be `Lives`
+  --> ./data/items_titles.csv:59862:57
+      |
+59862 | "59861","1","768853","COLOR RETRO RACER : RALLY MODE *5 Lifes*","0",NULL
+      |                                                         ^^^^^
+      |
+error: `Lifes` should be `Lives`
+  --> ./data/items_titles.csv:59863:58
+      |
+59863 | "59862","1","768854","COLOR RETRO RACER : RALLY MODE *10 Lifes*","0",NULL
+      |                                                          ^^^^^
+      |
+error: `Lifes` should be `Lives`
+  --> ./data/items_titles.csv:59864:58
+      |
+59864 | "59863","1","768855","COLOR RETRO RACER : TRIALS MODE *3 Lifes*","0",NULL
+      |                                                          ^^^^^
+      |
+error: `Lifes` should be `Lives`
+  --> ./data/items_titles.csv:59865:58
+      |
+59865 | "59864","1","768856","COLOR RETRO RACER : TRIALS MODE *6 Lifes*","0",NULL
+      |                                                          ^^^^^
+      |
+error: `Epsiode` should be `Episode`
+  --> ./data/items_titles.csv:60038:38
+      |
+60038 | "60037","1","593931","The FOO Show - Epsiode 3 - Making Nanomachines from DNA","0",NULL
+      |                                      ^^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:60433:23
+      |
+60433 | "60432","1","543880","Dota Streaming","0",NULL
+      |                       ^^^^
+      |
+error: `Aircrafts` should be `Aircraft`
+  --> ./data/items_titles.csv:60569:53
+      |
+60569 | "60568","1","773690","The first thrust of God - All Aircrafts","0",NULL
+      |                                                     ^^^^^^^^^
+      |
+error: `Sountrack` should be `Soundtrack`
+  --> ./data/items_titles.csv:60684:48
+      |
+60684 | "60683","1","729200","No God for Us - Original Sountrack","0",NULL
+      |                                                ^^^^^^^^^
+      |
+error: `Maks` should be `Mask`, `Masks`, `Makes`, `Make`
+  --> ./data/items_titles.csv:60778:39
+      |
+60778 | "60777","9",NULL,"Untitled Project Of Maks_SF - Elsword Trailer Music Compilation","0",NULL
+      |                                       ^^^^
+      |
+error: `Activ` should be `Active`
+  --> ./data/items_titles.csv:61026:82
+      |
+61026 | "61025","1","648280","Assassin's Creed Origins - RU-CN Standard Preorder - Uplay Activ","0",NULL
+      |                                                                                  ^^^^^
+      |
+error: `Foto` should be `Photo`
+  --> ./data/items_titles.csv:61826:23
+      |
+61826 | "61825","1","778610","Foto Flash","0",NULL
+      |                       ^^^^
+      |
+error: `Vektor` should be `Vector`
+  --> ./data/items_titles.csv:62824:19
+      |
+62824 | "62823","9",NULL,"Vektor Wars","0",NULL
+      |                   ^^^^^^
+      |
+error: `Immortaly` should be `Immortality`
+  --> ./data/items_titles.csv:62886:29
+      |
+62886 | "62885","9",NULL,"Straimium Immortaly","0",NULL
+      |                             ^^^^^^^^^
+      |
+error: `Ba` should be `By`, `Be`
+  --> ./data/items_titles.csv:62966:24
+      |
+62966 | "62965","28",NULL,"RaGaBa","0",NULL
+      |                        ^^
+      |
+error: `Ba` should be `By`, `Be`
+  --> ./data/items_titles.csv:62967:23
+      |
+62967 | "62966","9",NULL,"RaGaBa","0",NULL
+      |                       ^^
+      |
+error: `Revison` should be `Revision`
+  --> ./data/items_titles.csv:62971:36
+      |
+62971 | "62970","9",NULL,"Remute (live) at Revison 2017 aka REMUTE MIX #18 (MP3)","0",NULL
+      |                                    ^^^^^^^
+      |
+error: `Ons` should be `Owns`
+  --> ./data/items_titles.csv:63481:43
+      |
+63481 | "63480","1","789340","Train Simulator Add-Ons","0",NULL
+      |                                           ^^^
+      |
+error: `Potatoe` should be `Potato`
+  --> ./data/items_titles.csv:63838:23
+      |
+63838 | "63837","1","796320","Potatoe","0",NULL
+      |                       ^^^^^^^
+      |
+error: `Vitaliy` should be `Vitality`
+  --> ./data/items_titles.csv:64345:19
+      |
+64345 | "64344","9",NULL,"Vitaliy Ruzankin - Life is Hard OST","0",NULL
+      |                   ^^^^^^^
+      |
+error: `GLIGHT` should be `FLIGHT`
+  --> ./data/items_titles.csv:64400:23
+      |
+64400 | "64399","1","800300","GLIGHT","0",NULL
+      |                       ^^^^^^
+      |
+error: `Ot` should be `To`, `Of`, `Or`
+  --> ./data/items_titles.csv:64748:24
+      |
+64748 | "64747","1","798730","rOt","0",NULL
+      |                        ^^
+      |
+error: `Ser` should be `Set`
+  --> ./data/items_titles.csv:65220:19
+      |
+65220 | "65219","9",NULL,"Ser Flash - Meteoric (music album)","0",NULL
+      |                   ^^^
+      |
+error: `Ser` should be `Set`
+  --> ./data/items_titles.csv:65232:19
+      |
+65232 | "65231","9",NULL,"Ser Flash - RPG24: The Koden Files (music album)","0",NULL
+      |                   ^^^
+      |
+error: `Ser` should be `Set`
+  --> ./data/items_titles.csv:65237:19
+      |
+65237 | "65236","9",NULL,"Ser Flash - Where the Air is Thin (music album)","0",NULL
+      |                   ^^^
+      |
+error: `Slaugther` should be `Slaughter`
+  --> ./data/items_titles.csv:65262:29
+      |
+65262 | "65261","1","781940","Green Slaugther","0",NULL
+      |                             ^^^^^^^^^
+      |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:65407:41
+      |
+65407 | "65406","1","673880","Warhammer 40,000: Mechanicus","0",NULL
+      |                                         ^^^^^^^^^^
+      |
+error: `ALO` should be `ALSO`
+  --> ./data/items_titles.csv:65683:57
+      |
+65683 | "65682","1","774822","Sword Art Online : Fatal Bullet - ALO Pack","0",NULL
+      |                                                         ^^^
+      |
+error: `Nd` should be `And`
+  --> ./data/items_titles.csv:66129:22
+      |
+66129 | "66128","9",NULL,"bLiNd - Chozo Legacy (music album)","0",NULL
+      |                      ^^
+      |
+error: `Experimentos` should be `Experiments`
+  --> ./data/items_titles.csv:66143:28
+      |
+66143 | "66142","9",NULL,"Stylex - Experimentos (music album)","0",NULL
+      |                            ^^^^^^^^^^^^
+      |
+error: `Orriginal` should be `Original`
+  --> ./data/items_titles.csv:66328:29
+      |
+66328 | "66327","1","801000","Z55Z. Orriginal Soundtrack","0",NULL
+      |                             ^^^^^^^^^
+      |
+error: `Whithe` should be `With`, `White`
+  --> ./data/items_titles.csv:66411:37
+      |
+66411 | "66410","9",NULL,"Killigrew, nExow, Whithe and Broken Elegance - Circle of Life (music album)","0",NULL
+      |                                     ^^^^^^
+      |
+error: `Maks` should be `Mask`, `Masks`, `Makes`, `Make`
+  --> ./data/items_titles.csv:66438:39
+      |
+66438 | "66437","9",NULL,"Untitled Project Of Maks_SF - Literally Dead (music album)","0",NULL
+      |                                       ^^^^
+      |
+error: `Lazer` should be `Laser`
+  --> ./data/items_titles.csv:66439:19
+      |
+66439 | "66438","9",NULL,"Lazer Cops","0",NULL
+      |                   ^^^^^
+      |
+error: `Momento` should be `Memento`
+  --> ./data/items_titles.csv:66915:19
+      |
+66915 | "66914","9",NULL,"Momento Temporis: Light from the Deep","0",NULL
+      |                   ^^^^^^^
+      |
+error: `Blok` should be `Block`, `Bloke`
+  --> ./data/items_titles.csv:67031:28
+      |
+67031 | "67030","1","787160","Frol Blok","0",NULL
+      |                            ^^^^
+      |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./data/items_titles.csv:67844:27
+      |
+67844 | "67843","1","819560","TurbOT Racing","0",NULL
+      |                           ^^
+      |
+error: `CONCLUSE` should be `CONCLUSIVE`
+  --> ./data/items_titles.csv:67852:23
+      |
+67852 | "67851","1","826230","CONCLUSE","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Mis` should be `Miss`
+  --> ./data/items_titles.csv:68495:27
+      |
+68495 | "68494","1","827120","Les Mis&eacute;rables: Cosette's Fate","0",NULL
+      |                           ^^^
+      |
+error: `Mis` should be `Miss`
+  --> ./data/items_titles.csv:68530:27
+      |
+68530 | "68529","1","827130","Les Mis&eacute;rables: Jean Valjean","0",NULL
+      |                           ^^^
+      |
+error: `WIL` should be `WILL`, `WELL`
+  --> ./data/items_titles.csv:68676:23
+      |
+68676 | "68675","1","717940","WIL","0",NULL
+      |                       ^^^
+      |
+error: `Gud` should be `Good`
+  --> ./data/items_titles.csv:68887:42
+      |
+68887 | "68886","1","750270","Hover X Souls: Git Gud Edition","0",NULL
+      |                                          ^^^
+      |
+error: `Heros` should be `Heroes`
+  --> ./data/items_titles.csv:69018:41
+      |
+69018 | "69017","1","839250","三国英雄列传 (Legendary Heros in the Three Kingdoms)","0",NULL
+      |                                               ^^^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:70133:28
+      |
+70133 | "70132","1","828580","NEKO-NIN exHeart 2","0",NULL
+      |                            ^^^
+      |
+error: `Varius` should be `Various`
+  --> ./data/items_titles.csv:71591:23
+      |
+71591 | "71590","1","816830","Varius","0",NULL
+      |                       ^^^^^^
+      |
+error: `CONCLUSE` should be `CONCLUSIVE`
+  --> ./data/items_titles.csv:72268:23
+      |
+72268 | "72267","1","872520","CONCLUSE - Original Soundtrack","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:72307:23
+      |
+72307 | "72306","1","875860","Dota 2 - Short Film 2018","0",NULL
+      |                       ^^^^
+      |
+error: `BRANE` should be `BRAIN`
+  --> ./data/items_titles.csv:72424:23
+      |
+72424 | "72423","1","875710","BRANE&trade;: Prototype","0",NULL
+      |                       ^^^^^
+      |
+error: `tutoriel` should be `tutorial`
+  --> ./data/items_titles.csv:72562:33
+      |
+72562 | "72561","1","587380","Bulge1944_tutoriel","0",NULL
+      |                                 ^^^^^^^^
+      |
+error: `Thunderbowl` should be `Thunderbolt`
+  --> ./data/items_titles.csv:72716:23
+      |
+72716 | "72715","1","879530","Thunderbowl","0",NULL
+      |                       ^^^^^^^^^^^
+      |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:72990:40
+      |
+72990 | "72989","1","628730","Adolescent Santa Claus","0",NULL
+      |                                        ^^^^^
+      |
+error: `Momento` should be `Memento`
+  --> ./data/items_titles.csv:73065:39
+      |
+73065 | "73064","1","813751","Adventure Inc.: Momento Mori","0",NULL
+      |                                       ^^^^^^^
+      |
+error: `Ons` should be `Owns`
+  --> ./data/items_titles.csv:73719:31
+      |
+73719 | "73718","1","789360","FSX Add-Ons","0",NULL
+      |                               ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:73906:50
+      |
+73906 | "73905","1","888350","Talk in der Alm: #02.1 Was ist eigentlich Indie?","0",NULL
+      |                                                  ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:73907:50
+      |
+73907 | "73906","1","888450","Talk in der Alm: #02.2 Was ist eigentlich Indie?","0",NULL
+      |                                                  ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:73908:50
+      |
+73908 | "73907","1","888451","Talk in der Alm: #02.3 Was ist eigentlich Indie?","0",NULL
+      |                                                  ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:73909:50
+      |
+73909 | "73908","1","888452","Talk in der Alm: #02.4 Was ist eigentlich Indie?","0",NULL
+      |                                                  ^^^
+      |
+error: `Vektor` should be `Vector`
+  --> ./data/items_titles.csv:74144:72
+      |
+74144 | "74143","1","892640","FAN'CIE VEER! (Fish Are Nasty, Cake Is Excellent Vektor Evading Emblazed Rapture)","0",NULL
+      |                                                                        ^^^^^^
+      |
+error: `Colletion` should be `Collection`
+  --> ./data/items_titles.csv:74812:42
+      |
+74812 | "74811","1","896800","Debris: Wallpapers Colletion","0",NULL
+      |                                          ^^^^^^^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:74852:56
+      |
+74852 | "74851","1","899210","Talk in der Alm: #10.1 Das Leben ist (k)ein Ponyhof","0",NULL
+      |                                                        ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:74853:56
+      |
+74853 | "74852","1","899211","Talk in der Alm: #10.2 Das Leben ist (k)ein Ponyhof","0",NULL
+      |                                                        ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:74854:56
+      |
+74854 | "74853","1","899212","Talk in der Alm: #10.3 Das Leben ist (k)ein Ponyhof","0",NULL
+      |                                                        ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:74855:56
+      |
+74855 | "74854","1","899213","Talk in der Alm: #10.4 Das Leben ist (k)ein Ponyhof","0",NULL
+      |                                                        ^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./data/items_titles.csv:74856:56
+      |
+74856 | "74855","1","899214","Talk in der Alm: #10.5 Das Leben ist (k)ein Ponyhof","0",NULL
+      |                                                        ^^^
+      |
+error: `aircrafts` should be `aircraft`
+  --> ./data/items_titles.csv:76485:54
+      |
+76485 | "76484","1","914060","Aircraft Evolution - Skins for aircrafts","0",NULL
+      |                                                      ^^^^^^^^^
+      |
+error: `Foto` should be `Photo`
+  --> ./data/items_titles.csv:76821:23
+      |
+76821 | "76820","1","861760","Foto Flash 2","0",NULL
+      |                       ^^^^
+      |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./data/items_titles.csv:76921:27
+      |
+76921 | "76920","1","919230","TurbOT Racing - Nimbus City Tour","0",NULL
+      |                           ^^
+      |
+error: `Polygone` should be `Polygon`
+  --> ./data/items_titles.csv:77216:23
+      |
+77216 | "77215","1","915570","Polygone","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Maks` should be `Mask`, `Masks`, `Makes`, `Make`
+  --> ./data/items_titles.csv:77797:39
+      |
+77797 | "77796","9",NULL,"Untitled Project Of Maks_SF - Last One Standing 2​.​0 (album)","0",NULL
+      |                                       ^^^^
+      |
+error: `Ot` should be `To`, `Of`, `Or`
+  --> ./data/items_titles.csv:78245:24
+      |
+78245 | "78244","1","932250","rOt 2","0",NULL
+      |                        ^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:78779:23
+      |
+78779 | "78778","1","218580","Dota 2 - Zonkey Courier Duffle Bag","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:78780:23
+      |
+78780 | "78779","1","218578","Dota 2 - Tidehunter shirt Jinx","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:78781:23
+      |
+78781 | "78780","1","218577","Dota 2 - Tidehunter shirt","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:78782:23
+      |
+78782 | "78781","1","218576","Dota 2 - Donkey and wizard shirt Jinx","0",NULL
+      |                       ^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:78783:23
+      |
+78783 | "78782","1","218575","Dota 2 - Donkey and Wizard shirt","0",NULL
+      |                       ^^^^
+      |
+error: `Sountrack` should be `Soundtrack`
+  --> ./data/items_titles.csv:79341:41
+      |
+79341 | "79340","1","932200","Dangerous Lands - Sountrack","0",NULL
+      |                                         ^^^^^^^^^
+      |
+error: `Valu` should be `Value`
+  --> ./data/items_titles.csv:79955:20
+      |
+79955 | "79954","2","612","ValuSoft Comp","0",NULL
+      |                    ^^^^
+      |
+error: `Klick` should be `Click`
+  --> ./data/items_titles.csv:80666:61
+      |
+80666 | "80665","1","952670","Crusaders of the Lost Idols: Otto von Klick Taskmaster Pack","0",NULL
+      |                                                             ^^^^^
+      |
+error: `Loca` should be `Local`
+  --> ./data/items_titles.csv:80798:23
+      |
+80798 | "80797","1","916060","Loca-Love My Cute Roommate","0",NULL
+      |                       ^^^^
+      |
+error: `Loca` should be `Local`
+  --> ./data/items_titles.csv:81020:23
+      |
+81020 | "81019","1","956900","Loca-Love Theme Song EP","0",NULL
+      |                       ^^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:81200:28
+      |
+81200 | "81199","1","943690","NEKO-NIN exHeart - 18+ Adult Only Content","0",NULL
+      |                            ^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:81203:28
+      |
+81203 | "81202","1","947730","NEKO-NIN exHeart 2 - 18+ Adult Only Content","0",NULL
+      |                            ^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:81204:28
+      |
+81204 | "81203","1","947720","NEKO-NIN exHeart +PLUS Saiha - 18+ Adult Only Content","0",NULL
+      |                            ^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:81207:28
+      |
+81207 | "81206","1","947710","NEKO-NIN exHeart +PLUS Nachi - 18+ Adult Only Content","0",NULL
+      |                            ^^^
+      |
+error: `loca` should be `local`
+  --> ./data/items_titles.csv:81217:34
+      |
+81217 | "81216","1","711173","Dungeons 3 loca Korean","0",NULL
+      |                                  ^^^^
+      |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:81735:40
+      |
+81735 | "81734","1","960890","Adolescent Santa Claus OST And ART","0",NULL
+      |                                        ^^^^^
+      |
+error: `Coindice` should be `Coincide`
+  --> ./data/items_titles.csv:81746:23
+      |
+81746 | "81745","1","956370","Coindice Simulator","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Countrycide` should be `Countryside`
+  --> ./data/items_titles.csv:82334:23
+      |
+82334 | "82333","1","966380","Countrycide","0",NULL
+      |                       ^^^^^^^^^^^
+      |
+error: `Monstrum` should be `Monster`
+  --> ./data/items_titles.csv:83065:19
+      |
+83065 | "83064","4",NULL,"Monstrum - Original Soundtrack","0",NULL
+      |                   ^^^^^^^^
+      |
+error: `Monstrum` should be `Monster`
+  --> ./data/items_titles.csv:83066:19
+      |
+83066 | "83065","4",NULL,"Monstrum","0",NULL
+      |                   ^^^^^^^^
+      |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:83310:32
+      |
+83310 | "83309","51","99999999999999","THQ Nordic PlayStation Bundle 2 BTA","0",NULL
+      |                                ^^^
+      |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:83311:20
+      |
+83311 | "83310","51",NULL,"THQ Nordic PlayStation Bundle 2 $15+","0",NULL
+      |                    ^^^
+      |
+error: `Colletion` should be `Collection`
+  --> ./data/items_titles.csv:83438:46
+      |
+83438 | "83437","1","975490","PuzzleNoid: Wallpapers Colletion","0",NULL
+      |                                              ^^^^^^^^^
+      |
+error: `Ba` should be `By`, `Be`
+  --> ./data/items_titles.csv:83624:30
+      |
+83624 | "83623","1","956865","Xiahou Ba - Officer Ticket / 夏侯覇使用券","0",NULL
+      |                              ^^
+      |
+error: `Trafic` should be `Traffic`
+  --> ./data/items_titles.csv:83807:23
+      |
+83807 | "83806","1","976850","Trafic Road Rush","0",NULL
+      |                       ^^^^^^
+      |
+error: `Carribean` should be `Caribbean`
+  --> ./data/items_titles.csv:83934:32
+      |
+83934 | "83933","1","974340","Roarr! - Carribean Skin Pack","0",NULL
+      |                                ^^^^^^^^^
+      |
+error: `Atlantia` should be `Atlanta`
+  --> ./data/items_titles.csv:84161:23
+      |
+84161 | "84160","1","949500","Atlantia Animation","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Brocken` should be `Broken`
+  --> ./data/items_titles.csv:84299:59
+      |
+84299 | "84298","1","849170","Shadow of the Tomb Raider - Outfit: Brocken","0",NULL
+      |                                                           ^^^^^^^
+      |
+error: `Coindice` should be `Coincide`
+  --> ./data/items_titles.csv:84679:23
+      |
+84679 | "84678","1","981210","Coindice Simulator - Library Token","0",NULL
+      |                       ^^^^^^^^
+      |
+error: `Clea` should be `Clean`
+  --> ./data/items_titles.csv:84798:23
+      |
+84798 | "84797","1","981020","Clea","0",NULL
+      |                       ^^^^
+      |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:84822:41
+      |
+84822 | "84821","1","916250","Warhammer 40,000: Mechanicus - Upgrade to Omnissiah Edition","0",NULL
+      |                                         ^^^^^^^^^^
+      |
+error: `Comit` should be `Commit`
+  --> ./data/items_titles.csv:84874:23
+      |
+84874 | "84873","1","981040","Comit in Krater Returns","0",NULL
+      |                       ^^^^^
+      |
+error: `Comit` should be `Commit`
+  --> ./data/items_titles.csv:84875:23
+      |
+84875 | "84874","1","981050","Comit in Cosmo Knight's Revenge","0",NULL
+      |                       ^^^^^
+      |
+error: `Dinosaurus` should be `Dinosaurs`
+  --> ./data/items_titles.csv:85011:23
+      |
+85011 | "85010","1","978710","Dinosaurus Life VR","0",NULL
+      |                       ^^^^^^^^^^
+      |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:85503:29
+      |
+85503 | "85502","1","989300","Happy Claus Christmas Edition","0",NULL
+      |                             ^^^^^
+      |
+error: `Neet` should be `Need`, `Neat`
+  --> ./data/items_titles.csv:85906:30
+      |
+85906 | "85905","1","959350","SengokuNeet","0",NULL
+      |                              ^^^^
+      |
+error: `Mariage` should be `Marriage`
+  --> ./data/items_titles.csv:85964:45
+      |
+85964 | "85963","1","740550","Record of Agarest War Mariage","0",NULL
+      |                                             ^^^^^^^
+      |
+error: `NED` should be `NEED`
+  --> ./data/items_titles.csv:86110:27
+      |
+86110 | "86109","1","999310","THE NED BALLS","0",NULL
+      |                           ^^^
+      |
+error: `sav` should be `save`
+  --> ./data/items_titles.csv:86354:27
+      |
+86354 | "86353","1","996230","tia.sav","0",NULL
+      |                           ^^^
+      |
+error: `NEET` should be `NEED`, `NEAT`
+  --> ./data/items_titles.csv:86807:23
+      |
+86807 | "86806","1","958130","NEET simulator","0",NULL
+      |                       ^^^^
+      |
+error: `Stationair` should be `Stationary`
+  --> ./data/items_titles.csv:87304:56
+      |
+87304 | "87303","1","896747","FSX Steam Edition: Cessna CT206H Stationair&reg; Add-On","0",NULL
+      |                                                        ^^^^^^^^^^
+      |
+error: `TRE` should be `TREE`
+  --> ./data/items_titles.csv:87734:24
+      |
+87734 | "87733","1","1010480","TRE HUN: Unity-Chan x Action","0",NULL
+      |                        ^^^
+      |
+error: `Foto` should be `Photo`
+  --> ./data/items_titles.csv:87815:24
+      |
+87815 | "87814","1","1016060","Foto Babes","0",NULL
+      |                        ^^^^
+      |
+error: `ALO` should be `ALSO`
+  --> ./data/items_titles.csv:87863:62
+      |
+87863 | "87862","1","990340","Sword Art Online: Fatal Bullet - Sinon ALO Outfit Set","0",NULL
+      |                                                              ^^^
+      |
+error: `Mariage` should be `Marriage`
+  --> ./data/items_titles.csv:88424:46
+      |
+88424 | "88423","1","1015490","Record of Agarest War Mariage Deluxe Pack","0",NULL
+      |                                              ^^^^^^^
+      |
+error: `Memery` should be `Memory`
+  --> ./data/items_titles.csv:88428:30
+      |
+88428 | "88427","1","1021850","Blood Memery","0",NULL
+      |                              ^^^^^^
+      |
+error: `Memery` should be `Memory`
+  --> ./data/items_titles.csv:89998:30
+      |
+89998 | "89997","1","1038060","Blood Memery|血色记忆 - extra","0",NULL
+      |                              ^^^^^^
+      |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:90589:37
+      |
+90589 | "90588","4",NULL,"Warhammer 40,000: Mechanicus - Heretek","0",NULL
+      |                                     ^^^^^^^^^^
+      |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:90591:37
+      |
+90591 | "90590","4",NULL,"Warhammer 40,000: Mechanicus - Omnissiah Edition","0",NULL
+      |                                     ^^^^^^^^^^
+      |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:90593:37
+      |
+90593 | "90592","4",NULL,"Warhammer 40,000: Mechanicus","0",NULL
+      |                                     ^^^^^^^^^^
+      |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:90598:37
+      |
+90598 | "90597","4",NULL,"Warhammer 40,000: Mechanicus - Heretek+ Edition","0",NULL
+      |                                     ^^^^^^^^^^
+      |
+error: `Childs` should be `Children`
+  --> ./data/items_titles.csv:90773:28
+      |
+90773 | "90772","1","1002310","The Childs Sight","0",NULL
+      |                            ^^^^^^
+      |
+error: `Nin` should be `Inn`, `Min`, `Bin`, `Nine`
+  --> ./data/items_titles.csv:91365:24
+      |
+91365 | "91364","1","1014430","Nin! Nin! Ninja!!!","0",NULL
+      |                        ^^^
+      |
+error: `Nin` should be `Inn`, `Min`, `Bin`, `Nine`
+  --> ./data/items_titles.csv:91365:29
+      |
+91365 | "91364","1","1014430","Nin! Nin! Ninja!!!","0",NULL
+      |                             ^^^
+      |
+error: `CONCLUSE` should be `CONCLUSIVE`
+  --> ./data/items_titles.csv:91814:24
+      |
+91814 | "91813","1","1052230","CONCLUSE 2","0",NULL
+      |                        ^^^^^^^^
+      |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:92060:29
+      |
+92060 | "92059","1","1027130","NEKO-NIN exHeart 2 Love +PLUS","0",NULL
+      |                             ^^^
+      |
+error: `Frane` should be `Frame`
+  --> ./data/items_titles.csv:92077:23
+      |
+92077 | "92076","1","265730","Frane: Dragons' Odyssey","0",NULL
+      |                       ^^^^^
+      |
+error: `Contstructor` should be `Constructor`
+  --> ./data/items_titles.csv:92833:27
+      |
+92833 | "92832","78",NULL,"Bridge Contstructor","0",NULL
+      |                           ^^^^^^^^^^^^
+      |
+error: `Satisfiction` should be `Satisfaction`
+  --> ./data/items_titles.csv:94003:41
+      |
+94003 | "94002","1","1011177","Groove Coaster - Satisfiction (Massive New Krew Remix)","0",NULL
+      |                                         ^^^^^^^^^^^^
+      |
+error: `Ba` should be `By`, `Be`
+  --> ./data/items_titles.csv:94068:33
+      |
+94068 | "94067","1","1047880","You Died BaNRY - Soundtrack","0",NULL
+      |                                 ^^
+      |
+error: `Feld` should be `Field`
+  --> ./data/items_titles.csv:94110:24
+      |
+94110 | "94109","9",NULL,"Ganz Feld - Urania (music album)","0",NULL
+      |                        ^^^^
+      |
+error: `Sountrack` should be `Soundtrack`
+  --> ./data/items_titles.csv:94800:49
+      |
+94800 | "94799","1","1071810","Broken Reality - Digital Sountrack","0",NULL
+      |                                                 ^^^^^^^^^
+      |
+error: `Resticted` should be `Restricted`
+  --> ./data/items_titles.csv:95086:28
+      |
+95086 | "95085","28",NULL,"9 to 5: Resticted version","0",NULL
+      |                            ^^^^^^^^^
+      |
+error: `VEKTOR` should be `VECTOR`
+  --> ./data/items_titles.csv:95465:20
+      |
+95465 | "95464","28",NULL,"VEKTOR 2089","0",NULL
+      |                    ^^^^^^
+      |
+error: `Malcom` should be `Malcolm`
+  --> ./data/items_titles.csv:95669:24
+      |
+95669 | "95668","1","1065560","Malcom's Day","0",NULL
+      |                        ^^^^^^
+      |
+error: `Colum` should be `Column`
+  --> ./data/items_titles.csv:95756:24
+      |
+95756 | "95755","1","1079760","Colum and His Friends","0",NULL
+      |                        ^^^^^
+      |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:96237:42
+      |
+96237 | "96236","1","1049290","Warhammer 40,000: Mechanicus - Heretek","0",NULL
+      |                                          ^^^^^^^^^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:96369:24
+      |
+96369 | "96368","1","1090070","Dota 2 - Short Film 2019","0",NULL
+      |                        ^^^^
+      |
+error: `Appen` should be `Append`
+  --> ./data/items_titles.csv:96723:41
+      |
+96723 | "96722","1","1016500","Trainz 2019 DLC: Appen","0",NULL
+      |                                         ^^^^^
+      |
+error: `Sideral` should be `Sidereal`
+  --> ./data/items_titles.csv:96938:24
+      |
+96938 | "96937","1","1095070","Sideral","0",NULL
+      |                        ^^^^^^^
+      |
+error: `Referens` should be `References`
+  --> ./data/items_titles.csv:96974:33
+      |
+96974 | "96973","1","1078820","Horresco Referens","0",NULL
+      |                                 ^^^^^^^^
+      |
+error: `Monstrum` should be `Monster`
+  --> ./data/items_titles.csv:97035:24
+      |
+97035 | "97034","1","1093170","Monstrum 2","0",NULL
+      |                        ^^^^^^^^
+      |
+error: `Sountrack` should be `Soundtrack`
+  --> ./data/items_titles.csv:97132:48
+      |
+97132 | "97131","1","1096320","Prince of Cats Original Sountrack","0",NULL
+      |                                                ^^^^^^^^^
+      |
+error: `Destructo` should be `Destruction`
+  --> ./data/items_titles.csv:97402:24
+      |
+97402 | "97401","1","1088910","DestructoPod","0",NULL
+      |                        ^^^^^^^^^
+      |
+error: `Greather` should be `Greater`
+  --> ./data/items_titles.csv:97640:36
+      |
+97640 | "97639","1","1102520","The Life Of Greather: Audio Pack","0",NULL
+      |                                    ^^^^^^^^
+      |
+error: `Ot` should be `To`, `Of`, `Or`
+  --> ./data/items_titles.csv:97709:25
+      |
+97709 | "97708","1","1086220","rOt 3D","0",NULL
+      |                         ^^
+      |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:97823:24
+      |
+97823 | "97822","1","1046930","Dota Underlords","0",NULL
+      |                        ^^^^
+      |
+error: `Commerical` should be `Commercial`
+  --> ./data/items_titles.csv:98814:86
+      |
+98814 | "98813","1","1031600","Welcome To... Chichester Redux : An Idiot's Guide To Flying A Commerical Aircraft","0",NULL
+      |                                                                                      ^^^^^^^^^^
+      |
+error: `Clea` should be `Clean`
+  --> ./data/items_titles.csv:98881:24
+      |
+98881 | "98880","1","1113260","Clea Demo","0",NULL
+      |                        ^^^^
+      |
+error: `Blessure` should be `Blessing`
+  --> ./data/items_titles.csv:98930:49
+      |
+98930 | "98929","1","1117770","Kid's Safety With George Blessure","0",NULL
+      |                                                 ^^^^^^^^
+      |
+error: `Loca` should be `Local`
+  --> ./data/items_titles.csv:99077:24
+      |
+99077 | "99076","1","1107650","Loca-Love My Commuting Crush","0",NULL
+      |                        ^^^^
+      |
+error: `Ded` should be `Dead`
+  --> ./data/items_titles.csv:99095:24
+      |
+99095 | "99094","1","1120240","Ded Inside","0",NULL
+      |                        ^^^
+      |
+error: `Nin` should be `Inn`, `Min`, `Bin`, `Nine`
+  --> ./data/items_titles.csv:99162:24
+      |
+99162 | "99161","1","1075980","NinNinDays","0",NULL
+      |                        ^^^
+      |
+error: `Nin` should be `Inn`, `Min`, `Bin`, `Nine`
+  --> ./data/items_titles.csv:99162:27
+      |
+99162 | "99161","1","1075980","NinNinDays","0",NULL
+      |                           ^^^
+      |
+error: `Ded` should be `Dead`
+  --> ./data/items_titles.csv:99211:24
+      |
+99211 | "99210","1","1120860","Ded Inside: Soundtrack","0",NULL
+      |                        ^^^
+      |
+error: `Maco` should be `Macro`
+  --> ./data/items_titles.csv:99449:35
+      |
+99449 | "99448","1","1121000","Bhavacakra Maco","0",NULL
+      |                                   ^^^^
+      |
+error: `Loca` should be `Local`
+  --> ./data/items_titles.csv:99728:24
+      |
+99728 | "99727","1","1120830","Loca-Love Soundtrack","0",NULL
+      |                        ^^^^
+      |
+error: `Loca` should be `Local`
+  --> ./data/items_titles.csv:99729:24
+      |
+99729 | "99728","1","1121540","Loca-Love Theme Song EP2","0",NULL
+      |                        ^^^^
+      |
+error: `Dum` should be `Dumb`
+  --> ./data/items_titles.csv:100280:25
+       |
+100280 | "100279","1","1131530","Dum-Dum","0",NULL
+       |                         ^^^
+       |
+error: `Dum` should be `Dumb`
+  --> ./data/items_titles.csv:100280:29
+       |
+100280 | "100279","1","1131530","Dum-Dum","0",NULL
+       |                             ^^^
+       |
+error: `nd` should be `and`
+  --> ./data/items_titles.csv:101000:26
+       |
+101000 | "100999","1","1123960","2ndDLC-FREE","0",NULL
+       |                          ^^
+       |
+error: `FRACTER` should be `FRACTURE`
+  --> ./data/items_titles.csv:101022:24
+       |
+101022 | "101021","1","783340","FRACTER","0",NULL
+       |                        ^^^^^^^
+       |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:101148:32
+       |
+101148 | "101147","2","123985","The New THQ Classics","0",NULL
+       |                                ^^^
+       |
+error: `Fractalis` should be `Fractals`
+  --> ./data/items_titles.csv:101152:25
+       |
+101152 | "101151","1","1141160","Fractalis","0",NULL
+       |                         ^^^^^^^^^
+       |
+error: `Conten` should be `Contain`
+  --> ./data/items_titles.csv:101872:83
+       |
+101872 | "101871","1","1057841","Wolfenstein: Youngblood Deutsche Version - Deluxe Edition Conten","0",NULL
+       |                                                                                   ^^^^^^
+       |
+error: `THQ` should be `THE`
+  --> ./data/items_titles.csv:102277:23
+       |
+102277 | "102276","2","15340","THQ Collection (Summer 2012)","0",NULL
+       |                       ^^^
+       |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:102292:23
+       |
+102292 | "102291","2","28456","Dota 2 - Starter Pack","0",NULL
+       |                       ^^^^
+       |
+error: `Vill` should be `Will`
+  --> ./data/items_titles.csv:102484:26
+       |
+102484 | "102483","28",NULL,"Poly Vill","0",NULL
+       |                          ^^^^
+       |
+error: `coffe` should be `coffee`
+  --> ./data/items_titles.csv:103918:34
+       |
+103918 | "103917","1","1158780","Buy me a coffe - DLC","0",NULL
+       |                                  ^^^^^
+       |
+error: `Gud` should be `Good`
+  --> ./data/items_titles.csv:104483:29
+       |
+104483 | "104482","1","1117810","Git Gud or Get Rekt","0",NULL
+       |                             ^^^
+       |
+error: `Regerts` should be `Regrets`
+  --> ./data/items_titles.csv:105043:37
+       |
+105043 | "105042","1","707030","POSTAL 4: No Regerts","0",NULL
+       |                                     ^^^^^^^
+       |
+error: `NIN` should be `INN`, `MIN`, `BIN`, `NINE`
+  --> ./data/items_titles.csv:105214:30
+       |
+105214 | "105213","1","1129250","NEKO-NIN exHeart 3","0",NULL
+       |                              ^^^
+       |
+error: `SWICTH` should be `SWITCH`
+  --> ./data/items_titles.csv:105265:30
+       |
+105265 | "105264","1","1162940","TEAM SWICTH VR - EXPERTS ROBBERY AGENCY","0",NULL
+       |                              ^^^^^^
+       |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:105583:38
+       |
+105583 | "105582","5",NULL,"Warhammer 40,000: Mechanicus","0",NULL
+       |                                      ^^^^^^^^^^
+       |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:105584:38
+       |
+105584 | "105583","5",NULL,"Warhammer 40,000: Mechanicus Omnissiah Edition","0",NULL
+       |                                      ^^^^^^^^^^
+       |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:105585:38
+       |
+105585 | "105584","5",NULL,"Warhammer 40,000: Mechanicus - Heretek","0",NULL
+       |                                      ^^^^^^^^^^
+       |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:105586:38
+       |
+105586 | "105585","5",NULL,"Warhammer 40,000: Mechanicus - Upgrade to Omnissiah Edition","0",NULL
+       |                                      ^^^^^^^^^^
+       |
+error: `MOR` should be `MORE`
+  --> ./data/items_titles.csv:105962:25
+       |
+105962 | "105961","1","1170750","MOR...E TRAINER","0",NULL
+       |                         ^^^
+       |
+error: `Mis` should be `Miss`
+  --> ./data/items_titles.csv:106510:24
+       |
+106510 | "106509","1","825190","MisBits","0",NULL
+       |                        ^^^
+       |
+error: `Ture` should be `True`
+  --> ./data/items_titles.csv:106875:29
+       |
+106875 | "106874","1","1185400","KuniTure","0",NULL
+       |                             ^^^^
+       |
+error: `CONCLUSE` should be `CONCLUSIVE`
+  --> ./data/items_titles.csv:106920:25
+       |
+106920 | "106919","1","1182840","CONCLUSE 2 Demo","0",NULL
+       |                         ^^^^^^^^
+       |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:107091:25
+       |
+107091 | "107090","1","1046950","Dota Underlords Server","0",NULL
+       |                         ^^^^
+       |
+error: `MAKS` should be `MASK`, `MASKS`, `MAKES`, `MAKE`
+  --> ./data/items_titles.csv:107249:30
+       |
+107249 | "107248","1","1128280","IGOR MAKS The Meme Lord","0",NULL
+       |                              ^^^^
+       |
+error: `Heros` should be `Heroes`
+  --> ./data/items_titles.csv:107595:27
+       |
+107595 | "107594","28",NULL,"Chibi Heros - Warrior pack","0",NULL
+       |                           ^^^^^
+       |
+error: `Heros` should be `Heroes`
+  --> ./data/items_titles.csv:107596:27
+       |
+107596 | "107595","28",NULL,"Chibi Heros - Thief","0",NULL
+       |                           ^^^^^
+       |
+error: `YUR` should be `YOUR`
+  --> ./data/items_titles.csv:107631:25
+       |
+107631 | "107630","1","1188920","YUR","0",NULL
+       |                         ^^^
+       |
+error: `Robocorp` should be `Robocop`
+  --> ./data/items_titles.csv:107725:27
+       |
+107725 | "107724","1","1195370","G-Robocorp","0",NULL
+       |                           ^^^^^^^^
+       |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:107839:60
+       |
+107839 | "107838","1","1174500","Yuletide Legends: Who Framed Santa Claus","0",NULL
+       |                                                            ^^^^^
+       |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:107895:48
+       |
+107895 | "107894","1","1188800","In the Service of Mrs. Claus","0",NULL
+       |                                                ^^^^^
+       |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:107918:48
+       |
+107918 | "107917","1","1188810","In the Service of Mrs. Claus Demo","0",NULL
+       |                                                ^^^^^
+       |
+error: `Posibility` should be `Possibility`
+  --> ./data/items_titles.csv:108309:25
+       |
+108309 | "108308","1","1189120","Posibility","0",NULL
+       |                         ^^^^^^^^^^
+       |
+error: `BA` should be `BY`, `BE`
+  --> ./data/items_titles.csv:108311:26
+       |
+108311 | "108310","1","1201530","aBANdon02","0",NULL
+       |                          ^^
+       |
+error: `Ballance` should be `Balance`
+  --> ./data/items_titles.csv:108343:25
+       |
+108343 | "108342","1","1186290","Ballance: The Return","0",NULL
+       |                         ^^^^^^^^
+       |
+error: `Sterio` should be `Stereo`
+  --> ./data/items_titles.csv:108859:25
+       |
+108859 | "108858","1","1202860","Sterio","0",NULL
+       |                         ^^^^^^
+       |
+error: `Regerts` should be `Regrets`
+  --> ./data/items_titles.csv:109236:41
+       |
+109236 | "109235","4","1521846175","POSTAL 4: No Regerts","0",NULL
+       |                                         ^^^^^^^
+       |
+error: `Claus` should be `Clause`
+  --> ./data/items_titles.csv:109489:32
+       |
+109489 | "109488","1","1213640","Zombie Claus","0",NULL
+       |                                ^^^^^
+       |
+error: `Raison` should be `Reason`, `Raisin`
+  --> ./data/items_titles.csv:109567:85
+       |
+109567 | "109566","1","1192350","Gunvolt Chronicles: Luminous Avenger iX - Extra Song: &quot;Raison d'&ecirc;tre&quot;","0",NULL
+       |                                                                                     ^^^^^^
+       |
+error: `tre` should be `tree`
+  --> ./data/items_titles.csv:109567:101
+       |
+109567 | "109566","1","1192350","Gunvolt Chronicles: Luminous Avenger iX - Extra Song: &quot;Raison d'&ecirc;tre&quot;","0",NULL
+       |                                                                                                     ^^^
+       |
+error: `Lazer` should be `Laser`
+  --> ./data/items_titles.csv:111227:24
+       |
+111227 | "111226","1","993770","LazerGrrl","0",NULL
+       |                        ^^^^^
+       |
+error: `STARD` should be `START`
+  --> ./data/items_titles.csv:111268:66
+       |
+111268 | "111267","1","1118288","DiRT Rally 2.0 - Ford Fiesta Rallycross (STARD)","0",NULL
+       |                                                                  ^^^^^
+       |
+error: `Colum` should be `Column`
+  --> ./data/items_titles.csv:111285:25
+       |
+111285 | "111284","1","1225450","Colum and His Friends: Soundtrack","0",NULL
+       |                         ^^^^^
+       |
+error: `Gir` should be `Git`
+  --> ./data/items_titles.csv:111975:25
+       |
+111975 | "111974","1","1242820","GirLand","0",NULL
+       |                         ^^^
+       |
+error: `Dota` should be `Data`
+  --> ./data/items_titles.csv:112126:29
+       |
+112126 | "112125","1","1241930","The Dota 2 Official Soundtrack","0",NULL
+       |                             ^^^^
+       |
+error: `Gir` should be `Git`
+  --> ./data/items_titles.csv:112187:25
+       |
+112187 | "112186","1","1247280","GirLand Soundtrack","0",NULL
+       |                         ^^^
+       |
+error: `Husbandos` should be `Husbands`
+  --> ./data/items_titles.csv:112240:47
+       |
+112240 | "112239","1","1233270","OshiRabu: Waifus Over Husbandos","0",NULL
+       |                                               ^^^^^^^^^
+       |
+error: `Challange` should be `Challenge`
+  --> ./data/items_titles.csv:112395:36
+       |
+112395 | "112394","28",NULL,"Spear Throwing Challange","0",NULL
+       |                                    ^^^^^^^^^
+       |
+error: `STROY` should be `STORY`, `DESTROY`
+  --> ./data/items_titles.csv:112499:26
+       |
+112499 | "112498","1","1191830","4STROY : ORIGIN","0",NULL
+       |                          ^^^^^
+       |
+error: `Husbandos` should be `Husbands`
+  --> ./data/items_titles.csv:112760:47
+       |
+112760 | "112759","1","1251820","OshiRabu: Waifus Over Husbandos Demo","0",NULL
+       |                                               ^^^^^^^^^
+       |
+error: `Fo` should be `Of`, `For`
+  --> ./data/items_titles.csv:112873:63
+       |
+112873 | "112872","2","72593","Absconding Zatwor + Break Into Zatwor + FoI + TCftM","0",NULL
+       |                                                               ^^
+       |
+error: `Gir` should be `Git`
+  --> ./data/items_titles.csv:112913:25
+       |
+112913 | "112912","1","1253830","GirLand - Artbook 18+","0",NULL
+       |                         ^^^
+       |
+error: `Gir` should be `Git`
+  --> ./data/items_titles.csv:112914:40
+       |
+112914 | "112913","1","1253020","Hentai DLC for GirLand","0",NULL
+       |                                        ^^^
+       |
+error: `Algoorithm` should be `Algorithm`
+  --> ./data/items_titles.csv:113080:40
+       |
+113080 | "113079","2","89592","GooCubelets: The Algoorithm + GooCubelets + GooCubelets: OCD","0",NULL
+       |                                        ^^^^^^^^^^
+       |
+error: `Fractalis` should be `Fractals`
+  --> ./data/items_titles.csv:113218:25
+       |
+113218 | "113217","1","1220310","Fractalis Demo","0",NULL
+       |                         ^^^^^^^^^
+       |
+error: `Fille` should be `File`, `Fill`, `Filled`
+  --> ./data/items_titles.csv:113690:41
+       |
+113690 | "113689","1","738510","メモリーズオフ-Innocent Fille-","0",NULL
+       |                                                ^^^^^
+       |
+error: `Fille` should be `File`, `Fill`, `Filled`
+  --> ./data/items_titles.csv:113693:42
+       |
+113693 | "113692","1","1200110","メモリーズオフ-Innocent Fille- for Dearest","0",NULL
+       |                                                 ^^^^^
+       |
+error: `UE` should be `USE`, `DUE`
+  --> ./data/items_titles.csv:113725:38
+       |
+113725 | "113724","1","1258730","Cyborg Arena UE4","0",NULL
+       |                                      ^^
+       |
+error: `Sherlok` should be `Sherlock`
+  --> ./data/items_titles.csv:113964:20
+       |
+113964 | "113963","7",NULL,"Sherlok - The Dark Arts","0",NULL
+       |                    ^^^^^^^
+       |
+error: `Hel` should be `Help`, `Hell`, `Heal`
+  --> ./data/items_titles.csv:114959:29
+       |
+114959 | "114958","1","1272150","Sol-Hel","0",NULL
+       |                             ^^^
+       |
+error: `Mechanicus` should be `Mechanics`
+  --> ./data/items_titles.csv:114990:43
+       |
+114990 | "114989","1","1236640","Warhammer 40,000: Mechanicus - Complete Original Soundtrack","0",NULL
+       |                                           ^^^^^^^^^^
+       |
+error: `Blured` should be `Blurred`
+  --> ./data/items_titles.csv:116169:25
+       |
+116169 | "116168","1","1275960","Blured Angel","0",NULL
+       |                         ^^^^^^
+       |
+error: `Ba` should be `By`, `Be`
+  --> ./data/items_titles.csv:116832:21
+       |
+116832 | "116831","28",NULL,"Ba","0",NULL
+       |                     ^^
+       |
+error: `Hel` should be `Help`, `Hell`, `Heal`
+  --> ./data/items_titles.csv:116957:33
+       |
+116957 | "116956","1","1078030","Wartile Hel's Nightmare","0",NULL
+       |                                 ^^^
+       |
+error: `Foto` should be `Photo`
+  --> ./data/items_titles.csv:117212:25
+       |
+117212 | "117211","1","1267960","FotoMuseo 3D","0",NULL
+       |                         ^^^^
+       |
+error: `Dum` should be `Dumb`
+  --> ./data/items_titles.csv:117721:25
+       |
+117721 | "117720","28",NULL,"Dee Dum (Computer)","0",NULL
+       |                         ^^^
+       |
+error: `Ba` should be `By`, `Be`
+  --> ./data/items_titles.csv:118659:30
+       |
+118659 | "118658","1","1271620","海腹川背 BaZooKa!","0",NULL
+       |                                  ^^
+       |
+error: `Coindice` should be `Coincide`
+  --> ./data/items_titles.csv:118817:25
+       |
+118817 | "118816","1","1301800","Coindice Simulator","0",NULL
+       |                         ^^^^^^^^
+       |
+error: `Pandoria` should be `Pandora`
+  --> ./data/items_titles.csv:118869:25
+       |
+118869 | "118868","1","1275240","Pandoria","0",NULL
+       |                         ^^^^^^^^
+       |
+error: `Hel` should be `Help`, `Hell`, `Heal`
+  --> ./data/items_titles.csv:119235:37
+       |
+119235 | "119234","4","1341342001","WARTILE: Hel's Nightmare","0",NULL
+       |                                     ^^^
+       |
+error: `Frop` should be `Drop`
+  --> ./data/items_titles.csv:119372:25
+       |
+119372 | "119371","1","1307330","Frop","0",NULL
+       |                         ^^^^
+       |
