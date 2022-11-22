@@ -1,0 +1,69 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:f54a8899-fb92-4ca6-bea9-ef41fdbf882d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-22T08:37:43.863Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.2.4"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Flask",
+      "version": "1.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/flask@1.1.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "gunicorn",
+      "version": "20.0.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/gunicorn@20.0.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/gunicorn@20.0.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "flask-restful",
+      "version": "0.3.8",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/flask-restful@0.3.8",
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask-restful@0.3.8"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "flask-cors",
+      "version": "3.0.7",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/flask-cors@3.0.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask-cors@3.0.7"
+    }
+  ],
+  "dependencies": []
+}
