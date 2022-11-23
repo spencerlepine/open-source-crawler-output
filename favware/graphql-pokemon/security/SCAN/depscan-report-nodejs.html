@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShiftLeft Scan Report</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+  />
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    defer
+    type="text/javascript"
+  ></script>
+  <style>
+    .divider[data-content] {
+      margin: 1.6rem 0;
+    }
+
+    .bg-sl {
+      background-color: rgb(35, 46, 77);
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .flex-100 {
+      flex: 1;
+    }
+
+    .flex-50 {
+      flex: 0.5;
+    }
+
+    .flex-grow {
+      flex-grow: 1;
+    }
+    .flex-shrink {
+      flex-shrink: 0.5;
+    }
+
+    body {
+      background-color: #1c253e;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+
+    span {
+      word-break: break-word;
+    }
+
+    .hero .hero-body {
+      padding: 2em;
+      background-color: #3f4861;
+      margin: 2em;
+    }
+
+    .hero.hero-sm {
+      padding-bottom: 0rem;
+      padding-top: 0rem;
+      background: #232e4d;
+    }
+
+    .card {
+      background: #232e4d;
+      border: none;
+      padding-left: 1.5em;
+    }
+
+    .table tbody tr:nth-child(odd) {
+      background-color: rgba(35, 46, 77, 1);
+    }
+
+    .table tbody tr:nth-child(even) {
+      background-color: #1c253e;
+    }
+
+    .chip {
+      color: #000000;
+      display: revert;
+    }
+    .chip.bg-dark {
+      color: #ffffff;
+    }
+    a {
+      color: #4587d4;
+      display: revert;
+    }
+
+    details,
+    menu {
+      display: block;
+      background: #232e4d;
+      margin-top: 2em;
+      padding: 1em;
+    }
+
+    .panel {
+      border: 0;
+      margin: 0.5em;
+      background: #3f4861;
+    }
+    .accordion .accordion-body {
+      overflow-y: scroll;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.3rem;
+    }
+    .data-table {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .data-table > .table-head,
+    .data-table > .table-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .table-data-row,
+    .table-header-row {
+      display: flex;
+      flex-direction: row;
+      flex: 1 100%;
+      border-bottom: 0.05rem solid #dadee4;
+    }
+    .table-data-row > div {
+      padding: 0.6rem 0.4rem;
+      overflow: hidden;
+    }
+    .table-header-row > div {
+      padding: 0.6rem 0.4rem;
+      border-bottom-width: 0.1rem;
+      font-weight: bold;
+    }
+
+    .table-data-row:nth-child(odd) {
+      background-color: rgba(35, 46, 77, 1);
+    }
+
+    .table-data-row > div:nth-child(1),
+    .table-header-row > div:nth-child(1) {
+      flex: 0 0 20%;
+      width: 20%;
+      word-wrap: break-word;
+    }
+
+    .table-data-row > div:nth-child(2),
+    .table-header-row > div:nth-child(2) {
+      flex: 0 0 10%;
+      width: 10%;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(3),
+    .table-header-row > div:nth-child(3) {
+      flex: 0 0 20%;
+      width: 20%;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4),
+    .table-header-row > div:nth-child(4) {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+    .table-data-row > div span * {
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4) {
+      padding: 10px;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4) pre {
+      overflow-x: scroll;
+    }
+
+    .chip.d-inline-flex {
+      display: inline-flex;
+    }
+
+    .table-data-row > div:nth-child(1) .chip {
+      display: block;
+      width: fit-content;
+      max-width: unset;
+      height: auto;
+      border-radius: 5px;
+      font-size: 0.65rem;
+    }
+    .table-data-row > div:nth-child(1) .chip a {
+      word-break: break-all;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      white-space: pre-wrap;
+    }
+
+    .table-data-row h1 {
+      font-size: 1.5rem;
+    }
+
+    .table-data-row h2 {
+      font-size: 1.3rem;
+    }
+
+    .table-data-row h3,
+    .table-data-row h4 {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container grid-xl" style="min-height: 90vh;">
+  <header class="navbar" style="height: 4rem;">
+  <section class="navbar-section">
+    <a href="https://shiftleft.io" class="navbar-brand"><svg height="50px" viewBox="0 0 95 21"><g id="Styles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Components-I" transform="translate(-72.000000, -212.000000)"><g id="Group" transform="translate(48.000000, 48.000000)"><g id="Header-and-Nav"><g id="Main-Header" transform="translate(0.000000, 43.000000)"><g id="Main-Header-Hover-/-Selected" transform="translate(0.000000, 105.000000)"><g id="Logo" transform="translate(24.000000, 16.500000)"><path d="M94.40652,16.35992 C93.88612,16.55992 93.16612,16.67992 92.24652,16.67992 C89.88612,16.67992 88.96612,15.15992 88.96612,13.00032 L88.96612,9.11992 L86.04652,9.11992 L86.04652,16.47992 L83.20652,16.47992 L83.20652,9.11992 L81.88612,9.11992 L81.88612,6.95992 L83.20652,6.83992 L83.20652,6.31992 C83.20652,4.27992 84.12652,2.63992 86.76612,2.63992 C87.56612,2.63992 88.28612,2.83992 88.72652,2.95992 L88.20652,5.00032 C87.88612,4.87992 87.48612,4.80032 87.16612,4.80032 C86.44652,4.80032 86.04652,5.20032 86.04652,6.11992 L86.04652,6.71992 L89.20652,6.71992 L89.52652,4.15992 L91.88652,4.15992 L91.88652,6.71992 L94.24652,6.71992 L94.24652,8.95992 L91.88652,8.95992 L91.88652,12.83992 C91.88652,13.95992 92.40652,14.35992 93.12652,14.35992 C93.44652,14.35992 93.72652,14.23992 94.04652,14.15992 L94.40652,16.35992 Z" id="Fill-14" fill="#3ECF8E"></path><path d="M78.36628,10.64 C78.36628,9.52 77.84628,8.8 76.72628,8.8 C75.80668,8.8 75.08628,9.4 74.88628,10.64 L78.36628,10.64 Z M76.76628,6.56 C79.52628,6.56 80.84628,8.6 80.84628,11.16 C80.84628,11.68 80.72628,12.08 80.72628,12.4 L75.00668,12.4 C75.20668,13.84 76.24628,14.44 77.44628,14.44 C78.16628,14.44 78.76628,14.24 79.48628,13.84 L80.40668,15.56 C79.36628,16.28 78.16628,16.68 77.04628,16.68 C74.28628,16.68 72.12628,14.84 72.12628,11.68 C72.16628,8.52 74.40668,6.56 76.76628,6.56 L76.76628,6.56 Z" id="Fill-13" fill="#3ECF8E"></path><polygon id="Fill-12" fill="#3ECF8E" points="63.4862 3.79996 66.3266 3.79996 66.3266 13.99996 71.3266 13.99996 71.3266 16.43996 63.4462 16.43996"></polygon><path d="M61.64636,16.35992 C61.12636,16.55992 60.40636,16.67992 59.48636,16.67992 C57.12636,16.67992 56.20636,15.15992 56.20636,13.00032 L56.20636,9.11992 L53.24636,9.11992 L53.24636,16.47992 L50.40636,16.47992 L50.40636,9.11992 L49.08636,9.11992 L49.08636,6.95992 L50.40636,6.83992 L50.40636,6.31992 C50.40636,4.27992 51.32636,2.63992 53.96636,2.63992 C54.76636,2.63992 55.48636,2.83992 55.92636,2.95992 L55.40636,5.00032 C55.08636,4.87992 54.68636,4.80032 54.36636,4.80032 C53.64636,4.80032 53.24636,5.20032 53.24636,6.11992 L53.24636,6.71992 L56.40636,6.71992 L56.72636,4.15992 L59.08676,4.15992 L59.08676,6.71992 L61.44636,6.71992 L61.44636,8.95992 L59.08676,8.95992 L59.08676,12.83992 C59.08676,13.95992 59.60636,14.35992 60.32636,14.35992 C60.64636,14.35992 60.92636,14.23992 61.24636,14.15992 L61.64636,16.35992 Z" id="Fill-11" fill="#FFFFFF"></path><path d="M44.7664,16.48 L47.6068,16.48 L47.6068,6.88 L44.7664,6.88 L44.7664,16.48 Z M44.5664,3.92 C44.5664,3 45.2864,2.48 46.2064,2.48 C47.1264,2.48 47.8464,3.08 47.8464,3.92 C47.8464,4.84 47.1264,5.44 46.2064,5.44 C45.2864,5.44 44.5664,4.84 44.5664,3.92 L44.5664,3.92 Z" id="Fill-9" fill="#FFFFFF"></path><path d="M34.36632,2.88004 L37.20672,2.88004 L37.20672,6.24004 L37.08632,7.96004 C37.80672,7.36004 38.72632,6.64004 40.04632,6.64004 C42.08632,6.64004 43.00672,8.08004 43.00672,10.52004 L43.00672,16.44004 L40.16632,16.44004 L40.16632,10.84004 C40.16632,9.40004 39.76632,9.00004 38.92632,9.00004 C38.20672,9.00004 37.80672,9.32004 37.20672,9.92004 L37.20672,16.44004 L34.36632,16.44004 L34.36632,2.88004 Z" id="Fill-7" fill="#FFFFFF"></path><path d="M24.84636,12.87984 C25.76636,13.67984 26.88636,14.20024 27.92636,14.20024 C29.16636,14.20024 29.64636,13.67984 29.64636,12.95984 C29.64636,12.15984 28.92636,11.92024 27.80636,11.43984 L26.16636,10.72024 C24.84636,10.20024 23.60636,9.07984 23.60636,7.23984 C23.60636,5.20024 25.44636,3.47984 28.08636,3.47984 C29.52636,3.47984 31.04636,4.07984 32.16636,5.12024 L30.72636,6.95984 C29.92636,6.35984 29.08636,5.92024 28.08636,5.92024 C27.16636,5.92024 26.44636,6.32024 26.44636,7.03984 C26.44636,7.83984 27.24636,8.07984 28.40636,8.55984 L30.04636,9.15984 C31.56636,9.75984 32.48636,10.80024 32.48636,12.63984 C32.48636,14.67984 30.76636,16.52024 27.80636,16.52024 C26.16636,16.52024 24.44636,15.92024 23.12636,14.67984 L24.84636,12.87984 Z" id="Fill-5" fill="#FFFFFF"></path><g id="logomark"><path d="M9.44636,9.00016 L16.68636,3.48016 L16.08636,11.35976 C16.08636,12.80016 15.68636,14.00016 14.96636,15.04016 L9.44636,10.84016 C8.84636,10.44016 8.84636,9.52016 9.44636,9.00016 Z" id="Fill-1" fill="#3ECF8E"></path><path d="M4.32644,10.84 C3.72644,10.32 3.72644,9.52 4.32644,9 L14.72644,1.04 C13.08604,0.52 10.64644,0 8.28604,0 C5.72644,0 3.16644,0.6 1.64644,1.04 C0.60644,1.36 -0.07356,2.36 0.00644,3.48 L0.60644,11.36 C0.60644,16.28 5.60644,18.8 7.56644,19.72 C8.08604,19.92 8.60644,19.92 9.08604,19.72 C10.00644,19.32 11.52644,18.6 12.84644,17.36 L4.32644,10.84 Z" id="Fill-3" fill="#FFFFFF"></path></g></g></g></g></g></g></g></g></svg> </a>
+  </section>
+</header>
+  <div class="columns">
+    <div class="column col-12">
+      <div class="hero hero-sm">
+        <div class="hero-body">
+          <h1>Dependency Scan Status <button class="btn btn-error btn-action"><span class="tooltip tooltip-top" data-tooltip="Issues were found in this run"><i class="icon icon-cross"></i></span></button></h1>
+          <p>Report from the scan performed on <span class="text-dark chip"><i class="icon icon-time"> </i>&nbsp; 2022-11-23 at 08:42</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="divider text-center" data-content="Summary"></div> -->
+  <section id="#summary"></section>
+  <details class="accordion" open>
+    <summary class="accordion-header">
+        <h3>
+          <i class="icon icon-arrow-right mr-1"></i>
+          Executive Summary
+        </h3>
+    </summary>
+    <div class="accordion-body columns col-gapless">
+    <div class="column col-12">
+        <p>This report was generated by ShiftLeft from the Dependency Scan invocation on 2022-11-23 at 08:42. The scan used the ShiftLeft vulnerability database to audit the application dependencies for known vulnerabilities and exploits.
+        </p>
+        
+        <p>
+        Below is a summary of the issues identified:
+        </p>
+        <div class="container">
+          <div class="columns col-12">
+            <div class="column col-5">
+              <table class="table" id="severity-table">
+                <thead>
+                <tr>
+                  <th>Severity</th>
+                  <th>Count</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><span class="bg-error chip">CRITICAL</span></td>
+                  <td>10</td>
+                </tr><tr>
+                  <td><span class="bg-warning chip">HIGH</span></td>
+                  <td>27</td>
+                </tr><tr>
+                  <td><span class="bg-dark chip">MEDIUM</span></td>
+                  <td>11</td>
+                </tr><tr>
+                  <td><span class="bg-success chip">LOW</span></td>
+                  <td>0</td>
+                </tr><tr>
+                  <td><span class="bg-unspecified chip">UNSPECIFIED</span></td>
+                  <td>0</td>
+                </tr><tr>
+                  <td><span class="bg-total chip">TOTAL</span></td>
+                  <td>48</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="column col-6">
+              <canvas id="severity-chart" width="300" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+        
+      
+      <p>&nbsp;</p>
+        <p><i class="icon icon-flag icon-2x text-warning"></i>&nbsp; ShiftLeft recommends immediate remediation for the vulnerable dependencies before using this application in a live environment.</p><p>This would mostly involve updating the version numbers to a fixed version and performing the required functional and smoke tests. On rare occasions where a fix is not available, consider <i>either delaying the deployment or identifying a suitable well-supported alternative package</i>.</p>
+      
+    </div>
+  </div>
+  </details>
+  <!-- <div class="divider text-center" data-content="Packages List"></div> -->
+  <section id="#all_issues"></section>
+  <div class="columns col-gapless" style="margin-top: 2em;">
+    <div class="column col-12">
+      <h3><i class="icon icon-link"></i> Vulnerable Packages <span class="text-bold">(48)</span></h3>
+    </div>
+    <div class="column col-12">
+      <div class="filter">
+        <input type="radio" id="tag-0" class="filter-tag" name="filter-radio" hidden checked>
+        <input type="radio" id="tag-1" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-2" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-3" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-4" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-5" class="filter-tag" name="filter-radio" hidden>
+
+        <div class="filter-nav">
+          <label class="chip" for="tag-0">All (48)</label>
+          <label class="chip" for="tag-1">Critical (10)</label>
+          <label class="chip" for="tag-2">High (27)</label>
+          <label class="chip" for="tag-3">Medium (11)</label>
+          <label class="chip" for="tag-4">Low (0)</label>
+          <label class="chip" for="tag-5">Unspecified (0)</label>
+        </div>
+        <div class="filter-body">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Severity</th>
+              <th>Id</th>
+              <th>Package</th>
+              <th>Version</th>
+              <th>Fix Version</th>
+              <th>Risk Score</th>
+              <th>Description</th>
+              <th>More Information</th>
+            </tr>
+            </thead>
+            <tbody>
+          
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-44906</td>
+            <td>npm:minimist</td>
+            <td>&lt;1.2.6</td>
+            <td>1.2.6</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in minimist<br/>Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey() (lines 69 95).<br/>Upgrade to version 1.2.6 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-23383</td>
+            <td>npm:handlebars</td>
+            <td>&lt;4.7.7</td>
+            <td>4.7.7</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in handlebars<br/>The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source.<br/>Upgrade to version 4.7.7 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2019-10744</td>
+            <td>npm:lodash</td>
+            <td>&lt;4.17.12</td>
+            <td>4.17.12</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in lodash<br/>Versions of `lodash` before 4.17.12 are vulnerable to Prototype Pollution.  The function `defaultsDeep` allows a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects.<br/><br/><br/><br/><br/>## Recommendation<br/><br/>Update to version 4.17.12 or later.<br/>Upgrade to version 4.17.12 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2019-10747</td>
+            <td>npm:set-value</td>
+            <td>&lt;2.0.1</td>
+            <td>2.0.1</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in set value<br/>Versions of `set value` prior to 3.0.1 or 2.0.1 are vulnerable to Prototype Pollution. The `set` function fails to validate which Object properties it updates. This allows attackers to modify the prototype of Object, causing the addition or modification of an existing property on all objects.<br/><br/><br/><br/><br/>## Recommendation<br/><br/>If you are using `set value` 3.x, <b>upgrade</b> to version 3.0.1 or later.<br/>If you are using `set value` 2.x, <b>upgrade</b> to version 2.0.1 or later.<br/>Upgrade to version 2.0.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2019-10744</td>
+            <td>npm:lodash.template</td>
+            <td>&lt;4.5.0</td>
+            <td>4.5.0</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in lodash<br/>Versions of `lodash` before 4.17.12 are vulnerable to Prototype Pollution.  The function `defaultsDeep` allows a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects.<br/><br/><br/><br/><br/>## Recommendation<br/><br/>Update to version 4.17.12 or later.<br/>Upgrade to version 4.5.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2019-19919</td>
+            <td>npm:handlebars</td>
+            <td>&lt;4.3.0</td>
+            <td>4.3.0</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in handlebars<br/>Versions of `handlebars` prior to 3.0.8 or 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Objects' `__proto__` and `__defineGetter__` properties, which may allow an attacker to execute arbitrary code through crafted payloads.<br/><br/><br/>## Recommendation<br/><br/>Upgrade to version 3.0.8, 4.3.0 or later.<br/>Upgrade to version 4.3.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-23358</td>
+            <td>npm:underscore</td>
+            <td>&gt;=1.3.2-&lt;1.12.1</td>
+            <td>1.12.1</td>
+            <td>9.0</td>
+            <td># Arbitrary Code Execution in underscore<br/>The package `underscore` from 1.13.0 0 and before 1.13.0 2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Execution via the template function, particularly when a variable property is passed as an argument as it is not sanitized.<br/>Upgrade to version 1.12.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-23369</td>
+            <td>npm:handlebars</td>
+            <td>&lt;4.7.7</td>
+            <td>4.7.7</td>
+            <td>9.0</td>
+            <td># Remote code execution in handlebars when compiling templates<br/>The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source.<br/>Upgrade to version 4.7.7 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2021-42740</td>
+            <td>npm:shell-quote</td>
+            <td>&lt;=1.7.2</td>
+            <td>1.7.3</td>
+            <td>9.0</td>
+            <td># Improper Neutralization of Special Elements used in a Command in Shell quote<br/>The shell quote package before 1.7.3 for Node.js allows command injection. An attacker can inject unescaped shell metacharacters through a regex designed to support Windows drive letters. If the output of this package is passed to a real shell as a quoted argument to a command with exec(), an attacker can inject arbitrary commands. This is because the Windows drive letter regex character class is {A z  instead of the correct {A Za z . Several shell metacharacters exist in the space between capital letter Z and lower case letter a, such as the backtick character.<br/>Upgrade to version 1.7.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-1" class="filter-item">
+            <td><span class="chip bg-error">CRITICAL</span></td>
+            <td>CVE-2019-10746</td>
+            <td>npm:mixin-deep</td>
+            <td>&lt;1.3.2</td>
+            <td>1.3.2</td>
+            <td>9.0</td>
+            <td># Prototype Pollution in mixin deep<br/>Versions of `mixin deep` prior to 2.0.1 or 1.3.2 are vulnerable to Prototype Pollution. The `mixinDeep` function fails to validate which Object properties it updates. This allows attackers to modify the prototype of Object, causing the addition or modification of an existing property on all objects.<br/><br/><br/><br/><br/>## Recommendation<br/><br/>If you are using `mixin deep` 2.x, <b>upgrade</b> to version 2.0.1 or later.<br/>If you are using `mixin deep` 1.x, <b>upgrade</b> to version 1.3.2 or later.<br/>Upgrade to version 1.3.2 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-23440</td>
+            <td>npm:set-value</td>
+            <td>&lt;2.0.1</td>
+            <td>2.0.1</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in set value<br/>This <b>affects</b> the package `set value` before 2.0.1, and starting with 3.0.0 but prior to 4.0.1. A type confusion vulnerability can lead to a bypass of CVE 2019 10747 when the user provided keys used in the path parameter are arrays.<br/>Upgrade to version 2.0.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-23518</td>
+            <td>npm:cached-path-relative</td>
+            <td>&lt;1.1.0</td>
+            <td>1.1.0</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in cached path relative<br/>The package cached path relative before 1.1.0 is vulnerable to Prototype Pollution via the cache variable that is set as {} instead of Object.create(null) in the cachedPathRelative function, which allows access to the parent prototype properties when the object is used to create the cached relative path. When using the origin path as __proto__, the attribute of the object is accessed instead of a path. **Note:** This vulnerability derives from an incomplete fix in https://security.snyk.io/vuln/SNYK JS CACHEDPATHRELATIVE 72573<br/>Upgrade to version 1.1.0 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>NPM-1068514</td>
+            <td>npm:handlebars</td>
+            <td>&gt;=4.0.0-&lt;4.5.3</td>
+            <td>4.5.3</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in handlebars<br/>Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to prototype pollution. It is possible to add or modify properties to the Object prototype through a malicious template. This may allow attackers to crash the application or execute Arbitrary Code in specific conditions.<br/><br/><br/>## Recommendation<br/><br/>Upgrade to version 3.0.8, 4.5.3 or later.<br/>Upgrade to version 4.5.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-13822</td>
+            <td>npm:elliptic</td>
+            <td>&lt;6.5.3</td>
+            <td>6.5.4</td>
+            <td>7.5</td>
+            <td># Signature Malleabillity in elliptic<br/>The Elliptic package before version 6.5.3 for Node.js allows ECDSA signature malleability via variations in encoding, leading ' 0' bytes, or integer overflows. This could conceivably have a security relevant impact if an application relied on a single canonical signature.<br/>Upgrade to version 6.5.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2019-20149</td>
+            <td>npm:kind-of</td>
+            <td>&gt;=6.0.0-&lt;6.0.3</td>
+            <td>6.0.3</td>
+            <td>7.5</td>
+            <td># Validation Bypass in kind of<br/>Versions of `kind of` 6.x prior to 6.0.3 are vulnerable to a Validation Bypass. A maliciously crafted object can alter the result of the type check, allowing attackers to bypass the type checking validation. <br/><br/><br/>## Recommendation<br/><br/>Upgrade to versions 6.0.3 or later.<br/>Upgrade to version 6.0.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>NPM-1069428</td>
+            <td>npm:acorn</td>
+            <td>&gt;=6.0.0-&lt;6.4.1</td>
+            <td>6.4.1</td>
+            <td>7.5</td>
+            <td># Regular Expression Denial of Service in Acorn<br/>Affected versions of acorn are vulnerable to Regular Expression Denial of Service.<br/>A regex in the form of /[x  ud800 /u causes the parser to enter an infinite loop.<br/>The string is not valid UTF16 which usually results in it being sanitized before reaching the parser.<br/>If an application processes untrusted input and passes it directly to acorn,<br/>attackers may leverage the vulnerability leading to Denial of Service.<br/>Upgrade to version 6.4.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-7774</td>
+            <td>npm:y18n</td>
+            <td>&lt;3.2.2</td>
+            <td>3.2.2</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in y18n<br/>### Overview<br/><br/>The npm package `y18n` before versions 3.2.2, 4.0.1, and 5.0.5 is vulnerable to Prototype Pollution. <br/><br/>### POC<br/><br/>```<br/>const y18n = require('y18n')();<br/><br/>y18n.setLocale('__proto__');<br/>y18n.updateLocale({polluted: true});<br/><br/>console.log(polluted); // true<br/>```<br/><br/>### Recommendation<br/><br/>Upgrade to version 3.2.2, 4.0.1, 5.0.5 or later.<br/>Upgrade to version 3.2.2 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-8203</td>
+            <td>npm:lodash</td>
+            <td>&lt;4.17.20</td>
+            <td>4.17.20</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in lodash<br/>Versions of lodash prior to 4.17.19 are vulnerable to Prototype Pollution. The function zipObjectDeep allows a malicious user to modify the prototype of Object if the property identifiers are user supplied. Being <b>affected</b> by this issue requires zipping objects based on user provided property arrays.<br/><br/>This vulnerability causes the addition or modification of an existing property that will exist on all objects and may lead to Denial of Service or Code Execution under specific circumstances.<br/>Upgrade to version 4.17.20 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-37713</td>
+            <td>npm:tar</td>
+            <td>&lt;4.4.18</td>
+            <td>4.4.18</td>
+            <td>7.5</td>
+            <td># Arbitrary File Creation/Overwrite on Windows via insufficient relative path sanitization<br/>### Impact<br/><br/>Arbitrary File Creation, Arbitrary File Overwrite, Arbitrary Code Execution<br/><br/>node tar aims to guarantee that any file whose location would be outside of the extraction target directory is not extracted. This is, in part, accomplished by sanitizing absolute paths of entries within the archive, skipping archive entries that contain `..` path portions, and resolving the sanitized paths against the extraction target directory.<br/><br/>This logic was insufficient on Windows systems when extracting tar files that contained a path that was not an absolute path, but specified a drive letter different from the extraction target, such as `C:some path`.  If the drive letter does not match the extraction target, for example `D: extraction dir`, then the result of `path.resolve(extractionDirectory, entryPath)` would resolve against the current working directory on the `C:` drive, rather than the extraction target directory.<br/><br/>Additionally, a `..` portion of the path could occur immediately after the drive letter, such as `C:../foo`, and was not properly sanitized by the logic that checked for `..` within the normalized and split portions of the path.<br/><br/>This only <b>affects</b> users of `node tar` on Windows systems.<br/><br/>### Patches<br/><br/>4.4.18 || 5.0.10 || 6.1.9<br/><br/>### Workarounds<br/><br/>There is no reasonable way to work around this issue without performing the same path normalization procedures that node tar now does.<br/><br/>Users are encouraged to <b>upgrade</b> to the latest patched versions of node tar, rather than attempt to sanitize paths themselves.<br/><br/>### Fix<br/><br/>The fixed versions strip path roots from all paths prior to being resolved against the extraction target folder, even if such paths are not "absolute".<br/><br/>Additionally, a path starting with a drive letter and then two dots, like `c:../`, would bypass the check for `..` path portions.  This is checked properly in the patched versions.<br/><br/>Finally, a defense in depth check is added, such that if the `entry.absolute` is outside of the extraction taret, and we are not in preservePaths:true mode, a warning is raised on that entry, and it is skipped.  Currently, it is believed that this check is redundant, but it did catch some oversights in development.<br/><br/>Upgrade to version 4.4.18 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-37712</td>
+            <td>npm:tar</td>
+            <td>&lt;4.4.18</td>
+            <td>4.4.18</td>
+            <td>7.5</td>
+            <td># Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links<br/>### Impact<br/>Arbitrary File Creation, Arbitrary File Overwrite, Arbitrary Code Execution<br/><br/>node tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created.<br/><br/>This logic was insufficient when extracting tar files that contained two directories and a symlink with names containing unicode values that normalized to the same value. Additionally, on Windows systems, long path portions would resolve to the same file system entities as their 8.3 "short path" counterparts. A specially crafted tar archive could thus include directories with two forms of the path that resolve to the same file system entity, followed by a symbolic link with a name in the first form, lastly followed by a file using the second form. It led to bypassing node tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite.<br/><br/>The v3 branch of `node tar` has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of `node tar`. If this is not possible, a workaround is available below.<br/><br/>### Patches<br/><br/>6.1.9 || 5.0.10 || 4.4.18<br/><br/>### Workarounds<br/><br/>Users may work around this vulnerability without upgrading by creating a custom filter method which prevents the extraction of symbolic links.<br/><br/>```js<br/>const tar = require('tar')<br/><br/>tar.x({<br/>  file: 'archive.tgz',<br/>  filter: (file, entry) => {<br/>    if (entry.type === 'SymbolicLink') {<br/>      return false<br/>    } else {<br/>      return true<br/>    }<br/>  }<br/>})<br/>```<br/><br/>Users are encouraged to <b>upgrade</b> to the latest patched versions, rather than attempt to sanitize tar input themselves.<br/><br/>#### Fix<br/><br/>The problem is addressed in the following ways, when comparing paths in the directory cache and path reservation systems:<br/><br/>1. The `String.normalize('NFKD')` method is used to first normalize all unicode to its maximally compatible and multi code point form.<br/>2. All slashes are normalized to `/` on Windows systems (on posix systems, ` ` is a valid filename character, and thus left intact).<br/>3. When a symbolic link is encountered on Windows systems, the entire directory cache is cleared.  Collisions related to use of 8.3 short names to replace directories with other (non symlink) types of entries may make archives fail to extract properly, but will not result in arbitrary file writes.<br/><br/>Upgrade to version 4.4.18 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-37701</td>
+            <td>npm:tar</td>
+            <td>&lt;4.4.16</td>
+            <td>4.4.18</td>
+            <td>7.5</td>
+            <td># Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links<br/>### Impact<br/><br/>Arbitrary File Creation, Arbitrary File Overwrite, Arbitrary Code Execution<br/><br/>`node tar` aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created.<br/><br/>This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory, where the symlink and directory names in the archive entry used backslashes as a path separator on posix systems. The cache checking logic used both ` ` and `/` characters as path separators, however ` ` is a valid filename character on posix systems.<br/><br/>By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass node tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite.<br/><br/>Additionally, a similar confusion could arise on case insensitive filesystems.  If a tar archive contained a directory at `FOO`, followed by a symbolic link named `foo`, then on case insensitive file systems, the creation of the symbolic link would remove the directory from the filesystem, but _not_ from the internal directory cache, as it would not be treated as a cache hit.  A subsequent file entry within the `FOO` directory would then be placed in the target of the symbolic link, thinking that the directory had already been created. <br/><br/>These issues were addressed in releases 4.4.16, 5.0.8 and 6.1.7.<br/><br/>The v3 branch of `node tar` has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of `node tar`. If this is not possible, a workaround is available below.<br/><br/>### Patches<br/><br/>4.4.16 || 5.0.8 || 6.1.7<br/><br/>### Workarounds<br/><br/>Users may work around this vulnerability without upgrading by creating a custom filter method which prevents the extraction of symbolic links.<br/><br/>```js<br/>const tar = require('tar')<br/><br/>tar.x({<br/>  file: 'archive.tgz',<br/>  filter: (file, entry) => {<br/>    if (entry.type === 'SymbolicLink') {<br/>      return false<br/>    } else {<br/>      return true<br/>    }<br/>  }<br/>})<br/>```<br/><br/>Users are encouraged to <b>upgrade</b> to the latest patched versions, rather than attempt to sanitize tar input themselves.<br/><br/>### Fix<br/><br/>The problem is addressed in the following ways:<br/><br/>1. All paths are normalized to use `/` as a path separator, replacing ` ` with `/` on Windows systems, and leaving ` ` intact in the path on posix systems.  This is performed in depth, at every level of the program where paths are consumed.<br/>2. Directory cache pruning is performed case insensitively.  This _may_ result in undue cache misses on case sensitive file systems, but the performance impact is negligible.<br/><br/>#### Caveat<br/><br/>Note that this means that the `entry` objects exposed in various parts of tar's API will now always use `/` as a path separator, even on Windows systems.  This is not expected to cause problems, as `/` is a valid path separator on Windows systems, but _may_ result in issues if `entry.path` is compared against a path string coming from some other API such as `fs.realpath()` or `path.resolve()`.<br/><br/>Users are encouraged to always normalize paths using a well tested method such as `path.resolve()` before comparing paths to one another.<br/>Upgrade to version 4.4.16 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-32804</td>
+            <td>npm:tar</td>
+            <td>&gt;=4.0.0-&lt;4.4.14</td>
+            <td>4.4.18</td>
+            <td>7.5</td>
+            <td># Arbitrary File Creation/Overwrite due to insufficient absolute path sanitization<br/>### Impact<br/><br/>Arbitrary File Creation, Arbitrary File Overwrite, Arbitrary Code Execution<br/><br/>`node tar` aims to prevent extraction of absolute file paths by turning absolute paths into relative paths when the `preservePaths` flag is not set to `true`. This is achieved by stripping the absolute path root from any absolute file paths contained in a tar file. For example `/home/user/.bashrc` would turn into `home/user/.bashrc`. <br/><br/>This logic was insufficient when file paths contained repeated path roots such as `////home/user/.bashrc`. `node tar` would only strip a single path root from such paths. When given an absolute file path with repeating path roots, the resulting path (e.g. `///home/user/.bashrc`) would still resolve to an absolute path, thus allowing arbitrary file creation and overwrite. <br/><br/>### Patches<br/><br/>3.2.2 || 4.4.14 || 5.0.6 || 6.1.1<br/><br/>NOTE: an adjacent issue [CVE 2021 32803 (https://github.com/npm/node tar/security/advisories/GHSA r628 mhmh qjhw) <b>affects</b> this release level. Please ensure you update to the latest patch levels that address CVE 2021 32803 as well if this adjacent issue <b>affects</b> your `node tar` use case.<br/><br/>### Workarounds<br/><br/>Users may work around this vulnerability without upgrading by creating a custom `onentry` method which sanitizes the `entry.path` or a `filter` method which removes entries with absolute paths.<br/><br/>```js<br/>const path = require('path')<br/>const tar = require('tar')<br/><br/>tar.x({<br/>  file: 'archive.tgz',<br/>  // either add this function...<br/>  onentry: (entry) => {<br/>    if (path.isAbsolute(entry.path)) {<br/>      entry.path = sanitizeAbsolutePathSomehow(entry.path)<br/>      entry.absolute = path.resolve(entry.path)<br/>    }<br/>  },<br/><br/>  // or this one<br/>  filter: (file, entry) => {<br/>    if (path.isAbsolute(entry.path)) {<br/>      return false<br/>    } else {<br/>      return true<br/>    }<br/>  }<br/>})<br/>```<br/><br/>Users are encouraged to <b>upgrade</b> to the latest patch versions, rather than attempt to sanitize tar input themselves.<br/>Upgrade to version 4.4.14 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-33623</td>
+            <td>npm:trim-newlines</td>
+            <td>&lt;3.0.1</td>
+            <td>3.0.1</td>
+            <td>7.5</td>
+            <td># Uncontrolled Resource Consumption in trim newlines<br/>@rkesters/gnuplot is an easy to use node module to draw charts using gnuplot and ps2pdf. The trim newlines package before 3.0.1 and 4.x before 4.0.1 for Node.js has an issue related to regular expression denial of service (ReDoS) for the .end() method.<br/>Upgrade to version 3.0.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-43138</td>
+            <td>npm:async</td>
+            <td>&gt;=2.0.0-&lt;2.6.4</td>
+            <td>2.6.4</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in async<br/>A vulnerability exists in Async through 3.2.1 for 3.x and through 2.6.3 for 2.x (fixed in 3.2.2 and 2.6.4), which could let a malicious user obtain privileges via the `mapValues()` method.<br/>Upgrade to version 2.6.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-32803</td>
+            <td>npm:tar</td>
+            <td>&gt;=4.0.0-&lt;4.4.15</td>
+            <td>4.4.18</td>
+            <td>7.5</td>
+            <td># Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning<br/>### Impact<br/><br/>Arbitrary File Creation, Arbitrary File Overwrite, Arbitrary Code Execution<br/><br/>`node tar` aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks.  Additionally, in order to prevent unnecessary `stat` calls to determine whether a given path is a directory, paths are cached when directories are created.<br/><br/>This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory. This order of operations resulted in the directory being created and added to the `node tar` directory cache. When a directory is present in the directory cache, subsequent calls to mkdir for that directory are skipped. However, this is also where `node tar` checks for symlinks occur.<br/><br/>By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass `node tar` symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite.<br/><br/>This issue was addressed in releases 3.2.3, 4.4.15, 5.0.7 and 6.1.2.<br/><br/>### Patches<br/><br/>3.2.3 || 4.4.15 || 5.0.7 || 6.1.2<br/><br/>### Workarounds<br/><br/>Users may work around this vulnerability without upgrading by creating a custom `filter` method which prevents the extraction of symbolic links.<br/><br/>```js<br/>const tar = require('tar')<br/><br/>tar.x({<br/>  file: 'archive.tgz',<br/>  filter: (file, entry) => {<br/>    if (entry.type === 'SymbolicLink') {<br/>      return false<br/>    } else {<br/>      return true<br/>    }<br/>  }<br/>})<br/>```<br/><br/>Users are encouraged to <b>upgrade</b> to the latest patch versions, rather than attempt to sanitize tar input themselves.<br/>Upgrade to version 4.4.15 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-28469</td>
+            <td>npm:glob-parent</td>
+            <td>&lt;5.1.2</td>
+            <td>5.1.2</td>
+            <td>7.5</td>
+            <td># glob parent before 5.1.2 vulnerable to Regular Expression Denial of Service in enclosure regex<br/>This <b>affects</b> the package glob parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.<br/>Upgrade to version 5.1.2 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-7788</td>
+            <td>npm:ini</td>
+            <td>&lt;1.3.6</td>
+            <td>1.3.6</td>
+            <td>7.5</td>
+            <td># ini before 1.3.6 vulnerable to Prototype Pollution via ini.parse<br/>### Overview<br/>The `ini` npm package before version 1.3.6 has a Prototype Pollution vulnerability.<br/><br/>If an attacker submits a malicious INI file to an application that parses it with `ini.parse`, they will pollute the prototype on the application. This can be exploited further depending on the context.<br/><br/>### Patches<br/><br/>This has been patched in 1.3.6<br/><br/>### Steps to reproduce<br/><br/>payload.ini<br/>```<br/>[__proto__ <br/>polluted = "polluted"<br/>```<br/><br/>poc.js:<br/>```<br/>var fs = require('fs')<br/>var ini = require('ini')<br/><br/>var parsed = ini.parse(fs.readFileSync('./payload.ini', 'utf 8'))<br/>console.log(parsed)<br/>console.log(parsed.__proto__)<br/>console.log(polluted)<br/>```<br/><br/>```<br/>> node poc.js<br/>{}<br/>{ polluted: 'polluted' }<br/>{ polluted: 'polluted' }<br/>polluted<br/>```<br/>Upgrade to version 1.3.6 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2019-20920</td>
+            <td>npm:handlebars</td>
+            <td>&gt;=4.0.0-&lt;4.5.3</td>
+            <td>4.5.3</td>
+            <td>7.5</td>
+            <td># Arbitrary Code Execution in Handlebars<br/>Handlebars before 3.0.8 and 4.x before 4.5.3 is vulnerable to Arbitrary Code Execution. The lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript. This can be used to run arbitrary code on a server processing Handlebars templates or in a victim's browser (effectively serving as XSS).<br/>Upgrade to version 4.5.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2019-20922</td>
+            <td>npm:handlebars</td>
+            <td>&gt;=4.0.0-&lt;4.4.5</td>
+            <td>4.4.5</td>
+            <td>7.5</td>
+            <td># Regular Expression Denial of Service in Handlebars<br/>Handlebars before 4.4.5 allows Regular Expression Denial of Service (ReDoS) because of eager matching. The parser may be forced into an endless loop while processing crafted templates. This may allow attackers to exhaust system resources.<br/>Upgrade to version 4.4.5 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2020-28503</td>
+            <td>npm:copy-props</td>
+            <td>&lt;2.0.5</td>
+            <td>2.0.5</td>
+            <td>7.5</td>
+            <td># Prototype Pollution in copy props<br/>The package copy props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality.<br/>Upgrade to version 2.0.5 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>NPM-1082493</td>
+            <td>npm:handlebars</td>
+            <td>&gt;=4.0.0-&lt;4.5.3</td>
+            <td>4.5.3</td>
+            <td>7.5</td>
+            <td># Arbitrary Code Execution in handlebars<br/>Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to Arbitrary Code Execution. The package's lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It is due to an incomplete fix for a [previous issue (https://www.npmjs.com/advisories/1316). This vulnerability can be used to run arbitrary code in a server processing Handlebars templates or on a victim's browser (effectively serving as Cross Site Scripting).<br/><br/><br/>## Recommendation<br/><br/>Upgrade to version 3.0.8, 4.5.3 or later.<br/>Upgrade to version 4.5.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>NPM-1082499</td>
+            <td>npm:handlebars</td>
+            <td>&gt;=4.0.0-&lt;4.5.2</td>
+            <td>4.5.2</td>
+            <td>7.5</td>
+            <td># Arbitrary Code Execution in handlebars<br/>Versions of `handlebars` prior to 3.0.8 or 4.5.2 are vulnerable to Arbitrary Code Execution. The package's lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It can be used to run arbitrary code in a server processing Handlebars templates or on a victim's browser (effectively serving as Cross Site Scripting).<br/><br/>The following template can be used to demonstrate the vulnerability:  <br/>```{{#with "constructor"}}<br/>	{{#with split as |a|}}<br/>		{{pop (push "alert('Vulnerable Handlebars JS');")}}<br/>		{{#with (concat (lookup join (slice 0 1)))}}<br/>			{{#each (slice 2 3)}}<br/>				{{#with (apply 0 a)}}<br/>					{{.}}<br/>				{{/with}}<br/>			{{/each}}<br/>		{{/with}}<br/>	{{/with}}<br/>{{/with}}```<br/><br/><br/>## Recommendation<br/><br/>Upgrade to version 3.0.8, 4.5.2 or later.<br/>Upgrade to version 4.5.2 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-23337</td>
+            <td>npm:lodash</td>
+            <td>&lt;4.17.21</td>
+            <td>4.17.21</td>
+            <td>7.5</td>
+            <td># Command Injection in lodash<br/>`lodash` versions prior to 4.17.21 are vulnerable to Command Injection via the template function.<br/>Upgrade to version 4.17.21 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2022-21681</td>
+            <td>npm:marked</td>
+            <td>&lt;4.0.10</td>
+            <td>4.0.10</td>
+            <td>7.5</td>
+            <td># Inefficient Regular Expression Complexity in marked<br/>### Impact<br/><br/>_What kind of vulnerability is it?_<br/><br/>Denial of service.<br/><br/>The regular expression `inline.reflinkSearch` may cause catastrophic backtracking against some strings.<br/>PoC is the following.<br/><br/>```javascript<br/>import * as marked from 'marked';<br/><br/>console.log(marked.parse(`[x : x<br/><br/>  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (  [   (`));<br/>```<br/><br/>_Who is <b>impacted</b>?_<br/><br/>Anyone who runs untrusted markdown through marked and does not use a worker with a time limit.<br/><br/>### Patches<br/><br/>_Has the problem been patched?_<br/><br/>Yes<br/><br/>_What versions should users <b>upgrade</b> to?_<br/><br/>4.0.10<br/><br/>### Workarounds<br/><br/>_Is there a way for users to fix or remediate the vulnerability without upgrading?_<br/><br/>Do not run untrusted markdown through marked or run marked on a [worker (https://marked.js.org/using_advanced#workers) thread and set a reasonable time limit to prevent draining resources.<br/><br/>### References<br/><br/>_Are there any links users can visit to find out more?_<br/><br/>  https://marked.js.org/using_advanced#workers<br/>  https://owasp.org/www community/attacks/Regular_expression_Denial_of_Service_ _ReDoS<br/><br/>### For more information<br/><br/>If you have any questions or comments about this advisory:<br/><br/>* Open an issue in [marked (https://github.com/markedjs/marked)<br/><br/>Upgrade to version 4.0.10 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2022-21680</td>
+            <td>npm:marked</td>
+            <td>&lt;4.0.10</td>
+            <td>4.0.10</td>
+            <td>7.5</td>
+            <td># Inefficient Regular Expression Complexity in marked<br/>### Impact<br/><br/>_What kind of vulnerability is it?_<br/><br/>Denial of service.<br/><br/>The regular expression `block.def` may cause catastrophic backtracking against some strings.<br/>PoC is the following.<br/><br/>```javascript<br/>import * as marked from "marked";<br/><br/>marked.parse(`[x :${' '.repeat(1500)}x ${' '.repeat(1500)} x`);<br/>```<br/><br/>_Who is <b>impacted</b>?_<br/><br/>Anyone who runs untrusted markdown through marked and does not use a worker with a time limit.<br/><br/>### Patches<br/><br/>_Has the problem been patched?_<br/><br/>Yes<br/><br/>_What versions should users <b>upgrade</b> to?_<br/><br/>4.0.10<br/><br/>### Workarounds<br/><br/>_Is there a way for users to fix or remediate the vulnerability without upgrading?_<br/><br/>Do not run untrusted markdown through marked or run marked on a [worker (https://marked.js.org/using_advanced#workers) thread and set a reasonable time limit to prevent draining resources.<br/><br/>### References<br/><br/>_Are there any links users can visit to find out more?_<br/><br/>  https://marked.js.org/using_advanced#workers<br/>  https://owasp.org/www community/attacks/Regular_expression_Denial_of_Service_ _ReDoS<br/><br/>### For more information<br/><br/>If you have any questions or comments about this advisory:<br/><br/>* Open an issue in [marked (https://github.com/markedjs/marked)<br/><br/>Upgrade to version 4.0.10 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2021-3807</td>
+            <td>npm:ansi-regex</td>
+            <td>&gt;=3.0.0-&lt;3.0.1</td>
+            <td>3.0.1</td>
+            <td>7.5</td>
+            <td># Inefficient Regular Expression Complexity in chalk/ansi regex<br/>ansi regex is vulnerable to Inefficient Regular Expression Complexity which could lead to a denial of service.<br/>Upgrade to version 3.0.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-2" class="filter-item">
+            <td><span class="chip bg-warning">HIGH</span></td>
+            <td>CVE-2022-3517</td>
+            <td>npm:minimatch</td>
+            <td>&lt;3.0.5</td>
+            <td>3.0.5</td>
+            <td>7.5</td>
+            <td># minimatch ReDoS vulnerability<br/>A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service.<br/>Upgrade to version 3.0.5 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2021-23343</td>
+            <td>npm:path-parse</td>
+            <td>&lt;1.0.7</td>
+            <td>1.0.7</td>
+            <td>5.0</td>
+            <td># Regular Expression Denial of Service in path parse<br/>Affected versions of npm package `path parse` are vulnerable to Regular Expression Denial of Service (ReDoS) via splitDeviceRe, splitTailRe, and splitPathRe regular expressions. ReDoS exhibits polynomial worst case time complexity.<br/>Upgrade to version 1.0.7 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2021-23362</td>
+            <td>npm:hosted-git-info</td>
+            <td>&lt;2.8.9</td>
+            <td>2.8.9</td>
+            <td>5.0</td>
+            <td># Regular Expression Denial of Service in hosted git info<br/>The npm package `hosted git info` before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The <b>affected</b> regular expression exhibits polynomial worst case time complexity<br/>Upgrade to version 2.8.9 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>NPM-1068532</td>
+            <td>npm:handlebars</td>
+            <td>&gt;=4.0.0-&lt;4.4.5</td>
+            <td>4.4.5</td>
+            <td>5.0</td>
+            <td># Denial of Service in handlebars<br/>Affected versions of `handlebars` are vulnerable to Denial of Service. The package's parser may be forced into an endless loop while processing specially crafted templates. This may allow attackers to exhaust system resources leading to Denial of Service.<br/><br/><br/>## Recommendation<br/><br/>Upgrade to version 4.4.5 or later.<br/>Upgrade to version 4.4.5 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2022-21670</td>
+            <td>npm:markdown-it</td>
+            <td>&lt;12.3.2</td>
+            <td>12.3.2</td>
+            <td>5.0</td>
+            <td># Uncontrolled Resource Consumption in markdown it<br/>### Impact<br/><br/>Special patterns with length > 50K chars can slow down parser significantly.<br/><br/>```js<br/>const md = require('markdown it')();<br/><br/>md.render(`x ${' '.repeat(150000)} x   nx`);<br/>```<br/><br/><br/>### Patches<br/><br/>Upgrade to v12.3.2+<br/><br/>### Workarounds<br/><br/>No.<br/><br/>### References<br/><br/>Fix + test sample: https://github.com/markdown it/markdown it/commit/ffc49ab46b5b751cd2be0aabb146f2ef84986101<br/><br/>Upgrade to version 12.3.2 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-7598</td>
+            <td>npm:minimist</td>
+            <td>&lt;0.2.1</td>
+            <td>0.2.1</td>
+            <td>5.0</td>
+            <td># Prototype Pollution in minimist<br/>Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  <br/>Parsing the argument `  __proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `  __proto__=Polluted` raises and uncaught error and crashes the application.  <br/>This is exploitable if attackers have control over the arguments being passed to `minimist`.<br/><br/><br/><br/>## Recommendation<br/><br/>Upgrade to versions 0.2.1, 1.2.3 or later.<br/>Upgrade to version 0.2.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-8244</td>
+            <td>npm:bl</td>
+            <td>&lt;1.2.3</td>
+            <td>1.2.3</td>
+            <td>5.0</td>
+            <td># Remote Memory Exposure in bl<br/>A buffer over read vulnerability exists in bl <4.0.3, <3.0.1, <2.2.1, and <1.2.3 which could allow an attacker to supply user input (even typed) that if it ends up in consume() argument and can become negative, the BufferList state can be corrupted, tricking it into exposing uninitialized memory via regular .slice() calls.<br/>Upgrade to version 1.2.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-15366</td>
+            <td>npm:ajv</td>
+            <td>&lt;6.12.3</td>
+            <td>6.12.3</td>
+            <td>5.0</td>
+            <td># Prototype Pollution in Ajv<br/>An issue was discovered in ajv.validate() in Ajv (aka Another JSON Schema Validator) 6.12.2. A carefully crafted JSON schema could be provided that allows execution of other code by prototype pollution. (While untrusted schemas are recommended against, the worst case of an untrusted schema should be a denial of service, not execution of code.)<br/>Upgrade to version 6.12.3 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-28498</td>
+            <td>npm:elliptic</td>
+            <td>&lt;6.5.4</td>
+            <td>6.5.4</td>
+            <td>5.0</td>
+            <td># Use of a Broken or Risky Cryptographic Algorithm<br/>The npm package `elliptic` before version 6.5.4 are vulnerable to Cryptographic Issues via the secp256k1 implementation in elliptic/ec/key.js. There is no check to confirm that the public key point passed into the derive function actually exists on the secp256k1 curve. This results in the potential for the private key used in this implementation to be revealed after a number of ECDH operations are performed.<br/>Upgrade to version 6.5.4 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2018-16492</td>
+            <td>npm:extend</td>
+            <td>&gt;=3.0.0-&lt;3.0.2</td>
+            <td>3.0.2</td>
+            <td>5.0</td>
+            <td># Prototype Pollution in extend<br/>Versions of `extend` prior to 3.0.2 (for 3.x) and 2.0.2 (for 2.x) are vulnerable to Prototype Pollution. The `extend()` function allows attackers to modify the prototype of Object causing the addition or modification of an existing property that will exist on all objects.<br/><br/><br/><br/><br/>## Recommendation<br/><br/>If you're using `extend` 3.x <b>upgrade</b> to 3.0.2 or later.<br/>If you're using `extend` 2.x <b>upgrade</b> to 2.0.2 or later.<br/>Upgrade to version 3.0.2 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-28500</td>
+            <td>npm:lodash</td>
+            <td>&lt;4.17.21</td>
+            <td>4.17.21</td>
+            <td>5.0</td>
+            <td># Regular Expression Denial of Service (ReDoS) in lodash<br/>All versions of package lodash prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions. Steps to reproduce (provided by reporter Liyuan Chen): var lo = require('lodash'); function build_blank (n) { var ret = "1" for (var i = 0; i < n; i++) { ret += " " } return ret + "1"; } var s = build_blank(50000) var time0 = Date.now(); lo.trim(s) var time_cost0 = Date.now()   time0; console.log("time_cost0: " + time_cost0) var time1 = Date.now(); lo.toNumber(s) var time_cost1 = Date.now()   time1; console.log("time_cost1: " + time_cost1) var time2 = Date.now(); lo.trimEnd(s) var time_cost2 = Date.now()   time2; console.log("time_cost2: " + time_cost2)<br/>Upgrade to version 4.17.21 or later<br/>            </td>
+            <td></td>
+          </tr>
+
+          <tr data-tag="tag-3" class="filter-item">
+            <td><span class="chip bg-dark">MEDIUM</span></td>
+            <td>CVE-2020-7608</td>
+            <td>npm:yargs-parser</td>
+            <td>&lt;=5.0.0</td>
+            <td>5.0.1</td>
+            <td>5.0</td>
+            <td># yargs parser Vulnerable to Prototype Pollution<br/>Affected versions of `yargs parser` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  <br/>Parsing the argument `  foo.__proto__.bar baz'` adds a `bar` property with value `baz` to all objects. This is only exploitable if attackers have control over the arguments being passed to `yargs parser`.<br/><br/><br/><br/>## Recommendation<br/><br/>Upgrade to versions 13.1.2, 15.0.1, 18.1.1 or later.<br/>Upgrade to version 5.0.1 or later<br/>            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container grid-xl" style="height: 3rem; margin-top: 0.8rem; color: #bcc3ce;">
+  <p>Thank you for using <a href="https://shiftleft.io" target="_blank">ShiftLeft</a>. Interested in a NextGen analyzer with higher quality results? Contact us <a href="https://www.shiftleft.io/contact/" target="_blank">here</a></p>
+</div>
+<script type="text/javascript">
+  window.addEventListener("DOMContentLoaded", function(event) {
+      const severityCanvas = document.getElementById("severity-chart");
+      const severityTable = document.getElementById("severity-table");
+      const data = [10, 27, 11, 0]
+      if(severityCanvas && Chart) {
+        Chart.platform.disableCSSInjection = true;
+        Chart.defaults.global.defaultFontColor='white';
+        const severityChart = new Chart(severityCanvas, {
+            type: 'bar',
+            data: {
+              labels: ['Critical', 'High', 'Medium', 'Low'],
+              datasets: [{
+                  label: 'Severity',
+                  data: data,
+                  backgroundColor: [
+                      '#e85600', // Critical
+                      '#ffb700', // High
+                      '#303742', // Medium
+                      '#32b643' // Low
+                  ],
+                  borderWidth: 1
+              }]
+            },
+            options: {
+              maintainAspectRatio: false,
+              scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: "white",
+                        fontSize: 12,
+                        stepSize: 1
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: "white",
+                        fontSize: 12
+                    }
+                }]
+              },
+              layout: {
+                padding: {
+                  left: 50,
+                  right: 0,
+                  top: 50,
+                  bottom: 0
+                }
+              }
+            }
+        });
+        severityChart.canvas.parentNode.style.width = severityTable.style.width - 10;
+      }
+  });
+</script>
+</body>
+</html>

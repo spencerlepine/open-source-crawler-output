@@ -1,0 +1,158 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:e12e468a-6665-4447-90b7-9ca939ca86de",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-23T08:42:25.348Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.3.0"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v3",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/checkout@v3"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-node",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-node@v3",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/setup-node@v3"
+    },
+    {
+      "publisher": "",
+      "group": "docker",
+      "name": "setup-buildx-action",
+      "version": "v2.2.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/docker/setup-buildx-action@v2.2.1",
+      "type": "library",
+      "bom-ref": "pkg:github/docker/setup-buildx-action@v2.2.1"
+    },
+    {
+      "publisher": "",
+      "group": "docker",
+      "name": "login-action",
+      "version": "v2.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/docker/login-action@v2.1.0",
+      "type": "library",
+      "bom-ref": "pkg:github/docker/login-action@v2.1.0"
+    },
+    {
+      "publisher": "",
+      "group": "docker",
+      "name": "build-push-action",
+      "version": "v3.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/docker/build-push-action@v3.2.0",
+      "type": "library",
+      "bom-ref": "pkg:github/docker/build-push-action@v3.2.0"
+    },
+    {
+      "publisher": "",
+      "group": "peter-evans",
+      "name": "dockerhub-description",
+      "version": "v3.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/peter-evans/dockerhub-description@v3.1.1",
+      "type": "library",
+      "bom-ref": "pkg:github/peter-evans/dockerhub-description@v3.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "upload-artifact",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/upload-artifact@v3",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/upload-artifact@v3"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "download-artifact",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/download-artifact@v3",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/download-artifact@v3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "github/codeql-action/init",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/github/codeql-action/init@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/github/codeql-action/init@v2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "github/codeql-action/analyze",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/github/codeql-action/analyze@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/github/codeql-action/analyze@v2"
+    },
+    {
+      "publisher": "",
+      "group": "crazy-max",
+      "name": "ghaction-github-labeler",
+      "version": "v4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/crazy-max/ghaction-github-labeler@v4",
+      "type": "library",
+      "bom-ref": "pkg:github/crazy-max/ghaction-github-labeler@v4"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/auto-updater.yml, /github/workspace/.github/workflows/branch-imager.yml, /github/workspace/.github/workflows/continuous-deployment.yml, /github/workspace/.github/workflows/continuous-integration.yml, /github/workspace/.github/workflows/labelsync.yml",
+      "comment": "Package file"
+    }
+  ]
+}

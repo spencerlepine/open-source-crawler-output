@@ -1,0 +1,3505 @@
+## Detected Typos
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/rattata-alola.json:2482:9
+     |
+2482 |   "otherFormes": ["rattata"],
+     |         ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/rattata-alola.json:2584:12
+     |
+2584 |   "cosmeticFormes": null,
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/syclar.json:4619:9
+     |
+4619 |   "otherFormes": null,
+     |         ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/syclar.json:4688:12
+     |
+4688 |   "cosmeticFormes": null,
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/rattata-alola.json:5068:13
+     |
+5068 |       "otherFormes": ["raticate", "raticatealolatotem"],
+     |             ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/rattata-alola.json:5170:16
+     |
+5170 |       "cosmeticFormes": null,
+     |                ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/syclar.json:9309:13
+     |
+9309 |       "otherFormes": null,
+     |             ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/syclar.json:9392:16
+     |
+9392 |       "cosmeticFormes": null,
+     |                ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/dragonair.json:10535:9
+      |
+10535 |   "otherFormes": null,
+      |         ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/dragonair.json:10599:12
+      |
+10599 |   "cosmeticFormes": null,
+      |            ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:10717:9
+      |
+10717 |   "otherFormes": ["eeveestarter", "eeveegmax"],
+      |         ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:10798:12
+      |
+10798 |   "cosmeticFormes": null,
+      |            ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/dragonair.json:21136:13
+      |
+21136 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/dragonair.json:21221:16
+      |
+21221 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:21507:13
+      |
+21507 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:21555:16
+      |
+21555 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/dragonair.json:31762:13
+      |
+31762 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/dragonair.json:31826:16
+      |
+31826 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/beldum.json:914:9
+    |
+914 |   "otherFormes": null,
+    |         ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/beldum.json:983:12
+    |
+983 |   "cosmeticFormes": null,
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/beldum.json:1899:13
+     |
+1899 |       "otherFormes": null,
+     |             ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/beldum.json:1982:16
+     |
+1982 |       "cosmeticFormes": null,
+     |                ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:32266:13
+      |
+32266 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:32329:16
+      |
+32329 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/beldum.json:12232:17
+      |
+12232 |           "otherFormes": ["metagrossmega"],
+      |                 ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/beldum.json:12329:20
+      |
+12329 |           "cosmeticFormes": null,
+      |                    ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:43040:13
+      |
+43040 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:43088:16
+      |
+43088 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `exluding` should be `excluding`, `exuding`
+  --> ./tests/testUtils/full-data-responses/eevee.json:43100:308
+      |
+43100 |           "isFieldAbility": "If a Pokémon with Synchronize in the first slot in the party (even if fainted), chance of encountering a wild Pokémon with the same nature will be 50%. In Pokémon Sword and Shield however, all wild Pokémon are guaranteed to have the same nature as the Pokémon with Synchronize, exluding gift Pokémon and Pokémon obtained from max raid battles. Roaming Pokémon, Gift Pokémon (excluding Pokémon obtained via mystery gift or eggs in Omega Ruby and Alpha Sapphire to Ultra Sun/Moon), Stationary Pokémon in Pokémon Emerald, Pokémon in the Pokewalker and Pokémon found in Entree Forest are also not affected by this ability.",
+      |                                                                                                                                                                                                                                                                                                                    ^^^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/salamence.json:10659:9
+      |
+10659 |   "otherFormes": ["salamencemega"],
+      |         ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/salamence.json:10744:12
+      |
+10744 |   "cosmeticFormes": null,
+      |            ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:53799:13
+      |
+53799 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:53861:16
+      |
+53861 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `exluding` should be `excluding`, `exuding`
+  --> ./tests/testUtils/full-data-responses/eevee.json:53873:308
+      |
+53873 |           "isFieldAbility": "If a Pokémon with Synchronize in the first slot in the party (even if fainted), chance of encountering a wild Pokémon with the same nature will be 50%. In Pokémon Sword and Shield however, all wild Pokémon are guaranteed to have the same nature as the Pokémon with Synchronize, exluding gift Pokémon and Pokémon obtained from max raid battles. Roaming Pokémon, Gift Pokémon (excluding Pokémon obtained via mystery gift or eggs in Omega Ruby and Alpha Sapphire to Ultra Sun/Moon), Stationary Pokémon in Pokémon Emerald, Pokémon in the Pokewalker and Pokémon found in Entree Forest are also not affected by this ability.",
+      |                                                                                                                                                                                                                                                                                                                    ^^^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/salamence.json:21406:13
+      |
+21406 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/salamence.json:21470:16
+      |
+21470 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/salamence.json:29303:17
+      |
+29303 |           "otherFormes": null,
+      |                 ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/salamence.json:29367:20
+      |
+29367 |           "cosmeticFormes": null,
+      |                    ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/queries/pokemon.ts:75:12
+   |
+75 |       otherFormes
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/queries/pokemon.ts:103:15
+    |
+103 |       cosmeticFormes
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/queries/pokemon-all-data.ts:197:10
+    |
+197 |     otherFormes
+    |          ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/queries/pokemon-all-data.ts:219:13
+    |
+219 |     cosmeticFormes
+    |             ^^^^^^
+    |
+error: `watchog` should be `watchdog`
+  --> ./tests/scenarios/pokemon/getAllPokemonSpecies.test.ts:1344:15
+     |
+1344 |       { key: 'watchog', species: 'watchog' },
+     |               ^^^^^^^
+     |
+error: `watchog` should be `watchdog`
+  --> ./tests/scenarios/pokemon/getAllPokemonSpecies.test.ts:1344:35
+     |
+1344 |       { key: 'watchog', species: 'watchog' },
+     |                                   ^^^^^^^
+     |
+error: `noice` should be `noise`, `nice`, `notice`
+  --> ./tests/scenarios/pokemon/getAllPokemonSpecies.test.ts:2174:26
+     |
+2174 |         species: 'eiscue-noice'
+     |                          ^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/scenarios/pokemon/getPokemon.test.ts:139:17
+    |
+139 |         cosmeticFormes: null,
+    |                 ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/scenarios/pokemon/getPokemon.test.ts:166:14
+    |
+166 |         otherFormes: ['greninjaash'],
+    |              ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/scenarios/pokemon/getPokemon.test.ts:217:14
+    |
+217 |         otherFormes: null,
+    |              ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/scenarios/pokemon/getPokemon.test.ts:243:17
+    |
+243 |         cosmeticFormes: null
+    |                 ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/scenarios/pokemon/getPokemon.test.ts:282:14
+    |
+282 |         otherFormes: ['typhlosion'],
+    |              ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/scenarios/pokemon/getPokemon.test.ts:305:17
+    |
+305 |         cosmeticFormes: null
+    |                 ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./CHANGELOG.md:231:12
+    |
+231 | - add otherFormes to all separate formes ([9a237f6](https://github.com/favware/graphql-pokemon/commit/9a237f6cb6d1bb21afad491c73b6d4cd3e3f2b9d))
+    |            ^^^^^^
+    |
+error: `formes` should be `forms`, `formed`
+  --> ./CHANGELOG.md:231:35
+    |
+231 | - add otherFormes to all separate formes ([9a237f6](https://github.com/favware/graphql-pokemon/commit/9a237f6cb6d1bb21afad491c73b6d4cd3e3f2b9d))
+    |                                   ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./CHANGELOG.md:235:39
+    |
+235 | - add missing `baseSpecies` and `otherFormes` ([8f9c13a](https://github.com/favware/graphql-pokemon/commit/8f9c13ae2413ce9dc4d83328dd09ee5874d4158b))
+    |                                       ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./CHANGELOG.md:382:22
+    |
+382 | - fixed the `cosmeticFormes` for `flabébé` ([ae0ee83](https://github.com/favware/graphql-pokemon/commit/ae0ee83464aad40316dc866d7490672511674d08))
+    |                      ^^^^^^
+    |
+error: `aliasses` should be `aliases`
+  --> ./CHANGELOG.md:526:3
+    |
+526 |   aliasses have drastically changed so this should be considered a breaking change.
+    |   ^^^^^^^^
+    |
+error: `ded` should be `dead`
+  --> ./CHANGELOG.md:589:51
+    |
+589 | - **abilities:** fixed coaching description ([f480ded](https://github.com/favware/graphql-pokemon/commit/f480ded2cbf02e3da925003ae729bcf5cde0cb30))
+    |                                                   ^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./CHANGELOG.md:607:15
+    |
+607 | - add cosmeticFormes to DexEntry ([9ea20c0](https://github.com/favware/graphql-pokemon/commit/9ea20c0777fbe8f7b872cfe77254ec74acdeede7))
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./CHANGELOG.md:614:30
+    |
+614 | - **dex:** implement cosmeticFormes ([45c503a](https://github.com/favware/graphql-pokemon/commit/45c503aed920b6e9bcf7f43f0dcdea5de308ad0c))
+    |                              ^^^^^^
+    |
+error: `ded` should be `dead`
+  --> ./CHANGELOG.md:762:94
+    |
+762 | - update smogon tierlists ([#89](https://github.com/favware/graphql-pokemon/issues/89)) ([313ded3](https://github.com/favware/graphql-pokemon/commit/313ded3054919f4ef2ebb81282c17f9e11a7364e))
+    |                                                                                              ^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:64572:13
+      |
+64572 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:64620:16
+      |
+64620 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `watchog` should be `watchdog`
+  --> ./graphql/enums.graphql:1008:3
+     |
+1008 |   watchog
+     |   ^^^^^^^
+     |
+error: `formes` should be `forms`, `formed`
+  --> ./graphql/schema.graphql:67:71
+   |
+67 |   "Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data."
+   |                                                                       ^^^^^^
+   |
+error: `formes` should be `forms`, `formed`
+  --> ./graphql/schema.graphql:67:90
+   |
+67 |   "Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data."
+   |                                                                                          ^^^^^^
+   |
+error: `formes` should be `forms`, `formed`
+  --> ./graphql/schema.graphql:67:146
+   |
+67 |   "Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data."
+   |                                                                                                                                                  ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./graphql/schema.graphql:68:11
+   |
+68 |   cosmeticFormes: [String!]
+   |           ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./graphql/schema.graphql:116:8
+    |
+116 |   otherFormes: [String!]
+    |        ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/defaultDocument.ts:211:8
+    |
+211 |   otherFormes
+    |        ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/defaultDocument.ts:233:11
+    |
+233 |   cosmeticFormes
+    |           ^^^^^^
+    |
+error: `formes` should be `forms`, `formed`
+  --> ./src/lib/mappers/learnsetMapper.ts:172:66
+    |
+172 |   // If there is still no learnset then try to get it from other formes
+    |                                                                  ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mappers/learnsetMapper.ts:179:54
+    |
+179 |     for (const otherForm of pokemonFromDataset?.otherFormes ?? []) {
+    |                                                      ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mappers/pokemonMapper.ts:485:24
+    |
+485 |     propertyKey: 'otherFormes',
+    |                        ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mappers/pokemonMapper.ts:486:30
+    |
+486 |     propertyValue: data.otherFormes,
+    |                              ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mappers/pokemonMapper.ts:488:48
+    |
+488 |     fieldAccessor: `${resolvedRecursingAs}otherFormes`
+    |                                                ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mappers/pokemonMapper.ts:492:27
+    |
+492 |     propertyKey: 'cosmeticFormes',
+    |                           ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mappers/pokemonMapper.ts:493:33
+    |
+493 |     propertyValue: data.cosmeticFormes,
+    |                                 ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mappers/pokemonMapper.ts:495:51
+    |
+495 |     fieldAccessor: `${resolvedRecursingAs}cosmeticFormes`
+    |                                                   ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:75331:13
+      |
+75331 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:75379:16
+      |
+75379 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:86090:13
+      |
+86090 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:86152:16
+      |
+86152 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:96863:13
+      |
+96863 |       "otherFormes": null,
+      |             ^^^^^^
+      |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./tests/testUtils/full-data-responses/eevee.json:96911:16
+      |
+96911 |       "cosmeticFormes": null,
+      |                ^^^^^^
+      |
+error: `watchog` should be `watchdog`
+  --> ./src/lib/assets/learnsets.ts:47576:6
+      |
+47576 |     'watchog',
+      |      ^^^^^^^
+      |
+error: `noice` should be `noise`, `nice`, `notice`
+  --> ./src/lib/assets/flavorText.json:63974:7
+      |
+63974 |   "875noice": [
+      |       ^^^^^
+      |
+error: `Noice` should be `Noise`, `Nice`, `Notice`
+  --> ./src/lib/assets/abilities.ts:715:162
+    |
+715 |       desc: 'If this Pokémon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Hail begins or when Eiscue switches in while Hail is active. Confusion damage also breaks the ice face.',
+    |                                                                                                                                                                  ^^^^^
+    |
+error: `exluding` should be `excluding`, `exuding`
+  --> ./src/lib/assets/abilities.ts:1852:288
+     |
+1852 |         'If a Pokémon with Synchronize in the first slot in the party (even if fainted), chance of encountering a wild Pokémon with the same nature will be 50%. In Pokémon Sword and Shield however, all wild Pokémon are guaranteed to have the same nature as the Pokémon with Synchronize, exluding gift Pokémon and Pokémon obtained from max raid battles. Roaming Pokémon, Gift Pokémon (excluding Pokémon obtained via mystery gift or eggs in Omega Ruby and Alpha Sapphire to Ultra Sun/Moon), Stationary Pokémon in Pokémon Emerald, Pokémon in the Pokewalker and Pokémon found in Entree Forest are also not affected by this ability.',
+     |                                                                                                                                                                                                                                                                                                ^^^^^^^^
+     |
+error: `Tthe` should be `The`
+  --> ./src/lib/assets/moves.ts:8217:10
+     |
+8217 |         "Tthe Pokémon cuts some of its HP to recover another Pokémon's HP. It can be learned by Miltank, Skiddo and Gogoat by leveling up.",
+     |          ^^^^
+     |
+error: `playaround` should be `playground`
+  --> ./src/lib/assets/moves.ts:9290:18
+     |
+9290 |       aliases: ['playaround']
+     |                  ^^^^^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokemon-source.d.ts:96:13
+   |
+96 |     cosmeticFormes?: string[];
+   |             ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokemon-source.d.ts:139:10
+    |
+139 |     otherFormes?: string[];
+    |          ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:206:12
+    |
+206 |       otherFormes: ['greninjaash'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:232:12
+    |
+232 |       otherFormes: ['greninja'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:407:15
+    |
+407 |       cosmeticFormes: [
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:435:12
+    |
+435 |       otherFormes: ['vivillonfancy', 'vivillonpokeball'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:481:12
+    |
+481 |       otherFormes: ['vivillon', 'vivillonpokeball'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:505:12
+    |
+505 |       otherFormes: ['vivillon', 'vivillonfancy'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:564:15
+    |
+564 |       cosmeticFormes: ['Flabébé-Blue', 'Flabébé-Orange', 'Flabébé-White', 'Flabébé-Yellow'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:602:15
+    |
+602 |       cosmeticFormes: ['Floette-Blue', 'Floette-Orange', 'Floette-White', 'Floette-Yellow'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:652:15
+    |
+652 |       cosmeticFormes: ['Florges-Blue', 'Florges-Orange', 'Florges-White', 'Florges-Yellow'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:767:15
+    |
+767 |       cosmeticFormes: [
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:843:12
+    |
+843 |       otherFormes: ['meowsticf'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:870:12
+    |
+870 |       otherFormes: ['meowstic'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:941:12
+    |
+941 |       otherFormes: ['aegislashblade'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:968:12
+    |
+968 |       otherFormes: ['aegislash'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1505:12
+     |
+1505 |       otherFormes: ['sliggoohisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1533:12
+     |
+1533 |       otherFormes: ['sliggoo'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1561:12
+     |
+1561 |       otherFormes: ['goodrahisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1588:12
+     |
+1588 |       otherFormes: ['goodra'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1683:12
+     |
+1683 |       otherFormes: ['pumpkaboosmall', 'pumpkaboolarge', 'pumpkaboosuper'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1709:12
+     |
+1709 |       otherFormes: ['pumpkaboo', 'pumpkaboolarge', 'pumpkaboosuper'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1734:12
+     |
+1734 |       otherFormes: ['pumpkaboo', 'pumpkaboosmall', 'pumpkaboosuper'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1759:12
+     |
+1759 |       otherFormes: ['pumpkaboo', 'pumpkaboosmall', 'pumpkaboolarge'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1783:12
+     |
+1783 |       otherFormes: ['gourgeistsmall', 'gourgeistlarge', 'gourgeistsuper'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1806:12
+     |
+1806 |       otherFormes: ['gourgeist', 'gourgeistlarge', 'gourgeistsuper'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1837:12
+     |
+1837 |       otherFormes: ['gourgeist', 'gourgeistsmall', 'gourgeistsuper'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1864:12
+     |
+1864 |       otherFormes: ['gourgeist', 'gourgeistsmall', 'gourgeistlarge'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1910:12
+     |
+1910 |       otherFormes: ['avalugghisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:1937:12
+     |
+1937 |       otherFormes: ['avalugg'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2010:12
+     |
+2010 |       otherFormes: ['xerneasneutral'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2035:12
+     |
+2035 |       otherFormes: ['xerneas'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2078:12
+     |
+2078 |       otherFormes: ['zygarde10', 'zygardecomplete'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2103:12
+     |
+2103 |       otherFormes: ['zygarde', 'zygardecomplete'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2128:12
+     |
+2128 |       otherFormes: ['zygarde', 'zygarde10'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:137:12
+    |
+137 |       otherFormes: ['typhlosionhisui'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2150:12
+     |
+2150 |       otherFormes: ['dianciemega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:164:12
+    |
+164 |       otherFormes: ['typhlosion'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2175:12
+     |
+2175 |       otherFormes: ['diancie'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2197:12
+     |
+2197 |       otherFormes: ['hoopaunbound'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen6.ts:2222:12
+     |
+2222 |       otherFormes: ['hoopa'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:68:12
+   |
+68 |       otherFormes: ['sceptilemega'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:94:12
+   |
+94 |       otherFormes: ['sceptile'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:509:12
+    |
+509 |       otherFormes: ['pichuspikyeared'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:163:12
+    |
+163 |       otherFormes: ['blazikenmega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:534:12
+    |
+534 |       otherFormes: ['pichu'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:189:12
+    |
+189 |       otherFormes: ['blaziken'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:257:12
+    |
+257 |       otherFormes: ['swampertmega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:283:12
+    |
+283 |       otherFormes: ['swampert'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:351:12
+    |
+351 |       otherFormes: ['zigzagoongalar'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:741:12
+    |
+741 |       otherFormes: ['ampharosmega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:377:12
+    |
+377 |       otherFormes: ['zigzagoon'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:767:12
+    |
+767 |       otherFormes: ['ampharos'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:399:12
+    |
+399 |       otherFormes: ['linoonegalar'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:427:12
+    |
+427 |       otherFormes: ['linoone'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1177:12
+     |
+1177 |       otherFormes: ['slowkinggalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:840:12
+    |
+840 |       otherFormes: ['gardevoirmega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1204:12
+     |
+1204 |       otherFormes: ['slowking'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:866:12
+    |
+866 |       otherFormes: ['gardevoir'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1241:15
+     |
+1241 |       cosmeticFormes: [
+     |               ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1461:12
+     |
+1461 |       otherFormes: ['steelixmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1487:12
+     |
+1487 |       otherFormes: ['steelix'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1553:12
+     |
+1553 |       otherFormes: ['qwilfishhisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1579:12
+     |
+1579 |       otherFormes: ['qwilfish'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1606:12
+     |
+1606 |       otherFormes: ['scizormega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1632:12
+     |
+1632 |       otherFormes: ['scizor'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1318:12
+     |
+1318 |       otherFormes: ['sableyemega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1343:12
+     |
+1343 |       otherFormes: ['sableye'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1675:12
+     |
+1675 |       otherFormes: ['heracrossmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1365:12
+     |
+1365 |       otherFormes: ['mawilemega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1700:12
+     |
+1700 |       otherFormes: ['heracross'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1390:12
+     |
+1390 |       otherFormes: ['mawile'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1723:12
+     |
+1723 |       otherFormes: ['sneaselhisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1747:12
+     |
+1747 |       otherFormes: ['sneasel'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1459:12
+     |
+1459 |       otherFormes: ['aggronmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1485:12
+     |
+1485 |       otherFormes: ['aggron'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1529:12
+     |
+1529 |       otherFormes: ['medichammega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1555:12
+     |
+1555 |       otherFormes: ['medicham'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1906:12
+     |
+1906 |       otherFormes: ['corsolagalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:1932:12
+     |
+1932 |       otherFormes: ['corsola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1600:12
+     |
+1600 |       otherFormes: ['manectricmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1626:12
+     |
+1626 |       otherFormes: ['manectric'],
+     |            ^^^^^^
+     |
+error: `mantain` should be `maintain`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:2024:18
+     |
+2024 |       aliases: ['mantain']
+     |                  ^^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:2086:12
+     |
+2086 |       otherFormes: ['houndoommega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:2112:12
+     |
+2112 |       otherFormes: ['houndoom'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1823:12
+     |
+1823 |       otherFormes: ['sharpedomega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1849:12
+     |
+1849 |       otherFormes: ['sharpedo'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1939:12
+     |
+1939 |       otherFormes: ['cameruptmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:1965:12
+     |
+1965 |       otherFormes: ['camerupt'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:2533:12
+     |
+2533 |       otherFormes: ['tyranitarmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2210:12
+     |
+2210 |       otherFormes: ['altariamega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen2.ts:2559:12
+     |
+2559 |       otherFormes: ['tyranitar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2236:12
+     |
+2236 |       otherFormes: ['altaria'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:68:12
+   |
+68 |       otherFormes: ['decidueyehisui'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:95:12
+   |
+95 |       otherFormes: ['decidueye'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2611:12
+     |
+2611 |       otherFormes: ['castformsunny', 'castformrainy', 'castformsnowy'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2636:12
+     |
+2636 |       otherFormes: ['castform', 'castformrainy', 'castformsnowy'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2661:12
+     |
+2661 |       otherFormes: ['castform', 'castformsunny', 'castformsnowy'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2686:12
+     |
+2686 |       otherFormes: ['castform', 'castformsunny', 'castformrainy'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2752:12
+     |
+2752 |       otherFormes: ['banettemega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2778:12
+     |
+2778 |       otherFormes: ['banette'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:352:12
+    |
+352 |       otherFormes: ['gumshoostotem'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:378:12
+    |
+378 |       otherFormes: ['gumshoos'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2889:12
+     |
+2889 |       otherFormes: ['absolmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2914:12
+     |
+2914 |       otherFormes: ['absol'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:447:12
+    |
+447 |       otherFormes: ['vikavolttotem'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:473:12
+    |
+473 |       otherFormes: ['vikavolt'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:2980:12
+     |
+2980 |       otherFormes: ['glaliemega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3006:12
+     |
+3006 |       otherFormes: ['glalie'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:541:12
+    |
+541 |       otherFormes: ['oricoriopompom', 'oricoriopau', 'oricoriosensu'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:566:12
+    |
+566 |       otherFormes: ['oricorio', 'oricoriopau', 'oricoriosensu'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:591:12
+    |
+591 |       otherFormes: ['oricorio', 'oricoriopompom', 'oricoriosensu'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:620:12
+    |
+620 |       otherFormes: ['oricorio', 'oricoriopompom', 'oricoriopau'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:665:12
+    |
+665 |       otherFormes: ['ribombeetotem'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3253:12
+     |
+3253 |       otherFormes: ['salamencemega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:691:12
+    |
+691 |       otherFormes: ['ribombee'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3279:12
+     |
+3279 |       otherFormes: ['salamence'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:738:12
+    |
+738 |       otherFormes: ['lycanrocmidnight', 'lycanrocdusk'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3348:12
+     |
+3348 |       otherFormes: ['metagrossmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3374:12
+     |
+3374 |       otherFormes: ['metagross'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:765:12
+    |
+765 |       otherFormes: ['lycanroc', 'lycanrocdusk'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:792:12
+    |
+792 |       otherFormes: ['lycanroc', 'lycanrocmidnight'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3459:12
+     |
+3459 |       otherFormes: ['latiasmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:816:12
+    |
+816 |       otherFormes: ['wishiwashischool'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3484:12
+     |
+3484 |       otherFormes: ['latias'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:841:12
+    |
+841 |       otherFormes: ['wishiwashi'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3505:12
+     |
+3505 |       otherFormes: ['latiosmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3530:12
+     |
+3530 |       otherFormes: ['latios'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3551:12
+     |
+3551 |       otherFormes: ['kyogreprimal'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3576:12
+     |
+3576 |       otherFormes: ['kyogre'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3598:12
+     |
+3598 |       otherFormes: ['groudonprimal'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3623:12
+     |
+3623 |       otherFormes: ['groudon'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3645:12
+     |
+3645 |       otherFormes: ['rayquazamega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:975:12
+    |
+975 |       otherFormes: ['araquanidtotem'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3670:12
+     |
+3670 |       otherFormes: ['rayquaza'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1001:12
+     |
+1001 |       otherFormes: ['araquanid'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3714:12
+     |
+3714 |       otherFormes: ['deoxysattack', 'deoxysdefense', 'deoxysspeed'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3739:12
+     |
+3739 |       otherFormes: ['deoxys', 'deoxysdefense', 'deoxysspeed'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1046:12
+     |
+1046 |       otherFormes: ['lurantistotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3764:12
+     |
+3764 |       otherFormes: ['deoxys', 'deoxysattack', 'deoxysspeed'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1072:12
+     |
+1072 |       otherFormes: ['lurantis'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen3.ts:3789:12
+     |
+3789 |       otherFormes: ['deoxys', 'deoxysattack', 'deoxysdefense'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1162:12
+     |
+1162 |       otherFormes: ['salazzletotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1188:12
+     |
+1188 |       otherFormes: ['salazzle'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1522:12
+     |
+1522 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:584:15
+    |
+584 |       cosmeticFormes: ['Burmy-Sandy', 'Burmy-Trash'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1567:12
+     |
+1567 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:617:12
+    |
+617 |       otherFormes: ['wormadamsandy', 'wormadamtrash'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1611:12
+     |
+1611 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:644:12
+    |
+644 |       otherFormes: ['wormadam', 'wormadamtrash'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:671:12
+    |
+671 |       otherFormes: ['wormadam', 'wormadamsandy'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1655:12
+     |
+1655 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1699:12
+     |
+1699 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1743:12
+     |
+1743 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1787:12
+     |
+1787 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:851:12
+    |
+851 |       otherFormes: ['cherrimsunshine'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1831:12
+     |
+1831 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:878:12
+    |
+878 |       otherFormes: ['cherrim'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:894:15
+    |
+894 |       cosmeticFormes: ['Shellos-East'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1875:12
+     |
+1875 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:918:15
+    |
+918 |       cosmeticFormes: ['Gastrodon-East'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1919:12
+     |
+1919 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:1963:12
+     |
+1963 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2007:12
+     |
+2007 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1041:12
+     |
+1041 |       otherFormes: ['lopunnymega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2051:12
+     |
+2051 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1067:12
+     |
+1067 |       otherFormes: ['lopunny'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2095:12
+     |
+2095 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2139:12
+     |
+2139 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2183:12
+     |
+2183 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2227:12
+     |
+2227 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2271:12
+     |
+2271 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2304:15
+     |
+2304 |       cosmeticFormes: ['Minior-Orange', 'Minior-Yellow', 'Minior-Green', 'Minior-Blue', 'Minior-Indigo', 'Minior-Violet'],
+     |               ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2313:12
+     |
+2313 |       otherFormes: ['miniormeteor'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2338:12
+     |
+2338 |       otherFormes: ['minior'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1447:12
+     |
+1447 |       otherFormes: ['garchompmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2401:12
+     |
+2401 |       otherFormes: ['togedemarutotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1473:12
+     |
+1473 |       otherFormes: ['garchomp'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2425:12
+     |
+2425 |       otherFormes: ['togedemaru'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2447:12
+     |
+2447 |       otherFormes: ['mimikyubusted', 'mimikyutotem', 'mimikyubustedtotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1539:12
+     |
+1539 |       otherFormes: ['lucariomega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2472:12
+     |
+2472 |       otherFormes: ['mimikyu', 'mimikyutotem', 'mimikyubustedtotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1565:12
+     |
+1565 |       otherFormes: ['lucario'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2496:12
+     |
+2496 |       otherFormes: ['mimikyu', 'mimikyubusted', 'mimikyubustedtotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2521:12
+     |
+2521 |       otherFormes: ['mimikyu', 'mimikyubusted', 'mimikyutotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2654:12
+     |
+2654 |       otherFormes: ['kommoototem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1833:12
+     |
+1833 |       otherFormes: ['abomasnowmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:1859:12
+     |
+1859 |       otherFormes: ['abomasnow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:2681:12
+     |
+2681 |       otherFormes: ['kommoo'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2205:12
+     |
+2205 |       otherFormes: ['gallademega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2231:12
+     |
+2231 |       otherFormes: ['gallade'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3026:12
+     |
+3026 |       otherFormes: ['necrozmaduskmane', 'necrozmadawnwings', 'necrozmaultra'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2321:12
+     |
+2321 |       otherFormes: ['rotomheat', 'rotomwash', 'rotomfrost', 'rotomfan', 'rotommow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3051:12
+     |
+3051 |       otherFormes: ['necrozma', 'necrozmadawnwings', 'necrozmaultra'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2346:12
+     |
+2346 |       otherFormes: ['rotom', 'rotomwash', 'rotomfrost', 'rotomfan', 'rotommow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3086:12
+     |
+3086 |       otherFormes: ['necrozma', 'necrozmaduskmane', 'necrozmaultra'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2371:12
+     |
+2371 |       otherFormes: ['rotom', 'rotomheat', 'rotomfrost', 'rotomfan', 'rotommow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2396:12
+     |
+2396 |       otherFormes: ['rotom', 'rotomheat', 'rotomwash', 'rotomfan', 'rotommow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3121:12
+     |
+3121 |       otherFormes: ['necrozma', 'necrozmaduskmane', 'necrozmadawnwings'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2421:12
+     |
+2421 |       otherFormes: ['rotom', 'rotomheat', 'rotomwash', 'rotomfrost', 'rotommow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3143:12
+     |
+3143 |       otherFormes: ['magearnaoriginal'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2446:12
+     |
+2446 |       otherFormes: ['rotom', 'rotomheat', 'rotomwash', 'rotomfrost', 'rotomfan'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3168:12
+     |
+3168 |       otherFormes: ['magearna'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2531:12
+     |
+2531 |       otherFormes: ['dialgaorigin'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2555:12
+     |
+2555 |       otherFormes: ['dialga'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2578:12
+     |
+2578 |       otherFormes: ['palkiaorigin'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2603:12
+     |
+2603 |       otherFormes: ['palkia'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2668:12
+     |
+2668 |       otherFormes: ['giratinaorigin'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3340:12
+     |
+3340 |       otherFormes: ['melmetalgmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2693:12
+     |
+2693 |       otherFormes: ['giratina'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen7.ts:3366:12
+     |
+3366 |       otherFormes: ['melmetal'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:33:15
+   |
+33 |       cosmeticFormes: ['Pokestar UFO-PropU1'],
+   |               ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2800:12
+     |
+2800 |       otherFormes: ['shayminsky'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:40:12
+   |
+40 |       otherFormes: ['Pokestar UFO-2', 'Pokestar UFO-PropU2'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2825:12
+     |
+2825 |       otherFormes: ['shaymin'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:66:12
+   |
+66 |       otherFormes: ['Pokestar UFO', 'Pokestar UFO-PropU2'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2848:12
+     |
+2848 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:83:15
+   |
+83 |       cosmeticFormes: ['Pokestar Brycen-Man-Prop'],
+   |               ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2892:12
+     |
+2892 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:106:15
+    |
+106 |       cosmeticFormes: ['Pokestar MT-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2935:12
+     |
+2935 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:129:15
+    |
+129 |       cosmeticFormes: ['Pokestar MT2-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:2978:12
+     |
+2978 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:152:15
+    |
+152 |       cosmeticFormes: ['Pokestar Transport-Prop'],
+    |               ^^^^^^
+    |
+error: `propt` should be `prompt`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:166:61
+    |
+166 |       aliases: ['pokestarpropt1', 'pokestartransportprop', 'propt1', 'transport', 'transportprop']
+    |                                                             ^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3021:12
+     |
+3021 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:175:15
+    |
+175 |       cosmeticFormes: ['Pokestar Giant-2', 'Pokestar Giant-PropO1', 'Pokestar Giant-PropO2'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3064:12
+     |
+3064 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:213:15
+    |
+213 |       cosmeticFormes: ['Pokestar Humanoid-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3107:12
+     |
+3107 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:236:15
+    |
+236 |       cosmeticFormes: ['Pokestar Monster-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3150:12
+     |
+3150 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:259:15
+    |
+259 |       cosmeticFormes: ['Pokestar F-00-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3193:12
+     |
+3193 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:282:15
+    |
+282 |       cosmeticFormes: ['Pokestar F-002-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3236:12
+     |
+3236 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:305:15
+    |
+305 |       cosmeticFormes: ['Pokestar Spirit-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3279:12
+     |
+3279 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:328:15
+    |
+328 |       cosmeticFormes: ['Pokestar Black Door-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3322:12
+     |
+3322 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:351:15
+    |
+351 |       cosmeticFormes: ['Pokestar White Door-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3365:12
+     |
+3365 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:374:15
+    |
+374 |       cosmeticFormes: ['Pokestar Black Belt-Prop'],
+    |               ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3404:12
+     |
+3404 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/pokestar.ts:405:12
+    |
+405 |       otherFormes: ['Pokestar UFO', 'Pokestar UFO-U2'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3451:12
+     |
+3451 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3494:12
+     |
+3494 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3537:12
+     |
+3537 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3580:12
+     |
+3580 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen4.ts:3623:12
+     |
+3623 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:89:12
+   |
+89 |       otherFormes: ['venusaurmega', 'venusaurgmax'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:115:12
+    |
+115 |       otherFormes: ['venusaur', 'venusaurmega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:139:12
+    |
+139 |       otherFormes: ['venusaur', 'venusaurgmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:208:12
+    |
+208 |       otherFormes: ['charizardmegax', 'charizardmegay', 'charizardgmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:234:12
+    |
+234 |       otherFormes: ['charizard', 'charizardmegay', 'charizardgmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:259:12
+    |
+259 |       otherFormes: ['charizard', 'charizardmegax', 'charizardgmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:284:12
+    |
+284 |       otherFormes: ['charizard', 'charizardmegax', 'charizardmegay'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:353:12
+    |
+353 |       otherFormes: ['blastoisemega', 'blastoisegmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:379:12
+    |
+379 |       otherFormes: ['blastoise', 'blastoisemega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:403:12
+    |
+403 |       otherFormes: ['blastoise', 'blastoisegmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/cap.ts:879:12
+    |
+879 |       otherFormes: ['crucibellemega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/cap.ts:904:12
+    |
+904 |       otherFormes: ['crucibelle'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:471:12
+    |
+471 |       otherFormes: ['butterfreegmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:497:12
+    |
+497 |       otherFormes: ['butterfree'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:566:12
+    |
+566 |       otherFormes: ['beedrillmega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:592:12
+    |
+592 |       otherFormes: ['beedrill'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:661:12
+    |
+661 |       otherFormes: ['pidgeotmega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:687:12
+    |
+687 |       otherFormes: ['pidgeot'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:709:12
+    |
+709 |       otherFormes: ['rattataalola'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:735:12
+    |
+735 |       otherFormes: ['rattata'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:758:12
+    |
+758 |       otherFormes: ['raticatealola', 'raticatealolatotem'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:785:12
+    |
+785 |       otherFormes: ['raticate', 'raticatealolatotem'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:811:12
+    |
+811 |       otherFormes: ['raticate', 'raticatealola'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:925:12
+    |
+925 |       otherFormes: [
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:968:12
+    |
+968 |       otherFormes: [
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:66:12
+   |
+66 |       otherFormes: ['rillaboomgmax'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:92:12
+   |
+92 |       otherFormes: ['rillaboom'],
+   |            ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1010:12
+     |
+1010 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1051:12
+     |
+1051 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:158:12
+    |
+158 |       otherFormes: ['cinderacegmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1092:12
+     |
+1092 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:184:12
+    |
+184 |       otherFormes: ['cinderace'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1133:12
+     |
+1133 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:250:12
+    |
+250 |       otherFormes: ['inteleongmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1174:12
+     |
+1174 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:276:12
+    |
+276 |       otherFormes: ['inteleon'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1216:12
+     |
+1216 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1257:12
+     |
+1257 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:385:12
+    |
+385 |       otherFormes: ['corviknightgmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1299:12
+     |
+1299 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:410:12
+    |
+410 |       otherFormes: ['corviknight'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1340:12
+     |
+1340 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1370:12
+     |
+1370 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:477:12
+    |
+477 |       otherFormes: ['orbeetlegmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:502:12
+    |
+502 |       otherFormes: ['orbeetle'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1422:12
+     |
+1422 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1463:12
+     |
+1463 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1504:12
+     |
+1504 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1545:12
+     |
+1545 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:675:12
+    |
+675 |       otherFormes: ['drednawgmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1586:12
+     |
+1586 |       otherFormes: [
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:700:12
+    |
+700 |       otherFormes: ['drednaw'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1625:12
+     |
+1625 |       otherFormes: ['raichualola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1652:12
+     |
+1652 |       otherFormes: ['raichu'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1676:12
+     |
+1676 |       otherFormes: ['sandshrewalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:810:12
+    |
+810 |       otherFormes: ['coalossalgmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1702:12
+     |
+1702 |       otherFormes: ['sandshrew'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:835:12
+    |
+835 |       otherFormes: ['coalossal'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1725:12
+     |
+1725 |       otherFormes: ['sandslashalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:879:12
+    |
+879 |       otherFormes: ['flapplegmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1752:12
+     |
+1752 |       otherFormes: ['sandslash'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:904:12
+    |
+904 |       otherFormes: ['flapple'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:927:12
+    |
+927 |       otherFormes: ['appletungmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:953:12
+    |
+953 |       otherFormes: ['appletun'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:998:12
+    |
+998 |       otherFormes: ['sandacondagmax'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1024:12
+     |
+1024 |       otherFormes: ['sandaconda'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1047:12
+     |
+1047 |       otherFormes: ['cramorantgulping', 'cramorantgorging'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1071:12
+     |
+1071 |       otherFormes: ['cramorant', 'cramorantgorging'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1095:12
+     |
+1095 |       otherFormes: ['cramorant', 'cramorantgulping'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1963:12
+     |
+1963 |       otherFormes: ['vulpixalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:1989:12
+     |
+1989 |       otherFormes: ['vulpix'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1182:12
+     |
+1182 |       otherFormes: ['toxtricitygmax', 'toxtricitylowkey', 'toxtricitylowkeygmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2012:12
+     |
+2012 |       otherFormes: ['ninetalesalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1209:12
+     |
+1209 |       otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkeygmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2039:12
+     |
+2039 |       otherFormes: ['ninetales'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1235:12
+     |
+1235 |       otherFormes: ['toxtricity', 'toxtricitylowkey', 'toxtricitylowkeygmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1260:12
+     |
+1260 |       otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkeygmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1393:12
+     |
+1393 |       otherFormes: ['sinisteaantique'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1418:12
+     |
+1418 |       otherFormes: ['sinistea'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1441:12
+     |
+1441 |       otherFormes: ['polteageistantique'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1467:12
+     |
+1467 |       otherFormes: ['polteageist'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2315:12
+     |
+2315 |       otherFormes: ['diglettalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2341:12
+     |
+2341 |       otherFormes: ['diglett'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2364:12
+     |
+2364 |       otherFormes: ['dugtrioalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1625:12
+     |
+1625 |       otherFormes: ['grimmsnarlgmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2391:12
+     |
+2391 |       otherFormes: ['dugtrio'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1651:12
+     |
+1651 |       otherFormes: ['grimmsnarl'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2415:12
+     |
+2415 |       otherFormes: ['meowthalola', 'meowthgmax', 'meowthgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2441:12
+     |
+2441 |       otherFormes: ['meowth', 'meowthgmax', 'meowthgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2467:12
+     |
+2467 |       otherFormes: ['meowth', 'meowthalola', 'meowthgmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2491:12
+     |
+2491 |       otherFormes: ['meowth', 'meowthalola', 'meowthgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1820:15
+     |
+1820 |       cosmeticFormes: [
+     |               ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2514:12
+     |
+2514 |       otherFormes: ['persianalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2541:12
+     |
+2541 |       otherFormes: ['persian'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:1998:12
+     |
+1998 |       otherFormes: ['eiscuenoice'],
+     |            ^^^^^^
+     |
+error: `noice` should be `noise`, `nice`, `notice`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2014:15
+     |
+2014 |       forme: 'noice',
+     |               ^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2655:12
+     |
+2655 |       otherFormes: ['growlithehisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2022:12
+     |
+2022 |       otherFormes: ['eiscue'],
+     |            ^^^^^^
+     |
+error: `noice` should be `noise`, `nice`, `notice`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2023:24
+     |
+2023 |       species: 'eiscue-noice',
+     |                        ^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2681:12
+     |
+2681 |       otherFormes: ['growlithe'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2708:12
+     |
+2708 |       otherFormes: ['arcaninehisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2088:12
+     |
+2088 |       otherFormes: ['morpekohangry'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2112:12
+     |
+2112 |       otherFormes: ['morpeko'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2735:12
+     |
+2735 |       otherFormes: ['arcanine'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2878:12
+     |
+2878 |       otherFormes: ['alakazammega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2904:12
+     |
+2904 |       otherFormes: ['alakazam'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2391:12
+     |
+2391 |       otherFormes: ['zaciancrowned'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2415:12
+     |
+2415 |       otherFormes: ['zacian'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2973:12
+     |
+2973 |       otherFormes: ['machampgmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2437:12
+     |
+2437 |       otherFormes: ['zamazentacrowned'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2461:12
+     |
+2461 |       otherFormes: ['zamazenta'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:2999:12
+     |
+2999 |       otherFormes: ['machamp'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2483:12
+     |
+2483 |       otherFormes: ['eternatuseternamax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2507:12
+     |
+2507 |       otherFormes: ['eternatus'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2551:12
+     |
+2551 |       otherFormes: ['urshifurapidstrike', 'urshifugmax', 'urshifurapidstrikegmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2578:12
+     |
+2578 |       otherFormes: ['urshifu', 'urshifugmax', 'urshifurapidstrikegmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2604:12
+     |
+2604 |       otherFormes: ['urshifu', 'urshifurapidstrike', 'urshifurapidstrikegmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3136:12
+     |
+3136 |       otherFormes: ['geodudealola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2628:12
+     |
+2628 |       otherFormes: ['urshifu', 'urshifugmax', 'urshifurapidstrike'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2649:12
+     |
+2649 |       otherFormes: ['zarudedada'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3162:12
+     |
+3162 |       otherFormes: ['geodude'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2673:12
+     |
+2673 |       otherFormes: ['zarude'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3186:12
+     |
+3186 |       otherFormes: ['graveleralola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3214:12
+     |
+3214 |       otherFormes: ['graveler'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2774:12
+     |
+2774 |       otherFormes: ['calyrexice', 'calyrexshadow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3238:12
+     |
+3238 |       otherFormes: ['golemalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2798:12
+     |
+2798 |       otherFormes: ['calyrex', 'calyrexshadow'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3265:12
+     |
+3265 |       otherFormes: ['golem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2823:12
+     |
+2823 |       otherFormes: ['calyrex', 'calyrexice'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3289:12
+     |
+3289 |       otherFormes: ['ponytagalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3315:12
+     |
+3315 |       otherFormes: ['ponyta'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2900:12
+     |
+2900 |       otherFormes: ['basculegionf'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3337:12
+     |
+3337 |       otherFormes: ['rapidashgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2923:12
+     |
+2923 |       otherFormes: ['basculegion'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3364:12
+     |
+3364 |       otherFormes: ['rapidash'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:2980:12
+     |
+2980 |       otherFormes: ['enamorustherian'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen8.ts:3000:12
+     |
+3000 |       otherFormes: ['enamorus'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3433:12
+     |
+3433 |       otherFormes: ['slowbromega', 'slowbrogalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3460:12
+     |
+3460 |       otherFormes: ['slowbro', 'slowbromega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3485:12
+     |
+3485 |       otherFormes: ['slowbro', 'slowbrogalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3553:12
+     |
+3553 |       otherFormes: ['farfetchdgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3579:12
+     |
+3579 |       otherFormes: ['farfetchd'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:227:12
+    |
+227 |       otherFormes: ['samurotthisui'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:254:12
+    |
+254 |       otherFormes: ['samurott'],
+    |            ^^^^^^
+    |
+error: `watchog` should be `watchdog`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:275:15
+    |
+275 |       evos: ['watchog'],
+    |               ^^^^^^^
+    |
+error: `watchog` should be `watchdog`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:289:6
+    |
+289 |     'watchog',
+    |      ^^^^^^^
+    |
+error: `watchog` should be `watchdog`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:305:17
+    |
+305 |       species: 'watchog',
+    |                 ^^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3692:12
+     |
+3692 |       otherFormes: ['grimeralola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3718:12
+     |
+3718 |       otherFormes: ['grimer'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3741:12
+     |
+3741 |       otherFormes: ['mukalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3768:12
+     |
+3768 |       otherFormes: ['muk'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3883:12
+     |
+3883 |       otherFormes: ['gengarmega', 'gengargmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3909:12
+     |
+3909 |       otherFormes: ['gengar', 'gengargmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:3934:12
+     |
+3934 |       otherFormes: ['gengar', 'gengarmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4046:12
+     |
+4046 |       otherFormes: ['kinglergmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:892:12
+    |
+892 |       otherFormes: ['audinomega'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4072:12
+     |
+4072 |       otherFormes: ['kingler'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:917:12
+    |
+917 |       otherFormes: ['audino'],
+    |            ^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4095:12
+     |
+4095 |       otherFormes: ['voltorbhisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4121:12
+     |
+4121 |       otherFormes: ['voltorb'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4148:12
+     |
+4148 |       otherFormes: ['electrodehisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4174:12
+     |
+4174 |       otherFormes: ['electrode'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4224:12
+     |
+4224 |       otherFormes: ['exeggutoralola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4251:12
+     |
+4251 |       otherFormes: ['exeggutor'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4297:12
+     |
+4297 |       otherFormes: ['marowakalola', 'marowakalolatotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4324:12
+     |
+4324 |       otherFormes: ['marowak', 'marowakalolatotem'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1324:12
+     |
+1324 |       otherFormes: ['lilliganthisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4350:12
+     |
+4350 |       otherFormes: ['marowak', 'marowakalola'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1351:12
+     |
+1351 |       otherFormes: ['lilligant'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1379:12
+     |
+1379 |       otherFormes: ['basculinbluestriped', 'basculinwhitestriped'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1404:12
+     |
+1404 |       otherFormes: ['basculin', 'basculinwhitestriped'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1430:12
+     |
+1430 |       otherFormes: ['basculin', 'basculinbluestriped'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1522:12
+     |
+1522 |       otherFormes: ['darumakagalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1548:12
+     |
+1548 |       otherFormes: ['darumaka'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1571:12
+     |
+1571 |       otherFormes: ['darmanitanzen', 'darmanitangalar', 'darmanitangalarzen'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1598:12
+     |
+1598 |       otherFormes: ['darmanitan', 'darmanitanzen', 'darmanitangalarzen'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4602:12
+     |
+4602 |       otherFormes: ['kangaskhanmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1624:12
+     |
+1624 |       otherFormes: ['darmanitan', 'darmanitangalar', 'darmanitangalarzen'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4627:12
+     |
+4627 |       otherFormes: ['kangaskhan'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1651:12
+     |
+1651 |       otherFormes: ['darmanitan', 'darmanitangalar', 'darmanitanzen'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1807:12
+     |
+1807 |       otherFormes: ['yamaskgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1833:12
+     |
+1833 |       otherFormes: ['yamask'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:1990:12
+     |
+1990 |       otherFormes: ['garbodorgmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2016:12
+     |
+2016 |       otherFormes: ['garbodor'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4926:12
+     |
+4926 |       otherFormes: ['pinsirmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2039:12
+     |
+2039 |       otherFormes: ['zoruahisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:4951:12
+     |
+4951 |       otherFormes: ['pinsir'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2065:12
+     |
+2065 |       otherFormes: ['zorua'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2092:12
+     |
+2092 |       otherFormes: ['zoroarkhisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2119:12
+     |
+2119 |       otherFormes: ['zoroark'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5016:12
+     |
+5016 |       otherFormes: ['gyaradosmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5042:12
+     |
+5042 |       otherFormes: ['gyarados'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5063:12
+     |
+5063 |       otherFormes: ['laprasgmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5088:12
+     |
+5088 |       otherFormes: ['lapras'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5132:12
+     |
+5132 |       otherFormes: ['eeveestarter', 'eeveegmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5157:12
+     |
+5157 |       otherFormes: ['eevee', 'eeveegmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5181:12
+     |
+5181 |       otherFormes: ['eeveegmax', 'eeveestarter'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2436:15
+     |
+2436 |       cosmeticFormes: ['Deerling-Summer', 'Deerling-Autumn', 'Deerling-Winter'],
+     |               ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2460:15
+     |
+2460 |       cosmeticFormes: ['Sawsbuck-Summer', 'Sawsbuck-Autumn', 'Sawsbuck-Winter'],
+     |               ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2604:12
+     |
+2604 |       otherFormes: ['frillishfemale'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2630:12
+     |
+2630 |       otherFormes: ['frillish'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5383:12
+     |
+5383 |       otherFormes: ['aerodactylmega'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2656:12
+     |
+2656 |       otherFormes: ['jellicentfemale'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5408:12
+     |
+5408 |       otherFormes: ['aerodactyl'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:2683:12
+     |
+2683 |       otherFormes: ['jellicent'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5431:12
+     |
+5431 |       otherFormes: ['snorlaxgmax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5457:12
+     |
+5457 |       otherFormes: ['snorlax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5479:12
+     |
+5479 |       otherFormes: ['articunogalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5504:12
+     |
+5504 |       otherFormes: ['articuno'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5525:12
+     |
+5525 |       otherFormes: ['zapdosgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5550:12
+     |
+5550 |       otherFormes: ['zapdos'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5571:12
+     |
+5571 |       otherFormes: ['moltresgalar'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5596:12
+     |
+5596 |       otherFormes: ['moltres'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5686:12
+     |
+5686 |       otherFormes: ['mewtwomegax', 'mewtwomegay'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5711:12
+     |
+5711 |       otherFormes: ['mewtwo', 'mewtwomegay'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen1.ts:5736:12
+     |
+5736 |       otherFormes: ['mewtwo', 'mewtwomegax'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3495:12
+     |
+3495 |       otherFormes: ['braviaryhisui'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3522:12
+     |
+3522 |       otherFormes: ['braviary'],
+     |            ^^^^^^
+     |
+error: `watchog` should be `watchdog`
+  --> ./src/lib/assets/formats.json:667:4
+    |
+667 |   "watchog": "Past",
+    |    ^^^^^^^
+    |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3814:12
+     |
+3814 |       otherFormes: ['tornadustherian'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3839:12
+     |
+3839 |       otherFormes: ['tornadus'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3862:12
+     |
+3862 |       otherFormes: ['thundurustherian'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3887:12
+     |
+3887 |       otherFormes: ['thundurus'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3952:12
+     |
+3952 |       otherFormes: ['landorustherian'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3977:12
+     |
+3977 |       otherFormes: ['landorus'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:3999:12
+     |
+3999 |       otherFormes: ['kyuremblack', 'kyuremwhite'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4024:12
+     |
+4024 |       otherFormes: ['kyurem', 'kyuremwhite'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4049:12
+     |
+4049 |       otherFormes: ['kyurem', 'kyuremblack'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4072:12
+     |
+4072 |       otherFormes: ['keldeoresolute'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4097:12
+     |
+4097 |       otherFormes: ['keldeo'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4120:12
+     |
+4120 |       otherFormes: ['meloettapirouette'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4145:12
+     |
+4145 |       otherFormes: ['meloetta'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4167:12
+     |
+4167 |       otherFormes: ['genesectdouse', 'genesectshock', 'genesectburn', 'genesectchill'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4192:12
+     |
+4192 |       otherFormes: ['genesect', 'genesectshock', 'genesectburn', 'genesectchill'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4216:12
+     |
+4216 |       otherFormes: ['genesect', 'genesectdouse', 'genesectburn', 'genesectchill'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4240:12
+     |
+4240 |       otherFormes: ['genesect', 'genesectdouse', 'genesectshock', 'genesectchill'],
+     |            ^^^^^^
+     |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/assets/pokedex-data/gen5.ts:4264:12
+     |
+4264 |       otherFormes: ['genesect', 'genesectdouse', 'genesectshock', 'genesectburn'],
+     |            ^^^^^^
+     |
+error: `formes` should be `forms`, `formed`
+  --> ./src/lib/mapped-types/graphql-mapped-types.d.ts:56:74
+   |
+56 |   /** Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data. */
+   |                                                                          ^^^^^^
+   |
+error: `formes` should be `forms`, `formed`
+  --> ./src/lib/mapped-types/graphql-mapped-types.d.ts:56:93
+   |
+56 |   /** Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data. */
+   |                                                                                             ^^^^^^
+   |
+error: `formes` should be `forms`, `formed`
+  --> ./src/lib/mapped-types/graphql-mapped-types.d.ts:56:149
+   |
+56 |   /** Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data. */
+   |                                                                                                                                                     ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mapped-types/graphql-mapped-types.d.ts:57:11
+   |
+57 |   cosmeticFormes?: Maybe<Array<string>>;
+   |           ^^^^^^
+   |
+error: `Formes` should be `Forms`, `Formed`
+  --> ./src/lib/mapped-types/graphql-mapped-types.d.ts:91:8
+   |
+91 |   otherFormes?: Maybe<Array<string>>;
+   |        ^^^^^^
+   |
+error: `hypen` should be `hyphen`
+  --> ./src/lib/utils/util.ts:10:32
+   |
+10 | /** Converts a string to lower-hypen-case */
+   |                                ^^^^^
+   |
+error: `focusses` should be `focuses`
+  --> ./README.md:40:41
+   |
+40 | data. Unlike contemporary APIs this API focusses on speed, accuracy and data
+   |                                         ^^^^^^^^
+   |
