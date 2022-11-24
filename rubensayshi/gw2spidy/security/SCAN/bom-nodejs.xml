@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:55a73871-4cfc-416b-99e8-136294167bd1" version="1">
+  <metadata>
+    <timestamp>2022-11-24T08:37:10.815Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.3.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/JavaScript-Hooker@0.2.3">
+      <publisher/>
+      <group/>
+      <name>JavaScript-Hooker</name>
+      <version>0.2.3</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/JavaScript-Hooker@0.2.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/jQuery@1.9.1">
+      <publisher/>
+      <group/>
+      <name>jQuery</name>
+      <version>1.9.1</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/jQuery@1.9.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/jQuery@1.7.2">
+      <publisher/>
+      <group/>
+      <name>jQuery</name>
+      <version>1.7.2</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/jQuery@1.7.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/underscore.string@2.4.0">
+      <publisher/>
+      <group/>
+      <name>underscore.string</name>
+      <version>2.4.0</version>
+      <description><![CDATA[String manipulation extensions for Underscore.js javascript library.]]></description>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/underscore.string@2.4.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/abbrev@1.1.1">
+      <publisher/>
+      <group/>
+      <name>abbrev</name>
+      <version>1.1.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">9e77bdfc8890fe1cc8858ea97439db06dcfb0e33d32ab634d0fff3bcf4a6e69385925eb1b86ac69d79ff56d4cd35f36d01f67dff546d7a192ccd4f6a7138a2d1</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/abbrev@1.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/amdefine@1.0.1">
+      <publisher/>
+      <group/>
+      <name>amdefine</name>
+      <version>1.0.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">4b61f0d13b4d90c26121a6c1c08a2328bf581cee53d27e5e36a589ecbae57a5ff30db7ed429c696a98bcb59b375f51d66bebbe41ec9d1a6cf3354d26d3df9172</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/amdefine@1.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/argparse@0.1.16">
+      <publisher/>
+      <group/>
+      <name>argparse</name>
+      <version>0.1.16</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">2e3982d9d369767d8be14cf2a1a22bd7510b6282e7dfb645cbdcce6eb4051ec4ae39ea5e50430a9ccf30e4a2f84e7ae9da0cbcf2b46e42de8acbc0639a5f816b</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/argparse@0.1.16</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/async@0.1.22">
+      <publisher/>
+      <group/>
+      <name>async</name>
+      <version>0.1.22</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">dad1339622667f97c735a7cdc102c95d46ac1b340255cb6fb0d9179a79442c7c32a54d29d3cfeb1e8858be4a8a223c97a71fb4ae4ad8bfa41b849f9417842406</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/async@0.1.22</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/camelcase@1.2.1">
+      <publisher/>
+      <group/>
+      <name>camelcase</name>
+      <version>1.2.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">c332e40dae0afe6cc8d4e4884c2f835328e0225fc44cd1c4f50bd8832e89e89beacb2cf80b45df77e95085bd7db17da3329655e08b2c527d150d59a0955face2</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/camelcase@1.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/coffee-script@1.3.3">
+      <publisher/>
+      <group/>
+      <name>coffee-script</name>
+      <version>1.3.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">4234354f806ac87bf5f64e9749f761cbf40b9483a1cb0cf47a405409af61ef5cd830995f0d319a9ff675257cd8919eaff11f8686f2ffa781593db3d6f1635796</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/coffee-script@1.3.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/colors@0.6.2">
+      <publisher/>
+      <group/>
+      <name>colors</name>
+      <version>0.6.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">3ac495b472bc22bf2bdfe171c3f6f88d2d592cf5e457a6710d1250cde0fbaa8d12a8c5d6ac70ccef50e06333cc1d8f12149d00a3e9cd536a75326c1dccaa8faf</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/colors@0.6.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/dateformat@1.0.2-1.2.3">
+      <publisher/>
+      <group/>
+      <name>dateformat</name>
+      <version>1.0.2-1.2.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">017bd6f20eed3b88a59391e039678398f8bf64f6829cc27ef42835237a75f70ea672f0005c1bae1845c0c726c2f838e3d4f4995221d4732a18bbb5a77825fc81</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/dateformat@1.0.2-1.2.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/debug@0.7.4">
+      <publisher/>
+      <group/>
+      <name>debug</name>
+      <version>0.7.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">1288406f7f83487486c7c71aace48a25ef06d1ac95e7f8bad3d383d09da8ac292ec9a7bb4b2652cf66a82e6405dacd0f8f98084c379bc0f1fb185065a8e510d5</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/debug@0.7.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/decamelize@1.2.0">
+      <publisher/>
+      <group/>
+      <name>decamelize</name>
+      <version>1.2.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">cf64be5bd5fbde10145248be37ef596b694196e9fcf738a03b21abb1ac7e29443ac0a5b86685a91180641a1423c008e30c2916c6163454a12193cc3363b17970</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/decamelize@1.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/esprima@1.0.4">
+      <publisher/>
+      <group/>
+      <name>esprima</name>
+      <version>1.0.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">ae9e5d30a37ccc4b3d75f8bd8345f50a52e657ffd647293f475e66a6914d202205446e4ff7654fed9d38a7ca64fbe800068f56dad63e907caee8fd661078264c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/esprima@1.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/eventemitter2@0.4.14">
+      <publisher/>
+      <group/>
+      <name>eventemitter2</name>
+      <version>0.4.14</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">2bb278c6ae71003e631ec18ce517965d14c56b72511a87c788c715810f0f470816c738c7a4c582233b26c9feb4fa687c28bb2a60f72350c6b4002e2177a94fc9</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/eventemitter2@0.4.14</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/exit@0.1.2">
+      <publisher/>
+      <group/>
+      <name>exit</name>
+      <version>0.1.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">664fde34a576cdb8e92b3aec43e9f51baa6855b12b4312742c13895da299d445622f31fe86b2eef5c757238cf0f5d05026c970044a5b4363f5a12ee70f1b3a8d</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/exit@0.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/faye-websocket@0.4.4">
+      <publisher/>
+      <group/>
+      <name>faye-websocket</name>
+      <version>0.4.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">efca6aac96ef19949ef22f8f2ec3ddf9a26a4f21aa83258b9ccc3934ec2d5c24d5333105875cd03f022e20bff27138f8ae40f2e7367d07a7eb60fa953c9073c9</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/faye-websocket@0.4.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/findup-sync@0.1.3">
+      <publisher/>
+      <group/>
+      <name>findup-sync</name>
+      <version>0.1.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">ca37ed7d89c5e1385812f28457f904151d79766b725d3021def427ce9254a1cecd6a3e72d4fd0293b66cd7e56ba1ad34137293dc862c93be7a4bef1603974d2f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/findup-sync@0.1.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/glob@3.2.11">
+      <publisher/>
+      <group/>
+      <name>glob</name>
+      <version>3.2.11</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">8556f4cf0119c02d455d22913c54de3ad37b000ac9709948e942c62edaecb5ab3028d96b4c9a8003ed65625494a29e2f8c0e36df1941cea7d54b78961a5a89fa</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/glob@3.2.11</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/lodash@2.4.2">
+      <publisher/>
+      <group/>
+      <name>lodash</name>
+      <version>2.4.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">29a935862ebf8581c654f99dca26628e8432cf9c76886573b3ac3d19807f1e25c4b72958eed22860444e323bccd5df675c9a8f3ab1b630d3cc9f4d5b27e4b447</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/lodash@2.4.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/minimatch@0.3.0">
+      <publisher/>
+      <group/>
+      <name>minimatch</name>
+      <version>0.3.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">5855f58c8d406b13536553872c155acf04d629a423a32912cc204d5c1ef6bc34c2ce8a501adc8ff75b4a7452b972fd7ea8cc0fca24eed47a94ae2aa9948f2970</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/minimatch@0.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/gaze@0.4.3">
+      <publisher/>
+      <group/>
+      <name>gaze</name>
+      <version>0.4.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">6ec9a5e57acc0a9425006f07687fc9069673004b6507ad005bb7393e93b6388d6269b7a2b31a118bbb0870e6da6d052db9f42d8b7d1f831836d367ecd386fa7c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/gaze@0.4.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/getobject@0.1.0">
+      <publisher/>
+      <group/>
+      <name>getobject</name>
+      <version>0.1.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">84818405f9c7719a569173ec0157959a9603bdfcbf99ab55974df2398f7514f9a7a420b5d8b9b98b33710a33b794701e3bab9a4f0331bbb838e744a29279618a</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/getobject@0.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/glob@3.1.21">
+      <publisher/>
+      <group/>
+      <name>glob</name>
+      <version>3.1.21</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">00d872d95dbeb45a516a3137c0de03864350d3c283af422bd6a2f5dbf7147b9f9aed24c42bc8e45b8a27518b98f3fd3aa8016e4f98deee68c0ab3c7478a236b5</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/glob@3.1.21</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/inherits@1.0.2">
+      <publisher/>
+      <group/>
+      <name>inherits</name>
+      <version>1.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">025ebba1ab5b452a37455e6146a228967e98e723156c94889f88c424d2fb542226ceafe42ebeefbdbeac151257aabf2ba4773fda424e33ecb4b0f28de3b55dcc</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/inherits@1.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/globule@0.1.0">
+      <publisher/>
+      <group/>
+      <name>globule</name>
+      <version>0.1.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">dde21c0363a33c29b856fc08c193f3231095b2c03c1d2a4cd82e9cea42b9b9f247e051b05a8caa2f7227d7dbae5f8a1ef93c07df0d8fd67403996e7a89e84ee0</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/globule@0.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/lodash@1.0.2">
+      <publisher/>
+      <group/>
+      <name>lodash</name>
+      <version>1.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">d154840d579cfcc7b67804eea2241df088f204c317d1f6a1a1bf1827de95d60a36463bc29359b51b19ad7d79fc44d49a2da4eda29edfb2e861bbda0b93785480</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/lodash@1.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/graceful-fs@1.2.3">
+      <publisher/>
+      <group/>
+      <name>graceful-fs</name>
+      <version>1.2.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">8a24d4679bd9fb6655fa1ef55c0830092bbaf8d022ce1154dd8c3c682fe11f9490dd29c84aa12a01e938d22980146b4373024a3615ef498fa1cc8a259cbc1c75</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/graceful-fs@1.2.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt@0.4.5">
+      <publisher/>
+      <group/>
+      <name>grunt</name>
+      <version>0.4.5</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">d62ab7ca52e3cd7ab3fca4aad4e004daa867a5c6e41765b286c41c6af66df989a0bc7bb411b3cc1211a1cb682bd053faee2b07a5175fc230795957975dc25e99</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt@0.4.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-concat-css@0.3.2">
+      <publisher/>
+      <group/>
+      <name>grunt-concat-css</name>
+      <version>0.3.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">453416bd633d478e2031c402a716d6a364523575f2d602f609250abeb353c8b666f398a25f55a65648f12e5c59e9667d8845c9aed432f55828ad7da49be8e713</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-concat-css@0.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-contrib-concat@0.3.0">
+      <publisher/>
+      <group/>
+      <name>grunt-contrib-concat</name>
+      <version>0.3.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">c3937ade632011800485df4f818f2e434a58d364ae7134b0abc5d14ed1f212decc48c40b969ee5174839a1a5d26aff7109663d18f33446a9494d3da04bef27dd</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-contrib-concat@0.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-contrib-uglify@0.2.7">
+      <publisher/>
+      <group/>
+      <name>grunt-contrib-uglify</name>
+      <version>0.2.7</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">29728cd9434bb0289423afc361f0083e6de2dba50924de827fa283f1f15ad932a5963ef22cf0bce77231b56049ff78d7eba42d5c71ad742391bae03ab0016fbc</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-contrib-uglify@0.2.7</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-contrib-watch@0.5.3">
+      <publisher/>
+      <group/>
+      <name>grunt-contrib-watch</name>
+      <version>0.5.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">8bf43d30dd8b7832032143b1b19f176b82d51060d79232a859e8d166a60a3fcca0cef940653d7116096f021c9753b5d278565c0715b670416795392b0df51155</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-contrib-watch@0.5.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-legacy-log@0.1.3">
+      <publisher/>
+      <group/>
+      <name>grunt-legacy-log</name>
+      <version>0.1.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">a98b3fb8cd0899dcf02172e14b83b958b579b2800cf8f12aa8723f8734b1968e39d0445271c1219d7aa878303d668cce75a5ae627cd3393c1171546882578cc6</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-legacy-log@0.1.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/underscore.string@2.3.3">
+      <publisher/>
+      <group/>
+      <name>underscore.string</name>
+      <version>2.3.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">85b0f93226ed86e0c0bb8c80e70c5eb396f3160a9ddcfa4126e0a56d1c5a35d7717ddb33faa7fed641f0ac6405ae67219831dbf62354fba1070e7f2e8f4c4326</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/underscore.string@2.3.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-legacy-log-utils@0.1.1">
+      <publisher/>
+      <group/>
+      <name>grunt-legacy-log-utils</name>
+      <version>0.1.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">0f4bdb517d344c560228d66d719cde98ca704fc4d1fc5751b35a667e2070eaa9d4c3cd0f7ec8d5fa5848a3363fdde2773d21b6ce3f3dc1dda61ffedfe2d34097</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-legacy-log-utils@0.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-legacy-util@0.2.0">
+      <publisher/>
+      <group/>
+      <name>grunt-legacy-util</name>
+      <version>0.2.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">7173db7c5f1a33ea6fbde41e3752bcef60f97d19b7d317c9599892eb763c5bca3220f2c2942b2623c6d6f7a4f1ab369cf5cc8be2546a10185b849de7e44cd451</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-legacy-util@0.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-lib-contrib@0.6.1">
+      <publisher/>
+      <group/>
+      <name>grunt-lib-contrib</name>
+      <version>0.6.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">1dd0ad26e3269a448056b01fb06ee565613461a6ebb0f5b0cdc082520590380690b10494361c3f2300f66230922e1e72f4d5d23f31d36052cbe2ba3b41b00930</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-lib-contrib@0.6.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/grunt-notify@0.2.20">
+      <publisher/>
+      <group/>
+      <name>grunt-notify</name>
+      <version>0.2.20</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">128e095df5d63013a9edc8b70c484c576fe562ad65e37dedb5a80990f35c2cf1c59bc094c168b7c40e37cbe45634b4e69f52451fd0bf80e053ba60416ef6886b</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/grunt-notify@0.2.20</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/hooker@0.2.3">
+      <publisher/>
+      <group/>
+      <name>hooker</name>
+      <version>0.2.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b7e51eac2b10be24b29802270f4d4fc3e0e7feeb26cf5b113bedd9935fa5c7c7a0f962a90f6ba57305aa1c72f4f9ab1e441afedfebc88621b52b5253c1a21c4c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/hooker@0.2.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/iconv-lite@0.2.11">
+      <publisher/>
+      <group/>
+      <name>iconv-lite</name>
+      <version>0.2.11</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">2a19855a0690658f3709b862f800c89e8510f04b67e811b97e290cf6cc9e3a3425b6f478e61edc44a27ff6ebd012e0fad48dd48eeefbc9871ed3f2e12950a543</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/iconv-lite@0.2.11</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/inherits@2.0.4">
+      <publisher/>
+      <group/>
+      <name>inherits</name>
+      <version>2.0.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">93fbc6697e3f6256b75b3c8c0af4d039761e207bea38ab67a8176ecd31e9ce9419cc0b2428c859d8af849c189233dcc64a820578ca572b16b8758799210a9ec1</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/inherits@2.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/js-yaml@2.0.5">
+      <publisher/>
+      <group/>
+      <name>js-yaml</name>
+      <version>2.0.5</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">54429c224b1c903054860d894bcef8c55a2e88f932c15521e32c9498b0837b5660ddb09de8cf85d5e18f7a73de1cb7365c2f29a7d1bc6ecba87cad0d784a9190</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/js-yaml@2.0.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/lodash@0.9.2">
+      <publisher/>
+      <group/>
+      <name>lodash</name>
+      <version>0.9.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">2d56edfeb8caeb68126e17a10d528bd2f95a8a67b86352018b12fe6ca78d7e86382f6cda6ff8c6af153a29ad39b4c03fcc1c644e4e6dde2beda6177262ea5ccf</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/lodash@0.9.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/lru-cache@2.7.3">
+      <publisher/>
+      <group/>
+      <name>lru-cache</name>
+      <version>2.7.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">5a989b589eb4737020033f1ada2604ac3adc4f60bb3a62a7b168487073a39141c58e45e770986d2f1352a949b147146e9e96f923c569addeda35277636d92c25</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/lru-cache@2.7.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/minimatch@0.2.14">
+      <publisher/>
+      <group/>
+      <name>minimatch</name>
+      <version>0.2.14</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">cd9f89cbc9555a5beaa9e33c89907bc3b2a6424a099fc763339f39cfcf2bcb0ac46f3a2a6b055af45479a768700fecbbe277ee28e8e636f8bd82d58934ba87bc</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/minimatch@0.2.14</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/nopt@1.0.10">
+      <publisher/>
+      <group/>
+      <name>nopt</name>
+      <version>1.0.10</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">3569a9bcb4aa52b82b002f470aec44bdbf8f4a5a07a6a56ef85a9c3b879e176879a9846103b7afe8abde9724002ad7a051b0ba472a499e510e85df2f96834a62</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/nopt@1.0.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/noptify@0.0.3">
+      <publisher/>
+      <group/>
+      <name>noptify</name>
+      <version>0.0.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">1194f7e6bf40b8afa18a0fa262fe35e389307c31038658f7ce77151f0f5bf5df3a4d4624ffaec1b4102991f3c3d64b25013ffc4d30f6eb6c5db156d5fa20924f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/noptify@0.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/nopt@2.0.0">
+      <publisher/>
+      <group/>
+      <name>nopt</name>
+      <version>2.0.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b954ecb93f079b768ddd5b6d63e04f2b0e0a53d955a48d05db6500aff235afafa4ba032bde8ca13002e4c9c8a42dc75fbc646c833098378f0360b04570911456</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/nopt@2.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/qs@0.5.6">
+      <publisher/>
+      <group/>
+      <name>qs</name>
+      <version>0.5.6</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">29b3ab42b3f961efb4826abe870c682700054701310025aac318f520314582a3b0f4fa31cb7c3049b69f77d66a3fa4faca431f9f1339ef792dfdae22f726dab5</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/qs@0.5.6</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/rimraf@2.2.8">
+      <publisher/>
+      <group/>
+      <name>rimraf</name>
+      <version>2.2.8</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">47928c2879cf01069932a2ceb32bb25267088d27839beef77a8a90a5a5c0ec0676d812fee82fb599c52c7203ac35df1656526ebe58003ec7a0731ee98e55740e</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/rimraf@2.2.8</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/semver@2.2.1">
+      <publisher/>
+      <group/>
+      <name>semver</name>
+      <version>2.2.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">ccce5213cf3b67c231c7d7066859eef5677cc6bd111708b101265cbd48764069dfff5bb1626c9eb43ce1ce411d0ca8a99993eafc94c1d202e8d52839f4b5e441</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/semver@2.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/sigmund@1.0.1">
+      <publisher/>
+      <group/>
+      <name>sigmund</name>
+      <version>1.0.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">7c2bc45df87a356a66f984ae6366e95dbfd522286a580ea12ec81ba02fb49e5ef543b37ba3679a096f2625afcd2ef421b3a8e9777559578522510955ebe95cf2</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/sigmund@1.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/source-map@0.1.34">
+      <publisher/>
+      <group/>
+      <name>source-map</name>
+      <version>0.1.34</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">c9f0b00e3d2f47d453c2dde913382581bdd98267171ede838c6ddb8c9bf33f04cbfb9cc3436321992cc0713cb4193890b828ab892597bd6335fcd84a757ba840</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/source-map@0.1.34</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/stack-parser@0.0.1">
+      <publisher/>
+      <group/>
+      <name>stack-parser</name>
+      <version>0.0.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">ef033715a48e1e0d0432b4381aa44b2f000de2863c7941e2a8e9f14d08119c9de102218a84022d1fe700247ab2cb1801252af4e8ca2c2e9920f6192c6eb25a91</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/stack-parser@0.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/tiny-lr@0.0.4">
+      <publisher/>
+      <group/>
+      <name>tiny-lr</name>
+      <version>0.0.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">2350b0b4b4b0ed596a9a1ad99727a279f1893362b234e11fcca1dd1a74bfec92736030cc9147e571151727e78012907a49d1ef8e4fe2f437d3ff888e2e6c79c6</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/tiny-lr@0.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/uglify-js@2.4.24">
+      <publisher/>
+      <group/>
+      <name>uglify-js</name>
+      <version>2.4.24</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b64b488f069c91f64b77cf772862665dcd61ad11c7d6f1fd3e8df1161d570638de1809cdd36c49dd2ba803e9f52f6f7f65a080d7c2b308595c912faf7cfba088</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/uglify-js@2.4.24</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/async@0.2.10">
+      <publisher/>
+      <group/>
+      <name>async</name>
+      <version>0.2.10</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">78091da0ac54ebf2e42830732e94feb7a15fe44b5f485e30c7559f2623c4115ed634b9c36915e4d28572b2210f9b6eb6ae869a72119ec7052ff785a14a03794d</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/async@0.2.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/uglify-to-browserify@1.0.2">
+      <publisher/>
+      <group/>
+      <name>uglify-to-browserify</name>
+      <version>1.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">bdbdacd65631db106d520cbeb5af9bd89fc62d5511fb09a920dc0778f98f4613ac215086db00f3289d27d781ac947d4189fb2a57348ec1085168202c67f9c8e1</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/uglify-to-browserify@1.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/underscore@1.7.0">
+      <publisher/>
+      <group/>
+      <name>underscore</name>
+      <version>1.7.0</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">729d28410c998543359292432dd18ed633d91e04bf329ce85987def7e08cda1fd0183665ab04f64f7606ba4b8175a349fc200fa1ec80651447cfc245a35efabc</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/underscore@1.7.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/underscore.string@2.2.1">
+      <publisher/>
+      <group/>
+      <name>underscore.string</name>
+      <version>2.2.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">dc5566857a9e96b8fa81f829dc19fab4e6af26f5b474d1f64fe85e4c3dfc251c48ac06e2bb36ea8e49ecce83988f70f2141d675a22e3db4f10b769e8fcbe1c20</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/underscore.string@2.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/which@1.0.9">
+      <publisher/>
+      <group/>
+      <name>which</name>
+      <version>1.0.9</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">13cedf750fde449afd5b55f8c133de8cdcbdcd35b7148dafa4265227f1c063e4e48ca542d13526d6393abe7d99eea6b2d03432d3e44119d5f18fe4669a219929</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/which@1.0.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/window-size@0.1.0">
+      <publisher/>
+      <group/>
+      <name>window-size</name>
+      <version>0.1.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">d694cf40329375deb5a3394a18d0a384d45df8a3e680b4866b79994c7a0e962686704483f06d4f5e187b7357e088f8d56cd55f832d856b0e0123cfe6d1c0bc32</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/window-size@0.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/wordwrap@0.0.2">
+      <publisher/>
+      <group/>
+      <name>wordwrap</name>
+      <version>0.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">c5206c09e87e83e7629e806fdc600e58ce0b71554eebcc0b5d16a789bb4149d52f906590446784f4fec8c14f449830e2e2303a2f8e25cf5e4218cc1dc3d379f9</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/wordwrap@0.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/yargs@3.5.4">
+      <publisher/>
+      <group/>
+      <name>yargs</name>
+      <version>3.5.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">e63dfcd84e31412b3bd69ff1650b14d4fb510361d73c08d7d04d0392818bc7034048c38a5fa03d76857536b6668fce6ed8f8eabb3e34daaa27073cffc8b3db3c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/yargs@3.5.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/zlib-browserify@0.0.1">
+      <publisher/>
+      <group/>
+      <name>zlib-browserify</name>
+      <version>0.0.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">7e17880c229753460019932fe0517055304c4114afd998cda913755646637ad6432bf042fe15621216ac4e1d244dea2072c200979818134e06379dedad3f9c17</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/zlib-browserify@0.0.1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/node_modules/findup-sync/node_modules/lodash/dist/lodash.compat.min.js, /github/workspace/node_modules/findup-sync/node_modules/lodash/dist/lodash.min.js, /github/workspace/node_modules/findup-sync/node_modules/lodash/dist/lodash.underscore.min.js, /github/workspace/node_modules/globule/node_modules/lodash/dist/lodash.compat.min.js, /github/workspace/node_modules/globule/node_modules/lodash/dist/lodash.min.js, /github/workspace/node_modules/globule/node_modules/lodash/dist/lodash.underscore.min.js, /github/workspace/node_modules/grunt-legacy-log-utils/node_modules/lodash/dist/lodash.compat.min.js, /github/workspace/node_modules/grunt-legacy-log-utils/node_modules/lodash/dist/lodash.min.js, /github/workspace/node_modules/grunt-legacy-log-utils/node_modules/lodash/dist/lodash.underscore.min.js, /github/workspace/node_modules/grunt-legacy-log-utils/node_modules/underscore.string/dist/underscore.string.min.js, /github/workspace/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.compat.min.js, /github/workspace/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.min.js, /github/workspace/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.underscore.min.js, /github/workspace/node_modules/grunt-legacy-log/node_modules/underscore.string/dist/underscore.string.min.js, /github/workspace/node_modules/hooker/dist/ba-hooker.min.js, /github/workspace/node_modules/lodash/lodash.min.js, /github/workspace/node_modules/lodash/lodash.underscore.min.js, /github/workspace/node_modules/semver/semver.min.js, /github/workspace/node_modules/underscore.string/dist/underscore.string.min.js, /github/workspace/node_modules/underscore/underscore-min.js, /github/workspace/webroot/assets/js/vendor/highstock/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/resources/phantomjs/jquery.1.9.1.min.js, /github/workspace/webroot/assets/js/vendor/highstock/exporting-server/java/highcharts-export/highcharts-export-convert/target/classes/phantomjs/jquery.1.9.1.min.js, /github/workspace/webroot/assets/js/vendor/highstock/exporting-server/phantomjs/jquery.1.9.1.min.js, /github/workspace/webroot/assets/js/vendor/jquery.min.js, /github/workspace/node_modules/argparse/node_modules/underscore.string/bower.json, /github/workspace/package-lock.json</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

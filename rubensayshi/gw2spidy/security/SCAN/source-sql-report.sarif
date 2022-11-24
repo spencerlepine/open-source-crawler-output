@@ -1,0 +1,85 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "SQL Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "SQL Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "/opt/pmd-bin/bin/run.sh",
+            "pmd",
+            "--no-cache",
+            "--fail-on-violation",
+            "false",
+            "-language",
+            "plsql",
+            "-d",
+            "/github/workspace",
+            "-r",
+            "/github/workspace/reports/source-sql-report.csv",
+            "-f",
+            "csv",
+            "-R",
+            "/usr/local/src/lib/../rules-pmd.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "/opt/pmd-bin/bin/run.sh pmd --no-cache --fail-on-violation false -language plsql -d /github/workspace -r /github/workspace/reports/source-sql-report.csv -f csv -R /usr/local/src/lib/../rules-pmd.xml",
+          "endTimeUtc": "2022-11-24T08:36:59Z",
+          "workingDirectory": {
+            "uri": "https://github.com/rubensayshi/gw2spidy"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-11-24T08:36:59Z",
+          "workingDirectory": {
+            "uri": "https://github.com/rubensayshi/gw2spidy"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "4e899abc-8416-42b9-9a04-0dbd3f7a378e"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "e2c87acfdf97e22cdfc2109da8b3f7254afdb59b"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "4e899abc-8416-42b9-9a04-0dbd3f7a378e",
+      "runGuid": "090cb3f4-b45b-4936-a7d6-a0b306e4fbf5"
+    }
+  ]
+}

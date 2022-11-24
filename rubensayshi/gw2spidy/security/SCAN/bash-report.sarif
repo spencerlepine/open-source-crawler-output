@@ -1,0 +1,388 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Shell Script Analysis",
+          "rules": [
+            {
+              "id": "2157",
+              "help": {
+                "text": "Argument to implicit -n is always true due to literal strings.",
+                "markdown": "Argument to implicit -n is always true due to literal strings."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Argument to implicit -n is always true due to literal strings."
+              },
+              "helpUri": "https://github.com/koalaman/shellcheck/wiki/SC2157",
+              "shortDescription": {
+                "text": "Argument to implicit -n is always true due to literal strings."
+              }
+            },
+            {
+              "id": "2104",
+              "help": {
+                "text": "In functions, use return instead of continue.",
+                "markdown": "In functions, use return instead of continue."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "In functions, use return instead of continue."
+              },
+              "helpUri": "https://github.com/koalaman/shellcheck/wiki/SC2104",
+              "shortDescription": {
+                "text": "In functions, use return instead of continue."
+              }
+            },
+            {
+              "id": "1105",
+              "help": {
+                "text": "Shells disambiguate (( differently or not at all. For subshell, add spaces around ( . For ((, fix parsing errors.",
+                "markdown": "Shells disambiguate (( differently or not at all. For subshell, add spaces around ( . For ((, fix parsing errors."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Shells disambiguate (( differently or not at all. For subshell, add spaces around ( . For ((, fix parsing errors."
+              },
+              "helpUri": "https://github.com/koalaman/shellcheck/wiki/SC1105",
+              "shortDescription": {
+                "text": "Shells disambiguate (( differently or not at all"
+              }
+            },
+            {
+              "id": "2045",
+              "help": {
+                "text": "Iterating over ls output is fragile. Use globs.",
+                "markdown": "Iterating over ls output is fragile. Use globs."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Iterating over ls output is fragile. Use globs."
+              },
+              "helpUri": "https://github.com/koalaman/shellcheck/wiki/SC2045",
+              "shortDescription": {
+                "text": "Iterating over ls output is fragile"
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Shell Script Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-a",
+            "--shell=bash",
+            "-f",
+            "json",
+            "-S",
+            "error",
+            "--color=never",
+            "/github/workspace/config/build.sh",
+            "/github/workspace/bin/start-workers.sh",
+            "/github/workspace/bin/rebuild-items-recipes.sh",
+            "/github/workspace/bin/rebuild-datasets.sh",
+            "/github/workspace/bin/stop-workers.sh",
+            "/github/workspace/bin/worker.sh",
+            "/github/workspace/bin/update.sh"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-a --shell=bash -f json -S error --color=never /github/workspace/config/build.sh /github/workspace/bin/start-workers.sh /github/workspace/bin/rebuild-items-recipes.sh /github/workspace/bin/rebuild-datasets.sh /github/workspace/bin/stop-workers.sh /github/workspace/bin/worker.sh /github/workspace/bin/update.sh",
+          "endTimeUtc": "2022-11-24T08:36:59Z",
+          "workingDirectory": {
+            "uri": "https://github.com/rubensayshi/gw2spidy"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-11-24T08:36:59Z",
+          "workingDirectory": {
+            "uri": "https://github.com/rubensayshi/gw2spidy"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 5,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 5
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Argument to implicit -n is always true due to literal strings."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        if [ -e /proc/$PID -a /proc/$PID/exe ]; then\n"
+                  },
+                  "startLine": 19
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/rubensayshi/gw2spidy/bin/stop-workers.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    for PID in $PIDS; do        \n        if [ -e /proc/$PID -a /proc/$PID/exe ]; then\n"
+                  },
+                  "endLine": 19,
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "69d0306e817e6520",
+            "scanFileHash": "0ade337f50517cb8"
+          },
+          "ruleId": "2157",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Argument to implicit -n is always true due to literal strings."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        if [ -e /proc/$PID -a /proc/$PID/exe ]; then\n"
+                  },
+                  "startLine": 44
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/rubensayshi/gw2spidy/bin/start-workers.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                        \n        if [ -e /proc/$PID -a /proc/$PID/exe ]; then\n"
+                  },
+                  "endLine": 44,
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "69d0306e817e6520",
+            "scanFileHash": "adbdd99a761601f3"
+          },
+          "ruleId": "2157",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In functions, use return instead of continue."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            continue\n"
+                  },
+                  "startLine": 46
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/rubensayshi/gw2spidy/bin/start-workers.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            echo \"already running daemon ${NAME} number ${NUM}; [[ ${PID} ]]\"\n            continue\n"
+                  },
+                  "endLine": 46,
+                  "startLine": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "06804870d16ce131",
+            "scanFileHash": "adbdd99a761601f3"
+          },
+          "ruleId": "2104",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Shells disambiguate (( differently or not at all. For subshell, add spaces around ( . For ((, fix parsing errors."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    ((${ROOT}/bin/worker.sh $NAME $NUM $PIDFILE &>> ${LOGDIR}/start-workers.log) & echo $! > $PIDFILE &)\n"
+                  },
+                  "startLine": 52
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/rubensayshi/gw2spidy/bin/start-workers.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    \n    ((${ROOT}/bin/worker.sh $NAME $NUM $PIDFILE &>> ${LOGDIR}/start-workers.log) & echo $! > $PIDFILE &)\n"
+                  },
+                  "endLine": 52,
+                  "startLine": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "62b0c69cbf141cd1",
+            "scanFileHash": "adbdd99a761601f3"
+          },
+          "ruleId": "1105",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Iterating over ls output is fragile. Use globs."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "for FILE in `ls $PROJECTDIR/config/build/classes/gw2spidy/*.php`; do\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/rubensayshi/gw2spidy/config/build.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "cp $PROJECTDIR/config/build/classes/gw2spidy/om/*  $PROJECTDIR/src/GW2Spidy/DB/om/\nfor FILE in `ls $PROJECTDIR/config/build/classes/gw2spidy/*.php`; do\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "991a80f364be3a8a",
+            "scanFileHash": "32da93a1e4233a99"
+          },
+          "ruleId": "2045",
+          "ruleIndex": 3
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "3c9bd94d-2d0d-4f68-8099-b2be365ce73c"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "e2c87acfdf97e22cdfc2109da8b3f7254afdb59b"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "3c9bd94d-2d0d-4f68-8099-b2be365ce73c",
+      "runGuid": "090cb3f4-b45b-4936-a7d6-a0b306e4fbf5"
+    }
+  ]
+}
