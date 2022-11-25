@@ -1,0 +1,278 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:1afbbf7f-a413-4e9c-9a90-1484aebb98e5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-25T08:34:10.272Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.3.1"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "certifi",
+      "version": "2021.10.8",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/certifi@2021.10.8",
+      "type": "library",
+      "bom-ref": "pkg:pypi/certifi@2021.10.8"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "charset-normalizer",
+      "version": "2.0.9",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/charset-normalizer@2.0.9",
+      "type": "library",
+      "bom-ref": "pkg:pypi/charset-normalizer@2.0.9"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "click",
+      "version": "8.0.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/click@8.0.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "docopt",
+      "version": "0.6.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/docopt@0.6.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/docopt@0.6.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Flask",
+      "version": "2.1.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/flask@2.1.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask@2.1.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Flask-Cors",
+      "version": "3.0.10",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/flask-cors@3.0.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/flask-cors@3.0.10"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "geojson",
+      "version": "2.5.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/geojson@2.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/geojson@2.5.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "greenlet",
+      "version": "1.1.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/greenlet@1.1.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/greenlet@1.1.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "gunicorn",
+      "version": "20.0.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/gunicorn@20.0.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/gunicorn@20.0.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "idna",
+      "version": "3.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/idna@3.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/idna@3.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "itsdangerous",
+      "version": "2.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/itsdangerous@2.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/itsdangerous@2.0.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Jinja2",
+      "version": "3.0.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/jinja2@3.0.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/jinja2@3.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "MarkupSafe",
+      "version": "2.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/markupsafe@2.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/markupsafe@2.0.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "rockset",
+      "version": "0.8.10",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/rockset@0.8.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/rockset@0.8.10"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "protobuf",
+      "version": "3.19.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/protobuf@3.19.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/protobuf@3.19.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "PyYAML",
+      "version": "6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pyyaml@6.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyyaml@6.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "requests",
+      "version": "2.26.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/requests@2.26.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.26.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "requests-toolbelt",
+      "version": "0.9.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/requests-toolbelt@0.9.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests-toolbelt@0.9.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "six",
+      "version": "1.16.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/six@1.16.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.16.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "SQLAlchemy",
+      "version": "1.4.28",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/sqlalchemy@1.4.28",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sqlalchemy@1.4.28"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "texttable",
+      "version": "1.6.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/texttable@1.6.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/texttable@1.6.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "urllib3",
+      "version": "1.26.7",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/urllib3@1.26.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@1.26.7"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Werkzeug",
+      "version": "2.0.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/werkzeug@2.0.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/werkzeug@2.0.2"
+    }
+  ],
+  "dependencies": []
+}

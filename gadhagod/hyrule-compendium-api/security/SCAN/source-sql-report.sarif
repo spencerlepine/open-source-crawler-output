@@ -1,0 +1,85 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "SQL Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "SQL Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "/opt/pmd-bin/bin/run.sh",
+            "pmd",
+            "--no-cache",
+            "--fail-on-violation",
+            "false",
+            "-language",
+            "plsql",
+            "-d",
+            "/github/workspace",
+            "-r",
+            "/github/workspace/reports/source-sql-report.csv",
+            "-f",
+            "csv",
+            "-R",
+            "/usr/local/src/lib/../rules-pmd.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "/opt/pmd-bin/bin/run.sh pmd --no-cache --fail-on-violation false -language plsql -d /github/workspace -r /github/workspace/reports/source-sql-report.csv -f csv -R /usr/local/src/lib/../rules-pmd.xml",
+          "endTimeUtc": "2022-11-25T08:34:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/gadhagod/hyrule-compendium-api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-11-25T08:34:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/gadhagod/hyrule-compendium-api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "06ca93d1-732f-4b3a-9ed3-cd0dbdb89459"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "e2c87acfdf97e22cdfc2109da8b3f7254afdb59b"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "06ca93d1-732f-4b3a-9ed3-cd0dbdb89459",
+      "runGuid": "8adf47cd-d591-4692-ac87-6f81ecb33d95"
+    }
+  ]
+}

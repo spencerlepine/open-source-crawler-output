@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:1afbbf7f-a413-4e9c-9a90-1484aebb98e5" version="1">
+  <metadata>
+    <timestamp>2022-11-25T08:34:10.284Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.3.1</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/certifi@2021.10.8">
+      <publisher/>
+      <group/>
+      <name>certifi</name>
+      <version>2021.10.8</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/certifi@2021.10.8</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/charset-normalizer@2.0.9">
+      <publisher/>
+      <group/>
+      <name>charset-normalizer</name>
+      <version>2.0.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/charset-normalizer@2.0.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/click@8.0.3">
+      <publisher/>
+      <group/>
+      <name>click</name>
+      <version>8.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/click@8.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/docopt@0.6.2">
+      <publisher/>
+      <group/>
+      <name>docopt</name>
+      <version>0.6.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/docopt@0.6.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask@2.1.2">
+      <publisher/>
+      <group/>
+      <name>Flask</name>
+      <version>2.1.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/flask@2.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask-cors@3.0.10">
+      <publisher/>
+      <group/>
+      <name>Flask-Cors</name>
+      <version>3.0.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/flask-cors@3.0.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/geojson@2.5.0">
+      <publisher/>
+      <group/>
+      <name>geojson</name>
+      <version>2.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/geojson@2.5.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/greenlet@1.1.2">
+      <publisher/>
+      <group/>
+      <name>greenlet</name>
+      <version>1.1.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/greenlet@1.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/gunicorn@20.0.4">
+      <publisher/>
+      <group/>
+      <name>gunicorn</name>
+      <version>20.0.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/gunicorn@20.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/idna@3.3">
+      <publisher/>
+      <group/>
+      <name>idna</name>
+      <version>3.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/idna@3.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/itsdangerous@2.0.1">
+      <publisher/>
+      <group/>
+      <name>itsdangerous</name>
+      <version>2.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/itsdangerous@2.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/jinja2@3.0.3">
+      <publisher/>
+      <group/>
+      <name>Jinja2</name>
+      <version>3.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/jinja2@3.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/markupsafe@2.0.1">
+      <publisher/>
+      <group/>
+      <name>MarkupSafe</name>
+      <version>2.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/markupsafe@2.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/rockset@0.8.10">
+      <publisher/>
+      <group/>
+      <name>rockset</name>
+      <version>0.8.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/rockset@0.8.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/protobuf@3.19.1">
+      <publisher/>
+      <group/>
+      <name>protobuf</name>
+      <version>3.19.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/protobuf@3.19.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyyaml@6.0">
+      <publisher/>
+      <group/>
+      <name>PyYAML</name>
+      <version>6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pyyaml@6.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests@2.26.0">
+      <publisher/>
+      <group/>
+      <name>requests</name>
+      <version>2.26.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/requests@2.26.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests-toolbelt@0.9.1">
+      <publisher/>
+      <group/>
+      <name>requests-toolbelt</name>
+      <version>0.9.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/requests-toolbelt@0.9.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/six@1.16.0">
+      <publisher/>
+      <group/>
+      <name>six</name>
+      <version>1.16.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/six@1.16.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/sqlalchemy@1.4.28">
+      <publisher/>
+      <group/>
+      <name>SQLAlchemy</name>
+      <version>1.4.28</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/sqlalchemy@1.4.28</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/texttable@1.6.4">
+      <publisher/>
+      <group/>
+      <name>texttable</name>
+      <version>1.6.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/texttable@1.6.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/urllib3@1.26.7">
+      <publisher/>
+      <group/>
+      <name>urllib3</name>
+      <version>1.26.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/urllib3@1.26.7</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/werkzeug@2.0.2">
+      <publisher/>
+      <group/>
+      <name>Werkzeug</name>
+      <version>2.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/werkzeug@2.0.2</purl>
+    </component>
+  </components>
+</bom>

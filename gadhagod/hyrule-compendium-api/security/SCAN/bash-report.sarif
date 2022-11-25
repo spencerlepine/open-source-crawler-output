@@ -1,0 +1,80 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Shell Script Analysis",
+          "version": "1.0.0-scan",
+          "fullName": "Shell Script Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-a",
+            "--shell=bash",
+            "-f",
+            "json",
+            "-S",
+            "error",
+            "--color=never",
+            "/github/workspace/setup.sh",
+            "/github/workspace/db/scripts/update-regions.sh",
+            "/github/workspace/db/scripts/update-compendium.sh"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-a --shell=bash -f json -S error --color=never /github/workspace/setup.sh /github/workspace/db/scripts/update-regions.sh /github/workspace/db/scripts/update-compendium.sh",
+          "endTimeUtc": "2022-11-25T08:34:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/gadhagod/hyrule-compendium-api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-11-25T08:34:09Z",
+          "workingDirectory": {
+            "uri": "https://github.com/gadhagod/hyrule-compendium-api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "be07a34b-2df8-411d-acaa-f490d0d85881"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "e2c87acfdf97e22cdfc2109da8b3f7254afdb59b"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "be07a34b-2df8-411d-acaa-f490d0d85881",
+      "runGuid": "8adf47cd-d591-4692-ac87-6f81ecb33d95"
+    }
+  ]
+}

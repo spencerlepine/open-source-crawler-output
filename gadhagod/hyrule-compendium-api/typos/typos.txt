@@ -1,0 +1,103 @@
+## Detected Typos
+error: `retrive` should be `retrieve`
+  --> ./local/README.md:15:49
+   |
+15 | Now to authorize access to your Rockset account retrive your api key from the rockset console and set an enviroment variable called `RS2_TOKEN` for it.
+   |                                                 ^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./local/README.md:15:106
+   |
+15 | Now to authorize access to your Rockset account retrive your api key from the rockset console and set an enviroment variable called `RS2_TOKEN` for it.
+   |                                                                                                          ^^^^^^^^^^
+   |
+error: `permanant` should be `permanent`
+  --> ./local/README.md:16:10
+   |
+16 | To set a permanant enviroment variable on mac and linux:
+   |          ^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./local/README.md:16:20
+   |
+16 | To set a permanant enviroment variable on mac and linux:
+   |                    ^^^^^^^^^^
+   |
+error: `enviroment` should be `environment`
+  --> ./local/README.md:25:23
+   |
+25 | To set a session-long enviroment variable, use `export`.
+   |                       ^^^^^^^^^^
+   |
+error: `refrence` should be `reference`
+  --> ./docs/_sidebar.md:4:31
+  |
+4 |     * [API Reference](?id=api-refrence)
+  |                               ^^^^^^^^
+  |
+error: `everthing` should be `everything`
+  --> ./docs/client-libraries/ruby.md:18:27
+   |
+18 | compendium.get_all  # get everthing
+   |                           ^^^^^^^^^
+   |
+error: `existant` should be `existent`
+  --> ./docs/client-libraries/ruby.md:94:23
+   |
+94 | * `target_entry`: Non-existant input entry that causes error.
+   |                       ^^^^^^^^
+   |
+error: `existant` should be `existent`
+  --> ./docs/client-libraries/ruby.md:100:26
+    |
+100 | * `target_category`: Non-existant input category that causes error.
+    |                          ^^^^^^^^
+    |
+error: `tranformation` should be `transformation`
+  --> ./db/mappings/compendium.sql:1:4
+  |
+1 | -- tranformation for compendium collections
+  |    ^^^^^^^^^^^^^
+  |
+error: `mirro` should be `mirror`
+  --> ./db/data/regions.json:264:30
+    |
+264 |                     "name": "mirro shaz",
+    |                              ^^^^^
+    |
+error: `maka` should be `make`
+  --> ./db/data/regions.json:480:30
+    |
+480 |                     "name": "maka rah",
+    |                              ^^^^
+    |
+error: `noe` should be `not`, `no`, `node`, `know`, `now`
+  --> ./db/data/regions.json:609:30
+    |
+609 |                     "name": "noe rajee",
+    |                              ^^^
+    |
+error: `existant` should be `existent`
+  --> ./tests/dictionary.txt:8:5
+  |
+8 | Non-existant
+  |     ^^^^^^^^
+  |
+error: `recieved` should be `received`
+  --> ./tests/test/v3.ts:258:124
+    |
+258 |                     assert.equal(data.length, expectedReigonNames.length, `STATUS CODE: 200; Expected regions do not match recieved regions`);
+    |                                                                                                                            ^^^^^^^^
+    |
+error: `recieved` should be `received`
+  --> ./tests/test/v3.ts:261:90
+    |
+261 |                             assert.fail(`STATUS CODE: 200; Expected regions do not match recieved regions`);
+    |                                                                                          ^^^^^^^^
+    |
+error: `existant` should be `existent`
+  --> ./tests/test/v2.ts:244:68
+    |
+244 |                                     assert.fail("Subcategories non-existant")
+    |                                                                    ^^^^^^^^
+    |

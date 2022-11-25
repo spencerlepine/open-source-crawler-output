@@ -1,0 +1,70 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:1b307666-42f2-4637-98a1-c658ad6c7f7f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-25T08:35:35.643Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.3.1"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-python",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-python@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/setup-python@v2"
+    },
+    {
+      "publisher": "",
+      "group": "BSFishy",
+      "name": "pip-action",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/BSFishy/pip-action@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/BSFishy/pip-action@v1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/authenticate-images.yml, /github/workspace/.github/workflows/deployed-api-tests.yml, /github/workspace/.github/workflows/docs-test.yml, /github/workspace/.github/workflows/local-api-tests.yml, /github/workspace/.github/workflows/update-compendium.yml, /github/workspace/.github/workflows/update-regions.yml",
+      "comment": "Package file"
+    }
+  ]
+}
