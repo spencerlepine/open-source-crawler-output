@@ -1,0 +1,70 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3c7944f9-9cc8-4913-a82e-0156e2b972fc",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-28T08:37:00.212Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.3.1"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-node",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-node@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/setup-node@v1"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "cache",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/cache@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/cache@v1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/main.yml",
+      "comment": "Package file"
+    }
+  ]
+}

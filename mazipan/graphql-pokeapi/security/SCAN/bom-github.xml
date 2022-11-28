@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:3c7944f9-9cc8-4913-a82e-0156e2b972fc" version="1">
+  <metadata>
+    <timestamp>2022-11-28T08:37:00.214Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.3.1</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/actions/setup-node@v1">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-node</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-node@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/actions/cache@v1">
+      <publisher/>
+      <group>actions</group>
+      <name>cache</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/cache@v1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/main.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
