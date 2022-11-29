@@ -1,0 +1,471 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Secrets Audit",
+          "rules": [
+            {
+              "id": "CWE-312",
+              "help": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information.",
+                "markdown": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information."
+              },
+              "name": "High Entropy",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/312.html",
+              "shortDescription": {
+                "text": "Cleartext Storage of Sensitive Information."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Secrets Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "--config-path=/usr/local/src/lib/../credscan-config.toml",
+            "--path=/github/workspace",
+            "--leaks-exit-code=0",
+            "--no-git",
+            "--report=/github/workspace/reports/credscan-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "--config-path=/usr/local/src/lib/../credscan-config.toml --path=/github/workspace --leaks-exit-code=0 --no-git --report=/github/workspace/reports/credscan-report.json",
+          "endTimeUtc": "2022-11-29T23:33:28Z",
+          "workingDirectory": {
+            "uri": "https://github.com/miragejs/miragejs"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-11-29T23:33:28Z",
+          "workingDirectory": {
+            "uri": "https://github.com/miragejs/miragejs"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 9,
+          "critical": 0,
+          "high": 9,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:           secure: opUbyx91tWudkYlFmysdGjNLS3hcyUwL9nquwt4Xtel7w1ylenoBeiclwtwfRaVJpOkevFmycdGo7f3XjUwJypAfLx0+qMHc8P99hBn1rHJGNjGm5/oi3zuCwBDGsHALBqzu99l6CKNbMYcGIxrsjshL5EOvMAkLgZjuEJ1+hsyVaasG9qbDNkEz0PfJCPJYpHCAmEnYK6gL4ZZHlvje4CUgg5SjJKKvC7OhW03IyDjvCziHIVDxAB4BBEZmlC3nHSNKhe/LJrB/+HWY/SqVMFm1reF099G3G8zr+wyStVKqW8gO2ZejiDrw73N62iqrPcSkq72Nym1+TSz0yRjaPUu3JuQbzzCnJROrnWuD7ItlxwbPSOWTPMMSxlg/yrU5qVXNjHSTvYSn0VJBz7fy/MxiTSuz5+Ua2xOU7KpEP6RhVo0qHssDKm2wQ6rce4kNKXvKTkJ2dYTIBsojk8tELIupvas4ck8Dpt8yAxy6nJkEU+2skuM0JgqME32J1in2rQ/Ip/aa2RnTYgiiNZtxvqZBoM50sXiHFKZXOQsNL09/OvpYXNIDD10sALXLqfz3hUHqaMNmmEWSM7Xzz6/3duB/BqvGWXdetnf/KhTH+IlQVM5j/JYC/lT3M2aGWIpS0iwfMaSUgzuuNoccmlauaYOXnwNeDT6RTx1oMA0+PW0=\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "          secure: opUbyx91tWudkYlFmysdGjNLS3hcyUwL9nquwt4Xtel7w1ylenoBeiclwtwfRaVJpOkevFmycdGo7f3XjUwJypAfLx0+qMHc8P99hBn1rHJGNjGm5/oi3zuCwBDGsHALBqzu99l6CKNbMYcGIxrsjshL5EOvMAkLgZjuEJ1+hsyVaasG9qbDNkEz0PfJCPJYpHCAmEnYK6gL4ZZHlvje4CUgg5SjJKKvC7OhW03IyDjvCziHIVDxAB4BBEZmlC3nHSNKhe/LJrB/+HWY/SqVMFm1reF099G3G8zr+wyStVKqW8gO2ZejiDrw73N62iqrPcSkq72Nym1+TSz0yRjaPUu3JuQbzzCnJROrnWuD7ItlxwbPSOWTPMMSxlg/yrU5qVXNjHSTvYSn0VJBz7fy/MxiTSuz5+Ua2xOU7KpEP6RhVo0qHssDKm2wQ6rce4kNKXvKTkJ2dYTIBsojk8tELIupvas4ck8Dpt8yAxy6nJkEU+2skuM0JgqME32J1in2rQ/Ip/aa2RnTYgiiNZtxvqZBoM50sXiHFKZXOQsNL09/OvpYXNIDD10sALXLqfz3hUHqaMNmmEWSM7Xzz6/3duB/BqvGWXdetnf/KhTH+IlQVM5j/JYC/lT3M2aGWIpS0iwfMaSUgzuuNoccmlauaYOXnwNeDT6RTx1oMA0+PW0="
+                  },
+                  "startLine": 41
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/.travis.yml"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "          secure: opUbyx91tWudkYlFmysdGjNLS3hcyUwL9nquwt4Xtel7w1ylenoBeiclwtwfRaVJpOkevFmycdGo7f3XjUwJypAfLx0+qMHc8P99hBn1rHJGNjGm5/oi3zuCwBDGsHALBqzu99l6CKNbMYcGIxrsjshL5EOvMAkLgZjuEJ1+hsyVaasG9qbDNkEz0PfJCPJYpHCAmEnYK6gL4ZZHlvje4CUgg5SjJKKvC7OhW03IyDjvCziHIVDxAB4BBEZmlC3nHSNKhe/LJrB/+HWY/SqVMFm1reF099G3G8zr+wyStVKqW8gO2ZejiDrw73N62iqrPcSkq72Nym1+TSz0yRjaPUu3JuQbzzCnJROrnWuD7ItlxwbPSOWTPMMSxlg/yrU5qVXNjHSTvYSn0VJBz7fy/MxiTSuz5+Ua2xOU7KpEP6RhVo0qHssDKm2wQ6rce4kNKXvKTkJ2dYTIBsojk8tELIupvas4ck8Dpt8yAxy6nJkEU+2skuM0JgqME32J1in2rQ/Ip/aa2RnTYgiiNZtxvqZBoM50sXiHFKZXOQsNL09/OvpYXNIDD10sALXLqfz3hUHqaMNmmEWSM7Xzz6/3duB/BqvGWXdetnf/KhTH+IlQVM5j/JYC/lT3M2aGWIpS0iwfMaSUgzuuNoccmlauaYOXnwNeDT6RTx1oMA0+PW0="
+                  },
+                  "endLine": 41,
+                  "startLine": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "29cbd70df0540aa9",
+            "scanFileHash": "060f376dff0607aa"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\","
+                  },
+                  "startLine": 1503
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\","
+                  },
+                  "endLine": 1503,
+                  "startLine": 1503
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9a9382839a3e1373",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\""
+                  },
+                  "startLine": 1504
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\""
+                  },
+                  "endLine": 1504,
+                  "startLine": 1504
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a541855ffb7a5ce5",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\","
+                  },
+                  "startLine": 1530
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\","
+                  },
+                  "endLine": 1530,
+                  "startLine": 1530
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e77b24ab4c24cf2f",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\""
+                  },
+                  "startLine": 1531
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\""
+                  },
+                  "endLine": 1531,
+                  "startLine": 1531
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8ce0e3e0f924c6a2",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\","
+                  },
+                  "startLine": 1800
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\","
+                  },
+                  "endLine": 1800,
+                  "startLine": 1800
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d29ab106b256255d",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\""
+                  },
+                  "startLine": 1801
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\""
+                  },
+                  "endLine": 1801,
+                  "startLine": 1801
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1d1c2da8d5dd1d46",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\","
+                  },
+                  "startLine": 1935
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\","
+                  },
+                  "endLine": 1935,
+                  "startLine": 1935
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ace693e453ef5296",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\""
+                  },
+                  "startLine": 1936
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/miragejs/miragejs/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\""
+                  },
+                  "endLine": 1936,
+                  "startLine": 1936
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c9558570234d0134",
+            "scanFileHash": "9ccb5a444d994747"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "355ebacd-7030-4e3b-88c0-a2c693692314"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "e2c87acfdf97e22cdfc2109da8b3f7254afdb59b"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "355ebacd-7030-4e3b-88c0-a2c693692314",
+      "runGuid": "f128c547-45a1-4d1e-b8a0-b24deaec94bf"
+    }
+  ]
+}

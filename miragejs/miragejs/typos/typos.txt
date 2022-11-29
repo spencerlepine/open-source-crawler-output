@@ -1,0 +1,91 @@
+## Detected Typos
+error: `constuction` should be `construction`
+  --> ./lib/orm/associations/association.js:117:62
+    |
+117 |      A setter for schema, since we don't have a reference at constuction time.
+    |                                                              ^^^^^^^^^^^
+    |
+error: `properites` should be `properties`
+  --> ./lib/orm/model.js:21:18
+   |
+21 |   You can access properites (fields) and relationships directly off of models.
+   |                  ^^^^^^^^^^
+   |
+error: `explicity` should be `explicitly`
+  --> ./lib/orm/model.js:399:47
+    |
+399 |     Finds the inverse for an association that explicity defines it's inverse
+    |                                               ^^^^^^^^^
+    |
+error: `palce` should be `place`, `palace`
+  --> ./lib/serializers/json-api-serializer.js:433:42
+    |
+433 |     // Hack :/ Need to think of a better palce to put this if
+    |                                          ^^^^^
+    |
+error: `resouce` should be `resource`
+  --> ./lib/serializer.js:374:189
+    |
+374 |     This method is used by the POST and PUT shorthands. These shorthands expect a valid JSON:API document as part of the request, so that they know how to create or update the appropriate resouce. The *normalize* method allows you to transform your request body into a JSON:API document, which lets you take advantage of the shorthands when you otherwise may not be able to.
+    |                                                                                                                                                                                             ^^^^^^^
+    |
+error: `propertly` should be `property`, `properly`
+  --> ./__tests__/external/shared/serializers/json-api-serializer/associations/collection-test.js:430:12
+    |
+430 |   test(`it propertly serializes complex relationships`, () => {
+    |            ^^^^^^^^^
+    |
+error: `databse` should be `database`
+  --> ./__tests__/external/shared/serializers/base/override-serialize-test.js:64:27
+   |
+64 |   test(`it can access the databse while in a serializer method`, () => {
+   |                           ^^^^^^^
+   |
+error: `Ned` should be `Need`
+  --> ./__tests__/external/shared/serializers/base/associations/polymorphic/has-many-test.js:17:57
+   |
+17 |     server.schema.users.create({ things: [post], name: "Ned" });
+   |                                                         ^^^
+   |
+error: `Ned` should be `Need`
+  --> ./__tests__/external/shared/serializers/base/associations/polymorphic/has-many-test.js:45:16
+   |
+45 |         name: "Ned",
+   |                ^^^
+   |
+error: `Ned` should be `Need`
+  --> ./__tests__/external/shared/serializers/base/associations/polymorphic/has-many-test.js:70:16
+   |
+70 |         name: "Ned",
+   |                ^^^
+   |
+error: `Ned` should be `Need`
+  --> ./__tests__/external/shared/serializers/base/associations/polymorphic/has-many-test.js:96:16
+   |
+96 |         name: "Ned",
+   |                ^^^
+   |
+error: `meaningfull` should be `meaningful`
+  --> ./__tests__/internal/unit/factory-test.js:221:16
+    |
+221 |   test("throws meaningfull exception on circular reference", () => {
+    |                ^^^^^^^^^^^
+    |
+error: `referecne` should be `reference`
+  --> ./__tests__/internal/unit/db-test.js:402:31
+    |
+402 |   test("returns a copy, not a referecne", () => {
+    |                               ^^^^^^^^^
+    |
+error: `compount` should be `compound`
+  --> ./__tests__/internal/move-after-handle-request/route-handlers/function-handler/normalize-request-attrs-test.js:126:77
+    |
+126 |   test(`it errors if the optional parameter is camelized for a model with a compount name`, async () => {
+    |                                                                             ^^^^^^^^
+    |
+error: `appliction` should be `application`
+  --> ./__tests__/internal/move-after-handle-request/shorthands/post-shorthand-with-relationships-test.js:12:11
+   |
+12 |           appliction: JSONAPISerializer,
+   |           ^^^^^^^^^^
+   |

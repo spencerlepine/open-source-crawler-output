@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:e24fb89f-fe0f-4b4e-9305-6175e352e8e6" version="1">
+  <metadata>
+    <timestamp>2022-11-29T23:34:58.765Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.3.1</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/actions/setup-node@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-node</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-node@v2</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/ci.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

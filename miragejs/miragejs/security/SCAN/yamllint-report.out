@@ -1,0 +1,2 @@
+/github/workspace/.travis.yml:41:81: [error] line too long (702 > 80 characters) (line-length)
+/github/workspace/.travis.yml:42:9: [warning] truthy value should be one of [false, true] (truthy)

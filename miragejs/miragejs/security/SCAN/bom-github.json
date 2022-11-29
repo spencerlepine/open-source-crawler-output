@@ -1,0 +1,59 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:e24fb89f-fe0f-4b4e-9305-6175e352e8e6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-29T23:34:58.759Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.3.1"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-node",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-node@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/actions/setup-node@v2"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/ci.yml",
+      "comment": "Package file"
+    }
+  ]
+}

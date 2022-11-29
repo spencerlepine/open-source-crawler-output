@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:a1e69554-a7b2-4c4e-a5cf-37c8a822eb54" version="1">
+  <metadata>
+    <timestamp>2022-11-29T23:33:30.517Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.3.1</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/sprintf-js@|">
+      <publisher/>
+      <group/>
+      <name>sprintf-js</name>
+      <version>|</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/sprintf-js@|</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/fake-xml-http-request@2.1.2">
+      <publisher/>
+      <group/>
+      <name>fake-xml-http-request</name>
+      <version>2.1.2</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/fake-xml-http-request@2.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/resolve-url@0.2.1">
+      <publisher/>
+      <group/>
+      <name>resolve-url</name>
+      <version>0.2.1</version>
+      <description><![CDATA[Like Node.js’ `path.resolve`/`url.resolve` for the browser.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:npm/resolve-url@0.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/sprintf@1.0.3">
+      <publisher/>
+      <group/>
+      <name>sprintf</name>
+      <version>1.0.3</version>
+      <description><![CDATA[JavaScript sprintf implementation]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause-Clear</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause-Clear</url>
+        </license>
+      </licenses>
+      <purl>pkg:npm/sprintf@1.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/ansi-regex@2.1.1">
+      <publisher/>
+      <group/>
+      <name>ansi-regex</name>
+      <version>2.1.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">c3b33ab5ee360d86e0e628f0468ae7ef27d654df</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/ansi-regex@2.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/ansi-styles@2.2.1">
+      <publisher/>
+      <group/>
+      <name>ansi-styles</name>
+      <version>2.2.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">b432dd3358b634cf75e1e4664368240533c1ddbe</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/ansi-styles@2.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/chalk@1.1.3">
+      <publisher/>
+      <group/>
+      <name>chalk</name>
+      <version>1.1.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">a8115c55e4a702fe4d150abd3872822a7e09fc98</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/chalk@1.1.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/escape-string-regexp@1.0.5">
+      <publisher/>
+      <group/>
+      <name>escape-string-regexp</name>
+      <version>1.0.5</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">1b61c0562190a8dff6ae3bb2cf0200ca130b86d4</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/escape-string-regexp@1.0.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/esutils@2.0.2">
+      <publisher/>
+      <group/>
+      <name>esutils</name>
+      <version>2.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/esutils@2.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/has-ansi@2.0.0">
+      <publisher/>
+      <group/>
+      <name>has-ansi</name>
+      <version>2.0.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">34f5049ce1ecdf2b0649af3ef24e45ed35416d91</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/has-ansi@2.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/js-tokens@3.0.2">
+      <publisher/>
+      <group/>
+      <name>js-tokens</name>
+      <version>3.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">9866df395102130e38f7f996bceb65443209c25b</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/js-tokens@3.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/strip-ansi@3.0.1">
+      <publisher/>
+      <group/>
+      <name>strip-ansi</name>
+      <version>3.0.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">6a385fb8853d952d5ff05d0e8aaf94278dc63dcf</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/strip-ansi@3.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/supports-color@2.0.0">
+      <publisher/>
+      <group/>
+      <name>supports-color</name>
+      <version>2.0.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-1">535d045ce6b6363fa40117084629995e9df324c7</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/supports-color@2.0.0</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/node_modules/@babel/core/node_modules/source-map/dist/source-map.min.js, /github/workspace/node_modules/@babel/generator/node_modules/source-map/dist/source-map.min.js, /github/workspace/node_modules/ajv/dist/ajv.min.js, /github/workspace/node_modules/base64-js/base64js.min.js, /github/workspace/node_modules/diff/dist/diff.min.js, /github/workspace/node_modules/dtslint/node_modules/diff/dist/diff.min.js, /github/workspace/node_modules/esquery/dist/esquery.esm.min.js, /github/workspace/node_modules/esquery/dist/esquery.lite.min.js, /github/workspace/node_modules/esquery/dist/esquery.min.js, /github/workspace/node_modules/flatted/min.js, /github/workspace/node_modules/html-escaper/min.js, /github/workspace/node_modules/imurmurhash/imurmurhash.min.js, /github/workspace/node_modules/inflected/dist/umd/inflected.min.js, /github/workspace/node_modules/jest-extended/node_modules/react-is/cjs/react-is.production.min.js, /github/workspace/node_modules/jest-extended/node_modules/react-is/umd/react-is.production.min.js, /github/workspace/node_modules/js-yaml/dist/js-yaml.min.js, /github/workspace/node_modules/json5/dist/index.min.js, /github/workspace/node_modules/lodash/core.min.js, /github/workspace/node_modules/lodash/fp/min.js, /github/workspace/node_modules/lodash/lodash.min.js, /github/workspace/node_modules/lodash/min.js, /github/workspace/node_modules/parsimmon/build/parsimmon.umd.min.js, /github/workspace/node_modules/psl/dist/psl.min.js, /github/workspace/node_modules/react-is/cjs/react-is.production.min.js, /github/workspace/node_modules/react-is/umd/react-is.production.min.js, /github/workspace/node_modules/snapdragon/node_modules/source-map/dist/source-map.min.js, /github/workspace/node_modules/source-map/dist/source-map.min.js, /github/workspace/node_modules/sprintf-js/dist/angular-sprintf.min.js, /github/workspace/node_modules/sprintf-js/dist/sprintf.min.js, /github/workspace/node_modules/tweetnacl/nacl-fast.min.js, /github/workspace/node_modules/tweetnacl/nacl.min.js, /github/workspace/node_modules/uri-js/dist/es5/uri.all.min.js, /github/workspace/node_modules/atob/bower.json, /github/workspace/node_modules/fake-xml-http-request/bower.json, /github/workspace/node_modules/resolve-url/bower.json, /github/workspace/node_modules/sprintf-js/bower.json, /github/workspace/node_modules/babel-code-frame/package-lock.json</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
