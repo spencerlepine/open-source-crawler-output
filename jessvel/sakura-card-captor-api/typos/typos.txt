@@ -1,0 +1,55 @@
+## Detected Typos
+error: `appeard` should be `appeared`
+  --> ./src/models/card.js:27:3
+   |
+27 |   appeardManga: {
+   |   ^^^^^^^
+   |
+error: `appeard` should be `appeared`
+  --> ./src/models/card.js:31:3
+   |
+31 |   appeardAnime: {
+   |   ^^^^^^^
+   |
+error: `appeard` should be `appeared`
+  --> ./README.md:30:8
+   |
+30 |       "appeardManga":"1",
+   |        ^^^^^^^
+   |
+error: `appeard` should be `appeared`
+  --> ./README.md:31:8
+   |
+31 |       "appeardAnime":"1",
+   |        ^^^^^^^
+   |
+error: `appeard` should be `appeared`
+  --> ./README.md:70:2
+   |
+70 | `appeardManga`: Number of manga in which the card first appeard.<br>
+   |  ^^^^^^^
+   |
+error: `appeard` should be `appeared`
+  --> ./README.md:70:57
+   |
+70 | `appeardManga`: Number of manga in which the card first appeard.<br>
+   |                                                         ^^^^^^^
+   |
+error: `appeard` should be `appeared`
+  --> ./README.md:71:2
+   |
+71 | `appeardAnime` : Number of episode in which the card first appeard.<br>
+   |  ^^^^^^^
+   |
+error: `appeard` should be `appeared`
+  --> ./README.md:71:60
+   |
+71 | `appeardAnime` : Number of episode in which the card first appeard.<br>
+   |                                                            ^^^^^^^
+   |
+error: `proyect` should be `project`, `protect`
+  --> ./README.md:76:11
+   |
+76 | ### Start proyect 🚀
+   |           ^^^^^^^
+   |
