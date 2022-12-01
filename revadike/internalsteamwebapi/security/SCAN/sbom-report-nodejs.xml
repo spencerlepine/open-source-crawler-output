@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:f62f1d1c-01a4-46f6-b644-30890d4e8325" version="1">
+  <metadata>
+    <timestamp>2022-12-01T08:36:53.752Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.3.4</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/jQuery@2.2.4">
+      <publisher/>
+      <group/>
+      <name>jQuery</name>
+      <version>2.2.4</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/jQuery@2.2.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/Sizzle@2.2.1">
+      <publisher/>
+      <group/>
+      <name>Sizzle</name>
+      <version>2.2.1</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/Sizzle@2.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/async@1.0.0">
+      <publisher/>
+      <group/>
+      <name>async</name>
+      <version>1.0.0</version>
+      <description><![CDATA[Higher-order functions and common patterns for asynchronous code]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:npm/async@1.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/mimer@0.2.1">
+      <publisher/>
+      <group/>
+      <name>mimer</name>
+      <version>0.2.1</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/mimer@0.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/balanced-match@1.0.2">
+      <publisher/>
+      <group/>
+      <name>balanced-match</name>
+      <version>1.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">de849e50ed13315ebb84dd4099b5ec2b8c9aa94eed8e21e56f144364ea47d0a5bdf82797e1b440697d009f1b74b71d8cae94695b041a3f02252121098585393f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/balanced-match@1.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/bluebird@2.11.0">
+      <publisher/>
+      <group/>
+      <name>bluebird</name>
+      <version>2.11.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">51f152af6d9d9873d0a8f3fd5d61d186afa05a71c2620b901a45d095bc8fb56e6a4e7845580f3f89783beb9b47d1c023cbb97fccf2756814ced20e57800ee4bd</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/bluebird@2.11.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/bootstrap@3.4.1">
+      <publisher/>
+      <group/>
+      <name>bootstrap</name>
+      <version>3.4.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">c8de686559910b07b968ac33463ebbdfa9d298a0d7ee92d8c2c5e20a3fc4626a35ea1383681893e049f96ed5bf8e1045fec795f97331dda630ba4602dc0e3d0c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/bootstrap@3.4.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/brace-expansion@1.1.11">
+      <publisher/>
+      <group/>
+      <name>brace-expansion</name>
+      <version>1.1.11</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">882b8f1c3160ac75fb1f6bc423fe71a73d3bcd21c1d344e9ba0aa1998b5598c3bae75f260ae44ca0e60595d101974835f3bb9fa3375a1e058a71815beb5a8688</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/brace-expansion@1.1.11</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/clone@1.0.4">
+      <publisher/>
+      <group/>
+      <name>clone</name>
+      <version>1.0.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">2501d9d90316ea5dda1ff8fac42a904e163ff4e1f80fff65b37e1c8245018847a87114d4d38b477ca3c1b142b53ea64251033b1a20342085c94ae5c723ae0a6e</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/clone@1.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/colors@1.0.3">
+      <publisher/>
+      <group/>
+      <name>colors</name>
+      <version>1.0.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">a451abc5385671643632c033e91b607967b834ada4504d567ecaefbe572d74823be39116f48d327e5aa17bbfbe3392c473b6d5d9cffdff9cdcf2c15ca4bd03af</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/colors@1.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/commander@2.20.3">
+      <publisher/>
+      <group/>
+      <name>commander</name>
+      <version>2.20.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">1a956498cf2f176bd05248f62ef6660f7e49c5e24e2c2c09f5c524ba0ca4da7ba16efdfe989be92d862dfb4f9448cc44fa88fe7b2fe52449e1670ef9c7f38c71</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/commander@2.20.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/concat-map@0.0.1">
+      <publisher/>
+      <group/>
+      <name>concat-map</name>
+      <version>0.0.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">fd2aefe1db30c903417e8846a73f68e986f71b3dd2ad40ea047e6b4ee84647b6a1b656d82a7571c366c214c4658da03b1171da5d9f30b07768745bdb9212a6aa</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/concat-map@0.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/cycle@1.0.3">
+      <publisher/>
+      <group/>
+      <name>cycle</name>
+      <version>1.0.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">4d517ab2f37379008ea630aab32d3f092cbc56039b1b7c17bac27bdf15b619b1b9ac6c7b942f33c4349446272c5c8d94b06762d8bd103510a2ef8e7fc140efb0</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/cycle@1.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/datauri@1.1.0">
+      <publisher/>
+      <group/>
+      <name>datauri</name>
+      <version>1.1.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">d2af9c4d32b1eeaf1e0ed79944840b4c526e888b158a7835ed46d64cfb2c63824b48c698b24fd52a936e9410e8f4d4a041672f94fae41075bc9143baed3ffb99</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/datauri@1.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/defaults@1.0.4">
+      <publisher/>
+      <group/>
+      <name>defaults</name>
+      <version>1.0.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">785b9a2e8cbf4716a5bf692bfa5a8c9549eb0d657ede3e299633882602c8848d39f0841f589eef5e1c84207bbe1ed0bbdfc9251802d8c4e2833b46d03f7b60f0</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/defaults@1.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/eyes@0.1.8">
+      <publisher/>
+      <group/>
+      <name>eyes</name>
+      <version>0.1.8</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">1a2a723ec5ced5a9f36b400e65dcbaf489bb846142341ed8fcd1a30e564627718924bb703526f6bebcd8ad360946b465a15c7ba65f9b85469307cca271c3ef15</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/eyes@0.1.8</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/fs-extra@0.23.1">
+      <publisher/>
+      <group/>
+      <name>fs-extra</name>
+      <version>0.23.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">567dd69907aa53c210f428bf75dea62572b5650ace064e91d8a076e8e8d5d4eb8f1e54fb0f256dbd54c52c85db89d2d3dddffcf6e6859aa705b6c79fb32f6081</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/fs-extra@0.23.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/fs.realpath@1.0.0">
+      <publisher/>
+      <group/>
+      <name>fs.realpath</name>
+      <version>1.0.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">38ed291f694ae9ad2166701d6aee48b731cf23aa5496f23b8cc567c54411b70e28c05db093c94e49a6ed1830933f81a0ae0d8c6c69d63bd5fc2b5b78f9f18c0f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/fs.realpath@1.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/github-wikito-converter@1.5.3">
+      <publisher/>
+      <group/>
+      <name>github-wikito-converter</name>
+      <version>1.5.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">4c44814ae5a5e814bbdc7a3f306d11aba0e35f4e6a9ac239e5d6d431eea4d97f6552a7b7c4f536a6ec413caa3a77b01dd7635a338263fda446925bfd089c5409</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/github-wikito-converter@1.5.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/glob@7.2.3">
+      <publisher/>
+      <group/>
+      <name>glob</name>
+      <version>7.2.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">9c5474ccba54d9809a471c28089bcbe94bc21f6245c85548bf04cbb087f6d40b8794cb240358614dd93e2e5609b4e958b7dbfa76fb330f604646a04bfa240af5</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/glob@7.2.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/graceful-fs@4.2.10">
+      <publisher/>
+      <group/>
+      <name>graceful-fs</name>
+      <version>4.2.10</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">f41ca1b2c4767cf56c3598f8efca9451b29f98bd3eb790435728d286dc9964b88aed90c002b1457e8a723938f4334e70136b493e2b00e224e79d79766283ef38</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/graceful-fs@4.2.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/highlight.js@10.7.3">
+      <publisher/>
+      <group/>
+      <name>highlight.js</name>
+      <version>10.7.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b7371415aba2b1628d1da4643785a397f640d3b8043408c597727f738f34769ae4193839110b2d81a345a817d4a82ab9e2465120472b793b00805fe6daab83ec</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/highlight.js@10.7.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/image-size@0.6.3">
+      <publisher/>
+      <group/>
+      <name>image-size</name>
+      <version>0.6.3</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">e3bc52522422a06681f7a9eab69e7fab9e66d1a050490772225a0c39cff1f905530d92cd99713cf762080eb27484cd40e6f70d5030f9b437df9123f994268820</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/image-size@0.6.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/inflight@1.0.6">
+      <publisher/>
+      <group/>
+      <name>inflight</name>
+      <version>1.0.6</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">93dd88fdbd3cab8c2f16c71708bbea7ec1c2ae3ac5ef2897b10b8856f544ecdf365b7f9aaa9cee51d05b7e159ccbf159477ff82207e532028b3acbcf0eb18224</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/inflight@1.0.6</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/inherits@2.0.4">
+      <publisher/>
+      <group/>
+      <name>inherits</name>
+      <version>2.0.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">93fbc6697e3f6256b75b3c8c0af4d039761e207bea38ab67a8176ecd31e9ce9419cc0b2428c859d8af849c189233dcc64a820578ca572b16b8758799210a9ec1</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/inherits@2.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/isstream@0.1.2">
+      <publisher/>
+      <group/>
+      <name>isstream</name>
+      <version>0.1.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">6258f3edf7f23dbacba4b9e0accb59ecd76e52056f8bac06f5127d21473209de7d610f75d4f049a6138351c6ce55ba987f17b5c2e61ffcb27c3dab8c470b0cfe</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/isstream@0.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/jquery@2.2.4">
+      <publisher/>
+      <group/>
+      <name>jquery</name>
+      <version>2.2.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">9411e3eb47b3722daed6fd85aa7648ada4a11a0117ab7e6a0b332fe25213c871a9a539c0d77af0474320c3234987d4e70ecdda5d4bddd718c0a2d7eb68c1d7fd</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/jquery@2.2.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/jsonfile@2.4.0">
+      <publisher/>
+      <group/>
+      <name>jsonfile</name>
+      <version>2.4.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">3ca96502a6e02e0c476a3f1312563298a08082b01279b26b5a94e712439a4e8c2ddb754a5d7374b147ab889f9e87bcbab9f6ff082e5aa75d69cfbd7f70cd2153</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/jsonfile@2.4.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/marked@0.3.19">
+      <publisher/>
+      <group/>
+      <name>marked</name>
+      <version>0.3.19</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">79ad9e1963aa3713dc5eff1dc8445d4abffa166cef5b0ce3331a5f181fec6cc71c5e872dfb163e62e90f0fe413519c32bcaec167072be26db5581396e35a4092</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/marked@0.3.19</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/mimer@0.3.2">
+      <publisher/>
+      <group/>
+      <name>mimer</name>
+      <version>0.3.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">37a35c8034007af84fff4d8343f7a92ba75a2f2e0d2ab207c9394970eeaa062627f7cabe6386bf92736c0004c27b5c4b4b61749c4989a7e418962dacf2f2b0c9</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/mimer@0.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/minimatch@3.1.2">
+      <publisher/>
+      <group/>
+      <name>minimatch</name>
+      <version>3.1.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">27ba7ade1462023c35343130c355bb8b7efe07222b3963b95d0400cd9dd539c2f43cdc9bc297e657f374e73140cf043d512c84717eaddd43be2b96aa0503881f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/minimatch@3.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/node-dir@0.1.17">
+      <publisher/>
+      <group/>
+      <name>node-dir</name>
+      <version>0.1.17</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b663d7e36dab620a1f7787a9ceb368397884f1715960e702ab5bc3ecc0170833be3bece7765036ced74a28c6be11eb811b9b47113a6be26978446829a8308202</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/node-dir@0.1.17</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/once@1.4.0">
+      <publisher/>
+      <group/>
+      <name>once</name>
+      <version>1.4.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">94d689808fb643951140191c7042874d038f697754c67659125413658d0c15402e684a9ed44f8dcaf81dcff688c8d8ba67d3333b976fd47f27e7cfc610ba77fb</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/once@1.4.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/open@0.0.5">
+      <publisher/>
+      <group/>
+      <name>open</name>
+      <version>0.0.5</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">f97fdd2582daa553b555b0badb40e1b4d64af54e3f91055a4d0a7f1a1edc6fa5132d87c6673cd4d995e45ab380ff006b7f852a005c2d2ea5d84f17b8b529d641</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/open@0.0.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/path-is-absolute@1.0.1">
+      <publisher/>
+      <group/>
+      <name>path-is-absolute</name>
+      <version>1.0.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">0156f0dd42767bd6eaeb8bd2692f409b47e37b53daf296c6a934ec9977da2223299ebe4394385f24eb8b8fd49ff7964f5430147ab0df124f3c30f98f7bb50242</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/path-is-absolute@1.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/pkginfo@0.3.1">
+      <publisher/>
+      <group/>
+      <name>pkginfo</name>
+      <version>0.3.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">c8ee5f781c8ccc0a7de8bb4fe7cc2f3ca49b68a022ff50b8915f57a5372dafa11ea673fa177dd104d3a256b773f41acf03df14d81305b13347a38e1359c6d0d8</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/pkginfo@0.3.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/plantuml-encoder@1.4.0">
+      <publisher/>
+      <group/>
+      <name>plantuml-encoder</name>
+      <version>1.4.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b31330a43c3fc92635581d82137f8874cb8471689b27bd830ceb172e44a611a4b3c0451a6014fa0d680e7c1887182bb1e2ae37dd7ebe3841568e556aa7b80bea</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/plantuml-encoder@1.4.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/rimraf@2.7.1">
+      <publisher/>
+      <group/>
+      <name>rimraf</name>
+      <version>2.7.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b968db68a20add3d4e495a6dcd7ecd97a3ef437a801ad284b5546346e6b38df2f7071e5e238d3d5594aa80d0fee143679b32d574f8fd16a14934fa81645bdee3</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/rimraf@2.7.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/semver@5.7.1">
+      <publisher/>
+      <group/>
+      <name>semver</name>
+      <version>5.7.1</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">b1ab9a0dffcf65d560acb4cd60746da576b589188a71a79b88a435049769425587da50af7b141d5f9e6c9cf1722bb433a6e76a6c2234a9715f39ab0777234319</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/semver@5.7.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/slang@0.3.0">
+      <publisher/>
+      <group/>
+      <name>slang</name>
+      <version>0.3.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">9068f74efc520d1d449e18a0fda6a7e6e71f58d0d42d389683736b1315333b64a15dc62c9ba936a0fc676aff06b6c958be8cf1440a8bf84d8edcfdd02ad4184a</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/slang@0.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/stack-trace@0.0.10">
+      <publisher/>
+      <group/>
+      <name>stack-trace</name>
+      <version>0.0.10</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">286cda85cee9b942a4cf232df88a807a9f9354d6ca3fe9362e6c21b9bdfd9b502c4d291a0eeb71e7a6830a8f872c3cdffc3dba0481d32563624c6d4a0098900a</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/stack-trace@0.0.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/winston@1.1.2">
+      <publisher/>
+      <group/>
+      <name>winston</name>
+      <version>1.1.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">ae5f6103cb1eda08dd608ea73f57fe9238d2085099ace6c8241fde5ce70c7735b1c5c629edec7273906cdb8f1fc0b4fec0703ff9a2b456d0653c72fca8ed13d3</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/winston@1.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/wkhtmltopdf@0.1.6">
+      <publisher/>
+      <group/>
+      <name>wkhtmltopdf</name>
+      <version>0.1.6</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">5deb51113b65dd13901acbb21b9c54c7f1e12c44cd872eb0f41e604ad2e4f3588dc3547f92a42ee16740f751f9a3116ad53ab4ca207e6c3a0e6af2bc3c150abb</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/wkhtmltopdf@0.1.6</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/wrappy@1.0.2">
+      <publisher/>
+      <group/>
+      <name>wrappy</name>
+      <version>1.0.2</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">9784a9fc346c7a8afdc0be84bd5dbe4ee427eb774c90f8d9feca7d5e48214c46d5f4a94f4b5c54b19deeeff2103b8c31b5c141e1b82940f45c477402bdeccf71</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/wrappy@1.0.2</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/node_modules/bluebird/js/browser/bluebird.min.js, /github/workspace/node_modules/bootstrap/dist/js/bootstrap.min.js, /github/workspace/node_modules/jquery/dist/jquery.min.js, /github/workspace/node_modules/jquery/external/sizzle/dist/sizzle.min.js, /github/workspace/node_modules/marked/marked.min.js, /github/workspace/node_modules/plantuml-encoder/dist/plantuml-decoder.min.js, /github/workspace/node_modules/plantuml-encoder/dist/plantuml-encoder.min.js, /github/workspace/node_modules/slang/slang.min.js, /github/workspace/node_modules/async/bower.json, /github/workspace/node_modules/jquery/bower.json, /github/workspace/node_modules/marked/bower.json, /github/workspace/node_modules/mimer/bower.json, /github/workspace/package-lock.json</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
