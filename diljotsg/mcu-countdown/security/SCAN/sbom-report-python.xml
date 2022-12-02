@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:9d8454c5-2fd3-4bad-9e85-23bffab86fbd" version="1">
+  <metadata>
+    <timestamp>2022-12-02T08:32:03.788Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.3.6</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/flask@1.1.2">
+      <publisher/>
+      <group/>
+      <name>Flask</name>
+      <version>1.1.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/flask@1.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flask-cors@3.0.9">
+      <publisher/>
+      <group/>
+      <name>Flask-Cors</name>
+      <version>3.0.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/flask-cors@3.0.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests@2.23.0">
+      <publisher/>
+      <group/>
+      <name>requests</name>
+      <version>2.23.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/requests@2.23.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/jsonschema@3.2.0">
+      <publisher/>
+      <group/>
+      <name>jsonschema</name>
+      <version>3.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/jsonschema@3.2.0</purl>
+    </component>
+  </components>
+</bom>

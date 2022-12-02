@@ -1,0 +1,7 @@
+/github/workspace/serverless.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/serverless.yml:27:14: [error] trailing spaces (trailing-spaces)
+/github/workspace/serverless.yml:28:22: [error] trailing spaces (trailing-spaces)
+/github/workspace/serverless.yml:31:14: [error] trailing spaces (trailing-spaces)
+/github/workspace/serverless.yml:38:3: [error] wrong indentation: expected 4 but found 2 (indentation)
+/github/workspace/serverless.yml:56:3: [error] no new line character at the end of file (new-line-at-end-of-file)
+/github/workspace/serverless.yml:56:1: [error] trailing spaces (trailing-spaces)
