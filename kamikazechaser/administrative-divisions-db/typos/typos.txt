@@ -1,0 +1,371 @@
+## Detected Typos
+error: `divisons` should be `divisions`
+  --> ./README.md:3:18
+  |
+3 | > Administrative divisons of countries as a JSON API over Github
+  |                  ^^^^^^^^
+  |
+error: `gurantee` should be `guarantee`
+  --> ./README.md:9:14
+  |
+9 |  * No uptime gurantee
+  |              ^^^^^^^^
+  |
+error: `guranteed` should be `guaranteed`
+  --> ./README.md:14:99
+   |
+14 | This repo automagically serves an "API" over Rawgit (Cloudflare network). No limits and uptime is guranteed. To get the administrative division of a particular country, simply make a GET request to:
+   |                                                                                                   ^^^^^^^^^
+   |
+error: `Herat` should be `Heart`
+  --> ./raw.txt:34:7
+   |
+34 | AF.11 Herat Herat 1140025
+   |       ^^^^^
+   |
+error: `Herat` should be `Heart`
+  --> ./raw.txt:34:13
+   |
+34 | AF.11 Herat Herat 1140025
+   |             ^^^^^
+   |
+error: `BA` should be `BY`, `BE`
+  --> ./raw.txt:232:1
+    |
+232 | BA.01 Federation of B&H Federation of B&H 3229999
+    | ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./raw.txt:233:1
+    |
+233 | BA.02 Srpska Srpska 3230000
+    | ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./raw.txt:234:1
+    |
+234 | BA.BRC Brčko Brcko 3294903
+    | ^^
+    |
+error: `Parana` should be `Piranha`
+  --> ./raw.txt:373:14
+    |
+373 | BR.18 Paraná Parana 3455077
+    |              ^^^^^^
+    |
+error: `Haa` should be `Has`
+  --> ./raw.txt:423:7
+    |
+423 | BT.10 Haa Haa 1337283
+    |       ^^^
+    |
+error: `Haa` should be `Has`
+  --> ./raw.txt:423:11
+    |
+423 | BT.10 Haa Haa 1337283
+    |           ^^^
+    |
+error: `Olt` should be `Old`
+  --> ./api/RO.json:1:108
+  |
+1 | ["Vrancea","Vâlcea","Vaslui","Tulcea","Timiş","Teleorman","Suceava","Sibiu","Satu Mare","Sălaj","Prahova","Olt","Neamţ","Mureş","Mehedinţi","Maramureş","Iaşi","Ialomiţa","Hunedoara","Harghita","Gorj","Giurgiu","Galaţi","Dolj","Dâmboviţa","Covasna","Constanța","Cluj","Caraş-Severin","Călăraşi","Buzău","Bucureşti","Braşov","Brăila","Botoşani","Bistriţa-Năsăud","Bihor","Bacău","Arges","Arad","Alba","Ilfov"]
+  |                                                                                                            ^^^
+  |
+error: `Spiritus` should be `Spirits`
+  --> ./raw.txt:685:30
+    |
+685 | CU.14 Sancti Spíritus Sancti Spiritus 3540665
+    |                              ^^^^^^^^
+    |
+error: `FO` should be `OF`, `FOR`
+  --> ./api/FO.json:1
+error: `Tre` should be `Tree`
+  --> ./api/VN.json:1:514
+  |
+1 | ["Nghệ An","Ninh Bình","Ninh Thuận","Sóc Trăng","Trà Vinh","Tuyên Quang","Vĩnh Long","Yên Bái","Lào Cai","Tiền Giang","Thừa Thiên-Huế","Kon Tum","Thanh Hóa","Thái Bình","Tây Ninh Province","Sơn La","Quảng Trị","Quảng Ninh","Quảng Ngãi Province","Quảng Bình","Phú Yên","Hòa Bình","Long An","Lạng Sơn","Lâm Đồng","Lai Châu","Kiến Giang","Khánh Hòa","Ho Chi Minh","Hà Tĩnh","Hà Giang","Gia Lai","Hanoi","Can Tho","Haiphong","Bình Thuận","Đồng Tháp","Đồng Nai","Đắk Lắk","Bà Rịa-Vũng Tàu","Cao Bằng","Bình Định","Bến Tre","An Giang","Ðắk Nông","Ðiện Biên","Bắc Ninh","Bắc Giang","Da Nang","Bình Dương","Bình Phước","Thái Nguyên","Quảng Nam","Phú Thọ","Nam Định","Hà Nam","Bắc Kạn","Bạc Liêu","Cà Mau","Hải Dương","Hưng Yên","Vĩnh Phúc","Hậu Giang"]
+  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^
+  |
+error: `Haa` should be `Has`
+  --> ./api/BT.json:1:55
+  |
+1 | ["Bumthang","Chukha","Dagana","Chirang","Geylegphug","Haa","Lhuntse","Mongar","Paro","Pemagatshel","Punakha","Samchi","Samdrup Jongkhar","Shemgang","Tashigang","Thimphu","Tongsa","Wangdi Phodrang","Gasa","Trashi Yangste"]
+  |                                                       ^^^
+  |
+error: `FO` should be `OF`, `FOR`
+  --> ./raw.txt:987:1
+    |
+987 | FO.VG Vágar Vagar 2610816
+    | ^^
+    |
+error: `FO` should be `OF`, `FOR`
+  --> ./raw.txt:988:1
+    |
+988 | FO.SU Suðuroy Suduroy 2612137
+    | ^^
+    |
+error: `FO` should be `OF`, `FOR`
+  --> ./raw.txt:989:1
+    |
+989 | FO.ST Streymoy Streymoy 2612225
+    | ^^
+    |
+error: `FO` should be `OF`, `FOR`
+  --> ./raw.txt:990:1
+    |
+990 | FO.SA Sandoy Sandoy 2614219
+    | ^^
+    |
+error: `FO` should be `OF`, `FOR`
+  --> ./raw.txt:991:1
+    |
+991 | FO.NO Norðoyar Nordoyar 2616145
+    | ^^
+    |
+error: `FO` should be `OF`, `FOR`
+  --> ./raw.txt:992:1
+    |
+992 | FO.OS Eysturoy Eysturoy 2622387
+    | ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./raw.txt:1144:4
+     |
+1144 | GU.BA Barrigada Barrigada 4043885
+     |    ^^
+     |
+error: `Yau` should be `You`, `Yaw`
+  --> ./raw.txt:1176:8
+     |
+1176 | HK.KYT Yau Tsim Mong Yau Tsim Mong 7533610
+     |        ^^^
+     |
+error: `Yau` should be `You`, `Yaw`
+  --> ./raw.txt:1176:22
+     |
+1176 | HK.KYT Yau Tsim Mong Yau Tsim Mong 7533610
+     |                      ^^^
+     |
+error: `Ket` should be `Kept`
+  --> ./api/TH.json:1:323
+  |
+1 | ["Uthai Thani","Trang","Tak","Surat Thani","Sukhothai","Ratchaburi","Ranong","Prachuap Khiri Khan","Phuket","Phetchaburi","Phang Nga","Mae Hong Son","Lamphun","Lampang","Krabi","Kanchanaburi","Kamphaeng Phet","Chumphon","Chiang Rai","Chiang Mai","Yasothon","Yala","Uttaradit","Trat","Surin","Suphanburi","Songkhla","Si Sa Ket","Sing Buri","Satun","Saraburi","Samut Songkhram","Samut Sakhon","Samut Prakan","Sakon Nakhon","Roi Et","Rayong","Phra Nakhon Si Ayutthaya","Phrae","Phitsanulok","Phichit","Phetchabun","Phayao","Phatthalung","Pattani","Pathum Thani","Nonthaburi","Nong Khai","Narathiwat","Nan","Nakhon Si Thammarat","Nakhon Sawan","Nakhon Ratchasima","Nakhon Phanom","Nakhon Pathom","Nakhon Nayok","Mukdahan","Maha Sarakham","Lopburi","Loei","Bangkok","Khon Kaen","Kalasin","Chon Buri","Chanthaburi","Chaiyaphum","Chai Nat","Chachoengsao","Buriram","Ang Thong","Udon Thani","Prachin Buri","Ubon Ratchathani","Amnat Charoen","Nong Bua Lam Phu","Sa Kaeo","Bueng Kan"]
+  |                                                                                                                                                                                                                                                                                                                                   ^^^
+  |
+error: `Vas` should be `Was`
+  --> ./raw.txt:1243:7
+     |
+1243 | HU.22 Vas Vas 3043047
+     |       ^^^
+     |
+error: `Vas` should be `Was`
+  --> ./raw.txt:1243:11
+     |
+1243 | HU.22 Vas Vas 3043047
+     |           ^^^
+     |
+error: `Dependencias` should be `Dependencies`
+  --> ./api/VE.json:1:125
+  |
+1 | ["Zulia","Yaracuy","Trujillo","Táchira","Sucre","Portuguesa","Nueva Esparta","Monagas","Miranda","Mérida","Lara","Guárico","Dependencias Federales","Distrito Federal","Falcón","Delta Amacuro","Cojedes","Carabobo","Bolívar","Barinas","Aragua","Apure","Anzoátegui","Amazonas","Vargas"]
+  |                                                                                                                             ^^^^^^^^^^^^
+  |
+error: `Vas` should be `Was`
+  --> ./api/HU.json:1:140
+  |
+1 | ["Szabolcs-Szatmár-Bereg","Jász-Nagykun-Szolnok","Heves","Hajdú-Bihar","Csongrád-Csanád","Borsod-Abaúj-Zemplén","Békés","Zala","Veszprém","Vas","Tolna","Somogy","Pest","Nógrád","Komárom-Esztergom","Győr-Moson-Sopron","Fejér","Budapest","Baranya","Bács-Kiskun"]
+  |                                                                                                                                            ^^^
+  |
+error: `Barceloneta` should be `Barcelona`
+  --> ./api/PR.json:1:89
+  |
+1 | ["Adjuntas","Aguada","Aguadilla","Aguas Buenas","Aibonito","Añasco","Arecibo","Arroyo","Barceloneta","Barranquitas","Bayamón","Cabo Rojo","Caguas","Camuy","Canóvanas","Carolina","Cataño","Cayey","Ceiba","Ciales","Cidra","Coamo","Comerío","Corozal","Culebra","Dorado","Fajardo","Florida","Guánica","Guayama","Guayanilla","Guaynabo","Gurabo","Hatillo","Hormigueros","Humacao","Isabela","Jayuya","Juana Díaz","Juncos","Lajas","Lares","Las Marías","Las Piedras","Loíza","Luquillo","Manatí","Maricao","Maunabo","Mayagüez","Moca","Morovis","Naguabo","Naranjito","Orocovis","Patillas","Peñuelas","Ponce","Rincón","Quebradillas","Río Grande","Sabana Grande","Salinas","San Germán","San Juan","San Lorenzo","San Sebastián","Santa Isabel","Toa Alta","Toa Baja","Trujillo Alto","Utuado","Vega Alta","Vega Baja","Villalba","Yabucoa","Yauco","Vieques"]
+  |                                                                                         ^^^^^^^^^^^
+  |
+error: `Vas` should be `Was`
+  --> ./api/SI.json:1:852
+  |
+1 | ["Žalec","Zagorje ob Savi","Vrhnika","Tržič","Trebnje","Trbovlje","Tolmin","Velenje","Šmarje pri Jelšah","Slovenska Konjice","Slovenska Bistrica","Slovenj Gradec","Škofja Loka","Sežana","Sevnica","Sentjur","Ribnica","Radovljica","Radlje ob Dravi","Ptuj","Postojna","Piran-Pirano","Ormož","Novo Mesto","Nova Gorica","Murska Sobota","Mozirje","Metlika","Maribor","Logatec","Ljutomer","Litija","Lenart","Laško","Krško","Kranj","Koper-Capodistria","Kočevje","Kamnik","Jesenice","Izola-Isola","Ilirska Bistrica","Idrija","Hrastnik","Grosuplje","Gornja Radgona","Dravograd","Domžale","Črnomelj","Cerknica","Celje","Brežice","Ajdovščina","Hrpelje-Kozina","Divača","Pivka","Loška Dolina","Loški Potok","Osilnica","Velike Lašče","Škofljica","Ig","Brezovica","Borovnica","Vipava","Komen","Miren-Kostanjevica","Brda","Kanal","Žiri","Cerkno","Železniki","Gorenja Vas-Poljane","Dobrova-Horjul-Polhov Gradec","Kobarid","Bovec","Bohinj","Bled","Naklo","Kranjska Gora","Preddvor","Cerklje na Gorenjskem","Šenčur","Vodice","Medvode","Mengeš","Dol pri Ljubljani","Moravče","Gornji Grad","Luče","Ravne na Koroškem","Mežica","Muta","Vuzenica","Črna na Koroškem","Ljubno","Šoštanj","Šmartno ob Paki","Lukovica","Radeče","Ivančna Gorica","Dobrepolje","Semič","Šentjernej","Škocjan","Štore","Vojnik","Vitanje","Zreče","Mislinja","Ruše","Kungota","Šentilj","Pesnica","Duplek","Rače-Fram","Starše","Kidričevo","Majšperk","Videm","Rogaška Slatina","Rogatec","Podčetrtek","Kozje","Gorišnica","Zavrč","Dornava","Juršinci","Sveti Jurij","Radenci","Puconci","Rogašovci","Kuzma","Gornji Petrovci","Moravske Toplice","Kobilje","Beltinci","Turnišče","Odranci","Črenšovci","Nazarje","Ljubljana","Žirovnica","Jezersko","Solčava","Komenda","Horjul","Šempeter-Vrtojba","Bloke","Sodražica","Trzin","Prevalje","Vransko","Tabor","Braslovče","Polzela","Prebold","Kostel","Žužemberk","Dolenjske Toplice","Mirna Peč","Bistrica ob Sotli","Dobje","Dobrna","Oplotnica","Podvelka","Ribnica na Pohorju","Lovrenc na Pohorju","Selnica ob Dravi","Hoče-Slivnica","Miklavž na Dravskem Polju","Hajdina","Žetale","Podlehnik","Markovci","Destrnik","Trnovska Vas","Sveti Andraž v Slovenskih Goricah","Cerkvenjak","Benedikt","Sveta Ana","Križevci","Veržej","Velika Polana","Lendava-Lendva","Dobrovnik-Dobronak","Tišina","Cankova","Grad","Hodoš-Hodos","Razkrižje","Šmartno pri Litiji","Šalovci","Apače","Cirkulane","Kostanjevica na Krki","Log–Dragomer","Makole","Mokronog-Trebelno","Poljčane","Rečica ob Savinji","Renče-Vogrsko","Središče ob Dravi","Straža","Sv. Trojica v Slov. Goricah","Sveti Tomaž","Šentrupert","Šmarješke Toplice","Sveti Jurij v Slovenskih Goricah","Gorje","Ankaran","Mirna"]
+  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+  |
+error: `Vas` should be `Was`
+  --> ./api/SI.json:1:2103
+  |
+1 | ["Žalec","Zagorje ob Savi","Vrhnika","Tržič","Trebnje","Trbovlje","Tolmin","Velenje","Šmarje pri Jelšah","Slovenska Konjice","Slovenska Bistrica","Slovenj Gradec","Škofja Loka","Sežana","Sevnica","Sentjur","Ribnica","Radovljica","Radlje ob Dravi","Ptuj","Postojna","Piran-Pirano","Ormož","Novo Mesto","Nova Gorica","Murska Sobota","Mozirje","Metlika","Maribor","Logatec","Ljutomer","Litija","Lenart","Laško","Krško","Kranj","Koper-Capodistria","Kočevje","Kamnik","Jesenice","Izola-Isola","Ilirska Bistrica","Idrija","Hrastnik","Grosuplje","Gornja Radgona","Dravograd","Domžale","Črnomelj","Cerknica","Celje","Brežice","Ajdovščina","Hrpelje-Kozina","Divača","Pivka","Loška Dolina","Loški Potok","Osilnica","Velike Lašče","Škofljica","Ig","Brezovica","Borovnica","Vipava","Komen","Miren-Kostanjevica","Brda","Kanal","Žiri","Cerkno","Železniki","Gorenja Vas-Poljane","Dobrova-Horjul-Polhov Gradec","Kobarid","Bovec","Bohinj","Bled","Naklo","Kranjska Gora","Preddvor","Cerklje na Gorenjskem","Šenčur","Vodice","Medvode","Mengeš","Dol pri Ljubljani","Moravče","Gornji Grad","Luče","Ravne na Koroškem","Mežica","Muta","Vuzenica","Črna na Koroškem","Ljubno","Šoštanj","Šmartno ob Paki","Lukovica","Radeče","Ivančna Gorica","Dobrepolje","Semič","Šentjernej","Škocjan","Štore","Vojnik","Vitanje","Zreče","Mislinja","Ruše","Kungota","Šentilj","Pesnica","Duplek","Rače-Fram","Starše","Kidričevo","Majšperk","Videm","Rogaška Slatina","Rogatec","Podčetrtek","Kozje","Gorišnica","Zavrč","Dornava","Juršinci","Sveti Jurij","Radenci","Puconci","Rogašovci","Kuzma","Gornji Petrovci","Moravske Toplice","Kobilje","Beltinci","Turnišče","Odranci","Črenšovci","Nazarje","Ljubljana","Žirovnica","Jezersko","Solčava","Komenda","Horjul","Šempeter-Vrtojba","Bloke","Sodražica","Trzin","Prevalje","Vransko","Tabor","Braslovče","Polzela","Prebold","Kostel","Žužemberk","Dolenjske Toplice","Mirna Peč","Bistrica ob Sotli","Dobje","Dobrna","Oplotnica","Podvelka","Ribnica na Pohorju","Lovrenc na Pohorju","Selnica ob Dravi","Hoče-Slivnica","Miklavž na Dravskem Polju","Hajdina","Žetale","Podlehnik","Markovci","Destrnik","Trnovska Vas","Sveti Andraž v Slovenskih Goricah","Cerkvenjak","Benedikt","Sveta Ana","Križevci","Veržej","Velika Polana","Lendava-Lendva","Dobrovnik-Dobronak","Tišina","Cankova","Grad","Hodoš-Hodos","Razkrižje","Šmartno pri Litiji","Šalovci","Apače","Cirkulane","Kostanjevica na Krki","Log–Dragomer","Makole","Mokronog-Trebelno","Poljčane","Rečica ob Savinji","Renče-Vogrsko","Središče ob Dravi","Straža","Sv. Trojica v Slov. Goricah","Sveti Tomaž","Šentrupert","Šmarješke Toplice","Sveti Jurij v Slovenskih Goricah","Gorje","Ankaran","Mirna"]
+  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^
+  |
+error: `Yau` should be `You`, `Yaw`
+  --> ./api/HK.json:1:111
+  |
+1 | ["Yuen Long","Tsuen Wan","Tai Po","Sai Kung","Islands","Central and Western","Wan Chai","Eastern","Southern","Yau Tsim Mong","Sham Shui Po","Kowloon City","Wong Tai Sin","Kwun Tong","Kwai Tsing","Tuen Mun","North","Sha Tin"]
+  |                                                                                                               ^^^
+  |
+error: `Herat` should be `Heart`
+  --> ./api/AF.json:1:184
+  |
+1 | ["Zabul","Vardak","Takhar","Sar-e Pol","Samangan","Parwan","Paktika","Paktia","Oruzgan","Nimroz","Nangarhar","Logar","Laghman","Kunduz","Kunar","Kapisa","Kandahar","Kabul","Jowzjan","Herat","Helmand","Ghowr","Ghazni","Faryab","Farah","Bamyan","Balkh","Baghlan","Badghis","Badakhshan","Khowst","Nuristan","Daykundi","Panjshir"]
+  |                                                                                                                                                                                        ^^^^^
+  |
+error: `Haa` should be `Has`
+  --> ./raw.txt:2294:7
+     |
+2294 | MV.37 Haa Dhaalu Atholhu Haa Dhaalu Atholhu 1282293
+     |       ^^^
+     |
+error: `Haa` should be `Has`
+  --> ./raw.txt:2294:26
+     |
+2294 | MV.37 Haa Dhaalu Atholhu Haa Dhaalu Atholhu 1282293
+     |                          ^^^
+     |
+error: `Haa` should be `Has`
+  --> ./raw.txt:2295:7
+     |
+2295 | MV.36 Haa Alifu Atholhu Haa Alifu Atholhu 1282294
+     |       ^^^
+     |
+error: `Haa` should be `Has`
+  --> ./raw.txt:2295:25
+     |
+2295 | MV.36 Haa Alifu Atholhu Haa Alifu Atholhu 1282294
+     |                         ^^^
+     |
+error: `Alo` should be `Also`
+  --> ./api/WF.json:1:19
+  |
+1 | ["Uvea","Sigave","Alo"]
+  |                   ^^^
+  |
+error: `BA` should be `BY`, `BE`
+  --> ./api/BA.json:1
+error: `Haa` should be `Has`
+  --> ./api/MV.json:1:165
+  |
+1 | ["Vaavu Atholhu","Thaa Atholhu","Shaviyani Atholhu","Seenu","Raa Atoll","Noonu Atoll","Gnyaviyani Atoll","Meemu Atholhu","Lhaviyani Atholhu","Laamu","Kaafu Atoll","Haa Dhaalu Atholhu","Haa Alifu Atholhu","Gaafu Dhaalu Atoll","Gaafu Alif Atoll","Faafu Atholhu","Dhaalu Atholhu","Baa Atholhu","Northern Ari Atoll","Male","Southern Ari Atoll"]
+  |                                                                                                                                                                     ^^^
+  |
+error: `Haa` should be `Has`
+  --> ./api/MV.json:1:186
+  |
+1 | ["Vaavu Atholhu","Thaa Atholhu","Shaviyani Atholhu","Seenu","Raa Atoll","Noonu Atoll","Gnyaviyani Atoll","Meemu Atholhu","Lhaviyani Atholhu","Laamu","Kaafu Atoll","Haa Dhaalu Atholhu","Haa Alifu Atholhu","Gaafu Dhaalu Atoll","Gaafu Alif Atoll","Faafu Atholhu","Dhaalu Atholhu","Baa Atholhu","Northern Ari Atoll","Male","Southern Ari Atoll"]
+  |                                                                                                                                                                                          ^^^
+  |
+error: `Barceloneta` should be `Barcelona`
+  --> ./raw.txt:2633:8
+     |
+2633 | PR.017 Barceloneta Barceloneta 4562771
+     |        ^^^^^^^^^^^
+     |
+error: `Barceloneta` should be `Barcelona`
+  --> ./raw.txt:2633:20
+     |
+2633 | PR.017 Barceloneta Barceloneta 4562771
+     |                    ^^^^^^^^^^^
+     |
+error: `Parana` should be `Piranha`
+  --> ./raw.txt:2755:24
+     |
+2755 | PY.01 Alto Paraná Alto Parana 3439440
+     |                        ^^^^^^
+     |
+error: `Olt` should be `Old`
+  --> ./raw.txt:2779:7
+     |
+2779 | RO.29 Olt Olt 671857
+     |       ^^^
+     |
+error: `Olt` should be `Old`
+  --> ./raw.txt:2779:11
+     |
+2779 | RO.29 Olt Olt 671857
+     |           ^^^
+     |
+error: `Vas` should be `Was`
+  --> ./raw.txt:3065:15
+     |
+3065 | SI.27 Gorenja Vas-Poljane Gorenja Vas-Poljane 3239095
+     |               ^^^
+     |
+error: `Vas` should be `Was`
+  --> ./raw.txt:3065:35
+     |
+3065 | SI.27 Gorenja Vas-Poljane Gorenja Vas-Poljane 3239095
+     |                                   ^^^
+     |
+error: `Vas` should be `Was`
+  --> ./raw.txt:3169:16
+     |
+3169 | SI.M7 Trnovska Vas Trnovska Vas 3344927
+     |                ^^^
+     |
+error: `Vas` should be `Was`
+  --> ./raw.txt:3169:29
+     |
+3169 | SI.M7 Trnovska Vas Trnovska Vas 3344927
+     |                             ^^^
+     |
+error: `Ket` should be `Kept`
+  --> ./raw.txt:3375:13
+     |
+3375 | TH.30 Si Sa Ket Si Sa Ket 1606238
+     |             ^^^
+     |
+error: `Ket` should be `Kept`
+  --> ./raw.txt:3375:23
+     |
+3375 | TH.30 Si Sa Ket Si Sa Ket 1606238
+     |                       ^^^
+     |
+error: `BA` should be `BY`, `BE`
+  --> ./raw.txt:3442:4
+     |
+3442 | TL.BA Baucau Baucau 1649538
+     |    ^^
+     |
+error: `ND` should be `AND`
+  --> ./raw.txt:3700:4
+     |
+3700 | US.ND North Dakota North Dakota 5690763
+     |    ^^
+     |
+error: `Dependencias` should be `Dependencies`
+  --> ./raw.txt:3762:7
+     |
+3762 | VE.24 Dependencias Federales Dependencias Federales 3640846
+     |       ^^^^^^^^^^^^
+     |
+error: `Dependencias` should be `Dependencies`
+  --> ./raw.txt:3762:30
+     |
+3762 | VE.24 Dependencias Federales Dependencias Federales 3640846
+     |                              ^^^^^^^^^^^^
+     |
+error: `Ba` should be `By`, `Be`
+  --> ./raw.txt:3817:23
+     |
+3817 | VN.45 Bà Rịa-Vũng Tàu Ba Ria-Vung Tau 1584534
+     |                       ^^
+     |
+error: `Tre` should be `Tree`
+  --> ./raw.txt:3820:11
+     |
+3820 | VN.03 Bến Tre Ben Tre 1587974
+     |           ^^^
+     |
+error: `Tre` should be `Tree`
+  --> ./raw.txt:3820:19
+     |
+3820 | VN.03 Bến Tre Ben Tre 1587974
+     |                   ^^^
+     |
+error: `Alo` should be `Also`
+  --> ./raw.txt:3849:10
+     |
+3849 | WF.98611 Alo Alo 4034884
+     |          ^^^
+     |
+error: `Alo` should be `Also`
+  --> ./raw.txt:3849:14
+     |
+3849 | WF.98611 Alo Alo 4034884
+     |              ^^^
+     |

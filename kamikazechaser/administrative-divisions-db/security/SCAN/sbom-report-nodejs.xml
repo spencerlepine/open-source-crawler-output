@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:37ee1c7c-4cf0-4658-9dcc-fb7e56e2366b" version="1">
+  <metadata>
+    <timestamp>2022-12-05T08:32:48.981Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.4.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/lodash@4.17.20">
+      <publisher/>
+      <group/>
+      <name>lodash</name>
+      <version>4.17.20</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">3e585d15c8a594e20d7de57b362ea81754c011acb2641a19f1b72c8531ea39825896bab344ae616a0a5a824cb9a381df0b3cddd534645cf305aba70a93dac698</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/lodash@4.17.20</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/node_modules/lodash/core.min.js, /github/workspace/node_modules/lodash/fp/min.js, /github/workspace/node_modules/lodash/lodash.min.js, /github/workspace/node_modules/lodash/min.js, /github/workspace/package-lock.json</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
