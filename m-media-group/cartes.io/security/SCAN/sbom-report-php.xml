@@ -1,0 +1,4606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:9cf552ce-a76d-473b-9268-05c3cc03af05" version="1">
+  <metadata>
+    <timestamp>2022-12-06T08:33:59.373Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.4.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:composer/aws/aws-crt-php@1.0.2">
+      <publisher/>
+      <group>aws</group>
+      <name>aws-crt-php</name>
+      <version>1.0.2</version>
+      <description><![CDATA[AWS Common Runtime for PHP]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/aws/aws-crt-php@1.0.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/awslabs/aws-crt-php.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/aws/aws-sdk-php@3.252.2">
+      <publisher/>
+      <group>aws</group>
+      <name>aws-sdk-php</name>
+      <version>3.252.2</version>
+      <description><![CDATA[AWS SDK for PHP - Use Amazon Web Services in your PHP project]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/aws/aws-sdk-php@3.252.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/aws/aws-sdk-php.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/brick/math@0.10.2">
+      <publisher/>
+      <group>brick</group>
+      <name>math</name>
+      <version>0.10.2</version>
+      <description><![CDATA[Arbitrary-precision arithmetic library]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/brick/math@0.10.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/brick/math.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/defuse/php-encryption@2.3.1">
+      <publisher/>
+      <group>defuse</group>
+      <name>php-encryption</name>
+      <version>2.3.1</version>
+      <description><![CDATA[Secure PHP Encryption Library]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/defuse/php-encryption@2.3.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/defuse/php-encryption.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/dflydev/dot-access-data@3.0.2">
+      <publisher/>
+      <group>dflydev</group>
+      <name>dot-access-data</name>
+      <version>3.0.2</version>
+      <description><![CDATA[Given a deep data structure, access data by dot notation.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/dflydev/dot-access-data@3.0.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/dflydev/dflydev-dot-access-data.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/doctrine/cache@2.2.0">
+      <publisher/>
+      <group>doctrine</group>
+      <name>cache</name>
+      <version>2.2.0</version>
+      <description><![CDATA[PHP Doctrine Cache library is a popular cache implementation that supports many different drivers such as redis, memcache, apc, mongodb and others.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/doctrine/cache@2.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/doctrine/cache.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/doctrine/dbal@2.13.9">
+      <publisher/>
+      <group>doctrine</group>
+      <name>dbal</name>
+      <version>2.13.9</version>
+      <description><![CDATA[Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/doctrine/dbal@2.13.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/doctrine/dbal.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/doctrine/deprecations@1.0.0">
+      <publisher/>
+      <group>doctrine</group>
+      <name>deprecations</name>
+      <version>1.0.0</version>
+      <description><![CDATA[A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/doctrine/deprecations@1.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/doctrine/deprecations.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/doctrine/event-manager@1.2.0">
+      <publisher/>
+      <group>doctrine</group>
+      <name>event-manager</name>
+      <version>1.2.0</version>
+      <description><![CDATA[The Doctrine Event Manager is a simple PHP event system that was built to be used with the various Doctrine projects.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/doctrine/event-manager@1.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/doctrine/event-manager.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/doctrine/inflector@2.0.6">
+      <publisher/>
+      <group>doctrine</group>
+      <name>inflector</name>
+      <version>2.0.6</version>
+      <description><![CDATA[PHP Doctrine Inflector is a small library that can perform string manipulations with regard to upper/lowercase and singular/plural forms of words.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/doctrine/inflector@2.0.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/doctrine/inflector.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/doctrine/lexer@1.2.3">
+      <publisher/>
+      <group>doctrine</group>
+      <name>lexer</name>
+      <version>1.2.3</version>
+      <description><![CDATA[PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/doctrine/lexer@1.2.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/doctrine/lexer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/dragonmantank/cron-expression@3.3.2">
+      <publisher/>
+      <group>dragonmantank</group>
+      <name>cron-expression</name>
+      <version>3.3.2</version>
+      <description><![CDATA[CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/dragonmantank/cron-expression@3.3.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/dragonmantank/cron-expression.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/egulias/email-validator@3.2.1">
+      <publisher/>
+      <group>egulias</group>
+      <name>email-validator</name>
+      <version>3.2.1</version>
+      <description><![CDATA[A library for validating emails against several RFCs]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/egulias/email-validator@3.2.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/egulias/EmailValidator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/ezyang/htmlpurifier@4.13.0">
+      <publisher/>
+      <group>ezyang</group>
+      <name>htmlpurifier</name>
+      <version>4.13.0</version>
+      <description><![CDATA[Standards compliant HTML filter written in PHP]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>LGPL-2.1-or-later</id>
+          <url>https://opensource.org/licenses/LGPL-2.1-or-later</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/ezyang/htmlpurifier@4.13.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/ezyang/htmlpurifier.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/fideloper/proxy@4.4.2">
+      <publisher/>
+      <group>fideloper</group>
+      <name>proxy</name>
+      <version>4.4.2</version>
+      <description><![CDATA[Set trusted proxies for Laravel]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/fideloper/proxy@4.4.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/fideloper/TrustedProxy.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/firebase/php-jwt@6.3.1">
+      <publisher/>
+      <group>firebase</group>
+      <name>php-jwt</name>
+      <version>6.3.1</version>
+      <description><![CDATA[A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/firebase/php-jwt@6.3.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/firebase/php-jwt.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/fruitcake/laravel-cors@3.0.0">
+      <publisher/>
+      <group>fruitcake</group>
+      <name>laravel-cors</name>
+      <version>3.0.0</version>
+      <description><![CDATA[Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/fruitcake/laravel-cors@3.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/fruitcake/laravel-cors.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/fruitcake/php-cors@1.2.0">
+      <publisher/>
+      <group>fruitcake</group>
+      <name>php-cors</name>
+      <version>1.2.0</version>
+      <description><![CDATA[Cross-origin resource sharing library for the Symfony HttpFoundation]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/fruitcake/php-cors@1.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/fruitcake/php-cors.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/graham-campbell/markdown@14.0.0">
+      <publisher/>
+      <group>graham-campbell</group>
+      <name>markdown</name>
+      <version>14.0.0</version>
+      <description><![CDATA[Markdown Is A CommonMark Wrapper For Laravel]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/graham-campbell/markdown@14.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/GrahamCampbell/Laravel-Markdown.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/graham-campbell/result-type@1.1.0">
+      <publisher/>
+      <group>graham-campbell</group>
+      <name>result-type</name>
+      <version>1.1.0</version>
+      <description><![CDATA[An Implementation Of The Result Type]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/graham-campbell/result-type@1.1.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/GrahamCampbell/Result-Type.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/guzzlehttp/guzzle@7.5.0">
+      <publisher/>
+      <group>guzzlehttp</group>
+      <name>guzzle</name>
+      <version>7.5.0</version>
+      <description><![CDATA[Guzzle is a PHP HTTP client library]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/guzzlehttp/guzzle@7.5.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/guzzle/guzzle.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/guzzlehttp/promises@1.5.2">
+      <publisher/>
+      <group>guzzlehttp</group>
+      <name>promises</name>
+      <version>1.5.2</version>
+      <description><![CDATA[Guzzle promises library]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/guzzlehttp/promises@1.5.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/guzzle/promises.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/guzzlehttp/psr7@2.4.3">
+      <publisher/>
+      <group>guzzlehttp</group>
+      <name>psr7</name>
+      <version>2.4.3</version>
+      <description><![CDATA[PSR-7 message implementation that also provides common utility methods]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/guzzlehttp/psr7@2.4.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/guzzle/psr7.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/framework@9.42.2">
+      <publisher/>
+      <group>laravel</group>
+      <name>framework</name>
+      <version>9.42.2</version>
+      <description><![CDATA[The Laravel Framework.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/framework@9.42.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/framework.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/legacy-factories@1.3.0">
+      <publisher/>
+      <group>laravel</group>
+      <name>legacy-factories</name>
+      <version>1.3.0</version>
+      <description><![CDATA[The legacy version of the Laravel Eloquent factories.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/legacy-factories@1.3.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/legacy-factories.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/passport@10.4.1">
+      <publisher/>
+      <group>laravel</group>
+      <name>passport</name>
+      <version>10.4.1</version>
+      <description><![CDATA[Laravel Passport provides OAuth2 server support to Laravel.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/passport@10.4.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/passport.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/scout@9.4.12">
+      <publisher/>
+      <group>laravel</group>
+      <name>scout</name>
+      <version>9.4.12</version>
+      <description><![CDATA[Laravel Scout provides a driver based solution to searching your Eloquent models.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/scout@9.4.12</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/scout.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/serializable-closure@1.2.2">
+      <publisher/>
+      <group>laravel</group>
+      <name>serializable-closure</name>
+      <version>1.2.2</version>
+      <description><![CDATA[Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/serializable-closure@1.2.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/serializable-closure.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/slack-notification-channel@2.4.0">
+      <publisher/>
+      <group>laravel</group>
+      <name>slack-notification-channel</name>
+      <version>2.4.0</version>
+      <description><![CDATA[Slack Notification Channel for laravel.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/slack-notification-channel@2.4.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/slack-notification-channel.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/ui@3.4.6">
+      <publisher/>
+      <group>laravel</group>
+      <name>ui</name>
+      <version>3.4.6</version>
+      <description><![CDATA[Laravel UI utilities and presets.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/ui@3.4.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/ui.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/lcobucci/clock@2.2.0">
+      <publisher/>
+      <group>lcobucci</group>
+      <name>clock</name>
+      <version>2.2.0</version>
+      <description><![CDATA[Yet another clock abstraction]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/lcobucci/clock@2.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/lcobucci/clock.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/lcobucci/jwt@4.2.1">
+      <publisher/>
+      <group>lcobucci</group>
+      <name>jwt</name>
+      <version>4.2.1</version>
+      <description><![CDATA[A simple library to work with JSON Web Token and JSON Web Signature]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/lcobucci/jwt@4.2.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/lcobucci/jwt.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/commonmark@2.3.7">
+      <publisher/>
+      <group>league</group>
+      <name>commonmark</name>
+      <version>2.3.7</version>
+      <description><![CDATA[Highly-extensible PHP Markdown parser which fully supports the CommonMark spec and GitHub-Flavored Markdown (GFM)]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/commonmark@2.3.7</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/commonmark.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/config@1.1.1">
+      <publisher/>
+      <group>league</group>
+      <name>config</name>
+      <version>1.1.1</version>
+      <description><![CDATA[Define configuration arrays with strict schemas and access values with dot notation]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/config@1.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/config.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/event@2.2.0">
+      <publisher/>
+      <group>league</group>
+      <name>event</name>
+      <version>2.2.0</version>
+      <description><![CDATA[Event package]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/event@2.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/event.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/flysystem@3.11.0">
+      <publisher/>
+      <group>league</group>
+      <name>flysystem</name>
+      <version>3.11.0</version>
+      <description><![CDATA[File storage abstraction for PHP]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/flysystem@3.11.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/flysystem.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/flysystem-aws-s3-v3@3.10.3">
+      <publisher/>
+      <group>league</group>
+      <name>flysystem-aws-s3-v3</name>
+      <version>3.10.3</version>
+      <description><![CDATA[AWS S3 filesystem adapter for Flysystem.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/flysystem-aws-s3-v3@3.10.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/flysystem-aws-s3-v3.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/mime-type-detection@1.11.0">
+      <publisher/>
+      <group>league</group>
+      <name>mime-type-detection</name>
+      <version>1.11.0</version>
+      <description><![CDATA[Mime-type detection for Flysystem]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/mime-type-detection@1.11.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/mime-type-detection.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/oauth2-server@8.3.6">
+      <publisher/>
+      <group>league</group>
+      <name>oauth2-server</name>
+      <version>8.3.6</version>
+      <description><![CDATA[A lightweight and powerful OAuth 2.0 authorization and resource server library with support for all the core specification grants. This library will allow you to secure your API with OAuth and allow your applications users to approve apps that want to access their data from your API.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/oauth2-server@8.3.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/oauth2-server.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/uri@6.8.0">
+      <publisher/>
+      <group>league</group>
+      <name>uri</name>
+      <version>6.8.0</version>
+      <description><![CDATA[URI manipulation library]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/uri@6.8.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/uri.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/league/uri-interfaces@2.3.0">
+      <publisher/>
+      <group>league</group>
+      <name>uri-interfaces</name>
+      <version>2.3.0</version>
+      <description><![CDATA[Common interface for URI representation]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/league/uri-interfaces@2.3.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/thephpleague/uri-interfaces.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/matanyadaev/laravel-eloquent-spatial@2.7.0">
+      <publisher/>
+      <group>matanyadaev</group>
+      <name>laravel-eloquent-spatial</name>
+      <version>2.7.0</version>
+      <description><![CDATA[Spatial library for Laravel]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/matanyadaev/laravel-eloquent-spatial@2.7.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/MatanYadaev/laravel-eloquent-spatial.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/mews/purifier@3.3.8">
+      <publisher/>
+      <group>mews</group>
+      <name>purifier</name>
+      <version>3.3.8</version>
+      <description><![CDATA[Laravel 5/6/7 HtmlPurifier Package]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/mews/purifier@3.3.8</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/mewebstudio/Purifier.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/mmedia/laravel-collaborative-filtering@dev-master">
+      <publisher/>
+      <group>mmedia</group>
+      <name>laravel-collaborative-filtering</name>
+      <version>dev-master</version>
+      <description><![CDATA[Simple trait to add collaborative filtering to your models]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/mmedia/laravel-collaborative-filtering@dev-master</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/M-Media-Group/Laravel-Collaborative-Filtering.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/monolog/monolog@2.8.0">
+      <publisher/>
+      <group>monolog</group>
+      <name>monolog</name>
+      <version>2.8.0</version>
+      <description><![CDATA[Sends your logs to files, sockets, inboxes, databases and various web services]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/monolog/monolog@2.8.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/Seldaek/monolog.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/mtdowling/jmespath.php@2.6.1">
+      <publisher/>
+      <group>mtdowling</group>
+      <name>jmespath.php</name>
+      <version>2.6.1</version>
+      <description><![CDATA[Declaratively specify how to extract elements from a JSON document]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/mtdowling/jmespath.php@2.6.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/jmespath/jmespath.php.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nesbot/carbon@2.64.0">
+      <publisher/>
+      <group>nesbot</group>
+      <name>carbon</name>
+      <version>2.64.0</version>
+      <description><![CDATA[An API extension for DateTime that supports 281 different languages.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nesbot/carbon@2.64.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/briannesbitt/Carbon.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nette/schema@1.2.3">
+      <publisher/>
+      <group>nette</group>
+      <name>schema</name>
+      <version>1.2.3</version>
+      <description><![CDATA[📐 Nette Schema: validating data structures against a given Schema.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+        <license>
+          <id>GPL-2.0-only</id>
+          <url>https://opensource.org/licenses/GPL-2.0-only</url>
+        </license>
+        <license>
+          <id>GPL-3.0-only</id>
+          <url>https://opensource.org/licenses/GPL-3.0-only</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nette/schema@1.2.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/nette/schema.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nette/utils@3.2.8">
+      <publisher/>
+      <group>nette</group>
+      <name>utils</name>
+      <version>3.2.8</version>
+      <description><![CDATA[🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+        <license>
+          <id>GPL-2.0-only</id>
+          <url>https://opensource.org/licenses/GPL-2.0-only</url>
+        </license>
+        <license>
+          <id>GPL-3.0-only</id>
+          <url>https://opensource.org/licenses/GPL-3.0-only</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nette/utils@3.2.8</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/nette/utils.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nunomaduro/termwind@1.14.2">
+      <publisher/>
+      <group>nunomaduro</group>
+      <name>termwind</name>
+      <version>1.14.2</version>
+      <description><![CDATA[Its like Tailwind CSS, but for the console.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nunomaduro/termwind@1.14.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/nunomaduro/termwind.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nyholm/psr7@1.5.1">
+      <publisher/>
+      <group>nyholm</group>
+      <name>psr7</name>
+      <version>1.5.1</version>
+      <description><![CDATA[A fast PHP7 implementation of PSR-7]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nyholm/psr7@1.5.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/Nyholm/psr7.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/paragonie/constant_time_encoding@2.6.3">
+      <publisher/>
+      <group>paragonie</group>
+      <name>constant_time_encoding</name>
+      <version>2.6.3</version>
+      <description><![CDATA[Constant-time Implementations of RFC 4648 Encoding (Base-64, Base-32, Base-16)]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/paragonie/constant_time_encoding@2.6.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/paragonie/constant_time_encoding.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/paragonie/random_compat@9.99.100">
+      <publisher/>
+      <group>paragonie</group>
+      <name>random_compat</name>
+      <version>9.99.100</version>
+      <description><![CDATA[PHP 5.x polyfill for random_bytes() and random_int() from PHP 7]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/paragonie/random_compat@9.99.100</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/paragonie/random_compat.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/paragonie/sodium_compat@1.19.0">
+      <publisher/>
+      <group>paragonie</group>
+      <name>sodium_compat</name>
+      <version>1.19.0</version>
+      <description><![CDATA[Pure PHP implementation of libsodium; uses the PHP extension if it exists]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>ISC</id>
+          <url>https://opensource.org/licenses/ISC</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/paragonie/sodium_compat@1.19.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/paragonie/sodium_compat.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phayes/geophp@1.2">
+      <publisher/>
+      <group>phayes</group>
+      <name>geophp</name>
+      <version>1.2</version>
+      <description><![CDATA[GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <name>GPL-2 or New-BSD</name>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phayes/geophp@1.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phayes/geoPHP.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/php-http/message-factory@1.0.2">
+      <publisher/>
+      <group>php-http</group>
+      <name>message-factory</name>
+      <version>1.0.2</version>
+      <description><![CDATA[Factory interfaces for PSR-7 HTTP Message]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/php-http/message-factory@1.0.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-http/message-factory.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpoption/phpoption@1.9.0">
+      <publisher/>
+      <group>phpoption</group>
+      <name>phpoption</name>
+      <version>1.9.0</version>
+      <description><![CDATA[Option Type for PHP]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpoption/phpoption@1.9.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/schmittjoh/php-option.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpseclib/phpseclib@3.0.17">
+      <publisher/>
+      <group>phpseclib</group>
+      <name>phpseclib</name>
+      <version>3.0.17</version>
+      <description><![CDATA[PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpseclib/phpseclib@3.0.17</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpseclib/phpseclib.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/predis/predis@2.0.3">
+      <publisher/>
+      <group>predis</group>
+      <name>predis</name>
+      <version>2.0.3</version>
+      <description><![CDATA[A flexible and feature-complete Redis client for PHP.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/predis/predis@2.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/predis/predis.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/clock@1.0.0">
+      <publisher/>
+      <group>psr</group>
+      <name>clock</name>
+      <version>1.0.0</version>
+      <description><![CDATA[Common interface for reading the clock.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/clock@1.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/clock.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/container@2.0.2">
+      <publisher/>
+      <group>psr</group>
+      <name>container</name>
+      <version>2.0.2</version>
+      <description><![CDATA[Common Container Interface (PHP FIG PSR-11)]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/container@2.0.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/container.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/event-dispatcher@1.0.0">
+      <publisher/>
+      <group>psr</group>
+      <name>event-dispatcher</name>
+      <version>1.0.0</version>
+      <description><![CDATA[Standard interfaces for event handling.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/event-dispatcher@1.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/event-dispatcher.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/http-client@1.0.1">
+      <publisher/>
+      <group>psr</group>
+      <name>http-client</name>
+      <version>1.0.1</version>
+      <description><![CDATA[Common interface for HTTP clients]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/http-client@1.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/http-client.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/http-factory@1.0.1">
+      <publisher/>
+      <group>psr</group>
+      <name>http-factory</name>
+      <version>1.0.1</version>
+      <description><![CDATA[Common interfaces for PSR-7 HTTP message factories]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/http-factory@1.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/http-factory.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/http-message@1.0.1">
+      <publisher/>
+      <group>psr</group>
+      <name>http-message</name>
+      <version>1.0.1</version>
+      <description><![CDATA[Common interface for HTTP messages]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/http-message@1.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/http-message.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/log@1.1.4">
+      <publisher/>
+      <group>psr</group>
+      <name>log</name>
+      <version>1.1.4</version>
+      <description><![CDATA[Common interface for logging libraries]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/log@1.1.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/log.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/simple-cache@3.0.0">
+      <publisher/>
+      <group>psr</group>
+      <name>simple-cache</name>
+      <version>3.0.0</version>
+      <description><![CDATA[Common interfaces for simple caching]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/simple-cache@3.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/simple-cache.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/pusher/pusher-php-server@5.0.3">
+      <publisher/>
+      <group>pusher</group>
+      <name>pusher-php-server</name>
+      <version>5.0.3</version>
+      <description><![CDATA[Library for interacting with the Pusher REST API]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/pusher/pusher-php-server@5.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/pusher/pusher-http-php.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/ralouphie/getallheaders@3.0.3">
+      <publisher/>
+      <group>ralouphie</group>
+      <name>getallheaders</name>
+      <version>3.0.3</version>
+      <description><![CDATA[A polyfill for getallheaders.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/ralouphie/getallheaders@3.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/ralouphie/getallheaders.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/ramsey/collection@1.2.2">
+      <publisher/>
+      <group>ramsey</group>
+      <name>collection</name>
+      <version>1.2.2</version>
+      <description><![CDATA[A PHP library for representing and manipulating collections.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/ramsey/collection@1.2.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/ramsey/collection.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/ramsey/uuid@4.6.0">
+      <publisher/>
+      <group>ramsey</group>
+      <name>uuid</name>
+      <version>4.6.0</version>
+      <description><![CDATA[A PHP library for generating and working with universally unique identifiers (UUIDs).]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/ramsey/uuid@4.6.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/ramsey/uuid.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/spatie/image-optimizer@1.6.2">
+      <publisher/>
+      <group>spatie</group>
+      <name>image-optimizer</name>
+      <version>1.6.2</version>
+      <description><![CDATA[Easily optimize images using PHP]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/spatie/image-optimizer@1.6.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/spatie/image-optimizer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/spatie/laravel-cookie-consent@3.2.2">
+      <publisher/>
+      <group>spatie</group>
+      <name>laravel-cookie-consent</name>
+      <version>3.2.2</version>
+      <description><![CDATA[Make your Laravel app comply with the crazy EU cookie law]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/spatie/laravel-cookie-consent@3.2.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/spatie/laravel-cookie-consent.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/spatie/laravel-honeypot@4.3.1">
+      <publisher/>
+      <group>spatie</group>
+      <name>laravel-honeypot</name>
+      <version>4.3.1</version>
+      <description><![CDATA[Preventing spam submitted through forms]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/spatie/laravel-honeypot@4.3.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/spatie/laravel-honeypot.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/spatie/laravel-image-optimizer@1.7.0">
+      <publisher/>
+      <group>spatie</group>
+      <name>laravel-image-optimizer</name>
+      <version>1.7.0</version>
+      <description><![CDATA[Optimize images in your Laravel app]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/spatie/laravel-image-optimizer@1.7.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/spatie/laravel-image-optimizer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/spatie/laravel-package-tools@1.13.7">
+      <publisher/>
+      <group>spatie</group>
+      <name>laravel-package-tools</name>
+      <version>1.13.7</version>
+      <description><![CDATA[Tools for creating Laravel packages]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/spatie/laravel-package-tools@1.13.7</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/spatie/laravel-package-tools.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/spatie/laravel-permission@5.7.0">
+      <publisher/>
+      <group>spatie</group>
+      <name>laravel-permission</name>
+      <version>5.7.0</version>
+      <description><![CDATA[Permission handling for Laravel 6.0 and up]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/spatie/laravel-permission@5.7.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/spatie/laravel-permission.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/stella-maris/clock@0.1.7">
+      <publisher/>
+      <group>stella-maris</group>
+      <name>clock</name>
+      <version>0.1.7</version>
+      <description><![CDATA[A pre-release of the proposed PSR-20 Clock-Interface]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/stella-maris/clock@0.1.7</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/stella-maris-solutions/clock.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/console@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>console</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Eases the creation of beautiful and testable command line interfaces]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/console@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/console.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/css-selector@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>css-selector</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Converts CSS selectors to XPath expressions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/css-selector@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/css-selector.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/deprecation-contracts@3.1.1">
+      <publisher/>
+      <group>symfony</group>
+      <name>deprecation-contracts</name>
+      <version>3.1.1</version>
+      <description><![CDATA[A generic function and convention to trigger deprecation notices]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/deprecation-contracts@3.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/deprecation-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/error-handler@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>error-handler</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides tools to manage errors and ease debugging PHP code]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/error-handler@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/error-handler.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/event-dispatcher@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>event-dispatcher</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides tools that allow your application components to communicate with each other by dispatching events and listening to them]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/event-dispatcher@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/event-dispatcher.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/event-dispatcher-contracts@3.1.1">
+      <publisher/>
+      <group>symfony</group>
+      <name>event-dispatcher-contracts</name>
+      <version>3.1.1</version>
+      <description><![CDATA[Generic abstractions related to dispatching event]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/event-dispatcher-contracts@3.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/event-dispatcher-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/finder@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>finder</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Finds files and directories via an intuitive fluent interface]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/finder@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/finder.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/http-foundation@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>http-foundation</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Defines an object-oriented layer for the HTTP specification]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/http-foundation@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/http-foundation.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/http-kernel@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>http-kernel</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides a structured process for converting a Request into a Response]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/http-kernel@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/http-kernel.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/mailer@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>mailer</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Helps sending emails]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/mailer@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/mailer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/mime@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>mime</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Allows manipulating MIME messages]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/mime@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/mime.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-ctype@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-ctype</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill for ctype functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-ctype@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-ctype.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-grapheme@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-grapheme</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill for intl's grapheme_* functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-grapheme@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-grapheme.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-idn@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-idn</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-idn@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-idn.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-normalizer@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-normalizer</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill for intl's Normalizer class and related functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-normalizer@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-normalizer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-mbstring@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-mbstring</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill for the Mbstring extension]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-mbstring@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-mbstring.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php72@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php72</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php72@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php72.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php80@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php80</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php80@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php80.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php81@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php81</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php81@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php81.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-uuid@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-uuid</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill for uuid functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-uuid@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-uuid.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/process@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>process</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Executes commands in sub-processes]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/process@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/process.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/psr-http-message-bridge@2.1.4">
+      <publisher/>
+      <group>symfony</group>
+      <name>psr-http-message-bridge</name>
+      <version>2.1.4</version>
+      <description><![CDATA[PSR HTTP message bridge]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/psr-http-message-bridge@2.1.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/psr-http-message-bridge.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/routing@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>routing</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Maps an HTTP request to a set of configuration variables]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/routing@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/routing.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/service-contracts@3.1.1">
+      <publisher/>
+      <group>symfony</group>
+      <name>service-contracts</name>
+      <version>3.1.1</version>
+      <description><![CDATA[Generic abstractions related to writing services]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/service-contracts@3.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/service-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/string@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>string</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/string@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/string.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/translation@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>translation</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides tools to internationalize your application]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/translation@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/translation.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/translation-contracts@3.1.1">
+      <publisher/>
+      <group>symfony</group>
+      <name>translation-contracts</name>
+      <version>3.1.1</version>
+      <description><![CDATA[Generic abstractions related to translation]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/translation-contracts@3.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/translation-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/uid@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>uid</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides an object-oriented API to generate and represent UIDs]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/uid@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/uid.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/var-dumper@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>var-dumper</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides mechanisms for walking through any arbitrary PHP variable]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/var-dumper@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/var-dumper.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/tijsverkoyen/css-to-inline-styles@2.2.5">
+      <publisher/>
+      <group>tijsverkoyen</group>
+      <name>css-to-inline-styles</name>
+      <version>2.2.5</version>
+      <description><![CDATA[CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/tijsverkoyen/css-to-inline-styles@2.2.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/tijsverkoyen/CssToInlineStyles.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/valorin/pwned-validator@1.3.5">
+      <publisher/>
+      <group>valorin</group>
+      <name>pwned-validator</name>
+      <version>1.3.5</version>
+      <description><![CDATA[Super simple Laravel Validator for checking password via the Pwned Passwords service of Have I Been Pwned]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/valorin/pwned-validator@1.3.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/valorin/pwned-validator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/vlucas/phpdotenv@5.5.0">
+      <publisher/>
+      <group>vlucas</group>
+      <name>phpdotenv</name>
+      <version>5.5.0</version>
+      <description><![CDATA[Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/vlucas/phpdotenv@5.5.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/vlucas/phpdotenv.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/voku/portable-ascii@2.0.1">
+      <publisher/>
+      <group>voku</group>
+      <name>portable-ascii</name>
+      <version>2.0.1</version>
+      <description><![CDATA[Portable ASCII library - performance optimized (ascii) string functions for php.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/voku/portable-ascii@2.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/voku/portable-ascii.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/webmozart/assert@1.11.0">
+      <publisher/>
+      <group>webmozart</group>
+      <name>assert</name>
+      <version>1.11.0</version>
+      <description><![CDATA[Assertions to validate method input/output with nice error messages.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/webmozart/assert@1.11.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/webmozarts/assert.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/ca-bundle@1.3.4">
+      <publisher/>
+      <group>composer</group>
+      <name>ca-bundle</name>
+      <version>1.3.4</version>
+      <description><![CDATA[Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/ca-bundle@1.3.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/ca-bundle.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/class-map-generator@1.0.0">
+      <publisher/>
+      <group>composer</group>
+      <name>class-map-generator</name>
+      <version>1.0.0</version>
+      <description><![CDATA[Utilities to scan PHP code and generate class maps.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/class-map-generator@1.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/class-map-generator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/composer@2.4.4">
+      <publisher/>
+      <group>composer</group>
+      <name>composer</name>
+      <version>2.4.4</version>
+      <description><![CDATA[Composer helps you declare, manage and install dependencies of PHP projects. It ensures you have the right stack everywhere.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/composer@2.4.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/composer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/metadata-minifier@1.0.0">
+      <publisher/>
+      <group>composer</group>
+      <name>metadata-minifier</name>
+      <version>1.0.0</version>
+      <description><![CDATA[Small utility library that handles metadata minification and expansion.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/metadata-minifier@1.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/metadata-minifier.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/pcre@3.1.0">
+      <publisher/>
+      <group>composer</group>
+      <name>pcre</name>
+      <version>3.1.0</version>
+      <description><![CDATA[PCRE wrapping library that offers type-safe preg_* replacements.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/pcre@3.1.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/pcre.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/semver@3.3.2">
+      <publisher/>
+      <group>composer</group>
+      <name>semver</name>
+      <version>3.3.2</version>
+      <description><![CDATA[Semver library that offers utilities, version constraint parsing and validation.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/semver@3.3.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/semver.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/spdx-licenses@1.5.7">
+      <publisher/>
+      <group>composer</group>
+      <name>spdx-licenses</name>
+      <version>1.5.7</version>
+      <description><![CDATA[SPDX licenses list and validation library.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/spdx-licenses@1.5.7</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/spdx-licenses.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/xdebug-handler@3.0.3">
+      <publisher/>
+      <group>composer</group>
+      <name>xdebug-handler</name>
+      <version>3.0.3</version>
+      <description><![CDATA[Restarts a process without Xdebug.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/xdebug-handler@3.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/xdebug-handler.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/doctrine/instantiator@1.4.1">
+      <publisher/>
+      <group>doctrine</group>
+      <name>instantiator</name>
+      <version>1.4.1</version>
+      <description><![CDATA[A small, lightweight utility to instantiate objects in PHP without invoking their constructors]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/doctrine/instantiator@1.4.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/doctrine/instantiator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/filp/whoops@2.14.6">
+      <publisher/>
+      <group>filp</group>
+      <name>whoops</name>
+      <version>2.14.6</version>
+      <description><![CDATA[php error handling for cool kids]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/filp/whoops@2.14.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/filp/whoops.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/fzaninotto/faker@1.9.2">
+      <publisher/>
+      <group>fzaninotto</group>
+      <name>faker</name>
+      <version>1.9.2</version>
+      <description><![CDATA[Faker is a PHP library that generates fake data for you.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/fzaninotto/faker@1.9.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/fzaninotto/Faker.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/hamcrest/hamcrest-php@2.0.1">
+      <publisher/>
+      <group>hamcrest</group>
+      <name>hamcrest-php</name>
+      <version>2.0.1</version>
+      <description><![CDATA[This is the PHP port of Hamcrest Matchers]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/hamcrest/hamcrest-php@2.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/hamcrest/hamcrest-php.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/justinrainbow/json-schema@5.2.12">
+      <publisher/>
+      <group>justinrainbow</group>
+      <name>json-schema</name>
+      <version>5.2.12</version>
+      <description><![CDATA[A library to validate a json schema.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/justinrainbow/json-schema@5.2.12</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/justinrainbow/json-schema.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/laravel/telescope@4.9.6">
+      <publisher/>
+      <group>laravel</group>
+      <name>telescope</name>
+      <version>4.9.6</version>
+      <description><![CDATA[An elegant debug assistant for the Laravel framework.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/laravel/telescope@4.9.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/laravel/telescope.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/mockery/mockery@1.5.1">
+      <publisher/>
+      <group>mockery</group>
+      <name>mockery</name>
+      <version>1.5.1</version>
+      <description><![CDATA[Mockery is a simple yet flexible PHP mock object framework]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/mockery/mockery@1.5.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/mockery/mockery.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/myclabs/deep-copy@1.11.0">
+      <publisher/>
+      <group>myclabs</group>
+      <name>deep-copy</name>
+      <version>1.11.0</version>
+      <description><![CDATA[Create deep copies (clones) of your objects]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/myclabs/deep-copy@1.11.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/myclabs/DeepCopy.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nikic/php-parser@4.15.2">
+      <publisher/>
+      <group>nikic</group>
+      <name>php-parser</name>
+      <version>4.15.2</version>
+      <description><![CDATA[A PHP parser written in PHP]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nikic/php-parser@4.15.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/nikic/PHP-Parser.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nunomaduro/larastan@1.0.4">
+      <publisher/>
+      <group>nunomaduro</group>
+      <name>larastan</name>
+      <version>1.0.4</version>
+      <description><![CDATA[Larastan - Discover bugs in your code without running it. A phpstan/phpstan wrapper for Laravel]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nunomaduro/larastan@1.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/nunomaduro/larastan.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phar-io/manifest@2.0.3">
+      <publisher/>
+      <group>phar-io</group>
+      <name>manifest</name>
+      <version>2.0.3</version>
+      <description><![CDATA[Component for reading phar.io manifest information from a PHP Archive (PHAR)]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phar-io/manifest@2.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phar-io/manifest.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phar-io/version@3.2.1">
+      <publisher/>
+      <group>phar-io</group>
+      <name>version</name>
+      <version>3.2.1</version>
+      <description><![CDATA[Library for handling version information and constraints]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phar-io/version@3.2.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phar-io/version.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpstan/phpstan@1.8.11">
+      <publisher/>
+      <group>phpstan</group>
+      <name>phpstan</name>
+      <version>1.8.11</version>
+      <description><![CDATA[PHPStan - PHP Static Analysis Tool]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpstan/phpstan@1.8.11</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpstan/phpstan.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/php-code-coverage@9.2.19">
+      <publisher/>
+      <group>phpunit</group>
+      <name>php-code-coverage</name>
+      <version>9.2.19</version>
+      <description><![CDATA[Library that provides collection, processing, and rendering functionality for PHP code coverage information.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/php-code-coverage@9.2.19</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/php-code-coverage.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/php-file-iterator@3.0.6">
+      <publisher/>
+      <group>phpunit</group>
+      <name>php-file-iterator</name>
+      <version>3.0.6</version>
+      <description><![CDATA[FilterIterator implementation that filters files based on a list of suffixes.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/php-file-iterator@3.0.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/php-file-iterator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/php-invoker@3.1.1">
+      <publisher/>
+      <group>phpunit</group>
+      <name>php-invoker</name>
+      <version>3.1.1</version>
+      <description><![CDATA[Invoke callables with a timeout]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/php-invoker@3.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/php-invoker.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/php-text-template@2.0.4">
+      <publisher/>
+      <group>phpunit</group>
+      <name>php-text-template</name>
+      <version>2.0.4</version>
+      <description><![CDATA[Simple template engine.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/php-text-template@2.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/php-text-template.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/php-timer@5.0.3">
+      <publisher/>
+      <group>phpunit</group>
+      <name>php-timer</name>
+      <version>5.0.3</version>
+      <description><![CDATA[Utility class for timing]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/php-timer@5.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/php-timer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/phpunit@9.5.26">
+      <publisher/>
+      <group>phpunit</group>
+      <name>phpunit</name>
+      <version>9.5.26</version>
+      <description><![CDATA[The PHP Unit Testing framework.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/phpunit@9.5.26</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/phpunit.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/react/promise@2.9.0">
+      <publisher/>
+      <group>react</group>
+      <name>promise</name>
+      <version>2.9.0</version>
+      <description><![CDATA[A lightweight implementation of CommonJS Promises/A for PHP]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/react/promise@2.9.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/reactphp/promise.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/cli-parser@1.0.1">
+      <publisher/>
+      <group>sebastian</group>
+      <name>cli-parser</name>
+      <version>1.0.1</version>
+      <description><![CDATA[Library for parsing CLI options]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/cli-parser@1.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/cli-parser.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/code-unit@1.0.8">
+      <publisher/>
+      <group>sebastian</group>
+      <name>code-unit</name>
+      <version>1.0.8</version>
+      <description><![CDATA[Collection of value objects that represent the PHP code units]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/code-unit@1.0.8</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/code-unit.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/code-unit-reverse-lookup@2.0.3">
+      <publisher/>
+      <group>sebastian</group>
+      <name>code-unit-reverse-lookup</name>
+      <version>2.0.3</version>
+      <description><![CDATA[Looks up which function or method a line of code belongs to]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/code-unit-reverse-lookup@2.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/code-unit-reverse-lookup.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/comparator@4.0.8">
+      <publisher/>
+      <group>sebastian</group>
+      <name>comparator</name>
+      <version>4.0.8</version>
+      <description><![CDATA[Provides the functionality to compare PHP values for equality]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/comparator@4.0.8</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/comparator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/complexity@2.0.2">
+      <publisher/>
+      <group>sebastian</group>
+      <name>complexity</name>
+      <version>2.0.2</version>
+      <description><![CDATA[Library for calculating the complexity of PHP code units]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/complexity@2.0.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/complexity.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/diff@4.0.4">
+      <publisher/>
+      <group>sebastian</group>
+      <name>diff</name>
+      <version>4.0.4</version>
+      <description><![CDATA[Diff implementation]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/diff@4.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/diff.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/environment@5.1.4">
+      <publisher/>
+      <group>sebastian</group>
+      <name>environment</name>
+      <version>5.1.4</version>
+      <description><![CDATA[Provides functionality to handle HHVM/PHP environments]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/environment@5.1.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/environment.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/exporter@4.0.5">
+      <publisher/>
+      <group>sebastian</group>
+      <name>exporter</name>
+      <version>4.0.5</version>
+      <description><![CDATA[Provides the functionality to export PHP variables for visualization]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/exporter@4.0.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/exporter.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/global-state@5.0.5">
+      <publisher/>
+      <group>sebastian</group>
+      <name>global-state</name>
+      <version>5.0.5</version>
+      <description><![CDATA[Snapshotting of global state]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/global-state@5.0.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/global-state.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/lines-of-code@1.0.3">
+      <publisher/>
+      <group>sebastian</group>
+      <name>lines-of-code</name>
+      <version>1.0.3</version>
+      <description><![CDATA[Library for counting the lines of code in PHP source code]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/lines-of-code@1.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/lines-of-code.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/object-enumerator@4.0.4">
+      <publisher/>
+      <group>sebastian</group>
+      <name>object-enumerator</name>
+      <version>4.0.4</version>
+      <description><![CDATA[Traverses array structures and object graphs to enumerate all referenced objects]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/object-enumerator@4.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/object-enumerator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/object-reflector@2.0.4">
+      <publisher/>
+      <group>sebastian</group>
+      <name>object-reflector</name>
+      <version>2.0.4</version>
+      <description><![CDATA[Allows reflection of object attributes, including inherited and non-public ones]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/object-reflector@2.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/object-reflector.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/recursion-context@4.0.4">
+      <publisher/>
+      <group>sebastian</group>
+      <name>recursion-context</name>
+      <version>4.0.4</version>
+      <description><![CDATA[Provides functionality to recursively process PHP variables]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/recursion-context@4.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/recursion-context.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/resource-operations@3.0.3">
+      <publisher/>
+      <group>sebastian</group>
+      <name>resource-operations</name>
+      <version>3.0.3</version>
+      <description><![CDATA[Provides a list of PHP built-in functions that operate on resources]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/resource-operations@3.0.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/resource-operations.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/type@3.2.0">
+      <publisher/>
+      <group>sebastian</group>
+      <name>type</name>
+      <version>3.2.0</version>
+      <description><![CDATA[Collection of value objects that represent the types of the PHP type system]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/type@3.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/type.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/version@3.0.2">
+      <publisher/>
+      <group>sebastian</group>
+      <name>version</name>
+      <version>3.0.2</version>
+      <description><![CDATA[Library that helps with managing the version number of Git-hosted PHP projects]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/version@3.0.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/version.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/seld/jsonlint@1.9.0">
+      <publisher/>
+      <group>seld</group>
+      <name>jsonlint</name>
+      <version>1.9.0</version>
+      <description><![CDATA[JSON Linter]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/seld/jsonlint@1.9.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/Seldaek/jsonlint.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/seld/phar-utils@1.2.1">
+      <publisher/>
+      <group>seld</group>
+      <name>phar-utils</name>
+      <version>1.2.1</version>
+      <description><![CDATA[PHAR file format utilities, for when PHP phars you up]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/seld/phar-utils@1.2.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/Seldaek/phar-utils.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/seld/signal-handler@2.0.1">
+      <publisher/>
+      <group>seld</group>
+      <name>signal-handler</name>
+      <version>2.0.1</version>
+      <description><![CDATA[Simple unix signal handler that silently fails where signals are not supported for easy cross-platform development]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/seld/signal-handler@2.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/Seldaek/signal-handler.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/squizlabs/php_codesniffer@3.7.1">
+      <publisher/>
+      <group>squizlabs</group>
+      <name>php_codesniffer</name>
+      <version>3.7.1</version>
+      <description><![CDATA[PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/squizlabs/php_codesniffer@3.7.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/squizlabs/PHP_CodeSniffer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/filesystem@6.2.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>filesystem</name>
+      <version>6.2.0</version>
+      <description><![CDATA[Provides basic utilities for the filesystem]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/filesystem@6.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/filesystem.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php73@1.27.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php73</name>
+      <version>1.27.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php73@1.27.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php73.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/theseer/tokenizer@1.2.1">
+      <publisher/>
+      <group>theseer</group>
+      <name>tokenizer</name>
+      <version>1.2.1</version>
+      <description><![CDATA[A small library for converting tokenized PHP source code into XML and potentially other formats]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/theseer/tokenizer@1.2.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/theseer/tokenizer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/pcre@2.0.0">
+      <publisher/>
+      <group>composer</group>
+      <name>pcre</name>
+      <version>2.0.0</version>
+      <description><![CDATA[PCRE wrapping library that offers type-safe preg_* replacements.]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/pcre@2.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/pcre.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/container@1.1.1">
+      <publisher/>
+      <group>psr</group>
+      <name>container</name>
+      <version>1.1.1</version>
+      <description><![CDATA[Common Container Interface (PHP FIG PSR-11)]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/container@1.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/container.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/console@5.4.14">
+      <publisher/>
+      <group>symfony</group>
+      <name>console</name>
+      <version>5.4.14</version>
+      <description><![CDATA[Eases the creation of beautiful and testable command line interfaces]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/console@5.4.14</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/console.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/deprecation-contracts@2.5.2">
+      <publisher/>
+      <group>symfony</group>
+      <name>deprecation-contracts</name>
+      <version>2.5.2</version>
+      <description><![CDATA[A generic function and convention to trigger deprecation notices]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/deprecation-contracts@2.5.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/deprecation-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/filesystem@5.4.13">
+      <publisher/>
+      <group>symfony</group>
+      <name>filesystem</name>
+      <version>5.4.13</version>
+      <description><![CDATA[Provides basic utilities for the filesystem]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/filesystem@5.4.13</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/filesystem.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/finder@5.4.11">
+      <publisher/>
+      <group>symfony</group>
+      <name>finder</name>
+      <version>5.4.11</version>
+      <description><![CDATA[Finds files and directories via an intuitive fluent interface]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/finder@5.4.11</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/finder.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-ctype@1.26.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-ctype</name>
+      <version>1.26.0</version>
+      <description><![CDATA[Symfony polyfill for ctype functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-ctype@1.26.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-ctype.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-grapheme@1.26.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-grapheme</name>
+      <version>1.26.0</version>
+      <description><![CDATA[Symfony polyfill for intl's grapheme_* functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-grapheme@1.26.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-grapheme.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-normalizer@1.26.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-normalizer</name>
+      <version>1.26.0</version>
+      <description><![CDATA[Symfony polyfill for intl's Normalizer class and related functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-normalizer@1.26.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-normalizer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-mbstring@1.26.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-mbstring</name>
+      <version>1.26.0</version>
+      <description><![CDATA[Symfony polyfill for the Mbstring extension]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-mbstring@1.26.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-mbstring.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php73@1.26.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php73</name>
+      <version>1.26.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php73@1.26.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php73.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php80@1.26.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php80</name>
+      <version>1.26.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php80@1.26.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php80.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/process@5.4.11">
+      <publisher/>
+      <group>symfony</group>
+      <name>process</name>
+      <version>5.4.11</version>
+      <description><![CDATA[Executes commands in sub-processes]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/process@5.4.11</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/process.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/service-contracts@2.5.2">
+      <publisher/>
+      <group>symfony</group>
+      <name>service-contracts</name>
+      <version>2.5.2</version>
+      <description><![CDATA[Generic abstractions related to writing services]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/service-contracts@2.5.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/service-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/string@5.4.14">
+      <publisher/>
+      <group>symfony</group>
+      <name>string</name>
+      <version>5.4.14</version>
+      <description><![CDATA[Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/string@5.4.14</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/string.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpstan/phpstan-deprecation-rules@1.0.0">
+      <publisher/>
+      <group>phpstan</group>
+      <name>phpstan-deprecation-rules</name>
+      <version>1.0.0</version>
+      <description><![CDATA[PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpstan/phpstan-deprecation-rules@1.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpstan/phpstan-deprecation-rules.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpstan/phpstan-phpunit@1.1.3">
+      <publisher/>
+      <group>phpstan</group>
+      <name>phpstan-phpunit</name>
+      <version>1.1.3</version>
+      <description><![CDATA[PHPUnit extensions and rules for PHPStan]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpstan/phpstan-phpunit@1.1.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpstan/phpstan-phpunit.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpstan/phpstan-strict-rules@1.4.4">
+      <publisher/>
+      <group>phpstan</group>
+      <name>phpstan-strict-rules</name>
+      <version>1.4.4</version>
+      <description><![CDATA[Extra strict and opinionated rules for PHPStan]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpstan/phpstan-strict-rules@1.4.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpstan/phpstan-strict-rules.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpstan/phpstan-symfony@1.2.14">
+      <publisher/>
+      <group>phpstan</group>
+      <name>phpstan-symfony</name>
+      <version>1.2.14</version>
+      <description><![CDATA[Symfony Framework extensions and rules for PHPStan]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpstan/phpstan-symfony@1.2.14</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpstan/phpstan-symfony.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/phpunit-bridge@6.1.6">
+      <publisher/>
+      <group>symfony</group>
+      <name>phpunit-bridge</name>
+      <version>6.1.6</version>
+      <description><![CDATA[Provides utilities for PHPUnit, especially user deprecation notices management]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/phpunit-bridge@6.1.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/phpunit-bridge.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-idn@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-idn</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-idn@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-idn.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-normalizer@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-normalizer</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill for intl's Normalizer class and related functions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-normalizer@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-normalizer.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php72@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php72</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php72@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php72.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/amphp/amp@2.6.2">
+      <publisher/>
+      <group>amphp</group>
+      <name>amp</name>
+      <version>2.6.2</version>
+      <description><![CDATA[A non-blocking concurrency framework for PHP applications.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/amphp/amp@2.6.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/amphp/amp.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/amphp/byte-stream@1.8.1">
+      <publisher/>
+      <group>amphp</group>
+      <name>byte-stream</name>
+      <version>1.8.1</version>
+      <description><![CDATA[A stream abstraction to make working with non-blocking I/O simple.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/amphp/byte-stream@1.8.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/amphp/byte-stream.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/package-versions-deprecated@1.11.99.5">
+      <publisher/>
+      <group>composer</group>
+      <name>package-versions-deprecated</name>
+      <version>1.11.99.5</version>
+      <description><![CDATA[Composer plugin that provides efficient querying for installed package versions (no runtime IO)]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/package-versions-deprecated@1.11.99.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/package-versions-deprecated.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/composer/pcre@3.0.0">
+      <publisher/>
+      <group>composer</group>
+      <name>pcre</name>
+      <version>3.0.0</version>
+      <description><![CDATA[PCRE wrapping library that offers type-safe preg_* replacements.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/composer/pcre@3.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/composer/pcre.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/dnoegel/php-xdg-base-dir@0.1.1">
+      <publisher/>
+      <group>dnoegel</group>
+      <name>php-xdg-base-dir</name>
+      <version>0.1.1</version>
+      <description><![CDATA[implementation of xdg base directory specification for php]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/dnoegel/php-xdg-base-dir@0.1.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/dnoegel/php-xdg-base-dir.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/felixfbecker/advanced-json-rpc@3.2.1">
+      <publisher/>
+      <group>felixfbecker</group>
+      <name>advanced-json-rpc</name>
+      <version>3.2.1</version>
+      <description><![CDATA[A more advanced JSONRPC implementation]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>ISC</id>
+          <url>https://opensource.org/licenses/ISC</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/felixfbecker/advanced-json-rpc@3.2.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/felixfbecker/php-advanced-json-rpc.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/felixfbecker/language-server-protocol@1.5.2">
+      <publisher/>
+      <group>felixfbecker</group>
+      <name>language-server-protocol</name>
+      <version>1.5.2</version>
+      <description><![CDATA[PHP classes for the Language Server Protocol]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>ISC</id>
+          <url>https://opensource.org/licenses/ISC</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/felixfbecker/language-server-protocol@1.5.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/felixfbecker/php-language-server-protocol.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/guzzlehttp/guzzle@7.4.3">
+      <publisher/>
+      <group>guzzlehttp</group>
+      <name>guzzle</name>
+      <version>7.4.3</version>
+      <description><![CDATA[Guzzle is a PHP HTTP client library]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/guzzlehttp/guzzle@7.4.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/guzzle/guzzle.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/guzzlehttp/promises@1.5.1">
+      <publisher/>
+      <group>guzzlehttp</group>
+      <name>promises</name>
+      <version>1.5.1</version>
+      <description><![CDATA[Guzzle promises library]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/guzzlehttp/promises@1.5.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/guzzle/promises.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/guzzlehttp/psr7@2.2.1">
+      <publisher/>
+      <group>guzzlehttp</group>
+      <name>psr7</name>
+      <version>2.2.1</version>
+      <description><![CDATA[PSR-7 message implementation that also provides common utility methods]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/guzzlehttp/psr7@2.2.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/guzzle/psr7.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/netresearch/jsonmapper@4.0.0">
+      <publisher/>
+      <group>netresearch</group>
+      <name>jsonmapper</name>
+      <version>4.0.0</version>
+      <description><![CDATA[Map nested JSON structures onto PHP classes]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>OSL-3.0</id>
+          <url>https://opensource.org/licenses/OSL-3.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/netresearch/jsonmapper@4.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/cweiske/jsonmapper.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/nikic/php-parser@4.13.2">
+      <publisher/>
+      <group>nikic</group>
+      <name>php-parser</name>
+      <version>4.13.2</version>
+      <description><![CDATA[A PHP parser written in PHP]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/nikic/php-parser@4.13.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/nikic/PHP-Parser.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/openlss/lib-array2xml@1.0.0">
+      <publisher/>
+      <group>openlss</group>
+      <name>lib-array2xml</name>
+      <version>1.0.0</version>
+      <description><![CDATA[Array2XML conversion library credit to lalit.org]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/openlss/lib-array2xml@1.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/nullivex/lib-array2xml.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/php-coveralls/php-coveralls@2.5.2">
+      <publisher/>
+      <group>php-coveralls</group>
+      <name>php-coveralls</name>
+      <version>2.5.2</version>
+      <description><![CDATA[PHP client library for Coveralls API]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/php-coveralls/php-coveralls@2.5.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-coveralls/php-coveralls.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpdocumentor/reflection-common@2.2.0">
+      <publisher/>
+      <group>phpdocumentor</group>
+      <name>reflection-common</name>
+      <version>2.2.0</version>
+      <description><![CDATA[Common reflection classes used by phpdocumentor to reflect the code structure]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpdocumentor/reflection-common@2.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpDocumentor/ReflectionCommon.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpdocumentor/reflection-docblock@5.3.0">
+      <publisher/>
+      <group>phpdocumentor</group>
+      <name>reflection-docblock</name>
+      <version>5.3.0</version>
+      <description><![CDATA[With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpdocumentor/reflection-docblock@5.3.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpDocumentor/ReflectionDocBlock.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpdocumentor/type-resolver@1.6.1">
+      <publisher/>
+      <group>phpdocumentor</group>
+      <name>type-resolver</name>
+      <version>1.6.1</version>
+      <description><![CDATA[A PSR-5 based resolver of Class names, Types and Structural Element Names]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpdocumentor/type-resolver@1.6.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpDocumentor/TypeResolver.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpspec/prophecy@1.15.0">
+      <publisher/>
+      <group>phpspec</group>
+      <name>prophecy</name>
+      <version>1.15.0</version>
+      <description><![CDATA[Highly opinionated mocking framework for PHP 5.3+]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpspec/prophecy@1.15.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phpspec/prophecy.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/php-code-coverage@9.2.15">
+      <publisher/>
+      <group>phpunit</group>
+      <name>php-code-coverage</name>
+      <version>9.2.15</version>
+      <description><![CDATA[Library that provides collection, processing, and rendering functionality for PHP code coverage information.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/php-code-coverage@9.2.15</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/php-code-coverage.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phpunit/phpunit@9.5.20">
+      <publisher/>
+      <group>phpunit</group>
+      <name>phpunit</name>
+      <version>9.5.20</version>
+      <description><![CDATA[The PHP Unit Testing framework.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phpunit/phpunit@9.5.20</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/phpunit.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/psr/container@1.1.2">
+      <publisher/>
+      <group>psr</group>
+      <name>container</name>
+      <version>1.1.2</version>
+      <description><![CDATA[Common Container Interface (PHP FIG PSR-11)]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/psr/container@1.1.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/php-fig/container.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/comparator@4.0.6">
+      <publisher/>
+      <group>sebastian</group>
+      <name>comparator</name>
+      <version>4.0.6</version>
+      <description><![CDATA[Provides the functionality to compare PHP values for equality]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/comparator@4.0.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/comparator.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/exporter@4.0.4">
+      <publisher/>
+      <group>sebastian</group>
+      <name>exporter</name>
+      <version>4.0.4</version>
+      <description><![CDATA[Provides the functionality to export PHP variables for visualization]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/exporter@4.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/exporter.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/sebastian/type@3.0.0">
+      <publisher/>
+      <group>sebastian</group>
+      <name>type</name>
+      <version>3.0.0</version>
+      <description><![CDATA[Collection of value objects that represent the types of the PHP type system]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/sebastian/type@3.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/sebastianbergmann/type.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/config@5.4.9">
+      <publisher/>
+      <group>symfony</group>
+      <name>config</name>
+      <version>5.4.9</version>
+      <description><![CDATA[Helps you find, load, combine, autofill and validate configuration values of any kind]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/config@5.4.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/config.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/console@5.4.9">
+      <publisher/>
+      <group>symfony</group>
+      <name>console</name>
+      <version>5.4.9</version>
+      <description><![CDATA[Eases the creation of beautiful and testable command line interfaces]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/console@5.4.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/console.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/deprecation-contracts@2.5.1">
+      <publisher/>
+      <group>symfony</group>
+      <name>deprecation-contracts</name>
+      <version>2.5.1</version>
+      <description><![CDATA[A generic function and convention to trigger deprecation notices]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/deprecation-contracts@2.5.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/deprecation-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/filesystem@5.4.9">
+      <publisher/>
+      <group>symfony</group>
+      <name>filesystem</name>
+      <version>5.4.9</version>
+      <description><![CDATA[Provides basic utilities for the filesystem]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/filesystem@5.4.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/filesystem.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-ctype@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-ctype</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill for ctype functions]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-ctype@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-ctype.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-intl-grapheme@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-intl-grapheme</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill for intl's grapheme_* functions]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-intl-grapheme@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-intl-grapheme.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-mbstring@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-mbstring</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill for the Mbstring extension]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-mbstring@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-mbstring.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php73@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php73</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php73@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php73.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php80@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php80</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php80@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php80.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-php81@1.25.0">
+      <publisher/>
+      <group>symfony</group>
+      <name>polyfill-php81</name>
+      <version>1.25.0</version>
+      <description><![CDATA[Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/polyfill-php81@1.25.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/polyfill-php81.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/service-contracts@2.5.1">
+      <publisher/>
+      <group>symfony</group>
+      <name>service-contracts</name>
+      <version>2.5.1</version>
+      <description><![CDATA[Generic abstractions related to writing services]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/service-contracts@2.5.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/service-contracts.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/stopwatch@5.4.5">
+      <publisher/>
+      <group>symfony</group>
+      <name>stopwatch</name>
+      <version>5.4.5</version>
+      <description><![CDATA[Provides a way to profile code]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/stopwatch@5.4.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/stopwatch.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/string@5.4.9">
+      <publisher/>
+      <group>symfony</group>
+      <name>string</name>
+      <version>5.4.9</version>
+      <description><![CDATA[Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/string@5.4.9</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/string.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/yaml@5.4.3">
+      <publisher/>
+      <group>symfony</group>
+      <name>yaml</name>
+      <version>5.4.3</version>
+      <description><![CDATA[Loads and dumps YAML files]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/symfony/yaml@5.4.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/symfony/yaml.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/vimeo/psalm@4.23.0">
+      <publisher/>
+      <group>vimeo</group>
+      <name>psalm</name>
+      <version>4.23.0</version>
+      <description><![CDATA[A static analysis tool for finding errors in PHP applications]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/vimeo/psalm@4.23.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/vimeo/psalm.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/webmozart/assert@1.10.0">
+      <publisher/>
+      <group>webmozart</group>
+      <name>assert</name>
+      <version>1.10.0</version>
+      <description><![CDATA[Assertions to validate method input/output with nice error messages.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/webmozart/assert@1.10.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/webmozarts/assert.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/webmozart/path-util@2.3.0">
+      <publisher/>
+      <group>webmozart</group>
+      <name>path-util</name>
+      <version>2.3.0</version>
+      <description><![CDATA[A robust cross-platform utility for normalizing, comparing and modifying file paths.]]></description>
+      <scope>optional</scope>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/webmozart/path-util@2.3.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/webmozart/path-util.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phar-io/version@3.0.1">
+      <publisher/>
+      <group>phar-io</group>
+      <name>version</name>
+      <version>3.0.1</version>
+      <description><![CDATA[Library for handling version information and constraints]]></description>
+      <scope>required</scope>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:composer/phar-io/version@3.0.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/phar-io/version.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/composer.lock, /github/workspace/vendor/composer/composer/composer.lock, /github/workspace/vendor/egulias/email-validator/composer.lock, /github/workspace/vendor/phar-io/manifest/composer.lock, /github/workspace/vendor/seld/phar-utils/composer.lock, /github/workspace/vendor/theseer/tokenizer/composer.lock</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

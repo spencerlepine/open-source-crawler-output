@@ -1,0 +1,6344 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:1ee23e19-e405-494d-a555-793c796ed41c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-12-06T08:35:36.421Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.4.0"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "php",
+      "version": "8.1-alpine3.15",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/php@8.1-alpine3.15?",
+      "type": "library",
+      "bom-ref": "pkg:oci/php@8.1-alpine3.15?"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.2.0-r18?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.2.0-r18",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.2.0-r18?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-keys@2.4-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.4-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-keys@2.4-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apk-tools@2.12.7-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.12.7-r3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apk-tools@2.12.7-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/argon2-libs@20190702-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "argon2-libs",
+      "version": "20190702-r1",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/argon2-libs@20190702-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/argon2@20190702-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "argon2",
+      "version": "20190702-r1",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/argon2@20190702-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/brotli-libs@1.0.9-r5?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "brotli-libs",
+      "version": "1.0.9-r5",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/brotli-libs@1.0.9-r5?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/brotli@1.0.9-r5?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "brotli",
+      "version": "1.0.9-r5",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/brotli@1.0.9-r5?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/busybox@1.34.1-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "busybox",
+      "version": "1.34.1-r7",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/busybox@1.34.1-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates@20220614-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20220614-r0",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates@20220614-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates-bundle@20220614-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ca-certificates-bundle",
+      "version": "20220614-r0",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates-bundle@20220614-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/curl@7.80.0-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "curl",
+      "version": "7.80.0-r3",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/curl@7.80.0-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/gnu-libiconv@1.16-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "gnu-libiconv",
+      "version": "1.16-r0",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/gnu-libiconv@1.16-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libacl@2.2.53-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libacl",
+      "version": "2.2.53-r0",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libacl@2.2.53-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/acl@2.2.53-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "acl",
+      "version": "2.2.53-r0",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1-or-later"
+        }
+      ],
+      "purl": "pkg:apk/alpine/acl@2.2.53-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libc-utils",
+      "version": "0.7.2-r3",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-dev@0.7.2-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libc-dev",
+      "version": "0.7.2-r3",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libc-dev@0.7.2-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcrypto1.1@1.1.1s-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libcrypto1.1",
+      "version": "1.1.1s-r1",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1s-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/openssl@1.1.1s-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.1s-r1",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/openssl@1.1.1s-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcurl@7.80.0-r4?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libcurl",
+      "version": "7.80.0-r4",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcurl@7.80.0-r4?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/curl@7.80.0-r4?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "curl",
+      "version": "7.80.0-r4",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/curl@7.80.0-r4?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libgcc@10.3.1_git20211027-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libgcc",
+      "version": "10.3.1_git20211027-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libgcc@10.3.1_git20211027-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/gcc@10.3.1_git20211027-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "gcc",
+      "version": "10.3.1_git20211027-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/gcc@10.3.1_git20211027-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libretls@3.3.4-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libretls",
+      "version": "3.3.4-r3",
+      "licenses": [
+        {
+          "expression": "ISC"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libretls@3.3.4-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libsodium@1.0.18-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libsodium",
+      "version": "1.0.18-r0",
+      "licenses": [
+        {
+          "expression": "ISC"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libsodium@1.0.18-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libssl1.1@1.1.1s-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1s-r1",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libssl1.1@1.1.1s-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libxml2@2.9.14-r2?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libxml2",
+      "version": "2.9.14-r2",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libxml2@2.9.14-r2?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl@1.2.2-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "musl",
+      "version": "1.2.2-r7",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl@1.2.2-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl-utils@1.2.2-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.2.2-r7",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl-utils@1.2.2-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses-libs@6.3_p20211120-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ncurses-libs",
+      "version": "6.3_p20211120-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-libs@6.3_p20211120-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses@6.3_p20211120-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ncurses",
+      "version": "6.3_p20211120-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses@6.3_p20211120-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses-terminfo-base@6.3_p20211120-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ncurses-terminfo-base",
+      "version": "6.3_p20211120-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-terminfo-base@6.3_p20211120-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/nghttp2-libs@1.46.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "nghttp2-libs",
+      "version": "1.46.0-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/nghttp2-libs@1.46.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/nghttp2@1.46.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "nghttp2",
+      "version": "1.46.0-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/nghttp2@1.46.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/oniguruma@6.9.7.1-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "oniguruma",
+      "version": "6.9.7.1-r0",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/oniguruma@6.9.7.1-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/openssl@1.1.1q-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.1q-r0",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/openssl@1.1.1q-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/readline@8.1.1-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "readline",
+      "version": "8.1.1-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/readline@8.1.1-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/scanelf@1.3.3-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.3.3-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/scanelf@1.3.3-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/pax-utils@1.3.3-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "pax-utils",
+      "version": "1.3.3-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/pax-utils@1.3.3-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/sqlite-libs@3.36.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "sqlite-libs",
+      "version": "3.36.0-r0",
+      "licenses": [
+        {
+          "expression": "blessing"
+        }
+      ],
+      "purl": "pkg:apk/alpine/sqlite-libs@3.36.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/sqlite@3.36.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "sqlite",
+      "version": "3.36.0-r0",
+      "licenses": [
+        {
+          "expression": "blessing"
+        }
+      ],
+      "purl": "pkg:apk/alpine/sqlite@3.36.0-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ssl_client@1.34.1-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.34.1-r7",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ssl_client@1.34.1-r7?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/tar@1.34-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "tar",
+      "version": "1.34-r0",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/tar@1.34-r0?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/xz@5.2.5-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "xz",
+      "version": "5.2.5-r1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/xz@5.2.5-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/xz-libs@5.2.5-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "xz-libs",
+      "version": "5.2.5-r1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/xz-libs@5.2.5-r1?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/zlib@1.2.12-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.12-r3",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:apk/alpine/zlib@1.2.12-r3?distro=3.15.6&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "bytemark/webdav",
+      "version": "latest",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/bytemark/webdav@latest?",
+      "type": "library",
+      "bom-ref": "pkg:oci/bytemark/webdav@latest?"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/.httpd-rundeps@0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": ".httpd-rundeps",
+      "version": "0",
+      "purl": "pkg:apk/alpine/.httpd-rundeps@0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.1.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.1.0-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.1.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-keys@2.1-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.1-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-keys@2.1-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apk-tools@2.10.1-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.10.1-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apk-tools@2.10.1-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apr@1.6.3-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "apr",
+      "version": "1.6.3-r1",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apr@1.6.3-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apr-dev@1.6.3-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "apr-dev",
+      "version": "1.6.3-r1",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apr-dev@1.6.3-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apr-util@1.6.1-r2?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "apr-util",
+      "version": "1.6.1-r2",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apr-util@1.6.1-r2?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apr-util-dev@1.6.1-r2?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "apr-util-dev",
+      "version": "1.6.1-r2",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apr-util-dev@1.6.1-r2?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apr-util-ldap@1.6.1-r2?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "apr-util-ldap",
+      "version": "1.6.1-r2",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apr-util-ldap@1.6.1-r2?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/bash@4.4.19-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "bash",
+      "version": "4.4.19-r1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/bash@4.4.19-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/busybox@1.28.4-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "busybox",
+      "version": "1.28.4-r1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/busybox@1.28.4-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/cyrus-sasl-dev@2.1.26-r13?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "cyrus-sasl-dev",
+      "version": "2.1.26-r13",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/cyrus-sasl-dev@2.1.26-r13?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/cyrus-sasl@2.1.26-r13?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "cyrus-sasl",
+      "version": "2.1.26-r13",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/cyrus-sasl@2.1.26-r13?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/db@5.3.28-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "db",
+      "version": "5.3.28-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/db@5.3.28-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/db-c%2B%2B@5.3.28-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "db-c++",
+      "version": "5.3.28-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/db-c%2B%2B@5.3.28-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/db-dev@5.3.28-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "db-dev",
+      "version": "5.3.28-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/db-dev@5.3.28-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/expat@2.2.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "expat",
+      "version": "2.2.5-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/expat@2.2.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/expat-dev@2.2.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "expat-dev",
+      "version": "2.2.5-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/expat-dev@2.2.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libblkid@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libblkid",
+      "version": "2.32-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libblkid@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/util-linux@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "util-linux",
+      "version": "2.32-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/util-linux@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libbz2@1.0.6-r6?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libbz2",
+      "version": "1.0.6-r6",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libbz2@1.0.6-r6?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/bzip2@1.0.6-r6?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "bzip2",
+      "version": "1.0.6-r6",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/bzip2@1.0.6-r6?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-utils@0.7.1-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libc-utils",
+      "version": "0.7.1-r0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libc-utils@0.7.1-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-dev@0.7.1-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libc-dev",
+      "version": "0.7.1-r0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libc-dev@0.7.1-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcrypto1.0@1.0.2q-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libcrypto1.0",
+      "version": "1.0.2q-r0",
+      "licenses": [
+        {
+          "expression": "openssl"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcrypto1.0@1.0.2q-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/openssl@1.0.2q-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.0.2q-r0",
+      "licenses": [
+        {
+          "expression": "openssl"
+        }
+      ],
+      "purl": "pkg:apk/alpine/openssl@1.0.2q-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libfdisk@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libfdisk",
+      "version": "2.32-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libfdisk@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libgcc@6.4.0-r9?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libgcc",
+      "version": "6.4.0-r9",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libgcc@6.4.0-r9?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/gcc@6.4.0-r9?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "gcc",
+      "version": "6.4.0-r9",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/gcc@6.4.0-r9?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libldap@2.4.46-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libldap",
+      "version": "2.4.46-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libldap@2.4.46-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/openldap@2.4.46-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "openldap",
+      "version": "2.4.46-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/openldap@2.4.46-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libmount@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libmount",
+      "version": "2.32-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libmount@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libpq@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libpq",
+      "version": "10.5-r0",
+      "licenses": [
+        {
+          "expression": "PostgreSQL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libpq@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/postgresql@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "postgresql",
+      "version": "10.5-r0",
+      "licenses": [
+        {
+          "expression": "PostgreSQL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/postgresql@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libressl-dev@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libressl-dev",
+      "version": "2.7.4-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libressl-dev@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libressl@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libressl",
+      "version": "2.7.4-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libressl@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libressl2.7-libcrypto@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libressl2.7-libcrypto",
+      "version": "2.7.4-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libressl2.7-libcrypto@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libressl2.7-libssl@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libressl2.7-libssl",
+      "version": "2.7.4-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libressl2.7-libssl@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libressl2.7-libtls@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libressl2.7-libtls",
+      "version": "2.7.4-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libressl2.7-libtls@2.7.4-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libsasl@2.1.26-r13?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libsasl",
+      "version": "2.1.26-r13",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libsasl@2.1.26-r13?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libsmartcols@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libsmartcols",
+      "version": "2.32-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libsmartcols@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libssl1.0@1.0.2q-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libssl1.0",
+      "version": "1.0.2q-r0",
+      "licenses": [
+        {
+          "expression": "openssl"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libssl1.0@1.0.2q-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libstdc%2B%2B@6.4.0-r9?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libstdc++",
+      "version": "6.4.0-r9",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libstdc%2B%2B@6.4.0-r9?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libuuid@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libuuid",
+      "version": "2.32-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libuuid@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libxml2@2.9.8-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "libxml2",
+      "version": "2.9.8-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libxml2@2.9.8-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/lua5.1-libs@5.1.5-r7?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "lua5.1-libs",
+      "version": "5.1.5-r7",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/lua5.1-libs@5.1.5-r7?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/lua5.1@5.1.5-r7?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "lua5.1",
+      "version": "5.1.5-r7",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/lua5.1@5.1.5-r7?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl@1.1.19-r10?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "musl",
+      "version": "1.1.19-r10",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl@1.1.19-r10?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl-utils@1.1.19-r10?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.1.19-r10",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl-utils@1.1.19-r10?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses-libs@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "ncurses-libs",
+      "version": "6.1_p20180818-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-libs@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "ncurses",
+      "version": "6.1_p20180818-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses-terminfo@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "ncurses-terminfo",
+      "version": "6.1_p20180818-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-terminfo@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ncurses-terminfo-base@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "ncurses-terminfo-base",
+      "version": "6.1_p20180818-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ncurses-terminfo-base@6.1_p20180818-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/nghttp2-libs@1.32.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "nghttp2-libs",
+      "version": "1.32.0-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/nghttp2-libs@1.32.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/nghttp2@1.32.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "nghttp2",
+      "version": "1.32.0-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/nghttp2@1.32.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/openldap-dev@2.4.46-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "openldap-dev",
+      "version": "2.4.46-r0",
+      "licenses": [
+        {
+          "expression": "custom"
+        }
+      ],
+      "purl": "pkg:apk/alpine/openldap-dev@2.4.46-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/pcre@8.42-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "pcre",
+      "version": "8.42-r0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/pcre@8.42-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/perl@5.26.2-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "perl",
+      "version": "5.26.2-r1",
+      "licenses": [
+        {
+          "expression": "Artistic"
+        }
+      ],
+      "purl": "pkg:apk/alpine/perl@5.26.2-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/pkgconf@1.5.3-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "pkgconf",
+      "version": "1.5.3-r0",
+      "licenses": [
+        {
+          "expression": "ISC"
+        }
+      ],
+      "purl": "pkg:apk/alpine/pkgconf@1.5.3-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/postgresql-dev@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "postgresql-dev",
+      "version": "10.5-r0",
+      "licenses": [
+        {
+          "expression": "PostgreSQL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/postgresql-dev@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/postgresql-libs@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "postgresql-libs",
+      "version": "10.5-r0",
+      "licenses": [
+        {
+          "expression": "PostgreSQL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/postgresql-libs@10.5-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/readline@7.0.003-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "readline",
+      "version": "7.0.003-r0",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/readline@7.0.003-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/scanelf@1.2.3-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.2.3-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/scanelf@1.2.3-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/pax-utils@1.2.3-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "pax-utils",
+      "version": "1.2.3-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/pax-utils@1.2.3-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/sqlite-dev@3.24.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "sqlite-dev",
+      "version": "3.24.0-r0",
+      "licenses": [
+        {
+          "expression": "Public-Domain"
+        }
+      ],
+      "purl": "pkg:apk/alpine/sqlite-dev@3.24.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/sqlite@3.24.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "sqlite",
+      "version": "3.24.0-r0",
+      "licenses": [
+        {
+          "expression": "Public-Domain"
+        }
+      ],
+      "purl": "pkg:apk/alpine/sqlite@3.24.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/sqlite-libs@3.24.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "sqlite-libs",
+      "version": "3.24.0-r0",
+      "licenses": [
+        {
+          "expression": "Public-Domain"
+        }
+      ],
+      "purl": "pkg:apk/alpine/sqlite-libs@3.24.0-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ssl_client@1.28.4-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.28.4-r1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ssl_client@1.28.4-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/util-linux-dev@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "util-linux-dev",
+      "version": "2.32-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/util-linux-dev@2.32-r0?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/zlib@1.2.11-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.11-r1",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:apk/alpine/zlib@1.2.11-r1?distro=3.8.1&distro_name=alpine-3.8",
+      "group": "alpine"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "atmoz/sftp",
+      "version": "latest",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/atmoz/sftp@latest?",
+      "type": "library",
+      "bom-ref": "pkg:oci/atmoz/sftp@latest?"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/adduser@3.118?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "adduser",
+      "version": "3.118",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/adduser@3.118?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/apt@2.2.4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "apt",
+      "version": "2.2.4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/apt@2.2.4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-files@11.1%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "base-files",
+      "version": "11.1+deb11u5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-files@11.1%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-passwd@3.5.51?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "base-passwd",
+      "version": "3.5.51",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-passwd@3.5.51?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bash@5.1-2%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "bash",
+      "version": "5.1-2+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/bash@5.1-2%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bsdutils@1:2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "bsdutils",
+      "version": "1:2.36.1-8+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/bsdutils@1:2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/util-linux@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "util-linux",
+      "version": "2.36.1-8+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/util-linux@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/coreutils@8.32-4%2Bb1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "coreutils",
+      "version": "8.32-4+b1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/coreutils@8.32-4%2Bb1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dash@0.5.11%2Bgit20200708%2Bdd9ef66-5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "dash",
+      "version": "0.5.11+git20200708+dd9ef66-5",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/dash@0.5.11%2Bgit20200708%2Bdd9ef66-5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dbus@1.12.24-0%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "dbus",
+      "version": "1.12.24-0+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dbus@1.12.24-0%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debconf@1.5.77?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "debconf",
+      "version": "1.5.77",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/debconf@1.5.77?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debian-archive-keyring@2021.1.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "debian-archive-keyring",
+      "version": "2021.1.1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/debian-archive-keyring@2021.1.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debianutils@4.11.2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "debianutils",
+      "version": "4.11.2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/debianutils@4.11.2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/diffutils@1:3.7-5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "diffutils",
+      "version": "1:3.7-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/diffutils@1:3.7-5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dmsetup@2:1.02.175-2.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "dmsetup",
+      "version": "2:1.02.175-2.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dmsetup@2:1.02.175-2.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lvm2@2.03.11-2.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "lvm2",
+      "version": "2.03.11-2.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/lvm2@2.03.11-2.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dpkg@1.20.12?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "dpkg",
+      "version": "1.20.12",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dpkg@1.20.12?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/e2fsprogs@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "e2fsprogs",
+      "version": "1.46.2-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/e2fsprogs@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/findutils@4.8.0-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "findutils",
+      "version": "4.8.0-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/findutils@4.8.0-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-10-base@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gcc-10-base",
+      "version": "10.2.1-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-10-base@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-10@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gcc-10",
+      "version": "10.2.1-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-10@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-9-base@9.3.0-22?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gcc-9-base",
+      "version": "9.3.0-22",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-9-base@9.3.0-22?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-9@9.3.0-22?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gcc-9",
+      "version": "9.3.0-22",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-9@9.3.0-22?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpgv@2.2.27-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gpgv",
+      "version": "2.2.27-2+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpgv@2.2.27-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gnupg2@2.2.27-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gnupg2",
+      "version": "2.2.27-2+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gnupg2@2.2.27-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/grep@3.6-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "grep",
+      "version": "3.6-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/grep@3.6-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gzip@1.10-4%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gzip",
+      "version": "1.10-4+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gzip@1.10-4%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/hostname@3.23?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "hostname",
+      "version": "3.23",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/hostname@3.23?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/init-system-helpers@1.60?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "init-system-helpers",
+      "version": "1.60",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/init-system-helpers@1.60?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libacl1@2.2.53-10?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libacl1",
+      "version": "2.2.53-10",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libacl1@2.2.53-10?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/acl@2.2.53-10?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "acl",
+      "version": "2.2.53-10",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/acl@2.2.53-10?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libapparmor1@2.13.6-10?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libapparmor1",
+      "version": "2.13.6-10",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libapparmor1@2.13.6-10?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/apparmor@2.13.6-10?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "apparmor",
+      "version": "2.13.6-10",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/apparmor@2.13.6-10?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libapt-pkg6.0@2.2.4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libapt-pkg6.0",
+      "version": "2.2.4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libapt-pkg6.0@2.2.4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libargon2-1@0~20171227-0.2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libargon2-1",
+      "version": "0~20171227-0.2",
+      "licenses": [
+        {
+          "expression": "CC0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libargon2-1@0~20171227-0.2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/argon2@0~20171227-0.2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "argon2",
+      "version": "0~20171227-0.2",
+      "licenses": [
+        {
+          "expression": "CC0"
+        }
+      ],
+      "purl": "pkg:deb/debian/argon2@0~20171227-0.2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libattr1@1:2.4.48-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libattr1",
+      "version": "1:2.4.48-6",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libattr1@1:2.4.48-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/attr@1:2.4.48-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "attr",
+      "version": "1:2.4.48-6",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/attr@1:2.4.48-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit-common@1:3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libaudit-common",
+      "version": "1:3.0-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit-common@1:3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/audit@1:3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "audit",
+      "version": "1:3.0-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/audit@1:3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit1@1:3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libaudit1",
+      "version": "1:3.0-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit1@1:3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libblkid1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libblkid1",
+      "version": "2.36.1-8+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libblkid1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbsd0@0.11.3-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libbsd0",
+      "version": "0.11.3-1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbsd0@0.11.3-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbsd@0.11.3-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libbsd",
+      "version": "0.11.3-1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbsd@0.11.3-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbz2-1.0@1.0.8-4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libbz2-1.0",
+      "version": "1.0.8-4",
+      "licenses": [
+        {
+          "expression": "BSD-variant"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbz2-1.0@1.0.8-4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bzip2@1.0.8-4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "bzip2",
+      "version": "1.0.8-4",
+      "licenses": [
+        {
+          "expression": "BSD-variant"
+        }
+      ],
+      "purl": "pkg:deb/debian/bzip2@1.0.8-4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc-bin@2.31-13%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libc-bin",
+      "version": "2.31-13+deb11u5",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc-bin@2.31-13%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/glibc@2.31-13%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "glibc",
+      "version": "2.31-13+deb11u5",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/glibc@2.31-13%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.31-13%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libc6",
+      "version": "2.31-13+deb11u5",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc6@2.31-13%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap-ng0@0.7.9-2.2%2Bb1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcap-ng0",
+      "version": "0.7.9-2.2+b1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap-ng0@0.7.9-2.2%2Bb1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap-ng@0.7.9-2.2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcap-ng",
+      "version": "0.7.9-2.2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap-ng@0.7.9-2.2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap2@1:2.44-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcap2",
+      "version": "1:2.44-1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap2@1:2.44-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcbor0@0.5.0%2Bdfsg-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcbor0",
+      "version": "0.5.0+dfsg-2",
+      "licenses": [
+        {
+          "expression": "Expat"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcbor0@0.5.0%2Bdfsg-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcbor@0.5.0%2Bdfsg-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcbor",
+      "version": "0.5.0+dfsg-2",
+      "licenses": [
+        {
+          "expression": "Expat"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcbor@0.5.0%2Bdfsg-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcom-err2@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcom-err2",
+      "version": "1.46.2-2",
+      "purl": "pkg:deb/debian/libcom-err2@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcrypt1@1:4.4.18-4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcrypt1",
+      "version": "1:4.4.18-4",
+      "purl": "pkg:deb/debian/libcrypt1@1:4.4.18-4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxcrypt@1:4.4.18-4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxcrypt",
+      "version": "1:4.4.18-4",
+      "purl": "pkg:deb/debian/libxcrypt@1:4.4.18-4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcryptsetup12@2:2.3.7-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libcryptsetup12",
+      "version": "2:2.3.7-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2+ with OpenSSL exception"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcryptsetup12@2:2.3.7-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/cryptsetup@2:2.3.7-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "cryptsetup",
+      "version": "2:2.3.7-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2+ with OpenSSL exception"
+        }
+      ],
+      "purl": "pkg:deb/debian/cryptsetup@2:2.3.7-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg1-0.8?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.8",
+      "purl": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg1-0.8?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/db5.3@5.3.28%2Bdfsg1-0.8?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "db5.3",
+      "version": "5.3.28+dfsg1-0.8",
+      "purl": "pkg:deb/debian/db5.3@5.3.28%2Bdfsg1-0.8?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdbus-1-3@1.12.24-0%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libdbus-1-3",
+      "version": "1.12.24-0+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libdbus-1-3@1.12.24-0%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdebconfclient0@0.260?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libdebconfclient0",
+      "version": "0.260",
+      "purl": "pkg:deb/debian/libdebconfclient0@0.260?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/cdebconf@0.260?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "cdebconf",
+      "version": "0.260",
+      "purl": "pkg:deb/debian/cdebconf@0.260?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdevmapper1.02.1@2:1.02.175-2.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libdevmapper1.02.1",
+      "version": "2:1.02.175-2.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libdevmapper1.02.1@2:1.02.175-2.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libedit2@3.1-20191231-2%2Bb1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libedit2",
+      "version": "3.1-20191231-2+b1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libedit2@3.1-20191231-2%2Bb1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libedit@3.1-20191231-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libedit",
+      "version": "3.1-20191231-2",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libedit@3.1-20191231-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libexpat1@2.2.10-2%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libexpat1",
+      "version": "2.2.10-2+deb11u5",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:deb/debian/libexpat1@2.2.10-2%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/expat@2.2.10-2%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "expat",
+      "version": "2.2.10-2+deb11u5",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:deb/debian/expat@2.2.10-2%2Bdeb11u5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libext2fs2@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libext2fs2",
+      "version": "1.46.2-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libext2fs2@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libffi7@3.3-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libffi7",
+      "version": "3.3-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libffi7@3.3-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libffi@3.3-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libffi",
+      "version": "3.3-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libffi@3.3-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libfido2-1@1.6.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libfido2-1",
+      "version": "1.6.0-2",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libfido2-1@1.6.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libfido2@1.6.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libfido2",
+      "version": "1.6.0-2",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libfido2@1.6.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcc-s1@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgcc-s1",
+      "version": "10.2.1-6",
+      "purl": "pkg:deb/debian/libgcc-s1@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcrypt20@1.8.7-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgcrypt20",
+      "version": "1.8.7-6",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgcrypt20@1.8.7-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgmp10@2:6.2.1%2Bdfsg-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgmp10",
+      "version": "2:6.2.1+dfsg-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgmp10@2:6.2.1%2Bdfsg-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gmp@2:6.2.1%2Bdfsg-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gmp",
+      "version": "2:6.2.1+dfsg-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gmp@2:6.2.1%2Bdfsg-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgnutls30@3.7.1-5%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgnutls30",
+      "version": "3.7.1-5+deb11u2",
+      "licenses": [
+        {
+          "expression": "The main library is licensed under GNU Lesser"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgnutls30@3.7.1-5%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gnutls28@3.7.1-5%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gnutls28",
+      "version": "3.7.1-5+deb11u2",
+      "licenses": [
+        {
+          "expression": "The main library is licensed under GNU Lesser"
+        }
+      ],
+      "purl": "pkg:deb/debian/gnutls28@3.7.1-5%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgpg-error0@1.38-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgpg-error0",
+      "version": "1.38-2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgpg-error0@1.38-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgpg-error@1.38-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgpg-error",
+      "version": "1.38-2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgpg-error@1.38-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgpm2@1.20.7-8?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgpm2",
+      "version": "1.20.7-8",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgpm2@1.20.7-8?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpm@1.20.7-8?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "gpm",
+      "version": "1.20.7-8",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpm@1.20.7-8?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgssapi-krb5-2@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libgssapi-krb5-2",
+      "version": "1.18.3-6+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgssapi-krb5-2@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/krb5@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "krb5",
+      "version": "1.18.3-6+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/krb5@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libhogweed6@3.7.3-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libhogweed6",
+      "version": "3.7.3-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libhogweed6@3.7.3-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/nettle@3.7.3-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "nettle",
+      "version": "3.7.3-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/nettle@3.7.3-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libidn2-0@2.3.0-5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libidn2-0",
+      "version": "2.3.0-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libidn2-0@2.3.0-5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libidn2@2.3.0-5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libidn2",
+      "version": "2.3.0-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libidn2@2.3.0-5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libip4tc2@1.8.7-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libip4tc2",
+      "version": "1.8.7-1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libip4tc2@1.8.7-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/iptables@1.8.7-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "iptables",
+      "version": "1.8.7-1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/iptables@1.8.7-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libjson-c5@0.15-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libjson-c5",
+      "version": "0.15-2",
+      "licenses": [
+        {
+          "expression": "Expat"
+        }
+      ],
+      "purl": "pkg:deb/debian/libjson-c5@0.15-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/json-c@0.15-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "json-c",
+      "version": "0.15-2",
+      "licenses": [
+        {
+          "expression": "Expat"
+        }
+      ],
+      "purl": "pkg:deb/debian/json-c@0.15-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libk5crypto3@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libk5crypto3",
+      "version": "1.18.3-6+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libk5crypto3@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkeyutils1@1.6.1-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libkeyutils1",
+      "version": "1.6.1-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libkeyutils1@1.6.1-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/keyutils@1.6.1-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "keyutils",
+      "version": "1.6.1-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/keyutils@1.6.1-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkmod2@28-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libkmod2",
+      "version": "28-1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libkmod2@28-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/kmod@28-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "kmod",
+      "version": "28-1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/kmod@28-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkrb5-3@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libkrb5-3",
+      "version": "1.18.3-6+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libkrb5-3@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkrb5support0@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libkrb5support0",
+      "version": "1.18.3-6+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libkrb5support0@1.18.3-6%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblz4-1@1.9.3-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "liblz4-1",
+      "version": "1.9.3-2",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblz4-1@1.9.3-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lz4@1.9.3-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "lz4",
+      "version": "1.9.3-2",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/lz4@1.9.3-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblzma5@5.2.5-2.1~deb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "liblzma5",
+      "version": "5.2.5-2.1~deb11u1",
+      "licenses": [
+        {
+          "expression": "PD"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblzma5@5.2.5-2.1~deb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/xz-utils@5.2.5-2.1~deb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "xz-utils",
+      "version": "5.2.5-2.1~deb11u1",
+      "licenses": [
+        {
+          "expression": "PD"
+        }
+      ],
+      "purl": "pkg:deb/debian/xz-utils@5.2.5-2.1~deb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmd0@1.0.3-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libmd0",
+      "version": "1.0.3-3",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmd0@1.0.3-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmd@1.0.3-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libmd",
+      "version": "1.0.3-3",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmd@1.0.3-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmount1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libmount1",
+      "version": "2.36.1-8+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmount1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libncurses6@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libncurses6",
+      "version": "6.2+20201114-2",
+      "purl": "pkg:deb/debian/libncurses6@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "ncurses",
+      "version": "6.2+20201114-2",
+      "purl": "pkg:deb/debian/ncurses@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libncursesw6@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libncursesw6",
+      "version": "6.2+20201114-2",
+      "purl": "pkg:deb/debian/libncursesw6@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnettle8@3.7.3-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libnettle8",
+      "version": "3.7.3-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnettle8@3.7.3-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnsl2@1.3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libnsl2",
+      "version": "1.3.0-2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnsl2@1.3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnsl@1.3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libnsl",
+      "version": "1.3.0-2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnsl@1.3.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnss-systemd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libnss-systemd",
+      "version": "247.3-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnss-systemd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/systemd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "systemd",
+      "version": "247.3-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/systemd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libp11-kit0@0.23.22-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libp11-kit0",
+      "version": "0.23.22-1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libp11-kit0@0.23.22-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/p11-kit@0.23.22-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "p11-kit",
+      "version": "0.23.22-1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/p11-kit@0.23.22-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libpam-modules",
+      "version": "1.4.0-9+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pam@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "pam",
+      "version": "1.4.0-9+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/pam@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules-bin@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libpam-modules-bin",
+      "version": "1.4.0-9+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules-bin@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-runtime@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libpam-runtime",
+      "version": "1.4.0-9+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-runtime@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-systemd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libpam-systemd",
+      "version": "247.3-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-systemd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam0g@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libpam0g",
+      "version": "1.4.0-9+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam0g@1.4.0-9%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpcre2-8-0@10.36-2%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libpcre2-8-0",
+      "version": "10.36-2+deb11u1",
+      "purl": "pkg:deb/debian/libpcre2-8-0@10.36-2%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pcre2@10.36-2%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "pcre2",
+      "version": "10.36-2+deb11u1",
+      "purl": "pkg:deb/debian/pcre2@10.36-2%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpcre3@2:8.39-13?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libpcre3",
+      "version": "2:8.39-13",
+      "purl": "pkg:deb/debian/libpcre3@2:8.39-13?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pcre3@2:8.39-13?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "pcre3",
+      "version": "2:8.39-13",
+      "purl": "pkg:deb/debian/pcre3@2:8.39-13?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libprocps8@2:3.3.17-5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libprocps8",
+      "version": "2:3.3.17-5",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libprocps8@2:3.3.17-5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/procps@2:3.3.17-5?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "procps",
+      "version": "2:3.3.17-5",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/procps@2:3.3.17-5?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libseccomp2@2.5.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libseccomp2",
+      "version": "2.5.1-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libseccomp2@2.5.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libseccomp@2.5.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libseccomp",
+      "version": "2.5.1-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libseccomp@2.5.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libselinux1@3.1-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libselinux1",
+      "version": "3.1-3",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libselinux1@3.1-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libselinux@3.1-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libselinux",
+      "version": "3.1-3",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libselinux@3.1-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage-common@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libsemanage-common",
+      "version": "3.1-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage-common@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libsemanage",
+      "version": "3.1-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage1@3.1-1%2Bb2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libsemanage1",
+      "version": "3.1-1+b2",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage1@3.1-1%2Bb2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsepol1@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libsepol1",
+      "version": "3.1-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsepol1@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsepol@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libsepol",
+      "version": "3.1-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsepol@3.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsmartcols1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libsmartcols1",
+      "version": "2.36.1-8+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsmartcols1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libss2@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libss2",
+      "version": "1.46.2-2",
+      "purl": "pkg:deb/debian/libss2@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libssl1.1@1.1.1n-0%2Bdeb11u3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1n-0+deb11u3",
+      "purl": "pkg:deb/debian/libssl1.1@1.1.1n-0%2Bdeb11u3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@1.1.1n-0%2Bdeb11u3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.1n-0+deb11u3",
+      "purl": "pkg:deb/debian/openssl@1.1.1n-0%2Bdeb11u3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libstdc%2B%2B6@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libstdc++6",
+      "version": "10.2.1-6",
+      "purl": "pkg:deb/debian/libstdc%2B%2B6@10.2.1-6?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsystemd0@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libsystemd0",
+      "version": "247.3-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsystemd0@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtasn1-6@4.16.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libtasn1-6",
+      "version": "4.16.0-2",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtasn1-6@4.16.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtinfo6@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libtinfo6",
+      "version": "6.2+20201114-2",
+      "licenses": [
+        {
+          "expression": "MIT/X11"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtinfo6@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtirpc-common@1.3.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libtirpc-common",
+      "version": "1.3.1-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtirpc-common@1.3.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtirpc@1.3.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libtirpc",
+      "version": "1.3.1-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtirpc@1.3.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtirpc3@1.3.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libtirpc3",
+      "version": "1.3.1-1+deb11u1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtirpc3@1.3.1-1%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libudev1@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libudev1",
+      "version": "247.3-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libudev1@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libunistring2@0.9.10-4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libunistring2",
+      "version": "0.9.10-4",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libunistring2@0.9.10-4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libunistring@0.9.10-4?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libunistring",
+      "version": "0.9.10-4",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libunistring@0.9.10-4?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libuuid1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libuuid1",
+      "version": "2.36.1-8+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libuuid1@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libwrap0@7.6.q-31?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libwrap0",
+      "version": "7.6.q-31",
+      "purl": "pkg:deb/debian/libwrap0@7.6.q-31?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tcp-wrappers@7.6.q-31?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "tcp-wrappers",
+      "version": "7.6.q-31",
+      "purl": "pkg:deb/debian/tcp-wrappers@7.6.q-31?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libx11-6@2:1.7.2-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libx11-6",
+      "version": "2:1.7.2-1",
+      "purl": "pkg:deb/debian/libx11-6@2:1.7.2-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libx11@2:1.7.2-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libx11",
+      "version": "2:1.7.2-1",
+      "purl": "pkg:deb/debian/libx11@2:1.7.2-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libx11-data@2:1.7.2-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libx11-data",
+      "version": "2:1.7.2-1",
+      "purl": "pkg:deb/debian/libx11-data@2:1.7.2-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxau6@1:1.0.9-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxau6",
+      "version": "1:1.0.9-1",
+      "purl": "pkg:deb/debian/libxau6@1:1.0.9-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxau@1:1.0.9-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxau",
+      "version": "1:1.0.9-1",
+      "purl": "pkg:deb/debian/libxau@1:1.0.9-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxcb1@1.14-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxcb1",
+      "version": "1.14-3",
+      "purl": "pkg:deb/debian/libxcb1@1.14-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxcb@1.14-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxcb",
+      "version": "1.14-3",
+      "purl": "pkg:deb/debian/libxcb@1.14-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxdmcp6@1:1.1.2-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxdmcp6",
+      "version": "1:1.1.2-3",
+      "purl": "pkg:deb/debian/libxdmcp6@1:1.1.2-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxdmcp@1:1.1.2-3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxdmcp",
+      "version": "1:1.1.2-3",
+      "purl": "pkg:deb/debian/libxdmcp@1:1.1.2-3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxext6@2:1.3.3-1.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxext6",
+      "version": "2:1.3.3-1.1",
+      "purl": "pkg:deb/debian/libxext6@2:1.3.3-1.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxext@2:1.3.3-1.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxext",
+      "version": "2:1.3.3-1.1",
+      "purl": "pkg:deb/debian/libxext@2:1.3.3-1.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxmuu1@2:1.1.2-2%2Bb3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxmuu1",
+      "version": "2:1.1.2-2+b3",
+      "purl": "pkg:deb/debian/libxmuu1@2:1.1.2-2%2Bb3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxmu@2:1.1.2-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxmu",
+      "version": "2:1.1.2-2",
+      "purl": "pkg:deb/debian/libxmu@2:1.1.2-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxxhash0@0.8.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libxxhash0",
+      "version": "0.8.0-2",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libxxhash0@0.8.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/xxhash@0.8.0-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "xxhash",
+      "version": "0.8.0-2",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/xxhash@0.8.0-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libzstd1@1.4.8%2Bdfsg-2.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libzstd1",
+      "version": "1.4.8+dfsg-2.1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libzstd1@1.4.8%2Bdfsg-2.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libzstd@1.4.8%2Bdfsg-2.1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "libzstd",
+      "version": "1.4.8+dfsg-2.1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libzstd@1.4.8%2Bdfsg-2.1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/login@1:4.8.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "login",
+      "version": "1:4.8.1-1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/login@1:4.8.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/shadow@1:4.8.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "shadow",
+      "version": "1:4.8.1-1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/shadow@1:4.8.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/logsave@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "logsave",
+      "version": "1.46.2-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/logsave@1.46.2-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lsb-base@11.1.0?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "lsb-base",
+      "version": "11.1.0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/lsb-base@11.1.0?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lsb@11.1.0?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "lsb",
+      "version": "11.1.0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/lsb@11.1.0?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mawk@1.3.4.20200120-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "mawk",
+      "version": "1.3.4.20200120-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mawk@1.3.4.20200120-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mount@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "mount",
+      "version": "2.36.1-8+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mount@2.36.1-8%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-base@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "ncurses-base",
+      "version": "6.2+20201114-2",
+      "licenses": [
+        {
+          "expression": "MIT/X11"
+        }
+      ],
+      "purl": "pkg:deb/debian/ncurses-base@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-bin@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "ncurses-bin",
+      "version": "6.2+20201114-2",
+      "licenses": [
+        {
+          "expression": "MIT/X11"
+        }
+      ],
+      "purl": "pkg:deb/debian/ncurses-bin@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-term@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "ncurses-term",
+      "version": "6.2+20201114-2",
+      "licenses": [
+        {
+          "expression": "MIT/X11"
+        }
+      ],
+      "purl": "pkg:deb/debian/ncurses-term@6.2%2B20201114-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssh-client@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "openssh-client",
+      "version": "1:8.4p1-5+deb11u1",
+      "licenses": [
+        {
+          "expression": "OpenSSH"
+        }
+      ],
+      "purl": "pkg:deb/debian/openssh-client@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssh@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "openssh",
+      "version": "1:8.4p1-5+deb11u1",
+      "licenses": [
+        {
+          "expression": "OpenSSH"
+        }
+      ],
+      "purl": "pkg:deb/debian/openssh@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssh-server@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "openssh-server",
+      "version": "1:8.4p1-5+deb11u1",
+      "purl": "pkg:deb/debian/openssh-server@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssh-sftp-server@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "openssh-sftp-server",
+      "version": "1:8.4p1-5+deb11u1",
+      "purl": "pkg:deb/debian/openssh-sftp-server@1:8.4p1-5%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/passwd@1:4.8.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "passwd",
+      "version": "1:4.8.1-1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/passwd@1:4.8.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl-base@5.32.1-4%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "perl-base",
+      "version": "5.32.1-4+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/perl-base@5.32.1-4%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl@5.32.1-4%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "perl",
+      "version": "5.32.1-4+deb11u2",
+      "licenses": [
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/perl@5.32.1-4%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/psmisc@23.4-2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "psmisc",
+      "version": "23.4-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/psmisc@23.4-2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/runit-helper@2.10.3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "runit-helper",
+      "version": "2.10.3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/runit-helper@2.10.3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dh-runit@2.10.3?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "dh-runit",
+      "version": "2.10.3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dh-runit@2.10.3?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sed@4.7-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "sed",
+      "version": "4.7-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sed@4.7-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sensible-utils@0.0.14?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "sensible-utils",
+      "version": "0.0.14",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sensible-utils@0.0.14?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/systemd-sysv@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "systemd-sysv",
+      "version": "247.3-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/systemd-sysv@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/systemd-timesyncd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "systemd-timesyncd",
+      "version": "247.3-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/systemd-timesyncd@247.3-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sysvinit-utils@2.96-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "sysvinit-utils",
+      "version": "2.96-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sysvinit-utils@2.96-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sysvinit@2.96-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "sysvinit",
+      "version": "2.96-7+deb11u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sysvinit@2.96-7%2Bdeb11u1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tar@1.34%2Bdfsg-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "tar",
+      "version": "1.34+dfsg-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/tar@1.34%2Bdfsg-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2021a-1%2Bdeb11u7?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "tzdata",
+      "version": "2021a-1+deb11u7",
+      "purl": "pkg:deb/debian/tzdata@2021a-1%2Bdeb11u7?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ucf@3.0043?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "ucf",
+      "version": "3.0043",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/ucf@3.0043?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/xauth@1:1.1-1?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "xauth",
+      "version": "1:1.1-1",
+      "purl": "pkg:deb/debian/xauth@1:1.1-1?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/zlib1g@1:1.2.11.dfsg-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "zlib1g",
+      "version": "1:1.2.11.dfsg-2+deb11u2",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:deb/debian/zlib1g@1:1.2.11.dfsg-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/zlib@1:1.2.11.dfsg-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "type": "library",
+      "name": "zlib",
+      "version": "1:1.2.11.dfsg-2+deb11u2",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:deb/debian/zlib@1:1.2.11.dfsg-2%2Bdeb11u2?distro=debian-11.5&distro_name=bullseye",
+      "group": "debian"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "delfer/alpine-ftp-server",
+      "version": "latest",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/delfer/alpine-ftp-server@latest?",
+      "type": "library",
+      "bom-ref": "pkg:oci/delfer/alpine-ftp-server@latest?"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.2.0-r18?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.2.0-r18",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.2.0-r18?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-keys@2.4-r1?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.4-r1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/alpine-keys@2.4-r1?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apk-tools@2.12.7-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.12.7-r3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/apk-tools@2.12.7-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/busybox@1.34.1-r5?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "busybox",
+      "version": "1.34.1-r5",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/busybox@1.34.1-r5?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates-bundle@20211220-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ca-certificates-bundle",
+      "version": "20211220-r0",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates-bundle@20211220-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates@20211220-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20211220-r0",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ca-certificates@20211220-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libc-utils",
+      "version": "0.7.2-r3",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libc-utils@0.7.2-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-dev@0.7.2-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libc-dev",
+      "version": "0.7.2-r3",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libc-dev@0.7.2-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcap@2.61-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libcap",
+      "version": "2.61-r0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcap@2.61-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcrypto1.1@1.1.1n-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libcrypto1.1",
+      "version": "1.1.1n-r0",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1n-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/openssl@1.1.1n-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.1n-r0",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/openssl@1.1.1n-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libretls@3.3.4-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libretls",
+      "version": "3.3.4-r3",
+      "licenses": [
+        {
+          "expression": "ISC"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libretls@3.3.4-r3?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libssl1.1@1.1.1n-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1n-r0",
+      "licenses": [
+        {
+          "expression": "OpenSSL"
+        }
+      ],
+      "purl": "pkg:apk/alpine/libssl1.1@1.1.1n-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/linux-pam@1.5.2-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "linux-pam",
+      "version": "1.5.2-r0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:apk/alpine/linux-pam@1.5.2-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl@1.2.2-r7?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "musl",
+      "version": "1.2.2-r7",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl@1.2.2-r7?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl-utils@1.2.2-r7?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.2.2-r7",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/musl-utils@1.2.2-r7?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/scanelf@1.3.3-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.3.3-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/scanelf@1.3.3-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/pax-utils@1.3.3-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "pax-utils",
+      "version": "1.3.3-r0",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/pax-utils@1.3.3-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ssl_client@1.34.1-r5?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.34.1-r5",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/ssl_client@1.34.1-r5?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/tini@0.19.0-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "tini",
+      "version": "0.19.0-r0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "purl": "pkg:apk/alpine/tini@0.19.0-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/vsftpd@3.0.5-r1?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "vsftpd",
+      "version": "3.0.5-r1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:apk/alpine/vsftpd@3.0.5-r1?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/zlib@1.2.12-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.12-r0",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:apk/alpine/zlib@1.2.12-r0?distro=3.15.4&distro_name=alpine-3.15",
+      "group": "alpine"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "stilliard/pure-ftpd",
+      "version": "latest",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/stilliard/pure-ftpd@latest?",
+      "type": "library",
+      "bom-ref": "pkg:oci/stilliard/pure-ftpd@latest?"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/adduser@3.118?distro=debian-10.10",
+      "type": "library",
+      "name": "adduser",
+      "version": "3.118",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/adduser@3.118?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/apt@1.8.2.3?distro=debian-10.10",
+      "type": "library",
+      "name": "apt",
+      "version": "1.8.2.3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/apt@1.8.2.3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-files@10.3+deb10u10?distro=debian-10.10",
+      "type": "library",
+      "name": "base-files",
+      "version": "10.3+deb10u10",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-files@10.3+deb10u10?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-passwd@3.5.46?distro=debian-10.10",
+      "type": "library",
+      "name": "base-passwd",
+      "version": "3.5.46",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-passwd@3.5.46?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bash@5.0-4?distro=debian-10.10",
+      "type": "library",
+      "name": "bash",
+      "version": "5.0-4",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/bash@5.0-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bsdutils@1:2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "bsdutils",
+      "version": "1:2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/bsdutils@1:2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/util-linux@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "util-linux",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/util-linux@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/coreutils@8.30-3?distro=debian-10.10",
+      "type": "library",
+      "name": "coreutils",
+      "version": "8.30-3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/coreutils@8.30-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dash@0.5.10.2-5?distro=debian-10.10",
+      "type": "library",
+      "name": "dash",
+      "version": "0.5.10.2-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dash@0.5.10.2-5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debconf@1.5.71?distro=debian-10.10",
+      "type": "library",
+      "name": "debconf",
+      "version": "1.5.71",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/debconf@1.5.71?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debian-archive-keyring@2019.1+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "debian-archive-keyring",
+      "version": "2019.1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/debian-archive-keyring@2019.1+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debianutils@4.8.6.1?distro=debian-10.10",
+      "type": "library",
+      "name": "debianutils",
+      "version": "4.8.6.1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/debianutils@4.8.6.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/diffutils@1:3.7-3?distro=debian-10.10",
+      "type": "library",
+      "name": "diffutils",
+      "version": "1:3.7-3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/diffutils@1:3.7-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dpkg@1.19.7?distro=debian-10.10",
+      "type": "library",
+      "name": "dpkg",
+      "version": "1.19.7",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dpkg@1.19.7?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/e2fsprogs@1.44.5-1+deb10u3?distro=debian-10.10",
+      "type": "library",
+      "name": "e2fsprogs",
+      "version": "1.44.5-1+deb10u3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/e2fsprogs@1.44.5-1+deb10u3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/fdisk@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "fdisk",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/fdisk@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/findutils@4.6.0+git+20190209-2?distro=debian-10.10",
+      "type": "library",
+      "name": "findutils",
+      "version": "4.6.0+git+20190209-2",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/findutils@4.6.0+git+20190209-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-8-base@8.3.0-6?distro=debian-10.10",
+      "type": "library",
+      "name": "gcc-8-base",
+      "version": "8.3.0-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-8-base@8.3.0-6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-8@8.3.0-6?distro=debian-10.10",
+      "type": "library",
+      "name": "gcc-8",
+      "version": "8.3.0-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-8@8.3.0-6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpgv@2.2.12-1+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "gpgv",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpgv@2.2.12-1+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gnupg2@2.2.12-1%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "gnupg2",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gnupg2@2.2.12-1%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/grep@3.3-1?distro=debian-10.10",
+      "type": "library",
+      "name": "grep",
+      "version": "3.3-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/grep@3.3-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gzip@1.9-3?distro=debian-10.10",
+      "type": "library",
+      "name": "gzip",
+      "version": "1.9-3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gzip@1.9-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/hostname@3.21?distro=debian-10.10",
+      "type": "library",
+      "name": "hostname",
+      "version": "3.21",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/hostname@3.21?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/init-system-helpers@1.56+nmu1?distro=debian-10.10",
+      "type": "library",
+      "name": "init-system-helpers",
+      "version": "1.56+nmu1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/init-system-helpers@1.56+nmu1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libacl1@2.2.53-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libacl1",
+      "version": "2.2.53-4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libacl1@2.2.53-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/acl@2.2.53-4?distro=debian-10.10",
+      "type": "library",
+      "name": "acl",
+      "version": "2.2.53-4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/acl@2.2.53-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libapt-pkg5.0@1.8.2.3?distro=debian-10.10",
+      "type": "library",
+      "name": "libapt-pkg5.0",
+      "version": "1.8.2.3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libapt-pkg5.0@1.8.2.3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libattr1@1:2.4.48-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libattr1",
+      "version": "1:2.4.48-4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libattr1@1:2.4.48-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/attr@1:2.4.48-4?distro=debian-10.10",
+      "type": "library",
+      "name": "attr",
+      "version": "1:2.4.48-4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/attr@1:2.4.48-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit-common@1:2.8.4-3?distro=debian-10.10",
+      "type": "library",
+      "name": "libaudit-common",
+      "version": "1:2.8.4-3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit-common@1:2.8.4-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/audit@1:2.8.4-3?distro=debian-10.10",
+      "type": "library",
+      "name": "audit",
+      "version": "1:2.8.4-3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/audit@1:2.8.4-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit1@1:2.8.4-3?distro=debian-10.10",
+      "type": "library",
+      "name": "libaudit1",
+      "version": "1:2.8.4-3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit1@1:2.8.4-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libblkid1@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "libblkid1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libblkid1@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbsd0@0.9.1-2+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libbsd0",
+      "version": "0.9.1-2+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbsd0@0.9.1-2+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbsd@0.9.1-2%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libbsd",
+      "version": "0.9.1-2+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbsd@0.9.1-2%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbz2-1.0@1.0.6-9.2~deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libbz2-1.0",
+      "version": "1.0.6-9.2~deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-variant"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbz2-1.0@1.0.6-9.2~deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bzip2@1.0.6-9.2~deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "bzip2",
+      "version": "1.0.6-9.2~deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-variant"
+        }
+      ],
+      "purl": "pkg:deb/debian/bzip2@1.0.6-9.2~deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc-bin@2.28-10?distro=debian-10.10",
+      "type": "library",
+      "name": "libc-bin",
+      "version": "2.28-10",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc-bin@2.28-10?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/glibc@2.28-10?distro=debian-10.10",
+      "type": "library",
+      "name": "glibc",
+      "version": "2.28-10",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/glibc@2.28-10?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.28-10?distro=debian-10.10",
+      "type": "library",
+      "name": "libc6",
+      "version": "2.28-10",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc6@2.28-10?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap-ng0@0.7.9-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libcap-ng0",
+      "version": "0.7.9-2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap-ng0@0.7.9-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap-ng@0.7.9-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libcap-ng",
+      "version": "0.7.9-2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap-ng@0.7.9-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap2@1:2.25-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libcap2",
+      "version": "1:2.25-2",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap2@1:2.25-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcom-err2@1.44.5-1+deb10u3?distro=debian-10.10",
+      "type": "library",
+      "name": "libcom-err2",
+      "version": "1.44.5-1+deb10u3",
+      "purl": "pkg:deb/debian/libcom-err2@1.44.5-1+deb10u3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/e2fsprogs@1.44.5-1%2Bdeb10u3?distro=debian-10.10",
+      "type": "library",
+      "name": "e2fsprogs",
+      "version": "1.44.5-1+deb10u3",
+      "purl": "pkg:deb/debian/e2fsprogs@1.44.5-1%2Bdeb10u3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdb5.3@5.3.28+dfsg1-0.5?distro=debian-10.10",
+      "type": "library",
+      "name": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.5",
+      "purl": "pkg:deb/debian/libdb5.3@5.3.28+dfsg1-0.5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/db5.3@5.3.28%2Bdfsg1-0.5?distro=debian-10.10",
+      "type": "library",
+      "name": "db5.3",
+      "version": "5.3.28+dfsg1-0.5",
+      "purl": "pkg:deb/debian/db5.3@5.3.28%2Bdfsg1-0.5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdebconfclient0@0.249?distro=debian-10.10",
+      "type": "library",
+      "name": "libdebconfclient0",
+      "version": "0.249",
+      "purl": "pkg:deb/debian/libdebconfclient0@0.249?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/cdebconf@0.249?distro=debian-10.10",
+      "type": "library",
+      "name": "cdebconf",
+      "version": "0.249",
+      "purl": "pkg:deb/debian/cdebconf@0.249?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libestr0@0.1.10-2.1?distro=debian-10.10",
+      "type": "library",
+      "name": "libestr0",
+      "version": "0.1.10-2.1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libestr0@0.1.10-2.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libestr@0.1.10-2.1?distro=debian-10.10",
+      "type": "library",
+      "name": "libestr",
+      "version": "0.1.10-2.1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libestr@0.1.10-2.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libevent-2.1-6@2.1.8-stable-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libevent-2.1-6",
+      "version": "2.1.8-stable-4",
+      "purl": "pkg:deb/debian/libevent-2.1-6@2.1.8-stable-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libevent@2.1.8-stable-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libevent",
+      "version": "2.1.8-stable-4",
+      "purl": "pkg:deb/debian/libevent@2.1.8-stable-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libext2fs2@1.44.5-1+deb10u3?distro=debian-10.10",
+      "type": "library",
+      "name": "libext2fs2",
+      "version": "1.44.5-1+deb10u3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libext2fs2@1.44.5-1+deb10u3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libfastjson4@0.99.8-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libfastjson4",
+      "version": "0.99.8-2",
+      "licenses": [
+        {
+          "expression": "Expat"
+        }
+      ],
+      "purl": "pkg:deb/debian/libfastjson4@0.99.8-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libfastjson@0.99.8-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libfastjson",
+      "version": "0.99.8-2",
+      "licenses": [
+        {
+          "expression": "Expat"
+        }
+      ],
+      "purl": "pkg:deb/debian/libfastjson@0.99.8-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libfdisk1@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "libfdisk1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libfdisk1@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libffi6@3.2.1-9?distro=debian-10.10",
+      "type": "library",
+      "name": "libffi6",
+      "version": "3.2.1-9",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libffi6@3.2.1-9?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libffi@3.2.1-9?distro=debian-10.10",
+      "type": "library",
+      "name": "libffi",
+      "version": "3.2.1-9",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libffi@3.2.1-9?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcc1@1:8.3.0-6?distro=debian-10.10",
+      "type": "library",
+      "name": "libgcc1",
+      "version": "1:8.3.0-6",
+      "purl": "pkg:deb/debian/libgcc1@1:8.3.0-6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcrypt20@1.8.4-5+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libgcrypt20",
+      "version": "1.8.4-5+deb10u1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgcrypt20@1.8.4-5+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgdbm-compat4@1.18.1-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libgdbm-compat4",
+      "version": "1.18.1-4",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgdbm-compat4@1.18.1-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gdbm@1.18.1-4?distro=debian-10.10",
+      "type": "library",
+      "name": "gdbm",
+      "version": "1.18.1-4",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gdbm@1.18.1-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgdbm6@1.18.1-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libgdbm6",
+      "version": "1.18.1-4",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgdbm6@1.18.1-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgmp10@2:6.1.2+dfsg-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libgmp10",
+      "version": "2:6.1.2+dfsg-4",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgmp10@2:6.1.2+dfsg-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gmp@2:6.1.2%2Bdfsg-4?distro=debian-10.10",
+      "type": "library",
+      "name": "gmp",
+      "version": "2:6.1.2+dfsg-4",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gmp@2:6.1.2%2Bdfsg-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgnutls30@3.6.7-4+deb10u7?distro=debian-10.10",
+      "type": "library",
+      "name": "libgnutls30",
+      "version": "3.6.7-4+deb10u7",
+      "licenses": [
+        {
+          "expression": "The main library is licensed under GNU Lesser"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgnutls30@3.6.7-4+deb10u7?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gnutls28@3.6.7-4%2Bdeb10u7?distro=debian-10.10",
+      "type": "library",
+      "name": "gnutls28",
+      "version": "3.6.7-4+deb10u7",
+      "licenses": [
+        {
+          "expression": "The main library is licensed under GNU Lesser"
+        }
+      ],
+      "purl": "pkg:deb/debian/gnutls28@3.6.7-4%2Bdeb10u7?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgpg-error0@1.35-1?distro=debian-10.10",
+      "type": "library",
+      "name": "libgpg-error0",
+      "version": "1.35-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgpg-error0@1.35-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgpg-error@1.35-1?distro=debian-10.10",
+      "type": "library",
+      "name": "libgpg-error",
+      "version": "1.35-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgpg-error@1.35-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libhogweed4@3.4.1-1+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libhogweed4",
+      "version": "3.4.1-1+deb10u1",
+      "purl": "pkg:deb/debian/libhogweed4@3.4.1-1+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/nettle@3.4.1-1%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "nettle",
+      "version": "3.4.1-1+deb10u1",
+      "purl": "pkg:deb/debian/nettle@3.4.1-1%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libidn2-0@2.0.5-1+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libidn2-0",
+      "version": "2.0.5-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libidn2-0@2.0.5-1+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libidn2@2.0.5-1%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libidn2",
+      "version": "2.0.5-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libidn2@2.0.5-1%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblognorm5@2.0.5-1?distro=debian-10.10",
+      "type": "library",
+      "name": "liblognorm5",
+      "version": "2.0.5-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblognorm5@2.0.5-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblognorm@2.0.5-1?distro=debian-10.10",
+      "type": "library",
+      "name": "liblognorm",
+      "version": "2.0.5-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblognorm@2.0.5-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblz4-1@1.8.3-1+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "liblz4-1",
+      "version": "1.8.3-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblz4-1@1.8.3-1+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lz4@1.8.3-1%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "lz4",
+      "version": "1.8.3-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/lz4@1.8.3-1%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblzma5@5.2.4-1?distro=debian-10.10",
+      "type": "library",
+      "name": "liblzma5",
+      "version": "5.2.4-1",
+      "licenses": [
+        {
+          "expression": "PD"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblzma5@5.2.4-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/xz-utils@5.2.4-1?distro=debian-10.10",
+      "type": "library",
+      "name": "xz-utils",
+      "version": "5.2.4-1",
+      "licenses": [
+        {
+          "expression": "PD"
+        }
+      ],
+      "purl": "pkg:deb/debian/xz-utils@5.2.4-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmariadb3@1:10.3.29-0+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libmariadb3",
+      "version": "1:10.3.29-0+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmariadb3@1:10.3.29-0+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mariadb-10.3@1:10.3.29-0%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "mariadb-10.3",
+      "version": "1:10.3.29-0+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mariadb-10.3@1:10.3.29-0%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmount1@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "libmount1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmount1@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libncursesw6@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "type": "library",
+      "name": "libncursesw6",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/libncursesw6@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses@6.1%2B20181013-2%2Bdeb10u2?distro=debian-10.10",
+      "type": "library",
+      "name": "ncurses",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/ncurses@6.1%2B20181013-2%2Bdeb10u2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnettle6@3.4.1-1+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libnettle6",
+      "version": "3.4.1-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnettle6@3.4.1-1+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libp11-kit0@0.23.15-2+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libp11-kit0",
+      "version": "0.23.15-2+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libp11-kit0@0.23.15-2+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/p11-kit@0.23.15-2%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "p11-kit",
+      "version": "0.23.15-2+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/p11-kit@0.23.15-2%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules@1.3.1-5?distro=debian-10.10",
+      "type": "library",
+      "name": "libpam-modules",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules@1.3.1-5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pam@1.3.1-5?distro=debian-10.10",
+      "type": "library",
+      "name": "pam",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/pam@1.3.1-5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules-bin@1.3.1-5?distro=debian-10.10",
+      "type": "library",
+      "name": "libpam-modules-bin",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules-bin@1.3.1-5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-runtime@1.3.1-5?distro=debian-10.10",
+      "type": "library",
+      "name": "libpam-runtime",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-runtime@1.3.1-5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam0g@1.3.1-5?distro=debian-10.10",
+      "type": "library",
+      "name": "libpam0g",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam0g@1.3.1-5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpcre3@2:8.39-12?distro=debian-10.10",
+      "type": "library",
+      "name": "libpcre3",
+      "version": "2:8.39-12",
+      "purl": "pkg:deb/debian/libpcre3@2:8.39-12?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pcre3@2:8.39-12?distro=debian-10.10",
+      "type": "library",
+      "name": "pcre3",
+      "version": "2:8.39-12",
+      "purl": "pkg:deb/debian/pcre3@2:8.39-12?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libperl5.28@5.28.1-6+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "libperl5.28",
+      "version": "5.28.1-6+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libperl5.28@5.28.1-6+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl@5.28.1-6%2Bdeb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "perl",
+      "version": "5.28.1-6+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/perl@5.28.1-6%2Bdeb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libseccomp2@2.3.3-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libseccomp2",
+      "version": "2.3.3-4",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libseccomp2@2.3.3-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libseccomp@2.3.3-4?distro=debian-10.10",
+      "type": "library",
+      "name": "libseccomp",
+      "version": "2.3.3-4",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libseccomp@2.3.3-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libselinux1@2.8-1+b1?distro=debian-10.10",
+      "type": "library",
+      "name": "libselinux1",
+      "version": "2.8-1+b1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libselinux1@2.8-1+b1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libselinux@2.8-1?distro=debian-10.10",
+      "type": "library",
+      "name": "libselinux",
+      "version": "2.8-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libselinux@2.8-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage-common@2.8-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libsemanage-common",
+      "version": "2.8-2",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage-common@2.8-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage@2.8-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libsemanage",
+      "version": "2.8-2",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage@2.8-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage1@2.8-2?distro=debian-10.10",
+      "type": "library",
+      "name": "libsemanage1",
+      "version": "2.8-2",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage1@2.8-2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsepol1@2.8-1?distro=debian-10.10",
+      "type": "library",
+      "name": "libsepol1",
+      "version": "2.8-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsepol1@2.8-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsepol@2.8-1?distro=debian-10.10",
+      "type": "library",
+      "name": "libsepol",
+      "version": "2.8-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsepol@2.8-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsmartcols1@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "libsmartcols1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsmartcols1@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libss2@1.44.5-1+deb10u3?distro=debian-10.10",
+      "type": "library",
+      "name": "libss2",
+      "version": "1.44.5-1+deb10u3",
+      "purl": "pkg:deb/debian/libss2@1.44.5-1+deb10u3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u6?distro=debian-10.10",
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1d-0+deb10u6",
+      "purl": "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@1.1.1d-0%2Bdeb10u6?distro=debian-10.10",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.1d-0+deb10u6",
+      "purl": "pkg:deb/debian/openssl@1.1.1d-0%2Bdeb10u6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libstdc++6@8.3.0-6?distro=debian-10.10",
+      "type": "library",
+      "name": "libstdc++6",
+      "version": "8.3.0-6",
+      "purl": "pkg:deb/debian/libstdc++6@8.3.0-6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsystemd0@241-7~deb10u7?distro=debian-10.10",
+      "type": "library",
+      "name": "libsystemd0",
+      "version": "241-7~deb10u7",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsystemd0@241-7~deb10u7?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/systemd@241-7~deb10u7?distro=debian-10.10",
+      "type": "library",
+      "name": "systemd",
+      "version": "241-7~deb10u7",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/systemd@241-7~deb10u7?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtasn1-6@4.13-3?distro=debian-10.10",
+      "type": "library",
+      "name": "libtasn1-6",
+      "version": "4.13-3",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtasn1-6@4.13-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtinfo6@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "type": "library",
+      "name": "libtinfo6",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/libtinfo6@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libudev1@241-7~deb10u7?distro=debian-10.10",
+      "type": "library",
+      "name": "libudev1",
+      "version": "241-7~deb10u7",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libudev1@241-7~deb10u7?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libunistring2@0.9.10-1?distro=debian-10.10",
+      "type": "library",
+      "name": "libunistring2",
+      "version": "0.9.10-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libunistring2@0.9.10-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libunistring@0.9.10-1?distro=debian-10.10",
+      "type": "library",
+      "name": "libunistring",
+      "version": "0.9.10-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libunistring@0.9.10-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libuuid1@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "libuuid1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libuuid1@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libwrap0@7.6.q-28?distro=debian-10.10",
+      "type": "library",
+      "name": "libwrap0",
+      "version": "7.6.q-28",
+      "purl": "pkg:deb/debian/libwrap0@7.6.q-28?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tcp-wrappers@7.6.q-28?distro=debian-10.10",
+      "type": "library",
+      "name": "tcp-wrappers",
+      "version": "7.6.q-28",
+      "purl": "pkg:deb/debian/tcp-wrappers@7.6.q-28?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libzstd1@1.3.8+dfsg-3+deb10u2?distro=debian-10.10",
+      "type": "library",
+      "name": "libzstd1",
+      "version": "1.3.8+dfsg-3+deb10u2",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libzstd1@1.3.8+dfsg-3+deb10u2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libzstd@1.3.8%2Bdfsg-3%2Bdeb10u2?distro=debian-10.10",
+      "type": "library",
+      "name": "libzstd",
+      "version": "1.3.8+dfsg-3+deb10u2",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/libzstd@1.3.8%2Bdfsg-3%2Bdeb10u2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/login@1:4.5-1.1?distro=debian-10.10",
+      "type": "library",
+      "name": "login",
+      "version": "1:4.5-1.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/login@1:4.5-1.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/shadow@1:4.5-1.1?distro=debian-10.10",
+      "type": "library",
+      "name": "shadow",
+      "version": "1:4.5-1.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/shadow@1:4.5-1.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lsb-base@10.2019051400?distro=debian-10.10",
+      "type": "library",
+      "name": "lsb-base",
+      "version": "10.2019051400",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/lsb-base@10.2019051400?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lsb@10.2019051400?distro=debian-10.10",
+      "type": "library",
+      "name": "lsb",
+      "version": "10.2019051400",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/lsb@10.2019051400?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mariadb-common@1:10.3.29-0+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "mariadb-common",
+      "version": "1:10.3.29-0+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mariadb-common@1:10.3.29-0+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mawk@1.3.3-17+b3?distro=debian-10.10",
+      "type": "library",
+      "name": "mawk",
+      "version": "1.3.3-17+b3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mawk@1.3.3-17+b3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mount@2.33.1-0.1?distro=debian-10.10",
+      "type": "library",
+      "name": "mount",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mount@2.33.1-0.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mysql-common@5.8+1.0.5?distro=debian-10.10",
+      "type": "library",
+      "name": "mysql-common",
+      "version": "5.8+1.0.5",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mysql-common@5.8+1.0.5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mysql-defaults@1.0.5?distro=debian-10.10",
+      "type": "library",
+      "name": "mysql-defaults",
+      "version": "1.0.5",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mysql-defaults@1.0.5?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-base@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "type": "library",
+      "name": "ncurses-base",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/ncurses-base@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-bin@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "type": "library",
+      "name": "ncurses-bin",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/ncurses-bin@6.1+20181013-2+deb10u2?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openbsd-inetd@0.20160825-4?distro=debian-10.10",
+      "type": "library",
+      "name": "openbsd-inetd",
+      "version": "0.20160825-4",
+      "purl": "pkg:deb/debian/openbsd-inetd@0.20160825-4?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@1.1.1d-0+deb10u6?distro=debian-10.10",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.1d-0+deb10u6",
+      "purl": "pkg:deb/debian/openssl@1.1.1d-0+deb10u6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/passwd@1:4.5-1.1?distro=debian-10.10",
+      "type": "library",
+      "name": "passwd",
+      "version": "1:4.5-1.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/passwd@1:4.5-1.1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl@5.28.1-6+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "perl",
+      "version": "5.28.1-6+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/perl@5.28.1-6+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl-base@5.28.1-6+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "perl-base",
+      "version": "5.28.1-6+deb10u1",
+      "purl": "pkg:deb/debian/perl-base@5.28.1-6+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl-modules-5.28@5.28.1-6+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "perl-modules-5.28",
+      "version": "5.28.1-6+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/perl-modules-5.28@5.28.1-6+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pure-ftpd@1.0.47-3?distro=debian-10.10",
+      "type": "library",
+      "name": "pure-ftpd",
+      "version": "1.0.47-3",
+      "purl": "pkg:deb/debian/pure-ftpd@1.0.47-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pure-ftpd-common@1.0.47-3?distro=debian-10.10",
+      "type": "library",
+      "name": "pure-ftpd-common",
+      "version": "1.0.47-3",
+      "purl": "pkg:deb/debian/pure-ftpd-common@1.0.47-3?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/rsyslog@8.1901.0-1?distro=debian-10.10",
+      "type": "library",
+      "name": "rsyslog",
+      "version": "8.1901.0-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0+"
+        }
+      ],
+      "purl": "pkg:deb/debian/rsyslog@8.1901.0-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sed@4.7-1?distro=debian-10.10",
+      "type": "library",
+      "name": "sed",
+      "version": "4.7-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sed@4.7-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sysvinit-utils@2.93-8?distro=debian-10.10",
+      "type": "library",
+      "name": "sysvinit-utils",
+      "version": "2.93-8",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sysvinit-utils@2.93-8?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sysvinit@2.93-8?distro=debian-10.10",
+      "type": "library",
+      "name": "sysvinit",
+      "version": "2.93-8",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sysvinit@2.93-8?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tar@1.30+dfsg-6?distro=debian-10.10",
+      "type": "library",
+      "name": "tar",
+      "version": "1.30+dfsg-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/tar@1.30+dfsg-6?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tcpd@7.6.q-28?distro=debian-10.10",
+      "type": "library",
+      "name": "tcpd",
+      "version": "7.6.q-28",
+      "purl": "pkg:deb/debian/tcpd@7.6.q-28?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2021a-0+deb10u1?distro=debian-10.10",
+      "type": "library",
+      "name": "tzdata",
+      "version": "2021a-0+deb10u1",
+      "purl": "pkg:deb/debian/tzdata@2021a-0+deb10u1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/update-inetd@4.49?distro=debian-10.10",
+      "type": "library",
+      "name": "update-inetd",
+      "version": "4.49",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/update-inetd@4.49?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/zlib1g@1:1.2.11.dfsg-1?distro=debian-10.10",
+      "type": "library",
+      "name": "zlib1g",
+      "version": "1:1.2.11.dfsg-1",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:deb/debian/zlib1g@1:1.2.11.dfsg-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/zlib@1:1.2.11.dfsg-1?distro=debian-10.10",
+      "type": "library",
+      "name": "zlib",
+      "version": "1:1.2.11.dfsg-1",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:deb/debian/zlib@1:1.2.11.dfsg-1?distro=debian-10.10",
+      "group": "debian"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "shopify/toxiproxy",
+      "version": "latest",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/shopify/toxiproxy@latest?repository_url=ghcr.io",
+      "type": "library",
+      "bom-ref": "pkg:oci/shopify/toxiproxy@latest?repository_url=ghcr.io"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+      "type": "library",
+      "name": "perks",
+      "version": "v1.0.1",
+      "purl": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+      "group": "github.com/beorn7"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2",
+      "type": "library",
+      "name": "v2",
+      "version": "v2.1.2",
+      "purl": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2",
+      "group": "github.com/cespare/xxhash"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "type": "library",
+      "name": "protobuf",
+      "version": "v1.5.2",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "group": "github.com/golang"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/mux@v1.8.0",
+      "type": "library",
+      "name": "mux",
+      "version": "v1.8.0",
+      "purl": "pkg:golang/github.com/gorilla/mux@v1.8.0",
+      "group": "github.com/gorilla"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
+      "type": "library",
+      "name": "go-colorable",
+      "version": "v0.1.13",
+      "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
+      "group": "github.com/mattn"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mattn/go-isatty@v0.0.16",
+      "type": "library",
+      "name": "go-isatty",
+      "version": "v0.0.16",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.16",
+      "group": "github.com/mattn"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.1",
+      "type": "library",
+      "name": "golang_protobuf_extensions",
+      "version": "v1.0.1",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.1",
+      "group": "github.com/matttproud"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_golang@v1.13.0",
+      "type": "library",
+      "name": "client_golang",
+      "version": "v1.13.0",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@v1.13.0",
+      "group": "github.com/prometheus"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_model@v0.2.0",
+      "type": "library",
+      "name": "client_model",
+      "version": "v0.2.0",
+      "purl": "pkg:golang/github.com/prometheus/client_model@v0.2.0",
+      "group": "github.com/prometheus"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/common@v0.37.0",
+      "type": "library",
+      "name": "common",
+      "version": "v0.37.0",
+      "purl": "pkg:golang/github.com/prometheus/common@v0.37.0",
+      "group": "github.com/prometheus"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/procfs@v0.8.0",
+      "type": "library",
+      "name": "procfs",
+      "version": "v0.8.0",
+      "purl": "pkg:golang/github.com/prometheus/procfs@v0.8.0",
+      "group": "github.com/prometheus"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/rs/xid@v1.4.0",
+      "type": "library",
+      "name": "xid",
+      "version": "v1.4.0",
+      "purl": "pkg:golang/github.com/rs/xid@v1.4.0",
+      "group": "github.com/rs"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/rs/zerolog@v1.28.0",
+      "type": "library",
+      "name": "zerolog",
+      "version": "v1.28.0",
+      "purl": "pkg:golang/github.com/rs/zerolog@v1.28.0",
+      "group": "github.com/rs"
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220909162455-aba9fc2a8ff2",
+      "type": "library",
+      "name": "sys",
+      "version": "v0.0.0-20220909162455-aba9fc2a8ff2",
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220909162455-aba9fc2a8ff2",
+      "group": "golang.org/x"
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+      "type": "library",
+      "name": "protobuf",
+      "version": "v1.28.1",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+      "group": "google.golang.org"
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/tomb.v1@v1.0.0-20141024135613-dd632973f1e7",
+      "type": "library",
+      "name": "tomb.v1",
+      "version": "v1.0.0-20141024135613-dd632973f1e7",
+      "purl": "pkg:golang/gopkg.in/tomb.v1@v1.0.0-20141024135613-dd632973f1e7",
+      "group": "gopkg.in"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/cpuguy83/go-md2man/v2@v2.0.2",
+      "type": "library",
+      "name": "v2",
+      "version": "v2.0.2",
+      "purl": "pkg:golang/github.com/cpuguy83/go-md2man/v2@v2.0.2",
+      "group": "github.com/cpuguy83/go-md2man"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/russross/blackfriday/v2@v2.1.0",
+      "type": "library",
+      "name": "v2",
+      "version": "v2.1.0",
+      "purl": "pkg:golang/github.com/russross/blackfriday/v2@v2.1.0",
+      "group": "github.com/russross/blackfriday"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/urfave/cli/v2@v2.11.0",
+      "type": "library",
+      "name": "v2",
+      "version": "v2.11.0",
+      "purl": "pkg:golang/github.com/urfave/cli/v2@v2.11.0",
+      "group": "github.com/urfave/cli"
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/xrash/smetrics@v0.0.0-20201216005158-039620a65673",
+      "type": "library",
+      "name": "smetrics",
+      "version": "v0.0.0-20201216005158-039620a65673",
+      "purl": "pkg:golang/github.com/xrash/smetrics@v0.0.0-20201216005158-039620a65673",
+      "group": "github.com/xrash"
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/term@v0.0.0-20220526004731-065cf7ba2467",
+      "type": "library",
+      "name": "term",
+      "version": "v0.0.0-20220526004731-065cf7ba2467",
+      "purl": "pkg:golang/golang.org/x/term@v0.0.0-20220526004731-065cf7ba2467",
+      "group": "golang.org/x"
+    }
+  ],
+  "dependencies": []
+}

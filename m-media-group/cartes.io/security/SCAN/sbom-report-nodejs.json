@@ -1,0 +1,61 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:47ae51e8-5420-4699-9972-9ec38ce57115",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-12-06T08:32:47.694Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "5.4.0"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Bootstrap",
+      "version": "4.6.2",
+      "description": "",
+      "scope": "optional",
+      "licenses": [],
+      "purl": "pkg:npm/Bootstrap@4.6.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/Bootstrap@4.6.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "jQuery",
+      "version": "3.6.1",
+      "description": "",
+      "scope": "optional",
+      "licenses": [],
+      "purl": "pkg:npm/jQuery@3.6.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/jQuery@3.6.1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/vendor/filp/whoops/src/Whoops/Resources/js/clipboard.min.js, /github/workspace/vendor/filp/whoops/src/Whoops/Resources/js/zepto.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/bootstrap.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/d3.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/jquery.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/nv.d3.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/popper.min.js",
+      "comment": "Package file"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:47ae51e8-5420-4699-9972-9ec38ce57115" version="1">
+  <metadata>
+    <timestamp>2022-12-06T08:32:47.697Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.4.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/Bootstrap@4.6.2">
+      <publisher/>
+      <group/>
+      <name>Bootstrap</name>
+      <version>4.6.2</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/Bootstrap@4.6.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/jQuery@3.6.1">
+      <publisher/>
+      <group/>
+      <name>jQuery</name>
+      <version>3.6.1</version>
+      <description/>
+      <scope>optional</scope>
+      <licenses/>
+      <purl>pkg:npm/jQuery@3.6.1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/vendor/filp/whoops/src/Whoops/Resources/js/clipboard.min.js, /github/workspace/vendor/filp/whoops/src/Whoops/Resources/js/zepto.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/bootstrap.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/d3.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/jquery.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/nv.d3.min.js, /github/workspace/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/popper.min.js</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

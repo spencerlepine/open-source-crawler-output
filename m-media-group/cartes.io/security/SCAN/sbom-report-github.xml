@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:758f650a-90d2-4afb-84b6-30d4bf8e74a7" version="1">
+  <metadata>
+    <timestamp>2022-12-06T08:34:17.684Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.4.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/shivammathur/setup-php@v2">
+      <publisher/>
+      <group>shivammathur</group>
+      <name>setup-php</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/shivammathur/setup-php@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/cache@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>cache</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/cache@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/setup-node@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-node</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-node@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/jbrooksuk/laravel-forge-action@v1.0.2">
+      <publisher/>
+      <group>jbrooksuk</group>
+      <name>laravel-forge-action</name>
+      <version>v1.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/jbrooksuk/laravel-forge-action@v1.0.2</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/laravel.yml, /github/workspace/.github/workflows/node.js.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
