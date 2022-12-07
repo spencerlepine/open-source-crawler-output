@@ -1,0 +1,41 @@
+## Detected Typos
+error: `oposite` should be `opposite`
+  --> ./blog/How to transform a rest service to a graph service.md:187:8
+    |
+187 | On the oposite side, Arab speaking countries always have a bordering country that also have Arab as an official language if you exclude the island nations of Bahrain and the Comores.
+    |        ^^^^^^^
+    |
+error: `Infered` should be `Inferred`
+  --> ./src/graphql/schemaInfered.graphql:7
+error: `Infered` should be `Inferred`
+  --> ./src/graphql/getInferedSchema.js:4
+error: `BA` should be `BY`, `BE`
+  --> ./src/dataScraping/emojiFlags.json:66:4
+   |
+66 |   "BA": {
+   |    ^^
+   |
+error: `FO` should be `OF`, `FOR`
+  --> ./src/dataScraping/emojiFlags.json:298:4
+    |
+298 |   "FO": {
+    |    ^^
+    |
+error: `infered` should be `inferred`
+  --> ./README.md:50:178
+   |
+50 | The data from [restcountries.eu](https://restcountries.eu/) is scraped with a JS script and inserted into a Neo4j graph database. Afterwards the GraphQL schema is automagically infered by the awesome [neo4j-graphql-js](https://github.com/neo4j-graphql/neo4j-graphql-js) package. We add some custom cypher queries to the schema to make the shortest path and distance data possible. Finally an Apollo server is used to create the GraphQL endpoint and playground.
+   |                                                                                                                                                                                  ^^^^^^^
+   |
+error: `infered` should be `inferred`
+  --> ./README.md:74:110
+   |
+74 | 4. Populate the Neo4j graph database, run `npm run dataScraping`. When this command is done, you will get an infered schema file in the graphql repo, you can use this to optionally change the main schema.graphql file in the same repo
+   |                                                                                                              ^^^^^^^
+   |
+error: `prevelance` should be `prevalence`
+  --> ./scratchBook.cypher:14:25
+   |
+14 | // languages ordered by prevelance in countries
+   |                         ^^^^^^^^^^
+   |

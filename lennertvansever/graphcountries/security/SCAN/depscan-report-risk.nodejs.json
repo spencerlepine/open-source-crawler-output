@@ -1,0 +1,2 @@
+{"Package": "apollo-server", "Used?": "Yes", "Risk Score": "0.53", "Identified Risks": "Deprecated"}
+{"Package": "neo4j-graphql-js", "Used?": "Yes", "Risk Score": "0.53", "Identified Risks": "Deprecated"}
