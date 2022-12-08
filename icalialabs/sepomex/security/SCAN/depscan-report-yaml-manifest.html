@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShiftLeft Scan Report</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+  />
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    defer
+    type="text/javascript"
+  ></script>
+  <style>
+    .divider[data-content] {
+      margin: 1.6rem 0;
+    }
+
+    .bg-sl {
+      background-color: rgb(35, 46, 77);
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .flex-100 {
+      flex: 1;
+    }
+
+    .flex-50 {
+      flex: 0.5;
+    }
+
+    .flex-grow {
+      flex-grow: 1;
+    }
+    .flex-shrink {
+      flex-shrink: 0.5;
+    }
+
+    body {
+      background-color: #1c253e;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+
+    span {
+      word-break: break-word;
+    }
+
+    .hero .hero-body {
+      padding: 2em;
+      background-color: #3f4861;
+      margin: 2em;
+    }
+
+    .hero.hero-sm {
+      padding-bottom: 0rem;
+      padding-top: 0rem;
+      background: #232e4d;
+    }
+
+    .card {
+      background: #232e4d;
+      border: none;
+      padding-left: 1.5em;
+    }
+
+    .table tbody tr:nth-child(odd) {
+      background-color: rgba(35, 46, 77, 1);
+    }
+
+    .table tbody tr:nth-child(even) {
+      background-color: #1c253e;
+    }
+
+    .chip {
+      color: #000000;
+      display: revert;
+    }
+    .chip.bg-dark {
+      color: #ffffff;
+    }
+    a {
+      color: #4587d4;
+      display: revert;
+    }
+
+    details,
+    menu {
+      display: block;
+      background: #232e4d;
+      margin-top: 2em;
+      padding: 1em;
+    }
+
+    .panel {
+      border: 0;
+      margin: 0.5em;
+      background: #3f4861;
+    }
+    .accordion .accordion-body {
+      overflow-y: scroll;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.3rem;
+    }
+    .data-table {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .data-table > .table-head,
+    .data-table > .table-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .table-data-row,
+    .table-header-row {
+      display: flex;
+      flex-direction: row;
+      flex: 1 100%;
+      border-bottom: 0.05rem solid #dadee4;
+    }
+    .table-data-row > div {
+      padding: 0.6rem 0.4rem;
+      overflow: hidden;
+    }
+    .table-header-row > div {
+      padding: 0.6rem 0.4rem;
+      border-bottom-width: 0.1rem;
+      font-weight: bold;
+    }
+
+    .table-data-row:nth-child(odd) {
+      background-color: rgba(35, 46, 77, 1);
+    }
+
+    .table-data-row > div:nth-child(1),
+    .table-header-row > div:nth-child(1) {
+      flex: 0 0 20%;
+      width: 20%;
+      word-wrap: break-word;
+    }
+
+    .table-data-row > div:nth-child(2),
+    .table-header-row > div:nth-child(2) {
+      flex: 0 0 10%;
+      width: 10%;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(3),
+    .table-header-row > div:nth-child(3) {
+      flex: 0 0 20%;
+      width: 20%;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4),
+    .table-header-row > div:nth-child(4) {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+    .table-data-row > div span * {
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4) {
+      padding: 10px;
+      word-wrap: break-word;
+    }
+    .table-data-row > div:nth-child(4) pre {
+      overflow-x: scroll;
+    }
+
+    .chip.d-inline-flex {
+      display: inline-flex;
+    }
+
+    .table-data-row > div:nth-child(1) .chip {
+      display: block;
+      width: fit-content;
+      max-width: unset;
+      height: auto;
+      border-radius: 5px;
+      font-size: 0.65rem;
+    }
+    .table-data-row > div:nth-child(1) .chip a {
+      word-break: break-all;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      white-space: pre-wrap;
+    }
+
+    .table-data-row h1 {
+      font-size: 1.5rem;
+    }
+
+    .table-data-row h2 {
+      font-size: 1.3rem;
+    }
+
+    .table-data-row h3,
+    .table-data-row h4 {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container grid-xl" style="min-height: 90vh;">
+  <header class="navbar" style="height: 4rem;">
+  <section class="navbar-section">
+    <a href="https://shiftleft.io" class="navbar-brand"><svg height="50px" viewBox="0 0 95 21"><g id="Styles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Components-I" transform="translate(-72.000000, -212.000000)"><g id="Group" transform="translate(48.000000, 48.000000)"><g id="Header-and-Nav"><g id="Main-Header" transform="translate(0.000000, 43.000000)"><g id="Main-Header-Hover-/-Selected" transform="translate(0.000000, 105.000000)"><g id="Logo" transform="translate(24.000000, 16.500000)"><path d="M94.40652,16.35992 C93.88612,16.55992 93.16612,16.67992 92.24652,16.67992 C89.88612,16.67992 88.96612,15.15992 88.96612,13.00032 L88.96612,9.11992 L86.04652,9.11992 L86.04652,16.47992 L83.20652,16.47992 L83.20652,9.11992 L81.88612,9.11992 L81.88612,6.95992 L83.20652,6.83992 L83.20652,6.31992 C83.20652,4.27992 84.12652,2.63992 86.76612,2.63992 C87.56612,2.63992 88.28612,2.83992 88.72652,2.95992 L88.20652,5.00032 C87.88612,4.87992 87.48612,4.80032 87.16612,4.80032 C86.44652,4.80032 86.04652,5.20032 86.04652,6.11992 L86.04652,6.71992 L89.20652,6.71992 L89.52652,4.15992 L91.88652,4.15992 L91.88652,6.71992 L94.24652,6.71992 L94.24652,8.95992 L91.88652,8.95992 L91.88652,12.83992 C91.88652,13.95992 92.40652,14.35992 93.12652,14.35992 C93.44652,14.35992 93.72652,14.23992 94.04652,14.15992 L94.40652,16.35992 Z" id="Fill-14" fill="#3ECF8E"></path><path d="M78.36628,10.64 C78.36628,9.52 77.84628,8.8 76.72628,8.8 C75.80668,8.8 75.08628,9.4 74.88628,10.64 L78.36628,10.64 Z M76.76628,6.56 C79.52628,6.56 80.84628,8.6 80.84628,11.16 C80.84628,11.68 80.72628,12.08 80.72628,12.4 L75.00668,12.4 C75.20668,13.84 76.24628,14.44 77.44628,14.44 C78.16628,14.44 78.76628,14.24 79.48628,13.84 L80.40668,15.56 C79.36628,16.28 78.16628,16.68 77.04628,16.68 C74.28628,16.68 72.12628,14.84 72.12628,11.68 C72.16628,8.52 74.40668,6.56 76.76628,6.56 L76.76628,6.56 Z" id="Fill-13" fill="#3ECF8E"></path><polygon id="Fill-12" fill="#3ECF8E" points="63.4862 3.79996 66.3266 3.79996 66.3266 13.99996 71.3266 13.99996 71.3266 16.43996 63.4462 16.43996"></polygon><path d="M61.64636,16.35992 C61.12636,16.55992 60.40636,16.67992 59.48636,16.67992 C57.12636,16.67992 56.20636,15.15992 56.20636,13.00032 L56.20636,9.11992 L53.24636,9.11992 L53.24636,16.47992 L50.40636,16.47992 L50.40636,9.11992 L49.08636,9.11992 L49.08636,6.95992 L50.40636,6.83992 L50.40636,6.31992 C50.40636,4.27992 51.32636,2.63992 53.96636,2.63992 C54.76636,2.63992 55.48636,2.83992 55.92636,2.95992 L55.40636,5.00032 C55.08636,4.87992 54.68636,4.80032 54.36636,4.80032 C53.64636,4.80032 53.24636,5.20032 53.24636,6.11992 L53.24636,6.71992 L56.40636,6.71992 L56.72636,4.15992 L59.08676,4.15992 L59.08676,6.71992 L61.44636,6.71992 L61.44636,8.95992 L59.08676,8.95992 L59.08676,12.83992 C59.08676,13.95992 59.60636,14.35992 60.32636,14.35992 C60.64636,14.35992 60.92636,14.23992 61.24636,14.15992 L61.64636,16.35992 Z" id="Fill-11" fill="#FFFFFF"></path><path d="M44.7664,16.48 L47.6068,16.48 L47.6068,6.88 L44.7664,6.88 L44.7664,16.48 Z M44.5664,3.92 C44.5664,3 45.2864,2.48 46.2064,2.48 C47.1264,2.48 47.8464,3.08 47.8464,3.92 C47.8464,4.84 47.1264,5.44 46.2064,5.44 C45.2864,5.44 44.5664,4.84 44.5664,3.92 L44.5664,3.92 Z" id="Fill-9" fill="#FFFFFF"></path><path d="M34.36632,2.88004 L37.20672,2.88004 L37.20672,6.24004 L37.08632,7.96004 C37.80672,7.36004 38.72632,6.64004 40.04632,6.64004 C42.08632,6.64004 43.00672,8.08004 43.00672,10.52004 L43.00672,16.44004 L40.16632,16.44004 L40.16632,10.84004 C40.16632,9.40004 39.76632,9.00004 38.92632,9.00004 C38.20672,9.00004 37.80672,9.32004 37.20672,9.92004 L37.20672,16.44004 L34.36632,16.44004 L34.36632,2.88004 Z" id="Fill-7" fill="#FFFFFF"></path><path d="M24.84636,12.87984 C25.76636,13.67984 26.88636,14.20024 27.92636,14.20024 C29.16636,14.20024 29.64636,13.67984 29.64636,12.95984 C29.64636,12.15984 28.92636,11.92024 27.80636,11.43984 L26.16636,10.72024 C24.84636,10.20024 23.60636,9.07984 23.60636,7.23984 C23.60636,5.20024 25.44636,3.47984 28.08636,3.47984 C29.52636,3.47984 31.04636,4.07984 32.16636,5.12024 L30.72636,6.95984 C29.92636,6.35984 29.08636,5.92024 28.08636,5.92024 C27.16636,5.92024 26.44636,6.32024 26.44636,7.03984 C26.44636,7.83984 27.24636,8.07984 28.40636,8.55984 L30.04636,9.15984 C31.56636,9.75984 32.48636,10.80024 32.48636,12.63984 C32.48636,14.67984 30.76636,16.52024 27.80636,16.52024 C26.16636,16.52024 24.44636,15.92024 23.12636,14.67984 L24.84636,12.87984 Z" id="Fill-5" fill="#FFFFFF"></path><g id="logomark"><path d="M9.44636,9.00016 L16.68636,3.48016 L16.08636,11.35976 C16.08636,12.80016 15.68636,14.00016 14.96636,15.04016 L9.44636,10.84016 C8.84636,10.44016 8.84636,9.52016 9.44636,9.00016 Z" id="Fill-1" fill="#3ECF8E"></path><path d="M4.32644,10.84 C3.72644,10.32 3.72644,9.52 4.32644,9 L14.72644,1.04 C13.08604,0.52 10.64644,0 8.28604,0 C5.72644,0 3.16644,0.6 1.64644,1.04 C0.60644,1.36 -0.07356,2.36 0.00644,3.48 L0.60644,11.36 C0.60644,16.28 5.60644,18.8 7.56644,19.72 C8.08604,19.92 8.60644,19.92 9.08604,19.72 C10.00644,19.32 11.52644,18.6 12.84644,17.36 L4.32644,10.84 Z" id="Fill-3" fill="#FFFFFF"></path></g></g></g></g></g></g></g></g></svg> </a>
+  </section>
+</header>
+  <div class="columns">
+    <div class="column col-12">
+      <div class="hero hero-sm">
+        <div class="hero-body">
+          <h1>Dependency Scan Status <button class="btn btn-success btn-action"><span class="tooltip tooltip-top" data-tooltip="No major issues were found"><i class="icon icon-check"></i></span></button></h1>
+          <p>Report from the scan performed on <span class="text-dark chip"><i class="icon icon-time"> </i>&nbsp; 2022-12-08 at 08:33</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="divider text-center" data-content="Summary"></div> -->
+  <section id="#summary"></section>
+  <details class="accordion" open>
+    <summary class="accordion-header">
+        <h3>
+          <i class="icon icon-arrow-right mr-1"></i>
+          Executive Summary
+        </h3>
+    </summary>
+    <div class="accordion-body columns col-gapless">
+    <div class="column col-12">
+        <p>This report was generated by ShiftLeft from the Dependency Scan invocation on 2022-12-08 at 08:33. The scan used the ShiftLeft vulnerability database to audit the application dependencies for known vulnerabilities and exploits.
+        </p>
+        
+        <p>
+        Below is a summary of the issues identified:
+        </p>
+        <div class="container">
+          <div class="columns col-12">
+            <div class="column col-5">
+              <table class="table" id="severity-table">
+                <thead>
+                <tr>
+                  <th>Severity</th>
+                  <th>Count</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><span class="bg-error chip">CRITICAL</span></td>
+                  <td>0</td>
+                </tr><tr>
+                  <td><span class="bg-warning chip">HIGH</span></td>
+                  <td>0</td>
+                </tr><tr>
+                  <td><span class="bg-dark chip">MEDIUM</span></td>
+                  <td>0</td>
+                </tr><tr>
+                  <td><span class="bg-success chip">LOW</span></td>
+                  <td>15</td>
+                </tr><tr>
+                  <td><span class="bg-unspecified chip">UNSPECIFIED</span></td>
+                  <td>0</td>
+                </tr><tr>
+                  <td><span class="bg-total chip">TOTAL</span></td>
+                  <td>15</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="column col-6">
+              <canvas id="severity-chart" width="300" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+        
+      
+      <p>&nbsp;</p>
+      <p><i class="icon icon-check icon-2x text-success"></i>&nbsp; Based on this report, the application is certified as ready for deployment to test and production environments. Please refer to the SAST and container scan reports (if available) for additional context.</p>
+      
+    </div>
+  </div>
+  </details>
+  <!-- <div class="divider text-center" data-content="Packages List"></div> -->
+  <section id="#all_issues"></section>
+  <div class="columns col-gapless" style="margin-top: 2em;">
+    <div class="column col-12">
+      <h3><i class="icon icon-link"></i> Vulnerable Packages <span class="text-bold">(15)</span></h3>
+    </div>
+    <div class="column col-12">
+      <div class="filter">
+        <input type="radio" id="tag-0" class="filter-tag" name="filter-radio" hidden checked>
+        <input type="radio" id="tag-1" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-2" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-3" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-4" class="filter-tag" name="filter-radio" hidden>
+        <input type="radio" id="tag-5" class="filter-tag" name="filter-radio" hidden>
+
+        <div class="filter-nav">
+          <label class="chip" for="tag-0">All (15)</label>
+          <label class="chip" for="tag-1">Critical (0)</label>
+          <label class="chip" for="tag-2">High (0)</label>
+          <label class="chip" for="tag-3">Medium (0)</label>
+          <label class="chip" for="tag-4">Low (15)</label>
+          <label class="chip" for="tag-5">Unspecified (0)</label>
+        </div>
+        <div class="filter-body">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Severity</th>
+              <th>Id</th>
+              <th>Package</th>
+              <th>Version</th>
+              <th>Fix Version</th>
+              <th>Risk Score</th>
+              <th>Description</th>
+              <th>More Information</th>
+            </tr>
+            </thead>
+            <tbody>
+          
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2018-25032</td>
+            <td>pkg:apk/alpine/zlib@1.2.11-r3?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>1.2.11-r3</td>
+            <td>1.2.12-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>zlib before 1.2.12 allows memory corruption when deflating (i.e., when compressing) if the input has many distant matches.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.openwall.com/lists/oss-security/2022/03/24/1" target="_blank">https://www.openwall.com/lists/oss-security/2022/03/24/1</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/madler/zlib/compare/v1.2.11...v1.2.12" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/madler/zlib/issues/605" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.oracle.com/security-alerts/cpujul2022.html" target="_blank">Oracle Security</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2019-19906</td>
+            <td>pkg:apk/alpine/cyrus-sasl@2.1.27-r14?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.1.27-r14</td>
+            <td>2.1.27-r5</td>
+            <td>3.7</td>
+            <td># Summary<br/>cyrus-sasl (aka Cyrus SASL) 2.1.27 has an out-of-bounds write leading to unauthenticated remote denial-of-service in OpenLDAP via a malformed LDAP packet. The OpenLDAP crash is ultimately caused by an off-by-one error in _sasl_add_string in common.c in cyrus-sasl.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/cyrusimap/cyrus-sasl/issues/587" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E" target="_blank">Apache</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E" target="_blank">Apache</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2021-30560</td>
+            <td>pkg:apk/alpine/libxslt@1.1.34-r1?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>1.1.34-r1</td>
+            <td>1.1.35-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>Use after free in Blink XSLT in Google Chrome prior to 91.0.4472.164 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://chromereleases.googleblog.com/2021/07/stable-channel-update-for-desktop.html" target="_blank">https://chromereleases.googleblog.com/2021/07/stable-channel-update-for-desktop.html</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://crbug.com/1219209" target="_blank">https://crbug.com/1219209</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.debian.org/security/2022/dsa-5216" target="_blank">https://www.debian.org/security/2022/dsa-5216</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.debian.org/debian-lts-announce/2022/09/msg00010.html" target="_blank">https://lists.debian.org/debian-lts-announce/2022/09/msg00010.html</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2021-37750</td>
+            <td>pkg:apk/alpine/krb5@1.19.2-r4?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>1.19.2-r4</td>
+            <td>1.19.3-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>The Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) before 1.18.5 and 1.19.x before 1.19.3 has a NULL pointer dereference in kdc/do_tgs_req.c via a FAST inner body that lacks a server field.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/krb5/krb5/releases" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/krb5/krb5/commit/d775c95af7606a51bf79547a94fa52ddd1cb7f49" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.oracle.com/security-alerts/cpujul2022.html" target="_blank">Oracle Security</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2021-3995</td>
+            <td>pkg:apk/alpine/util-linux@2.37.2-r1?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.37.2-r1</td>
+            <td>2.37.3-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>A logic error was found in the libmount library of util-linux in the function that allows an unprivileged user to unmount a FUSE filesystem. This flaw allows an unprivileged local attacker to unmount FUSE filesystems that belong to certain other users who have a UID that is a prefix of the UID of the attacker in its string form. An attacker may use this flaw to cause a denial of service to applications that use the <b>affected</b> filesystems.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2024631https://access.redhat.com/security/cve/CVE-2021-3995" target="_blank">https://bugzilla.redhat.com/show_bug.cgi?id=2024631https://access.redhat.com/security/cve/CVE-2021-3995</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/util-linux/util-linux/commit/57202f5713afa2af20ffbb6ab5331481d0396f8d" target="_blank">GitHub</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2021-3996</td>
+            <td>pkg:apk/alpine/util-linux@2.37.2-r1?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.37.2-r1</td>
+            <td>2.37.3-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>A logic error was found in the libmount library of util-linux in the function that allows an unprivileged user to unmount a FUSE filesystem. This flaw allows a local user on a vulnerable system to unmount other users' filesystems that are either world-writable themselves (like /tmp) or mounted in a world-writable directory. An attacker may use this flaw to cause a denial of service to applications that use the <b>affected</b> filesystems.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/util-linux/util-linux/commit/166e87368ae88bf31112a30e078cceae637f4cdb" target="_blank">GitHub</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-0563</td>
+            <td>pkg:apk/alpine/util-linux@2.37.2-r1?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.37.2-r1</td>
+            <td>2.37.4-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>A flaw was found in the util-linux chfn and chsh utilities when compiled with Read<span class='bg-light chip d-inline-flex mb-1'>line</span>support. The Read<span class='bg-light chip d-inline-flex mb-1'>line</span>library uses an "INPUTRC" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw <b>affects</b> util-linux versions prior to 2.37.4.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u" target="_blank">https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://security.netapp.com/advisory/ntap-20220331-0002/" target="_blank">https://security.netapp.com/advisory/ntap-20220331-0002/</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-2309</td>
+            <td>pkg:apk/alpine/libxml2@2.9.12-r2?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.9.12-r2</td>
+            <td>2.9.14-r1</td>
+            <td>3.7</td>
+            <td># Summary<br/>NULL Pointer Dereference allows attackers to cause a denial of service (or application crash). This only applies when lxml is used together with libxml2 2.9.10 through 2.9.14. libxml2 2.9.9 and earlier are not <b>affected</b>. It allows triggering crashes through forged input data, given a vulnerable code sequence in the application. The vulnerability is caused by the iterwalk function (also used by the canonicalize function). Such code shouldn't be in wide-spread use, given that parsing + iterwalk would usually be replaced with the more efficient iterparse function. However, an XML converter that serialises to C14N would also be vulnerable, for example, and there are legitimate use cases for this code sequence. If untrusted input is received (also remotely) and processed via iterwalk function, a crash can be triggered.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://huntr.dev/bounties/8264e74f-edda-4c40-9956-49de635105ba" target="_blank">https://huntr.dev/bounties/8264e74f-edda-4c40-9956-49de635105ba</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/lxml/lxml/commit/86368e9cf70a0ad23cccd5ee32de847149af0c6f" target="_blank">GitHub</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-23308</td>
+            <td>pkg:apk/alpine/libxml2@2.9.12-r2?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.9.12-r2</td>
+            <td>2.9.13-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>valid.c in libxml2 before 2.9.13 has a use-after-free of ID and IDREF attributes.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/blob/v2.9.13/NEWS" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/blob/v2.9.13/NEWS</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/GNOME/libxml2/commit/652dd12a858989b14eed4e84e453059cd3ba340e" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.oracle.com/security-alerts/cpujul2022.html" target="_blank">Oracle Security</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-24407</td>
+            <td>pkg:apk/alpine/cyrus-sasl@2.1.27-r14?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.1.27-r14</td>
+            <td>2.1.28-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>In Cyrus SASL 2.1.17 through 2.1.27 before 2.1.28, plugins/sql.c does not escape the password for a SQL INSERT or UPDATE statement.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="http://www.openwall.com/lists/oss-security/2022/02/23/4" target="_blank">http://www.openwall.com/lists/oss-security/2022/02/23/4</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/cyrusimap/cyrus-sasl/blob/fdcd13ceaef8de684dc69008011fa865c5b4a3ac/docsrc/sasl/release-notes/2.1/index.rst" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.oracle.com/security-alerts/cpujul2022.html" target="_blank">Oracle Security</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-29155</td>
+            <td>pkg:apk/alpine/openldap@2.6.0-r0?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.6.0-r0</td>
+            <td>2.6.2-r0</td>
+            <td>2.0</td>
+            <td># Summary<br/>In OpenLDAP 2.x before 2.5.12 and 2.6.x before 2.6.2, a SQL injection vulnerability exists in the experimental back-sql backend to slapd, via a SQL statement within an LDAP query. This can occur during an LDAP search operation when the search filter is processed, due to a lack of proper escaping.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://bugs.openldap.org/show_bug.cgi?id=9815" target="_blank">https://bugs.openldap.org/show_bug.cgi?id=9815</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.debian.org/security/2022/dsa-5140" target="_blank">https://www.debian.org/security/2022/dsa-5140</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.debian.org/debian-lts-announce/2022/05/msg00032.html" target="_blank">https://lists.debian.org/debian-lts-announce/2022/05/msg00032.html</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://security.netapp.com/advisory/ntap-20220609-0007/" target="_blank">https://security.netapp.com/advisory/ntap-20220609-0007/</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-29824</td>
+            <td>pkg:apk/alpine/libxml2@2.9.12-r2?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.9.12-r2</td>
+            <td>2.9.14-r0</td>
+            <td>3.7</td>
+            <td># Summary<br/>In libxml2 before 2.9.14, several buffer handling functions in buf.c (xmlBuf*) and tree.c (xmlBuffer*) don't check for integer overflows. This can result in out-of-bounds memory writes. Exploitation requires a victim to open a crafted, multi-gigabyte XML file. Other software using libxml2's buffer functions, for example libxslt through 1.1.35, is <b>affected</b> as well.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.9.14" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.9.14</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/commit/6c283d83eccd940bcde15634ac8c7f100e3caefd" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/commit/6c283d83eccd940bcde15634ac8c7f100e3caefd</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxslt/-/tags" target="_blank">https://gitlab.gnome.org/GNOME/libxslt/-/tags</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/commit/2554a2408e09f13652049e5ffb0d26196b02ebab" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/commit/2554a2408e09f13652049e5ffb0d26196b02ebab</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FZOBT5Y6Y2QLDDX2HZGMV7MJMWGXORKK/" target="_blank">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FZOBT5Y6Y2QLDDX2HZGMV7MJMWGXORKK/</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P5363EDV5VHZ5C77ODA43RYDCPMA7ARM/" target="_blank">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P5363EDV5VHZ5C77ODA43RYDCPMA7ARM/</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.debian.org/debian-lts-announce/2022/05/msg00023.html" target="_blank">https://lists.debian.org/debian-lts-announce/2022/05/msg00023.html</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3NVZVWFRBXBI3AKZZWUWY6INQQPQVSF/" target="_blank">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/P3NVZVWFRBXBI3AKZZWUWY6INQQPQVSF/</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.debian.org/security/2022/dsa-5142" target="_blank">https://www.debian.org/security/2022/dsa-5142</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="http://packetstormsecurity.com/files/167345/libxml2-xmlBufAdd-Heap-Buffer-Overflow.html" target="_blank">packet storm</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://www.oracle.com/security-alerts/cpujul2022.html" target="_blank">Oracle Security</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="http://packetstormsecurity.com/files/169825/libxml2-xmlParseNameComplex-Integer-Overflow.html" target="_blank">packet storm</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-37434</td>
+            <td>pkg:apk/alpine/zlib@1.2.11-r3?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>1.2.11-r3</td>
+            <td>1.2.12-r2</td>
+            <td>3.7</td>
+            <td># Summary<br/>zlib through 1.2.12 has a heap-based buffer over-read or buffer overflow in inflate in inflate.c via a large gzip header extra field. NOTE: only applications that call inflateGetHeader are <b>affected</b>. Some common applications bundle the <b>affected</b> zlib source code but may be unable to call inflateGetHeader (e.g., see the nodejs/node reference).<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/nodejs/node/blob/75b68c6e4db515f76df73af476eccf382bbcb00a/deps/zlib/inflate.c#L762-L764" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/ivd38/zlib_overflow" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/madler/zlib/commit/eff308af425b67093bab25f80f1ae950166bece1" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/madler/zlib/blob/21767c654d31d2dccdde4330529775c6c5fd5389/zlib.h#L1062-L1063" target="_blank">GitHub</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://github.com/curl/curl/issues/9271" target="_blank">GitHub</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-40303</td>
+            <td>pkg:apk/alpine/libxml2@2.9.12-r2?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.9.12-r2</td>
+            <td>2.9.14-r2</td>
+            <td>3.7</td>
+            <td># Summary<br/>An issue was discovered in libxml2 before 2.10.3. When parsing a multi-gigabyte XML document with the XML_PARSE_HUGE parser option enabled, several integer counters can overflow. This results in an attempt to access an array at a negative 2GB offset, typically leading to a segmentation fault.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/commit/c846986356fc149915a74972bf198abc266bc2c0" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/commit/c846986356fc149915a74972bf198abc266bc2c0</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3</a></span></td>
+          </tr>
+
+          <tr data-tag="tag-4" class="filter-item">
+            <td><span class="chip bg-success">LOW</span></td>
+            <td>CVE-2022-40304</td>
+            <td>pkg:apk/alpine/libxml2@2.9.12-r2?distro=3.15.0&amp;distro_name=alpine-3.15</td>
+            <td>2.9.12-r2</td>
+            <td>2.9.14-r2</td>
+            <td>3.7</td>
+            <td># Summary<br/>An issue was discovered in libxml2 before 2.10.3. Certain invalid XML entity definitions can corrupt a hash table key, potentially leading to subsequent logic errors. In one case, a double-free can be provoked.<br/><br/>            </td>
+            <td><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/tags/v2.10.3</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/commit/1b41ec4e9433b05bb0376be4725804c54ef1d80b" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/commit/1b41ec4e9433b05bb0376be4725804c54ef1d80b</a></span><br/><span class="text-dark chip"><i class="icon icon-link"> </i>&nbsp; <a href="https://gitlab.gnome.org/GNOME/libxml2/-/tags" target="_blank">https://gitlab.gnome.org/GNOME/libxml2/-/tags</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container grid-xl" style="height: 3rem; margin-top: 0.8rem; color: #bcc3ce;">
+  <p>Thank you for using <a href="https://shiftleft.io" target="_blank">ShiftLeft</a>. Interested in a NextGen analyzer with higher quality results? Contact us <a href="https://www.shiftleft.io/contact/" target="_blank">here</a></p>
+</div>
+<script type="text/javascript">
+  window.addEventListener("DOMContentLoaded", function(event) {
+      const severityCanvas = document.getElementById("severity-chart");
+      const severityTable = document.getElementById("severity-table");
+      const data = [0, 0, 0, 15]
+      if(severityCanvas && Chart) {
+        Chart.platform.disableCSSInjection = true;
+        Chart.defaults.global.defaultFontColor='white';
+        const severityChart = new Chart(severityCanvas, {
+            type: 'bar',
+            data: {
+              labels: ['Critical', 'High', 'Medium', 'Low'],
+              datasets: [{
+                  label: 'Severity',
+                  data: data,
+                  backgroundColor: [
+                      '#e85600', // Critical
+                      '#ffb700', // High
+                      '#303742', // Medium
+                      '#32b643' // Low
+                  ],
+                  borderWidth: 1
+              }]
+            },
+            options: {
+              maintainAspectRatio: false,
+              scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: "white",
+                        fontSize: 12,
+                        stepSize: 1
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: "white",
+                        fontSize: 12
+                    }
+                }]
+              },
+              layout: {
+                padding: {
+                  left: 50,
+                  right: 0,
+                  top: 50,
+                  bottom: 0
+                }
+              }
+            }
+        });
+        severityChart.canvas.parentNode.style.width = severityTable.style.width - 10;
+      }
+  });
+</script>
+</body>
+</html>
