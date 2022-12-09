@@ -1,0 +1,127 @@
+## Detected Typos
+error: `Unter` should be `Under`
+  --> ./README.md:25:1
+   |
+25 | Unter `https://slftool.github.io/data.json` findet ihr die Datenbank, ihr könnt sie für eure Zwecke mit der [MIT-Lizenz](https://github.com/slftool/slftool.github.io/blob/master/LICENSE) benutzen.<br/>
+   | ^^^^^
+   |
+error: `sie` should be `size`, `sigh`
+  --> ./README.md:25:81
+   |
+25 | Unter `https://slftool.github.io/data.json` findet ihr die Datenbank, ihr könnt sie für eure Zwecke mit der [MIT-Lizenz](https://github.com/slftool/slftool.github.io/blob/master/LICENSE) benutzen.<br/>
+   |                                                                                 ^^^
+   |
+error: `Australien` should be `Australian`
+  --> ./data.json:4:66
+  |
+4 |         "land": ["Albanien", "Armenien", "Andorra", "Algerien", "Australien", "Argentinien"],
+  |                                                                  ^^^^^^^^^^
+  |
+error: `Autor` should be `Author`
+  --> ./data.json:7:52
+  |
+7 |         "beruf": ["Atomphysiker", "Anlagenbauer", "Autor", "Astronaut"],
+  |                                                    ^^^^^
+  |
+error: `Indien` should be `Indian`, `Endian`
+  --> ./data.json:15:61
+   |
+15 |         "fluss": ["Bigge (Deutschland)", "Brahmaputra (u.a. Indien)", "Belaja (Russland)", "Blies (Frankreich und Deutschland)"],
+   |                                                             ^^^^^^
+   |
+error: `Australien` should be `Australian`
+  --> ./data.json:25:131
+   |
+25 |         "fluss": ["Chemnitz (Deutschland)", "Colorado (USA)", "Charente (Frankreich)", "Churchill River (Kanada)", "Cooper Creek (Australien)"],
+   |                                                                                                                                   ^^^^^^^^^^
+   |
+error: `Claus` should be `Clause`
+  --> ./data.json:26:32
+   |
+26 |         "name": ["Christian", "Claus", "Christoph", "Conni", "Clara"],
+   |                                ^^^^^
+   |
+error: `Indien` should be `Indian`, `Endian`
+  --> ./data.json:65:28
+   |
+65 |         "fluss": ["Ganges (Indien)", "Gera (Deutschland)", "Green River (USA)", "Godavari (Indien)", "Gail (Österreich)"],
+   |                            ^^^^^^
+   |
+error: `Indien` should be `Indian`, `Endian`
+  --> ./data.json:65:92
+   |
+65 |         "fluss": ["Ganges (Indien)", "Gera (Deutschland)", "Green River (USA)", "Godavari (Indien)", "Gail (Österreich)"],
+   |                                                                                            ^^^^^^
+   |
+error: `Goldfisch` should be `Goldfish`
+  --> ./data.json:68:37
+   |
+68 |         "tier": ["Giraffe", "Gnu", "Goldfisch", "Gazelle", "Gepard"],
+   |                                     ^^^^^^^^^
+   |
+error: `Indien` should be `Indian`, `Endian`
+  --> ./data.json:84:19
+   |
+84 |         "land": ["Indien", "Indonesien", "Irak", "Iran", "Island", "Israel"],
+   |                   ^^^^^^
+   |
+error: `Indonesien` should be `Indonesian`
+  --> ./data.json:84:29
+   |
+84 |         "land": ["Indien", "Indonesien", "Irak", "Iran", "Island", "Israel"],
+   |                             ^^^^^^^^^^
+   |
+error: `Indien` should be `Indian`, `Endian`
+  --> ./data.json:85:70
+   |
+85 |         "fluss": ["Isar (Deutschland)", "Inn (Deutschland)", "Indus (Indien)", "Irrawaddy (Asien)"],
+   |                                                                      ^^^^^^
+   |
+error: `Australien` should be `Australian`
+  --> ./data.json:123:100
+    |
+123 |         "stadt": ["München (Deutschland)", "Mainz (Deutschland)", "Montreal (Kanada)", "Melbourne (Australien)", "Mannheim (Deutschland)"],
+    |                                                                                                    ^^^^^^^^^^
+    |
+error: `oder` should be `order`, `odor`
+  --> ./CONTRIBUTING.md:3:21
+  |
+3 | Wenn ein Wort fehlt oder ein Fehler da ist, dann bearbeite einfach [die Datei](https://github.com/slftool/slftool.github.io/blob/master/data.json) und mache einen Pull request!
+  |                     ^^^^
+  |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./CONTRIBUTING.md:3:40
+  |
+3 | Wenn ein Wort fehlt oder ein Fehler da ist, dann bearbeite einfach [die Datei](https://github.com/slftool/slftool.github.io/blob/master/data.json) und mache einen Pull request!
+  |                                        ^^^
+  |
+error: `Oder` should be `Order`, `Odor`
+  --> ./data.json:145:20
+    |
+145 |         "fluss": ["Oder (Europa)", "Oker (Deutschland)", "Orinoco (Südamerika)", "Olenjok (Russland)"],
+    |                    ^^^^
+    |
+error: `Assistent` should be `Assistant`
+  --> ./data.json:147:68
+    |
+147 |         "beruf": ["Orthopaedieschuhmacher", "Operationstechnischer Assistent", "Oberflaechenbeschichter"],
+    |                                                                    ^^^^^^^^^
+    |
+error: `Australien` should be `Australian`
+  --> ./data.json:183:105
+    |
+183 |         "stadt": ["Siegen (Deutschland)", "Siegburg (Deutschland)", "Schleswig (Deutschland)", "Sydney (Australien)", "Salzburg (Österreich)"],
+    |                                                                                                         ^^^^^^^^^^
+    |
+error: `Toom` should be `Tomb`
+  --> ./data.json:199:120
+    |
+199 |         "marke": ["Tomaris", "Tat Onka", "Tchibo", "Tefal", "Tesa", "The North Face", "Thule", "Titan", "Tom Tailor", "Toom", "Telekom"],
+    |                                                                                                                        ^^^^
+    |
+error: `Assistent` should be `Assistant`
+  --> ./data.json:207:57
+    |
+207 |         "beruf": ["Uhrmacher", "Umweltschutztechnischer Assistent"],
+    |                                                         ^^^^^^^^^
+    |

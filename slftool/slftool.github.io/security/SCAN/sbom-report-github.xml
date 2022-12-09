@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:270f4057-00b9-4f2a-911d-0e53343571c7" version="1">
+  <metadata>
+    <timestamp>2022-12-09T08:31:43.609Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>5.4.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/slftool/Action@v3">
+      <publisher/>
+      <group>slftool</group>
+      <name>Action</name>
+      <version>v3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/slftool/Action@v3</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/upload-artifact@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>upload-artifact</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/upload-artifact@v2</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/main.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
