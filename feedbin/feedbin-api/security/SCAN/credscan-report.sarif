@@ -1,0 +1,143 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Secrets Audit",
+          "rules": [
+            {
+              "id": "CWE-312",
+              "help": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information.",
+                "markdown": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information."
+              },
+              "name": "Env Var",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/312.html",
+              "shortDescription": {
+                "text": "Cleartext Storage of Sensitive Information."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Secrets Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "--config-path=/usr/local/src/lib/../credscan-config.toml",
+            "--path=/github/workspace",
+            "--leaks-exit-code=0",
+            "--no-git",
+            "--report=/github/workspace/reports/credscan-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "--config-path=/usr/local/src/lib/../credscan-config.toml --path=/github/workspace --leaks-exit-code=0 --no-git --report=/github/workspace/reports/credscan-report.json",
+          "endTimeUtc": "2022-12-20T08:30:25Z",
+          "workingDirectory": {
+            "uri": "https://github.com/feedbin/feedbin-api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2022-12-20T08:30:25Z",
+          "workingDirectory": {
+            "uri": "https://github.com/feedbin/feedbin-api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 1,
+          "critical": 0,
+          "high": 1,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine: curl -v -u 'example@example.com:password' --header 'If-Modified-Since:Sat, 02 Feb 2013 15:20:46 GMT' --header 'If-None-Match:\"c7d001e87bda1f0d3745b6bd2811b055\"' https://api.feedbin.com/v2/subscriptions/3.json\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "curl -v -u 'example@example.com:password' --header 'If-Modified-Since:Sat, 02 Feb 2013 15:20:46 GMT' --header 'If-None-Match:\"c7d001e87bda1f0d3745b6bd2811b055\"' https://api.feedbin.com/v2/subscriptions/3.json"
+                  },
+                  "startLine": 77
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/feedbin/feedbin-api/README.md"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "curl -v -u 'example@example.com:password' --header 'If-Modified-Since:Sat, 02 Feb 2013 15:20:46 GMT' --header 'If-None-Match:\"c7d001e87bda1f0d3745b6bd2811b055\"' https://api.feedbin.com/v2/subscriptions/3.json"
+                  },
+                  "endLine": 77,
+                  "startLine": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d4aa109406044be0",
+            "scanFileHash": "15e6c44c9d04fea6"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "687035ba-a5ee-4d52-be16-7c7e1ad6fa1c"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "e2c87acfdf97e22cdfc2109da8b3f7254afdb59b"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "687035ba-a5ee-4d52-be16-7c7e1ad6fa1c",
+      "runGuid": "50c898e6-5b40-447b-acfb-11a6f3f18b0f"
+    }
+  ]
+}

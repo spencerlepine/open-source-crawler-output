@@ -1,0 +1,7 @@
+## Detected Typos
+error: `paramter` should be `parameter`
+  --> ./README.md:38:32
+   |
+38 | - 2013-05-20: Added `per_page` paramter to [Entries](content/entries.md)
+   |                                ^^^^^^^^
+   |
