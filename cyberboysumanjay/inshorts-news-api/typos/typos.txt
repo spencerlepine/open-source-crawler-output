@@ -1,0 +1,7 @@
+## Detected Typos
+error: `clas` should be `class`
+  --> ./inshorts.py:65:30
+   |
+65 |             date = card.find(clas='date').text
+   |                              ^^^^
+   |
