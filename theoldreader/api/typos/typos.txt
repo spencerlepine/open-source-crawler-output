@@ -1,0 +1,13 @@
+## Detected Typos
+error: `ot` should be `to`, `of`, `or`
+  --> ./README.md:331:2
+    |
+331 |  ot=1371645508 # Newer than
+    |  ^^
+    |
+error: `MERCHANTIBILITY` should be `MERCHANTABILITY`
+  --> ./LICENSE:227:53
+    |
+227 | INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTIBILITY,
+    |                                                     ^^^^^^^^^^^^^^^
+    |
