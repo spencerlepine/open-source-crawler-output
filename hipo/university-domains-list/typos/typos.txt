@@ -1,0 +1,1651 @@
+## Detected Typos
+error: `seperated` should be `separated`
+  --> ./filter.py:50:41
+   |
+50 |     # Retrieve our selecting countries (seperated by commas)
+   |                                         ^^^^^^^^^
+   |
+error: `Boquet` should be `Bouquet`
+  --> ./README.md:105:9
+    |
+105 | - Joris Boquet
+    |         ^^^^^^
+    |
+error: `colum` should be `column`
+  --> ./world_universities_and_domains.json:3887:8
+     |
+3887 |       "colum.edu"
+     |        ^^^^^
+     |
+error: `dne` should be `done`
+  --> ./world_universities_and_domains.json:4235:8
+     |
+4235 |       "dne.wvnet.edu"
+     |        ^^^
+     |
+error: `Senario` should be `Scenario`
+  --> ./world_universities_and_domains.json:7863:20
+     |
+7863 |     "name": "Mount Senario College",
+     |                    ^^^^^^^
+     |
+error: `nd` should be `and`
+  --> ./world_universities_and_domains.json:13001:8
+      |
+13001 |       "nd.edu"
+      |        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:15194:8
+      |
+15194 |       "ba.edu.af"
+      |        ^^
+      |
+error: `Herat` should be `Heart`
+  --> ./world_universities_and_domains.json:15298:14
+      |
+15298 |     "name": "Herat University",
+      |              ^^^^^
+      |
+error: `Universite` should be `Universities`
+  --> ./world_universities_and_domains.json:15946:14
+      |
+15946 |     "name": "Universite des Sciences Islamiques de Constantine",
+      |              ^^^^^^^^^^
+      |
+error: `Abou` should be `About`, `Abound`
+  --> ./world_universities_and_domains.json:16114:25
+      |
+16114 |     "name": "Université Abou Bekr Belkaid, Tlemcen",
+      |                         ^^^^
+      |
+error: `Independente` should be `Independence`
+  --> ./world_universities_and_domains.json:16222:27
+      |
+16222 |     "name": "Universidade Independente de Angola",
+      |                           ^^^^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16318:14
+      |
+16318 |     "name": "Instituto Universitario CEMA",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16330:14
+      |
+16330 |     "name": "Instituto de Enseñanza Superior del Ejército",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16342:14
+      |
+16342 |     "name": "Instituto Universitario de Estudios Navales y Marítimos",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16354:14
+      |
+16354 |     "name": "Instituto Tecnológico de Buenos Aires",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16366:14
+      |
+16366 |     "name": "Instituto Universitario Aeronáutico",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16378:14
+      |
+16378 |     "name": "Instituto Universitario de Ciencias de la Salud - Buenos Aires",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16390:14
+      |
+16390 |     "name": "Instituto Universitario Nacional del Arte",
+      |              ^^^^^^^^^
+      |
+error: `uner` should be `under`
+  --> ./world_universities_and_domains.json:16874:8
+      |
+16874 |       "uner.edu.ar"
+      |        ^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:16954:14
+      |
+16954 |     "name": "Instituto Universitario de la Policia Federal",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:17050:14
+      |
+17050 |     "name": "Instituto Nacional de Educación Física \"General Manuel Belgrano\"",
+      |              ^^^^^^^^^
+      |
+error: `nd` should be `and`
+  --> ./world_universities_and_domains.json:17824:8
+      |
+17824 |       "nd.edu.au"
+      |        ^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./world_universities_and_domains.json:18309:8
+      |
+18309 |       "ist.ac.at"
+      |        ^^^
+      |
+error: `Linz` should be `Lines`
+  --> ./world_universities_and_domains.json:18329:72
+      |
+18329 |     "name": "Universität für künstlerische und industrielle Gestaltung Linz",
+      |                                                                        ^^^^
+      |
+error: `linz` should be `lines`
+  --> ./world_universities_and_domains.json:18333:12
+      |
+18333 |       "khs-linz.ac.at"
+      |            ^^^^
+      |
+error: `Linz` should be `Lines`
+  --> ./world_universities_and_domains.json:18341:56
+      |
+18341 |     "name": "Katholisch-Theologische Privatuniversität Linz",
+      |                                                        ^^^^
+      |
+error: `linz` should be `lines`
+  --> ./world_universities_and_domains.json:18345:12
+      |
+18345 |       "kth-linz.ac.at"
+      |            ^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:18497:66
+      |
+18497 |     "name": "Private Universität für Medizinische Informatik und Technik Tirol",
+      |                                                                  ^^^^^^^
+      |
+error: `umit` should be `unit`
+  --> ./world_universities_and_domains.json:18501:8
+      |
+18501 |       "umit.at"
+      |        ^^^^
+      |
+error: `Linz` should be `Lines`
+  --> ./world_universities_and_domains.json:18533:42
+      |
+18533 |     "name": "Johannes Kepler Universität Linz",
+      |                                          ^^^^
+      |
+error: `oyu` should be `you`
+  --> ./world_universities_and_domains.json:18910:8
+      |
+18910 |       "oyu.edu.az"
+      |        ^^^
+      |
+error: `Toursim` should be `Tourism`
+  --> ./world_universities_and_domains.json:18954:25
+      |
+18954 |     "name": "Azerbaijan Toursim Institute",
+      |                         ^^^^^^^
+      |
+error: `Industriel` should be `Industrial`
+  --> ./world_universities_and_domains.json:20539:40
+      |
+20539 |     "name": "ECAM - Institut Supérieur Industriel",
+      |                                        ^^^^^^^^^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21564:24
+      |
+21564 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21567:14
+      |
+21567 |       "aubih.ba"
+      |              ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21576:24
+      |
+21576 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21579:16
+      |
+21579 |       "ibu.edu.ba"
+      |                ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21588:24
+      |
+21588 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21591:16
+      |
+21591 |       "ius.edu.ba"
+      |                ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21600:24
+      |
+21600 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21612:24
+      |
+21612 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21615:12
+      |
+21615 |       "sfa.ba"
+      |            ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21624:24
+      |
+21624 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21627:12
+      |
+21627 |       "spu.ba"
+      |            ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21636:24
+      |
+21636 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21639:15
+      |
+21639 |       "sve-mo.ba"
+      |               ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21648:24
+      |
+21648 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21651:13
+      |
+21651 |       "unbi.ba"
+      |             ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21660:24
+      |
+21660 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21672:24
+      |
+21672 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21675:13
+      |
+21675 |       "unmo.ba"
+      |             ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21684:24
+      |
+21684 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21687:13
+      |
+21687 |       "unsa.ba"
+      |             ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21696:24
+      |
+21696 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21699:17
+      |
+21699 |       "unssa.rs.ba"
+      |                 ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21708:24
+      |
+21708 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21711:13
+      |
+21711 |       "untz.ba"
+      |             ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21720:24
+      |
+21720 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21723:17
+      |
+21723 |       "unvi.edu.ba"
+      |                 ^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:21732:24
+      |
+21732 |     "alpha_two_code": "BA",
+      |                        ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:21735:13
+      |
+21735 |       "unze.ba"
+      |             ^^
+      |
+error: `Educacional` should be `Educational`
+  --> ./world_universities_and_domains.json:21983:23
+      |
+21983 |     "name": "Fundação Educacional de Ituverava",
+      |                       ^^^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:22043:14
+      |
+22043 |     "name": "Instituto Nacional de Matemática Pura e Aplicada - IMPA",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:22055:14
+      |
+22055 |     "name": "Instituto Militar de Engenharia",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:22067:14
+      |
+22067 |     "name": "Instituto Tecnológico de Aeronáutica",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:22079:21
+      |
+22079 |     "name": "Insper Instituto de Ensino e Pesquisa",
+      |                     ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:22115:14
+      |
+22115 |     "name": "Instituto Mauá de Tecnologia",
+      |              ^^^^^^^^^
+      |
+error: `ue` should be `use`, `due`
+  --> ./world_universities_and_domains.json:24196:8
+      |
+24196 |       "ue-varna.bg"
+      |        ^^
+      |
+error: `universite` should be `universities`
+  --> ./world_universities_and_domains.json:25108:8
+      |
+25108 |       "universite-yde2.org"
+      |        ^^^^^^^^^^
+      |
+error: `Commerciales` should be `Commercials`
+  --> ./world_universities_and_domains.json:25584:38
+      |
+25584 |     "name": "École des Hautes Études Commerciales",
+      |                                      ^^^^^^^^^^^^
+      |
+error: `Humber` should be `Number`
+  --> ./world_universities_and_domains.json:25596:14
+      |
+25596 |     "name": "Humber College",
+      |              ^^^^^^
+      |
+error: `humber` should be `number`
+  --> ./world_universities_and_domains.json:25600:8
+      |
+25600 |       "humber.ca",
+      |        ^^^^^^
+      |
+error: `Univeristy` should be `University`
+  --> ./world_universities_and_domains.json:29206:20
+      |
+29206 |     "name": "Henan Univeristy",
+      |                    ^^^^^^^^^^
+      |
+error: `Institue` should be `Institute`
+  --> ./world_universities_and_domains.json:30742:23
+      |
+30742 |     "name": "Shanghai Institue of Foreign Trade",
+      |                       ^^^^^^^^
+      |
+error: `yau` should be `you`, `yaw`
+  --> ./world_universities_and_domains.json:32054:8
+      |
+32054 |       "yau.edu.cn"
+      |        ^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:32674:14
+      |
+32674 |     "name": "Instituto Tecnológico Metropolitano",
+      |              ^^^^^^^^^
+      |
+error: `Institucion` should be `Institution`
+  --> ./world_universities_and_domains.json:32686:14
+      |
+32686 |     "name": "Institucion Universitaria de Envigado",
+      |              ^^^^^^^^^^^
+      |
+error: `Oriente` should be `Oriented`
+  --> ./world_universities_and_domains.json:32914:39
+      |
+32914 |     "name": "Universidad Católica del Oriente",
+      |                                       ^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:33370:14
+      |
+33370 |     "name": "Instituto Universitario de La Paz",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:33790:14
+      |
+33790 |     "name": "Instituto Tecnológico de Costa Rica",
+      |              ^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:33850:46
+      |
+33850 |     "name": "Universidad para la Cooperación Internacional",
+      |                                              ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:33898:26
+      |
+33898 |     "name": "Universidad Internacional de las Américas",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `unios` should be `unions`
+  --> ./world_universities_and_domains.json:34226:8
+      |
+34226 |       "unios.hr"
+      |        ^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:34354:14
+      |
+34354 |     "name": "Instituto Superior Politécnico José Antonio Echeverría",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:34366:14
+      |
+34366 |     "name": "Instituto Superior Minero Metalúrgico \"Dr. Antonio Núñez Jiménez\"",
+      |              ^^^^^^^^^
+      |
+error: `Oriente` should be `Oriented`
+  --> ./world_universities_and_domains.json:34486:29
+      |
+34486 |     "name": "Universidad de Oriente",
+      |                             ^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:35488:14
+      |
+35488 |     "name": "Instituto Tecnológico de Santo Domingo",
+      |              ^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:35896:26
+      |
+35896 |     "name": "Universidad Internacional del Ecuador",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `internacional` should be `international`
+  --> ./world_universities_and_domains.json:35900:8
+      |
+35900 |       "internacional.edu.ec"
+      |        ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:35920:26
+      |
+35920 |     "name": "Universidad Internacional SEK, Quito",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `Oriente` should be `Oriented`
+  --> ./world_universities_and_domains.json:37013:29
+      |
+37013 |     "name": "Universidad de Oriente",
+      |                             ^^^^^^^
+      |
+error: `usin` should be `using`
+  --> ./world_universities_and_domains.json:37077:8
+      |
+37077 |       "usin.edu.sv"
+      |        ^^^^
+      |
+error: `FO` should be `OF`, `FOR`
+  --> ./world_universities_and_domains.json:37626:24
+      |
+37626 |     "alpha_two_code": "FO",
+      |                        ^^
+      |
+error: `fo` should be `of`, `for`
+  --> ./world_universities_and_domains.json:37629:14
+      |
+37629 |       "setur.fo"
+      |              ^^
+      |
+error: `Journalistes` should be `Journalists`
+  --> ./world_universities_and_domains.json:38224:61
+      |
+38224 |     "name": "Centre de Formation et de Perfectionnement des Journalistes",
+      |                                                             ^^^^^^^^^^^^
+      |
+error: `Affaires` should be `Affairs`
+  --> ./world_universities_and_domains.json:38332:33
+      |
+38332 |     "name": "Ecole Européen des Affaires",
+      |                                 ^^^^^^^^
+      |
+error: `Commerciales` should be `Commercials`
+  --> ./world_universities_and_domains.json:38452:38
+      |
+38452 |     "name": "Ecole des Hautes Etudes Commerciales du Nord",
+      |                                      ^^^^^^^^^^^^
+      |
+error: `Ponts` should be `Points`
+  --> ./world_universities_and_domains.json:38668:34
+      |
+38668 |     "name": "Ecole Nationale des Ponts et Chausees",
+      |                                  ^^^^^
+      |
+error: `Normale` should be `Normal`
+  --> ./world_universities_and_domains.json:38764:20
+      |
+38764 |     "name": "Ecole Normale Supérieure de Cachan",
+      |                    ^^^^^^^
+      |
+error: `Normale` should be `Normal`
+  --> ./world_universities_and_domains.json:38920:20
+      |
+38920 |     "name": "Ecole Normale Supérieure de Fontenay-Saint Cloud",
+      |                    ^^^^^^^
+      |
+error: `Normale` should be `Normal`
+  --> ./world_universities_and_domains.json:38932:20
+      |
+38932 |     "name": "Ecole Normale Supérieure de Paris",
+      |                    ^^^^^^^
+      |
+error: `Normale` should be `Normal`
+  --> ./world_universities_and_domains.json:39028:20
+      |
+39028 |     "name": "Ecole Normale Supérieure de Lyon",
+      |                    ^^^^^^^
+      |
+error: `Techniciens` should be `Technicians`
+  --> ./world_universities_and_domains.json:39438:50
+      |
+39438 |     "name": "Ecole Supérieure d'Ingénieurs et de Techniciens pour l'Agriculture",
+      |                                                  ^^^^^^^^^^^
+      |
+error: `Commerciales` should be `Commercials`
+  --> ./world_universities_and_domains.json:39474:44
+      |
+39474 |     "name": "Ecole Supérieure des Sciences Commerciales d'Angers",
+      |                                            ^^^^^^^^^^^^
+      |
+error: `Commerciales` should be `Commercials`
+  --> ./world_universities_and_domains.json:39486:59
+      |
+39486 |     "name": "Ecole Supérieure des Sciences Economiques et Commerciales",
+      |                                                           ^^^^^^^^^^^^
+      |
+error: `Commerciales` should be `Commercials`
+  --> ./world_universities_and_domains.json:39583:38
+      |
+39583 |     "name": "Ecole des Hautes Etudes Commerciales",
+      |                                      ^^^^^^^^^^^^
+      |
+error: `commerciales` should be `commercials`
+  --> ./world_universities_and_domains.json:39787:56
+      |
+39787 |     "name": "Institut des hautes études économiques et commerciales",
+      |                                                        ^^^^^^^^^^^^
+      |
+error: `evry` should be `every`
+  --> ./world_universities_and_domains.json:39803:12
+      |
+39803 |       "int-evry.fr"
+      |            ^^^^
+      |
+error: `universite` should be `universities`
+  --> ./world_universities_and_domains.json:39962:21
+      |
+39962 |       "etu.sorbonne-universite.fr",
+      |                     ^^^^^^^^^^
+      |
+error: `universite` should be `universities`
+  --> ./world_universities_and_domains.json:39963:17
+      |
+39963 |       "sorbonne-universite.fr"
+      |                 ^^^^^^^^^^
+      |
+error: `Espace` should be `Escape`
+  --> ./world_universities_and_domains.json:40142:67
+      |
+40142 |     "name": "Ecole Nationale Supérieure de l'Aéronautique et de l'Espace",
+      |                                                                   ^^^^^^
+      |
+error: `Corse` should be `Course`
+  --> ./world_universities_and_domains.json:40408:28
+      |
+40408 |     "name": "Université de Corse Pascal Paoli",
+      |                            ^^^^^
+      |
+error: `corse` should be `course`
+  --> ./world_universities_and_domains.json:40412:13
+      |
+40412 |       "univ-corse.fr"
+      |             ^^^^^
+      |
+error: `Evry` should be `Every`
+  --> ./world_universities_and_domains.json:40420:27
+      |
+40420 |     "name": "Université d'Evry Val d'Essonne",
+      |                           ^^^^
+      |
+error: `evry` should be `every`
+  --> ./world_universities_and_domains.json:40424:13
+      |
+40424 |       "univ-evry.fr"
+      |             ^^^^
+      |
+error: `Environnement` should be `Environment`
+  --> ./world_universities_and_domains.json:41169:56
+      |
+41169 |     "name": "Ecole Nationale du Génie de l'Eau et de l'Environnement de Strasbourg",
+      |                                                        ^^^^^^^^^^^^^
+      |
+error: `Oder` should be `Order`, `Odor`
+  --> ./world_universities_and_domains.json:41849:53
+      |
+41849 |     "name": "Europa-Universität Viadrina Frankfurt (Oder)",
+      |                                                     ^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42162:56
+      |
+42162 |     "name": "Fachhochschule Furtwangen, Hochschule für Technik und Wirtschaft",
+      |                                                        ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42234:55
+      |
+42234 |     "name": "Fachhochschule Heilbronn, Hochschule für Technik und Wirtschaft",
+      |                                                       ^^^^^^^
+      |
+error: `thi` should be `the`, `this`
+  --> ./world_universities_and_domains.json:42274:8
+      |
+42274 |       "thi.de"
+      |        ^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42306:55
+      |
+42306 |     "name": "Fachhochschule Karlsruhe, Hochschule für Technik",
+      |                                                       ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42318:53
+      |
+42318 |     "name": "Fachhochschule Kempten, Hochschule für Technik und Wirtschaft",
+      |                                                     ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42378:54
+      |
+42378 |     "name": "Fachhochschule Konstanz, Hochschule für Technik, Wirtschaft und Gestaltung",
+      |                                                      ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42402:81
+      |
+42402 |     "name": "Fachhochschule Landshut, Hochschule für Wirtschaft - Sozialwesen - Technik",
+      |                                                                                 ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42474:54
+      |
+42474 |     "name": "Fachhochschule Mannheim, Hochschule für Technik und Gestaltung",
+      |                                                      ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42642:55
+      |
+42642 |     "name": "Fachhochschule Offenburg, Hochschule für Technik und Wirtschaft",
+      |                                                       ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42690:67
+      |
+42690 |     "name": "Fachhochschule Pforzheim, Hochschule für Gestaltung, Technik und Wirtschaft",
+      |                                                                   ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42726:56
+      |
+42726 |     "name": "Fachhochschule Reutlingen, Hochschule für Technik und Wirtschaft",
+      |                                                        ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42750:55
+      |
+42750 |     "name": "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft",
+      |                                                       ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42846:51
+      |
+42846 |     "name": "Fachhochschule Trier, Hochschule für Technik, Wirtschaft und Gestaltung",
+      |                                                   ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42858:55
+      |
+42858 |     "name": "Fachhochschule Stuttgart, Hochschule für Technik",
+      |                                                       ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42870:29
+      |
+42870 |     "name": "Hochschule für Technik und Wirtschaft Berlin",
+      |                             ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:42955:70
+      |
+42955 |     "name": "Fachhochschule Westküste, Hochschule für Wirtschaft und Technik",
+      |                                                                      ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:43003:56
+      |
+43003 |     "name": "Private Fachhochschule für Wirtschaft und Technik Vechta/Diepholz",
+      |                                                        ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:43316:52
+      |
+43316 |     "name": "Hochschule Wismar, Fachhochschule für Technik, Wirtschaft und Gestaltung",
+      |                                                    ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:43340:29
+      |
+43340 |     "name": "Hochschule für Technik und Wirtschaft Dresden (FH)",
+      |                             ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:43352:29
+      |
+43352 |     "name": "Hochschule für Technik, Wirtschaft und Kultur Leipzig (FH)",
+      |                             ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:43376:29
+      |
+43376 |     "name": "Hochschule für Technik und Wirtschaft des Saarlandes",
+      |                             ^^^^^^^
+      |
+error: `szie` should be `size`
+  --> ./world_universities_and_domains.json:46947:8
+      |
+46947 |       "szie.hu"
+      |        ^^^^
+      |
+error: `Universtiy` should be `University`
+  --> ./world_universities_and_domains.json:47423:48
+      |
+47423 |     "name": "Dr. Babasaheb Ambedkar Marathwada Universtiy",
+      |                                                ^^^^^^^^^^
+      |
+error: `Institue` should be `Institute`
+  --> ./world_universities_and_domains.json:47567:22
+      |
+47567 |     "name": "Bharath Institue Of Higher Education & Research",
+      |                      ^^^^^^^^
+      |
+error: `mata` should be `meta`, `mater`
+  --> ./world_universities_and_domains.json:48131:21
+      |
+48131 |     "name": "Fatima mata national college kollam kerala",
+      |                     ^^^^
+      |
+error: `Managment` should be `Management`
+  --> ./world_universities_and_domains.json:48191:49
+      |
+48191 |     "name": "Gandhi Institute of Technology and Managment",
+      |                                                 ^^^^^^^^^
+      |
+error: `Institue` should be `Institute`
+  --> ./world_universities_and_domains.json:48951:25
+      |
+48951 |     "name": "Indian Law Institue",
+      |                         ^^^^^^^^
+      |
+error: `teh` should be `the`
+  --> ./world_universities_and_domains.json:55267:8
+      |
+55267 |       "teh-lavasan.pnu.ac.ir"
+      |        ^^^
+      |
+error: `suh` should be `such`
+  --> ./world_universities_and_domains.json:56743:8
+      |
+56743 |       "suh-edu.com"
+      |        ^^^
+      |
+error: `Thi` should be `The`, `This`
+  --> ./world_universities_and_domains.json:56751:14
+      |
+56751 |     "name": "Thi Qar University",
+      |              ^^^
+      |
+error: `Institue` should be `Institute`
+  --> ./world_universities_and_domains.json:57123:14
+      |
+57123 |     "name": "Institue of Technology, Tralee",
+      |              ^^^^^^^^
+      |
+error: `Studi` should be `Study`, `Studio`
+  --> ./world_universities_and_domains.json:57701:40
+      |
+57701 |     "name": "Istituto Universitario di Studi Superiori",
+      |                                        ^^^^^
+      |
+error: `SAIS` should be `SAYS`
+  --> ./world_universities_and_domains.json:57713:40
+      |
+57713 |     "name": "Johns Hopkins University, SAIS Bologna Center",
+      |                                        ^^^^
+      |
+error: `ue` should be `use`, `due`
+  --> ./world_universities_and_domains.json:59326:16
+      |
+59326 |       "daiichi-ue.ac.jp"
+      |                ^^
+      |
+error: `myu` should be `my`
+  --> ./world_universities_and_domains.json:62242:8
+      |
+62242 |       "myu.ac.jp"
+      |        ^^^
+      |
+error: `ue` should be `use`, `due`
+  --> ./world_universities_and_domains.json:63166:14
+      |
+63166 |       "osaka-ue.ac.jp"
+      |              ^^
+      |
+error: `Kazakstan` should be `Kazakhstan`
+  --> ./world_universities_and_domains.json:65910:19
+      |
+65910 |     "name": "East Kazakstan State Technical University",
+      |                   ^^^^^^^^^
+      |
+error: `Universtiy` should be `University`
+  --> ./world_universities_and_domains.json:66318:21
+      |
+66318 |     "name": "Gretsa Universtiy",
+      |                     ^^^^^^^^^^
+      |
+error: `Womens` should be `Women`
+  --> ./world_universities_and_domains.json:66462:21
+      |
+66462 |     "name": "Kiriri Womens University of Science and Technology",
+      |                     ^^^^^^
+      |
+error: `Australlian` should be `Australian`
+  --> ./world_universities_and_domains.json:69826:14
+      |
+69826 |     "name": "Australlian College of Kuwait",
+      |              ^^^^^^^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:70118:8
+      |
+70118 |       "ba.lv"
+      |        ^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73491:14
+      |
+73491 |     "name": "Instituto Politécnico Nacional",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73503:14
+      |
+73503 |     "name": "Instituto Tecnológico Autonómo de México",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73515:14
+      |
+73515 |     "name": "Instituto Tecnológico de Aguascalientes",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73527:14
+      |
+73527 |     "name": "Instituto Tecnológico de Celaya",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73539:14
+      |
+73539 |     "name": "Instituto Tecnologico de Durango",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73551:14
+      |
+73551 |     "name": "Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)",
+      |              ^^^^^^^^^
+      |
+error: `ITESM` should be `ITEMS`
+  --> ./world_universities_and_domains.json:73551:75
+      |
+73551 |     "name": "Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)",
+      |                                                                           ^^^^^
+      |
+error: `itesm` should be `items`
+  --> ./world_universities_and_domains.json:73555:8
+      |
+73555 |       "itesm.mx"
+      |        ^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73563:14
+      |
+73563 |     "name": "Instituto Tecnológico y de Estudios Superiores de Occidente",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73575:14
+      |
+73575 |     "name": "Instituto Tecnológico de León",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73587:14
+      |
+73587 |     "name": "Instituto Tecnologico de Minatitlan",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73599:14
+      |
+73599 |     "name": "Instituto Tecnológico de Morelia",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73611:14
+      |
+73611 |     "name": "Instituto Tecnológico de Querétaro",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73623:14
+      |
+73623 |     "name": "Instituto Tecnológico de San Luis Potosí",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73635:14
+      |
+73635 |     "name": "Instituto Tecnológico de Sonora",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73791:14
+      |
+73791 |     "name": "Instituto de Estudios Superiores de la Sierra",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:73887:14
+      |
+73887 |     "name": "Instituto Tecnológico Superior de Nuevo Casas Grandes",
+      |              ^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:74535:33
+      |
+74535 |     "name": "Universidad México Internacional",
+      |                                 ^^^^^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:74919:14
+      |
+74919 |     "name": "Instituto Politécnico Nacional, Campus Guanajuato",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:75183:14
+      |
+75183 |     "name": "Instituto Tecnológico de Occidente del Estado de Hidalgo",
+      |              ^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:75195:26
+      |
+75195 |     "name": "Universidad Internacional Jefferson",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `Affaires` should be `Affairs`
+  --> ./world_universities_and_domains.json:75567:50
+      |
+75567 |     "name": "Ecole Supérieure de Commerce et des Affaires",
+      |                                                  ^^^^^^^^
+      |
+error: `Commerciales` should be `Commercials`
+  --> ./world_universities_and_domains.json:75603:38
+      |
+75603 |     "name": "Ecole des Hautes Etudes Commerciales MAROC",
+      |                                      ^^^^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:75867:14
+      |
+75867 |     "name": "Instituto Superior de Ciênicas e Tecnologia de Moçambique",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:75879:14
+      |
+75879 |     "name": "Instituto Superior Politécnico e Universitário",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:75891:14
+      |
+75891 |     "name": "Instituto Superior de Relações Internacionais (ISRI)",
+      |              ^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:76976:26
+      |
+76976 |     "name": "Universidad Internacional de Integración de América Latina",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `Regiones` should be `Regions`
+  --> ./world_universities_and_domains.json:77012:33
+      |
+77012 |     "name": "Universidad de las Regiones Autónomas de la Costa Caribe Nicaragüense",
+      |                                 ^^^^^^^^
+      |
+error: `Afe` should be `Safe`
+  --> ./world_universities_and_domains.json:77084:14
+      |
+77084 |     "name": "Afe Babalola University",
+      |              ^^^
+      |
+error: `Univeristy` should be `University`
+  --> ./world_universities_and_domains.json:79028:20
+      |
+79028 |     "name": "Cecos Univeristy of Information Technology",
+      |                    ^^^^^^^^^^
+      |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./world_universities_and_domains.json:79465:8
+      |
+79465 |       "ist.edu.pk"
+      |        ^^^
+      |
+error: `NED` should be `NEED`
+  --> ./world_universities_and_domains.json:79689:14
+      |
+79689 |     "name": "NED University of Engineering and Technology Karachi",
+      |              ^^^
+      |
+error: `Infromation` should be `Information`
+  --> ./world_universities_and_domains.json:79989:48
+      |
+79989 |     "name": "Qurtuba University of Science and Infromation Technology",
+      |                                                ^^^^^^^^^^^
+      |
+error: `Univeristy` should be `University`
+  --> ./world_universities_and_domains.json:80001:35
+      |
+80001 |     "name": "Riphah International Univeristy",
+      |                                   ^^^^^^^^^^
+      |
+error: `ue` should be `use`, `due`
+  --> ./world_universities_and_domains.json:80161:8
+      |
+80161 |       "ue.edu.pk"
+      |        ^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:80625:14
+      |
+80625 |     "name": "Instituto de Enseñanza Superior Oteima",
+      |              ^^^^^^^^^
+      |
+error: `Dalta` should be `Delta`
+  --> ./world_universities_and_domains.json:82425:51
+      |
+82425 |     "name": "University of Perpetual Help, System Dalta",
+      |                                                   ^^^^^
+      |
+error: `ue` should be `use`, `due`
+  --> ./world_universities_and_domains.json:82718:8
+      |
+82718 |       "ue.edu.ph"
+      |        ^^
+      |
+error: `ue` should be `use`, `due`
+  --> ./world_universities_and_domains.json:82730:8
+      |
+82730 |       "ue.edu.ph"
+      |        ^^
+      |
+error: `puls` should be `pulse`, `plus`
+  --> ./world_universities_and_domains.json:84028:8
+      |
+84028 |       "puls.edu.pl"
+      |        ^^^^
+      |
+error: `toi` should be `to`, `toy`
+  --> ./world_universities_and_domains.json:84474:12
+      |
+84474 |       "wsb.toi.tarnow.pl"
+      |            ^^^
+      |
+error: `Mangement` should be `Management`
+  --> ./world_universities_and_domains.json:84614:61
+      |
+84614 |     "name": "Leon Kozminski Academy of Entrepreneurship and Mangement in Warsaw",
+      |                                                             ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84758:14
+      |
+84758 |     "name": "Instituto Superior de Informática e Gestão",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84818:14
+      |
+84818 |     "name": "Instituto de Artes Visuais, Design e Marketing - IADE",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84830:14
+      |
+84830 |     "name": "Instituto Superior Novas Profissões - INP",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84842:14
+      |
+84842 |     "name": "Instituto Superior D. Afonso III - INUAF",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84854:14
+      |
+84854 |     "name": "Instituto Politécnico de Beja",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84866:14
+      |
+84866 |     "name": "Instituto Politécnico de Bragança",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84878:14
+      |
+84878 |     "name": "Instituto Politécnico do Cávado e do Ave",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84890:14
+      |
+84890 |     "name": "Instituto Politécnico de Castelo Branco",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84902:14
+      |
+84902 |     "name": "Instituto Politécnico de Coimbra",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84914:14
+      |
+84914 |     "name": "Instituto Politécnico da Guarda",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84926:14
+      |
+84926 |     "name": "Instituto Piaget",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84938:14
+      |
+84938 |     "name": "Instituto Politécnico de Leiria",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84951:14
+      |
+84951 |     "name": "Instituto Politécnico de Lisboa",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84963:14
+      |
+84963 |     "name": "Instituto Politécnico de Portalegre",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84975:14
+      |
+84975 |     "name": "Instituto Politecnico do Porto",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84987:14
+      |
+84987 |     "name": "Instituto Politécnico de Santarém",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:84999:14
+      |
+84999 |     "name": "Instituto Politécnico de Setúbal",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85011:14
+      |
+85011 |     "name": "Instituto Politécnico de Tomar",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85023:14
+      |
+85023 |     "name": "Instituto Politécnico de Viana do Castelo",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85035:14
+      |
+85035 |     "name": "Instituto Superior de Assistentes e Intérpretes",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85047:14
+      |
+85047 |     "name": "Instituto Superior de Saúde do Alto Ave",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85059:14
+      |
+85059 |     "name": "Instituto Superior Bissaya Barreto",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85071:14
+      |
+85071 |     "name": "Instituto Superior de Ciências Empresariais e de Turismo",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85083:22
+      |
+85083 |     "name": "ISCTE - Instituto Universitário de Lisboa",
+      |                      ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85096:14
+      |
+85096 |     "name": "Instituto Superior de Gestão - ISG",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85108:14
+      |
+85108 |     "name": "Instituto Superior de Línguas e Administração",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85120:14
+      |
+85120 |     "name": "Instituto Superior de Paços de Brandão",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85132:14
+      |
+85132 |     "name": "Instituto Superior de Psicologia Aplicada",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85144:14
+      |
+85144 |     "name": "Instituto Superior Politécnico Gaya",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85156:14
+      |
+85156 |     "name": "Instituto Superior de Tecnologias Avançadas - ISTEC",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85168:14
+      |
+85168 |     "name": "Instituto Superior de Transportes e Comunicações",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85180:14
+      |
+85180 |     "name": "Instituto Superior de Entre Douro e Vouga",
+      |              ^^^^^^^^^
+      |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:85204:14
+      |
+85204 |     "name": "Instituto Superior de Ciências Educativas",
+      |              ^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:85324:27
+      |
+85324 |     "name": "Universidade Internacional Lisboa",
+      |                           ^^^^^^^^^^^^^
+      |
+error: `Independente` should be `Independence`
+  --> ./world_universities_and_domains.json:85409:27
+      |
+85409 |     "name": "Universidade Independente",
+      |                           ^^^^^^^^^^^^
+      |
+error: `Achitecture` should be `Architecture`
+  --> ./world_universities_and_domains.json:86705:86
+      |
+86705 |     "name": "St. Petersburg Repin State Academic Institute of Painting Sculpture and Achitecture",
+      |                                                                                      ^^^^^^^^^^^
+      |
+error: `Mangement` should be `Management`
+  --> ./world_universities_and_domains.json:86981:57
+      |
+86981 |     "name": "Novosibirsk State Academy of Economics and Mangement",
+      |                                                         ^^^^^^^^^
+      |
+error: `Managament` should be `Management`
+  --> ./world_universities_and_domains.json:88221:34
+      |
+88221 |     "name": "Modern Institute of Managament",
+      |                                  ^^^^^^^^^^
+      |
+error: `Entreprise` should be `Enterprise`
+  --> ./world_universities_and_domains.json:91418:32
+      |
+91418 |     "name": "L'Université de l'Entreprise",
+      |                                ^^^^^^^^^^
+      |
+error: `ue` should be `use`, `due`
+  --> ./world_universities_and_domains.json:91422:12
+      |
+91422 |       "afi-ue.sn"
+      |            ^^
+      |
+error: `Universite` should be `Universities`
+  --> ./world_universities_and_domains.json:91442:14
+      |
+91442 |     "name": "Universite Amadou Hampaté Ba",
+      |              ^^^^^^^^^^
+      |
+error: `Ba` should be `By`, `Be`
+  --> ./world_universities_and_domains.json:91442:40
+      |
+91442 |     "name": "Universite Amadou Hampaté Ba",
+      |                                        ^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:93317:26
+      |
+93317 |     "name": "Universidad Internacional de Andalucía",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:93341:26
+      |
+93341 |     "name": "Universitat Internacional de Catalunya",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:93353:26
+      |
+93353 |     "name": "Universidad Internacional Menéndez Pelayo",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:93497:26
+      |
+93497 |     "name": "Universidad Internacional de Andalucía, Sede Antonio Machado de Baeza",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:93533:26
+      |
+93533 |     "name": "Universidad Internacional de Andalucía, Sede La Rábida",
+      |                          ^^^^^^^^^^^^^
+      |
+error: `usal` should be `usual`
+  --> ./world_universities_and_domains.json:93781:8
+      |
+93781 |       "usal.es"
+      |        ^^^^
+      |
+error: `Studi` should be `Study`, `Studio`
+  --> ./world_universities_and_domains.json:95409:38
+      |
+95409 |     "name": "Libera Università degli Studi di Scienze Umane e Tecnologiche",
+      |                                      ^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:95738:35
+      |
+95738 |     "name": "HSR - Hochschule für Technik Rapperswil",
+      |                                   ^^^^^^^
+      |
+error: `Technik` should be `Technique`
+  --> ./world_universities_and_domains.json:95774:35
+      |
+95774 |     "name": "NTB - Hochschule für Technik Buchs",
+      |                                   ^^^^^^^
+      |
+error: `Institue` should be `Institute`
+  --> ./world_universities_and_domains.json:96230:24
+      |
+96230 |     "name": "Ching Kuo Institue of Management & Health",
+      |                        ^^^^^^^^
+      |
+error: `boun` should be `bound`
+  --> ./world_universities_and_domains.json:98769:8
+      |
+98769 |       "boun.edu.tr"
+      |        ^^^^
+      |
+error: `Ege` should be `Edge`
+  --> ./world_universities_and_domains.json:98899:14
+      |
+98899 |     "name": "Ege University",
+      |              ^^^
+      |
+error: `ege` should be `edge`
+  --> ./world_universities_and_domains.json:98903:8
+      |
+98903 |       "ege.edu.tr"
+      |        ^^^
+      |
+error: `mak` should be `make`, `mask`
+  --> ./world_universities_and_domains.json:99759:8
+      |
+99759 |       "mak.ac.ug"
+      |        ^^^
+      |
+error: `Univeristy` should be `University`
+  --> ./world_universities_and_domains.json:100271:36
+       |
+100271 |     "name": "Lviv National Medical Univeristy",
+       |                                    ^^^^^^^^^^
+       |
+error: `Univesity` should be `University`
+  --> ./world_universities_and_domains.json:100283:32
+       |
+100283 |     "name": "National Aviation Univesity",
+       |                                ^^^^^^^^^
+       |
+error: `buid` should be `build`
+  --> ./world_universities_and_domains.json:100887:8
+       |
+100887 |       "buid.ac.ae"
+       |        ^^^^
+       |
+error: `Managment` should be `Management`
+  --> ./world_universities_and_domains.json:100943:44
+       |
+100943 |     "name": "The Emirates Academy of Hotel Managment",
+       |                                            ^^^^^^^^^
+       |
+error: `Institue` should be `Institute`
+  --> ./world_universities_and_domains.json:101981:14
+       |
+101981 |     "name": "Institue of Historical Research, University of London",
+       |              ^^^^^^^^
+       |
+error: `Oriente` should be `Oriented`
+  --> ./world_universities_and_domains.json:103793:29
+       |
+103793 |     "name": "Universidad de Oriente",
+       |                             ^^^^^^^
+       |
+error: `Tecnical` should be `Technical`
+  --> ./world_universities_and_domains.json:105341:20
+       |
+105341 |     "name": "Bursa Tecnical University",
+       |                    ^^^^^^^^
+       |
+error: `Tecnical` should be `Technical`
+  --> ./world_universities_and_domains.json:105389:22
+       |
+105389 |     "name": "Erzurum Tecnical University",
+       |                      ^^^^^^^^
+       |
+error: `Tecnical` should be `Technical`
+  --> ./world_universities_and_domains.json:105401:20
+       |
+105401 |     "name": "Gebze Tecnical University",
+       |                    ^^^^^^^^
+       |
+error: `Tecnical` should be `Technical`
+  --> ./world_universities_and_domains.json:105485:25
+       |
+105485 |     "name": "Iskenderun Tecnical University",
+       |                         ^^^^^^^^
+       |
+error: `Sargeant` should be `Sergeant`
+  --> ./world_universities_and_domains.json:116244:16
+       |
+116244 |     "name": "J Sargeant Reynolds Community College",
+       |                ^^^^^^^^
+       |
+error: `matc` should be `match`
+  --> ./world_universities_and_domains.json:116950:15
+       |
+116950 |       "http://matc.edu"
+       |               ^^^^
+       |
+error: `matc` should be `match`
+  --> ./world_universities_and_domains.json:116956:8
+       |
+116956 |       "matc.edu"
+       |        ^^^^
+       |
+error: `Internacional` should be `International`
+  --> ./world_universities_and_domains.json:117168:26
+       |
+117168 |     "name": "Universidad Internacional Isabel I",
+       |                          ^^^^^^^^^^^^^
+       |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:117374:8
+       |
+117374 |       "ba-bautzen.de"
+       |        ^^
+       |
+error: `ND` should be `AND`
+  --> ./world_universities_and_domains.json:117384:24
+       |
+117384 |     "state-province": "ND",
+       |                        ^^
+       |
+error: `Instituto` should be `Institution`
+  --> ./world_universities_and_domains.json:117979:14
+       |
+117979 |     "name": "Instituto Infnet",
+       |              ^^^^^^^^^
+       |
+error: `BA` should be `BY`, `BE`
+  --> ./world_universities_and_domains.json:117994:24
+       |
+117994 |     "alpha_two_code": "BA",
+       |                        ^^
+       |
+error: `ba` should be `by`, `be`
+  --> ./world_universities_and_domains.json:117997:17
+       |
+117997 |       "ssst.edu.ba"
+       |                 ^^
+       |
