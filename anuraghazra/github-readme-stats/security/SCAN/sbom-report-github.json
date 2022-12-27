@@ -1,0 +1,114 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:7dc361c9-4e58-40c4-a70d-018e972af53b",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-12-27T08:35:32.886Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "6.0.0"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v3",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v3"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-node",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-node@v3",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/setup-node@v3"
+    },
+    {
+      "publisher": "",
+      "group": "skx",
+      "name": "github-action-tester",
+      "version": "master",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/skx/github-action-tester@master",
+      "type": "library",
+      "bom-ref": "pkg:github/skx/github-action-tester@master"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "labeler",
+      "version": "v4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/labeler@v4",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/labeler@v4"
+    },
+    {
+      "publisher": "",
+      "group": "bahmutov",
+      "name": "npm-install",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/bahmutov/npm-install@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/bahmutov/npm-install@v1"
+    },
+    {
+      "publisher": "",
+      "group": "codecov",
+      "name": "codecov-action",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/codecov/codecov-action@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/codecov/codecov-action@v1"
+    },
+    {
+      "publisher": "",
+      "group": "rickstaa",
+      "name": "top-issues-action",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/rickstaa/top-issues-action@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/rickstaa/top-issues-action@v1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/e2e-test.yml, /github/workspace/.github/workflows/generate-theme-doc.yml, /github/workspace/.github/workflows/label-pr.yml, /github/workspace/.github/workflows/preview-theme.yml, /github/workspace/.github/workflows/test.yml, /github/workspace/.github/workflows/top-issues-dashboard.yml",
+      "comment": "Package file"
+    }
+  ]
+}

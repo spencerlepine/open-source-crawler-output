@@ -1,0 +1,721 @@
+## Detected Typos
+error: `activitiy` should be `activity`
+  --> ./tests/renderWakatimeCard.test.js:58:30
+   |
+58 |   it('should show "no coding activitiy this week" message when there hasn not been activity', () => {
+   |                              ^^^^^^^^^
+   |
+error: `contribuito` should be `contribution`
+  --> ./src/translations.js:179:15
+    |
+179 |       it: "Ha contribuito a",
+    |               ^^^^^^^^^^^
+    |
+error: `Templat` should be `Template`
+  --> ./src/translations.js:226:10
+    |
+226 |     my: "Templat",
+    |          ^^^^^^^
+    |
+error: `Langauge` should be `Language`
+  --> ./src/common/utils.js:395:16
+    |
+395 |  * @template T Langauge object.
+    |                ^^^^^^^^
+    |
+error: `toi` should be `to`, `toy`
+  --> ./docs/readme_fr.md:67:13
+   |
+67 | - [Deployer toi-même](#déployer-sur-votre-propre-instance-vercel)
+   |             ^^^
+   |
+error: `apparence` should be `appearance`
+  --> ./docs/readme_fr.md:113:55
+    |
+113 | Avec les thèmes intégrés, vous pouvez personnaliser l'apparence de la carte sans faire de [personnalisation manuelle](#customization).
+    |                                                       ^^^^^^^^^
+    |
+error: `apparence` should be `appearance`
+  --> ./docs/readme_fr.md:131:29
+    |
+131 | Vous pouvez personnaliser l'apparence de votre `Carte des stats` ou `Carte de dépôt` comme vous le souhaitez avec les paramètres d'URL.
+    |                             ^^^^^^^^^
+    |
+error: `principales` should be `principles`
+  --> ./docs/readme_fr.md:133:14
+    |
+133 | #### Options principales:
+    |              ^^^^^^^^^^^
+    |
+error: `exemple` should be `example`
+  --> ./docs/readme_fr.md:142:50
+    |
+142 | - `locale` - définir la langue de la carte _(par exemple. cn, de, es, etc.)_
+    |                                                  ^^^^^^^
+    |
+error: `seperated` should be `separated`
+  --> ./docs/readme_fr.md:156:117
+    |
+156 | -   `hide` - Masquer [les éléments spécifiés](#cacher-les-statistiques-individuelles) dans les statistiques _(Comma seperated values)_
+    |                                                                                                                     ^^^^^^^^^
+    |
+error: `seperated` should be `separated`
+  --> ./docs/readme_fr.md:170:66
+    |
+170 | -   `hide` - Masquer les langages spécifiés sur la carte _(Comma seperated values)_
+    |                                                                  ^^^^^^^^^
+    |
+error: `individuels` should be `individuals`
+  --> ./docs/readme_fr.md:223:89
+    |
+223 | Vous pouvez utiliser le paramètre `?hide=language1,language2` pour masquer les langages individuels.
+    |                                                                                         ^^^^^^^^^^^
+    |
+error: `approche` should be `approach`
+  --> ./docs/readme_fr.md:291:106
+    |
+291 | En général, vous ne pourrez pas mettre les images côte à côte. Pour ce faire, vous pouvez utiliser cette approche :
+    |                                                                                                          ^^^^^^^^
+    |
+error: `mesure` should be `measure`
+  --> ./docs/readme_fr.md:308:102
+    |
+308 | NOTE: Depuis [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) nous devrions être en mesure de traiter plus de 5 000 demandes et ne pas avoir de problèmes de temps d'arrêt :D
+    |                                                                                                      ^^^^^^
+    |
+error: `demandes` should be `demands`
+  --> ./docs/readme_fr.md:308:134
+    |
+308 | NOTE: Depuis [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) nous devrions être en mesure de traiter plus de 5 000 demandes et ne pas avoir de problèmes de temps d'arrêt :D
+    |                                                                                                                                      ^^^^^^^^
+    |
+error: `environnement` should be `environment`
+  --> ./docs/readme_fr.md:327:81
+    |
+327 | 1. Choisissez root et gardez tout tel quel, ajoutez simplement votre variable d'environnement nommée PAT_1 (comme indiqué), qui contiendra un jeton d'accès personnel (PAT), que vous pouvez facilement créer [ici](https://github.com/settings/tokens/new) (laissez tout tel quel, nommez le simplement quelque chose, cela peut être tout ce que vous voulez)
+    |                                                                                 ^^^^^^^^^^^^^
+    |
+error: `limite` should be `limit`
+  --> ./docs/readme_tr.md:368:123
+    |
+368 | GitHub API saatte sadece 5.000 isteğe izin verdiği için `https://github-readme-stats.vercel.app/api` adresindeki API'm bu limite muhtemelen takılmış olabilir. Eğer projeyi kendi Vercel sunucunuzda yayınlarsanız, böyle bir sorun yaşamayabilirsiniz. Deploy butonuna tıkla ve deploy başlasın!
+    |                                                                                                                           ^^^^^^
+    |
+error: `Principales` should be `Principles`
+  --> ./docs/readme_es.md:67:25
+   |
+67 | - [Tarjeta de Lenguajes Principales](#tarjeta-de-lenguajes-principales)
+   |                         ^^^^^^^^^^^
+   |
+error: `principales` should be `principles`
+  --> ./docs/readme_es.md:67:60
+   |
+67 | - [Tarjeta de Lenguajes Principales](#tarjeta-de-lenguajes-principales)
+   |                                                            ^^^^^^^^^^^
+   |
+error: `Utiliza` should be `Utilize`
+  --> ./docs/readme_es.md:119:1
+    |
+119 | Utiliza el parámetro `?theme=THEME_NAME`, de esta manera:
+    | ^^^^^^^
+    |
+error: `exclusivas` should be `exclusives`
+  --> ./docs/readme_es.md:158:15
+    |
+158 | #### Opciones exclusivas de la Tarjeta de Estadísticas:
+    |               ^^^^^^^^^^
+    |
+error: `exclusivas` should be `exclusives`
+  --> ./docs/readme_es.md:170:15
+    |
+170 | #### Opciones exclusivas de la Tarjeta de Repo:
+    |               ^^^^^^^^^^
+    |
+error: `exclusivas` should be `exclusives`
+  --> ./docs/readme_es.md:174:15
+    |
+174 | #### Opciones exclusivas de la Tarjeta de Lenguajes:
+    |               ^^^^^^^^^^
+    |
+error: `exclusivas` should be `exclusives`
+  --> ./docs/readme_es.md:188:15
+    |
+188 | #### Opciones exclusivas de la Tarjeta de Wakatime:
+    |               ^^^^^^^^^^
+    |
+error: `Utiliza` should be `Utilize`
+  --> ./docs/readme_es.md:220:1
+    |
+220 | Utiliza la variable [show_owner](#customización) para incluir el nombre de usuario del propietario del repositorio.
+    | ^^^^^^^
+    |
+error: `Principales` should be `Principles`
+  --> ./docs/readme_es.md:224:24
+    |
+224 | # Tarjeta de Lenguajes Principales
+    |                        ^^^^^^^^^^^
+    |
+error: `principales` should be `principles`
+  --> ./docs/readme_es.md:226:25
+    |
+226 | La tarjeta de lenguajes principales muestra los lenguajes principales del usuario de GitHub que se han utilizado principalmente.
+    |                         ^^^^^^^^^^^
+    |
+error: `principales` should be `principles`
+  --> ./docs/readme_es.md:226:59
+    |
+226 | La tarjeta de lenguajes principales muestra los lenguajes principales del usuario de GitHub que se han utilizado principalmente.
+    |                                                           ^^^^^^^^^^^
+    |
+error: `principales` should be `principles`
+  --> ./docs/readme_es.md:228:22
+    |
+228 | _NOTA: los lenguajes principales no indican mi nivel de habilidad o algo así, es una métrica de GitHub de los lenguajes que tengo más código en GitHub. Es una nueva característica de github-readme-stats_
+    |                      ^^^^^^^^^^^
+    |
+error: `posible` should be `possible`
+  --> ./docs/readme_es.md:367:68
+    |
+367 | Desde que la API de GitHub permite solo 5k peticiones por hora, es posible que mi `https://github-readme-stats.vercel.app/api` pueda llegar al límite. Si lo alojas en tu propio servidor de Vercel, no tendrás que preocuparte de nada. ¡Clickea en el botón "Deploy" para comenzar!
+    |                                                                    ^^^^^^^
+    |
+error: `ser` should be `set`
+  --> ./docs/readme_es.md:388:314
+    |
+388 | 9. Selecciona "root" y matén todo como está, simplemente añade tu variable de entorno llamada PAT_1 (como se muestra), la cual contendrá un token de acceso personal (PAT), el cual puedes crear fácilmente [aquí](https://github.com/settings/tokens/new) (mantén todo como está, simplemente asígnale un nombre, puede ser cualquiera que desees)
+    |                                                                                                                                                                                                                                                                                                                          ^^^
+    |
+error: `mis` should be `miss`
+  --> ./docs/readme_es.md:396:12
+    |
+396 | Casi todos mis proyectos son de código abierto e intento responder a todos los usuarios que necesiten ayuda con alguno de estos proyectos. Obviamente, esto toma tiempo. Puedes usar este servicio gratis.
+    |            ^^^
+    |
+error: `erros` should be `errors`
+  --> ./docs/readme_pt-BR.md:32:93
+   |
+32 |     <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">Reportar erros</a>
+   |                                                                                             ^^^^^
+   |
+error: `Als` should be `Also`
+  --> ./docs/readme_nl.md:99:11
+   |
+99 | _Notitie: Als je dit project zelf deployt, zullen de privé contributies standaard toegevoegt worden aan je totaal, omdat anders je hoeveelheid privé contributies moet delen._
+   |           ^^^
+   |
+error: `considere` should be `consider`, `considered`
+  --> ./docs/readme_pt-BR.md:60:48
+   |
+60 | <p align="center">Gostou do projeto? Por favor considere <a href="https://www.paypal.me/anuraghazra">fazer uma doação</a> para ajudar a melhorá-lo!
+   |                                                ^^^^^^^^^
+   |
+error: `Alle` should be `All`, `Alley`
+  --> ./docs/readme_nl.md:125:6
+    |
+125 | #### Alle ingeboude thema\'s :-
+    |      ^^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_nl.md:131:24
+    |
+131 | Je kan een preview van alle [beschikbare thema\'s](../themes/README.md) bekijken, of zie het [thema configuratie bestand](../themes/index.js) en **je kan aan nieuwe thema\'s bijdragen** als je dat leuk lijkt :D
+    |                        ^^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_nl.md:131:187
+    |
+131 | Je kan een preview van alle [beschikbare thema\'s](../themes/README.md) bekijken, of zie het [thema configuratie bestand](../themes/index.js) en **je kan aan nieuwe thema\'s bijdragen** als je dat leuk lijkt :D
+    |                                                                                                                                                                                           ^^^
+    |
+error: `titel` should be `title`
+  --> ./docs/readme_nl.md:139:35
+    |
+139 | - `title_color` - De kleur van de titel van de kaart _(hex kleur)_
+    |                                   ^^^^^
+    |
+error: `Tekst` should be `Text`
+  --> ./docs/readme_nl.md:140:18
+    |
+140 | - `text_color` - Tekst kleur _(hex kleur)_
+    |                  ^^^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_nl.md:144:43
+    |
+144 | - `theme` - Naam van het thema, kies uit [alle beschikbare thema\'s](../themes/README.md)
+    |                                           ^^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_nl.md:156:95
+    |
+156 | > Notities i.v.b.m. cache: Repo kaarten hebben een standaard cache van 4 uur (14400 seconden) als de fork hoeveelheid en de star hoeveelheid minder is dan 1k, anders is het 2 uur (7200 seconden). Daarnaast ligt de cache vast aan een minimum van 2 uur en een maximum van 24 uur.
+    |                                                                                               ^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_nl.md:164:31
+    |
+164 | - `include_all_commits` - Tel alle commits inplaats van alleen de commits van het huidige jaar _(boolean)_
+    |                               ^^^^
+    |
+error: `exclusivas` should be `exclusives`
+  --> ./docs/readme_pt-BR.md:149:13
+    |
+149 | #### Opções exclusivas do cartão de estatísticas:
+    |             ^^^^^^^^^^
+    |
+error: `itens` should be `items`
+  --> ./docs/readme_pt-BR.md:151:19
+    |
+151 | - `hide` - Oculta itens específicos das estatísticas _(Valores separados por vírgulas)_
+    |                   ^^^^^
+    |
+error: `titel` should be `title`
+  --> ./docs/readme_nl.md:167:40
+    |
+167 | - `custom_title` - Stel een aangepaste titel voor je kaart in
+    |                                        ^^^^^
+    |
+error: `exclusivas` should be `exclusives`
+  --> ./docs/readme_pt-BR.md:159:13
+    |
+159 | #### Opções exclusivas do cartão de repositórios:
+    |             ^^^^^^^^^^
+    |
+error: `exclusivas` should be `exclusives`
+  --> ./docs/readme_pt-BR.md:163:13
+    |
+163 | #### Opções exclusivas do cartão de linguagens:
+    |             ^^^^^^^^^^
+    |
+error: `titel` should be `title`
+  --> ./docs/readme_nl.md:181:36
+    |
+181 | - `custom_title` - Stelt een eigen titel voor de kaart in
+    |                                    ^^^^^
+    |
+error: `ser` should be `set`
+  --> ./docs/readme_pt-BR.md:171:29
+    |
+171 | > Nomes de linguagens devem ser uma sequência escapada de URI, como específicado em [Codificação por cento](https://pt.wikipedia.org/wiki/Codificação_por_cento)
+    |                             ^^^
+    |
+error: `doen` should be `done`, `don`, `doesn`
+  --> ./docs/readme_nl.md:186:75
+    |
+186 | > Zie [urlencoder.org](https://www.urlencoder.org/) om dit automatisch te doen.
+    |                                                                           ^^^^
+    |
+error: `tekst` should be `text`
+  --> ./docs/readme_nl.md:191:51
+    |
+191 | - `line_height` - Verandert de lijn hoogte tussen tekst _(nummer)_
+    |                                                   ^^^^^
+    |
+error: `titel` should be `title`
+  --> ./docs/readme_nl.md:193:36
+    |
+193 | - `custom_title` - Stelt een eigen titel voor de kaart in
+    |                                    ^^^^^
+    |
+error: `variabele` should be `variable`
+  --> ./docs/readme_nl.md:218:39
+    |
+218 | Gebruikt [show_owner](#customization) variabele om de repo\'s eigenaar toe te voegen
+    |                                       ^^^^^^^^^
+    |
+error: `Alle` should be `All`, `Alley`
+  --> ./docs/readme_nl.md:295:5
+    |
+295 | ### Alle demos
+    |     ^^^^
+    |
+error: `limite` should be `limit`
+  --> ./docs/readme_pt-BR.md:313:146
+    |
+313 | Como a API do GitHub permite apenas 5 mil solicitações por hora, é possível que minha `https://github-readme-stats.vercel.app/api` atinja a cota limite. Se hospedar em seu próprio servidor Vercel, não precisará se preocupar com nada. Clique no botão de implantação para começar!
+    |                                                                                                                                                  ^^^^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_nl.md:309:8
+    |
+309 | - Voeg alle commits toe
+    |        ^^^^
+    |
+error: `ser` should be `set`
+  --> ./docs/readme_pt-BR.md:334:298
+    |
+334 | 1. Selecione a raiz e mantenha tudo como está, basta adicionar sua variável de ambiente chamada PAT_1 (que será exibida), que conterá um token de acesso pessoal (PAT), que você pode criar facilmente [aqui](https://github.com/settings/tokens/new) (deixe tudo como está, apenas dê um nome, que pode ser o que você quiser)
+    |                                                                                                                                                                                                                                                                                                          ^^^
+    |
+error: `Als` should be `Also`
+  --> ./docs/readme_nl.md:362:151
+    |
+362 | Sinds de GitHub API alleen maar 5k verzoeken per uur toestaat, zou mijn `https://github-readme-stats.vercel.app/api` mogelijk de rate limiet behalen. Als je het op je eigen Vercel server host, dan hoef je je nergens zorgen om te maken. Klik op de deploy knop om te beginnen!
+    |                                                                                                                                                       ^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_nl.md:376:40
+    |
+376 | 4. Log in op GitHub en sta toegang tot alle repositories toe, wanneer dat gevraagt wordt.
+    |                                        ^^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_nl.md:393:14
+    |
+393 | Hoe dan ook, als je dit project gebruikt en er blij mee bent, of mij wilt aanmoedigen om dingen te blijven maken, zijn er een paar manieren om dit te doen; -
+    |              ^^^
+    |
+error: `doen` should be `done`, `don`, `doesn`
+  --> ./docs/readme_nl.md:393:151
+    |
+393 | Hoe dan ook, als je dit project gebruikt en er blij mee bent, of mij wilt aanmoedigen om dingen te blijven maken, zijn er een paar manieren om dit te doen; -
+    |                                                                                                                                                       ^^^^
+    |
+error: `Funktion` should be `Function`
+  --> ./docs/readme_de.md:35:84
+   |
+35 |     <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">Funktion wünschen</a>
+   |                                                                                    ^^^^^^^^
+   |
+error: `seperated` should be `separated`
+  --> ./docs/readme_cn.md:170:31
+    |
+170 | - `hide` - 从卡片中隐藏指定语言 _(Comma seperated values)_
+    |                                         ^^^^^^^^^
+    |
+error: `deine` should be `define`
+  --> ./docs/readme_de.md:73:22
+   |
+73 | Kopiere folgendes in deine Readme um die Statistiken zu benutzen.
+   |                      ^^^^^
+   |
+error: `Alle` should be `All`, `Alley`
+  --> ./docs/readme_de.md:110:6
+    |
+110 | #### Alle eingebauten Themes :-
+    |      ^^^^
+    |
+error: `oder` should be `order`, `odor`
+  --> ./docs/readme_de.md:116:85
+    |
+116 | Du kannst dir eine Vorschau [aller verfügbaren Themes](../themes/README.md) ansehen oder die [theme config Datei](../themes/index.js) ansehen.
+    |                                                                                     ^^^^
+    |
+error: `oder` should be `order`, `odor`
+  --> ./docs/readme_de.md:121:52
+    |
+121 | Du kannst das Erscheinungsbild deiner `Stats Card` oder `Repo Card`, mithilfe von URL-Parametern, nach deinen Vorlieben anpassen.
+    |                                                    ^^^^
+    |
+error: `oder` should be `order`, `odor`
+  --> ./docs/readme_de.md:128:49
+    |
+128 | - `bg_color` - Hintergrundfarbe _(hex color)_ **oder** ein Farbverlauf in der Form von _winkel,start,ende_
+    |                                                 ^^^^
+    |
+error: `ende` should be `end`
+  --> ./docs/readme_de.md:128:102
+    |
+128 | - `bg_color` - Hintergrundfarbe _(hex color)_ **oder** ein Farbverlauf in der Form von _winkel,start,ende_
+    |                                                                                                      ^^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_de.md:130:49
+    |
+130 | - `theme` - Name des Erscheinungsbildes/Themes [alle verfügbaren Themes](../themes/README.md)
+    |                                                 ^^^^
+    |
+error: `Sie` should be `Size`, `Sigh`
+  --> ./docs/readme_de.md:132:22
+    |
+132 | - `locale` - Stellen Sie die Sprache auf der Karte ein _(z.B. cn, de, es, etc.)_
+    |                      ^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:136:125
+    |
+136 | Du kannst mehrere, mit Kommas separierte, Werte in der bg_color Option angeben, um einen Farbverlauf anzuzeigen. Das Format ist:-
+    |                                                                                                                             ^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_de.md:142:74
+    |
+142 | > Hinweis bzgl. des Caches: Wenn die Anzahl der Forks und Stars geringer als 1 Tsd. ist, haben die Repo-Cards eine Standard-Cachezeit von 30 Minuten (1800 Sekunden), ansonsten beträgt diese 2 Stunden (7200 Sekunden). Außerdem ist der Cache auf ein Minimum von 30 Minuten und ein Maximum von 24 Stunden begrenzt.
+    |                                                                          ^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:142:85
+    |
+142 | > Hinweis bzgl. des Caches: Wenn die Anzahl der Forks und Stars geringer als 1 Tsd. ist, haben die Repo-Cards eine Standard-Cachezeit von 30 Minuten (1800 Sekunden), ansonsten beträgt diese 2 Stunden (7200 Sekunden). Außerdem ist der Cache auf ein Minimum von 30 Minuten und ein Maximum von 24 Stunden begrenzt.
+    |                                                                                     ^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:142:227
+    |
+142 | > Hinweis bzgl. des Caches: Wenn die Anzahl der Forks und Stars geringer als 1 Tsd. ist, haben die Repo-Cards eine Standard-Cachezeit von 30 Minuten (1800 Sekunden), ansonsten beträgt diese 2 Stunden (7200 Sekunden). Außerdem ist der Cache auf ein Minimum von 30 Minuten und ein Maximum von 24 Stunden begrenzt.
+    |                                                                                                                                                                                                                                   ^^^
+    |
+error: `Elemente` should be `Element`, `Elements`
+  --> ./docs/readme_de.md:146:36
+    |
+146 | - `hide` - Verbirgt die [angegeben Elemente](#verbergen-individueller-statistiken) _(mit Komma abgegrenzte Werte)_
+    |                                    ^^^^^^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_de.md:150:33
+    |
+150 | - `include_all_commits` - Zähle alle Beiträge anstatt nur das aktuelle Jahr _(Boolean)_
+    |                                 ^^^^
+    |
+error: `manuell` should be `manual`
+  --> ./docs/readme_de.md:163:44
+    |
+163 | - `card_width` - Lege die Breite der Karte manuell fest _(Zahl)_
+    |                                            ^^^^^^^
+    |
+error: `Titel` should be `Title`
+  --> ./docs/readme_de.md:174:51
+    |
+174 | - `custom_title` - Legt einen benutzerdefinierten Titel fest
+    |                                                   ^^^^^
+    |
+error: `oder` should be `order`, `odor`
+  --> ./docs/readme_de.md:177:118
+    |
+177 | - `api_domain` - Legt eine benutzerdefinierte API Domain fest, z.B. für [Hakatime](https://github.com/mujx/hakatime) oder [Wakapi](https://github.com/muety/wakapi)
+    |                                                                                                                      ^^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_de.md:178:46
+    |
+178 | - `range` – Fragt eine andere Zeitspanne an, als jene, welche standardmäßig in Wakatime hinterlegt ist. Zum Beispiel `last_7_days`. Siehe [WakaTime API Dokumentation](https://wakatime.com/developers#stats).
+    |                                              ^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:178:100
+    |
+178 | - `range` – Fragt eine andere Zeitspanne an, als jene, welche standardmäßig in Wakatime hinterlegt ist. Zum Beispiel `last_7_days`. Siehe [WakaTime API Dokumentation](https://wakatime.com/developers#stats).
+    |                                                                                                    ^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_de.md:184:79
+    |
+184 | GitHub Extra-Pins ermöglicht es mit Hilfe einer Readme auf deinem Profil mehr als 6 Repositories anzuzeigen.
+    |                                                                               ^^^
+    |
+error: `deine` should be `define`
+  --> ./docs/readme_de.md:190:21
+    |
+190 | Füge diesen Code in deine Readme-Datei ein und passe die Links an.
+    |                     ^^^^^
+    |
+error: `oder` should be `order`, `odor`
+  --> ./docs/readme_de.md:212:90
+    |
+212 | _HINWEIS: Die Top Programmiersprachen treffen keine Aussage über persönliche Fähigkeiten oder dergleichen, es ist lediglich eine auf den GitHub-Statistiken des Nutzers basierende Kennzahl, welche Programmiersprache wie häufig verwendet wurde._
+    |                                                                                          ^^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:212:111
+    |
+212 | _HINWEIS: Die Top Programmiersprachen treffen keine Aussage über persönliche Fähigkeiten oder dergleichen, es ist lediglich eine auf den GitHub-Statistiken des Nutzers basierende Kennzahl, welche Programmiersprache wie häufig verwendet wurde._
+    |                                                                                                               ^^^
+    |
+error: `deine` should be `define`
+  --> ./docs/readme_de.md:216:21
+    |
+216 | Füge diesen Code in deine Readme-Datei ein und passe die Links an.
+    |                     ^^^^^
+    |
+error: `Alle` should be `All`, `Alley`
+  --> ./docs/readme_de.md:269:5
+    |
+269 | ### Alle Beispiele
+    |     ^^^^
+    |
+error: `Alle` should be `All`, `Alley`
+  --> ./docs/readme_de.md:283:3
+    |
+283 | - Alle Beiträge anzeigen
+    |   ^^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:313:15
+    |
+313 | Üblicherweise ist es in `.md`-Dateien nicht möglich Bilder nebeneinander anzuzeigen. Um dies zu ermöglichen, kannst du folgendes tun:
+    |               ^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_de.md:331:110
+    |
+331 | Hinweis: Seit [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) sollte es möglich sein, mehr als 5 Tsd Aufrufe pro Stunde ohne Downtimes zu verkraften :D
+    |                                                                                                              ^^^
+    |
+error: `alle` should be `all`, `alley`
+  --> ./docs/readme_de.md:343:57
+    |
+343 | 1. Verbinde dich mit GitHub und erlaube den Zugriff auf alle Repositories (falls gefordert)
+    |                                                         ^^^^
+    |
+error: `Klick` should be `Click`
+  --> ./docs/readme_de.md:346:4
+    |
+346 | 1. Klick `Import Project`
+    |    ^^^^^
+    |
+error: `Klick` should be `Click`
+  --> ./docs/readme_de.md:348:4
+    |
+348 | 1. Klick `Import Git Repository`
+    |    ^^^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_de.md:350:82
+    |
+350 | 1. Wähle root und füge eine Umgebungsvariable namens PAT_1 (siehe Abbildung) die als Wert deinen persönlichen Access Token (PAT) hat hinzu, den du einfach [hier](https://github.com/settings/tokens/new) erzeugen kannst (lasse alles wie es ist, vergebe einen beliebigen Namen)
+    |                                                                                  ^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:350:239
+    |
+350 | 1. Wähle root und füge eine Umgebungsvariable namens PAT_1 (siehe Abbildung) die als Wert deinen persönlichen Access Token (PAT) hat hinzu, den du einfach [hier](https://github.com/settings/tokens/new) erzeugen kannst (lasse alles wie es ist, vergebe einen beliebigen Namen)
+    |                                                                                                                                                                                                                                               ^^^
+    |
+error: `deine` should be `define`
+  --> ./docs/readme_de.md:352:47
+    |
+352 | 1. Klicke auf `Deploy`, und das wars. Besuche deine Domains um die API zu benutzen!
+    |                                               ^^^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_de.md:357:33
+    |
+357 | Ich versuche alles was ich kann als Open-Source zur Verfügung zu stellen, als auch jedem der Hilfe bei der Benutzung dieses Projektes braucht zu antworten. Natürlich beansprucht sowas Zeit und du kannst diesen Dienst kostenlos benutzen.
+    |                                 ^^^
+    |
+error: `als` should be `also`
+  --> ./docs/readme_de.md:357:75
+    |
+357 | Ich versuche alles was ich kann als Open-Source zur Verfügung zu stellen, als auch jedem der Hilfe bei der Benutzung dieses Projektes braucht zu antworten. Natürlich beansprucht sowas Zeit und du kannst diesen Dienst kostenlos benutzen.
+    |                                                                           ^^^
+    |
+error: `ist` should be `is`, `it`, `its`, `sit`, `list`
+  --> ./docs/readme_de.md:372:26
+    |
+372 | Mitarbeit an dem Projekt ist immer Willkommen! <3
+    |                          ^^^
+    |
+error: `automatico` should be `automation`
+  --> ./docs/readme_it.md:95:95
+   |
+95 | _Nota: se hai deciso di fare il deploy del progetto, i contributi privati verranno inclusi in automatico._
+   |                                                                                               ^^^^^^^^^^
+   |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:26:83
+   |
+26 | | `algolia` ![algolia][algolia] | `great-gatsby` ![great-gatsby][great-gatsby] | `darcula` ![darcula][darcula] |
+   |                                                                                   ^^^^^^^
+   |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:26:94
+   |
+26 | | `algolia` ![algolia][algolia] | `great-gatsby` ![great-gatsby][great-gatsby] | `darcula` ![darcula][darcula] |
+   |                                                                                              ^^^^^^^
+   |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:26:103
+   |
+26 | | `algolia` ![algolia][algolia] | `great-gatsby` ![great-gatsby][great-gatsby] | `darcula` ![darcula][darcula] |
+   |                                                                                                       ^^^^^^^
+   |
+error: `possibile` should be `possible`
+  --> ./docs/readme_it.md:113:46
+    |
+113 | Esistono alcuni temi predefiniti coi quali è possibile personalizzare l'aspetto delle card. In alternativa, è possibile effettuare una [personalizzazione manuale](#personalizzazione).
+    |                                              ^^^^^^^^^
+    |
+error: `possibile` should be `possible`
+  --> ./docs/readme_it.md:113:111
+    |
+113 | Esistono alcuni temi predefiniti coi quali è possibile personalizzare l'aspetto delle card. In alternativa, è possibile effettuare una [personalizzazione manuale](#personalizzazione).
+    |                                                                                                               ^^^^^^^^^
+    |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:54:93
+   |
+54 | | `algolia` ![algolia][algolia_repo] | `great-gatsby` ![great-gatsby][great-gatsby_repo] | `darcula` ![darcula][darcula_repo] |
+   |                                                                                             ^^^^^^^
+   |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:54:104
+   |
+54 | | `algolia` ![algolia][algolia_repo] | `great-gatsby` ![great-gatsby][great-gatsby_repo] | `darcula` ![darcula][darcula_repo] |
+   |                                                                                                        ^^^^^^^
+   |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:54:113
+   |
+54 | | `algolia` ![algolia][algolia_repo] | `great-gatsby` ![great-gatsby][great-gatsby_repo] | `darcula` ![darcula][darcula_repo] |
+   |                                                                                                                 ^^^^^^^
+   |
+error: `valide` should be `valid`
+  --> ./docs/readme_it.md:154:14
+    |
+154 | #### Opzioni valide solo per le card delle statistiche:
+    |              ^^^^^^
+    |
+error: `valide` should be `valid`
+  --> ./docs/readme_it.md:164:14
+    |
+164 | #### Opzioni valide solo per le Repo Card:
+    |              ^^^^^^
+    |
+error: `valide` should be `valid`
+  --> ./docs/readme_it.md:168:14
+    |
+168 | #### Opzioni valide solo per le card dei linguaggi:
+    |              ^^^^^^
+    |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:94:2
+   |
+94 | [darcula]: https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&hide=contribs,prs&cache_seconds=86400&theme=darcula
+   |  ^^^^^^^
+   |
+error: `specificato` should be `specification`
+  --> ./docs/readme_it.md:176:87
+    |
+176 | > Per i nomi dei linguaggi, assicurati di effettuare l'encoding giusto nell'uri, come specificato in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
+    |                                                                                       ^^^^^^^^^^^
+    |
+error: `darcula` should be `dracula`
+  --> ./themes/README.md:157:2
+    |
+157 | [darcula_repo]: https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats&cache_seconds=86400&theme=darcula
+    |  ^^^^^^^
+    |
+error: `determinato` should be `determination`
+  --> ./docs/readme_it.md:207:99
+    |
+207 | _NOTA: questa card non indica il livello di abilità, ma piuttosto quanto codice hai scritto in un determinato linguaggio_
+    |                                                                                                   ^^^^^^^^^^^
+    |
+error: `darcula` should be `dracula`
+  --> ./themes/index.js:147:3
+    |
+147 |   darcula: {
+    |   ^^^^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./themes/index.js:148:19
+    |
+148 |     title_color: "BA5F17",
+    |                   ^^
+    |
+error: `Formating` should be `Formatting`
+  --> ./api/pin.js:49:58
+   |
+49 |       if star count & fork count is over 1k then we are kFormating the text
+   |                                                          ^^^^^^^^^
+   |

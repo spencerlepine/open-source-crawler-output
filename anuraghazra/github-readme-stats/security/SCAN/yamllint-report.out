@@ -1,0 +1,2 @@
+/github/workspace/codecov.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/codecov.yml:2:23: [warning] truthy value should be one of [false, true] (truthy)

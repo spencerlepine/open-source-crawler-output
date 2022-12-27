@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:7dc361c9-4e58-40c4-a70d-018e972af53b" version="1">
+  <metadata>
+    <timestamp>2022-12-27T08:35:32.891Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v3">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v3</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/setup-node@v3">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-node</name>
+      <version>v3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-node@v3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/skx/github-action-tester@master">
+      <publisher/>
+      <group>skx</group>
+      <name>github-action-tester</name>
+      <version>master</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/skx/github-action-tester@master</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/labeler@v4">
+      <publisher/>
+      <group>actions</group>
+      <name>labeler</name>
+      <version>v4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/labeler@v4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/bahmutov/npm-install@v1">
+      <publisher/>
+      <group>bahmutov</group>
+      <name>npm-install</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/bahmutov/npm-install@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/codecov/codecov-action@v1">
+      <publisher/>
+      <group>codecov</group>
+      <name>codecov-action</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/codecov/codecov-action@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/rickstaa/top-issues-action@v1">
+      <publisher/>
+      <group>rickstaa</group>
+      <name>top-issues-action</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/rickstaa/top-issues-action@v1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/e2e-test.yml, /github/workspace/.github/workflows/generate-theme-doc.yml, /github/workspace/.github/workflows/label-pr.yml, /github/workspace/.github/workflows/preview-theme.yml, /github/workspace/.github/workflows/test.yml, /github/workspace/.github/workflows/top-issues-dashboard.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
