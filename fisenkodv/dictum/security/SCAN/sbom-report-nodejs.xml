@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:167fa1b8-75fa-4f49-adc8-a1ae1fa95e16" version="1">
+  <metadata>
+    <timestamp>2022-12-28T08:30:30.914Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+    <component type="application" bom-ref="pkg:application/data-uri-to-buffer@4.0.0">
+      <publisher/>
+      <group/>
+      <name>data-uri-to-buffer</name>
+      <version>4.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">56bde62c103ca9699cbac72148b00ea202a043f270c6e96fdd1344e055e7616446ba3ceb456408e26d767d0a919305f4e82d0a6a784baf884af86c9d72166c68</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:application/data-uri-to-buffer@4.0.0</purl>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/fetch-blob@3.1.4">
+      <publisher/>
+      <group/>
+      <name>fetch-blob</name>
+      <version>3.1.4</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">12ae57bf9f95952ad8584a8aaeeb316350b71e6fe18de02c086546ddfb7ba596a19540028691994ff32cd569922e71008ac117b338f3bbfb3e71ee87641d951c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/fetch-blob@3.1.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/formdata-polyfill@4.0.10">
+      <publisher/>
+      <group/>
+      <name>formdata-polyfill</name>
+      <version>4.0.10</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">6ee7b01f332f60bdbd8dd7904d520b79c49a64a9edfd12568e8642179396eb467aeff1a648b06438533baa1d4f237cc536d25b6992f9790bb5bcb7daccec23e2</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/formdata-polyfill@4.0.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/lodash@4.17.21">
+      <publisher/>
+      <group/>
+      <name>lodash</name>
+      <version>4.17.21</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">bf690311ee7b95e713ba568322e3533f2dd1cb880b189e99d4edef13592b81764daec43e2c54c61d5c558dc5cfb35ecb85b65519e74026ff17675b6f8f916f4a</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/lodash@4.17.21</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/node-domexception@1.0.0">
+      <publisher/>
+      <group/>
+      <name>node-domexception</name>
+      <version>1.0.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">fe3299a0ca70d05f06470978fde2d138f03771f717b4b0293f44332e6513fc7b8f0995b207b218f59acc78ac363bf9c522a3d00773d533d6989b4177d760170d</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/node-domexception@1.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/node-fetch@3.1.1">
+      <publisher/>
+      <group/>
+      <name>node-fetch</name>
+      <version>3.1.1</version>
+      <description/>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">48c93ebca814efb3d8a2d45d5b3a9919365eb852a5b09d21bb828fbe240a91f63e377be7d8c233af4aefa6762947c32d077204ba194472e38b6c6bcb46503eca</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/node-fetch@3.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/web-streams-polyfill@3.2.0">
+      <publisher/>
+      <group/>
+      <name>web-streams-polyfill</name>
+      <version>3.2.0</version>
+      <description/>
+      <scope>optional</scope>
+      <hashes>
+        <hash alg="SHA-512">12a3e644478ecedb5a2d19b91d2ee2a3df20a01819ec8573efd683bea8c3d246172ed1594dcd13fd4eb01d33cac888dbf8c74dec3148217ea181d044a5699f3c</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/web-streams-polyfill@3.2.0</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/dictum-telegram/package-lock.json</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+  <dependencies>
+    <dependency ref="pkg:npm/data-uri-to-buffer@4.0.0"/>
+    <dependency ref="pkg:npm/fetch-blob@3.1.4"/>
+    <dependency ref="pkg:npm/formdata-polyfill@4.0.10"/>
+    <dependency ref="pkg:npm/lodash@4.17.21"/>
+    <dependency ref="pkg:npm/node-domexception@1.0.0"/>
+    <dependency ref="pkg:npm/node-fetch@3.1.1"/>
+    <dependency ref="pkg:npm/web-streams-polyfill@3.2.0"/>
+  </dependencies>
+</bom>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:6481fa69-499b-419c-99f1-697c256acee6" version="1">
+  <metadata>
+    <timestamp>2022-12-28T08:31:56.005Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/setup-java@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-java</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-java@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/github/codeql-action/init@v1">
+      <publisher/>
+      <group/>
+      <name>github/codeql-action/init</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/github/codeql-action/init@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/github/codeql-action/autobuild@v1">
+      <publisher/>
+      <group/>
+      <name>github/codeql-action/autobuild</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/github/codeql-action/autobuild@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/github/codeql-action/analyze@v1">
+      <publisher/>
+      <group/>
+      <name>github/codeql-action/analyze</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/github/codeql-action/analyze@v1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/api_publish_docker_image.yml, /github/workspace/.github/workflows/codeql-analysis.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
