@@ -1,0 +1,13 @@
+## Detected Typos
+error: `nd` should be `and`
+  --> ./README.md:398:151
+    |
+398 | | license         | enum         | optional   | The license of the post. Valid values are “all-rights-reserved”, “cc-40-by”, “cc-40-by-sa”, “cc-40-by-nd”, “cc-40-by-nc”, “cc-40-by-nc-nd”, “cc-40-by-nc-sa”, “cc-40-zero”, “public-domain”. The default is “all-rights-reserved”. |
+    |                                                                                                                                                       ^^
+    |
+error: `nd` should be `and`
+  --> ./README.md:398:184
+    |
+398 | | license         | enum         | optional   | The license of the post. Valid values are “all-rights-reserved”, “cc-40-by”, “cc-40-by-sa”, “cc-40-by-nd”, “cc-40-by-nc”, “cc-40-by-nc-nd”, “cc-40-by-nc-sa”, “cc-40-zero”, “public-domain”. The default is “all-rights-reserved”. |
+    |                                                                                                                                                                                        ^^
+    |
