@@ -1,0 +1,158 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:e02ced58-4396-43cb-9393-4fd92239a05a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-12-30T08:28:36.555Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "6.0.0"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "AutoMapper",
+      "version": "10.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AutoMapper@10.1.1",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AutoMapper@10.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "AutoMapper.Extensions.Microsoft.DependencyInjection",
+      "version": "8.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/AutoMapper.Extensions.Microsoft.DependencyInjection@8.1.1",
+      "type": "library",
+      "bom-ref": "pkg:nuget/AutoMapper.Extensions.Microsoft.DependencyInjection@8.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "BCrypt.Net-Next",
+      "version": "4.0.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/BCrypt.Net-Next@4.0.2",
+      "type": "library",
+      "bom-ref": "pkg:nuget/BCrypt.Net-Next@4.0.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "version": "5.0.8",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@5.0.8",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@5.0.8"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Microsoft.AspNetCore.JsonPatch",
+      "version": "5.0.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Microsoft.AspNetCore.JsonPatch@5.0.2",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Microsoft.AspNetCore.JsonPatch@5.0.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+      "version": "5.0.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Microsoft.AspNetCore.Mvc.NewtonsoftJson@5.0.2",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Microsoft.AspNetCore.Mvc.NewtonsoftJson@5.0.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Microsoft.EntityFrameworkCore.InMemory",
+      "version": "5.0.8",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.InMemory@5.0.8",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Microsoft.EntityFrameworkCore.InMemory@5.0.8"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "MongoDB.Bson",
+      "version": "2.13.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/MongoDB.Bson@2.13.2",
+      "type": "library",
+      "bom-ref": "pkg:nuget/MongoDB.Bson@2.13.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Swashbuckle.AspNetCore",
+      "version": "5.6.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore@5.6.3",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore@5.6.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Swashbuckle.AspNetCore.Newtonsoft",
+      "version": "5.6.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore.Newtonsoft@5.6.3",
+      "type": "library",
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore.Newtonsoft@5.6.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "6.11.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@6.11.1",
+      "type": "library",
+      "bom-ref": "pkg:nuget/System.IdentityModel.Tokens.Jwt@6.11.1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/ProgrammingQuotesApi.csproj",
+      "comment": "Package file"
+    }
+  ]
+}

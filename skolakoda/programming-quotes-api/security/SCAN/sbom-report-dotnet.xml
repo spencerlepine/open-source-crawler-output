@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:e02ced58-4396-43cb-9393-4fd92239a05a" version="1">
+  <metadata>
+    <timestamp>2022-12-30T08:28:36.558Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:nuget/AutoMapper@10.1.1">
+      <publisher/>
+      <group/>
+      <name>AutoMapper</name>
+      <version>10.1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AutoMapper@10.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/AutoMapper.Extensions.Microsoft.DependencyInjection@8.1.1">
+      <publisher/>
+      <group/>
+      <name>AutoMapper.Extensions.Microsoft.DependencyInjection</name>
+      <version>8.1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/AutoMapper.Extensions.Microsoft.DependencyInjection@8.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/BCrypt.Net-Next@4.0.2">
+      <publisher/>
+      <group/>
+      <name>BCrypt.Net-Next</name>
+      <version>4.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/BCrypt.Net-Next@4.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@5.0.8">
+      <publisher/>
+      <group/>
+      <name>Microsoft.AspNetCore.Authentication.JwtBearer</name>
+      <version>5.0.8</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@5.0.8</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNetCore.JsonPatch@5.0.2">
+      <publisher/>
+      <group/>
+      <name>Microsoft.AspNetCore.JsonPatch</name>
+      <version>5.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Microsoft.AspNetCore.JsonPatch@5.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNetCore.Mvc.NewtonsoftJson@5.0.2">
+      <publisher/>
+      <group/>
+      <name>Microsoft.AspNetCore.Mvc.NewtonsoftJson</name>
+      <version>5.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Microsoft.AspNetCore.Mvc.NewtonsoftJson@5.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.EntityFrameworkCore.InMemory@5.0.8">
+      <publisher/>
+      <group/>
+      <name>Microsoft.EntityFrameworkCore.InMemory</name>
+      <version>5.0.8</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Microsoft.EntityFrameworkCore.InMemory@5.0.8</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/MongoDB.Bson@2.13.2">
+      <publisher/>
+      <group/>
+      <name>MongoDB.Bson</name>
+      <version>2.13.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/MongoDB.Bson@2.13.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Swashbuckle.AspNetCore@5.6.3">
+      <publisher/>
+      <group/>
+      <name>Swashbuckle.AspNetCore</name>
+      <version>5.6.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Swashbuckle.AspNetCore@5.6.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Swashbuckle.AspNetCore.Newtonsoft@5.6.3">
+      <publisher/>
+      <group/>
+      <name>Swashbuckle.AspNetCore.Newtonsoft</name>
+      <version>5.6.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/Swashbuckle.AspNetCore.Newtonsoft@5.6.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.IdentityModel.Tokens.Jwt@6.11.1">
+      <publisher/>
+      <group/>
+      <name>System.IdentityModel.Tokens.Jwt</name>
+      <version>6.11.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:nuget/System.IdentityModel.Tokens.Jwt@6.11.1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/ProgrammingQuotesApi.csproj</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
