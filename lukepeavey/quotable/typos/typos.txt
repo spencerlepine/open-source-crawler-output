@@ -1,0 +1,19 @@
+## Detected Typos
+error: `browswer` should be `browser`
+  --> ./README.md:502:45
+    |
+502 | Autocomplete search for "Einstein" ([try in browswer](https://api.quotable.io/search/authors?query=Einst))
+    |                                             ^^^^^^^^
+    |
+error: `browswer` should be `browser`
+  --> ./README.md:512:34
+    |
+512 | Search for "John Adams" ([try in browswer](https://api.quotable.io/search/authors?query=john+adams))
+    |                                  ^^^^^^^^
+    |
+error: `browswer` should be `browser`
+  --> ./README.md:523:41
+    |
+523 | Search for "John Quincy Adams" ([try in browswer](https://api.quotable.io/search/authors?query=john+quincy+adams))
+    |                                         ^^^^^^^^
+    |
