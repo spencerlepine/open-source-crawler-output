@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:584a7218-fc06-4edd-bfca-1fd1ab17b240" version="1">
+  <metadata>
+    <timestamp>2023-01-05T08:32:38.235Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.0</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/php-actions/composer@v5">
+      <publisher/>
+      <group>php-actions</group>
+      <name>composer</name>
+      <version>v5</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/php-actions/composer@v5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/php-actions/phpunit@v2">
+      <publisher/>
+      <group>php-actions</group>
+      <name>phpunit</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/php-actions/phpunit@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v3">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/EndBug/add-and-commit@v9">
+      <publisher/>
+      <group>EndBug</group>
+      <name>add-and-commit</name>
+      <version>v9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/EndBug/add-and-commit@v9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/TriPSs/conventional-changelog-action@v3.7.1">
+      <publisher/>
+      <group>TriPSs</group>
+      <name>conventional-changelog-action</name>
+      <version>v3.7.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/TriPSs/conventional-changelog-action@v3.7.1</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/create-release@v1">
+      <publisher/>
+      <group>actions</group>
+      <name>create-release</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/create-release@v1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/phpunit-ci-coverage.yml, /github/workspace/.github/workflows/prettier.yml, /github/workspace/.github/workflows/release.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

@@ -1,0 +1,114 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:584a7218-fc06-4edd-bfca-1fd1ab17b240",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-05T08:32:38.231Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "6.0.0"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "php-actions",
+      "name": "composer",
+      "version": "v5",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/php-actions/composer@v5",
+      "type": "library",
+      "bom-ref": "pkg:github/php-actions/composer@v5"
+    },
+    {
+      "publisher": "",
+      "group": "php-actions",
+      "name": "phpunit",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/php-actions/phpunit@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/php-actions/phpunit@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v3",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v3"
+    },
+    {
+      "publisher": "",
+      "group": "EndBug",
+      "name": "add-and-commit",
+      "version": "v9",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/EndBug/add-and-commit@v9",
+      "type": "library",
+      "bom-ref": "pkg:github/EndBug/add-and-commit@v9"
+    },
+    {
+      "publisher": "",
+      "group": "TriPSs",
+      "name": "conventional-changelog-action",
+      "version": "v3.7.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/TriPSs/conventional-changelog-action@v3.7.1",
+      "type": "library",
+      "bom-ref": "pkg:github/TriPSs/conventional-changelog-action@v3.7.1"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "create-release",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/create-release@v1",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/create-release@v1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/phpunit-ci-coverage.yml, /github/workspace/.github/workflows/prettier.yml, /github/workspace/.github/workflows/release.yml",
+      "comment": "Package file"
+    }
+  ]
+}
