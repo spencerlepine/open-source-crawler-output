@@ -1,0 +1,3 @@
+{"Package": "elasticsearch", "Used?": "Yes", "Risk Score": "0.73", "Identified Risks": "Deprecated, Outdated Node version"}
+{"Package": "request", "Used?": "Yes", "Risk Score": "0.73", "Identified Risks": "Deprecated, Outdated Node version"}
+{"Package": "sol-redis-pool", "Used?": "Yes", "Risk Score": "0.73", "Identified Risks": "Deprecated, Outdated Node version"}
