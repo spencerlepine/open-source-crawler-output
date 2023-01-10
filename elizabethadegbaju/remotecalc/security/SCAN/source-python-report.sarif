@@ -1,0 +1,86 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Python Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "Python Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-r",
+            "-a",
+            "vuln",
+            "-n",
+            "3",
+            "-s",
+            "B101,B102,B105,B307,B308,B310,B322,B404,B601,B602,B603,B604,B605,B701,B702,B703",
+            "-iii",
+            "-ll",
+            "-o",
+            "/github/workspace/reports/source-python-report.json",
+            "-f",
+            "json",
+            "-x",
+            ".git,.svn,.mvn,.idea,.github,.hg,dist,obj,backup,docs,tests,test,test-packages,tmp,report,reports,node_modules,.terraform,.serverless,venv,.virtualenv,vendor,bower_components,.vscode,e2e,.pytest_cache,__pycache__,.storybook,.venv,.tox,examples,tutorials,samples,migrations,db_migrations,unittests,unittests_legacy,stubs,cypress,mock,mocks",
+            "/github/workspace"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-r -a vuln -n 3 -s B101,B102,B105,B307,B308,B310,B322,B404,B601,B602,B603,B604,B605,B701,B702,B703 -iii -ll -o /github/workspace/reports/source-python-report.json -f json -x .git,.svn,.mvn,.idea,.github,.hg,dist,obj,backup,docs,tests,test,test-packages,tmp,report,reports,node_modules,.terraform,.serverless,venv,.virtualenv,vendor,bower_components,.vscode,e2e,.pytest_cache,__pycache__,.storybook,.venv,.tox,examples,tutorials,samples,migrations,db_migrations,unittests,unittests_legacy,stubs,cypress,mock,mocks /github/workspace",
+          "endTimeUtc": "2023-01-10T08:30:40Z",
+          "workingDirectory": {
+            "uri": "https://github.com/elizabethadegbaju/remotecalc"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-10T08:30:40Z",
+          "workingDirectory": {
+            "uri": "https://github.com/elizabethadegbaju/remotecalc"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "8bbf4e6e-0421-4c97-bd8c-3cd1567d034b"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "8bbf4e6e-0421-4c97-bd8c-3cd1567d034b",
+      "runGuid": "b9dab845-da07-44d7-a968-a91d8973fd66"
+    }
+  ]
+}

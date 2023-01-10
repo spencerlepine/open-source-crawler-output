@@ -1,0 +1,4 @@
+/github/workspace/.travis.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/.travis.yml:11:14: [error] no new line character at the end of file (new-line-at-end-of-file)
+/github/workspace/.coveralls.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/.coveralls.yml:2:46: [error] no new line character at the end of file (new-line-at-end-of-file)
