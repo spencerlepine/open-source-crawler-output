@@ -1,0 +1,79 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Security Audit for Infrastructure",
+          "version": "1.0.0-scan",
+          "fullName": "Security Audit for Infrastructure"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-s",
+            "--framework",
+            "dockerfile",
+            "--quiet",
+            "--no-guide",
+            "-o",
+            "json",
+            "-d",
+            "/github/workspace"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-s --framework dockerfile --quiet --no-guide -o json -d /github/workspace",
+          "endTimeUtc": "2023-01-11T08:32:39Z",
+          "workingDirectory": {
+            "uri": "https://github.com/r-spacex/spacex-api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-11T08:32:39Z",
+          "workingDirectory": {
+            "uri": "https://github.com/r-spacex/spacex-api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "28795dae-f7c1-4c75-b920-a1fea5f7f87c"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "28795dae-f7c1-4c75-b920-a1fea5f7f87c",
+      "runGuid": "21b7329a-62a3-4c35-90a9-4450c993ff9c"
+    }
+  ]
+}

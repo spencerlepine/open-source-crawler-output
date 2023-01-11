@@ -1,0 +1,92 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:628de46b-4db4-4517-8539-7709641f84e7",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-11T08:34:43.277Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "6.0.0"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "github/codeql-action/init",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/github/codeql-action/init@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/github/codeql-action/init@v1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "github/codeql-action/autobuild",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/github/codeql-action/autobuild@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/github/codeql-action/autobuild@v1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "github/codeql-action/analyze",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/github/codeql-action/analyze@v1",
+      "type": "library",
+      "bom-ref": "pkg:github/github/codeql-action/analyze@v1"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-node",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-node@v1",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/setup-node@v1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/codeql-analysis.yml, /github/workspace/.github/workflows/deploy.yml",
+      "comment": "Package file"
+    }
+  ]
+}

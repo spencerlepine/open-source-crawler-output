@@ -1,0 +1,2 @@
+{"Package": "es-shim-unscopables", "Used?": "No", "Risk Score": "0.83", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "has-property-descriptors", "Used?": "No", "Risk Score": "0.83", "Identified Risks": "Has fewer versions, Has fewer maintainers"}

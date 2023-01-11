@@ -1,0 +1,103 @@
+## Detected Typos
+error: `AFETR` should be `AFTER`
+  --> ./docs/starlink/v4/all.md:50:18
+   |
+50 |         "SITE": "AFETR",
+   |                  ^^^^^
+   |
+error: `AFETR` should be `AFTER`
+  --> ./docs/starlink/v4/one.md:53:16
+   |
+53 |       "SITE": "AFETR",
+   |                ^^^^^
+   |
+error: `AFETR` should be `AFTER`
+  --> ./docs/starlink/v4/query.md:64:20
+   |
+64 |           "SITE": "AFETR",
+   |                    ^^^^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v4/one.md:64:34
+   |
+64 |     "launchpad": "5e9e4501f509094ba4566f84",
+   |                                  ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v4/latest.md:60:34
+   |
+60 |     "launchpad": "5e9e4501f509094ba4566f84",
+   |                                  ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v4/all.md:61:38
+   |
+61 |         "launchpad": "5e9e4501f509094ba4566f84",
+   |                                      ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v4/past.md:61:38
+   |
+61 |         "launchpad": "5e9e4501f509094ba4566f84",
+   |                                      ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v4/upcoming.md:61:38
+   |
+61 |         "launchpad": "5e9e4501f509094ba4566f84",
+   |                                      ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v4/next.md:60:34
+   |
+60 |     "launchpad": "5e9e4501f509094ba4566f84",
+   |                                  ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v5/one.md:64:34
+   |
+64 |     "launchpad": "5e9e4501f509094ba4566f84",
+   |                                  ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v5/latest.md:60:34
+   |
+60 |     "launchpad": "5e9e4501f509094ba4566f84",
+   |                                  ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v5/all.md:61:38
+   |
+61 |         "launchpad": "5e9e4501f509094ba4566f84",
+   |                                      ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v5/past.md:61:38
+   |
+61 |         "launchpad": "5e9e4501f509094ba4566f84",
+   |                                      ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v5/upcoming.md:61:38
+   |
+61 |         "launchpad": "5e9e4501f509094ba4566f84",
+   |                                      ^^
+   |
+error: `ba` should be `by`, `be`
+  --> ./docs/launches/v5/next.md:60:34
+   |
+60 |     "launchpad": "5e9e4501f509094ba4566f84",
+   |                                  ^^
+   |
+error: `avaliable` should be `available`
+  --> ./docs/README.md:15:68
+   |
+15 | Each route is individually versioned, see route list below for all avaliable versions. The API can also be pinned to the lastest version with `https://api.spacexdata.com/latest`, but only do this if you're cool with potential breaking changes.
+   |                                                                    ^^^^^^^^^
+   |
+error: `lastest` should be `latest`
+  --> ./docs/README.md:15:122
+   |
+15 | Each route is individually versioned, see route list below for all avaliable versions. The API can also be pinned to the lastest version with `https://api.spacexdata.com/latest`, but only do this if you're cool with potential breaking changes.
+   |                                                                                                                          ^^^^^^^
+   |
