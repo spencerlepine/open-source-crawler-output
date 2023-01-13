@@ -1,0 +1,2521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:7003b98a-f6c6-49bf-9587-ae74894e2110" version="1">
+  <metadata>
+    <timestamp>2023-01-13T08:33:10.711Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.1</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+    <component type="library" bom-ref="pkg:maven/root@latest?type=jar">
+      <publisher/>
+      <group/>
+      <name>root</name>
+      <version>latest</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/root@latest?type=jar</purl>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/org.jacoco/org.jacoco.ant@0.8.3?type=jar">
+      <publisher/>
+      <group>org.jacoco</group>
+      <name>org.jacoco.ant</name>
+      <version>0.8.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jacoco/org.jacoco.ant@0.8.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jacoco/org.jacoco.core@0.8.3?type=jar">
+      <publisher/>
+      <group>org.jacoco</group>
+      <name>org.jacoco.core</name>
+      <version>0.8.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jacoco/org.jacoco.core@0.8.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.ow2.asm/asm@7.0?type=jar">
+      <publisher/>
+      <group>org.ow2.asm</group>
+      <name>asm</name>
+      <version>7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.ow2.asm/asm@7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.ow2.asm/asm-commons@7.0?type=jar">
+      <publisher/>
+      <group>org.ow2.asm</group>
+      <name>asm-commons</name>
+      <version>7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.ow2.asm/asm-commons@7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.ow2.asm/asm-tree@7.0?type=jar">
+      <publisher/>
+      <group>org.ow2.asm</group>
+      <name>asm-tree</name>
+      <version>7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.ow2.asm/asm-tree@7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.ow2.asm/asm-analysis@7.0?type=jar">
+      <publisher/>
+      <group>org.ow2.asm</group>
+      <name>asm-analysis</name>
+      <version>7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.ow2.asm/asm-analysis@7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jacoco/org.jacoco.report@0.8.3?type=jar">
+      <publisher/>
+      <group>org.jacoco</group>
+      <name>org.jacoco.report</name>
+      <version>0.8.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jacoco/org.jacoco.report@0.8.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jacoco/org.jacoco.agent@0.8.3?type=jar">
+      <publisher/>
+      <group>org.jacoco</group>
+      <name>org.jacoco.agent</name>
+      <version>0.8.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jacoco/org.jacoco.agent@0.8.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.github.fingerprintjs/fingerprint-android@1.2?type=jar">
+      <publisher/>
+      <group>com.github.fingerprintjs</group>
+      <name>fingerprint-android</name>
+      <version>1.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.github.fingerprintjs/fingerprint-android@1.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains/annotations@13.0?type=jar">
+      <publisher/>
+      <group>org.jetbrains</group>
+      <name>annotations</name>
+      <version>13.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains/annotations@13.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-common</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.appcompat/appcompat@1.3.0?type=jar">
+      <publisher/>
+      <group>androidx.appcompat</group>
+      <name>appcompat</name>
+      <version>1.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.appcompat/appcompat@1.3.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.annotation/annotation@1.2.0?type=jar">
+      <publisher/>
+      <group>androidx.annotation</group>
+      <name>annotation</name>
+      <version>1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.annotation/annotation@1.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.core/core@1.5.0?type=jar">
+      <publisher/>
+      <group>androidx.core</group>
+      <name>core</name>
+      <version>1.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.core/core@1.5.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.cursoradapter/cursoradapter@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.cursoradapter</group>
+      <name>cursoradapter</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.cursoradapter/cursoradapter@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.activity/activity@1.2.3?type=jar">
+      <publisher/>
+      <group>androidx.activity</group>
+      <name>activity</name>
+      <version>1.2.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.activity/activity@1.2.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.fragment/fragment@1.3.4?type=jar">
+      <publisher/>
+      <group>androidx.fragment</group>
+      <name>fragment</name>
+      <version>1.3.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.fragment/fragment@1.3.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.appcompat/appcompat-resources@1.3.0?type=jar">
+      <publisher/>
+      <group>androidx.appcompat</group>
+      <name>appcompat-resources</name>
+      <version>1.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.appcompat/appcompat-resources@1.3.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.drawerlayout/drawerlayout@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.drawerlayout</group>
+      <name>drawerlayout</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.drawerlayout/drawerlayout@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.savedstate/savedstate@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.savedstate</group>
+      <name>savedstate</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.savedstate/savedstate@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.collection/collection@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.collection</group>
+      <name>collection</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.collection/collection@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-runtime@2.3.1?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-runtime</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-runtime@2.3.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel@2.3.1?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-viewmodel</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-viewmodel@2.3.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.versionedparcelable/versionedparcelable@1.1.1?type=jar">
+      <publisher/>
+      <group>androidx.versionedparcelable</group>
+      <name>versionedparcelable</name>
+      <version>1.1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.versionedparcelable/versionedparcelable@1.1.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel-savedstate@2.3.1?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-viewmodel-savedstate</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-viewmodel-savedstate@2.3.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.tracing/tracing@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.tracing</group>
+      <name>tracing</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.tracing/tracing@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.viewpager/viewpager@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.viewpager</group>
+      <name>viewpager</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.viewpager/viewpager@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.loader/loader@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.loader</group>
+      <name>loader</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.loader/loader@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-livedata-core@2.3.1?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-livedata-core</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-livedata-core@2.3.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.annotation/annotation-experimental@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.annotation</group>
+      <name>annotation-experimental</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.annotation/annotation-experimental@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.vectordrawable/vectordrawable@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.vectordrawable</group>
+      <name>vectordrawable</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.vectordrawable/vectordrawable@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.vectordrawable/vectordrawable-animated@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.vectordrawable</group>
+      <name>vectordrawable-animated</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.vectordrawable/vectordrawable-animated@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.customview/customview@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.customview</group>
+      <name>customview</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.customview/customview@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.arch.core/core-common@2.1.0?type=jar">
+      <publisher/>
+      <group>androidx.arch.core</group>
+      <name>core-common</name>
+      <version>2.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.arch.core/core-common@2.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-common@2.3.1?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-common</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-common@2.3.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.arch.core/core-runtime@2.1.0?type=jar">
+      <publisher/>
+      <group>androidx.arch.core</group>
+      <name>core-runtime</name>
+      <version>2.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.arch.core/core-runtime@2.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-livedata@2.0.0?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-livedata</name>
+      <version>2.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-livedata@2.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.interpolator/interpolator@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.interpolator</group>
+      <name>interpolator</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.interpolator/interpolator@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/junit/junit@4.13.2?type=jar">
+      <publisher/>
+      <group>junit</group>
+      <name>junit</name>
+      <version>4.13.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/junit/junit@4.13.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar">
+      <publisher/>
+      <group>org.hamcrest</group>
+      <name>hamcrest-core</name>
+      <version>1.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.squareup.okhttp3/mockwebserver@4.9.3?type=jar">
+      <publisher/>
+      <group>com.squareup.okhttp3</group>
+      <name>mockwebserver</name>
+      <version>4.9.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.squareup.okhttp3/mockwebserver@4.9.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.squareup.okhttp3/okhttp@4.9.3?type=jar">
+      <publisher/>
+      <group>com.squareup.okhttp3</group>
+      <name>okhttp</name>
+      <version>4.9.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.squareup.okhttp3/okhttp@4.9.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.squareup.okio/okio@2.8.0?type=jar">
+      <publisher/>
+      <group>com.squareup.okio</group>
+      <name>okio</name>
+      <version>2.8.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.squareup.okio/okio@2.8.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.10?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-jdk8</name>
+      <version>1.4.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.10?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.10?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-jdk7</name>
+      <version>1.4.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.10?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.squareup.okhttp3/okhttp-tls@4.9.3?type=jar">
+      <publisher/>
+      <group>com.squareup.okhttp3</group>
+      <name>okhttp-tls</name>
+      <version>4.9.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.squareup.okhttp3/okhttp-tls@4.9.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.json/json@20180813?type=jar">
+      <publisher/>
+      <group>org.json</group>
+      <name>json</name>
+      <version>20180813</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.json/json@20180813?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.squareup.okio/okio-metadata@2.8.0?type=jar">
+      <publisher/>
+      <group>com.squareup.okio</group>
+      <name>okio-metadata</name>
+      <version>2.8.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.squareup.okio/okio-metadata@2.8.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.10?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-common</name>
+      <version>1.4.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.10?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.10?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib</name>
+      <version>1.4.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.10?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-compiler-embeddable@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-compiler-embeddable</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-compiler-embeddable@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-script-runtime@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-script-runtime</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-script-runtime@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-reflect</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-daemon-embeddable@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-daemon-embeddable</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-daemon-embeddable@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.intellij.deps/trove4j@1.0.20181211?type=jar">
+      <publisher/>
+      <group>org.jetbrains.intellij.deps</group>
+      <name>trove4j</name>
+      <version>1.0.20181211</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.intellij.deps/trove4j@1.0.20181211?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-klib-commonizer-embeddable@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-klib-commonizer-embeddable</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-klib-commonizer-embeddable@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.lint/lint-gradle@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.lint</group>
+      <name>lint-gradle</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.lint/lint-gradle@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools/sdk-common@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools</group>
+      <name>sdk-common</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools/sdk-common@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools/sdklib@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools</group>
+      <name>sdklib</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools/sdklib@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.layoutlib/layoutlib-api@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.layoutlib</group>
+      <name>layoutlib-api</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.layoutlib/layoutlib-api@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools/common@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools</group>
+      <name>common</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools/common@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.32?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-jdk8</name>
+      <version>1.4.32</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.32?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.32?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib</name>
+      <version>1.4.32</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.32?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.32?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-common</name>
+      <version>1.4.32</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.32?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.32?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-jdk7</name>
+      <version>1.4.32</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.32?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools/annotations@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools</group>
+      <name>annotations</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools/annotations@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.guava/guava@30.1-jre?type=jar">
+      <publisher/>
+      <group>com.google.guava</group>
+      <name>guava</name>
+      <version>30.1-jre</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.guava/guava@30.1-jre?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar">
+      <publisher/>
+      <group>com.google.guava</group>
+      <name>failureaccess</name>
+      <version>1.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar">
+      <publisher/>
+      <group>com.google.guava</group>
+      <name>listenablefuture</name>
+      <version>9999.0-empty-to-avoid-conflict-with-guava</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar">
+      <publisher/>
+      <group>com.google.code.findbugs</group>
+      <name>jsr305</name>
+      <version>3.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.checkerframework/checker-qual@3.5.0?type=jar">
+      <publisher/>
+      <group>org.checkerframework</group>
+      <name>checker-qual</name>
+      <version>3.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.checkerframework/checker-qual@3.5.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.errorprone/error_prone_annotations@2.3.4?type=jar">
+      <publisher/>
+      <group>com.google.errorprone</group>
+      <name>error_prone_annotations</name>
+      <version>2.3.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.errorprone/error_prone_annotations@2.3.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar">
+      <publisher/>
+      <group>com.google.j2objc</group>
+      <name>j2objc-annotations</name>
+      <version>1.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar">
+      <publisher/>
+      <group>net.sf.kxml</group>
+      <name>kxml2</name>
+      <version>2.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools/dvlib@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools</group>
+      <name>dvlib</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools/dvlib@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.code.gson/gson@2.8.6?type=jar">
+      <publisher/>
+      <group>com.google.code.gson</group>
+      <name>gson</name>
+      <version>2.8.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.code.gson/gson@2.8.6?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.glassfish.jaxb/jaxb-runtime@2.3.2?type=jar">
+      <publisher/>
+      <group>org.glassfish.jaxb</group>
+      <name>jaxb-runtime</name>
+      <version>2.3.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.glassfish.jaxb/jaxb-runtime@2.3.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.2?type=jar">
+      <publisher/>
+      <group>jakarta.xml.bind</group>
+      <name>jakarta.xml.bind-api</name>
+      <version>2.3.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/jakarta.activation/jakarta.activation-api@1.2.1?type=jar">
+      <publisher/>
+      <group>jakarta.activation</group>
+      <name>jakarta.activation-api</name>
+      <version>1.2.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/jakarta.activation/jakarta.activation-api@1.2.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.glassfish.jaxb/txw2@2.3.2?type=jar">
+      <publisher/>
+      <group>org.glassfish.jaxb</group>
+      <name>txw2</name>
+      <version>2.3.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.glassfish.jaxb/txw2@2.3.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.sun.istack/istack-commons-runtime@3.0.8?type=jar">
+      <publisher/>
+      <group>com.sun.istack</group>
+      <name>istack-commons-runtime</name>
+      <version>3.0.8</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.sun.istack/istack-commons-runtime@3.0.8?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jvnet.staxex/stax-ex@1.8.1?type=jar">
+      <publisher/>
+      <group>org.jvnet.staxex</group>
+      <name>stax-ex</name>
+      <version>1.8.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jvnet.staxex/stax-ex@1.8.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.sun.xml.fastinfoset/FastInfoset@1.2.16?type=jar">
+      <publisher/>
+      <group>com.sun.xml.fastinfoset</group>
+      <name>FastInfoset</name>
+      <version>1.2.16</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.sun.xml.fastinfoset/FastInfoset@1.2.16?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar">
+      <publisher/>
+      <group>org.apache.commons</group>
+      <name>commons-compress</name>
+      <version>1.20</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.commons/commons-compress@1.20?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpmime@4.5.6?type=jar">
+      <publisher/>
+      <group>org.apache.httpcomponents</group>
+      <name>httpmime</name>
+      <version>4.5.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpmime@4.5.6?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.6?type=jar">
+      <publisher/>
+      <group>org.apache.httpcomponents</group>
+      <name>httpclient</name>
+      <version>4.5.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpclient@4.5.6?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.httpcomponents/httpcore@4.4.10?type=jar">
+      <publisher/>
+      <group>org.apache.httpcomponents</group>
+      <name>httpcore</name>
+      <version>4.4.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.httpcomponents/httpcore@4.4.10?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar">
+      <publisher/>
+      <group>commons-logging</group>
+      <name>commons-logging</name>
+      <version>1.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/commons-logging/commons-logging@1.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-codec/commons-codec@1.10?type=jar">
+      <publisher/>
+      <group>commons-codec</group>
+      <name>commons-codec</name>
+      <version>1.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/commons-codec/commons-codec@1.10?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools/repository@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools</group>
+      <name>repository</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools/repository@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.analytics-library/shared@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.analytics-library</group>
+      <name>shared</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.analytics-library/shared@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/net.java.dev.jna/jna-platform@5.6.0?type=jar">
+      <publisher/>
+      <group>net.java.dev.jna</group>
+      <name>jna-platform</name>
+      <version>5.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/net.java.dev.jna/jna-platform@5.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/net.java.dev.jna/jna@5.6.0?type=jar">
+      <publisher/>
+      <group>net.java.dev.jna</group>
+      <name>jna</name>
+      <version>5.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/net.java.dev.jna/jna@5.6.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.analytics-library/protos@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.analytics-library</group>
+      <name>protos</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.analytics-library/protos@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.protobuf/protobuf-java@3.10.0?type=jar">
+      <publisher/>
+      <group>com.google.protobuf</group>
+      <name>protobuf-java</name>
+      <version>3.10.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.protobuf/protobuf-java@3.10.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.sun.activation/javax.activation@1.2.0?type=jar">
+      <publisher/>
+      <group>com.sun.activation</group>
+      <name>javax.activation</name>
+      <version>1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.sun.activation/javax.activation@1.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.jimfs/jimfs@1.1?type=jar">
+      <publisher/>
+      <group>com.google.jimfs</group>
+      <name>jimfs</name>
+      <version>1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.jimfs/jimfs@1.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.build/builder-test-api@7.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.build</group>
+      <name>builder-test-api</name>
+      <version>7.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.build/builder-test-api@7.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.ddms/ddmlib@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.ddms</group>
+      <name>ddmlib</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.ddms/ddmlib@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.build/builder-model@7.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.build</group>
+      <name>builder-model</name>
+      <version>7.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.build/builder-model@7.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.56?type=jar">
+      <publisher/>
+      <group>org.bouncycastle</group>
+      <name>bcpkix-jdk15on</name>
+      <version>1.56</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.56?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.bouncycastle/bcprov-jdk15on@1.56?type=jar">
+      <publisher/>
+      <group>org.bouncycastle</group>
+      <name>bcprov-jdk15on</name>
+      <version>1.56</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.bouncycastle/bcprov-jdk15on@1.56?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.4.32?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-reflect</name>
+      <version>1.4.32</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.4.32?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/javax.inject/javax.inject@1?type=jar">
+      <publisher/>
+      <group>javax.inject</group>
+      <name>javax.inject</name>
+      <version>1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/javax.inject/javax.inject@1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.build/aapt2-proto@4.1.0-alpha01-6193524?type=jar">
+      <publisher/>
+      <group>com.android.tools.build</group>
+      <name>aapt2-proto</name>
+      <version>4.1.0-alpha01-6193524</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.build/aapt2-proto@4.1.0-alpha01-6193524?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/xerces/xercesImpl@2.12.0?type=jar">
+      <publisher/>
+      <group>xerces</group>
+      <name>xercesImpl</name>
+      <version>2.12.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/xerces/xercesImpl@2.12.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/xml-apis/xml-apis@1.4.01?type=jar">
+      <publisher/>
+      <group>xml-apis</group>
+      <name>xml-apis</name>
+      <version>1.4.01</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/xml-apis/xml-apis@1.4.01?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.build/builder@7.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.build</group>
+      <name>builder</name>
+      <version>7.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.build/builder@7.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android/signflinger@7.0.3?type=jar">
+      <publisher/>
+      <group>com.android</group>
+      <name>signflinger</name>
+      <version>7.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android/signflinger@7.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.build/apksig@7.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.build</group>
+      <name>apksig</name>
+      <version>7.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.build/apksig@7.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android/zipflinger@7.0.3?type=jar">
+      <publisher/>
+      <group>com.android</group>
+      <name>zipflinger</name>
+      <version>7.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android/zipflinger@7.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.analytics-library/tracker@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.analytics-library</group>
+      <name>tracker</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.analytics-library/tracker@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.ow2.asm/asm-util@7.0?type=jar">
+      <publisher/>
+      <group>org.ow2.asm</group>
+      <name>asm-util</name>
+      <version>7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.ow2.asm/asm-util@7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/it.unimi.dsi/fastutil@8.4.0?type=jar">
+      <publisher/>
+      <group>it.unimi.dsi</group>
+      <name>fastutil</name>
+      <version>8.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/it.unimi.dsi/fastutil@8.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/net.sf.jopt-simple/jopt-simple@4.9?type=jar">
+      <publisher/>
+      <group>net.sf.jopt-simple</group>
+      <name>jopt-simple</name>
+      <version>4.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/net.sf.jopt-simple/jopt-simple@4.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.googlecode.json-simple/json-simple@1.1?type=jar">
+      <publisher/>
+      <group>com.googlecode.json-simple</group>
+      <name>json-simple</name>
+      <version>1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.googlecode.json-simple/json-simple@1.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.build/manifest-merger@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.build</group>
+      <name>manifest-merger</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.build/manifest-merger@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.build/apkzlib@7.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.build</group>
+      <name>apkzlib</name>
+      <version>7.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.build/apkzlib@7.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.squareup/javawriter@2.5.0?type=jar">
+      <publisher/>
+      <group>com.squareup</group>
+      <name>javawriter</name>
+      <version>2.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.squareup/javawriter@2.5.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.external.com-intellij/intellij-core@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.external.com-intellij</group>
+      <name>intellij-core</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.external.com-intellij/intellij-core@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.external.com-intellij/kotlin-compiler@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.external.com-intellij</group>
+      <name>kotlin-compiler</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.external.com-intellij/kotlin-compiler@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.external.org-jetbrains/uast@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.external.org-jetbrains</group>
+      <name>uast</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.external.org-jetbrains/uast@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.lint/lint@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.lint</group>
+      <name>lint</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.lint/lint@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.lint/lint-api@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.lint</group>
+      <name>lint-api</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.lint/lint-api@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.lint/lint-model@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.lint</group>
+      <name>lint-model</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.lint/lint-model@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-io/commons-io@2.4?type=jar">
+      <publisher/>
+      <group>commons-io</group>
+      <name>commons-io</name>
+      <version>2.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/commons-io/commons-io@2.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.android.tools.lint/lint-checks@30.0.3?type=jar">
+      <publisher/>
+      <group>com.android.tools.lint</group>
+      <name>lint-checks</name>
+      <version>30.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.android.tools.lint/lint-checks@30.0.3?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-all@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-all</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-all@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-ant@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-ant</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-ant@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.ant/ant@1.10.9?type=jar">
+      <publisher/>
+      <group>org.apache.ant</group>
+      <name>ant</name>
+      <version>1.10.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.ant/ant@1.10.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.ant/ant-launcher@1.10.9?type=jar">
+      <publisher/>
+      <group>org.apache.ant</group>
+      <name>ant-launcher</name>
+      <version>1.10.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.ant/ant-launcher@1.10.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.ant/ant-junit@1.10.9?type=jar">
+      <publisher/>
+      <group>org.apache.ant</group>
+      <name>ant-junit</name>
+      <version>1.10.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.ant/ant-junit@1.10.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.ant/ant-antlr@1.10.9?type=jar">
+      <publisher/>
+      <group>org.apache.ant</group>
+      <name>ant-antlr</name>
+      <version>1.10.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.apache.ant/ant-antlr@1.10.9?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-groovydoc@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-groovydoc</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-groovydoc@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.github.javaparser/javaparser-core@3.17.0?type=jar">
+      <publisher/>
+      <group>com.github.javaparser</group>
+      <name>javaparser-core</name>
+      <version>3.17.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.github.javaparser/javaparser-core@3.17.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-templates@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-templates</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-templates@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-xml@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-xml</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-xml@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-docgenerator@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-docgenerator</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-docgenerator@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.thoughtworks.qdox/qdox@1.12.1?type=jar">
+      <publisher/>
+      <group>com.thoughtworks.qdox</group>
+      <name>qdox</name>
+      <version>1.12.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.thoughtworks.qdox/qdox@1.12.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-astbuilder@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-astbuilder</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-astbuilder@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-cli-picocli@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-cli-picocli</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-cli-picocli@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/info.picocli/picocli@4.5.2?type=jar">
+      <publisher/>
+      <group>info.picocli</group>
+      <name>picocli</name>
+      <version>4.5.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/info.picocli/picocli@4.5.2?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-console@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-console</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-console@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-swing@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-swing</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-swing@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-datetime@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-datetime</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-datetime@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-groovysh@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-groovysh</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-groovysh@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/jline/jline@2.14.6?type=jar">
+      <publisher/>
+      <group>jline</group>
+      <name>jline</name>
+      <version>2.14.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/jline/jline@2.14.6?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-jmx@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-jmx</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-jmx@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-json@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-json</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-json@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-jsr223@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-jsr223</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-jsr223@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-macro@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-macro</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-macro@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-nio@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-nio</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-nio@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-servlet@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-servlet</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-servlet@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-sql@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-sql</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-sql@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-test@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-test</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-test@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/junit/junit@4.13.1?type=jar">
+      <publisher/>
+      <group>junit</group>
+      <name>junit</name>
+      <version>4.13.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/junit/junit@4.13.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-test-junit5@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-test-junit5</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-test-junit5@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.0?type=jar">
+      <publisher/>
+      <group>org.junit.jupiter</group>
+      <name>junit-jupiter-api</name>
+      <version>5.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit/junit-bom@5.7.0?type=jar">
+      <publisher/>
+      <group>org.junit</group>
+      <name>junit-bom</name>
+      <version>5.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit/junit-bom@5.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.7.0?type=jar">
+      <publisher/>
+      <group>org.junit.jupiter</group>
+      <name>junit-jupiter-engine</name>
+      <version>5.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.platform/junit-platform-engine@1.7.0?type=jar">
+      <publisher/>
+      <group>org.junit.platform</group>
+      <name>junit-platform-engine</name>
+      <version>1.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.platform/junit-platform-engine@1.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.platform/junit-platform-launcher@1.7.0?type=jar">
+      <publisher/>
+      <group>org.junit.platform</group>
+      <name>junit-platform-launcher</name>
+      <version>1.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.platform/junit-platform-launcher@1.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.junit.platform/junit-platform-commons@1.7.0?type=jar">
+      <publisher/>
+      <group>org.junit.platform</group>
+      <name>junit-platform-commons</name>
+      <version>1.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.junit.platform/junit-platform-commons@1.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar">
+      <publisher/>
+      <group>org.opentest4j</group>
+      <name>opentest4j</name>
+      <version>1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.codehaus.groovy/groovy-testng@3.0.7?type=jar">
+      <publisher/>
+      <group>org.codehaus.groovy</group>
+      <name>groovy-testng</name>
+      <version>3.0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.codehaus.groovy/groovy-testng@3.0.7?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.testng/testng@7.3.0?type=jar">
+      <publisher/>
+      <group>org.testng</group>
+      <name>testng</name>
+      <version>7.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.testng/testng@7.3.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.beust/jcommander@1.78?type=jar">
+      <publisher/>
+      <group>com.beust</group>
+      <name>jcommander</name>
+      <version>1.78</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.beust/jcommander@1.78?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/junit/junit@4.+?type=jar">
+      <publisher/>
+      <group>junit</group>
+      <name>junit</name>
+      <version>4.+</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/junit/junit@4.+?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.appcompat/appcompat@1.3.1?type=jar">
+      <publisher/>
+      <group>androidx.appcompat</group>
+      <name>appcompat</name>
+      <version>1.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.appcompat/appcompat@1.3.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.core/core@1.7.0?type=jar">
+      <publisher/>
+      <group>androidx.core</group>
+      <name>core</name>
+      <version>1.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.core/core@1.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.annotation/annotation-experimental@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.annotation</group>
+      <name>annotation-experimental</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.annotation/annotation-experimental@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.activity/activity@1.2.4?type=jar">
+      <publisher/>
+      <group>androidx.activity</group>
+      <name>activity</name>
+      <version>1.2.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.activity/activity@1.2.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.fragment/fragment@1.3.6?type=jar">
+      <publisher/>
+      <group>androidx.fragment</group>
+      <name>fragment</name>
+      <version>1.3.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.fragment/fragment@1.3.6?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.arch.core/core-runtime@2.0.0?type=jar">
+      <publisher/>
+      <group>androidx.arch.core</group>
+      <name>core-runtime</name>
+      <version>2.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.arch.core/core-runtime@2.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.appcompat/appcompat-resources@1.3.1?type=jar">
+      <publisher/>
+      <group>androidx.appcompat</group>
+      <name>appcompat-resources</name>
+      <version>1.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.appcompat/appcompat-resources@1.3.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.android.material/material@1.4.0?type=jar">
+      <publisher/>
+      <group>com.google.android.material</group>
+      <name>material</name>
+      <version>1.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.android.material/material@1.4.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.cardview/cardview@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.cardview</group>
+      <name>cardview</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.cardview/cardview@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.coordinatorlayout/coordinatorlayout@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.coordinatorlayout</group>
+      <name>coordinatorlayout</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.coordinatorlayout/coordinatorlayout@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.constraintlayout/constraintlayout@2.0.1?type=jar">
+      <publisher/>
+      <group>androidx.constraintlayout</group>
+      <name>constraintlayout</name>
+      <version>2.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.constraintlayout/constraintlayout@2.0.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.constraintlayout/constraintlayout-solver@2.0.1?type=jar">
+      <publisher/>
+      <group>androidx.constraintlayout</group>
+      <name>constraintlayout-solver</name>
+      <version>2.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.constraintlayout/constraintlayout-solver@2.0.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.dynamicanimation/dynamicanimation@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.dynamicanimation</group>
+      <name>dynamicanimation</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.dynamicanimation/dynamicanimation@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.legacy/legacy-support-core-utils@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.legacy</group>
+      <name>legacy-support-core-utils</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.legacy/legacy-support-core-utils@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.documentfile/documentfile@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.documentfile</group>
+      <name>documentfile</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.documentfile/documentfile@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.localbroadcastmanager/localbroadcastmanager@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.localbroadcastmanager</group>
+      <name>localbroadcastmanager</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.localbroadcastmanager/localbroadcastmanager@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.print/print@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.print</group>
+      <name>print</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.print/print@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.recyclerview/recyclerview@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.recyclerview</group>
+      <name>recyclerview</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.recyclerview/recyclerview@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.transition/transition@1.2.0?type=jar">
+      <publisher/>
+      <group>androidx.transition</group>
+      <name>transition</name>
+      <version>1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.transition/transition@1.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.viewpager2/viewpager2@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.viewpager2</group>
+      <name>viewpager2</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.viewpager2/viewpager2@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.preference/preference-ktx@1.1.1?type=jar">
+      <publisher/>
+      <group>androidx.preference</group>
+      <name>preference-ktx</name>
+      <version>1.1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.preference/preference-ktx@1.1.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.preference/preference@1.1.1?type=jar">
+      <publisher/>
+      <group>androidx.preference</group>
+      <name>preference</name>
+      <version>1.1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.preference/preference@1.1.1?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.core/core-ktx@1.7.0?type=jar">
+      <publisher/>
+      <group>androidx.core</group>
+      <name>core-ktx</name>
+      <version>1.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.core/core-ktx@1.7.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.fragment/fragment-ktx@1.2.4?type=jar">
+      <publisher/>
+      <group>androidx.fragment</group>
+      <name>fragment-ktx</name>
+      <version>1.2.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.fragment/fragment-ktx@1.2.4?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.activity/activity-ktx@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.activity</group>
+      <name>activity-ktx</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.activity/activity-ktx@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-runtime-ktx@2.2.0?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-runtime-ktx</name>
+      <version>2.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-runtime-ktx@2.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-android@1.3.0?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlinx</group>
+      <name>kotlinx-coroutines-android</name>
+      <version>1.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-android@1.3.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core@1.3.0?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlinx</group>
+      <name>kotlinx-coroutines-core</name>
+      <version>1.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core@1.3.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel-ktx@2.2.0?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-viewmodel-ktx</name>
+      <version>2.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-viewmodel-ktx@2.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.collection/collection-ktx@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.collection</group>
+      <name>collection-ktx</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.collection/collection-ktx@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.lifecycle/lifecycle-livedata-core-ktx@2.2.0?type=jar">
+      <publisher/>
+      <group>androidx.lifecycle</group>
+      <name>lifecycle-livedata-core-ktx</name>
+      <version>2.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.lifecycle/lifecycle-livedata-core-ktx@2.2.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.security/security-crypto-ktx@1.1.0-alpha03?type=jar">
+      <publisher/>
+      <group>androidx.security</group>
+      <name>security-crypto-ktx</name>
+      <version>1.1.0-alpha03</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.security/security-crypto-ktx@1.1.0-alpha03?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.security/security-crypto@1.1.0-alpha03?type=jar">
+      <publisher/>
+      <group>androidx.security</group>
+      <name>security-crypto</name>
+      <version>1.1.0-alpha03</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.security/security-crypto@1.1.0-alpha03?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.swiperefreshlayout/swiperefreshlayout@1.1.0?type=jar">
+      <publisher/>
+      <group>androidx.swiperefreshlayout</group>
+      <name>swiperefreshlayout</name>
+      <version>1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.swiperefreshlayout/swiperefreshlayout@1.1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.5.31?type=jar">
+      <publisher/>
+      <group>org.jetbrains.kotlin</group>
+      <name>kotlin-stdlib-jdk7</name>
+      <version>1.5.31</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.5.31?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/androidx.concurrent/concurrent-futures@1.0.0?type=jar">
+      <publisher/>
+      <group>androidx.concurrent</group>
+      <name>concurrent-futures</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/androidx.concurrent/concurrent-futures@1.0.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.guava/listenablefuture@1.0?type=jar">
+      <publisher/>
+      <group>com.google.guava</group>
+      <name>listenablefuture</name>
+      <version>1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.guava/listenablefuture@1.0?type=jar</purl>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.google.crypto.tink/tink-android@1.5.0?type=jar">
+      <publisher/>
+      <group>com.google.crypto.tink</group>
+      <name>tink-android</name>
+      <version>1.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:maven/com.google.crypto.tink/tink-android@1.5.0?type=jar</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/aev/build.gradle, /github/workspace/app/build.gradle, /github/workspace/build.gradle</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+  <dependencies>
+    <dependency ref="pkg:maven/root@latest?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.10?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.ant@0.8.3?type=jar">
+      <dependency ref="pkg:maven/org.jacoco/org.jacoco.agent@0.8.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.core@0.8.3?type=jar">
+      <dependency ref="pkg:maven/org.ow2.asm/asm-commons@7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.ow2.asm/asm@7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-commons@7.0?type=jar">
+      <dependency ref="pkg:maven/org.ow2.asm/asm-analysis@7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-tree@7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-analysis@7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.report@0.8.3?type=jar"/>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.agent@0.8.3?type=jar"/>
+    <dependency ref="pkg:maven/com.github.fingerprintjs/fingerprint-android@1.2?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.5.31?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.5.31?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains/annotations@13.0?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/androidx.appcompat/appcompat@1.3.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.annotation/annotation@1.2.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.core/core@1.5.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.cursoradapter/cursoradapter@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.activity/activity@1.2.3?type=jar"/>
+    <dependency ref="pkg:maven/androidx.fragment/fragment@1.3.4?type=jar"/>
+    <dependency ref="pkg:maven/androidx.appcompat/appcompat-resources@1.3.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.drawerlayout/drawerlayout@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.savedstate/savedstate@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.collection/collection@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-runtime@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.versionedparcelable/versionedparcelable@1.1.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel-savedstate@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.tracing/tracing@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.viewpager/viewpager@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.loader/loader@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata-core@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.annotation/annotation-experimental@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.vectordrawable/vectordrawable@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.vectordrawable/vectordrawable-animated@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.customview/customview@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.arch.core/core-common@2.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-common@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.arch.core/core-runtime@2.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata@2.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.interpolator/interpolator@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/junit/junit@4.13.2?type=jar">
+      <dependency ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"/>
+    <dependency ref="pkg:maven/com.squareup.okhttp3/mockwebserver@4.9.3?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.10?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.squareup.okhttp3/okhttp@4.9.3?type=jar">
+      <dependency ref="pkg:maven/com.squareup.okio/okio@2.8.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.squareup.okio/okio@2.8.0?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.10?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.10?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.10?type=jar"/>
+    <dependency ref="pkg:maven/com.squareup.okhttp3/okhttp-tls@4.9.3?type=jar"/>
+    <dependency ref="pkg:maven/org.json/json@20180813?type=jar">
+      <dependency ref="pkg:maven/com.squareup.okio/okio-metadata@2.8.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.squareup.okio/okio-metadata@2.8.0?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.10?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.10?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.10?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-compiler-embeddable@1.5.31?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.intellij.deps/trove4j@1.0.20181211?type=jar"/>
+    </dependency>
+    <dependency ref="undefined">
+      <dependency ref="pkg:maven/junit/junit@4.+?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-script-runtime@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-daemon-embeddable@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.intellij.deps/trove4j@1.0.20181211?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-klib-commonizer-embeddable@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-gradle@30.0.3?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-all@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools/sdk-common@30.0.3?type=jar">
+      <dependency ref="pkg:maven/xerces/xercesImpl@2.12.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools/sdklib@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools/repository@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.layoutlib/layoutlib-api@30.0.3?type=jar">
+      <dependency ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools/common@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.google.guava/guava@30.1-jre?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.32?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.32?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.32?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.32?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.32?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.32?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools/annotations@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.google.guava/guava@30.1-jre?type=jar">
+      <dependency ref="pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar"/>
+    <dependency ref="pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar"/>
+    <dependency ref="pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar"/>
+    <dependency ref="pkg:maven/org.checkerframework/checker-qual@3.5.0?type=jar"/>
+    <dependency ref="pkg:maven/com.google.errorprone/error_prone_annotations@2.3.4?type=jar"/>
+    <dependency ref="pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar"/>
+    <dependency ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools/dvlib@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.google.code.gson/gson@2.8.6?type=jar"/>
+    <dependency ref="pkg:maven/org.glassfish.jaxb/jaxb-runtime@2.3.2?type=jar">
+      <dependency ref="pkg:maven/com.sun.xml.fastinfoset/FastInfoset@1.2.16?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.2?type=jar">
+      <dependency ref="pkg:maven/jakarta.activation/jakarta.activation-api@1.2.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/jakarta.activation/jakarta.activation-api@1.2.1?type=jar"/>
+    <dependency ref="pkg:maven/org.glassfish.jaxb/txw2@2.3.2?type=jar"/>
+    <dependency ref="pkg:maven/com.sun.istack/istack-commons-runtime@3.0.8?type=jar"/>
+    <dependency ref="pkg:maven/org.jvnet.staxex/stax-ex@1.8.1?type=jar"/>
+    <dependency ref="pkg:maven/com.sun.xml.fastinfoset/FastInfoset@1.2.16?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.httpcomponents/httpmime@4.5.6?type=jar">
+      <dependency ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.6?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.6?type=jar">
+      <dependency ref="pkg:maven/commons-codec/commons-codec@1.10?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.httpcomponents/httpcore@4.4.10?type=jar"/>
+    <dependency ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar"/>
+    <dependency ref="pkg:maven/commons-codec/commons-codec@1.10?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools/repository@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.google.jimfs/jimfs@1.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.analytics-library/shared@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools.analytics-library/protos@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/net.java.dev.jna/jna-platform@5.6.0?type=jar">
+      <dependency ref="pkg:maven/net.java.dev.jna/jna@5.6.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/net.java.dev.jna/jna@5.6.0?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.analytics-library/protos@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.google.protobuf/protobuf-java@3.10.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.google.protobuf/protobuf-java@3.10.0?type=jar"/>
+    <dependency ref="pkg:maven/com.sun.activation/javax.activation@1.2.0?type=jar"/>
+    <dependency ref="pkg:maven/com.google.jimfs/jimfs@1.1?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/builder-test-api@7.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools.ddms/ddmlib@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.ddms/ddmlib@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/builder-model@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.56?type=jar">
+      <dependency ref="pkg:maven/org.bouncycastle/bcprov-jdk15on@1.56?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.bouncycastle/bcprov-jdk15on@1.56?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.4.32?type=jar"/>
+    <dependency ref="pkg:maven/javax.inject/javax.inject@1?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/aapt2-proto@4.1.0-alpha01-6193524?type=jar"/>
+    <dependency ref="pkg:maven/xerces/xercesImpl@2.12.0?type=jar">
+      <dependency ref="pkg:maven/xml-apis/xml-apis@1.4.01?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/xml-apis/xml-apis@1.4.01?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/builder@7.0.3?type=jar">
+      <dependency ref="pkg:maven/com.squareup/javawriter@2.5.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android/signflinger@7.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android/zipflinger@7.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.build/apksig@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android/zipflinger@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.analytics-library/tracker@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-util@7.0?type=jar"/>
+    <dependency ref="pkg:maven/it.unimi.dsi/fastutil@8.4.0?type=jar"/>
+    <dependency ref="pkg:maven/net.sf.jopt-simple/jopt-simple@4.9?type=jar"/>
+    <dependency ref="pkg:maven/com.googlecode.json-simple/json-simple@1.1?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/manifest-merger@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/apkzlib@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.squareup/javawriter@2.5.0?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.external.com-intellij/intellij-core@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.external.com-intellij/kotlin-compiler@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.external.org-jetbrains/uast@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools.lint/lint-checks@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-api@30.0.3?type=jar">
+      <dependency ref="pkg:maven/commons-io/commons-io@2.4?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-model@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/commons-io/commons-io@2.4?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-checks@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-all@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-testng@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-ant@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-groovydoc@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.ant/ant@1.10.9?type=jar">
+      <dependency ref="pkg:maven/org.apache.ant/ant-launcher@1.10.9?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.ant/ant-launcher@1.10.9?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.ant/ant-junit@1.10.9?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.ant/ant-antlr@1.10.9?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-groovydoc@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-docgenerator@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.github.javaparser/javaparser-core@3.17.0?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-templates@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-xml@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-xml@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-docgenerator@3.0.7?type=jar">
+      <dependency ref="pkg:maven/com.thoughtworks.qdox/qdox@1.12.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.thoughtworks.qdox/qdox@1.12.1?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-astbuilder@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-cli-picocli@3.0.7?type=jar">
+      <dependency ref="pkg:maven/info.picocli/picocli@4.5.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/info.picocli/picocli@4.5.2?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-console@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-swing@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-swing@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-datetime@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-groovysh@3.0.7?type=jar">
+      <dependency ref="pkg:maven/jline/jline@2.14.6?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/jline/jline@2.14.6?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-jmx@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-json@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-jsr223@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-macro@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-nio@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-servlet@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-sql@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-test@3.0.7?type=jar">
+      <dependency ref="pkg:maven/junit/junit@4.13.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/junit/junit@4.13.1?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-test-junit5@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.0?type=jar">
+      <dependency ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.junit/junit-bom@5.7.0?type=jar">
+      <dependency ref="pkg:maven/org.junit.platform/junit-platform-commons@1.7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.junit.platform/junit-platform-engine@1.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.junit.platform/junit-platform-launcher@1.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.junit.platform/junit-platform-commons@1.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-testng@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.testng/testng@7.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.testng/testng@7.3.0?type=jar">
+      <dependency ref="pkg:maven/com.beust/jcommander@1.78?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.beust/jcommander@1.78?type=jar"/>
+    <dependency ref="pkg:maven/junit/junit@4.+?type=jar"/>
+    <dependency ref="pkg:maven/root@latest?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.5.31?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.ant@0.8.3?type=jar">
+      <dependency ref="pkg:maven/org.jacoco/org.jacoco.agent@0.8.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.core@0.8.3?type=jar">
+      <dependency ref="pkg:maven/org.ow2.asm/asm-commons@7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.ow2.asm/asm@7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-commons@7.0?type=jar">
+      <dependency ref="pkg:maven/org.ow2.asm/asm-analysis@7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-tree@7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-analysis@7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.report@0.8.3?type=jar"/>
+    <dependency ref="pkg:maven/org.jacoco/org.jacoco.agent@0.8.3?type=jar"/>
+    <dependency ref="pkg:maven/androidx.appcompat/appcompat@1.3.1?type=jar">
+      <dependency ref="pkg:maven/androidx.drawerlayout/drawerlayout@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.annotation/annotation@1.2.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.core/core@1.7.0?type=jar">
+      <dependency ref="pkg:maven/androidx.versionedparcelable/versionedparcelable@1.1.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.annotation/annotation-experimental@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-runtime@2.3.1?type=jar">
+      <dependency ref="pkg:maven/androidx.arch.core/core-common@2.1.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-common@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.arch.core/core-common@2.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.versionedparcelable/versionedparcelable@1.1.1?type=jar">
+      <dependency ref="pkg:maven/androidx.collection/collection@1.1.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.collection/collection@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.cursoradapter/cursoradapter@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.activity/activity@1.2.4?type=jar">
+      <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel-savedstate@2.3.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.savedstate/savedstate@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel-savedstate@2.3.1?type=jar">
+      <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata-core@2.3.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata-core@2.3.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.fragment/fragment@1.3.6?type=jar">
+      <dependency ref="pkg:maven/androidx.loader/loader@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.viewpager/viewpager@1.0.0?type=jar">
+      <dependency ref="pkg:maven/androidx.customview/customview@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.customview/customview@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.loader/loader@1.0.0?type=jar">
+      <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata@2.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata@2.0.0?type=jar">
+      <dependency ref="pkg:maven/androidx.arch.core/core-runtime@2.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.arch.core/core-runtime@2.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.appcompat/appcompat-resources@1.3.1?type=jar">
+      <dependency ref="pkg:maven/androidx.vectordrawable/vectordrawable-animated@1.1.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.vectordrawable/vectordrawable@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.vectordrawable/vectordrawable-animated@1.1.0?type=jar">
+      <dependency ref="pkg:maven/androidx.interpolator/interpolator@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.interpolator/interpolator@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.drawerlayout/drawerlayout@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/com.google.android.material/material@1.4.0?type=jar">
+      <dependency ref="pkg:maven/androidx.viewpager2/viewpager2@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.cardview/cardview@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.coordinatorlayout/coordinatorlayout@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.constraintlayout/constraintlayout@2.0.1?type=jar">
+      <dependency ref="pkg:maven/androidx.constraintlayout/constraintlayout-solver@2.0.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.constraintlayout/constraintlayout-solver@2.0.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.dynamicanimation/dynamicanimation@1.0.0?type=jar">
+      <dependency ref="pkg:maven/androidx.legacy/legacy-support-core-utils@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.legacy/legacy-support-core-utils@1.0.0?type=jar">
+      <dependency ref="pkg:maven/androidx.print/print@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.documentfile/documentfile@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.localbroadcastmanager/localbroadcastmanager@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.print/print@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.recyclerview/recyclerview@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.transition/transition@1.2.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.viewpager2/viewpager2@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/com.github.fingerprintjs/fingerprint-android@1.2?type=jar"/>
+    <dependency ref="pkg:maven/androidx.preference/preference-ktx@1.1.1?type=jar">
+      <dependency ref="pkg:maven/androidx.fragment/fragment-ktx@1.2.4?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.5.31?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.5.31?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains/annotations@13.0?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/androidx.preference/preference@1.1.1?type=jar"/>
+    <dependency ref="pkg:maven/androidx.core/core-ktx@1.7.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.fragment/fragment-ktx@1.2.4?type=jar">
+      <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata-core-ktx@2.2.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.activity/activity-ktx@1.1.0?type=jar">
+      <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel-ktx@2.2.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-runtime-ktx@2.2.0?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-android@1.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-android@1.3.0?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core@1.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlinx/kotlinx-coroutines-core@1.3.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-viewmodel-ktx@2.2.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.collection/collection-ktx@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.lifecycle/lifecycle-livedata-core-ktx@2.2.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.security/security-crypto-ktx@1.1.0-alpha03?type=jar">
+      <dependency ref="pkg:maven/androidx.security/security-crypto@1.1.0-alpha03?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.security/security-crypto@1.1.0-alpha03?type=jar"/>
+    <dependency ref="pkg:maven/androidx.swiperefreshlayout/swiperefreshlayout@1.1.0?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.5.31?type=jar">
+      <dependency ref="pkg:maven/androidx.tracing/tracing@1.0.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/androidx.arch.core/core-runtime@2.1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.concurrent/concurrent-futures@1.0.0?type=jar">
+      <dependency ref="pkg:maven/com.google.guava/listenablefuture@1.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.google.guava/listenablefuture@1.0?type=jar"/>
+    <dependency ref="pkg:maven/androidx.tracing/tracing@1.0.0?type=jar"/>
+    <dependency ref="pkg:maven/com.google.crypto.tink/tink-android@1.5.0?type=jar"/>
+    <dependency ref="undefined">
+      <dependency ref="pkg:maven/com.android.tools.lint/lint-gradle@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-compiler-embeddable@1.5.31?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.intellij.deps/trove4j@1.0.20181211?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-script-runtime@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-daemon-embeddable@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.intellij.deps/trove4j@1.0.20181211?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-klib-commonizer-embeddable@1.5.31?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-gradle@30.0.3?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-all@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools/sdk-common@30.0.3?type=jar">
+      <dependency ref="pkg:maven/xerces/xercesImpl@2.12.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools/sdklib@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools/repository@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.layoutlib/layoutlib-api@30.0.3?type=jar">
+      <dependency ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools/common@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.google.guava/guava@30.1-jre?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.4.32?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.32?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.4.32?type=jar">
+      <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.32?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.4.32?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.4.32?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools/annotations@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.google.guava/guava@30.1-jre?type=jar">
+      <dependency ref="pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar"/>
+    <dependency ref="pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar"/>
+    <dependency ref="pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar"/>
+    <dependency ref="pkg:maven/org.checkerframework/checker-qual@3.5.0?type=jar"/>
+    <dependency ref="pkg:maven/com.google.errorprone/error_prone_annotations@2.3.4?type=jar"/>
+    <dependency ref="pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar"/>
+    <dependency ref="pkg:maven/net.sf.kxml/kxml2@2.3.0?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools/dvlib@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.google.code.gson/gson@2.8.6?type=jar"/>
+    <dependency ref="pkg:maven/org.glassfish.jaxb/jaxb-runtime@2.3.2?type=jar">
+      <dependency ref="pkg:maven/com.sun.xml.fastinfoset/FastInfoset@1.2.16?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.2?type=jar">
+      <dependency ref="pkg:maven/jakarta.activation/jakarta.activation-api@1.2.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/jakarta.activation/jakarta.activation-api@1.2.1?type=jar"/>
+    <dependency ref="pkg:maven/org.glassfish.jaxb/txw2@2.3.2?type=jar"/>
+    <dependency ref="pkg:maven/com.sun.istack/istack-commons-runtime@3.0.8?type=jar"/>
+    <dependency ref="pkg:maven/org.jvnet.staxex/stax-ex@1.8.1?type=jar"/>
+    <dependency ref="pkg:maven/com.sun.xml.fastinfoset/FastInfoset@1.2.16?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.commons/commons-compress@1.20?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.httpcomponents/httpmime@4.5.6?type=jar">
+      <dependency ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.6?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.httpcomponents/httpclient@4.5.6?type=jar">
+      <dependency ref="pkg:maven/commons-codec/commons-codec@1.10?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.httpcomponents/httpcore@4.4.10?type=jar"/>
+    <dependency ref="pkg:maven/commons-logging/commons-logging@1.2?type=jar"/>
+    <dependency ref="pkg:maven/commons-codec/commons-codec@1.10?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools/repository@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.google.jimfs/jimfs@1.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.analytics-library/shared@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools.analytics-library/protos@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/net.java.dev.jna/jna-platform@5.6.0?type=jar">
+      <dependency ref="pkg:maven/net.java.dev.jna/jna@5.6.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/net.java.dev.jna/jna@5.6.0?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.analytics-library/protos@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.google.protobuf/protobuf-java@3.10.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.google.protobuf/protobuf-java@3.10.0?type=jar"/>
+    <dependency ref="pkg:maven/com.sun.activation/javax.activation@1.2.0?type=jar"/>
+    <dependency ref="pkg:maven/com.google.jimfs/jimfs@1.1?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/builder-test-api@7.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools.ddms/ddmlib@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.ddms/ddmlib@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/builder-model@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.56?type=jar">
+      <dependency ref="pkg:maven/org.bouncycastle/bcprov-jdk15on@1.56?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.bouncycastle/bcprov-jdk15on@1.56?type=jar"/>
+    <dependency ref="pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.4.32?type=jar"/>
+    <dependency ref="pkg:maven/javax.inject/javax.inject@1?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/aapt2-proto@4.1.0-alpha01-6193524?type=jar"/>
+    <dependency ref="pkg:maven/xerces/xercesImpl@2.12.0?type=jar">
+      <dependency ref="pkg:maven/xml-apis/xml-apis@1.4.01?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/xml-apis/xml-apis@1.4.01?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/builder@7.0.3?type=jar">
+      <dependency ref="pkg:maven/com.squareup/javawriter@2.5.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android/signflinger@7.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android/zipflinger@7.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.build/apksig@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android/zipflinger@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.analytics-library/tracker@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/org.ow2.asm/asm-util@7.0?type=jar"/>
+    <dependency ref="pkg:maven/it.unimi.dsi/fastutil@8.4.0?type=jar"/>
+    <dependency ref="pkg:maven/net.sf.jopt-simple/jopt-simple@4.9?type=jar"/>
+    <dependency ref="pkg:maven/com.googlecode.json-simple/json-simple@1.1?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/manifest-merger@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.build/apkzlib@7.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.squareup/javawriter@2.5.0?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.external.com-intellij/intellij-core@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.external.com-intellij/kotlin-compiler@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.external.org-jetbrains/uast@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint@30.0.3?type=jar">
+      <dependency ref="pkg:maven/com.android.tools.lint/lint-checks@30.0.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-api@30.0.3?type=jar">
+      <dependency ref="pkg:maven/commons-io/commons-io@2.4?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-model@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/commons-io/commons-io@2.4?type=jar"/>
+    <dependency ref="pkg:maven/com.android.tools.lint/lint-checks@30.0.3?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-all@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-testng@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-ant@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-groovydoc@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.ant/ant@1.10.9?type=jar">
+      <dependency ref="pkg:maven/org.apache.ant/ant-launcher@1.10.9?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.ant/ant-launcher@1.10.9?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.ant/ant-junit@1.10.9?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.ant/ant-antlr@1.10.9?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-groovydoc@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-docgenerator@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.github.javaparser/javaparser-core@3.17.0?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-templates@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-xml@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-xml@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-docgenerator@3.0.7?type=jar">
+      <dependency ref="pkg:maven/com.thoughtworks.qdox/qdox@1.12.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.thoughtworks.qdox/qdox@1.12.1?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-astbuilder@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-cli-picocli@3.0.7?type=jar">
+      <dependency ref="pkg:maven/info.picocli/picocli@4.5.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/info.picocli/picocli@4.5.2?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-console@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.codehaus.groovy/groovy-swing@3.0.7?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-swing@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-datetime@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-groovysh@3.0.7?type=jar">
+      <dependency ref="pkg:maven/jline/jline@2.14.6?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/jline/jline@2.14.6?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-jmx@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-json@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-jsr223@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-macro@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-nio@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-servlet@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-sql@3.0.7?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-test@3.0.7?type=jar">
+      <dependency ref="pkg:maven/junit/junit@4.13.1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/junit/junit@4.13.1?type=jar">
+      <dependency ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-test-junit5@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.junit.jupiter/junit-jupiter-api@5.7.0?type=jar">
+      <dependency ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.junit/junit-bom@5.7.0?type=jar">
+      <dependency ref="pkg:maven/org.junit.platform/junit-platform-commons@1.7.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.junit.platform/junit-platform-engine@1.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.junit.platform/junit-platform-launcher@1.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.junit.platform/junit-platform-commons@1.7.0?type=jar"/>
+    <dependency ref="pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"/>
+    <dependency ref="pkg:maven/org.codehaus.groovy/groovy-testng@3.0.7?type=jar">
+      <dependency ref="pkg:maven/org.testng/testng@7.3.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.testng/testng@7.3.0?type=jar">
+      <dependency ref="pkg:maven/com.beust/jcommander@1.78?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.beust/jcommander@1.78?type=jar"/>
+    <dependency ref="pkg:maven/root@latest?type=jar"/>
+  </dependencies>
+</bom>

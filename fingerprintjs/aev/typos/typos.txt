@@ -1,0 +1,31 @@
+## Detected Typos
+error: `Ure` should be `Sure`, `Ire`, `Are`, `Urea`, `Rue`
+  --> ./README.md:135:22
+    |
+135 |   "deviceId": "1xu9l9Ure84KB8CnEbABmteHhhc",
+    |                      ^^^
+    |
+error: `environent` should be `environment`
+  --> ./docs/server_api.md:9:49
+  |
+9 | | Emulator                | Running in emulated environent: popular emulators such as Nox, Bluestacks etc. | `true` or `false` |
+  |                                                 ^^^^^^^^^^
+  |
+error: `Ure` should be `Sure`, `Ire`, `Are`, `Urea`, `Rue`
+  --> ./docs/server_api.md:36:22
+   |
+36 |   "deviceId": "1xu9l9Ure84KB8CnEbABmteHhhc",
+   |                      ^^^
+   |
+error: `autorization` should be `authorization`
+  --> ./app/src/main/java/com/fingerprintjs/android/aev/demo/demo_screen/api/VerifyRequest.kt:55:17
+   |
+55 |     private val autorizationToken: String,
+   |                 ^^^^^^^^^^^^
+   |
+error: `autorization` should be `authorization`
+  --> ./app/src/main/java/com/fingerprintjs/android/aev/demo/demo_screen/api/VerifyRequest.kt:67:38
+   |
+67 |         resultMap[PRIVATE_API_KEY] = autorizationToken
+   |                                      ^^^^^^^^^^^^
+   |

@@ -1,0 +1,210 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Kotlin Static Analysis",
+          "rules": [
+            {
+              "id": "detekt.CyclomaticComplexMethod",
+              "help": {
+                "text": "The function performRequest appears to be too complex based on Cyclomatic Complexity (complexity: 13). Defined complexity threshold for methods is set to '10'.",
+                "markdown": "The function performRequest appears to be too complex based on Cyclomatic Complexity (complexity: 13). Defined complexity threshold for methods is set to '10'."
+              },
+              "name": "The function performRequest appears to be too complex based on Cyclomatic Complexity (complexity: 13). Defined complexity threshold for methods is set to '10'",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The function performRequest appears to be too complex based on Cyclomatic Complexity (complexity: 13). Defined complexity threshold for methods is set to '10'."
+              },
+              "helpUri": "https://slscan.io?q=detekt.CyclomaticComplexMethod",
+              "shortDescription": {
+                "text": "The function performRequest appears to be too complex based on Cyclomatic Complexity (complexity: 13)"
+              }
+            },
+            {
+              "id": "detekt.SpreadOperator",
+              "help": {
+                "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty.",
+                "markdown": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+              },
+              "name": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty.",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+              },
+              "helpUri": "https://slscan.io?q=detekt.SpreadOperator",
+              "shortDescription": {
+                "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method"
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Kotlin Static Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "java",
+            "-jar",
+            "/usr/local/bin/detekt-cli.jar",
+            "-c",
+            "/usr/local/src/lib/../detekt-config.yml",
+            "-i",
+            "/github/workspace",
+            "-r",
+            "xml:/github/workspace/reports/source-kt-report.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "java -jar /usr/local/bin/detekt-cli.jar -c /usr/local/src/lib/../detekt-config.yml -i /github/workspace -r xml:/github/workspace/reports/source-kt-report.xml",
+          "endTimeUtc": "2023-01-13T08:31:50Z",
+          "workingDirectory": {
+            "uri": "https://github.com/fingerprintjs/aev"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-13T08:31:50Z",
+          "workingDirectory": {
+            "uri": "https://github.com/fingerprintjs/aev"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 2,
+          "critical": 0,
+          "high": 0,
+          "medium": 2,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "The function performRequest appears to be too complex based on Cyclomatic Complexity (complexity: 13). Defined complexity threshold for methods is set to '10'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    override fun performRequest(request: Request): Result<RawResponse, HttpClientError> {\n"
+                  },
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/fingerprintjs/aev/aev/src/main/java/com/fingerprintjs/android/aev/transport/HttpClient.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    // TODO: add logic for GET request\n    override fun performRequest(request: Request): Result<RawResponse, HttpClientError> {\n"
+                  },
+                  "endLine": 35,
+                  "startLine": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "111dbfb0db7e71a4",
+            "scanFileHash": "cbc267eaa49c7e2a"
+          },
+          "ruleId": "detekt.CyclomaticComplexMethod",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    val results = runInParallelVararg(*subListMappingLambdas.toTypedArray())\n"
+                  },
+                  "startLine": 76
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/fingerprintjs/aev/aev/src/main/java/com/fingerprintjs/android/aev/utils/concurrency/Threading.kt"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n    val results = runInParallelVararg(*subListMappingLambdas.toTypedArray())\n"
+                  },
+                  "endLine": 76,
+                  "startLine": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d4827c4df46c5b53",
+            "scanFileHash": "5fea2528d291f2a8"
+          },
+          "ruleId": "detekt.SpreadOperator",
+          "ruleIndex": 1
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "f0888fdd-d062-4c35-9ea4-cfe2e953f510"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "f0888fdd-d062-4c35-9ea4-cfe2e953f510",
+      "runGuid": "6253a9b5-167c-4963-96a3-b49a3f4fd1c6"
+    }
+  ]
+}
