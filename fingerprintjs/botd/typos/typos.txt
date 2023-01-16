@@ -1,0 +1,13 @@
+## Detected Typos
+error: `additionaly` should be `additionally`
+  --> ./docs/migrating_v0_v1.md:48:138
+   |
+48 | The new response is now an object containing property "bot" indicating whether the user is a bot or not. And if "bot" is `true`, then we additionaly provide a property "botKind" as described in our [API docs](docs/api.md).
+   |                                                                                                                                          ^^^^^^^^^^^
+   |
+error: `occured` should be `occurred`
+  --> ./playground/index.ts:79:40
+   |
+79 |     resultTextEl.innerHTML = 'An error occured'
+   |                                        ^^^^^^^
+   |

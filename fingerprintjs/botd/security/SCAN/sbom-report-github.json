@@ -1,0 +1,114 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:ae05558e-b713-4703-a8c4-777ae7b9d240",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-16T08:34:53.590Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "6.0.7"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "styfle",
+      "name": "cancel-workflow-action",
+      "version": "0.9.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/styfle/cancel-workflow-action@0.9.1",
+      "type": "library",
+      "bom-ref": "pkg:github/styfle/cancel-workflow-action@0.9.1"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v3",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v3"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-node",
+      "version": "v3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-node@v3",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/setup-node@v3"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "cache",
+      "version": "v3.0.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/cache@v3.0.2",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/cache@v3.0.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "github/codeql-action/init",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/github/codeql-action/init@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/github/codeql-action/init@v2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "github/codeql-action/analyze",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/github/codeql-action/analyze@v2",
+      "type": "library",
+      "bom-ref": "pkg:github/github/codeql-action/analyze@v2"
+    },
+    {
+      "publisher": "",
+      "group": "JamesIves",
+      "name": "github-pages-deploy-action",
+      "version": "3.7.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/JamesIves/github-pages-deploy-action@3.7.1",
+      "type": "library",
+      "bom-ref": "pkg:github/JamesIves/github-pages-deploy-action@3.7.1"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/build.yml, /github/workspace/.github/workflows/codeql-analysis.yml, /github/workspace/.github/workflows/demo.yml, /github/workspace/.github/workflows/release.yml",
+      "comment": "Package file"
+    }
+  ]
+}

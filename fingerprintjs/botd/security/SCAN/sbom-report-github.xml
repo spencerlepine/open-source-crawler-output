@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:ae05558e-b713-4703-a8c4-777ae7b9d240" version="1">
+  <metadata>
+    <timestamp>2023-01-16T08:34:53.594Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.7</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:github/styfle/cancel-workflow-action@0.9.1">
+      <publisher/>
+      <group>styfle</group>
+      <name>cancel-workflow-action</name>
+      <version>0.9.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/styfle/cancel-workflow-action@0.9.1</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v3">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v3</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/setup-node@v3">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-node</name>
+      <version>v3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-node@v3</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/cache@v3.0.2">
+      <publisher/>
+      <group>actions</group>
+      <name>cache</name>
+      <version>v3.0.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/cache@v3.0.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/github/codeql-action/init@v2">
+      <publisher/>
+      <group/>
+      <name>github/codeql-action/init</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/github/codeql-action/init@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/github/codeql-action/analyze@v2">
+      <publisher/>
+      <group/>
+      <name>github/codeql-action/analyze</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/github/codeql-action/analyze@v2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/JamesIves/github-pages-deploy-action@3.7.1">
+      <publisher/>
+      <group>JamesIves</group>
+      <name>github-pages-deploy-action</name>
+      <version>3.7.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/JamesIves/github-pages-deploy-action@3.7.1</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/build.yml, /github/workspace/.github/workflows/codeql-analysis.yml, /github/workspace/.github/workflows/demo.yml, /github/workspace/.github/workflows/release.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
