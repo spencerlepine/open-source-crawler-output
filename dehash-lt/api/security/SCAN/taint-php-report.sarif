@@ -1,0 +1,190 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "PHP Security Analysis",
+          "rules": [
+            {
+              "id": "255",
+              "help": {
+                "text": "Detected tainted file handling: $_GET['search']\\n$queryText\\ncall to search\\nsearch#2\\n$data\\ncall to preg_split\\npreg_split#2\\narrayvalue-fetch\\n$line\\ncall to strtolower\\nstrtolower#1\\n$line\\n$_ids\\ncall to queryOutsource\\nqueryOutsource#2\\n$itemsArray\\narrayvalue-fetch\\n$item\\nconcat\\n$url\\ncall to file_get_contents.",
+                "markdown": "Detected tainted file handling: $_GET['search']\\n$queryText\\ncall to search\\nsearch#2\\n$data\\ncall to preg_split\\npreg_split#2\\narrayvalue-fetch\\n$line\\ncall to strtolower\\nstrtolower#1\\n$line\\n$_ids\\ncall to queryOutsource\\nqueryOutsource#2\\n$itemsArray\\narrayvalue-fetch\\n$item\\nconcat\\n$url\\ncall to file_get_contents."
+              },
+              "name": "TaintedFile",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Detected tainted file handling: $_GET['search']\\n$queryText\\ncall to search\\nsearch#2\\n$data\\ncall to preg_split\\npreg_split#2\\narrayvalue-fetch\\n$line\\ncall to strtolower\\nstrtolower#1\\n$line\\n$_ids\\ncall to queryOutsource\\nqueryOutsource#2\\n$itemsArray\\narrayvalue-fetch\\n$item\\nconcat\\n$url\\ncall to file_get_contents."
+              },
+              "helpUri": "https://psalm.dev/255",
+              "shortDescription": {
+                "text": "Detected tainted file handling: $_GET['search']\\n$queryText\\ncall to search\\nsearch#2\\n$data\\ncall to preg_split\\npreg_split#2\\narrayvalue-fetch\\n$line\\ncall to strtolower\\nstrtolower#1\\n$line\\n$_ids\\ncall to queryOutsource\\nqueryOutsource#2\\n$itemsArray\\narrayvalue-fetch\\n$item\\nconcat\\n$url\\ncall to file_get_contents."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "PHP Security Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "/opt/phpsast/vendor/bin/psalm",
+            "--report-show-info=false",
+            "--show-snippet=true",
+            "--taint-analysis",
+            "-m",
+            "--no-progress",
+            "--no-file-cache",
+            "--no-suggestions",
+            "--no-cache",
+            "--root=/github/workspace",
+            "--report=/github/workspace/reports/taint-php-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "/opt/phpsast/vendor/bin/psalm --report-show-info=false --show-snippet=true --taint-analysis -m --no-progress --no-file-cache --no-suggestions --no-cache --root=/github/workspace --report=/github/workspace/reports/taint-php-report.json",
+          "endTimeUtc": "2023-01-17T08:30:29Z",
+          "workingDirectory": {
+            "uri": "https://github.com/dehash-lt/api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-17T08:30:29Z",
+          "workingDirectory": {
+            "uri": "https://github.com/dehash-lt/api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 2,
+          "critical": 2,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Detected tainted file handling: $_GET['search']\\n$queryText\\ncall to search\\nsearch#2\\n$data\\ncall to preg_split\\npreg_split#2\\narrayvalue-fetch\\n$line\\ncall to strtolower\\nstrtolower#1\\n$line\\n$_ids\\ncall to queryOutsource\\nqueryOutsource#2\\n$itemsArray\\narrayvalue-fetch\\n$item\\nconcat\\n$url\\ncall to file_get_contents."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t$queryText = $_GET['search'];\n"
+                  },
+                  "startLine": 462
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/dehash-lt/api/api.php"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif(isset($_GET['search'])){\n\t\t$queryText = $_GET['search'];\n"
+                  },
+                  "endLine": 462,
+                  "startLine": 461
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f51fb2faa2f7f86c",
+            "scanFileHash": "b3c4a9ae06509159"
+          },
+          "ruleId": "255",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Detected tainted file handling: $_GET['search']\\n$queryText\\ncall to search\\nsearch#2\\n$data\\ncall to preg_split\\npreg_split#2\\narrayvalue-fetch\\n$line\\ncall to strtolower\\nstrtolower#1\\n$line\\n$_ids\\ncall to queryOutsource\\nqueryOutsource#2\\n$itemsArray\\narrayvalue-fetch\\n$item\\nconcat\\nconcat\\n$url\\ncall to file_get_contents."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t$queryText = $_GET['search'];\n"
+                  },
+                  "startLine": 462
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/dehash-lt/api/api.php"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif(isset($_GET['search'])){\n\t\t$queryText = $_GET['search'];\n"
+                  },
+                  "endLine": 462,
+                  "startLine": 461
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "CRITICAL",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f51fb2faa2f7f86c",
+            "scanFileHash": "b3c4a9ae06509159"
+          },
+          "ruleId": "255",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "fd9672cd-5a5e-48cc-aa19-8f0bef1619e4"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "fd9672cd-5a5e-48cc-aa19-8f0bef1619e4",
+      "runGuid": "a1aa26ad-9158-48a5-8ece-276fdd01d7b7"
+    }
+  ]
+}

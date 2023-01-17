@@ -1,0 +1,213 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "PHP Security Audit",
+          "rules": [
+            {
+              "id": "UnusedForeachValue",
+              "help": {
+                "text": "$databaseData is never referenced or the value is not used.",
+                "markdown": "$databaseData is never referenced or the value is not used."
+              },
+              "name": "$databaseData is never referenced or the value is not used",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "$databaseData is never referenced or the value is not used."
+              },
+              "helpUri": "https://psalm.dev/275",
+              "shortDescription": {
+                "text": "$databaseData is never referenced or the value is not used."
+              }
+            },
+            {
+              "id": "ForbiddenCode",
+              "help": {
+                "text": "Unsafe var_dump.",
+                "markdown": "Unsafe var_dump."
+              },
+              "name": "Unsafe var dump",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "Unsafe var_dump."
+              },
+              "helpUri": "https://psalm.dev/002",
+              "shortDescription": {
+                "text": "Unsafe var_dump."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "PHP Security Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "psalm",
+            "--report-show-info=false",
+            "--show-snippet=true",
+            "--find-dead-code=always",
+            "--find-unused-code=always",
+            "-m",
+            "--no-progress",
+            "--no-file-cache",
+            "--no-suggestions",
+            "--no-cache",
+            "--root=/github/workspace",
+            "--report=/github/workspace/reports/audit-php-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "psalm --report-show-info=false --show-snippet=true --find-dead-code=always --find-unused-code=always -m --no-progress --no-file-cache --no-suggestions --no-cache --root=/github/workspace --report=/github/workspace/reports/audit-php-report.json",
+          "endTimeUtc": "2023-01-17T08:30:28Z",
+          "workingDirectory": {
+            "uri": "https://github.com/dehash-lt/api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-17T08:30:28Z",
+          "workingDirectory": {
+            "uri": "https://github.com/dehash-lt/api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 2,
+          "critical": 0,
+          "high": 0,
+          "medium": 2,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "$databaseData is never referenced or the value is not used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tforeach($res->databases as $databaseData){\n"
+                  },
+                  "startLine": 17
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/dehash-lt/api/api.php"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\n\tforeach($res->databases as $databaseData){\n\t\t//$dbName = $databaseData->name;\n\t\t$dbName = \"SHA1\";\n"
+                  },
+                  "endLine": 19,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5491027aef289bde",
+            "scanFileHash": "b3c4a9ae06509159"
+          },
+          "ruleId": "UnusedForeachValue",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Unsafe var_dump."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\techo var_dump($res) . \"<br>\";\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/dehash-lt/api/api.php"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t$res = current($result->toArray());\n\t\techo var_dump($res) . \"<br>\";\n\t\n\t\t//foreach($res as $collectionData){\n"
+                  },
+                  "endLine": 26,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "23daad849729f104",
+            "scanFileHash": "b3c4a9ae06509159"
+          },
+          "ruleId": "ForbiddenCode",
+          "ruleIndex": 1
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "bd5b62db-25d8-4912-82d0-0b3818a6e95e"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "bd5b62db-25d8-4912-82d0-0b3818a6e95e",
+      "runGuid": "a1aa26ad-9158-48a5-8ece-276fdd01d7b7"
+    }
+  ]
+}

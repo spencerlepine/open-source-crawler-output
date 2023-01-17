@@ -1,0 +1,43 @@
+## Detected Typos
+error: `succesfully` should be `successfully`
+  --> ./passwordChecker/README.md:17:22
+   |
+17 | All these hashes are succesfully cracked and stored in our database
+   |                      ^^^^^^^^^^^
+   |
+error: `writen` should be `written`
+  --> ./passwordChecker/README.md:24:61
+   |
+24 | ## STEP 3: Write your own script or use one of our examples writen in:
+   |                                                             ^^^^^^
+   |
+error: `submited` should be `submitted`
+  --> ./api.php:199:5
+    |
+199 |    $submitedEmail = strtolower(explode(":", $line, 2)[0]);
+    |     ^^^^^^^^
+    |
+error: `submited` should be `submitted`
+  --> ./api.php:200:5
+    |
+200 |    $submitedHash = explode(":", $line, 2)[1];
+    |     ^^^^^^^^
+    |
+error: `submited` should be `submitted`
+  --> ./api.php:202:40
+    |
+202 |    $emailsPasswords = search("EMAIL", $submitedEmail);
+    |                                        ^^^^^^^^
+    |
+error: `submited` should be `submitted`
+  --> ./api.php:211:32
+    |
+211 |     $verifiedPassword = crack($submitedHash, $passwords);
+    |                                ^^^^^^^^
+    |
+error: `submited` should be `submitted`
+  --> ./api.php:214:22
+    |
+214 |      $result->_id = $submitedHash;
+    |                      ^^^^^^^^
+    |

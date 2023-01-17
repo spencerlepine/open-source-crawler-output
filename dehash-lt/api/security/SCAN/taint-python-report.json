@@ -1,0 +1,49 @@
+{
+  "generated_at": "2023-01-17T08:30:27Z",
+  "vulnerabilities": [
+    {
+      "rule_id": "pymongo-misconfiguration-insecure",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Client-side Field Level Encryption allows an application to encrypt specific data fields based on the compliance needs",
+      "description": "Client-side Field Level Encryption allows an application to encrypt specific data fields based on the compliance needs",
+      "recommendation": "MongoDB is quite insecure by default allowing unauthenticated access for all clients. Configuring both MongoDB server and the client using proper authentication, secure tls and client-side field level encryption would improve security by several fold.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[PyMongo Authentication](https://pymongo.readthedocs.io/en/stable/examples/authentication.html)**\n\n**[TLS/SSL and PyMongo](https://pymongo.readthedocs.io/en/stable/examples/tls.html)**\n\n**[Field Level Encryption](https://pymongo.readthedocs.io/en/stable/examples/encryption.html)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "MongoClient",
+        "line_number": 10,
+        "label": "MongoClient",
+        "path": "/github/workspace/tools/sanitizer.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": 10,
+        "label": "",
+        "path": "/github/workspace/tools/sanitizer.py"
+      }
+    },
+    {
+      "rule_id": "pymongo-misconfiguration-insecure",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Client-side Field Level Encryption allows an application to encrypt specific data fields based on the compliance needs",
+      "description": "Client-side Field Level Encryption allows an application to encrypt specific data fields based on the compliance needs",
+      "recommendation": "MongoDB is quite insecure by default allowing unauthenticated access for all clients. Configuring both MongoDB server and the client using proper authentication, secure tls and client-side field level encryption would improve security by several fold.\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[PyMongo Authentication](https://pymongo.readthedocs.io/en/stable/examples/authentication.html)**\n\n**[TLS/SSL and PyMongo](https://pymongo.readthedocs.io/en/stable/examples/tls.html)**\n\n**[Field Level Encryption](https://pymongo.readthedocs.io/en/stable/examples/encryption.html)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "MongoClient",
+        "line_number": 9,
+        "label": "MongoClient",
+        "path": "/github/workspace/tools/fromWordlist.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": 9,
+        "label": "",
+        "path": "/github/workspace/tools/fromWordlist.py"
+      }
+    }
+  ]
+}

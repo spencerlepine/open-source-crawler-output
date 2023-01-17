@@ -1,0 +1,184 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Python Security Analysis",
+          "rules": [
+            {
+              "id": "pymongo-misconfiguration-insecure",
+              "help": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.",
+                "markdown": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data."
+              },
+              "name": "Security Misconfiguration",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/732.html",
+              "shortDescription": {
+                "text": "Incorrect Permission Assignment for Critical Resource."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Python Security Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-j",
+            "-a",
+            "e",
+            "-o",
+            "/github/workspace/reports/taint-python-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-j -a e -o /github/workspace/reports/taint-python-report.json",
+          "endTimeUtc": "2023-01-17T08:30:27Z",
+          "workingDirectory": {
+            "uri": "https://github.com/dehash-lt/api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-17T08:30:27Z",
+          "workingDirectory": {
+            "uri": "https://github.com/dehash-lt/api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 2,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 2
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Client-side Field Level Encryption allows an application to encrypt specific data fields based on the compliance needs."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "myclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/dehash-lt/api/tools/sanitizer.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nmyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n\n\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "13fc52ad31fe165d",
+            "scanFileHash": "26e76fdf553b5b13"
+          },
+          "ruleId": "pymongo-misconfiguration-insecure",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Client-side Field Level Encryption allows an application to encrypt specific data fields based on the compliance needs."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "myclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/dehash-lt/api/tools/fromWordlist.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "# ssh -L 27017:localhost:27017 user@remoteServer\nmyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n\n\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "13fc52ad31fe165d",
+            "scanFileHash": "e37b1e188c7033b2"
+          },
+          "ruleId": "pymongo-misconfiguration-insecure",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "b8b820fc-9181-4588-9a4b-53929b96912f"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "b8b820fc-9181-4588-9a4b-53929b96912f",
+      "runGuid": "a1aa26ad-9158-48a5-8ece-276fdd01d7b7"
+    }
+  ]
+}
