@@ -1,0 +1,69 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Empty Scan Ignore",
+          "version": "1.0.0-scan",
+          "fullName": "Empty Scan Ignore"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [],
+          "executionSuccessful": true,
+          "commandLine": "",
+          "endTimeUtc": "2023-01-18T08:30:21Z",
+          "workingDirectory": {
+            "uri": "https://github.com/polarspetroll/escapeapi"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-18T08:30:21Z",
+          "workingDirectory": {
+            "uri": "https://github.com/polarspetroll/escapeapi"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "aa094ee1-731a-4d71-bcc2-2e0706b9e9e0"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "aa094ee1-731a-4d71-bcc2-2e0706b9e9e0",
+      "runGuid": "ec846eaa-7d2d-4fcc-b347-dcb7448ca732"
+    }
+  ]
+}
