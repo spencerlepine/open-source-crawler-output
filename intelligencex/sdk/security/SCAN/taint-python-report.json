@@ -1,0 +1,32 @@
+{
+  "generated_at": "2023-01-19T08:31:41Z",
+  "vulnerabilities": [
+    {
+      "rule_id": "taint-file-write",
+      "rule_name": "File Write",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a5-broken-access-control",
+      "source": {
+        "label": "zipname",
+        "line_number": 128,
+        "path": "/github/workspace/Maltego Transform/install.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "zipname",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_1 = ret_zipfile.ZipFile(zipname, w, zipfile.ZIP_DEFLATED)",
+        "line_number": 130,
+        "path": "/github/workspace/Maltego Transform/install.py"
+      },
+      "sink_trigger_word": "zipfile.ZipFile(",
+      "sink_label": "~call_1 = ret_zipfile.ZipFile(zipname, w, zipfile.ZIP_DEFLATED)",
+      "sink_type": "FileSystem",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "User data from `zipname in install.py:128` is used in `install.py:130` for file operations.",
+      "short_description": "User data from `zipname in install.py:128` is used in `install.py:130` for file operations."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:0d0a8efd-ac1e-40aa-90d5-0cc2dd724fd2" version="1">
+  <metadata>
+    <timestamp>2023-01-19T08:31:45.239Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.11</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/setup-python@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-python</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-python@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v1">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/tonybaloney/pycharm-security@master">
+      <publisher/>
+      <group>tonybaloney</group>
+      <name>pycharm-security</name>
+      <version>master</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/tonybaloney/pycharm-security@master</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/dlint-security.yml, /github/workspace/.github/workflows/pycharm-security.yml, /github/workspace/.github/workflows/pyup-safety.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

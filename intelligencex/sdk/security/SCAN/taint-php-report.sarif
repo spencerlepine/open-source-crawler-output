@@ -1,0 +1,81 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "PHP Security Analysis",
+          "version": "1.0.0-scan",
+          "fullName": "PHP Security Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "/opt/phpsast/vendor/bin/psalm",
+            "--report-show-info=false",
+            "--show-snippet=true",
+            "--taint-analysis",
+            "-m",
+            "--no-progress",
+            "--no-file-cache",
+            "--no-suggestions",
+            "--no-cache",
+            "--root=/github/workspace",
+            "--report=/github/workspace/reports/taint-php-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "/opt/phpsast/vendor/bin/psalm --report-show-info=false --show-snippet=true --taint-analysis -m --no-progress --no-file-cache --no-suggestions --no-cache --root=/github/workspace --report=/github/workspace/reports/taint-php-report.json",
+          "endTimeUtc": "2023-01-19T08:31:43Z",
+          "workingDirectory": {
+            "uri": "https://github.com/intelligencex/sdk"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-19T08:31:43Z",
+          "workingDirectory": {
+            "uri": "https://github.com/intelligencex/sdk"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "19f950ce-cb29-4660-84fb-0ef4ab18a2fa"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "19f950ce-cb29-4660-84fb-0ef4ab18a2fa",
+      "runGuid": "0946b37b-3377-4bd0-bf30-427c5832e791"
+    }
+  ]
+}

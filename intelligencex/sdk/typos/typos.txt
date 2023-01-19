@@ -1,0 +1,31 @@
+## Detected Typos
+error: `chracters` should be `characters`
+  --> ./Maltego Transform/transforms/ixsearch.py:24:52
+   |
+24 |                     # we have to strip all unicode chracters, cuz maltego-trx can not handle them properly
+   |                                                    ^^^^^^^^^
+   |
+error: `Hashs` should be `Hashes`
+  --> ./Maltego Transform/config/Entities/intelx.simhash.entity:1:96
+  |
+1 | <MaltegoEntity id="intelx.simhash" displayName="Similarity Hash" displayNamePlural="Similarity Hashs" description="Similarity Hash" category="My Entities" smallIconResource="Technology/ClusterOrange" largeIconResource="Technology/ClusterOrange" allowedRoot="true" conversionOrder="2147483647" visible="true">
+  |                                                                                                ^^^^^
+  |
+error: `occurence` should be `occurrence`
+  --> ./Go/ixapi/Search.go:71:43
+   |
+71 | // GetTag gets a tags value for the first occurence. Empty if not found.
+   |                                           ^^^^^^^^^
+   |
+error: `Sucess` should be `Success`
+  --> ./Python/intelxapi.py:248:14
+    |
+248 |         - 0: Sucess with results.
+    |              ^^^^^^
+    |
+error: `Sucess` should be `Success`
+  --> ./Python/intelxapi.py:375:14
+    |
+375 |         - 0: Sucess with results.
+    |              ^^^^^^
+    |

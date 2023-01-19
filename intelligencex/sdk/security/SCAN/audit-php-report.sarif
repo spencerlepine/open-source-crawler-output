@@ -1,0 +1,82 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "PHP Security Audit",
+          "version": "1.0.0-scan",
+          "fullName": "PHP Security Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "psalm",
+            "--report-show-info=false",
+            "--show-snippet=true",
+            "--find-dead-code=always",
+            "--find-unused-code=always",
+            "-m",
+            "--no-progress",
+            "--no-file-cache",
+            "--no-suggestions",
+            "--no-cache",
+            "--root=/github/workspace",
+            "--report=/github/workspace/reports/audit-php-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "psalm --report-show-info=false --show-snippet=true --find-dead-code=always --find-unused-code=always -m --no-progress --no-file-cache --no-suggestions --no-cache --root=/github/workspace --report=/github/workspace/reports/audit-php-report.json",
+          "endTimeUtc": "2023-01-19T08:31:42Z",
+          "workingDirectory": {
+            "uri": "https://github.com/intelligencex/sdk"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-19T08:31:42Z",
+          "workingDirectory": {
+            "uri": "https://github.com/intelligencex/sdk"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "841ccd59-e3b4-4acc-90aa-d29fe485970b"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "841ccd59-e3b4-4acc-90aa-d29fe485970b",
+      "runGuid": "0946b37b-3377-4bd0-bf30-427c5832e791"
+    }
+  ]
+}

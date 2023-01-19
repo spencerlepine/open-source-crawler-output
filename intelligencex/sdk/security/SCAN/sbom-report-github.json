@@ -1,0 +1,81 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:0d0a8efd-ac1e-40aa-90d5-0cc2dd724fd2",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-19T08:31:45.236Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "6.0.11"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-python",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-python@v2",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/setup-python@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v1",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v1"
+    },
+    {
+      "publisher": "",
+      "group": "tonybaloney",
+      "name": "pycharm-security",
+      "version": "master",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/tonybaloney/pycharm-security@master",
+      "type": "library",
+      "bom-ref": "pkg:github/tonybaloney/pycharm-security@master"
+    }
+  ],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/.github/workflows/dlint-security.yml, /github/workspace/.github/workflows/pycharm-security.yml, /github/workspace/.github/workflows/pyup-safety.yml",
+      "comment": "Package file"
+    }
+  ]
+}
