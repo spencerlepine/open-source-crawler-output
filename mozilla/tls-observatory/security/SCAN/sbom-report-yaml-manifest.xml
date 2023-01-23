@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:97deb054-d8ca-4808-95ca-cfcc93810b9b" version="1">
+  <metadata>
+    <timestamp>2023-01-23T08:35:41.851Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>6.0.14</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="container" bom-ref="pkg:oci/postgres@latest?">
+      <publisher/>
+      <group/>
+      <name>postgres</name>
+      <version>latest</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:oci/postgres@latest?</purl>
+    </component>
+    <component type="container" bom-ref="pkg:oci/mozilla/tls-observatory@latest?">
+      <publisher/>
+      <group/>
+      <name>mozilla/tls-observatory</name>
+      <version>latest</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:oci/mozilla/tls-observatory@latest?</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/google/pprof@v0.0.0-20200229191704-1ebb73c60ed3">
+      <publisher/>
+      <group>github.com/google</group>
+      <name>pprof</name>
+      <version>v0.0.0-20200229191704-1ebb73c60ed3</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">6605513e852afe17eacc0aa1eec1cca9bdc8f51ab90b9f5d233d926c1c09e1e3</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/google/pprof@v0.0.0-20200229191704-1ebb73c60ed3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/ianlancetaylor/demangle@v0.0.0-20200414190113-039b1ae3a340">
+      <publisher/>
+      <group>github.com/ianlancetaylor</group>
+      <name>demangle</name>
+      <version>v0.0.0-20200414190113-039b1ae3a340</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">6924af6ffb7a93598fa310ea3b8bc987a54e0863f05383b40b6fc4aa7761d527</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/github.com/ianlancetaylor/demangle@v0.0.0-20200414190113-039b1ae3a340</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/arch@v0.0.0-20200511175325-f7c78586839d">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>arch</name>
+      <version>v0.0.0-20200511175325-f7c78586839d</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">7e521a108e8b354eb13820f93da26f9fdc063f46a09883aa8ebb6c286460bafe</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/arch@v0.0.0-20200511175325-f7c78586839d</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/crypto@v0.0.0-20200622213623-75b288015ac9">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>crypto</name>
+      <version>v0.0.0-20200622213623-75b288015ac9</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">2f320f3107f230d86118f8549183ace4aa4be14f2b2ca7a65f5c862e10e052da</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/crypto@v0.0.0-20200622213623-75b288015ac9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/mod@v0.3.0">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>mod</name>
+      <version>v0.3.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">b3442c8f5002b7d78fa7f84cca93377e5e1f66a444589c1d60312a8518996540</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/mod@v0.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/sys@v0.0.0-20200501145240-bc7a7d42d5c3">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>sys</name>
+      <version>v0.0.0-20200501145240-bc7a7d42d5c3</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">87536359c7bd5d12c6404b16ef0a4a3428c6f43b4d942955b852c465d0cd6c4b</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/sys@v0.0.0-20200501145240-bc7a7d42d5c3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/tools@v0.0.0-20200616133436-c1934b75d054">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>tools</name>
+      <version>v0.0.0-20200616133436-c1934b75d054</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">124558419a00b18e39faba1892f818908878c61fea8e050af53758d974fde061</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/tools@v0.0.0-20200616133436-c1934b75d054</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/xerrors@v0.0.0-20200806184451-1a77d5e9f316">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>xerrors</name>
+      <version>v0.0.0-20200806184451-1a77d5e9f316</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">23fe73ebdf2c9fd29af1378973d30aae85147ea0416ae5a342a2c9d8e3df998d</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/xerrors@v0.0.0-20200806184451-1a77d5e9f316</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/net@v0.0.0-20210428183841-261fb518b1ed">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>net</name>
+      <version>v0.0.0-20210428183841-261fb518b1ed</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">fceed5d30680f2bedc80687cd51a37a3584ec6ddf648c54f89c66ba0a436b190</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/net@v0.0.0-20210428183841-261fb518b1ed</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/golang.org/x/text@v0.3.3-0.20200430171850-afb9336c4530">
+      <publisher/>
+      <group>golang.org/x</group>
+      <name>text</name>
+      <version>v0.3.3-0.20200430171850-afb9336c4530</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-256">e59a1cfd046d2955b34213ad04cbea1f30e917a8ab3bdcfdf310dc7a8b2e1a24</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:golang/golang.org/x/text@v0.3.3-0.20200430171850-afb9336c4530</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/argparse@1.2.1">
+      <publisher>Steven Bethard</publisher>
+      <group/>
+      <name>argparse</name>
+      <version>1.2.1</version>
+      <description><![CDATA[Python command-line parsing library]]></description>
+      <licenses/>
+      <purl>pkg:pypi/argparse@1.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/mercurial@4.8.2">
+      <publisher>Matt Mackall and many others</publisher>
+      <group/>
+      <name>mercurial</name>
+      <version>4.8.2</version>
+      <description><![CDATA[Fast scalable distributed SCM (revision control, version control) system]]></description>
+      <licenses/>
+      <purl>pkg:pypi/mercurial@4.8.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://mercurial-scm.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/python@2.7.16">
+      <publisher>Guido van Rossum and the Python community</publisher>
+      <group/>
+      <name>Python</name>
+      <version>2.7.16</version>
+      <description><![CDATA[A high-level object-oriented programming language]]></description>
+      <licenses/>
+      <purl>pkg:pypi/python@2.7.16</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.python.org/2.7</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/wsgiref@0.1.2">
+      <publisher>Phillip J. Eby</publisher>
+      <group/>
+      <name>wsgiref</name>
+      <version>0.1.2</version>
+      <description><![CDATA[WSGI (PEP 333) Reference Library]]></description>
+      <licenses/>
+      <purl>pkg:pypi/wsgiref@0.1.2</purl>
+    </component>
+  </components>
+  <services>
+    <service bom-ref="urn:service:postgres:latest">
+      <group/>
+      <name>postgres</name>
+      <version>0</version>
+    </service>
+    <service bom-ref="urn:service:api:latest">
+      <group/>
+      <name>api</name>
+      <version>0</version>
+    </service>
+    <service bom-ref="urn:service:setup-db:latest">
+      <group/>
+      <name>setup-db</name>
+      <version>0</version>
+    </service>
+  </services>
+</bom>

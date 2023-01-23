@@ -1,0 +1,1570 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Security Audit",
+          "rules": [
+            {
+              "id": "CWE-338",
+              "help": {
+                "text": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.\nWhen a non-cryptographic PRNG is used in a cryptographic context, it can expose the cryptography to certain types of attacks. Often a pseudo-random number generator (PRNG) is not designed for cryptography. Sometimes a mediocre source of randomness is sufficient or preferable for algorithms that use random numbers. Weak generators generally take less processing power and/or do not use the precious, finite, entropy sources on a system. While such PRNGs might have very useful features, these same features could be used to break the cryptography.",
+                "markdown": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.\nWhen a non-cryptographic PRNG is used in a cryptographic context, it can expose the cryptography to certain types of attacks. Often a pseudo-random number generator (PRNG) is not designed for cryptography. Sometimes a mediocre source of randomness is sufficient or preferable for algorithms that use random numbers. Weak generators generally take less processing power and/or do not use the precious, finite, entropy sources on a system. While such PRNGs might have very useful features, these same features could be used to break the cryptography."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/338.html",
+              "shortDescription": {
+                "text": "Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)."
+              }
+            },
+            {
+              "id": "CWE-295",
+              "help": {
+                "text": "The software does not validate, or incorrectly validates, a certificate.\nWhen a certificate is invalid or malicious, it might allow an attacker to spoof a trusted entity by interfering in the communication path between the host and client. The software might connect to a malicious host while believing it is a trusted host, or the software might be deceived into accepting spoofed data that appears to originate from a trusted host.",
+                "markdown": "The software does not validate, or incorrectly validates, a certificate.\nWhen a certificate is invalid or malicious, it might allow an attacker to spoof a trusted entity by interfering in the communication path between the host and client. The software might connect to a malicious host while believing it is a trusted host, or the software might be deceived into accepting spoofed data that appears to originate from a trusted host."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The software does not validate, or incorrectly validates, a certificate."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/295.html",
+              "shortDescription": {
+                "text": "Improper Certificate Validation."
+              }
+            },
+            {
+              "id": "CWE-326",
+              "help": {
+                "text": "The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required.\nA weak encryption scheme can be subjected to brute force attacks that have a reasonable chance of succeeding using current attack methods and resources.",
+                "markdown": "The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required.\nA weak encryption scheme can be subjected to brute force attacks that have a reasonable chance of succeeding using current attack methods and resources."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software stores or transmits sensitive data using an encryption scheme that is theoretically sound, but is not strong enough for the level of protection required."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/326.html",
+              "shortDescription": {
+                "text": "Inadequate Encryption Strength."
+              }
+            },
+            {
+              "id": "CWE-676",
+              "help": {
+                "text": "The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely.",
+                "markdown": "The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/676.html",
+              "shortDescription": {
+                "text": "Use of Potentially Dangerous Function."
+              }
+            },
+            {
+              "id": "CWE-78",
+              "help": {
+                "text": "The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component.\nThis could allow attackers to execute unexpected, dangerous commands directly on the operating system. This weakness can lead to a vulnerability in environments in which the attacker does not have direct access to the operating system, such as in web applications. Alternately, if the weakness occurs in a privileged program, it could allow the attacker to specify commands that normally would not be accessible, or to call alternate commands with privileges that the attacker does not have. The problem is exacerbated if the compromised process does not follow the principle of least privilege, because the attacker-controlled commands may run with special system privileges that increases the amount of damage. There are at least two subtypes of OS command injection: The application intends to execute a single, fixed program that is under its own control. It intends to use externally-supplied inputs as arguments to that program. For example, the program might use system(nslookup [HOSTNAME]) to run nslookup and allow the user to supply a HOSTNAME, which is used as an argument. Attackers cannot prevent nslookup from executing. However, if the program does not remove command separators from the HOSTNAME argument, attackers could place the separators into the arguments, which allows them to execute their own program after nslookup has finished executing. The application accepts an input that it uses to fully select which program to run, as well as which commands to use. The application simply redirects this entire command to the operating system. For example, the program might use exec([COMMAND]) to execute the [COMMAND] that was supplied by the user. If the COMMAND is under attacker control, then the attacker can execute arbitrary commands or programs. If the command is being executed using functions like exec() and CreateProcess(), the attacker might not be able to combine multiple commands together in the same line. From a weakness standpoint, these variants represent distinct programmer errors. In the first variant, the programmer clearly intends that input from untrusted parties will be part of the arguments in the command to be executed. In the second variant, the programmer does not intend for the command to be accessible to any untrusted party, but the programmer probably has not accounted for alternate ways in which malicious attackers can provide input.",
+                "markdown": "The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component.\nThis could allow attackers to execute unexpected, dangerous commands directly on the operating system. This weakness can lead to a vulnerability in environments in which the attacker does not have direct access to the operating system, such as in web applications. Alternately, if the weakness occurs in a privileged program, it could allow the attacker to specify commands that normally would not be accessible, or to call alternate commands with privileges that the attacker does not have. The problem is exacerbated if the compromised process does not follow the principle of least privilege, because the attacker-controlled commands may run with special system privileges that increases the amount of damage. There are at least two subtypes of OS command injection: The application intends to execute a single, fixed program that is under its own control. It intends to use externally-supplied inputs as arguments to that program. For example, the program might use system(nslookup [HOSTNAME]) to run nslookup and allow the user to supply a HOSTNAME, which is used as an argument. Attackers cannot prevent nslookup from executing. However, if the program does not remove command separators from the HOSTNAME argument, attackers could place the separators into the arguments, which allows them to execute their own program after nslookup has finished executing. The application accepts an input that it uses to fully select which program to run, as well as which commands to use. The application simply redirects this entire command to the operating system. For example, the program might use exec([COMMAND]) to execute the [COMMAND] that was supplied by the user. If the COMMAND is under attacker control, then the attacker can execute arbitrary commands or programs. If the command is being executed using functions like exec() and CreateProcess(), the attacker might not be able to combine multiple commands together in the same line. From a weakness standpoint, these variants represent distinct programmer errors. In the first variant, the programmer clearly intends that input from untrusted parties will be part of the arguments in the command to be executed. In the second variant, the programmer does not intend for the command to be accessible to any untrusted party, but the programmer probably has not accounted for alternate ways in which malicious attackers can provide input."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "shortDescription": {
+                "text": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+              }
+            },
+            {
+              "id": "CWE-22",
+              "help": {
+                "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.\nMany file operations are intended to take place within a restricted directory. By using special elements such as .. and / separators, attackers can escape outside of the restricted location to access files or directories that are elsewhere on the system. One of the most common special elements is the ../ sequence, which in most modern operating systems is interpreted as the parent directory of the current location. This is referred to as relative path traversal. Path traversal also covers the use of absolute pathnames such as /usr/local/bin, which may also be useful in accessing unexpected files. This is referred to as absolute path traversal. In many programming languages, the injection of a null byte (the 0 or NUL) may allow an attacker to truncate a generated filename to widen the scope of attack. For example, the software may add .txt to any pathname, thus limiting the attacker to text files, but a null injection may effectively remove this restriction.",
+                "markdown": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.\nMany file operations are intended to take place within a restricted directory. By using special elements such as .. and / separators, attackers can escape outside of the restricted location to access files or directories that are elsewhere on the system. One of the most common special elements is the ../ sequence, which in most modern operating systems is interpreted as the parent directory of the current location. This is referred to as relative path traversal. Path traversal also covers the use of absolute pathnames such as /usr/local/bin, which may also be useful in accessing unexpected files. This is referred to as absolute path traversal. In many programming languages, the injection of a null byte (the 0 or NUL) may allow an attacker to truncate a generated filename to widen the scope of attack. For example, the software may add .txt to any pathname, thus limiting the attacker to text files, but a null injection may effectively remove this restriction."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/22.html",
+              "shortDescription": {
+                "text": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+              }
+            },
+            {
+              "id": "CWE-88",
+              "help": {
+                "text": "The software constructs a string for a command to executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string.\nWhen creating commands using interpolation into a string, developers may assume that only the arguments/options that they specify will be processed. This assumption may be even stronger when the programmer has encoded the command in a way that prevents separate commands from being provided maliciously, e.g. in the case of shell metacharacters. When constructing the command, the developer may use whitespace or other delimiters that are required to separate arguments when the command. However, if an attacker can provide an untrusted input that contains argument-separating delimiters, then the resulting command will have more arguments than intended by the developer. The attacker may then be able to change the behavior of the command. Depending on the functionality supported by the extraneous arguments, this may have security-relevant consequences.",
+                "markdown": "The software constructs a string for a command to executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string.\nWhen creating commands using interpolation into a string, developers may assume that only the arguments/options that they specify will be processed. This assumption may be even stronger when the programmer has encoded the command in a way that prevents separate commands from being provided maliciously, e.g. in the case of shell metacharacters. When constructing the command, the developer may use whitespace or other delimiters that are required to separate arguments when the command. However, if an attacker can provide an untrusted input that contains argument-separating delimiters, then the resulting command will have more arguments than intended by the developer. The attacker may then be able to change the behavior of the command. Depending on the functionality supported by the extraneous arguments, this may have security-relevant consequences."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software constructs a string for a command to executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/88.html",
+              "shortDescription": {
+                "text": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')."
+              }
+            },
+            {
+              "id": "CWE-118",
+              "help": {
+                "text": "The software does not restrict or incorrectly restricts operations within the boundaries of a resource that is accessed using an index or pointer, such as memory or files.",
+                "markdown": "The software does not restrict or incorrectly restricts operations within the boundaries of a resource that is accessed using an index or pointer, such as memory or files."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software does not restrict or incorrectly restricts operations within the boundaries of a resource that is accessed using an index or pointer, such as memory or files."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/118.html",
+              "shortDescription": {
+                "text": "Incorrect Access of Indexable Resource ('Range Error')."
+              }
+            },
+            {
+              "id": "CWE-377",
+              "help": {
+                "text": "Creating and using insecure temporary files can leave application and system data vulnerable to attack.",
+                "markdown": "Creating and using insecure temporary files can leave application and system data vulnerable to attack."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "Creating and using insecure temporary files can leave application and system data vulnerable to attack."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/377.html",
+              "shortDescription": {
+                "text": "Insecure Temporary File."
+              }
+            },
+            {
+              "id": "CWE-276",
+              "help": {
+                "text": "The product, upon installation, sets incorrect permissions for an object that exposes it to an unintended actor.",
+                "markdown": "The product, upon installation, sets incorrect permissions for an object that exposes it to an unintended actor."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The product, upon installation, sets incorrect permissions for an object that exposes it to an unintended actor."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/276.html",
+              "shortDescription": {
+                "text": "Incorrect Default Permissions."
+              }
+            },
+            {
+              "id": "CWE-703",
+              "help": {
+                "text": "The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software.",
+                "markdown": "The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software does not properly anticipate or handle exceptional conditions that rarely occur during normal operation of the software."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/703.html",
+              "shortDescription": {
+                "text": "Improper Check or Handling of Exceptional Conditions."
+              }
+            },
+            {
+              "id": "CWE-327",
+              "help": {
+                "text": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.\nThe use of a non-standard algorithm is dangerous because a determined attacker may be able to break the algorithm and compromise whatever data has been protected. Well-known techniques may exist to break the algorithm.",
+                "markdown": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information.\nThe use of a non-standard algorithm is dangerous because a determined attacker may be able to break the algorithm and compromise whatever data has been protected. Well-known techniques may exist to break the algorithm."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/327.html",
+              "shortDescription": {
+                "text": "Use of a Broken or Risky Cryptographic Algorithm."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Security Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-fmt=json",
+            "-confidence=medium",
+            "-severity=medium",
+            "-no-fail",
+            "-out=/github/workspace/reports/source-go-report.json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-fmt=json -confidence=medium -severity=medium -no-fail -out=/github/workspace/reports/source-go-report.json ./...",
+          "endTimeUtc": "2023-01-23T08:31:45Z",
+          "workingDirectory": {
+            "uri": "https://github.com/mozilla/tls-observatory"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-23T08:31:45Z",
+          "workingDirectory": {
+            "uri": "https://github.com/mozilla/tls-observatory"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 30,
+          "critical": 0,
+          "high": 3,
+          "medium": 27,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of weak random number generator (math/rand instead of crypto/rand)."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tb[i] = letters[rand.Intn(len(letters))]\n"
+                  },
+                  "startLine": 19
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/helpers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor i := range b {\n\t\tb[i] = letters[rand.Intn(len(letters))]\n"
+                  },
+                  "endLine": 19,
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a0f57dec2a7cfe83",
+            "scanFileHash": "2c224a8245a426bf"
+          },
+          "ruleId": "CWE-338",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of weak random number generator (math/rand instead of crypto/rand)."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tindex := rand.Intn(len(ips))\n"
+                  },
+                  "startLine": 89
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t}\n\t\tindex := rand.Intn(len(ips))\n"
+                  },
+                  "endLine": 89,
+                  "startLine": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5b82cafa503159fc",
+            "scanFileHash": "714cb2ca216ff0a3"
+          },
+          "ruleId": "CWE-338",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TLS InsecureSkipVerify set true."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tconfig := tls.Config{InsecureSkipVerify: skipVerify}\n"
+                  },
+                  "startLine": 67
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tconfig := tls.Config{InsecureSkipVerify: skipVerify}\n"
+                  },
+                  "endLine": 67,
+                  "startLine": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "3961315faed36cb0",
+            "scanFileHash": "6aeff99a8066d68e"
+          },
+          "ruleId": "CWE-295",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\th := sha1.Sum(data)\n"
+                  },
+                  "startLine": 251
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "func SHA1Hash(data []byte) string {\n\th := sha1.Sum(data)\n"
+                  },
+                  "endLine": 251,
+                  "startLine": 250
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "68d5e05b04d4c236",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "CWE-326",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\th := md5.Sum(data)\n"
+                  },
+                  "startLine": 246
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "func MD5Hash(data []byte) string {\n\th := md5.Sum(data)\n"
+                  },
+                  "endLine": 246,
+                  "startLine": 245
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8ee0f7578cc4a530",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "CWE-326",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of net/http serve function that has no support for setting timeouts."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "package main\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "package main\n\n"
+                  },
+                  "endLine": 2,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "87ee7806e3fa80e2",
+            "scanFileHash": "d3bb6c8a65f82337"
+          },
+          "ruleId": "CWE-676",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Subprocess launched with variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tcomm := exec.Command(\"bash\", \"-c\", cmd)\n"
+                  },
+                  "startLine": 31
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tlog.Println(cmd)\n\tcomm := exec.Command(\"bash\", \"-c\", cmd)\n"
+                  },
+                  "endLine": 31,
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e161dcf95af592f3",
+            "scanFileHash": "714cb2ca216ff0a3"
+          },
+          "ruleId": "CWE-78",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Subprocess launched with a potential tainted input or cmd arguments."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tcmd := exec.Command(EvCheckerBinaryName, \"-o\", params.OID, \"-h\", scan.Target, \"-c\", file.Name())\n"
+                  },
+                  "startLine": 96
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/evCheckerWorker/evCheckerWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tcmd := exec.Command(EvCheckerBinaryName, \"-o\", params.OID, \"-h\", scan.Target, \"-c\", file.Name())\n"
+                  },
+                  "endLine": 96,
+                  "startLine": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "4e33899ddce4d05b",
+            "scanFileHash": "8df42806d81c4a61"
+          },
+          "ruleId": "CWE-78",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Subprocess launched with a potential tainted input or cmd arguments."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tcmd := exec.Command(\"ruby\", \"-I\", \"lib:ext\", binaryPath, tmp.Name())\n"
+                  },
+                  "startLine": 102
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/awsCertlint/awsCertlint.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t// Run certlint over certificate\n\tcmd := exec.Command(\"ruby\", \"-I\", \"lib:ext\", binaryPath, tmp.Name())\n"
+                  },
+                  "endLine": 102,
+                  "startLine": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "3701f1a9c2f71116",
+            "scanFileHash": "12df15fd6b870920"
+          },
+          "ruleId": "CWE-78",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tcsnamesfd, err := ioutil.ReadFile(gopath + \"/src/github.com/mozilla/tls-observatory/tools/ciphersuites_names.json\")\n"
+                  },
+                  "startLine": 42
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/extractCiphersuites.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tgopath := os.Getenv(\"GOPATH\")\n\tcsnamesfd, err := ioutil.ReadFile(gopath + \"/src/github.com/mozilla/tls-observatory/tools/ciphersuites_names.json\")\n"
+                  },
+                  "endLine": 42,
+                  "startLine": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f8cf54c2aa143e68",
+            "scanFileHash": "aeb9491551397e12"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tfd, err := ioutil.ReadFile(cfg)\n"
+                  },
+                  "startLine": 247
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-runner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t// load the local configuration file\n\tfd, err := ioutil.ReadFile(cfg)\n"
+                  },
+                  "endLine": 247,
+                  "startLine": 246
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9fae673450715568",
+            "scanFileHash": "8090bb525dd3f547"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential file inclusion via variable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tf, err := os.Open(filename)\n"
+                  },
+                  "startLine": 676
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfilename := path.Clean(dir + string(os.PathSeparator) + \"version.json\")\n\tf, err := os.Open(filename)\n"
+                  },
+                  "endLine": 676,
+                  "startLine": 675
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "7b77813ac8563cd7",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "CWE-22",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential HTTP request made with variable url."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tr, err := http.Get(url)\n"
+                  },
+                  "startLine": 40
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/sslLabsClientSupport/sslLabsClientSupport.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "func getConffromURL(url string) (cs []Client, err error) {\n\tr, err := http.Get(url)\n"
+                  },
+                  "endLine": 40,
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "34b9c0420d7f2cdf",
+            "scanFileHash": "38d12dcd9081fc5a"
+          },
+          "ruleId": "CWE-88",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential HTTP request made with variable url."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tr, err := http.Get(url)\n"
+                  },
+                  "startLine": 67
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tr, err := http.Get(url)\n"
+                  },
+                  "endLine": 67,
+                  "startLine": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "34b9c0420d7f2cdf",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "CWE-88",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential HTTP request made with variable url."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tresp, err := http.Get(csvURL)\n"
+                  },
+                  "startLine": 29
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/retrieveTruststoreFromCADatabase.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tresp, err := http.Get(csvURL)\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "7987b09ab1a6cfff",
+            "scanFileHash": "b67466f3a616d4d5"
+          },
+          "ruleId": "CWE-88",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Implicit memory aliasing in for loop."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tcertID, err = db.InsertCertificate(&cert)\n"
+                  },
+                  "startLine": 390
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/analyser.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tif certID == -1 {\n\t\t\tcertID, err = db.InsertCertificate(&cert)\n"
+                  },
+                  "endLine": 390,
+                  "startLine": 389
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "13d858de6146dc82",
+            "scanFileHash": "71bbba8e87dbb197"
+          },
+          "ruleId": "CWE-118",
+          "ruleIndex": 7
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Implicit memory aliasing in for loop."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tisChainValid(cert, inter, &truststore, chain.Domain, chain.IP, certmap)\n"
+                  },
+                  "startLine": 268
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/analyser.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\tinter := append(intermediates[:i], intermediates[i+1:]...)\n\t\t\tisChainValid(cert, inter, &truststore, chain.Domain, chain.IP, certmap)\n"
+                  },
+                  "endLine": 268,
+                  "startLine": 267
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "44282790321d5cfa",
+            "scanFileHash": "71bbba8e87dbb197"
+          },
+          "ruleId": "CWE-118",
+          "ruleIndex": 7
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Implicit memory aliasing in for loop."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tif endEntity != nil && isChainValid(endEntity, intermediates, &truststore, chain.Domain, chain.IP, certmap) {\n"
+                  },
+                  "startLine": 258
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/analyser.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor _, truststore := range trustStores {\n\t\tif endEntity != nil && isChainValid(endEntity, intermediates, &truststore, chain.Domain, chain.IP, certmap) {\n"
+                  },
+                  "endLine": 258,
+                  "startLine": 257
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d65de487401e6e46",
+            "scanFileHash": "71bbba8e87dbb197"
+          },
+          "ruleId": "CWE-118",
+          "ruleIndex": 7
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "File creation in shared tmp directory without using ioutil.Tempfile."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tioutil.WriteFile(\"/tmp/initMozPolicy_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "startLine": 100
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/initMozPolicy.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\toffset += limit\n\t\tioutil.WriteFile(\"/tmp/initMozPolicy_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "endLine": 100,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "827a2d2fad138d24",
+            "scanFileHash": "8dd2fe47dabbb1ac"
+          },
+          "ruleId": "CWE-377",
+          "ruleIndex": 8
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "File creation in shared tmp directory without using ioutil.Tempfile."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tioutil.WriteFile(\"/tmp/fixSHA256SubjectSPKI_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "startLine": 102
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixSHA256SubjectSPKI.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t}\n\t\tioutil.WriteFile(\"/tmp/fixSHA256SubjectSPKI_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "endLine": 102,
+                  "startLine": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8784cf520928c68e",
+            "scanFileHash": "9dccad279cf228e8"
+          },
+          "ruleId": "CWE-377",
+          "ruleIndex": 8
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Expect WriteFile permissions to be 0600 or less."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tif err := ioutil.WriteFile(tmp.Name(), x509Cert.Raw, 0644); err != nil {\n"
+                  },
+                  "startLine": 97
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/awsCertlint/awsCertlint.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tif err := ioutil.WriteFile(tmp.Name(), x509Cert.Raw, 0644); err != nil {\n"
+                  },
+                  "endLine": 97,
+                  "startLine": 96
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ffc4af7840c42b5e",
+            "scanFileHash": "12df15fd6b870920"
+          },
+          "ruleId": "CWE-276",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Expect WriteFile permissions to be 0600 or less."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tioutil.WriteFile(\"/tmp/initMozPolicy_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "startLine": 100
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/initMozPolicy.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\toffset += limit\n\t\tioutil.WriteFile(\"/tmp/initMozPolicy_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "endLine": 100,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "827a2d2fad138d24",
+            "scanFileHash": "8dd2fe47dabbb1ac"
+          },
+          "ruleId": "CWE-276",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Expect WriteFile permissions to be 0600 or less."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tioutil.WriteFile(\"/tmp/fixSHA256SubjectSPKI_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "startLine": 102
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixSHA256SubjectSPKI.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t}\n\t\tioutil.WriteFile(\"/tmp/fixSHA256SubjectSPKI_offset\", []byte(fmt.Sprintf(\"%d\", offset)), 0700)\n"
+                  },
+                  "endLine": 102,
+                  "startLine": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8784cf520928c68e",
+            "scanFileHash": "9dccad279cf228e8"
+          },
+          "ruleId": "CWE-276",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Expect WriteFile permissions to be 0600 or less."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = ioutil.WriteFile(\"ciphersuites.go\", []byte(content), 0777)\n"
+                  },
+                  "startLine": 113
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/extractCiphersuites.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tcontent := fmt.Sprintf(\"package sslLabsClientSupport\\n//go:generate go run $GOPATH/src/github.com/mozilla/tls-observatory/tools/extractCiphersuites.go sslLabsClientSupport\\nvar OpenSSLCiphersuites = `%s`\", string(js))\n\t\terr = ioutil.WriteFile(\"ciphersuites.go\", []byte(content), 0777)\n"
+                  },
+                  "endLine": 113,
+                  "startLine": 112
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2c586ce9b6baa67d",
+            "scanFileHash": "aeb9491551397e12"
+          },
+          "ruleId": "CWE-276",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Expect WriteFile permissions to be 0600 or less."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = ioutil.WriteFile(\"ciphersuites.go\", []byte(content), 0777)\n"
+                  },
+                  "startLine": 105
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/extractCiphersuites.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tcontent := fmt.Sprintf(\"package mozillaGradingWorker\\n//go:generate go run $GOPATH/src/github.com/mozilla/tls-observatory/tools/extractCiphersuites.go mozillaGradingWorker\\nvar OpenSSLCiphersuites = `%s`\", string(js))\n\t\terr = ioutil.WriteFile(\"ciphersuites.go\", []byte(content), 0777)\n"
+                  },
+                  "endLine": 105,
+                  "startLine": 104
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2c586ce9b6baa67d",
+            "scanFileHash": "aeb9491551397e12"
+          },
+          "ruleId": "CWE-276",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer afd.Close()\n"
+                  },
+                  "startLine": 104
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/top1m/top1m.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tafd, err := os.Open(alexaTop1mPath)\n\tdefer afd.Close()\n"
+                  },
+                  "endLine": 104,
+                  "startLine": 103
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d29828ea1b878035",
+            "scanFileHash": "1c535354dd093b27"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 10
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer fd.Close()\n"
+                  },
+                  "startLine": 69
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/top1m/top1m.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfd, err := os.Open(ciscoTop1mPath)\n\tdefer fd.Close()\n"
+                  },
+                  "endLine": 69,
+                  "startLine": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ec4f001634a23083",
+            "scanFileHash": "1c535354dd093b27"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 10
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Deferring unsafe method \"Close\" on type \"*os.File\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer file.Close()\n"
+                  },
+                  "startLine": 91
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/evCheckerWorker/evCheckerWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tdefer file.Close()\n"
+                  },
+                  "endLine": 91,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9c74cef9da941996",
+            "scanFileHash": "8df42806d81c4a61"
+          },
+          "ruleId": "CWE-703",
+          "ruleIndex": 10
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Blocklisted import crypto/sha1: weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"crypto/sha1\"\n"
+                  },
+                  "startLine": 8
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"crypto/rsa\"\n\t\"crypto/sha1\"\n"
+                  },
+                  "endLine": 8,
+                  "startLine": 7
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2d902868d72f132e",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "CWE-327",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Blocklisted import crypto/md5: weak cryptographic primitive."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"crypto/md5\"\n"
+                  },
+                  "startLine": 6
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"crypto/ecdsa\"\n\t\"crypto/md5\"\n"
+                  },
+                  "endLine": 6,
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "aae7b9bcb6bd6a86",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "CWE-327",
+          "ruleIndex": 11
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "4472b1f8-3d2c-49c0-8a7c-5989b5b85ab5"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "4472b1f8-3d2c-49c0-8a7c-5989b5b85ab5",
+      "runGuid": "4fb91293-9add-449d-a893-2395c9af01bc"
+    }
+  ]
+}

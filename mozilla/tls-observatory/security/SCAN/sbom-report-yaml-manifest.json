@@ -1,0 +1,483 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:97deb054-d8ca-4808-95ca-cfcc93810b9b",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T08:35:41.853Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "6.0.14"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "postgres",
+      "version": "latest",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/postgres@latest?",
+      "type": "library",
+      "bom-ref": "pkg:oci/postgres@latest?",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "postgres"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "mozilla/tls-observatory",
+      "version": "latest",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:oci/mozilla/tls-observatory@latest?",
+      "type": "library",
+      "bom-ref": "pkg:oci/mozilla/tls-observatory@latest?",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "github.com/google",
+      "name": "pprof",
+      "version": "v0.0.0-20200229191704-1ebb73c60ed3",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6605513e852afe17eacc0aa1eec1cca9bdc8f51ab90b9f5d233d926c1c09e1e3"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/github.com/google/pprof@v0.0.0-20200229191704-1ebb73c60ed3",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/google/pprof@v0.0.0-20200229191704-1ebb73c60ed3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "github.com/ianlancetaylor",
+      "name": "demangle",
+      "version": "v0.0.0-20200414190113-039b1ae3a340",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6924af6ffb7a93598fa310ea3b8bc987a54e0863f05383b40b6fc4aa7761d527"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/github.com/ianlancetaylor/demangle@v0.0.0-20200414190113-039b1ae3a340",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/ianlancetaylor/demangle@v0.0.0-20200414190113-039b1ae3a340",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "arch",
+      "version": "v0.0.0-20200511175325-f7c78586839d",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7e521a108e8b354eb13820f93da26f9fdc063f46a09883aa8ebb6c286460bafe"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/arch@v0.0.0-20200511175325-f7c78586839d",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/arch@v0.0.0-20200511175325-f7c78586839d",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "crypto",
+      "version": "v0.0.0-20200622213623-75b288015ac9",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2f320f3107f230d86118f8549183ace4aa4be14f2b2ca7a65f5c862e10e052da"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20200622213623-75b288015ac9",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/crypto@v0.0.0-20200622213623-75b288015ac9",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "mod",
+      "version": "v0.3.0",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b3442c8f5002b7d78fa7f84cca93377e5e1f66a444589c1d60312a8518996540"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/mod@v0.3.0",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/mod@v0.3.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "sys",
+      "version": "v0.0.0-20200501145240-bc7a7d42d5c3",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "87536359c7bd5d12c6404b16ef0a4a3428c6f43b4d942955b852c465d0cd6c4b"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20200501145240-bc7a7d42d5c3",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20200501145240-bc7a7d42d5c3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "tools",
+      "version": "v0.0.0-20200616133436-c1934b75d054",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "124558419a00b18e39faba1892f818908878c61fea8e050af53758d974fde061"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/tools@v0.0.0-20200616133436-c1934b75d054",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/tools@v0.0.0-20200616133436-c1934b75d054",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "xerrors",
+      "version": "v0.0.0-20200806184451-1a77d5e9f316",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "23fe73ebdf2c9fd29af1378973d30aae85147ea0416ae5a342a2c9d8e3df998d"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/xerrors@v0.0.0-20200806184451-1a77d5e9f316",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/xerrors@v0.0.0-20200806184451-1a77d5e9f316",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "net",
+      "version": "v0.0.0-20210428183841-261fb518b1ed",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fceed5d30680f2bedc80687cd51a37a3584ec6ddf648c54f89c66ba0a436b190"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/net@v0.0.0-20210428183841-261fb518b1ed",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.0.0-20210428183841-261fb518b1ed",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "golang.org/x",
+      "name": "text",
+      "version": "v0.3.3-0.20200430171850-afb9336c4530",
+      "description": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e59a1cfd046d2955b34213ad04cbea1f30e917a8ab3bdcfdf310dc7a8b2e1a24"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:golang/golang.org/x/text@v0.3.3-0.20200430171850-afb9336c4530",
+      "type": "library",
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.3-0.20200430171850-afb9336c4530",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "Steven Bethard",
+      "group": "",
+      "name": "argparse",
+      "version": "1.2.1",
+      "description": "Python command-line parsing library",
+      "licenses": [],
+      "purl": "pkg:pypi/argparse@1.2.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/argparse@1.2.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "Matt Mackall and many others",
+      "group": "",
+      "name": "mercurial",
+      "version": "4.8.2",
+      "description": "Fast scalable distributed SCM (revision control, version control) system",
+      "licenses": [],
+      "purl": "pkg:pypi/mercurial@4.8.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://mercurial-scm.org/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/mercurial@4.8.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "Guido van Rossum and the Python community",
+      "group": "",
+      "name": "Python",
+      "version": "2.7.16",
+      "description": "A high-level object-oriented programming language",
+      "licenses": [],
+      "purl": "pkg:pypi/python@2.7.16",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://www.python.org/2.7"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:pypi/python@2.7.16",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    },
+    {
+      "publisher": "Phillip J. Eby",
+      "group": "",
+      "name": "wsgiref",
+      "version": "0.1.2",
+      "description": "WSGI (PEP 333) Reference Library",
+      "licenses": [],
+      "purl": "pkg:pypi/wsgiref@0.1.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/wsgiref@0.1.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "oci:SrcImage",
+          "value": "mozilla/tls-observatory"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "bom-ref": "urn:service:postgres:latest",
+      "name": "postgres",
+      "version": "latest",
+      "group": "",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "ServiceName",
+          "value": "postgres"
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:service:api:latest",
+      "name": "api",
+      "version": "latest",
+      "group": "",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/deployment.yaml"
+        },
+        {
+          "name": "ServiceName",
+          "value": "api"
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:service:setup-db:latest",
+      "name": "setup-db",
+      "version": "latest",
+      "group": "",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/kubernetes/setup_db.yaml"
+        },
+        {
+          "name": "ServiceName",
+          "value": "setup-db"
+        }
+      ]
+    }
+  ],
+  "dependencies": []
+}

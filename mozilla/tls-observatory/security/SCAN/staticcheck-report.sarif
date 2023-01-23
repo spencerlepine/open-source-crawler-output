@@ -1,0 +1,4635 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Static Analysis",
+          "rules": [
+            {
+              "id": "SA1019",
+              "help": {
+                "text": "\"crypto/dsa\" has been deprecated since Go 1.16 because it shouldn't be used: DSA is a legacy algorithm, and modern alternatives such as Ed25519 (implemented by package crypto/ed25519) should be used instead. Keys with 1024-bit moduli (L1024N160 parameters) are cryptographically weak, while bigger keys are not widely supported. Note that FIPS 186-5 no longer approves DSA for signature generation. .",
+                "markdown": "\"crypto/dsa\" has been deprecated since Go 1.16 because it shouldn't be used: DSA is a legacy algorithm, and modern alternatives such as Ed25519 (implemented by package crypto/ed25519) should be used instead. Keys with 1024-bit moduli (L1024N160 parameters) are cryptographically weak, while bigger keys are not widely supported. Note that FIPS 186-5 no longer approves DSA for signature generation. ."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "\"crypto/dsa\" has been deprecated since Go 1.16 because it shouldn't be used: DSA is a legacy algorithm, and modern alternatives such as Ed25519 (implemented by package crypto/ed25519) should be used instead. Keys with 1024-bit moduli (L1024N160 parameters) are cryptographically weak, while bigger keys are not widely supported. Note that FIPS 186-5 no longer approves DSA for signature generation. ."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#SA1019",
+              "shortDescription": {
+                "text": "\"crypto/dsa\" has been deprecated since Go 1.16 because it shouldn't be used: DSA is a legacy algorithm, and modern alternatives such as Ed25519 (implemented by package crypto/ed25519) should be used instead"
+              }
+            },
+            {
+              "id": "S1005",
+              "help": {
+                "text": "unnecessary assignment to the blank identifier.",
+                "markdown": "unnecessary assignment to the blank identifier."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "unnecessary assignment to the blank identifier."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1005",
+              "shortDescription": {
+                "text": "unnecessary assignment to the blank identifier."
+              }
+            },
+            {
+              "id": "ST1005",
+              "help": {
+                "text": "error strings should not be capitalized.",
+                "markdown": "error strings should not be capitalized."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "error strings should not be capitalized."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#ST1005",
+              "shortDescription": {
+                "text": "error strings should not be capitalized."
+              }
+            },
+            {
+              "id": "S1039",
+              "help": {
+                "text": "unnecessary use of fmt.Sprintf.",
+                "markdown": "unnecessary use of fmt.Sprintf."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "unnecessary use of fmt.Sprintf."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1039",
+              "shortDescription": {
+                "text": "unnecessary use of fmt.Sprintf."
+              }
+            },
+            {
+              "id": "S1030",
+              "help": {
+                "text": "should use out.Bytes() instead of []byte(out.String()).",
+                "markdown": "should use out.Bytes() instead of []byte(out.String())."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should use out.Bytes() instead of []byte(out.String())."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1030",
+              "shortDescription": {
+                "text": "should use out.Bytes() instead of []byte(out.String())."
+              }
+            },
+            {
+              "id": "S1028",
+              "help": {
+                "text": "should use fmt.Errorf(...) instead of errors.New(fmt.Sprintf(...)).",
+                "markdown": "should use fmt.Errorf(...) instead of errors.New(fmt.Sprintf(...))."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should use fmt.Errorf(...) instead of errors.New(fmt.Sprintf(...))."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1028",
+              "shortDescription": {
+                "text": "should use fmt.Errorf(...) instead of errors.New(fmt.Sprintf(...))."
+              }
+            },
+            {
+              "id": "SA4006",
+              "help": {
+                "text": "this value of err is never used.",
+                "markdown": "this value of err is never used."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "this value of err is never used."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#SA4006",
+              "shortDescription": {
+                "text": "this value of err is never used."
+              }
+            },
+            {
+              "id": "SA4017",
+              "help": {
+                "text": "Errorf is a pure function but its return value is ignored.",
+                "markdown": "Errorf is a pure function but its return value is ignored."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "Errorf is a pure function but its return value is ignored."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#SA4017",
+              "shortDescription": {
+                "text": "Errorf is a pure function but its return value is ignored."
+              }
+            },
+            {
+              "id": "S1038",
+              "help": {
+                "text": "should use fmt.Fprintf instead of fmt.Fprint(fmt.Sprintf(...)).",
+                "markdown": "should use fmt.Fprintf instead of fmt.Fprint(fmt.Sprintf(...))."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should use fmt.Fprintf instead of fmt.Fprint(fmt.Sprintf(...))."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1038",
+              "shortDescription": {
+                "text": "should use fmt.Fprintf instead of fmt.Fprint(fmt.Sprintf(...))."
+              }
+            },
+            {
+              "id": "S1023",
+              "help": {
+                "text": "redundant return statement.",
+                "markdown": "redundant return statement."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "redundant return statement."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1023",
+              "shortDescription": {
+                "text": "redundant return statement."
+              }
+            },
+            {
+              "id": "S1008",
+              "help": {
+                "text": "should use 'return domain != \"\"' instead of 'if domain == \"\" { return false }; return true'.",
+                "markdown": "should use 'return domain != \"\"' instead of 'if domain == \"\" { return false }; return true'."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should use 'return domain != \"\"' instead of 'if domain == \"\" { return false }; return true'."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1008",
+              "shortDescription": {
+                "text": "should use 'return domain != \"\"' instead of 'if domain == \"\" { return false }; return true'."
+              }
+            },
+            {
+              "id": "SA5001",
+              "help": {
+                "text": "should check returned error before deferring db.Close().",
+                "markdown": "should check returned error before deferring db.Close()."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should check returned error before deferring db.Close()."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#SA5001",
+              "shortDescription": {
+                "text": "should check returned error before deferring db.Close()."
+              }
+            },
+            {
+              "id": "SA1029",
+              "help": {
+                "text": "should not use built-in type string as key for value; define your own type to avoid collisions.",
+                "markdown": "should not use built-in type string as key for value; define your own type to avoid collisions."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "should not use built-in type string as key for value; define your own type to avoid collisions."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#SA1029",
+              "shortDescription": {
+                "text": "should not use built-in type string as key for value; define your own type to avoid collisions."
+              }
+            },
+            {
+              "id": "S1021",
+              "help": {
+                "text": "should merge variable declaration with assignment on next line.",
+                "markdown": "should merge variable declaration with assignment on next line."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should merge variable declaration with assignment on next line."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1021",
+              "shortDescription": {
+                "text": "should merge variable declaration with assignment on next line."
+              }
+            },
+            {
+              "id": "S1024",
+              "help": {
+                "text": "should use time.Until instead of t.Sub(time.Now()).",
+                "markdown": "should use time.Until instead of t.Sub(time.Now())."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should use time.Until instead of t.Sub(time.Now())."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1024",
+              "shortDescription": {
+                "text": "should use time.Until instead of t.Sub(time.Now())."
+              }
+            },
+            {
+              "id": "S1025",
+              "help": {
+                "text": "the argument's underlying type is a slice of bytes, should use a simple conversion instead of fmt.Sprintf.",
+                "markdown": "the argument's underlying type is a slice of bytes, should use a simple conversion instead of fmt.Sprintf."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "the argument's underlying type is a slice of bytes, should use a simple conversion instead of fmt.Sprintf."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1025",
+              "shortDescription": {
+                "text": "the argument's underlying type is a slice of bytes, should use a simple conversion instead of fmt.Sprintf."
+              }
+            },
+            {
+              "id": "S1040",
+              "help": {
+                "text": "type assertion to the same type: wrkInfo.Runner already has type worker.Worker.",
+                "markdown": "type assertion to the same type: wrkInfo.Runner already has type worker.Worker."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "type assertion to the same type: wrkInfo.Runner already has type worker.Worker."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1040",
+              "shortDescription": {
+                "text": "type assertion to the same type: wrkInfo.Runner already has type worker.Worker."
+              }
+            },
+            {
+              "id": "S1012",
+              "help": {
+                "text": "should use time.Since instead of time.Now().Sub.",
+                "markdown": "should use time.Since instead of time.Now().Sub."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should use time.Since instead of time.Now().Sub."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1012",
+              "shortDescription": {
+                "text": "should use time.Since instead of time.Now().Sub."
+              }
+            },
+            {
+              "id": "compile",
+              "help": {
+                "text": "\tother declaration of main.",
+                "markdown": "\tother declaration of main."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "\tother declaration of main."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#compile",
+              "shortDescription": {
+                "text": "\tother declaration of main."
+              }
+            },
+            {
+              "id": "SA6005",
+              "help": {
+                "text": "should use strings.EqualFold instead.",
+                "markdown": "should use strings.EqualFold instead."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "should use strings.EqualFold instead."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#SA6005",
+              "shortDescription": {
+                "text": "should use strings.EqualFold instead."
+              }
+            },
+            {
+              "id": "ST1017",
+              "help": {
+                "text": "don't use Yoda conditions.",
+                "markdown": "don't use Yoda conditions."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "don't use Yoda conditions."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#ST1017",
+              "shortDescription": {
+                "text": "don't use Yoda conditions."
+              }
+            },
+            {
+              "id": "S1002",
+              "help": {
+                "text": "should omit comparison to bool constant, can be simplified to printAll.(bool).",
+                "markdown": "should omit comparison to bool constant, can be simplified to printAll.(bool)."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "should omit comparison to bool constant, can be simplified to printAll.(bool)."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#S1002",
+              "shortDescription": {
+                "text": "should omit comparison to bool constant, can be simplified to printAll.(bool)."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Static Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-f",
+            "json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-f json ./...",
+          "endTimeUtc": "2023-01-23T08:31:57Z",
+          "workingDirectory": {
+            "uri": "https://github.com/mozilla/tls-observatory"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-23T08:31:57Z",
+          "workingDirectory": {
+            "uri": "https://github.com/mozilla/tls-observatory"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 100,
+          "critical": 0,
+          "high": 0,
+          "medium": 69,
+          "low": 31
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "\"crypto/dsa\" has been deprecated since Go 1.16 because it shouldn't be used: DSA is a legacy algorithm, and modern alternatives such as Ed25519 (implemented by package crypto/ed25519) should be used instead. Keys with 1024-bit moduli (L1024N160 parameters) are cryptographically weak, while bigger keys are not widely supported. Note that FIPS 186-5 no longer approves DSA for signature generation. ."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"crypto/dsa\"\n"
+                  },
+                  "startLine": 4
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "import (\n\t\"crypto/dsa\"\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d5f7dd7edac027f1",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "SA1019",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary assignment to the blank identifier."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tfor i, _ := range c.Subject.Organisation {\n"
+                  },
+                  "startLine": 646
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tfor i, _ := range c.Subject.Organisation {\n"
+                  },
+                  "endLine": 646,
+                  "startLine": 645
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e6b49e28aa43594b",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "S1005",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary assignment to the blank identifier."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tfor i, _ := range c.Subject.OrgUnit {\n"
+                  },
+                  "startLine": 651
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tfor i, _ := range c.Subject.OrgUnit {\n"
+                  },
+                  "endLine": 651,
+                  "startLine": 650
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "24ae683b04773409",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "S1005",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary assignment to the blank identifier."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tfor i, _ := range c.Subject.Country {\n"
+                  },
+                  "startLine": 656
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/certificate/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tfor i, _ := range c.Subject.Country {\n"
+                  },
+                  "endLine": 656,
+                  "startLine": 655
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5afa21774b9e37df",
+            "scanFileHash": "ea6f10485d9f1e46"
+          },
+          "ruleId": "S1005",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\treturn c, fmt.Errorf(\"Multiple PubKeys for %s at cipher : %s\", s.Target, cipher.Cipher)\n"
+                  },
+                  "startLine": 148
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/connection.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tif len(cipher.PubKey) > 1 {\n\t\t\treturn c, fmt.Errorf(\"Multiple PubKeys for %s at cipher : %s\", s.Target, cipher.Cipher)\n"
+                  },
+                  "endLine": 148,
+                  "startLine": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c2478fad90297897",
+            "scanFileHash": "563c3ea2e3de0125"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\treturn c, errors.New(\"No Public Keys found\")\n"
+                  },
+                  "startLine": 154
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/connection.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t} else {\n\t\t\treturn c, errors.New(\"No Public Keys found\")\n"
+                  },
+                  "endLine": 154,
+                  "startLine": 153
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "113ca249a600483b",
+            "scanFileHash": "563c3ea2e3de0125"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\treturn c, fmt.Errorf(\"Multiple SigAlgs for %s at cipher: %s\", s.Target, cipher.Cipher)\n"
+                  },
+                  "startLine": 159
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/connection.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\t\treturn c, fmt.Errorf(\"Multiple SigAlgs for %s at cipher: %s\", s.Target, cipher.Cipher)\n"
+                  },
+                  "endLine": 159,
+                  "startLine": 158
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0e95e2f76842c5ca",
+            "scanFileHash": "563c3ea2e3de0125"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\treturn c, errors.New(\"No Signature Algorithms found\")\n"
+                  },
+                  "startLine": 165
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/connection.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t} else {\n\t\t\treturn c, errors.New(\"No Signature Algorithms found\")\n"
+                  },
+                  "endLine": 165,
+                  "startLine": 164
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2746951bb1cafd4a",
+            "scanFileHash": "563c3ea2e3de0125"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn fmt.Sprintf(\"No TLS Conn Received\")\n"
+                  },
+                  "startLine": 17
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "func (f NoTLSConnErr) Error() string {\n\treturn fmt.Sprintf(\"No TLS Conn Received\")\n"
+                  },
+                  "endLine": 17,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ced25a1f8f0c7f29",
+            "scanFileHash": "714cb2ca216ff0a3"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\te := fmt.Errorf(\"Could not resolve ip for: %s\", domain)\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif ip == \"\" {\n\t\te := fmt.Errorf(\"Could not resolve ip for: %s\", domain)\n"
+                  },
+                  "endLine": 24,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8a0c310b8d1adb1a",
+            "scanFileHash": "714cb2ca216ff0a3"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use out.Bytes() instead of []byte(out.String())."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\terr = json.Unmarshal([]byte(out.String()), &info)\n"
+                  },
+                  "startLine": 58
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/connection/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tinfo := CipherscanOutput{}\n\terr = json.Unmarshal([]byte(out.String()), &info)\n"
+                  },
+                  "endLine": 58,
+                  "startLine": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ef18b2e83ffab946",
+            "scanFileHash": "714cb2ca216ff0a3"
+          },
+          "ruleId": "S1030",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\treturn errors.New(\"Cannot work with empty list of trusted certs\")\n"
+                  },
+                  "startLine": 410
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif len(trustedCerts) == 0 {\n\t\treturn errors.New(\"Cannot work with empty list of trusted certs\")\n"
+                  },
+                  "endLine": 410,
+                  "startLine": 409
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "eb238394542fab3a",
+            "scanFileHash": "f2aff17405777dfb"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use fmt.Errorf(...) instead of errors.New(fmt.Sprintf(...))."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\treturn errors.New(fmt.Sprintf(\"Cannot update DB, %s does not represent a valid truststore name.\", tsName))\n"
+                  },
+                  "startLine": 425
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tdefault:\n\t\treturn errors.New(fmt.Sprintf(\"Cannot update DB, %s does not represent a valid truststore name.\", tsName))\n"
+                  },
+                  "endLine": 425,
+                  "startLine": 424
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "63719080af57a9cc",
+            "scanFileHash": "f2aff17405777dfb"
+          },
+          "ruleId": "S1028",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "var ErrInvalidCertStore = fmt.Errorf(\"Invalid certificate store provided\")\n"
+                  },
+                  "startLine": 594
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nvar ErrInvalidCertStore = fmt.Errorf(\"Invalid certificate store provided\")\n"
+                  },
+                  "endLine": 594,
+                  "startLine": 593
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f63786e0fd419540",
+            "scanFileHash": "f2aff17405777dfb"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Error while getting certificates by subject: '%v'\", err)\n"
+                  },
+                  "startLine": 676
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err != nil && err != sql.ErrNoRows {\n\t\terr = fmt.Errorf(\"Error while getting certificates by subject: '%v'\", err)\n"
+                  },
+                  "endLine": 676,
+                  "startLine": 675
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "b5baa0c6d499f7c5",
+            "scanFileHash": "f2aff17405777dfb"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "this value of err is never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Failed to complete database query: '%v'\", err)\n"
+                  },
+                  "startLine": 690
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err := rows.Err(); err != nil {\n\t\terr = fmt.Errorf(\"Failed to complete database query: '%v'\", err)\n"
+                  },
+                  "endLine": 690,
+                  "startLine": 689
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ebf38b9f3b98cc36",
+            "scanFileHash": "f2aff17405777dfb"
+          },
+          "ruleId": "SA4006",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Errorf is a pure function but its return value is ignored."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Failed to complete database query: '%v'\", err)\n"
+                  },
+                  "startLine": 690
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err := rows.Err(); err != nil {\n\t\terr = fmt.Errorf(\"Failed to complete database query: '%v'\", err)\n"
+                  },
+                  "endLine": 690,
+                  "startLine": 689
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ebf38b9f3b98cc36",
+            "scanFileHash": "f2aff17405777dfb"
+          },
+          "ruleId": "SA4017",
+          "ruleIndex": 7
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Failed to complete database query: '%v'\", err)\n"
+                  },
+                  "startLine": 690
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/certificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err := rows.Err(); err != nil {\n\t\terr = fmt.Errorf(\"Failed to complete database query: '%v'\", err)\n"
+                  },
+                  "endLine": 690,
+                  "startLine": 689
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ebf38b9f3b98cc36",
+            "scanFileHash": "f2aff17405777dfb"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "this value of err is never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tpaths, err := lru.NewARC(100000)\n"
+                  },
+                  "startLine": 73
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/database/database.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tpaths, err := lru.NewARC(100000)\n"
+                  },
+                  "endLine": 73,
+                  "startLine": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "70b478ce157f3852",
+            "scanFileHash": "79ceeac3b872c56c"
+          },
+          "ruleId": "SA4006",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\treturn nil, fmt.Errorf(\"Could not create AWS session: %s\", err)\n"
+                  },
+                  "startLine": 18
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/metrics/metrics.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"Could not create AWS session: %s\", err)\n"
+                  },
+                  "endLine": 18,
+                  "startLine": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ebd3a7f18729ed14",
+            "scanFileHash": "a75f7ed823a59931"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 51
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 51,
+                  "startLine": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use fmt.Fprintf instead of fmt.Fprint(fmt.Sprintf(...))."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\t\tfmt.Fprint(w, fmt.Sprintf(\"Last scan for target %s initiated %s ago.\\nPlease try again in %s.\\n\", domain, now.Sub(prevtime), 3*time.Minute-now.Sub(prevtime)))\n"
+                  },
+                  "startLine": 95
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\tw.Header().Set(\"Content-Type\", \"text/html\")\n\t\t\t\t\tfmt.Fprint(w, fmt.Sprintf(\"Last scan for target %s initiated %s ago.\\nPlease try again in %s.\\n\", domain, now.Sub(prevtime), 3*time.Minute-now.Sub(prevtime)))\n"
+                  },
+                  "endLine": 95,
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d04a6e91b43da6a4",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1038",
+          "ruleIndex": 8
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 138
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 138,
+                  "startLine": 137
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 190
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 190,
+                  "startLine": 189
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 214
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tjsonCertFromID(w, r, id)\n\treturn\n"
+                  },
+                  "endLine": 214,
+                  "startLine": 213
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 224
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 224,
+                  "startLine": 223
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 312
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tjsonCertFromID(w, r, cert.ID)\n\treturn\n"
+                  },
+                  "endLine": 312,
+                  "startLine": 311
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 326
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 326,
+                  "startLine": 325
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 370
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tw.Write(pathsJson)\n\treturn\n"
+                  },
+                  "endLine": 370,
+                  "startLine": 369
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 382
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 382,
+                  "startLine": 381
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 464
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 464,
+                  "startLine": 463
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Unable to retrieve statistics for the given issuer\"))\n"
+                  },
+                  "startLine": 489
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Unable to retrieve statistics for the given issuer\"))\n"
+                  },
+                  "endLine": 489,
+                  "startLine": 488
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5151e9b86dec67c6",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Unable to marshal certificate IDs\"))\n"
+                  },
+                  "startLine": 500
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Unable to marshal certificate IDs\"))\n"
+                  },
+                  "endLine": 500,
+                  "startLine": 499
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "505d3c133f9c70e9",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 504
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tw.Write(issuerEEData)\n\treturn\n"
+                  },
+                  "endLine": 504,
+                  "startLine": 503
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 511
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 511,
+                  "startLine": 510
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "startLine": 546
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\thttpError(w, r, http.StatusInternalServerError,\n\t\t\tfmt.Sprintf(\"Could not find database handler in request context\"))\n"
+                  },
+                  "endLine": 546,
+                  "startLine": 545
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "96ea678b047dd689",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tbuffer.Write([]byte(fmt.Sprintf(`\n"
+                  },
+                  "startLine": 620
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tif r.FormValue(\"details\") == \"full\" {\n\t\t\tbuffer.Write([]byte(fmt.Sprintf(`\n"
+                  },
+                  "endLine": 620,
+                  "startLine": 619
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "bdc48e84b773de84",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use 'return domain != \"\"' instead of 'if domain == \"\" { return false }; return true'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tif domain == \"\" {\n"
+                  },
+                  "startLine": 701
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/handlers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "func validateDomain(domain string) bool {\n\tif domain == \"\" {\n"
+                  },
+                  "endLine": 701,
+                  "startLine": 700
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "3a0ad2c842f8f08b",
+            "scanFileHash": "fcf696f9beb4c271"
+          },
+          "ruleId": "S1008",
+          "ruleIndex": 10
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 32
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/helpers.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\thttp.Error(w, fmt.Sprintf(errorMessage, args...), errorCode)\n\treturn\n"
+                  },
+                  "endLine": 32,
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "2c224a8245a426bf"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should check returned error before deferring db.Close()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer db.Close()\n"
+                  },
+                  "startLine": 52
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tdbtls)\n\tdefer db.Close()\n"
+                  },
+                  "endLine": 52,
+                  "startLine": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e0d98c242a4e93a0",
+            "scanFileHash": "d3bb6c8a65f82337"
+          },
+          "ruleId": "SA5001",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should not use built-in type string as key for value; define your own type to avoid collisions."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn r.WithContext(context.WithValue(ctx, key, value))\n"
+                  },
+                  "startLine": 82
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/middleware.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tctx := r.Context()\n\treturn r.WithContext(context.WithValue(ctx, key, value))\n"
+                  },
+                  "endLine": 82,
+                  "startLine": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "0a73ae767c55a310",
+            "scanFileHash": "799dfad81b59b728"
+          },
+          "ruleId": "SA1029",
+          "ruleIndex": 12
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should merge variable declaration with assignment on next line."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tvar handler http.Handler\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-api/router.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor _, route := range routes {\n\t\tvar handler http.Handler\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ca7cc48328bbfa8a",
+            "scanFileHash": "67c822c5d569188f"
+          },
+          "ruleId": "S1021",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 41
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-runner/assertions.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\treturn\n"
+                  },
+                  "endLine": 41,
+                  "startLine": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "b550d82e523275b7"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 66
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-runner/assertions.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\treturn\n"
+                  },
+                  "endLine": 66,
+                  "startLine": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "b550d82e523275b7"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use time.Until instead of t.Sub(time.Now())."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\twaitduration := nrun.Sub(time.Now())\n"
+                  },
+                  "startLine": 106
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-runner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tnrun := cexpr.Next(time.Now())\n\t\twaitduration := nrun.Sub(time.Now())\n"
+                  },
+                  "endLine": 106,
+                  "startLine": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9560f669d55ffe34",
+            "scanFileHash": "8090bb525dd3f547"
+          },
+          "ruleId": "S1024",
+          "ruleIndex": 14
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 211
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-runner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\treturn\n"
+                  },
+                  "endLine": 211,
+                  "startLine": 210
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "8090bb525dd3f547"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "the argument's underlying type is a slice of bytes, should use a simple conversion instead of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tc.Runs[i].Notifications.Email.Recipients[j] = fmt.Sprintf(\"%s\", bytes.TrimRight(data, \"\\n\"))\n"
+                  },
+                  "startLine": 265
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-runner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t}\n\t\t\tc.Runs[i].Notifications.Email.Recipients[j] = fmt.Sprintf(\"%s\", bytes.TrimRight(data, \"\\n\"))\n"
+                  },
+                  "endLine": 265,
+                  "startLine": 264
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "97c7aa19049cdca6",
+            "scanFileHash": "8090bb525dd3f547"
+          },
+          "ruleId": "S1025",
+          "ruleIndex": 15
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "the argument's underlying type is a slice of bytes, should use a simple conversion instead of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\"text\":       fmt.Sprintf(\"%s\", body),\n"
+                  },
+                  "startLine": 98
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-runner/notifications.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\"channel\":    rcpt,\n\t\t\"text\":       fmt.Sprintf(\"%s\", body),\n"
+                  },
+                  "endLine": 98,
+                  "startLine": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d8355e6556bd457b",
+            "scanFileHash": "abf78c0000b7366e"
+          },
+          "ruleId": "S1025",
+          "ruleIndex": 15
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should check returned error before deferring db.Close()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer db.Close()\n"
+                  },
+                  "startLine": 66
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tdbtls)\n\tdefer db.Close()\n"
+                  },
+                  "endLine": 66,
+                  "startLine": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e0d98c242a4e93a0",
+            "scanFileHash": "1409c0692b69c985"
+          },
+          "ruleId": "SA5001",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary assignment to the blank identifier."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tworkerInput.Params, _ = scan.AnalysisParams[k]\n"
+                  },
+                  "startLine": 262
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor k, wrkInfo := range worker.AvailableWorkers {\n\t\tworkerInput.Params, _ = scan.AnalysisParams[k]\n"
+                  },
+                  "endLine": 262,
+                  "startLine": 261
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1dbc7bcb28669f14",
+            "scanFileHash": "1409c0692b69c985"
+          },
+          "ruleId": "S1005",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "type assertion to the same type: wrkInfo.Runner already has type worker.Worker."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tgo wrkInfo.Runner.(worker.Worker).Run(workerInput, resChan)\n"
+                  },
+                  "startLine": 263
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tworkerInput.Params, _ = scan.AnalysisParams[k]\n\t\tgo wrkInfo.Runner.(worker.Worker).Run(workerInput, resChan)\n"
+                  },
+                  "endLine": 263,
+                  "startLine": 262
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c26bb13d5d3519e2",
+            "scanFileHash": "1409c0692b69c985"
+          },
+          "ruleId": "S1040",
+          "ruleIndex": 16
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "redundant return statement."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn\n"
+                  },
+                  "startLine": 329
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\treturn\n"
+                  },
+                  "endLine": 329,
+                  "startLine": 328
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c5f093b93a485002",
+            "scanFileHash": "1409c0692b69c985"
+          },
+          "ruleId": "S1023",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn fmt.Sprintf(\"No TLS Certs Received\")\n"
+                  },
+                  "startLine": 21
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "func (f NoTLSCertsErr) Error() string {\n\treturn fmt.Sprintf(\"No TLS Certs Received\")\n"
+                  },
+                  "endLine": 21,
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "7ea3a356759e8d59",
+            "scanFileHash": "6aeff99a8066d68e"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\treturn nil, ip, errors.New(\"Could not get server's certificate from the TLS connection.\")\n"
+                  },
+                  "startLine": 89
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif certs == nil {\n\t\treturn nil, ip, errors.New(\"Could not get server's certificate from the TLS connection.\")\n"
+                  },
+                  "endLine": 89,
+                  "startLine": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2af6a4f00ce81270",
+            "scanFileHash": "6aeff99a8066d68e"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not end with punctuation or newlines."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\treturn nil, ip, errors.New(\"Could not get server's certificate from the TLS connection.\")\n"
+                  },
+                  "startLine": 89
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs-scanner/retriever.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif certs == nil {\n\t\treturn nil, ip, errors.New(\"Could not get server's certificate from the TLS connection.\")\n"
+                  },
+                  "endLine": 89,
+                  "startLine": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2af6a4f00ce81270",
+            "scanFileHash": "6aeff99a8066d68e"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use time.Since instead of time.Now().Sub."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\ttime.Now().Sub(results.Timestamp).String())\n"
+                  },
+                  "startLine": 134
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tlsobs/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\tfmt.Printf(\"Retrieving cached results from %s ago. To run a new scan, use '-r'.\\n\",\n\t\t\t\ttime.Now().Sub(results.Timestamp).String())\n"
+                  },
+                  "endLine": 134,
+                  "startLine": 133
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9d0255537cfef890",
+            "scanFileHash": "af24532a45d1c0aa"
+          },
+          "ruleId": "S1012",
+          "ruleIndex": 17
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "\tother declaration of main."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 39
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/extractCiphersuites.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 39,
+                  "startLine": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "aeb9491551397e12"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixDupCerts.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "03489f9ec3ceb0cd"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixExtensions.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "4836a3cc73e68f73"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 17
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixKeyInfo.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 17,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "f9ae2396e1cd8a23"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixSHA256SubjectSPKI.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "9dccad279cf228e8"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixSerial.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "5195c61e39268dc0"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 29
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixserialnumber.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "98501887925c1ce7"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixsubjectNames.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "8d444a24c92f66b6"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Issuer not declared by package certificate."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tissuer := certificate.Issuer{Country: c.Issuer.Country, CommonName: c.Issuer.CommonName, OrgUnit: c.Issuer.OrganizationalUnit, Organisation: c.Issuer.Organization}\n"
+                  },
+                  "startLine": 61
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixsubjectNames.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t}\n\t\t\tissuer := certificate.Issuer{Country: c.Issuer.Country, CommonName: c.Issuer.CommonName, OrgUnit: c.Issuer.OrganizationalUnit, Organisation: c.Issuer.Organization}\n"
+                  },
+                  "endLine": 61,
+                  "startLine": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "646ae0de66ceb286",
+            "scanFileHash": "8d444a24c92f66b6"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/fixvalidity.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "0977738d6b79b13a"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/getPaths.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "681b588fca25e67e"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 23
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/initMozPolicy.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 23,
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "8dd2fe47dabbb1ac"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 27
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/pullCTLogs.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 27,
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "e1b187b400105a7d"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 31
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/pullCTLogsIntoDB.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 31,
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "01ed1fc2317ffbad"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 20
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/rescanDomains.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 20,
+                  "startLine": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "9577d249b62deeca"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 20
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/retrieveIntermediatesFromCADatabase.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 20,
+                  "startLine": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "bb2302ac51723725"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/retrieveTruststoreFromCADatabase.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 12,
+                  "startLine": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "b67466f3a616d4d5"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "main redeclared in this block."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "func main() {\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/tools/updateCertificate.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfunc main() {\n"
+                  },
+                  "endLine": 16,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86911b05c514aa51",
+            "scanFileHash": "f5118556685670c9"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 18
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn nil, fmt.Errorf(\"Unable to load CRL data for certificate %s\", cert.Subject)\n"
+                  },
+                  "startLine": 195
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/crlWorker/crlWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\treturn nil, fmt.Errorf(\"Unable to load CRL data for certificate %s\", cert.Subject)\n"
+                  },
+                  "endLine": 195,
+                  "startLine": 194
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "dc030cb18be0a59b",
+            "scanFileHash": "ac4a674c635a9475"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\treturn fmt.Errorf(\"Unable to verify CRL against %s chain\", chain.Domain)\n"
+                  },
+                  "startLine": 215
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/crlWorker/crlWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\treturn fmt.Errorf(\"Unable to verify CRL against %s chain\", chain.Domain)\n"
+                  },
+                  "endLine": 215,
+                  "startLine": 214
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "27aecf1dde5acc94",
+            "scanFileHash": "ac4a674c635a9475"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use strings.EqualFold instead."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tif strings.ToUpper(cert.Key.Alg) == strings.ToUpper(ct) {\n"
+                  },
+                  "startLine": 352
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor _, ct := range old.CertificateTypes {\n\t\tif strings.ToUpper(cert.Key.Alg) == strings.ToUpper(ct) {\n"
+                  },
+                  "endLine": 352,
+                  "startLine": 351
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "977afd60cbf2f5e3",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "SA6005",
+          "ruleIndex": 19
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use strings.EqualFold instead."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tif strings.ToUpper(cert.Key.Alg) == strings.ToUpper(ct) {\n"
+                  },
+                  "startLine": 458
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor _, ct := range intermediate.CertificateTypes {\n\t\tif strings.ToUpper(cert.Key.Alg) == strings.ToUpper(ct) {\n"
+                  },
+                  "endLine": 458,
+                  "startLine": 457
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "977afd60cbf2f5e3",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "SA6005",
+          "ruleIndex": 19
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use strings.EqualFold instead."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tif strings.ToUpper(cert.Key.Alg) == strings.ToUpper(ct) {\n"
+                  },
+                  "startLine": 571
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor _, ct := range modern.CertificateTypes {\n\t\tif strings.ToUpper(cert.Key.Alg) == strings.ToUpper(ct) {\n"
+                  },
+                  "endLine": 571,
+                  "startLine": 570
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "977afd60cbf2f5e3",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "SA6005",
+          "ruleIndex": 19
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "don't use Yoda conditions."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tif \"ECDH\" == pfs[0] {\n"
+                  },
+                  "startLine": 621
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tif \"ECDH\" == pfs[0] {\n"
+                  },
+                  "endLine": 621,
+                  "startLine": 620
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86db50d37469a378",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "ST1017",
+          "ruleIndex": 20
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "don't use Yoda conditions."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t} else if \"DH\" == pfs[0] {\n"
+                  },
+                  "startLine": 639
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t} else if \"DH\" == pfs[0] {\n"
+                  },
+                  "endLine": 639,
+                  "startLine": 638
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f5e2293da79c4699",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "ST1017",
+          "ruleIndex": 20
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Mozilla evaluation worker: failed to parse results: %v\", err)\n"
+                  },
+                  "startLine": 696
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err != nil {\n\t\terr = fmt.Errorf(\"Mozilla evaluation worker: failed to parse results: %v\", err)\n"
+                  },
+                  "endLine": 696,
+                  "startLine": 695
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "26ba2838ad9dad40",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "this value of levels is never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tlevels := []string{\"bad\", \"old\", \"intermediate\", \"modern\"}\n"
+                  },
+                  "startLine": 700
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tresults = append(results, fmt.Sprintf(\"* Mozilla evaluation: %s\", eval.Level))\n\tlevels := []string{\"bad\", \"old\", \"intermediate\", \"modern\"}\n"
+                  },
+                  "endLine": 700,
+                  "startLine": 699
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9dd92a9af597b45b",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "SA4006",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\terr = fmt.Errorf(\"Invalid target level %q. Must be old, intermediate or modern.\", targetLevel.(string))\n"
+                  },
+                  "startLine": 708
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tdefault:\n\t\t\terr = fmt.Errorf(\"Invalid target level %q. Must be old, intermediate or modern.\", targetLevel.(string))\n"
+                  },
+                  "endLine": 708,
+                  "startLine": 707
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9dc1412fffcb5666",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not end with punctuation or newlines."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\terr = fmt.Errorf(\"Invalid target level %q. Must be old, intermediate or modern.\", targetLevel.(string))\n"
+                  },
+                  "startLine": 708
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaEvaluationWorker/mozillaEvaluationWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tdefault:\n\t\t\terr = fmt.Errorf(\"Invalid target level %q. Must be old, intermediate or modern.\", targetLevel.(string))\n"
+                  },
+                  "endLine": 708,
+                  "startLine": 707
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9dc1412fffcb5666",
+            "scanFileHash": "13471f9596a41c36"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "don't use Yoda conditions."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tif \"ECDH\" == pfs[0] {\n"
+                  },
+                  "startLine": 95
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaGradingWorker/keyexchangeGrading.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tif \"ECDH\" == pfs[0] {\n"
+                  },
+                  "endLine": 95,
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "86db50d37469a378",
+            "scanFileHash": "1a63fc3a7d259650"
+          },
+          "ruleId": "ST1017",
+          "ruleIndex": 20
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "don't use Yoda conditions."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t} else if \"DH\" == pfs[0] {\n"
+                  },
+                  "startLine": 105
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaGradingWorker/keyexchangeGrading.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\treturn -1\n\t} else if \"DH\" == pfs[0] {\n"
+                  },
+                  "endLine": 105,
+                  "startLine": 104
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f5e2293da79c4699",
+            "scanFileHash": "1a63fc3a7d259650"
+          },
+          "ruleId": "ST1017",
+          "ruleIndex": 20
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should merge variable declaration with assignment on next line."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tvar score float64\n"
+                  },
+                  "startLine": 71
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaGradingWorker/mozillaGradingWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tvar score float64\n"
+                  },
+                  "endLine": 71,
+                  "startLine": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "55e0330e59414782",
+            "scanFileHash": "2801a9aae740276e"
+          },
+          "ruleId": "S1021",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Mozilla grading worker: failed to parse results: %v\", err)\n"
+                  },
+                  "startLine": 100
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/mozillaGradingWorker/mozillaGradingWorker.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err != nil {\n\t\terr = fmt.Errorf(\"Mozilla grading worker: failed to parse results: %v\", err)\n"
+                  },
+                  "endLine": 100,
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "3e050ffcd8a64d09",
+            "scanFileHash": "2801a9aae740276e"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tresults = []string{fmt.Sprintf(\"* OCSP: Not revoked\")}\n"
+                  },
+                  "startLine": 158
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/ocspStatus/ocspStatus.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tcase ocsp.Good:\n\t\tresults = []string{fmt.Sprintf(\"* OCSP: Not revoked\")}\n"
+                  },
+                  "endLine": 158,
+                  "startLine": 157
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8d7a8f0830e83452",
+            "scanFileHash": "19eb756b4f70fd1c"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should omit comparison to bool constant, can be simplified to printAll.(bool)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tif printAll != nil && printAll.(bool) == true {\n"
+                  },
+                  "startLine": 274
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/sslLabsClientSupport/sslLabsClientSupport.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tif printAll != nil && printAll.(bool) == true {\n"
+                  },
+                  "endLine": 274,
+                  "startLine": 273
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "75dea812ea7a9d28",
+            "scanFileHash": "38d12dcd9081fc5a"
+          },
+          "ruleId": "S1002",
+          "ruleIndex": 21
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should omit comparison to bool constant, can be simplified to printAll.(bool)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tif printAll != nil && printAll.(bool) == true {\n"
+                  },
+                  "startLine": 284
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/sslLabsClientSupport/sslLabsClientSupport.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t// if we want all clients, store the result and go to next entry\n\t\tif printAll != nil && printAll.(bool) == true {\n"
+                  },
+                  "endLine": 284,
+                  "startLine": 283
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "75dea812ea7a9d28",
+            "scanFileHash": "38d12dcd9081fc5a"
+          },
+          "ruleId": "S1002",
+          "ruleIndex": 21
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "unnecessary use of fmt.Sprintf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\tresult += fmt.Sprintf(\": no\")\n"
+                  },
+                  "startLine": 292
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/sslLabsClientSupport/sslLabsClientSupport.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t} else {\n\t\t\t\tresult += fmt.Sprintf(\": no\")\n"
+                  },
+                  "endLine": 292,
+                  "startLine": 291
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9e2da438e49f1a16",
+            "scanFileHash": "38d12dcd9081fc5a"
+          },
+          "ruleId": "S1039",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should omit comparison to bool constant, can be simplified to printAll.(bool)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tif printAll != nil && printAll.(bool) == true {\n"
+                  },
+                  "startLine": 322
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/sslLabsClientSupport/sslLabsClientSupport.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t}\n\tif printAll != nil && printAll.(bool) == true {\n"
+                  },
+                  "endLine": 322,
+                  "startLine": 321
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "75dea812ea7a9d28",
+            "scanFileHash": "38d12dcd9081fc5a"
+          },
+          "ruleId": "S1002",
+          "ruleIndex": 21
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use strings.EqualFold instead."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tif strings.ToUpper(spkihash) == strings.ToUpper(blacklisted) {\n"
+                  },
+                  "startLine": 270
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/symantecDistrust/symantecDistrust.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor _, blacklisted := range blacklist {\n\t\tif strings.ToUpper(spkihash) == strings.ToUpper(blacklisted) {\n"
+                  },
+                  "endLine": 270,
+                  "startLine": 269
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "97529de4d71094c5",
+            "scanFileHash": "d9ba32b9171cf6e7"
+          },
+          "ruleId": "SA6005",
+          "ruleIndex": 19
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should use strings.EqualFold instead."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tif strings.ToUpper(spkihash) == strings.ToUpper(whitelisted) {\n"
+                  },
+                  "startLine": 281
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/symantecDistrust/symantecDistrust.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfor _, whitelisted := range whitelist {\n\t\tif strings.ToUpper(spkihash) == strings.ToUpper(whitelisted) {\n"
+                  },
+                  "endLine": 281,
+                  "startLine": 280
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9022202e3a32a47f",
+            "scanFileHash": "d9ba32b9171cf6e7"
+          },
+          "ruleId": "SA6005",
+          "ruleIndex": 19
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Symantec distrust worker: failed to parse results: %v\", err)\n"
+                  },
+                  "startLine": 313
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/symantecDistrust/symantecDistrust.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err != nil {\n\t\terr = fmt.Errorf(\"Symantec distrust worker: failed to parse results: %v\", err)\n"
+                  },
+                  "endLine": 313,
+                  "startLine": 312
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "2c1af6856c519401",
+            "scanFileHash": "d9ba32b9171cf6e7"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should check returned error before deferring fd.Close()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer fd.Close()\n"
+                  },
+                  "startLine": 69
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/top1m/top1m.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tfd, err := os.Open(ciscoTop1mPath)\n\tdefer fd.Close()\n"
+                  },
+                  "endLine": 69,
+                  "startLine": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ec4f001634a23083",
+            "scanFileHash": "1c535354dd093b27"
+          },
+          "ruleId": "SA5001",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "should check returned error before deferring afd.Close()."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tdefer afd.Close()\n"
+                  },
+                  "startLine": 104
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/top1m/top1m.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tafd, err := os.Open(alexaTop1mPath)\n\tdefer afd.Close()\n"
+                  },
+                  "endLine": 104,
+                  "startLine": 103
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d29828ea1b878035",
+            "scanFileHash": "1c535354dd093b27"
+          },
+          "ruleId": "SA5001",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "error strings should not be capitalized."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\terr = fmt.Errorf(\"Top 1M: failed to parse results: %v\", err)\n"
+                  },
+                  "startLine": 251
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/mozilla/tls-observatory/worker/top1m/top1m.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tif err != nil {\n\t\terr = fmt.Errorf(\"Top 1M: failed to parse results: %v\", err)\n"
+                  },
+                  "endLine": 251,
+                  "startLine": 250
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "dd309ea3fa557b24",
+            "scanFileHash": "1c535354dd093b27"
+          },
+          "ruleId": "ST1005",
+          "ruleIndex": 2
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "c0bd68e6-9480-47e4-9cd0-e23c84582b76"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "c0bd68e6-9480-47e4-9cd0-e23c84582b76",
+      "runGuid": "4fb91293-9add-449d-a893-2395c9af01bc"
+    }
+  ]
+}
