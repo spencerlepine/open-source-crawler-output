@@ -1,0 +1,69 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Empty Scan Ignore",
+          "version": "1.0.0-scan",
+          "fullName": "Empty Scan Ignore"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [],
+          "executionSuccessful": true,
+          "commandLine": "",
+          "endTimeUtc": "2023-01-26T08:29:36Z",
+          "workingDirectory": {
+            "uri": "https://github.com/hackernews/api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-01-26T08:29:36Z",
+          "workingDirectory": {
+            "uri": "https://github.com/hackernews/api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "6d98e16b-40f2-4d3d-bbfb-319aadbea0b0"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "6d98e16b-40f2-4d3d-bbfb-319aadbea0b0",
+      "runGuid": "0703ce73-42d8-4ad6-a98f-de0b9f50a0f3"
+    }
+  ]
+}
