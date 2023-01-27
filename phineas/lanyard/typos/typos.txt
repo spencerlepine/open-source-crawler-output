@@ -1,0 +1,25 @@
+## Detected Typos
+error: `curently` should be `currently`
+  --> ./README.md:59:114
+   |
+59 | [osu-nowplaying](https://github.com/Hexality/osu-nowplaying) - A small tool to scrape the info of the map you're curently playing on osu!lazer and dump into a file for obs to read. \
+   |                                                                                                                  ^^^^^^^^
+   |
+error: `lazer` should be `laser`
+  --> ./README.md:59:138
+   |
+59 | [osu-nowplaying](https://github.com/Hexality/osu-nowplaying) - A small tool to scrape the info of the map you're curently playing on osu!lazer and dump into a file for obs to read. \
+   |                                                                                                                                          ^^^^^
+   |
+error: `onl` should be `only`
+  --> ./README.md:427:8
+    |
+427 | - [dan.onl](https://dan.onl)
+    |        ^^^
+    |
+error: `onl` should be `only`
+  --> ./README.md:427:25
+    |
+427 | - [dan.onl](https://dan.onl)
+    |                         ^^^
+    |
