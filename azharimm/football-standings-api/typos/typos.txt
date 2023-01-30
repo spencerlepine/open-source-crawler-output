@@ -1,0 +1,43 @@
+## Detected Typos
+error: `Serie` should be `Series`
+  --> ./src/data/leagues.js:24:24
+   |
+24 |         name: "Italian Serie A",
+   |                        ^^^^^
+   |
+error: `serie` should be `series`
+  --> ./src/data/leagues.js:25:24
+   |
+25 |         slug: "italian-serie-a",
+   |                        ^^^^^
+   |
+error: `Serie` should be `Series`
+  --> ./src/data/leagues.js:26:16
+   |
+26 |         abbr: "Serie A",
+   |                ^^^^^
+   |
+error: `ned` should be `need`
+  --> ./src/data/leagues.js:43:14
+   |
+43 |         id: "ned.1",
+   |              ^^^
+   |
+error: `Serie` should be `Series`
+  --> ./src/data/leagues.js:105:26
+    |
+105 |         name: "Brazilian Serie A",
+    |                          ^^^^^
+    |
+error: `serie` should be `series`
+  --> ./src/data/leagues.js:106:26
+    |
+106 |         slug: "brazilian-serie-a",
+    |                          ^^^^^
+    |
+error: `tha` should be `than`, `that`, `the`
+  --> ./src/data/leagues.js:147:14
+    |
+147 |         id: "tha.1",
+    |              ^^^
+    |
