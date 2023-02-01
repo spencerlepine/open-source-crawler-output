@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:f8541f12-138d-433a-b403-ba89cf8ed5f9" version="1">
+  <metadata>
+    <timestamp>2023-02-01T08:47:09.533Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>7.0.2</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/setup-node@v1">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-node</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-node@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/docker/login-action@v1">
+      <publisher/>
+      <group>docker</group>
+      <name>login-action</name>
+      <version>v1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/docker/login-action@v1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:github/docker/build-push-action@v2">
+      <publisher/>
+      <group>docker</group>
+      <name>build-push-action</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/docker/build-push-action@v2</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>/github/workspace</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>/github/workspace/.github/workflows/docker-image.yml</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>

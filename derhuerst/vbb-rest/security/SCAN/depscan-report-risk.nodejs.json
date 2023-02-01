@@ -1,0 +1,5 @@
+{"Package": "gopd", "Used?": "No", "Risk Score": "0.84", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "has-property-descriptors", "Used?": "No", "Risk Score": "0.83", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "has-proto", "Used?": "No", "Risk Score": "0.69", "Identified Risks": "Has fewer versions, Has fewer maintainers, Outdated Node version"}
+{"Package": "safe-regex-test", "Used?": "No", "Risk Score": "0.84", "Identified Risks": "Has fewer versions, Has fewer maintainers"}
+{"Package": "stop-iteration-iterator", "Used?": "No", "Risk Score": "1", "Identified Risks": "Has fewer versions, Has fewer maintainers, Outdated Node version"}

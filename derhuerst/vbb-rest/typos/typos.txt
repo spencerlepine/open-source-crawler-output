@@ -1,0 +1,25 @@
+## Detected Typos
+error: `istening` should be `listening`
+  --> ./index.js:9:15
+  |
+9 |  logger.info(`istening on ${config.port} (${config.hostname}).`)
+  |               ^^^^^^^^
+  |
+error: `ealier` should be `earlier`
+  --> ./docs/api.md:464:47
+    |
+464 | `earlierThan` | Compute journeys "before" an `ealierRef`. | string |
+    |                                               ^^^^^^
+    |
+error: `Oder` should be `Order`, `Odor`
+  --> ./docs/api.md:642:25
+    |
+642 | `ff` | Day, **Frankfurt Oder**
+    |                         ^^^^
+    |
+error: `Oder` should be `Order`, `Odor`
+  --> ./api-docs.js:113:27
+    |
+113 | \`ff\` | Day, **Frankfurt Oder**
+    |                           ^^^^
+    |
