@@ -1,0 +1,559 @@
+## Detected Typos
+error: `admiraal` should be `admiral`
+  --> ./wordforms.txt:15:8
+   |
+15 | Adm. > admiraal
+   |        ^^^^^^^^
+   |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:4:28
+  |
+4 | # Python version of Sphinx searchd client (Python API)
+  |                            ^^^^^^^
+  |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:24:9
+   |
+24 | # known searchd commands
+   |         ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:25:1
+   |
+25 | SEARCHD_COMMAND_SEARCH  = 0
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:26:1
+   |
+26 | SEARCHD_COMMAND_EXCERPT  = 1
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:27:1
+   |
+27 | SEARCHD_COMMAND_UPDATE  = 2
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:28:1
+   |
+28 | SEARCHD_COMMAND_KEYWORDS = 3
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:29:1
+   |
+29 | SEARCHD_COMMAND_PERSIST  = 4
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:30:1
+   |
+30 | SEARCHD_COMMAND_STATUS  = 5
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:31:1
+   |
+31 | SEARCHD_COMMAND_FLUSHATTRS = 7
+   | ^^^^^^^
+   |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:41:9
+   |
+41 | # known searchd status codes
+   |         ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:42:1
+   |
+42 | SEARCHD_OK    = 0
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:43:1
+   |
+43 | SEARCHD_ERROR   = 1
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:44:1
+   |
+44 | SEARCHD_RETRY   = 2
+   | ^^^^^^^
+   |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:45:1
+   |
+45 | SEARCHD_WARNING   = 3
+   | ^^^^^^^
+   |
+error: `occurence` should be `occurrence`
+  --> ./sphinxapi.py:60:100
+   |
+60 | SPH_RANK_WORDCOUNT  = 3 # simple word-count weighting, rank is a weighted sum of per-field keyword occurence counts
+   |                                                                                                    ^^^^^^^^^
+   |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:118:36
+    |
+118 |   self._host   = 'localhost'     # searchd host (default is "localhost")
+    |                                    ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:119:31
+    |
+119 |   self._port   = 9312       # searchd port (default is 9312)
+    |                               ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:120:31
+    |
+120 |   self._path   = None       # searchd unix-domain socket path
+    |                               ^^^^^^^
+    |
+error: `defualt` should be `default`
+  --> ./sphinxapi.py:127:52
+    |
+127 |   self._sortby  = ''       # attribute to sort by (defualt is "")
+    |                                                    ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:174:7
+    |
+174 |   Set searchd server host and port.
+    |       ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:198:45
+    |
+198 |   INTERNAL METHOD, DO NOT CALL. Connects to searchd server.
+    |                                             ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:233:28
+    |
+233 |    self._error = 'expected searchd protocol version, got %s' % v
+    |                            ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:243:70
+    |
+243 |   INTERNAL METHOD, DO NOT CALL. Gets and checks response packet from searchd server.
+    |                                                                      ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:263:35
+    |
+263 |     self._error = 'failed to read searchd response (status=%s, ver=%s, len=%s, read=%s)' \
+    |                                   ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:266:40
+    |
+266 |     self._error = 'received zero-sized searchd response'
+    |                                        ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:270:14
+    |
+270 |   if status==SEARCHD_WARNING:
+    |              ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:275:14
+    |
+275 |   if status==SEARCHD_ERROR:
+    |              ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:276:19
+    |
+276 |    self._error = 'searchd error: '+response[4:]
+    |                   ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:279:14
+    |
+279 |   if status==SEARCHD_RETRY:
+    |              ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:280:29
+    |
+280 |    self._error = 'temporary searchd error: '+response[4:]
+    |                             ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:283:14
+    |
+283 |   if status!=SEARCHD_OK:
+    |              ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:289:21
+    |
+289 |    self._warning = 'searchd command v.%d.%d older than client\'s v.%d.%d, some options might not work' \
+    |                     ^^^^^^^
+    |
+error: `beetwen` should be `between`
+  --> ./sphinxapi.py:381:40
+    |
+381 |   Only match records if document ID is beetwen $min and $max (inclusive).
+    |                                        ^^^^^^^
+    |
+error: `beetwen` should be `between`
+  --> ./sphinxapi.py:407:46
+    |
+407 |   Only match records if 'attribute' value is beetwen 'min_' and 'max_' (inclusive).
+    |                                              ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:497:14
+    |
+497 |   Connect to searchd server and run given search query.
+    |              ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:509:30
+    |
+509 |   if results[0]['status'] == SEARCHD_ERROR:
+    |                              ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:636:24
+    |
+636 |   req = pack('>HHLLL', SEARCHD_COMMAND_SEARCH, VER_COMMAND_SEARCH, length, 0, len(self._reqs))+req
+    |                        ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:659:17
+    |
+659 |    if status != SEARCHD_OK:
+    |                 ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:665:18
+    |
+665 |     if status == SEARCHD_WARNING:
+    |                  ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:777:14
+    |
+777 |   Connect to searchd server and generate exceprts from given documents.
+    |              ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:294:13
+    |
+294 |  # requires searchd to be run from root
+    |             ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:868:22
+    |
+868 |   req = pack('>2HL', SEARCHD_COMMAND_EXCERPT, VER_COMMAND_EXCERPT, length)+req
+    |                      ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:437:45
+    |
+437 |  # optional, default is 0 (do not preopen), searchd-only
+    |                                             ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:953:24
+    |
+953 |   req = pack ( '>2HL', SEARCHD_COMMAND_UPDATE, VER_COMMAND_UPDATE, length ) + req
+    |                        ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:443:43
+    |
+443 |  # optional, default is 0 (cache in RAM), searchd-only
+    |                                           ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinxapi.py:967:14
+    |
+967 |   Connect to searchd server, and generate keywords list for a given query.
+    |              ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:986:24
+    |
+986 |   req = pack ( '>2HL', SEARCHD_COMMAND_KEYWORDS, VER_COMMAND_KEYWORDS, length ) + req
+    |                        ^^^^^^^
+    |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:1036:25
+     |
+1036 |   req = pack ( '>2HLL', SEARCHD_COMMAND_STATUS, VER_COMMAND_STATUS, 4, 1 )
+     |                         ^^^^^^^
+     |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:1072:29
+     |
+1072 |   request = pack ( '>hhII', SEARCHD_COMMAND_PERSIST, 0, 4, 1 )
+     |                             ^^^^^^^
+     |
+error: `SEARCHD` should be `SEARCHED`
+  --> ./sphinxapi.py:1094:28
+     |
+1094 |   request = pack ( '>hhI', SEARCHD_COMMAND_FLUSHATTRS, VER_COMMAND_FLUSHATTRS, 0 ) # cmd, ver, bodylen
+     |                            ^^^^^^^
+     |
+error: `DAA` should be `DATA`
+  --> ./sphinx.conf:497:250
+    |
+497 |     U+013A->l, U+013B->l, U+013C->l, U+013D->l, U+013E->l, U+013F->l, U+0140->l, U+0141->l, U+0142->l, U+019A->l, U+01C8->l, U+0234->l, U+023D->l, U+026B->l, U+026C->l, U+026D->l, U+029F->l, U+02E1->l, U+1D0C->l, U+1D38->l, U+1D85->l, U+1DA9->l, U+1DAA->l,  \
+    |                                                                                                                                                                                                                                                          ^^^
+    |
+error: `EDE` should be `EDGE`
+  --> ./sphinx.conf:504:239
+    |
+504 |     U+1E51->o, U+1E52->o, U+1E53->o, U+1ECC->o, U+1ECD->o, U+1ECE->o, U+1ECF->o, U+1ED0->o, U+1ED1->o, U+1ED2->o, U+1ED3->o, U+1ED4->o, U+1ED5->o, U+1ED6->o, U+1ED7->o, U+1ED8->o, U+1ED9->o, U+1EDA->o, U+1EDB->o, U+1EDC->o, U+1EDD->o, U+1EDE->o, U+1EDF->o,  \
+    |                                                                                                                                                                                                                                               ^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:522:193
+    |
+522 |     U+FB8F->U+06A9, U+FB90->U+06A9, U+FB92->U+06AF, U+FB93->U+06AF, U+FB94->U+06AF, U+FB96->U+06B3, U+FB97->U+06B3, U+FB98->U+06B3, U+FB9A->U+06B1, U+FB9B->U+06B1, U+FB9C->U+06B1, U+FB9E->U+06BA, U+FB9F->U+06BA, U+FBA0->U+06BB, U+FBA1->U+06BB, U+FBA2->U+06BB,  \
+    |                                                                                                                                                                                                 ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:522:209
+    |
+522 |     U+FB8F->U+06A9, U+FB90->U+06A9, U+FB92->U+06AF, U+FB93->U+06AF, U+FB94->U+06AF, U+FB96->U+06B3, U+FB97->U+06B3, U+FB98->U+06B3, U+FB9A->U+06B1, U+FB9B->U+06B1, U+FB9C->U+06B1, U+FB9E->U+06BA, U+FB9F->U+06BA, U+FBA0->U+06BB, U+FBA1->U+06BB, U+FBA2->U+06BB,  \
+    |                                                                                                                                                                                                                 ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:528:145
+    |
+528 |     U+F909->U+5951, U+F90A->U+91D1, U+F90B->U+5587, U+F90C->U+5948, U+F90D->U+61F6, U+F90E->U+7669, U+F90F->U+7F85, U+F910->U+863F, U+F911->U+87BA, U+F912->U+88F8, U+F913->U+908F, U+F914->U+6A02, U+F915->U+6D1B, U+F916->U+70D9, U+F917->U+73DE, U+F918->U+843D,  \
+    |                                                                                                                                                 ^^
+    |
+error: `AFE` should be `SAFE`
+  --> ./sphinx.conf:533:80
+    |
+533 |     U+F959->U+9675, U+F95A->U+8B80, U+F95B->U+62CF, U+F95C->U+6A02, U+F95D->U+8AFE, U+F95E->U+4E39, U+F95F->U+5BE7, U+F960->U+6012, U+F961->U+7387, U+F962->U+7570, U+F963->U+5317, U+F964->U+78FB, U+F965->U+4FBF, U+F966->U+5FA9, U+F967->U+4E0D, U+F968->U+6CCC,  \
+    |                                                                                ^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:539:25
+    |
+539 |     U+F9B9->U+60E1, U+F9BA->U+4E86, U+F9BB->U+50DA, U+F9BC->U+5BEE, U+F9BD->U+5C3F, U+F9BE->U+6599, U+F9BF->U+6A02, U+F9C0->U+71CE, U+F9C1->U+7642, U+F9C2->U+84FC, U+F9C3->U+907C, U+F9C4->U+9F8D, U+F9C5->U+6688, U+F9C6->U+962E, U+F9C7->U+5289, U+F9C8->U+677B,  \
+    |                         ^^
+    |
+error: `Admiraal` should be `Admiral`
+  --> ./accessibility.tsv:68:21
+   |
+68 | 42055302|Wassenaar, Admiraal Helfrichlaan|ACCESSIBLE|NOTACCESSIBLE
+   |                     ^^^^^^^^
+   |
+error: `AFE` should be `SAFE`
+  --> ./sphinx.conf:554:32
+    |
+554 |     U+FABC->U+8B01, U+FABD->U+8AFE, U+FABE->U+8AED, U+FABF->U+8B39, U+FAC0->U+8B8A, U+FAC1->U+8D08, U+FAC2->U+8F38, U+FAC3->U+9072, U+FAC4->U+9199, U+FAC5->U+9276, U+FAC6->U+967C, U+FAC7->U+96E3, U+FAC8->U+9756, U+FAC9->U+97DB, U+FACA->U+97FF, U+FACB->U+980B,  \
+    |                                ^^^
+    |
+error: `Singel` should be `Single`, `Signal`
+  --> ./accessibility.tsv:122:26
+    |
+122 | 50000320|Utrecht, Kleine Singel|NOTACCESSIBLE|ACCESSIBLE
+    |                          ^^^^^^
+    |
+error: `Dorp` should be `Drop`
+  --> ./accessibility.tsv:143:23
+    |
+143 | 51280690|Houten, Oude Dorp|ACCESSIBLE|ACCESSIBLE
+    |                       ^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:568:79
+    |
+568 |     U+2F8B6->U+62D4, U+2F8B7->U+6350, U+2F8B8->U+22B0C, U+2F8B9->U+633D, U+2F8BA->U+62FC, U+2F8BB->U+6368, U+2F8BC->U+6383, U+2F8BD->U+63E4, U+2F8BE->U+22BF1, U+2F8BF->U+6422, U+2F8C0->U+63C5, U+2F8C1->U+63A9, U+2F8C2->U+3A2E, U+2F8C3->U+6469, U+2F8C4->U+647E,  \
+    |                                                                               ^^
+    |
+error: `Pyramide` should be `Pyramid`
+  --> ./accessibility.tsv:251:25
+    |
+251 | 50310140|Austerlitz, De Pyramide|NOTACCESSIBLE|NOTACCESSIBLE
+    |                         ^^^^^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:585:95
+    |
+585 |     U+2F9B5->U+8667, U+2F9B6->U+8669, U+2F9B7->U+86A9, U+2F9B8->U+8688, U+2F9B9->U+870E, U+2F9BA->U+86E2, U+2F9BB->U+8779, U+2F9BC->U+8728, U+2F9BD->U+876B, U+2F9BE->U+8786, U+2F9BF->U+45D7, U+2F9C0->U+87E1, U+2F9C1->U+8801, U+2F9C2->U+45F9, U+2F9C3->U+8860,  \
+    |                                                                                               ^^
+    |
+error: `Singel` should be `Single`, `Signal`
+  --> ./accessibility.tsv:293:26
+    |
+293 | 50000310|Utrecht, Kleine Singel|NOTACCESSIBLE|ACCESSIBLE
+    |                          ^^^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:608:137
+    |
+608 |     U+30AA->U+30A9, U+30AC->U+30AB, U+30AE->U+30AD, U+30B0->U+30AF, U+30B2->U+30B1, U+30B4->U+30B3, U+30B6->U+30B5, U+30B8->U+30B7, U+30BA->U+30B9, U+30BC->U+30BB, U+30BE->U+30BD, U+30C0->U+30BF, U+30C2->U+30C1, U+30C5->U+30C4, U+30C7->U+30C6, U+30C9->U+30C8,  \
+    |                                                                                                                                         ^^
+    |
+error: `Admiraal` should be `Admiral`
+  --> ./accessibility.tsv:582:10
+    |
+582 | 32005701|Admiraal Helfrichsingel|ACCESSIBLE|ACCESSIBLE
+    |          ^^^^^^^^
+    |
+error: `Admiraal` should be `Admiral`
+  --> ./accessibility.tsv:583:10
+    |
+583 | 32005702|Admiraal Helfrichsingel|ACCESSIBLE|ACCESSIBLE
+    |          ^^^^^^^^
+    |
+error: `Dorp` should be `Drop`
+  --> ./accessibility.tsv:616:10
+    |
+616 | 32008126|Dorp|ACCESSIBLE|ACCESSIBLE
+    |          ^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:638:81
+    |
+638 |     U+04B5, U+04B6->U+0447, U+04B7->U+0447, U+04B8->U+0447, U+04B9->U+0447, U+04BA->U+04BB, U+04BB, U+04BC->U+04BD, U+04BE->U+04BD, U+04BF->U+04BD, U+04BD, U+04C0->U+04CF, U+04CF, U+04C1->U+0436, U+04C2->U+0436, U+04C3->U+043A, U+04C4->U+043A, U+04C5->U+043B,  \
+    |                                                                                 ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:646:225
+    |
+646 |     U+03D6->U+03C0, U+03D8->U+03D9, U+03DA->U+03DB, U+03DC->U+03DD, U+03DE->U+03DF, U+03E0->U+03E1, U+03E2->U+03E3, U+03E4->U+03E5, U+03E6->U+03E7, U+03E8->U+03E9, U+03EA->U+03EB, U+03EC->U+03ED, U+03EE->U+03EF, U+03F0->U+03BA, U+03F1->U+03C1, U+03F2->U+03C3,  \
+    |                                                                                                                                                                                                                                 ^^
+    |
+error: `Stichting` should be `Stitching`
+  --> ./accessibility.tsv:811:19
+    |
+811 | 42036302|Monster, Stichting Westerhonk|ACCESSIBLE|ACCESSIBLE
+    |                   ^^^^^^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:667:72
+    |
+667 |     U+0B92, U+0B93, U+0B95, U+0B99, U+0B9A, U+0B9C, U+0B9E, U+0B9F, U+0BA3, U+0BA4, U+0BA8..U+0BAA, U+0BAE..U+0BB9, U+0BE6..U+0BEF, U+0E01..U+0E30, U+0E32, U+0E33, U+0E40..U+0E46, U+0E50..U+0E5B, U+FF10..U+FF19->0..9, U+FF21..U+FF3A->a..z, U+FF41..U+FF5A->a..z
+    |                                                                        ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:667:80
+    |
+667 |     U+0B92, U+0B93, U+0B95, U+0B99, U+0B9A, U+0B9C, U+0B9E, U+0B9F, U+0BA3, U+0BA4, U+0BA8..U+0BAA, U+0BAE..U+0BB9, U+0BE6..U+0BEF, U+0E01..U+0E30, U+0E32, U+0E33, U+0E40..U+0E46, U+0E50..U+0E5B, U+FF10..U+FF19->0..9, U+FF21..U+FF3A->a..z, U+FF41..U+FF5A->a..z
+    |                                                                                ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./sphinx.conf:667:88
+    |
+667 |     U+0B92, U+0B93, U+0B95, U+0B99, U+0B9A, U+0B9C, U+0B9E, U+0B9F, U+0BA3, U+0BA4, U+0BA8..U+0BAA, U+0BAE..U+0BB9, U+0BE6..U+0BEF, U+0E01..U+0E30, U+0E32, U+0E33, U+0E40..U+0E46, U+0E50..U+0E5B, U+FF10..U+FF19->0..9, U+FF21..U+FF3A->a..z, U+FF41..U+FF5A->a..z
+    |                                                                                        ^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:767:4
+    |
+767 | ## searchd settings
+    |    ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:770:1
+    |
+770 | searchd
+    | ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:782:14
+    |
+782 |  # log file, searchd run info is logged here
+    |              ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:783:26
+    |
+783 |  # optional, default is 'searchd.log'
+    |                          ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:802:14
+    |
+802 |  # PID file, searchd process ID file name
+    |              ^^^^^^^
+    |
+error: `succesful` should be `successful`
+  --> ./sphinx.conf:819:43
+    |
+819 |  # whether to unlink .old index copies on succesful rotation.
+    |                                           ^^^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:837:36
+    |
+837 |  # shared between all instances of searchd, disables attr flushes!
+    |                                    ^^^^^^^
+    |
+error: `searchd` should be `searched`
+  --> ./sphinx.conf:847:4
+    |
+847 |  # searchd will (try to) log crashed query to 'crash_log_path.PID' file
+    |    ^^^^^^^
+    |
+error: `Dorp` should be `Drop`
+  --> ./accessibility.tsv:1328:10
+     |
+1328 | 32008125|Dorp|NOTACCESSIBLE|NOTACCESSIBLE
+     |          ^^^^
+     |
+error: `Defensie` should be `Defensive`
+  --> ./accessibility.tsv:1392:20
+     |
+1392 | 42011201|Den Haag, Defensie|NOTACCESSIBLE|NOTACCESSIBLE
+     |                    ^^^^^^^^
+     |
+error: `Defensie` should be `Defensive`
+  --> ./accessibility.tsv:1393:20
+     |
+1393 | 42011202|Den Haag, Defensie|NOTACCESSIBLE|NOTACCESSIBLE
+     |                    ^^^^^^^^
+     |
+error: `accessiblity` should be `accessibility`
+  --> ./kv78turbo-api.py:186:110
+    |
+186 |      newrow['WheelChairAccessible'] = row['WheelChairAccessible'] # Because of agencies not implementing the accessiblity tag in KV6, we're better off ignoring UKNOWNS unfortunately
+    |                                                                                                              ^^^^^^^^^^^^
+    |
+error: `UKNOWNS` should be `UNKNOWNS`
+  --> ./kv78turbo-api.py:186:161
+    |
+186 |      newrow['WheelChairAccessible'] = row['WheelChairAccessible'] # Because of agencies not implementing the accessiblity tag in KV6, we're better off ignoring UKNOWNS unfortunately
+    |                                                                                                                                                                 ^^^^^^^
+    |
+error: `als` should be `also`
+  --> ./kv78turbo-api.py:237:99
+    |
+237 |     if row['TripStopStatus'] in set(['ARRIVED', 'PASSED']): # , 'DRIVING']): Driving alleen nemen als kleinste waarde uit lijn, gegeven dat er geen ARRIVED/PASSED is
+    |                                                                                                   ^^^
+    |
+error: `Admiraal` should be `Admiral`
+  --> ./accessibility.tsv:1621:21
+     |
+1621 | 42055301|Wassenaar, Admiraal Helfrichlaan|NOTACCESSIBLE|NOTACCESSIBLE
+     |                     ^^^^^^^^
+     |
+error: `Dorp` should be `Drop`
+  --> ./accessibility.tsv:1847:23
+     |
+1847 | 51280680|Houten, Oude Dorp|ACCESSIBLE|ACCESSIBLE
+     |                       ^^^^
+     |
+error: `Pyramide` should be `Pyramid`
+  --> ./accessibility.tsv:2525:25
+     |
+2525 | 50410010|Austerlitz, De Pyramide|NOTACCESSIBLE|NOTACCESSIBLE
+     |                         ^^^^^^^^
+     |
