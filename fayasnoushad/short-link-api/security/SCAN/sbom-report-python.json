@@ -1,0 +1,42 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:a364d79e-dbc2-49c0-b976-5cf1e04aeb46",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-02-07T08:31:02.448Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "7.0.5"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "workspace",
+      "version": "",
+      "type": "application"
+    }
+  },
+  "components": [],
+  "dependencies": [],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": "/github/workspace",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/github/workspace/requirements.txt",
+      "comment": "Package file"
+    }
+  ]
+}

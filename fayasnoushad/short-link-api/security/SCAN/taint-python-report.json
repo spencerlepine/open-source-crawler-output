@@ -1,0 +1,71 @@
+{
+  "generated_at": "2023-02-07T08:31:01Z",
+  "vulnerabilities": [
+    {
+      "rule_id": "flask-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `PREFERRED_URL_SCHEME` not set to the recommended value `https` for production use",
+      "description": "Security Misconfiguration with the config `PREFERRED_URL_SCHEME` not set to the recommended value `https` for production use",
+      "recommendation": "Flask application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nNOTE: Some recommended settings may have to be set for every route even when using blueprint design pattern.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Flask Security](https://flask-security.readthedocs.io/en/develop/configuration.html)**\n\n**[Flask Security Considerations](https://flask.palletsprojects.com/en/1.1.x/security/#security-considerations)**\n\n**[Flask Configuration](https://flask.palletsprojects.com/en/1.1.x/api/#configuration)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "PREFERRED_URL_SCHEME",
+        "line_number": 1,
+        "label": "PREFERRED_URL_SCHEME",
+        "path": "/github/workspace/app.py"
+      },
+      "sink": {
+        "trigger_word": "http",
+        "line_number": 1,
+        "label": "http",
+        "path": "/github/workspace/app.py"
+      }
+    },
+    {
+      "rule_id": "flask-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SESSION_COOKIE_SECURE` not set to the recommended value `True` for production use",
+      "description": "Security Misconfiguration with the config `SESSION_COOKIE_SECURE` not set to the recommended value `True` for production use",
+      "recommendation": "Flask application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\nNOTE: Some recommended settings may have to be set for every route even when using blueprint design pattern.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Flask Security](https://flask-security.readthedocs.io/en/develop/configuration.html)**\n\n**[Flask Security Considerations](https://flask.palletsprojects.com/en/1.1.x/security/#security-considerations)**\n\n**[Flask Configuration](https://flask.palletsprojects.com/en/1.1.x/api/#configuration)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "SESSION_COOKIE_SECURE",
+        "line_number": 1,
+        "label": "SESSION_COOKIE_SECURE",
+        "path": "/github/workspace/app.py"
+      },
+      "sink": {
+        "trigger_word": null,
+        "line_number": 1,
+        "label": null,
+        "path": "/github/workspace/app.py"
+      }
+    },
+    {
+      "rule_id": "flask-misconfiguration-controls",
+      "rule_name": "Missing Security Controls",
+      "short_description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "description": "Consider adding Flask-Security and Flask-Talisman security extensions to your Flask apps",
+      "recommendation": "Flask-Security allows you to quickly add common security mechanisms to your Flask application. Flask-Social can also be used to add social or OAuth login and connection management.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Flask Security](https://flask-security.readthedocs.io/en/develop/index.html)**\n\n**[Flask Configuration](https://flask.palletsprojects.com/en/1.1.x/api/#configuration)**\n\n**[Flask Talisman](https://github.com/GoogleCloudPlatform/flask-talisman)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "flask_security",
+        "line_number": 1,
+        "label": "flask_security",
+        "path": "/github/workspace/app.py"
+      },
+      "sink": {
+        "trigger_word": null,
+        "line_number": 1,
+        "label": null,
+        "path": "/github/workspace/app.py"
+      }
+    }
+  ]
+}
