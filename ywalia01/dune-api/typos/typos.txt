@@ -1,0 +1,25 @@
+## Detected Typos
+error: `serie` should be `series`
+  --> ./loaders/getArticle.js:49:17
+   |
+49 |             var serie;
+   |                 ^^^^^
+   |
+error: `serie` should be `series`
+  --> ./loaders/getArticle.js:52:21
+   |
+52 |                     serie = series[Math.floor(Math.random() * series.length)];
+   |                     ^^^^^
+   |
+error: `serie` should be `series`
+  --> ./loaders/getArticle.js:53:38
+   |
+53 |                 } while (out.indexOf(serie) > -1);
+   |                                      ^^^^^
+   |
+error: `serie` should be `series`
+  --> ./loaders/getArticle.js:54:26
+   |
+54 |                 out[i] = serie;
+   |                          ^^^^^
+   |
