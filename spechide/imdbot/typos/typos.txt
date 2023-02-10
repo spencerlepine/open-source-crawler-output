@@ -1,0 +1,13 @@
+## Detected Typos
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./README.md:15:26
+   |
+15 |   <h3 align="center">IMDbOT</h3>
+   |                          ^^
+   |
+error: `OT` should be `TO`, `OF`, `OR`
+  --> ./README.md:48:5
+   |
+48 | IMDbOT is free API that **illegally searches** IMDb.com and formats the results into a machine friendly format.
+   |     ^^
+   |
