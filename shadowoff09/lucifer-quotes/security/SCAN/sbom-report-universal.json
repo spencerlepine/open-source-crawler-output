@@ -1,0 +1,25 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:5cbbe7d5-1a6f-4cd7-bc82-0bed1d86f8fe",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-02-13T08:33:14.040Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "7.0.5"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [],
+  "services": [],
+  "dependencies": []
+}
