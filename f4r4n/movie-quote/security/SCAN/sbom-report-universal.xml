@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:0f3248a5-6902-40c3-976b-eca2781ee62a" version="1">
+  <metadata>
+    <timestamp>2023-02-14T08:32:54.632Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AppThreat</vendor>
+        <name>cdxgen</name>
+        <version>7.0.5</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Team AppThreat</name>
+        <email>cloud@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/amqp@5.0.6">
+      <publisher/>
+      <group/>
+      <name>amqp</name>
+      <version>5.0.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/amqp@5.0.6</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/apscheduler@3.7.0">
+      <publisher/>
+      <group/>
+      <name>APScheduler</name>
+      <version>3.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/apscheduler@3.7.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/asgiref@3.3.1">
+      <publisher/>
+      <group/>
+      <name>asgiref</name>
+      <version>3.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/asgiref@3.3.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/billiard@3.6.4.0">
+      <publisher/>
+      <group/>
+      <name>billiard</name>
+      <version>3.6.4.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/billiard@3.6.4.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/certifi@2020.12.5">
+      <publisher/>
+      <group/>
+      <name>certifi</name>
+      <version>2020.12.5</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/certifi@2020.12.5</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/chardet@4.0.0">
+      <publisher/>
+      <group/>
+      <name>chardet</name>
+      <version>4.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/chardet@4.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/click@7.1.2">
+      <publisher/>
+      <group/>
+      <name>click</name>
+      <version>7.1.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/click@7.1.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/click-didyoumean@0.0.3">
+      <publisher/>
+      <group/>
+      <name>click-didyoumean</name>
+      <version>0.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/click-didyoumean@0.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/click-plugins@1.1.1">
+      <publisher/>
+      <group/>
+      <name>click-plugins</name>
+      <version>1.1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/click-plugins@1.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/click-repl@0.2.0">
+      <publisher/>
+      <group/>
+      <name>click-repl</name>
+      <version>0.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/click-repl@0.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/coreapi@2.3.3">
+      <publisher/>
+      <group/>
+      <name>coreapi</name>
+      <version>2.3.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/coreapi@2.3.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/coreschema@0.0.4">
+      <publisher/>
+      <group/>
+      <name>coreschema</name>
+      <version>0.0.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/coreschema@0.0.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/django@3.1.7">
+      <publisher/>
+      <group/>
+      <name>Django</name>
+      <version>3.1.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/django@3.1.7</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/django-cors-headers@3.7.0">
+      <publisher/>
+      <group/>
+      <name>django-cors-headers</name>
+      <version>3.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/django-cors-headers@3.7.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/djangorestframework@3.12.2">
+      <publisher/>
+      <group/>
+      <name>djangorestframework</name>
+      <version>3.12.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/djangorestframework@3.12.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/djangorestframework-simplejwt@4.6.0">
+      <publisher/>
+      <group/>
+      <name>djangorestframework-simplejwt</name>
+      <version>4.6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/djangorestframework-simplejwt@4.6.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/drf-yasg@1.20.0">
+      <publisher/>
+      <group/>
+      <name>drf-yasg</name>
+      <version>1.20.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/drf-yasg@1.20.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flake8@3.9.2">
+      <publisher/>
+      <group/>
+      <name>flake8</name>
+      <version>3.9.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/flake8@3.9.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/gunicorn@20.1.0">
+      <publisher/>
+      <group/>
+      <name>gunicorn</name>
+      <version>20.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/gunicorn@20.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/idna@2.10">
+      <publisher/>
+      <group/>
+      <name>idna</name>
+      <version>2.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/idna@2.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/inflection@0.5.1">
+      <publisher/>
+      <group/>
+      <name>inflection</name>
+      <version>0.5.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/inflection@0.5.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/itypes@1.2.0">
+      <publisher/>
+      <group/>
+      <name>itypes</name>
+      <version>1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/itypes@1.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/jinja2@2.11.3">
+      <publisher/>
+      <group/>
+      <name>Jinja2</name>
+      <version>2.11.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/jinja2@2.11.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/kombu@5.1.0">
+      <publisher/>
+      <group/>
+      <name>kombu</name>
+      <version>5.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/kombu@5.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/markupsafe@1.1.1">
+      <publisher/>
+      <group/>
+      <name>MarkupSafe</name>
+      <version>1.1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/markupsafe@1.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/mccabe@0.6.1">
+      <publisher/>
+      <group/>
+      <name>mccabe</name>
+      <version>0.6.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/mccabe@0.6.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/packaging@20.9">
+      <publisher/>
+      <group/>
+      <name>packaging</name>
+      <version>20.9</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/packaging@20.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/prompt-toolkit@3.0.19">
+      <publisher/>
+      <group/>
+      <name>prompt-toolkit</name>
+      <version>3.0.19</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/prompt-toolkit@3.0.19</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/psycopg2@2.8.6">
+      <publisher/>
+      <group/>
+      <name>psycopg2</name>
+      <version>2.8.6</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/psycopg2@2.8.6</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pycodestyle@2.7.0">
+      <publisher/>
+      <group/>
+      <name>pycodestyle</name>
+      <version>2.7.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pycodestyle@2.7.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyflakes@2.3.1">
+      <publisher/>
+      <group/>
+      <name>pyflakes</name>
+      <version>2.3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pyflakes@2.3.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyjwt@1.7.1">
+      <publisher/>
+      <group/>
+      <name>PyJWT</name>
+      <version>1.7.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pyjwt@1.7.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyparsing@2.4.7">
+      <publisher/>
+      <group/>
+      <name>pyparsing</name>
+      <version>2.4.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pyparsing@2.4.7</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pytz@2021.1">
+      <publisher/>
+      <group/>
+      <name>pytz</name>
+      <version>2021.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pytz@2021.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests@2.25.1">
+      <publisher/>
+      <group/>
+      <name>requests</name>
+      <version>2.25.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/requests@2.25.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/ruamel.yaml@0.16.13">
+      <publisher/>
+      <group/>
+      <name>ruamel.yaml</name>
+      <version>0.16.13</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/ruamel.yaml@0.16.13</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/ruamel.yaml.clib@0.2.2">
+      <publisher/>
+      <group/>
+      <name>ruamel.yaml.clib</name>
+      <version>0.2.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/ruamel.yaml.clib@0.2.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/six@1.16.0">
+      <publisher/>
+      <group/>
+      <name>six</name>
+      <version>1.16.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/six@1.16.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/sqlparse@0.4.1">
+      <publisher/>
+      <group/>
+      <name>sqlparse</name>
+      <version>0.4.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/sqlparse@0.4.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/tzlocal@2.1">
+      <publisher/>
+      <group/>
+      <name>tzlocal</name>
+      <version>2.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/tzlocal@2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/uritemplate@3.0.1">
+      <publisher/>
+      <group/>
+      <name>uritemplate</name>
+      <version>3.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/uritemplate@3.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/urllib3@1.26.4">
+      <publisher/>
+      <group/>
+      <name>urllib3</name>
+      <version>1.26.4</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/urllib3@1.26.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/vine@5.0.0">
+      <publisher/>
+      <group/>
+      <name>vine</name>
+      <version>5.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/vine@5.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/wcwidth@0.2.5">
+      <publisher/>
+      <group/>
+      <name>wcwidth</name>
+      <version>0.2.5</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/wcwidth@0.2.5</purl>
+    </component>
+  </components>
+</bom>

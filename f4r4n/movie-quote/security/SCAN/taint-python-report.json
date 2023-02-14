@@ -1,0 +1,401 @@
+{
+  "generated_at": "2023-02-14T08:32:53Z",
+  "vulnerabilities": [
+    {
+      "rule_id": "django-misconfiguration-static",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `EMAIL_USE_TLS` set to a static value `True`",
+      "description": "Security Misconfiguration with the config `EMAIL_USE_TLS` set to a static value `True`",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "EMAIL_USE_TLS",
+        "line_number": 13,
+        "label": "EMAIL_USE_TLS",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "True",
+        "line_number": 13,
+        "label": "True",
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-static",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SECRET_KEY` set to a static value `None`",
+      "description": "Security Misconfiguration with the config `SECRET_KEY` set to a static value `None`",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "SECRET_KEY",
+        "line_number": 16,
+        "label": "SECRET_KEY",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "None",
+        "line_number": 16,
+        "label": "None",
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-insecure",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `DEBUG` set to a value `None` meant for development use",
+      "description": "Security Misconfiguration with the config `DEBUG` set to a value `None` meant for development use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "DEBUG",
+        "line_number": 17,
+        "label": "DEBUG",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "None",
+        "line_number": 17,
+        "label": "None",
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `CSRF_COOKIE_DOMAIN` not set to the recommended value `domain name` for production use",
+      "description": "Security Misconfiguration with the config `CSRF_COOKIE_DOMAIN` not set to the recommended value `domain name` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "CSRF_COOKIE_DOMAIN",
+        "line_number": 1,
+        "label": "CSRF_COOKIE_DOMAIN",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": null,
+        "line_number": 1,
+        "label": null,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `CSRF_USE_SESSIONS` not set to the recommended value `True` for production use",
+      "description": "Security Misconfiguration with the config `CSRF_USE_SESSIONS` not set to the recommended value `True` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "CSRF_USE_SESSIONS",
+        "line_number": 1,
+        "label": "CSRF_USE_SESSIONS",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": false,
+        "line_number": 1,
+        "label": false,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `CSRF_COOKIE_SECURE` not set to the recommended value `True` for production use",
+      "description": "Security Misconfiguration with the config `CSRF_COOKIE_SECURE` not set to the recommended value `True` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "CSRF_COOKIE_SECURE",
+        "line_number": 1,
+        "label": "CSRF_COOKIE_SECURE",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": false,
+        "line_number": 1,
+        "label": false,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `CSRF_TRUSTED_ORIGINS` not set to the recommended value `domain name` for production use",
+      "description": "Security Misconfiguration with the config `CSRF_TRUSTED_ORIGINS` not set to the recommended value `domain name` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "CSRF_TRUSTED_ORIGINS",
+        "line_number": 1,
+        "label": "CSRF_TRUSTED_ORIGINS",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": [],
+        "line_number": 1,
+        "label": [],
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `DATA_UPLOAD_MAX_MEMORY_SIZE` not set to the recommended value `2621440` for production use",
+      "description": "Security Misconfiguration with the config `DATA_UPLOAD_MAX_MEMORY_SIZE` not set to the recommended value `2621440` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "DATA_UPLOAD_MAX_MEMORY_SIZE",
+        "line_number": 1,
+        "label": "DATA_UPLOAD_MAX_MEMORY_SIZE",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "2621440",
+        "line_number": 1,
+        "label": "2621440",
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `DATA_UPLOAD_MAX_NUMBER_FIELDS` not set to the recommended value `100` for production use",
+      "description": "Security Misconfiguration with the config `DATA_UPLOAD_MAX_NUMBER_FIELDS` not set to the recommended value `100` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "DATA_UPLOAD_MAX_NUMBER_FIELDS",
+        "line_number": 1,
+        "label": "DATA_UPLOAD_MAX_NUMBER_FIELDS",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "1000",
+        "line_number": 1,
+        "label": "1000",
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `FILE_UPLOAD_MAX_MEMORY_SIZE` not set to the recommended value `2621440` for production use",
+      "description": "Security Misconfiguration with the config `FILE_UPLOAD_MAX_MEMORY_SIZE` not set to the recommended value `2621440` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "FILE_UPLOAD_MAX_MEMORY_SIZE",
+        "line_number": 1,
+        "label": "FILE_UPLOAD_MAX_MEMORY_SIZE",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "2621440",
+        "line_number": 1,
+        "label": "2621440",
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SECURE_BROWSER_XSS_FILTER` not set to the recommended value `True` for production use",
+      "description": "Security Misconfiguration with the config `SECURE_BROWSER_XSS_FILTER` not set to the recommended value `True` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "SECURE_BROWSER_XSS_FILTER",
+        "line_number": 1,
+        "label": "SECURE_BROWSER_XSS_FILTER",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": false,
+        "line_number": 1,
+        "label": false,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SECURE_CONTENT_TYPE_NOSNIFF` not set to the recommended value `True` for production use",
+      "description": "Security Misconfiguration with the config `SECURE_CONTENT_TYPE_NOSNIFF` not set to the recommended value `True` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "SECURE_CONTENT_TYPE_NOSNIFF",
+        "line_number": 1,
+        "label": "SECURE_CONTENT_TYPE_NOSNIFF",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": false,
+        "line_number": 1,
+        "label": false,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SECURE_HSTS_INCLUDE_SUBDOMAINS` not set to the recommended value `True` for production use",
+      "description": "Security Misconfiguration with the config `SECURE_HSTS_INCLUDE_SUBDOMAINS` not set to the recommended value `True` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "SECURE_HSTS_INCLUDE_SUBDOMAINS",
+        "line_number": 1,
+        "label": "SECURE_HSTS_INCLUDE_SUBDOMAINS",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": false,
+        "line_number": 1,
+        "label": false,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SECURE_HSTS_PRELOAD` not set to the recommended value `True` for production use",
+      "description": "Security Misconfiguration with the config `SECURE_HSTS_PRELOAD` not set to the recommended value `True` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "SECURE_HSTS_PRELOAD",
+        "line_number": 1,
+        "label": "SECURE_HSTS_PRELOAD",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": false,
+        "line_number": 1,
+        "label": false,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SECURE_REDIRECT_EXEMPT` not set to the recommended value `domain name` for production use",
+      "description": "Security Misconfiguration with the config `SECURE_REDIRECT_EXEMPT` not set to the recommended value `domain name` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "SECURE_REDIRECT_EXEMPT",
+        "line_number": 1,
+        "label": "SECURE_REDIRECT_EXEMPT",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": [],
+        "line_number": 1,
+        "label": [],
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `AUTHENTICATION_BACKENDS` not set to the recommended value `['django.contrib.auth.backends.ModelBackend']` for production use",
+      "description": "Security Misconfiguration with the config `AUTHENTICATION_BACKENDS` not set to the recommended value `['django.contrib.auth.backends.ModelBackend']` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "AUTHENTICATION_BACKENDS",
+        "line_number": 1,
+        "label": "AUTHENTICATION_BACKENDS",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "['django.contrib.auth.backends.ModelBackend']",
+        "line_number": 1,
+        "label": "['django.contrib.auth.backends.ModelBackend']",
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-misconfiguration-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Security Misconfiguration with the config `SESSION_COOKIE_DOMAIN` not set to the recommended value `domain name` for production use",
+      "description": "Security Misconfiguration with the config `SESSION_COOKIE_DOMAIN` not set to the recommended value `domain name` for production use",
+      "recommendation": "Django application is not configured correctly for deployment to production and live environments. Default settings that are more appropriate for development environment are in use.\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Deployment Checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "MEDIUM",
+      "source": {
+        "trigger_word": "SESSION_COOKIE_DOMAIN",
+        "line_number": 1,
+        "label": "SESSION_COOKIE_DOMAIN",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": null,
+        "line_number": 1,
+        "label": null,
+        "path": "/github/workspace/config/settings.py"
+      }
+    },
+    {
+      "rule_id": "django-sec-recommended",
+      "rule_name": "Security Misconfiguration",
+      "short_description": "Consider including CSRF protection middleware for django applications",
+      "description": "Consider including CSRF protection middleware for django applications",
+      "recommendation": "Django Security Middleware allows you to quickly add common security mechanisms to your Django application\n\n## Additional information\n\n**[OWASP-A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)**\n\n**[Django Security](https://docs.djangoproject.com/en/3.1/topics/security/)**\n\n**[Django Security Middleware](https://docs.djangoproject.com/en/dev/ref/middleware/#django.middleware.security.SecurityMiddleware)**\n\n**[Clickjacking Protection](https://docs.djangoproject.com/en/dev/ref/clickjacking/)**\n",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a6-misconfiguration",
+      "severity": "LOW",
+      "source": {
+        "trigger_word": "MIDDLEWARE",
+        "line_number": 37,
+        "label": "MIDDLEWARE",
+        "path": "/github/workspace/config/settings.py"
+      },
+      "sink": {
+        "trigger_word": "",
+        "line_number": 37,
+        "label": "",
+        "path": "/github/workspace/config/settings.py"
+      }
+    }
+  ]
+}

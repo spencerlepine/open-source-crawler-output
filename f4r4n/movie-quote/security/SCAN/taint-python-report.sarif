@@ -1,0 +1,898 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Python Security Analysis",
+          "rules": [
+            {
+              "id": "django-misconfiguration-static",
+              "help": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.",
+                "markdown": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data."
+              },
+              "name": "Security Misconfiguration",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/732.html",
+              "shortDescription": {
+                "text": "Incorrect Permission Assignment for Critical Resource."
+              }
+            },
+            {
+              "id": "django-misconfiguration-insecure",
+              "help": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.",
+                "markdown": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data."
+              },
+              "name": "Security Misconfiguration",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/732.html",
+              "shortDescription": {
+                "text": "Incorrect Permission Assignment for Critical Resource."
+              }
+            },
+            {
+              "id": "django-misconfiguration-recommended",
+              "help": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.",
+                "markdown": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data."
+              },
+              "name": "Security Misconfiguration",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/732.html",
+              "shortDescription": {
+                "text": "Incorrect Permission Assignment for Critical Resource."
+              }
+            },
+            {
+              "id": "django-sec-recommended",
+              "help": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.",
+                "markdown": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.\nWhen a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data."
+              },
+              "name": "Security Misconfiguration",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/732.html",
+              "shortDescription": {
+                "text": "Incorrect Permission Assignment for Critical Resource."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Python Security Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-j",
+            "-a",
+            "e",
+            "-o",
+            "/github/workspace/reports/taint-python-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-j -a e -o /github/workspace/reports/taint-python-report.json",
+          "endTimeUtc": "2023-02-14T08:32:53Z",
+          "workingDirectory": {
+            "uri": "https://github.com/f4r4n/movie-quote"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-14T08:32:53Z",
+          "workingDirectory": {
+            "uri": "https://github.com/f4r4n/movie-quote"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 18,
+          "critical": 0,
+          "high": 0,
+          "medium": 14,
+          "low": 4
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `EMAIL_USE_TLS` set to a static value `True`."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "EMAIL_USE_TLS = True\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "EMAIL_HOST_PASSWORD = os.environ.get(\"CONFIG_EMAIL_HOST_PASSWORD\")\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# django configs\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "89146dcfe53959a9",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-static",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `SECRET_KEY` set to a static value `None`."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "SECRET_KEY = str(os.environ.get(\"CONFIG_SECRET_KEY\"))\n"
+                  },
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "# django configs\nSECRET_KEY = str(os.environ.get(\"CONFIG_SECRET_KEY\"))\nDEBUG = bool(int(os.environ.get(\"CONFIG_DEBUG\", 0)))\nALLOWED_HOSTS = os.environ.get(\"CONFIG_ALLOWED_HOSTS\", []).split(\", \")\n"
+                  },
+                  "endLine": 18,
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "6a35d84a98b2eaae",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-static",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `DEBUG` set to a value `None` meant for development use."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "DEBUG = bool(int(os.environ.get(\"CONFIG_DEBUG\", 0)))\n"
+                  },
+                  "startLine": 17
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "SECRET_KEY = str(os.environ.get(\"CONFIG_SECRET_KEY\"))\nDEBUG = bool(int(os.environ.get(\"CONFIG_DEBUG\", 0)))\nALLOWED_HOSTS = os.environ.get(\"CONFIG_ALLOWED_HOSTS\", []).split(\", \")\n\n"
+                  },
+                  "endLine": 19,
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "71cc0ff5bd96a8ce",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-insecure",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `CSRF_COOKIE_DOMAIN` not set to the recommended value `domain name` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `CSRF_USE_SESSIONS` not set to the recommended value `True` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `CSRF_COOKIE_SECURE` not set to the recommended value `True` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `CSRF_TRUSTED_ORIGINS` not set to the recommended value `domain name` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `DATA_UPLOAD_MAX_MEMORY_SIZE` not set to the recommended value `2621440` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `DATA_UPLOAD_MAX_NUMBER_FIELDS` not set to the recommended value `100` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `FILE_UPLOAD_MAX_MEMORY_SIZE` not set to the recommended value `2621440` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `SECURE_BROWSER_XSS_FILTER` not set to the recommended value `True` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `SECURE_CONTENT_TYPE_NOSNIFF` not set to the recommended value `True` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `SECURE_HSTS_INCLUDE_SUBDOMAINS` not set to the recommended value `True` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `SECURE_HSTS_PRELOAD` not set to the recommended value `True` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `SECURE_REDIRECT_EXEMPT` not set to the recommended value `domain name` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `AUTHENTICATION_BACKENDS` not set to the recommended value `['django.contrib.auth.backends.ModelBackend']` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Security Misconfiguration with the config `SESSION_COOKIE_DOMAIN` not set to the recommended value `domain name` for production use."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "from pathlib import Path\n"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "from pathlib import Path\nfrom datetime import timedelta\nimport os\n\n"
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d25afab95d81fd7a",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-misconfiguration-recommended",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Consider including CSRF protection middleware for django applications."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "MIDDLEWARE = [\n"
+                  },
+                  "startLine": 37
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/f4r4n/movie-quote/config/settings.py"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'corsheaders.middleware.CorsMiddleware',\n"
+                  },
+                  "endLine": 39,
+                  "startLine": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "7627f7fa13ae033c",
+            "scanFileHash": "edcf00df05cddabe"
+          },
+          "ruleId": "django-sec-recommended",
+          "ruleIndex": 3
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "441769df-6977-4a98-9a1f-bd0af930d6d2"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "441769df-6977-4a98-9a1f-bd0af930d6d2",
+      "runGuid": "e4cc2ad5-8e11-4c68-b233-a8161f138c00"
+    }
+  ]
+}

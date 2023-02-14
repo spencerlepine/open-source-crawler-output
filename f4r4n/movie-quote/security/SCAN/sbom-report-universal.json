@@ -1,0 +1,510 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:0f3248a5-6902-40c3-976b-eca2781ee62a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-02-14T08:32:54.639Z",
+    "tools": [
+      {
+        "vendor": "AppThreat",
+        "name": "cdxgen",
+        "version": "7.0.5"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Team AppThreat",
+        "email": "cloud@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "amqp",
+      "version": "5.0.6",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/amqp@5.0.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/amqp@5.0.6"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "APScheduler",
+      "version": "3.7.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/apscheduler@3.7.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/apscheduler@3.7.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "asgiref",
+      "version": "3.3.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/asgiref@3.3.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/asgiref@3.3.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "billiard",
+      "version": "3.6.4.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/billiard@3.6.4.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/billiard@3.6.4.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "certifi",
+      "version": "2020.12.5",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/certifi@2020.12.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/certifi@2020.12.5"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "chardet",
+      "version": "4.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/chardet@4.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/chardet@4.0.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "click",
+      "version": "7.1.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/click@7.1.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@7.1.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "click-didyoumean",
+      "version": "0.0.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/click-didyoumean@0.0.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click-didyoumean@0.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "click-plugins",
+      "version": "1.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/click-plugins@1.1.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click-plugins@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "click-repl",
+      "version": "0.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/click-repl@0.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click-repl@0.2.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "coreapi",
+      "version": "2.3.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/coreapi@2.3.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/coreapi@2.3.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "coreschema",
+      "version": "0.0.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/coreschema@0.0.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/coreschema@0.0.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Django",
+      "version": "3.1.7",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/django@3.1.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/django@3.1.7"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "django-cors-headers",
+      "version": "3.7.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/django-cors-headers@3.7.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/django-cors-headers@3.7.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "djangorestframework",
+      "version": "3.12.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/djangorestframework@3.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/djangorestframework@3.12.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "djangorestframework-simplejwt",
+      "version": "4.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/djangorestframework-simplejwt@4.6.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/djangorestframework-simplejwt@4.6.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "drf-yasg",
+      "version": "1.20.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/drf-yasg@1.20.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/drf-yasg@1.20.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "flake8",
+      "version": "3.9.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/flake8@3.9.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/flake8@3.9.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "gunicorn",
+      "version": "20.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/gunicorn@20.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/gunicorn@20.1.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "idna",
+      "version": "2.10",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/idna@2.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/idna@2.10"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "inflection",
+      "version": "0.5.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/inflection@0.5.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/inflection@0.5.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "itypes",
+      "version": "1.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/itypes@1.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/itypes@1.2.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Jinja2",
+      "version": "2.11.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/jinja2@2.11.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/jinja2@2.11.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "kombu",
+      "version": "5.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/kombu@5.1.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/kombu@5.1.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "MarkupSafe",
+      "version": "1.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/markupsafe@1.1.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/markupsafe@1.1.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "mccabe",
+      "version": "0.6.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/mccabe@0.6.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mccabe@0.6.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "packaging",
+      "version": "20.9",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/packaging@20.9",
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@20.9"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "prompt-toolkit",
+      "version": "3.0.19",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/prompt-toolkit@3.0.19",
+      "type": "library",
+      "bom-ref": "pkg:pypi/prompt-toolkit@3.0.19"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "psycopg2",
+      "version": "2.8.6",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/psycopg2@2.8.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/psycopg2@2.8.6"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pycodestyle",
+      "version": "2.7.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pycodestyle@2.7.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pycodestyle@2.7.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pyflakes",
+      "version": "2.3.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pyflakes@2.3.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyflakes@2.3.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "PyJWT",
+      "version": "1.7.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pyjwt@1.7.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyjwt@1.7.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pyparsing",
+      "version": "2.4.7",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pyparsing@2.4.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyparsing@2.4.7"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pytz",
+      "version": "2021.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pytz@2021.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytz@2021.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "requests",
+      "version": "2.25.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/requests@2.25.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.25.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "ruamel.yaml",
+      "version": "0.16.13",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/ruamel.yaml@0.16.13",
+      "type": "library",
+      "bom-ref": "pkg:pypi/ruamel.yaml@0.16.13"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "ruamel.yaml.clib",
+      "version": "0.2.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/ruamel.yaml.clib@0.2.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/ruamel.yaml.clib@0.2.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "six",
+      "version": "1.16.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/six@1.16.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.16.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "sqlparse",
+      "version": "0.4.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/sqlparse@0.4.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sqlparse@0.4.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "tzlocal",
+      "version": "2.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/tzlocal@2.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tzlocal@2.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "uritemplate",
+      "version": "3.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/uritemplate@3.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/uritemplate@3.0.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "urllib3",
+      "version": "1.26.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/urllib3@1.26.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@1.26.4"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "vine",
+      "version": "5.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/vine@5.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/vine@5.0.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "wcwidth",
+      "version": "0.2.5",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/wcwidth@0.2.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/wcwidth@0.2.5"
+    }
+  ],
+  "services": [],
+  "dependencies": []
+}

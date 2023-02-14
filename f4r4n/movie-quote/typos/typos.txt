@@ -1,0 +1,7 @@
+## Detected Typos
+error: `foramt` should be `format`
+  --> ./statistic/views.py:42:38
+   |
+42 |  def get(self, request, year, month, foramt=None):
+   |                                      ^^^^^^
+   |
