@@ -1,0 +1,55 @@
+## Detected Typos
+error: `backgroud` should be `background`
+  --> ./api/routes/image.py:26:54
+   |
+26 | @router.get("/solid", tags=["Get Quotes with Colored backgroud"])
+   |                                                      ^^^^^^^^^
+   |
+error: `Backgroud` should be `Background`
+  --> ./api/routes/image.py:36:39
+   |
+36 |         default="black", description="Backgroud color name"
+   |                                       ^^^^^^^^^
+   |
+error: `backgroud` should be `background`
+  --> ./api/routes/image.py:61:52
+   |
+61 | @router.get("/image", tags=["Get Quotes with Image backgroud"])
+   |                                                    ^^^^^^^^^
+   |
+error: `Backgroud` should be `Background`
+  --> ./api/routes/image.py:72:22
+   |
+72 |         description="Backgroud image URL",
+   |                      ^^^^^^^^^
+   |
+error: `Backgroud` should be `Background`
+  --> ./api/routes/image.py:100:39
+    |
+100 |         default="white", description="Backgroud color name"
+    |                                       ^^^^^^^^^
+    |
+error: `Ned` should be `Need`
+  --> ./data.py:1019:152
+     |
+1019 |             "quote": "What men want does not matter.  Winter is almost upon us, boy.  And winter is death.  I would sooner my men die fighting for the Ned's little girl than alone and hungry in the snow, weeping tears that freeze upon their cheeks.  No one sings songs of men who die like that.  As for me, I am old.  This will be my last winter.  Let me bathe in Bolton blood before I die.  I want to feel it splatter across my face when my axe bites deep into a Bolton skull.  I want to lick it off my lips and die with the taste of it on my tongue. ",
+     |                                                                                                                                                        ^^^
+     |
+error: `ser` should be `set`
+  --> ./data.py:1469:80
+     |
+1469 |             "quote": "Spare me your empty little compliments, girl... and your ser's.  I am no knight.  I spit on them and their vows.  My brother is a knight. ",
+     |                                                                                ^^^
+     |
+error: `Ther` should be `There`, `Their`, `The`, `Other`
+  --> ./data.py:1787:66
+     |
+1787 |             "quote": "All you Westerosi make a shame of loving.  Ther is no shame in loving.  If your septons say there is, your seven gods must be demons.  In the isles we know better.  Our gods gave us legs to run with, noses to smell with, hands to touch and feel.  What mad cruel god would give a man eyes and tell him he must forever keep them shut, and never look at all the beauty in the world?  Only a monster god, a demon of the darkness. ",
+     |                                                                  ^^^^
+     |
+error: `Ned` should be `Need`
+  --> ./data.py:1889:557
+     |
+1889 |             "quote": "The bride weeps... dressing her in grey and white serves no good if the girl is left to sob.  The Freys might not care, but the northmen... they fear the Dreadfort, but they love the Starks.  Not me, but the rest, yes.  Old Whoresbane is only here because the Freys hold the Greatjon captive.  And do you imagine the Hornwood men have forgotten the Bastard's last marriage, and how his lady wife was left to starve, chewing her own fingers?  What do you think passes through their heads when they hear the new bride weeping?  Valiant Ned's precious little girl.  Lady Arya's sobs do us more harm than all of Lord Stannis's swords and spears. ",
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+     |

@@ -1,0 +1,5 @@
+/github/workspace/docker-compose.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker-compose.yml:1:15: [error] wrong new line character: expected \n (new-lines)
+/github/workspace/docker-compose.debug.yml:1:1: [warning] missing document start "---" (document-start)
+/github/workspace/docker-compose.debug.yml:1:15: [error] wrong new line character: expected \n (new-lines)
+/github/workspace/docker-compose.debug.yml:9:81: [error] line too long (166 > 80 characters) (line-length)

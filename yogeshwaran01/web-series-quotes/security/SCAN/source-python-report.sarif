@@ -1,0 +1,86 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Python Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "Python Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-r",
+            "-a",
+            "vuln",
+            "-n",
+            "3",
+            "-s",
+            "B101,B102,B105,B307,B308,B310,B322,B404,B601,B602,B603,B604,B605,B701,B702,B703",
+            "-iii",
+            "-ll",
+            "-o",
+            "/github/workspace/reports/source-python-report.json",
+            "-f",
+            "json",
+            "-x",
+            ".git,.svn,.mvn,.idea,.github,.hg,dist,obj,backup,docs,tests,test,test-packages,tmp,report,reports,node_modules,.terraform,.serverless,venv,.virtualenv,vendor,bower_components,.vscode,e2e,.pytest_cache,__pycache__,.storybook,.venv,.tox,examples,tutorials,samples,migrations,db_migrations,unittests,unittests_legacy,stubs,cypress,mock,mocks",
+            "/github/workspace"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-r -a vuln -n 3 -s B101,B102,B105,B307,B308,B310,B322,B404,B601,B602,B603,B604,B605,B701,B702,B703 -iii -ll -o /github/workspace/reports/source-python-report.json -f json -x .git,.svn,.mvn,.idea,.github,.hg,dist,obj,backup,docs,tests,test,test-packages,tmp,report,reports,node_modules,.terraform,.serverless,venv,.virtualenv,vendor,bower_components,.vscode,e2e,.pytest_cache,__pycache__,.storybook,.venv,.tox,examples,tutorials,samples,migrations,db_migrations,unittests,unittests_legacy,stubs,cypress,mock,mocks /github/workspace",
+          "endTimeUtc": "2023-02-17T08:32:37Z",
+          "workingDirectory": {
+            "uri": "https://github.com/yogeshwaran01/web-series-quotes"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-17T08:32:37Z",
+          "workingDirectory": {
+            "uri": "https://github.com/yogeshwaran01/web-series-quotes"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "d95fbeb3-d637-4f76-b77c-9c5d3e914653"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "d95fbeb3-d637-4f76-b77c-9c5d3e914653",
+      "runGuid": "e1f86f81-b623-45e1-95b8-a1edf0f74619"
+    }
+  ]
+}

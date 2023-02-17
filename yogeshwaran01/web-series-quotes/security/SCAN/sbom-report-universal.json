@@ -1,0 +1,307 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:a4e654e9-0f00-454b-9ce6-d4313b8adc32",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-02-17T08:32:42.057Z",
+    "tools": [
+      {
+        "vendor": "cyclonedx",
+        "name": "cdxgen",
+        "version": "8.0.5"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Prabhu Subramanian",
+        "email": "prabhu@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "",
+      "name": "anyio",
+      "version": "3.5.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/anyio@3.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/anyio@3.5.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "asgiref",
+      "version": "3.4.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/asgiref@3.4.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/asgiref@3.4.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "certifi",
+      "version": "2021.10.8",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/certifi@2021.10.8",
+      "type": "library",
+      "bom-ref": "pkg:pypi/certifi@2021.10.8"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "charset-normalizer",
+      "version": "2.0.10",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/charset-normalizer@2.0.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/charset-normalizer@2.0.10"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "click",
+      "version": "8.0.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/click@8.0.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.0.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "fastapi",
+      "version": "0.71.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/fastapi@0.71.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/fastapi@0.71.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "h11",
+      "version": "0.12.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/h11@0.12.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/h11@0.12.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "httptools",
+      "version": "0.3.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/httptools@0.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/httptools@0.3.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "idna",
+      "version": "3.3",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/idna@3.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/idna@3.3"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "Pillow",
+      "version": "9.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pillow@9.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pillow@9.0.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "pydantic",
+      "version": "1.9.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pydantic@1.9.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pydantic@1.9.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "python-dotenv",
+      "version": "0.19.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/python-dotenv@0.19.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dotenv@0.19.2"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "PyYAML",
+      "version": "6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/pyyaml@6.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyyaml@6.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "requests",
+      "version": "2.27.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/requests@2.27.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.27.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "sniffio",
+      "version": "1.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/sniffio@1.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sniffio@1.2.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "starlette",
+      "version": "0.17.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/starlette@0.17.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/starlette@0.17.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "typing_extensions",
+      "version": "4.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/typing-extensions@4.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.0.1"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "urllib3",
+      "version": "1.26.8",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/urllib3@1.26.8",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@1.26.8"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "uvicorn",
+      "version": "0.17.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/uvicorn@0.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/uvicorn@0.17.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "uvloop",
+      "version": "0.16.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/uvloop@0.16.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/uvloop@0.16.0"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "watchgod",
+      "version": "0.7",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/watchgod@0.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/watchgod@0.7"
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "websockets",
+      "version": "10.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:pypi/websockets@10.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/websockets@10.1"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "checkout",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/checkout@v2",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/checkout@v2"
+    },
+    {
+      "publisher": "",
+      "group": "actions",
+      "name": "setup-python",
+      "version": "v2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:github/actions/setup-python@v2",
+      "type": "application",
+      "bom-ref": "pkg:github/actions/setup-python@v2"
+    }
+  ],
+  "services": [
+    {
+      "bom-ref": "urn:service:webseriesquotes:latest",
+      "name": "webseriesquotes",
+      "version": "latest",
+      "group": "",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/github/workspace/docker-compose.debug.yml"
+        },
+        {
+          "name": "ServiceName",
+          "value": "webseriesquotes"
+        }
+      ]
+    }
+  ],
+  "dependencies": []
+}

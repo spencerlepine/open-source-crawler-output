@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:a4e654e9-0f00-454b-9ce6-d4313b8adc32" version="1">
+  <metadata>
+    <timestamp>2023-02-17T08:32:42.054Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>cyclonedx</vendor>
+        <name>cdxgen</name>
+        <version>8.0.5</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Prabhu Subramanian</name>
+        <email>prabhu@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/anyio@3.5.0">
+      <publisher/>
+      <group/>
+      <name>anyio</name>
+      <version>3.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/anyio@3.5.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/asgiref@3.4.1">
+      <publisher/>
+      <group/>
+      <name>asgiref</name>
+      <version>3.4.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/asgiref@3.4.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/certifi@2021.10.8">
+      <publisher/>
+      <group/>
+      <name>certifi</name>
+      <version>2021.10.8</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/certifi@2021.10.8</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/charset-normalizer@2.0.10">
+      <publisher/>
+      <group/>
+      <name>charset-normalizer</name>
+      <version>2.0.10</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/charset-normalizer@2.0.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/click@8.0.3">
+      <publisher/>
+      <group/>
+      <name>click</name>
+      <version>8.0.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/click@8.0.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/fastapi@0.71.0">
+      <publisher/>
+      <group/>
+      <name>fastapi</name>
+      <version>0.71.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/fastapi@0.71.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/h11@0.12.0">
+      <publisher/>
+      <group/>
+      <name>h11</name>
+      <version>0.12.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/h11@0.12.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/httptools@0.3.0">
+      <publisher/>
+      <group/>
+      <name>httptools</name>
+      <version>0.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/httptools@0.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/idna@3.3">
+      <publisher/>
+      <group/>
+      <name>idna</name>
+      <version>3.3</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/idna@3.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pillow@9.0.0">
+      <publisher/>
+      <group/>
+      <name>Pillow</name>
+      <version>9.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pillow@9.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pydantic@1.9.0">
+      <publisher/>
+      <group/>
+      <name>pydantic</name>
+      <version>1.9.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pydantic@1.9.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/python-dotenv@0.19.2">
+      <publisher/>
+      <group/>
+      <name>python-dotenv</name>
+      <version>0.19.2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/python-dotenv@0.19.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyyaml@6.0">
+      <publisher/>
+      <group/>
+      <name>PyYAML</name>
+      <version>6.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/pyyaml@6.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests@2.27.1">
+      <publisher/>
+      <group/>
+      <name>requests</name>
+      <version>2.27.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/requests@2.27.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/sniffio@1.2.0">
+      <publisher/>
+      <group/>
+      <name>sniffio</name>
+      <version>1.2.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/sniffio@1.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/starlette@0.17.1">
+      <publisher/>
+      <group/>
+      <name>starlette</name>
+      <version>0.17.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/starlette@0.17.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/typing-extensions@4.0.1">
+      <publisher/>
+      <group/>
+      <name>typing_extensions</name>
+      <version>4.0.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/typing-extensions@4.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/urllib3@1.26.8">
+      <publisher/>
+      <group/>
+      <name>urllib3</name>
+      <version>1.26.8</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/urllib3@1.26.8</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/uvicorn@0.17.0">
+      <publisher/>
+      <group/>
+      <name>uvicorn</name>
+      <version>0.17.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/uvicorn@0.17.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/uvloop@0.16.0">
+      <publisher/>
+      <group/>
+      <name>uvloop</name>
+      <version>0.16.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/uvloop@0.16.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/watchgod@0.7">
+      <publisher/>
+      <group/>
+      <name>watchgod</name>
+      <version>0.7</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/watchgod@0.7</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/websockets@10.1">
+      <publisher/>
+      <group/>
+      <name>websockets</name>
+      <version>10.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:pypi/websockets@10.1</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/checkout@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>checkout</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/checkout@v2</purl>
+    </component>
+    <component type="application" bom-ref="pkg:github/actions/setup-python@v2">
+      <publisher/>
+      <group>actions</group>
+      <name>setup-python</name>
+      <version>v2</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:github/actions/setup-python@v2</purl>
+    </component>
+  </components>
+  <services>
+    <service bom-ref="urn:service:webseriesquotes:latest">
+      <group/>
+      <name>webseriesquotes</name>
+      <version>0</version>
+    </service>
+  </services>
+</bom>
