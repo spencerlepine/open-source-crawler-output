@@ -1,0 +1,460 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Static Analysis",
+          "rules": [
+            {
+              "id": "compile",
+              "help": {
+                "text": "cannot find package \"github.com/caarlos0/env\" in any of:\n\t/usr/local/go/src/github.com/caarlos0/env (from $GOROOT)\n\t/opt/app-root/go/src/github.com/caarlos0/env (from $GOPATH).",
+                "markdown": "cannot find package \"github.com/caarlos0/env\" in any of:\n\t/usr/local/go/src/github.com/caarlos0/env (from $GOROOT)\n\t/opt/app-root/go/src/github.com/caarlos0/env (from $GOPATH)."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "cannot find package \"github.com/caarlos0/env\" in any of:."
+              },
+              "helpUri": "https://staticcheck.io/docs/checks#compile",
+              "shortDescription": {
+                "text": "cannot find package \"github.com/caarlos0/env\" in any of:\n\t/usr/local/go/src/github.com/caarlos0/env (from $GOROOT)\n\t/opt/app-root/go/src/github.com/caarlos0/env (from $GOPATH)."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Static Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-f",
+            "json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-f json ./...",
+          "endTimeUtc": "2023-02-20T08:33:07Z",
+          "workingDirectory": {
+            "uri": "https://github.com/robertoduessmann/weather-api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-20T08:33:07Z",
+          "workingDirectory": {
+            "uri": "https://github.com/robertoduessmann/weather-api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 9,
+          "critical": 0,
+          "high": 0,
+          "medium": 9,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/caarlos0/env\" in any of:\n\t/usr/local/go/src/github.com/caarlos0/env (from $GOROOT)\n\t/opt/app-root/go/src/github.com/caarlos0/env (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/caarlos0/env\"\n"
+                  },
+                  "startLine": 6
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/config/config.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/caarlos0/env\"\n"
+                  },
+                  "endLine": 6,
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "795c2b56ff48f0d5",
+            "scanFileHash": "ce54345cefc052d6"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/PuerkitoBio/goquery\" in any of:\n\t/usr/local/go/src/github.com/PuerkitoBio/goquery (from $GOROOT)\n\t/opt/app-root/go/src/github.com/PuerkitoBio/goquery (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/PuerkitoBio/goquery\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/controller/weather.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/PuerkitoBio/goquery\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "45fa713e049e4719",
+            "scanFileHash": "dc602f58a901c681"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/robertoduessmann/weather-api/model\" in any of:\n\t/usr/local/go/src/github.com/robertoduessmann/weather-api/model (from $GOROOT)\n\t/opt/app-root/go/src/github.com/robertoduessmann/weather-api/model (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/robertoduessmann/weather-api/model\"\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/controller/weather.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/gorilla/mux\"\n\t\"github.com/robertoduessmann/weather-api/model\"\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "15a9e0c4e8972d73",
+            "scanFileHash": "dc602f58a901c681"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/robertoduessmann/weather-api/parser\" in any of:\n\t/usr/local/go/src/github.com/robertoduessmann/weather-api/parser (from $GOROOT)\n\t/opt/app-root/go/src/github.com/robertoduessmann/weather-api/parser (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/robertoduessmann/weather-api/parser\"\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/controller/weather.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/robertoduessmann/weather-api/model\"\n\t\"github.com/robertoduessmann/weather-api/parser\"\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ea07ece90dfd08c0",
+            "scanFileHash": "dc602f58a901c681"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/gorilla/handlers\" in any of:\n\t/usr/local/go/src/github.com/gorilla/handlers (from $GOROOT)\n\t/opt/app-root/go/src/github.com/gorilla/handlers (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/gorilla/handlers\"\n"
+                  },
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\"github.com/gorilla/handlers\"\n"
+                  },
+                  "endLine": 7,
+                  "startLine": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "44ed3049b657c580",
+            "scanFileHash": "fcc0bba43492813c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/gorilla/mux\" in any of:\n\t/usr/local/go/src/github.com/gorilla/mux (from $GOROOT)\n\t/opt/app-root/go/src/github.com/gorilla/mux (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/gorilla/mux\"\n"
+                  },
+                  "startLine": 8
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/gorilla/handlers\"\n\t\"github.com/gorilla/mux\"\n"
+                  },
+                  "endLine": 8,
+                  "startLine": 7
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "b22bdc8d93d09662",
+            "scanFileHash": "fcc0bba43492813c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/robertoduessmann/weather-api/config\" in any of:\n\t/usr/local/go/src/github.com/robertoduessmann/weather-api/config (from $GOROOT)\n\t/opt/app-root/go/src/github.com/robertoduessmann/weather-api/config (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/robertoduessmann/weather-api/config\"\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/gorilla/mux\"\n\t\"github.com/robertoduessmann/weather-api/config\"\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "cc518ce1856b0002",
+            "scanFileHash": "fcc0bba43492813c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/robertoduessmann/weather-api/controller\" in any of:\n\t/usr/local/go/src/github.com/robertoduessmann/weather-api/controller (from $GOROOT)\n\t/opt/app-root/go/src/github.com/robertoduessmann/weather-api/controller (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\"github.com/robertoduessmann/weather-api/controller\"\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/robertoduessmann/weather-api/config\"\n\t\"github.com/robertoduessmann/weather-api/controller\"\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "5a63e62e12f254ce",
+            "scanFileHash": "fcc0bba43492813c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "cannot find package \"github.com/robertoduessmann/weather-api/controller/v2\" in any of:\n\t/usr/local/go/src/github.com/robertoduessmann/weather-api/controller/v2 (from $GOROOT)\n\t/opt/app-root/go/src/github.com/robertoduessmann/weather-api/controller/v2 (from $GOPATH)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tv2 \"github.com/robertoduessmann/weather-api/controller/v2\"\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\"github.com/robertoduessmann/weather-api/controller\"\n\tv2 \"github.com/robertoduessmann/weather-api/controller/v2\"\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "84207245fb3b454c",
+            "scanFileHash": "fcc0bba43492813c"
+          },
+          "ruleId": "compile",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "2852cfb5-cfda-4dc8-842e-d75be060a6f2"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "2852cfb5-cfda-4dc8-842e-d75be060a6f2",
+      "runGuid": "cc696c2e-6fa2-45c8-9aa2-7eaa3ff8b35a"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+## Detected Typos
+error: `respose` should be `response`
+  --> ./controller/weather.go:100:2
+    |
+100 |  respose, err := json.Marshal(object)
+    |  ^^^^^^^
+    |
+error: `respose` should be `response`
+  --> ./controller/weather.go:104:9
+    |
+104 |  return respose
+    |         ^^^^^^^
+    |

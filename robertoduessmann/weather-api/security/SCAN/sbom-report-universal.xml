@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:3a37aba6-bf9a-4097-aab7-03111e939aa5" version="1">
+  <metadata>
+    <timestamp>2023-02-20T08:33:06.255Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>cyclonedx</vendor>
+        <name>cdxgen</name>
+        <version>8.0.5</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Prabhu Subramanian</name>
+        <email>prabhu@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:golang/github.com/PuerkitoBio/goquery@v1.1.0">
+      <publisher/>
+      <group>github.com/PuerkitoBio</group>
+      <name>goquery</name>
+      <version>v1.1.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:golang/github.com/PuerkitoBio/goquery@v1.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/andybalholm/cascadia@349dd0209470eabd9514242c688c403c0926d266">
+      <publisher/>
+      <group>github.com/andybalholm</group>
+      <name>cascadia</name>
+      <version>349dd0209470eabd9514242c688c403c0926d266</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:golang/github.com/andybalholm/cascadia@349dd0209470eabd9514242c688c403c0926d266</purl>
+    </component>
+    <component type="library" bom-ref="pkg:golang/github.com/caarlos0/env@v3.1">
+      <publisher/>
+      <group>github.com/caarlos0</group>
+      <name>env</name>
+      <version>v3.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:golang/github.com/caarlos0/env@v3.1</purl>
+    </component>
+    <component type="framework" bom-ref="pkg:golang/github.com/gorilla/context@v1.1">
+      <publisher/>
+      <group>github.com/gorilla</group>
+      <name>context</name>
+      <version>v1.1</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:golang/github.com/gorilla/context@v1.1</purl>
+    </component>
+    <component type="framework" bom-ref="pkg:golang/github.com/gorilla/handlers@v1.3.0">
+      <publisher/>
+      <group>github.com/gorilla</group>
+      <name>handlers</name>
+      <version>v1.3.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:golang/github.com/gorilla/handlers@v1.3.0</purl>
+    </component>
+    <component type="framework" bom-ref="pkg:golang/github.com/gorilla/mux@v1.5.0">
+      <publisher/>
+      <group>github.com/gorilla</group>
+      <name>mux</name>
+      <version>v1.5.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:golang/github.com/gorilla/mux@v1.5.0</purl>
+    </component>
+  </components>
+</bom>

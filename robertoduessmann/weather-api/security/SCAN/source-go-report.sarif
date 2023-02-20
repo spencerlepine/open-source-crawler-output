@@ -1,0 +1,207 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Go Security Audit",
+          "rules": [
+            {
+              "id": "CWE-676",
+              "help": {
+                "text": "The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely.",
+                "markdown": "The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/676.html",
+              "shortDescription": {
+                "text": "Use of Potentially Dangerous Function."
+              }
+            },
+            {
+              "id": "CWE-88",
+              "help": {
+                "text": "The software constructs a string for a command to executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string.\nWhen creating commands using interpolation into a string, developers may assume that only the arguments/options that they specify will be processed. This assumption may be even stronger when the programmer has encoded the command in a way that prevents separate commands from being provided maliciously, e.g. in the case of shell metacharacters. When constructing the command, the developer may use whitespace or other delimiters that are required to separate arguments when the command. However, if an attacker can provide an untrusted input that contains argument-separating delimiters, then the resulting command will have more arguments than intended by the developer. The attacker may then be able to change the behavior of the command. Depending on the functionality supported by the extraneous arguments, this may have security-relevant consequences.",
+                "markdown": "The software constructs a string for a command to executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string.\nWhen creating commands using interpolation into a string, developers may assume that only the arguments/options that they specify will be processed. This assumption may be even stronger when the programmer has encoded the command in a way that prevents separate commands from being provided maliciously, e.g. in the case of shell metacharacters. When constructing the command, the developer may use whitespace or other delimiters that are required to separate arguments when the command. However, if an attacker can provide an untrusted input that contains argument-separating delimiters, then the resulting command will have more arguments than intended by the developer. The attacker may then be able to change the behavior of the command. Depending on the functionality supported by the extraneous arguments, this may have security-relevant consequences."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The software constructs a string for a command to executed by a separate component in another control sphere, but it does not properly delimit the intended arguments, options, or switches within that command string."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/88.html",
+              "shortDescription": {
+                "text": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Go Security Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-fmt=json",
+            "-confidence=medium",
+            "-severity=medium",
+            "-no-fail",
+            "-out=/github/workspace/reports/source-go-report.json",
+            "./..."
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-fmt=json -confidence=medium -severity=medium -no-fail -out=/github/workspace/reports/source-go-report.json ./...",
+          "endTimeUtc": "2023-02-20T08:33:01Z",
+          "workingDirectory": {
+            "uri": "https://github.com/robertoduessmann/weather-api"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-20T08:33:01Z",
+          "workingDirectory": {
+            "uri": "https://github.com/robertoduessmann/weather-api"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 2,
+          "critical": 0,
+          "high": 0,
+          "medium": 2,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Use of net/http serve function that has no support for setting timeouts."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tif err := http.ListenAndServe(\":\"+config.Get().Port, handlers.CORS()(weather)); err != nil {\n"
+                  },
+                  "startLine": 30
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/main.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tif err := http.ListenAndServe(\":\"+config.Get().Port, handlers.CORS()(weather)); err != nil {\n"
+                  },
+                  "endLine": 30,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "HIGH",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "aa002617d82f505f",
+            "scanFileHash": "fcc0bba43492813c"
+          },
+          "ruleId": "CWE-676",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Potential HTTP request made with variable url."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tres, err := http.Get(uri)\n"
+                  },
+                  "startLine": 156
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/robertoduessmann/weather-api/controller/v2/weather.go"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\turi := fmt.Sprintf(\"%s/%s?format=j1\", wttrURL, city)\n\tres, err := http.Get(uri)\n"
+                  },
+                  "endLine": 156,
+                  "startLine": 155
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f327c45cc141afca",
+            "scanFileHash": "9d32ad5ab8c0e678"
+          },
+          "ruleId": "CWE-88",
+          "ruleIndex": 1
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "69b9b477-9e72-4f73-a20d-80f9e4e3ab02"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "69b9b477-9e72-4f73-a20d-80f9e4e3ab02",
+      "runGuid": "cc696c2e-6fa2-45c8-9aa2-7eaa3ff8b35a"
+    }
+  ]
+}

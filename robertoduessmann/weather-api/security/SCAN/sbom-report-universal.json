@@ -1,0 +1,92 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3a37aba6-bf9a-4097-aab7-03111e939aa5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-02-20T08:33:06.256Z",
+    "tools": [
+      {
+        "vendor": "cyclonedx",
+        "name": "cdxgen",
+        "version": "8.0.5"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Prabhu Subramanian",
+        "email": "prabhu@appthreat.com"
+      }
+    ]
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "github.com/PuerkitoBio",
+      "name": "goquery",
+      "version": "v1.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:golang/github.com/PuerkitoBio/goquery@v1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/PuerkitoBio/goquery@v1.1.0"
+    },
+    {
+      "publisher": "",
+      "group": "github.com/andybalholm",
+      "name": "cascadia",
+      "version": "349dd0209470eabd9514242c688c403c0926d266",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:golang/github.com/andybalholm/cascadia@349dd0209470eabd9514242c688c403c0926d266",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/andybalholm/cascadia@349dd0209470eabd9514242c688c403c0926d266"
+    },
+    {
+      "publisher": "",
+      "group": "github.com/caarlos0",
+      "name": "env",
+      "version": "v3.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:golang/github.com/caarlos0/env@v3.1",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/caarlos0/env@v3.1"
+    },
+    {
+      "publisher": "",
+      "group": "github.com/gorilla",
+      "name": "context",
+      "version": "v1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:golang/github.com/gorilla/context@v1.1",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/gorilla/context@v1.1"
+    },
+    {
+      "publisher": "",
+      "group": "github.com/gorilla",
+      "name": "handlers",
+      "version": "v1.3.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:golang/github.com/gorilla/handlers@v1.3.0",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/gorilla/handlers@v1.3.0"
+    },
+    {
+      "publisher": "",
+      "group": "github.com/gorilla",
+      "name": "mux",
+      "version": "v1.5.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:golang/github.com/gorilla/mux@v1.5.0",
+      "type": "library",
+      "bom-ref": "pkg:golang/github.com/gorilla/mux@v1.5.0"
+    }
+  ],
+  "services": [],
+  "dependencies": []
+}
