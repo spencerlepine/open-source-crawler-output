@@ -1,0 +1,3913 @@
+## Detected Typos
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagReader.pas:187:32
+    |
+187 |               FMP4Tag.Atoms[i].Datas[0].Data.Seek(0, soBeginning);
+    |                                ^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagReader.pas:188:32
+    |
+188 |               FMP4Tag.Atoms[i].Datas[0].Data.Read(LMP4CoverType, 2);
+    |                                ^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagReader.pas:197:32
+    |
+197 |               FMP4Tag.Atoms[i].Datas[0].Data.Seek(0, soBeginning);
+    |                                ^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagReader.pas:198:46
+    |
+198 |               FPicStream := FMP4Tag.Atoms[i].Datas[0].Data;
+    |                                              ^^^^^
+    |
+error: `unkown` should be `unknown`
+  --> ./Units/Tag/UnitTagWriter.pas:408:18
+    |
+408 |     4: // format unkown
+    |                  ^^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagWriter.pas:539:30
+    |
+539 |             FMP4Tag.Atoms[i].Datas[0].Data.Seek(0, soBeginning);
+    |                              ^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagWriter.pas:540:30
+    |
+540 |             FMP4Tag.Atoms[i].Datas[0].Data.Read(LMP4CoverType, 2);
+    |                              ^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagWriter.pas:549:30
+    |
+549 |             FMP4Tag.Atoms[i].Datas[0].Data.Seek(0, soBeginning);
+    |                              ^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/Tag/UnitTagWriter.pas:550:44
+    |
+550 |             FPicStream := FMP4Tag.Atoms[i].Datas[0].Data;
+    |                                            ^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Player/UnitMusicPlayer.pas:31:81
+   |
+31 |   TPlayerStatus = (psPlaying = 0, psPaused = 1, psStopped = 2, psStalled = 3, psUnkown = 4);
+   |                                                                                 ^^^^^^
+   |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Player/UnitMusicPlayer.pas:375:17
+    |
+375 |     Result := psUnkown;
+    |                 ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Player/UnitMusicPlayer.pas:391:17
+    |
+391 |     Result := psUnkown;
+    |                 ^^^^^^
+    |
+error: `unkown` should be `unknown`
+  --> ./Units/Player/UnitMusicPlayer.pas:456:57
+    |
+456 |         LogSend('Cant''t create equalizer because of an unkown error.');
+    |                                                         ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/UnitCueParser.pas:123:25
+    |
+123 |   Self.SongFileName := 'Unkown';
+    |                         ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/UnitCueParser.pas:124:22
+    |
+124 |   Self.Performer := 'Unkown';
+    |                      ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/UnitCueParser.pas:125:18
+    |
+125 |   Self.Title := 'Unkown';
+    |                  ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/UnitCueParser.pas:234:16
+    |
+234 |     Result := 'Unkown';
+    |                ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/UnitCueParser.pas:290:16
+    |
+290 |     Result := 'Unkown';
+    |                ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/UnitCueParser.pas:332:38
+    |
+332 |     Result.CueTrackTagInfo.Title := 'Unkown';
+    |                                      ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/UnitCueParser.pas:345:38
+    |
+345 |     Result.CueTrackTagInfo.Album := 'Unkown';
+    |                                      ^^^^^^
+    |
+error: `Perfomer` should be `Performer`
+  --> ./Units/Cue/CUESheetFunctions.pas:66:5
+   |
+66 |     Perfomer: PChar;
+   |     ^^^^^^^^
+   |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:83:5
+   |
+83 |     Perfomers: Bool;
+   |     ^^^^^^^^^
+   |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:102:5
+    |
+102 |     Perfomers: TStrings;
+    |     ^^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:310:94
+    |
+310 |     Sections[Length(Sections) - 1].Tracks[Length(Sections[Length(Sections) - 1].Tracks) - 1].Perfomers.Append(tmp);
+    |                                                                                              ^^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:605:23
+    |
+605 |           if SaveMode.Perfomers then
+    |                       ^^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:608:44
+    |
+608 |               tmp := Sections[k].Tracks[i].Perfomers[j];
+    |                                            ^^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:613:85
+    |
+613 |               CUE_file.Append('    ' + STR_PERFORMER + ' "' + Sections[k].Tracks[i].Perfomers[j] + '"');
+    |                                                                                     ^^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:711:12
+    |
+711 |   SaveMode.Perfomers := True;
+    |            ^^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:862:50
+    |
+862 |       if Index < Sections[Section].Tracks[Track].Perfomers.Count then
+    |                                                  ^^^^^^^^^
+    |
+error: `Perfomer` should be `Performer`
+  --> ./Units/Cue/CUESheetFunctions.pas:863:14
+    |
+863 |         Data.Perfomer := PChar(Sections[Section].Tracks[Track].Perfomers[Index])
+    |              ^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:863:64
+    |
+863 |         Data.Perfomer := PChar(Sections[Section].Tracks[Track].Perfomers[Index])
+    |                                                                ^^^^^^^^^
+    |
+error: `Perfomer` should be `Performer`
+  --> ./Units/Cue/CUESheetFunctions.pas:865:14
+    |
+865 |         Data.Perfomer := PChar('');
+    |              ^^^^^^^^
+    |
+error: `Perfomer` should be `Performer`
+  --> ./Units/Cue/CUESheetFunctions.pas:867:12
+    |
+867 |       Data.Perfomer := PChar('');
+    |            ^^^^^^^^
+    |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1008:37
+     |
+1008 |     Sections[Section].Tracks[Track].Perfomers := TStringList.Create;
+     |                                     ^^^^^^^^^
+     |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1031:48
+     |
+1031 |     FreeAndNil(Sections[Section].Tracks[Track].Perfomers);
+     |                                                ^^^^^^^^^
+     |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1112:37
+     |
+1112 |     Sections[Section].Tracks[Track].Perfomers.Add(Data.Perfomer);
+     |                                     ^^^^^^^^^
+     |
+error: `Perfomer` should be `Performer`
+  --> ./Units/Cue/CUESheetFunctions.pas:1112:56
+     |
+1112 |     Sections[Section].Tracks[Track].Perfomers.Add(Data.Perfomer);
+     |                                                        ^^^^^^^^
+     |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1186:19
+     |
+1186 |     Self.SaveMode.Perfomers := SaveMode.Perfomers;
+     |                   ^^^^^^^^^
+     |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1186:41
+     |
+1186 |     Self.SaveMode.Perfomers := SaveMode.Perfomers;
+     |                                         ^^^^^^^^^
+     |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1209:14
+     |
+1209 |     SaveMode.Perfomers := Self.SaveMode.Perfomers;
+     |              ^^^^^^^^^
+     |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1209:41
+     |
+1209 |     SaveMode.Perfomers := Self.SaveMode.Perfomers;
+     |                                         ^^^^^^^^^
+     |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetFunctions.pas:1250:37
+     |
+1250 |     Sections[Section].Tracks[Track].Perfomers[Index] := Data.Perfomer;
+     |                                     ^^^^^^^^^
+     |
+error: `Perfomer` should be `Performer`
+  --> ./Units/Cue/CUESheetFunctions.pas:1250:62
+     |
+1250 |     Sections[Section].Tracks[Track].Perfomers[Index] := Data.Perfomer;
+     |                                                              ^^^^^^^^
+     |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/CueParser.pas:123:25
+    |
+123 |   Self.SongFileName := 'Unkown';
+    |                         ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/CueParser.pas:124:22
+    |
+124 |   Self.Performer := 'Unkown';
+    |                      ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/CueParser.pas:125:18
+    |
+125 |   Self.Title := 'Unkown';
+    |                  ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/CueParser.pas:234:16
+    |
+234 |     Result := 'Unkown';
+    |                ^^^^^^
+    |
+error: `Perfomer` should be `Performer`
+  --> ./Units/Cue/CUESheetDefs.pas:97:5
+   |
+97 |     Perfomer: PChar;
+   |     ^^^^^^^^
+   |
+error: `Perfomers` should be `Performers`
+  --> ./Units/Cue/CUESheetDefs.pas:114:5
+    |
+114 |     Perfomers: Bool;
+    |     ^^^^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/CueParser.pas:290:16
+    |
+290 |     Result := 'Unkown';
+    |                ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/CueParser.pas:332:38
+    |
+332 |     Result.CueTrackTagInfo.Title := 'Unkown';
+    |                                      ^^^^^^
+    |
+error: `Unkown` should be `Unknown`
+  --> ./Units/Cue/CueParser.pas:345:38
+    |
+345 |     Result.CueTrackTagInfo.Album := 'Unkown';
+    |                                      ^^^^^^
+    |
+error: `Langugage` should be `Language`
+  --> ./Units/TagLibraries/ID3v2Library.pas:530:90
+    |
+530 |     TID3v2FrameType = (ftUnknown, ftText, ftTextWithDescription, ftTextWithDescriptionAndLangugageID, ftTextList, ftURL, ftUserDefinedURL, ftPlayCount, ftBinary);
+    |                                                                                          ^^^^^^^^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/ID3v2Library.pas:537:46
+    |
+537 |     ($00000000, $77073096, $EE0E612C, $990951BA,
+    |                                              ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/ID3v2Library.pas:543:20
+    |
+543 |     $136C9856, $646BA8C0, $FD62F97A, $8A65C9EC,
+    |                    ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/ID3v2Library.pas:569:41
+    |
+569 |     $59B33D17, $2EB40D81, $B7BD5C3B, $C0BA6CAD,
+    |                                         ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/ID3v2Library.pas:585:8
+    |
+585 |     $C5BA3BBE, $B2BD0B28, $2BB45A92, $5CB36A04,
+    |        ^^
+    |
+error: `TYE` should be `TYPE`, `TIE`
+  --> ./Units/TagLibraries/ID3v2Library.pas:1940:21
+     |
+1940 |     if V2FrameID = 'TYE' then begin
+     |                     ^^^
+     |
+error: `TYE` should be `TYPE`, `TIE`
+  --> ./Units/TagLibraries/ID3v2Library.pas:2215:21
+     |
+2215 |     if V2FrameID = 'TYE' then begin
+     |                     ^^^
+     |
+error: `datas` should be `data`
+  --> ./Units/TagLibraries/ID3v2Library.pas:2447:49
+     |
+2447 |                                 //* Update size datas
+     |                                                 ^^^^^
+     |
+error: `datas` should be `data`
+  --> ./Units/TagLibraries/ID3v2Library.pas:2486:53
+     |
+2486 |                                     //* Update size datas
+     |                                                     ^^^^^
+     |
+error: `datas` should be `data`
+  --> ./Units/TagLibraries/ID3v2Library.pas:2528:57
+     |
+2528 |                                         //* Update size datas
+     |                                                         ^^^^^
+     |
+error: `datas` should be `data`
+  --> ./Units/TagLibraries/ID3v2Library.pas:2715:49
+     |
+2715 |                                 //* Update size datas
+     |                                                 ^^^^^
+     |
+error: `datas` should be `data`
+  --> ./Units/TagLibraries/ID3v2Library.pas:2754:53
+     |
+2754 |                                     //* Update size datas
+     |                                                     ^^^^^
+     |
+error: `datas` should be `data`
+  --> ./Units/TagLibraries/ID3v2Library.pas:2796:57
+     |
+2796 |                                         //* Update size datas
+     |                                                         ^^^^^
+     |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/APEv2Library.pas:2008:32
+     |
+2008 |       Result := 'Unknown error occured.';
+     |                                ^^^^^^^
+     |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/OggVorbisAndOpusTagLibrary.pas:335:155
+    |
+335 |     $71159069, $75D48DDE, $6B93DDDB, $6F52C06C, $6211E6B5, $66D0FB02, $5E9F46BF, $5A5E5B08, $571D7DD1, $53DC6066, $4D9B3063, $495A2DD4, $44190B0D, $40D816BA, $ACA5C697, $A864DB20, $A527FDF9,
+    |                                                                                                                                                           ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/OggVorbisAndOpusTagLibrary.pas:341:33
+    |
+341 |     $9B3660C6, $9FF77D71, $92B45BA8, $9675461F, $8832161A, $8CF30BAD, $81B02D74, $857130C3, $5D8A9099, $594B8D2E, $5408ABF7, $50C9B640, $4E8EE645, $4A4FFBF2, $470CDD2B, $43CDC09C, $7B827D21,
+    |                                 ^^
+    |
+error: `decription` should be `description`
+  --> ./Units/TagLibraries/ID3v2Library.pas:3430:17
+     |
+3430 |         //* Get decription and content
+     |                 ^^^^^^^^^^
+     |
+error: `becouse` should be `because`
+  --> ./Units/TagLibraries/OggVorbisAndOpusTagLibrary.pas:1892:19
+     |
+1892 |   // * Not needed becouse vorbis tag header is exactly 1 less then Opus
+     |                   ^^^^^^^
+     |
+error: `decription` should be `description`
+  --> ./Units/TagLibraries/ID3v2Library.pas:4481:17
+     |
+4481 |         //* Get decription and content
+     |                 ^^^^^^^^^^
+     |
+error: `increses` should be `increases`
+  --> ./Units/TagLibraries/ID3v2Library.pas:5099:92
+     |
+5099 |     MPEG_SEARCH_LENGTH = 32; //* Increasing this value helps for corrupted ID3v2 tags, but increses false MPEG sync detection
+     |                                                                                            ^^^^^^^^
+     |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/OggVorbisAndOpusTagLibrary.pas:3560:32
+     |
+3560 |       Result := 'Unknown error occured.';
+     |                                ^^^^^^^
+     |
+error: `commerical` should be `commercial`
+  --> ./Units/TagLibraries/FlacTagLibrary.pas:10:50
+   |
+10 | // * free programs/projects but for shareware or commerical programs you need one of the following licenses:                      *
+   |                                                  ^^^^^^^^^^
+   |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/FlacTagLibrary.pas:350:155
+    |
+350 |     $71159069, $75D48DDE, $6B93DDDB, $6F52C06C, $6211E6B5, $66D0FB02, $5E9F46BF, $5A5E5B08, $571D7DD1, $53DC6066, $4D9B3063, $495A2DD4, $44190B0D, $40D816BA, $ACA5C697, $A864DB20, $A527FDF9,
+    |                                                                                                                                                           ^^
+    |
+error: `BA` should be `BY`, `BE`
+  --> ./Units/TagLibraries/FlacTagLibrary.pas:356:33
+    |
+356 |     $9B3660C6, $9FF77D71, $92B45BA8, $9675461F, $8832161A, $8CF30BAD, $81B02D74, $857130C3, $5D8A9099, $594B8D2E, $5408ABF7, $50C9B640, $4E8EE645, $4A4FFBF2, $470CDD2B, $43CDC09C, $7B827D21,
+    |                                 ^^
+    |
+error: `decription` should be `description`
+  --> ./Units/TagLibraries/ID3v2Library.pas:8302:17
+     |
+8302 |         //* Get decription and content
+     |                 ^^^^^^^^^^
+     |
+error: `decription` should be `description`
+  --> ./Units/TagLibraries/ID3v2Library.pas:9044:17
+     |
+9044 |         //* Get decription and content
+     |                 ^^^^^^^^^^
+     |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/FlacTagLibrary.pas:3073:32
+     |
+3073 |       Result := 'Unknown error occured.';
+     |                                ^^^^^^^
+     |
+error: `ue` should be `use`, `due`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:5:71
+  |
+5 |   ** Contact: <firstname.lastname*@systbot.uzh.ch> ; *= spell "�" as "ue" **
+  |                                                                       ^^
+  |
+error: `explictly` should be `explicitly`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:26:61
+   |
+26 |   Users should be able to either re-declare their variables explictly as TExtendedX87 or redeclare the type extended as
+   |                                                             ^^^^^^^^^
+   |
+error: `hav` should be `have`, `half`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:33:30
+   |
+33 |   - Assignments will usually hav a loss of precision, e.g.
+   |                              ^^^
+   |
+error: `differnt` should be `different`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:44:44
+   |
+44 |   The variables x1 and x2 will be slightly differnt on Win32 and Win64 because at the point of the assignment, it is
+   |                                            ^^^^^^^^
+   |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/ID3v2Library.pas:9387:54
+     |
+9387 |         ID3V2LIBRARY_ERROR: Result := 'Unknown error occured.';
+     |                                                      ^^^^^^^
+     |
+error: `rountines` should be `routines`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:122:103
+    |
+122 | {$DEFINE DontUseSystemUnitOn32bit}   // Enable this define if you with to replace System.pas standard rountines with this unit's on 32-bit
+    |                                                                                                       ^^^^^^^^^
+    |
+error: `Langugage` should be `Language`
+  --> ./Units/TagLibraries/ID3v2Library.pas:9457:43
+     |
+9457 |         Result := ftTextWithDescriptionAndLangugageID;
+     |                                           ^^^^^^^^^
+     |
+error: `Langugage` should be `Language`
+  --> ./Units/TagLibraries/ID3v2Library.pas:9462:43
+     |
+9462 |         Result := ftTextWithDescriptionAndLangugageID;
+     |                                           ^^^^^^^^^
+     |
+error: `Substraction` should be `Subtraction`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:192:18
+    |
+192 |     /// <summary>Substraction of two TExtendedX87 values </summary>
+    |                  ^^^^^^^^^^^^
+    |
+error: `rountines` should be `routines`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:731:61
+    |
+731 |                                         { ***** Replacement rountines for standard System.pas rountines for Win32/Win64 ***** }
+    |                                                             ^^^^^^^^^
+    |
+error: `rountines` should be `routines`
+  --> ./Units/TagLibraries/uTExtendedX87.pas:731:95
+    |
+731 |                                         { ***** Replacement rountines for standard System.pas rountines for Win32/Win64 ***** }
+    |                                                                                               ^^^^^^^^^
+    |
+error: `Psychadelic` should be `Psychedelic`
+  --> ./Units/TagLibraries/ID3v1Library.pas:167:30
+    |
+167 |         'Psychedelic', // = 'Psychadelic' in ID3 docs, 'Psychedelic' in winamp.
+    |                              ^^^^^^^^^^^
+    |
+error: `Devide` should be `Divide`, `Device`
+  --> ./Units/TagLibraries/ID3v2Library.pas:10215:17
+      |
+10215 |             //* Devide by zero possible
+      |                 ^^^^^^
+      |
+error: `CURRUPT` should be `CORRUPT`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:90:25
+   |
+90 |   MP4TAGLIBRARY_FAIL_ON_CURRUPT_FILE = False;
+   |                         ^^^^^^^
+   |
+error: `Psychadelic` should be `Psychedelic`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:100:11
+    |
+100 |     // = 'Psychadelic' in ID3 docs, 'Psychedelic' in winamp.
+    |           ^^^^^^^^^^^
+    |
+error: `Psychadelic` should be `Psychedelic`
+  --> ./Units/TagLibraries/ID3v1Library.pas:910:23
+    |
+910 |     if GenreString = 'Psychadelic' then begin
+    |                       ^^^^^^^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:201:5
+    |
+201 |     Datas: Array of TMP4AtomData;
+    |     ^^^^^
+    |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/ID3v1Library.pas:1081:54
+     |
+1081 |         ID3V1LIBRARY_ERROR: Result := 'Unknown error occured.';
+     |                                                      ^^^^^^^
+     |
+error: `acurate` should be `accurate`
+  --> ./Units/TagLibraries/WMATagLibrary.pas:70:50
+   |
+70 |   Now the Duration is a simple Calculation (more acurate)
+   |                                                  ^^^^^^^
+   |
+error: `Currupt` should be `Corrupt`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:339:123
+    |
+339 | function ReadAtomHeader(MP4Stream: TStream; var AtomName: TAtomName; var AtomSize: Int64; var Is64BitSize: Boolean; FailOnCurrupt: Boolean = True): Boolean;
+    |                                                                                                                           ^^^^^^^
+    |
+error: `CURRUPT` should be `CORRUPT`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:390:67
+    |
+390 |   MP4TagLibraryFailOnCorruptFile: Boolean = MP4TAGLIBRARY_FAIL_ON_CURRUPT_FILE;
+    |                                                                   ^^^^^^^
+    |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1083:6
+     |
+1083 |   if Datas[0].DataType = 1 then
+     |      ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1085:15
+     |
+1085 |     Result := Datas[0].GetAsText;
+     |               ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1089:14
+     |
+1089 |     Value := Datas[0].GetAsInteger;
+     |              ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1099:13
+     |
+1099 |   Result := Datas[0].GetAsInteger;
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1104:13
+     |
+1104 |   Result := Datas[0].GetAsInteger8;
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1109:13
+     |
+1109 |   Result := Datas[0].GetAsList(List);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1114:13
+     |
+1114 |   Result := Datas[0].GetAsInteger16;
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1119:13
+     |
+1119 |   Result := Datas[0].GetAsInteger32;
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1124:13
+     |
+1124 |   Result := Datas[0].GetAsInteger48(LowDWord, HiWord);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1129:13
+     |
+1129 |   Result := Datas[0].GetAsInteger64(LowDWord, HiDWord);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1134:13
+     |
+1134 |   Result := Datas[0].GetAsBool;
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1143:13
+     |
+1143 |   Result := Datas[0].SetAsText(Text);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1152:13
+     |
+1152 |   Result := Datas[0].SetAsInteger8(Value);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1161:13
+     |
+1161 |   Result := Datas[0].SetAsList(List);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1170:13
+     |
+1170 |   Result := Datas[0].SetAsInteger16(Value);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1179:13
+     |
+1179 |   Result := Datas[0].SetAsInteger32(Value);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1188:13
+     |
+1188 |   Result := Datas[0].SetAsInteger48(Value);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1197:13
+     |
+1197 |   Result := Datas[0].SetAsInteger48(LowDWord, HiWord);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1206:13
+     |
+1206 |   Result := Datas[0].SetAsInteger64(Value);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1215:13
+     |
+1215 |   Result := Datas[0].SetAsInteger64(LowDWord, HiDWord);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1224:13
+     |
+1224 |   Result := Datas[0].SetAsBool(Value);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1243:15
+     |
+1243 |     SetLength(Datas, Length(Datas) + 1);
+     |               ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1243:29
+     |
+1243 |     SetLength(Datas, Length(Datas) + 1);
+     |                             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1244:5
+     |
+1244 |     Datas[Length(Datas) - 1] := TMP4AtomData.Create;
+     |     ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1244:18
+     |
+1244 |     Datas[Length(Datas) - 1] := TMP4AtomData.Create;
+     |                  ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1245:5
+     |
+1245 |     Datas[Length(Datas) - 1].Parent := Self;
+     |     ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1245:18
+     |
+1245 |     Datas[Length(Datas) - 1].Parent := Self;
+     |                  ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1246:5
+     |
+1246 |     Datas[Length(Datas) - 1].Index := Length(Datas) - 1;
+     |     ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1246:18
+     |
+1246 |     Datas[Length(Datas) - 1].Index := Length(Datas) - 1;
+     |                  ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1246:46
+     |
+1246 |     Datas[Length(Datas) - 1].Index := Length(Datas) - 1;
+     |                                              ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1247:15
+     |
+1247 |     Result := Datas[Length(Datas) - 1];
+     |               ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1247:28
+     |
+1247 |     Result := Datas[Length(Datas) - 1];
+     |                            ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1258:20
+     |
+1258 |   Result := Length(Datas);
+     |                    ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1265:24
+     |
+1265 |   for i := 0 to Length(Datas) - 1 do
+     |                        ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1267:5
+     |
+1267 |     Datas[i].Clear;
+     |     ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1268:16
+     |
+1268 |     FreeAndNil(Datas[i]);
+     |                ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1270:13
+     |
+1270 |   SetLength(Datas, 0);
+     |             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1288:24
+     |
+1288 |   for i := 0 to Length(Datas) - 1 do
+     |                        ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1290:11
+     |
+1290 |     // if Datas[i].Data.Size > 0 then begin
+     |           ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1291:24
+     |
+1291 |     Result := Result + Datas[i].Data.Size + 16;
+     |                        ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1318:7
+     |
+1318 |       Datas[i].Write(MP4Stream);
+     |       ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1338:27
+     |
+1338 |   if (AtomIndex >= Length(Datas)) OR (AtomIndex < 0) then
+     |                           ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1342:14
+     |
+1342 |   FreeAndNil(Datas[AtomIndex]);
+     |              ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1365:6
+     |
+1365 |   if Datas[Length(Datas) - 1] = nil then
+     |      ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1365:19
+     |
+1365 |   if Datas[Length(Datas) - 1] = nil then
+     |                   ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1371:26
+     |
+1371 |     for i := 0 to Length(Datas) - 2 do
+     |                          ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1373:10
+     |
+1373 |       if Datas[i] = nil then
+     |          ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1375:9
+     |
+1375 |         Datas[i] := Datas[i + 1];
+     |         ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1375:21
+     |
+1375 |         Datas[i] := Datas[i + 1];
+     |                     ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1376:9
+     |
+1376 |         Datas[i].Index := i;
+     |         ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1377:9
+     |
+1377 |         Datas[i + 1] := nil;
+     |         ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1384:15
+     |
+1384 |     SetLength(Datas, Length(Datas) - 1);
+     |               ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1384:29
+     |
+1384 |     SetLength(Datas, Length(Datas) - 1);
+     |                             ^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1399:30
+     |
+1399 |       AddData.Assign(MP4Atom.Datas[i]);
+     |                              ^^^^^
+     |
+error: `Currupt` should be `Corrupt`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1564:123
+     |
+1564 | function ReadAtomHeader(MP4Stream: TStream; var AtomName: TAtomName; var AtomSize: Int64; var Is64BitSize: Boolean; FailOnCurrupt: Boolean = True): Boolean;
+     |                                                                                                                           ^^^^^^^
+     |
+error: `separatelly` should be `separately`
+  --> ./Units/TagLibraries/WMATagLibrary.pas:1585:45
+     |
+1585 |     // * Add cover art attributes - must do separatelly from other attributs bocause the last cover art replaces the previous (bug in WMVCORE.DLL?)
+     |                                             ^^^^^^^^^^^
+     |
+error: `Currupt` should be `Corrupt`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:1584:12
+     |
+1584 |   if FailOnCurrupt OR MP4TagLibraryFailOnCorruptFile then
+     |            ^^^^^^^
+     |
+error: `attributs` should be `attributes`
+  --> ./Units/TagLibraries/WMATagLibrary.pas:1585:68
+     |
+1585 |     // * Add cover art attributes - must do separatelly from other attributs bocause the last cover art replaces the previous (bug in WMVCORE.DLL?)
+     |                                                                    ^^^^^^^^^
+     |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/WMATagLibrary.pas:1834:32
+     |
+1834 |       Result := 'Unknown error occured.';
+     |                                ^^^^^^^
+     |
+error: `Datas` should be `Data`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:2410:39
+     |
+2410 |     Result := Length(FindAtom('covr').Datas);
+     |                                       ^^^^^
+     |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/MP4TagLibrary.pas:4190:32
+     |
+4190 |       Result := 'Unknown error occured.';
+     |                                ^^^^^^^
+     |
+error: `occured` should be `occurred`
+  --> ./Units/TagLibraries/WAVTagLibrary.pas:2289:32
+     |
+2289 |       Result := 'Unknown error occured.';
+     |                                ^^^^^^^
+     |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:89:11
+   |
+89 |   RegisterRigthClick: Boolean;
+   |           ^^^^^
+   |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:246:11
+    |
+246 |   RegisterRigthClick := CheckIfArgumentExists('/register');
+    |           ^^^^^
+    |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:247:14
+    |
+247 |   if RegisterRigthClick then
+    |              ^^^^^
+    |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:503:32
+    |
+503 |                 if not RegisterRigthClick then
+    |                                ^^^^^
+    |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:510:32
+    |
+510 |                 if not RegisterRigthClick then
+    |                                ^^^^^
+    |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:518:30
+    |
+518 |               if not RegisterRigthClick then
+    |                              ^^^^^
+    |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:526:28
+    |
+526 |             if not RegisterRigthClick then
+    |                            ^^^^^
+    |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:537:24
+    |
+537 |         if not RegisterRigthClick then
+    |                        ^^^^^
+    |
+error: `Rigth` should be `Right`
+  --> ./TFileInfo/UnitMain.pas:546:14
+    |
+546 |   if RegisterRigthClick then
+    |              ^^^^^
+    |
+error: `succesfull` should be `successful`
+  --> ./TFileInfo/UnitMain.pas:565:50
+    |
+565 |               Application.MessageBox('Unregister succesfull.', 'Unregister', MB_ICONINFORMATION);
+    |                                                  ^^^^^^^^^^
+    |
+error: `Seperated` should be `Separated`
+  --> ./Release/Win64/changelog.txt:14:27
+   |
+14 | -Improved: [Music Player] Seperated options of loading and downloading lyric
+   |                           ^^^^^^^^^
+   |
+error: `reseted` should be `reset`
+  --> ./Release/Win64/changelog.txt:75:45
+   |
+75 | -Fixed: Position text and lyric box weren't reseted after stoping in some cases
+   |                                             ^^^^^^^
+   |
+error: `stoping` should be `stopping`
+  --> ./Release/Win64/changelog.txt:75:59
+   |
+75 | -Fixed: Position text and lyric box weren't reseted after stoping in some cases
+   |                                                           ^^^^^^^
+   |
+error: `Handel` should be `Handle`
+  --> ./Release/Win32/Radios/Classical.txt:42:14
+   |
+42 | Calm Radio - Handel;https://calmradio.com;http://calm11.calmradio.com:8486/stream
+   |              ^^^^^^
+   |
+error: `Claus` should be `Clause`
+  --> ./Release/Win32/Radios/Season.txt:9:13
+  |
+9 | Radio Santa Claus;http://www.radiosantaclaus.com;http://75.126.107.126:9000
+  |             ^^^^^
+  |
+error: `Lazer` should be `Laser`
+  --> ./Release/Win32/Radios/Electronic.txt:29:1
+   |
+29 | Lazer Hot Hits - Belgium;http://www.shoutcast.com;http://46.18.35.19:3730
+   | ^^^^^
+   |
+error: `Buisness` should be `Business`
+  --> ./Release/Win32/Radios/Talk.txt:16:1
+   |
+16 | Buisness Fm Moscow;http://radio.bfm.ru/air.html;http://bfmstream.bfm.ru:8004/fm64
+   | ^^^^^^^^
+   |
+error: `Buisness` should be `Business`
+  --> ./Release/Win32/Radios/Talk.txt:17:1
+   |
+17 | Buisness Fm SPB;http://www.businessfm.spb.ru/;http://stream02.media.rambler.ru/businessfmspb128.mp3
+   | ^^^^^^^^
+   |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Alternative.txt:19:1
+   |
+19 | Frequence Geek;http://www.frequencegeek.com/;http://94.23.221.212:404
+   | ^^^^^^^^^
+   |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Alternative.txt:20:1
+   |
+20 | Frequence Orange;http://www.frequenceorange.com/v4.php?site=static&staticID=2;http://94.23.213.103:8000/
+   | ^^^^^^^^^
+   |
+error: `Espace` should be `Escape`
+  --> ./Release/Win32/Radios/Imported.txt:55:1
+   |
+55 | Espace Musique;http://radio-canada.ca/util/endirect/espace_musique.asx;http://radio-canada.ca/util/endirect/espace_musique.asx
+   | ^^^^^^
+   |
+error: `Emision` should be `Emission`
+  --> ./Release/Win32/Radios/Imported.txt:104:1
+    |
+104 | EmisionDigital.com;mms://emisor4.emisiondigital.com/flamenco20k;mms://emisor4.emisiondigital.com/flamenco20k
+    | ^^^^^^^
+    |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:224:27
+    |
+224 | KFJM 90.7 FM Grand Forks, ND;http://pubint.ic.llnwd.net/stream/pubint_ndpr;http://pubint.ic.llnwd.net/stream/pubint_ndpr
+    |                           ^^
+    |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Dance & Pop.txt:57:1
+   |
+57 | Puls Fm;http://www.pulsfm.de;http://87.230.82.41:80
+   | ^^^^
+   |
+error: `Unser` should be `Under`, `Unset`, `Unsure`, `User`
+  --> ./Release/Win32/Radios/Hits.txt:6:7
+  |
+6 | 103.7 Unser Ding;http://www4.unserding.de/inhalt/musik/webchannel/die-103-7-unserding-webchannels-1;http://gffstream.ic.llnwd.net/stream/gffstream_gffstream2
+  |       ^^^^^
+  |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:754:15
+    |
+754 | Escucha Radio Internacional 102.7 fm - New York;http://72.245.45.227:8000;http://72.245.45.227:8000
+    |               ^^^^^^^^^^^^^
+    |
+error: `principales` should be `principles`
+  --> ./Release/Win32/Radios/Hits.txt:13:4
+   |
+13 | 40 principales;http://www.los40.com;http://4613.live.streamtheworld.com:3690/LOS40_SC
+   |    ^^^^^^^^^^^
+   |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Hits.txt:85:1
+   |
+85 | Frequence Banane;http://www.frequencebanane.ch/index.php?page=indexgva;http://fbpc6.frequencebanane.ch:8001/
+   | ^^^^^^^^^
+   |
+error: `Espace` should be `Escape`
+  --> ./Release/Win32/Radios/Imported.txt:871:1
+    |
+871 | Espace Classique de Radio Canada;http://www.radio-canada.ca/radio2/Webradios/Classique/webradio.asx;http://www.radio-canada.ca/radio2/Webradios/Classique/webradio.asx
+    | ^^^^^^
+    |
+error: `INRO` should be `INTO`
+  --> ./Release/Win32/Radios/Hits.txt:112:1
+    |
+112 | INRO (sk);http://www.inro.sk;http://inro.tuzvo.sk:8800/inrohq
+    | ^^^^
+    |
+error: `inro` should be `into`
+  --> ./Release/Win32/Radios/Hits.txt:112:22
+    |
+112 | INRO (sk);http://www.inro.sk;http://inro.tuzvo.sk:8800/inrohq
+    |                      ^^^^
+    |
+error: `Brocken` should be `Broken`
+  --> ./Release/Win32/Radios/Hits.txt:190:7
+    |
+190 | Radio Brocken;http://ww2.radiobrocken.de;http://80.237.210.58
+    |       ^^^^^^^
+    |
+error: `WHTA` should be `WHAT`
+  --> ./Release/Win32/Radios/Imported.txt:1052:1
+     |
+1052 | WHTA 107.9 FM Atlanta, GA;http://Wm-eon.vitalstreamcdn.com/live_eonwmss_vitalstream_com_radioone-whtafm?PPID=3610&Gender=N&Age=0;http://Wm-eon.vitalstreamcdn.com/live_eonwmss_vitalstream_com_radioone-whtafm?PPID=3610&Gender=N&Age=0
+     | ^^^^
+     |
+error: `Espace` should be `Escape`
+  --> ./Release/Win32/Radios/Hits.txt:251:7
+    |
+251 | RTS - Espace 2;http://www.rts.ch/espace-2/;http://stream.srg-ssr.ch/m/espace-2/mp3_128
+    |       ^^^^^^
+    |
+error: `WIL` should be `WILL`, `WELL`
+  --> ./Release/Win32/Radios/Imported.txt:1096:1
+     |
+1096 | WIL 92.3 FM St. Louis, MO;mms://wmc1.liquidcompass.cc/WILFM;mms://wmc1.liquidcompass.cc/WILFM
+     | ^^^
+     |
+error: `Linz` should be `Lines`
+  --> ./Release/Win32/Radios/Hits.txt:287:10
+    |
+287 | Welle1 - Linz;http://www.welle1.at;http://live.welle1.at:7128/
+    |          ^^^^
+    |
+error: `WEW` should be `WE`
+  --> ./Release/Win32/Radios/Imported.txt:1136:1
+     |
+1136 | WEW 770 AM St Louis MO.;http://wew.birach.com:9008/;http://wew.birach.com:9008/
+     | ^^^
+     |
+error: `Unser` should be `Under`, `Unset`, `Unsure`, `User`
+  --> ./Release/Win32/Radios/All.txt:44:7
+   |
+44 | 103.7 Unser Ding;http://www4.unserding.de/inhalt/musik/webchannel/die-103-7-unserding-webchannels-1;http://gffstream.ic.llnwd.net/stream/gffstream_gffstream2
+   |       ^^^^^
+   |
+error: `Informacion` should be `Information`
+  --> ./Release/Win32/Radios/Imported.txt:1232:16
+     |
+1232 | Radioandalucia Informacion;http://rtva.stream.flumotion.com/rtva/radioandalucia.mp3.m3u;http://rtva.stream.flumotion.com/rtva/radioandalucia.mp3.m3u
+     |                ^^^^^^^^^^^
+     |
+error: `principales` should be `principles`
+  --> ./Release/Win32/Radios/All.txt:79:4
+   |
+79 | 40 principales;http://www.los40.com;http://4613.live.streamtheworld.com:3690/LOS40_SC
+   |    ^^^^^^^^^^^
+   |
+error: `WEAS` should be `WAS`
+  --> ./Release/Win32/Radios/Imported.txt:1324:1
+     |
+1324 | WEAS 93.1 FM Savannah, GA;mms://live.cumulusstreaming.com/weas-fm;mms://live.cumulusstreaming.com/weas-fm
+     | ^^^^
+     |
+error: `Buisness` should be `Business`
+  --> ./Release/Win32/Radios/All.txt:309:1
+    |
+309 | Buisness Fm Moscow;http://radio.bfm.ru/air.html;http://bfmstream.bfm.ru:8004/fm64
+    | ^^^^^^^^
+    |
+error: `Buisness` should be `Business`
+  --> ./Release/Win32/Radios/All.txt:310:1
+    |
+310 | Buisness Fm SPB;http://www.businessfm.spb.ru/;http://stream02.media.rambler.ru/businessfmspb128.mp3
+    | ^^^^^^^^
+    |
+error: `Sideral` should be `Sidereal`
+  --> ./Release/Win32/Radios/Imported.txt:1575:5
+     |
+1575 | YosiSideral 90.1;mms://audioserver2.gua.net/yosisideral;mms://audioserver2.gua.net/yosisideral
+     |     ^^^^^^^
+     |
+error: `Handel` should be `Handle`
+  --> ./Release/Win32/Radios/All.txt:355:14
+    |
+355 | Calm Radio - Handel;https://calmradio.com;http://calm11.calmradio.com:8486/stream
+    |              ^^^^^^
+    |
+error: `Transilvania` should be `Transylvania`
+  --> ./Release/Win32/Radios/Imported.txt:1700:7
+     |
+1700 | Radio Transilvania Oradea;http://www.radiotransilvania.ro/live/oradea.m3u;http://www.radiotransilvania.ro/live/oradea.m3u
+     |       ^^^^^^^^^^^^
+     |
+error: `Transilvania` should be `Transylvania`
+  --> ./Release/Win32/Radios/Imported.txt:1701:7
+     |
+1701 | Radio Transilvania Cluj;http://www.radiotransilvania.ro/live/cluj.m3u;http://www.radiotransilvania.ro/live/cluj.m3u
+     |       ^^^^^^^^^^^^
+     |
+error: `Transilvania` should be `Transylvania`
+  --> ./Release/Win32/Radios/Imported.txt:1702:7
+     |
+1702 | Radio Transilvania Turda;http://www.radiotransilvania.ro/live/turda.m3u;http://www.radiotransilvania.ro/live/turda.m3u
+     |       ^^^^^^^^^^^^
+     |
+error: `UE` should be `USE`, `DUE`
+  --> ./Release/Win32/Radios/Imported.txt:1710:2
+     |
+1710 | 2UE 954 AM;http://streaming.mytalk.com.au/2ue;http://streaming.mytalk.com.au/2ue
+     |  ^^
+     |
+error: `Parana` should be `Piranha`
+  --> ./Release/Win32/Radios/Imported.txt:1715:13
+     |
+1715 | Tropical FM Parana;http://www.dnip.com.br/link/fmtropical.wmx;http://www.dnip.com.br/link/fmtropical.wmx
+     |             ^^^^^^
+     |
+error: `Frequences` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:1794:1
+     |
+1794 | Frequences Relaxation;http://listen.radionomy.com/frequences-relaxation.m3u;http://listen.radionomy.com/frequences-relaxation.m3u
+     | ^^^^^^^^^^
+     |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/All.txt:605:1
+    |
+605 | Frequence Banane;http://www.frequencebanane.ch/index.php?page=indexgva;http://fbpc6.frequencebanane.ch:8001/
+    | ^^^^^^^^^
+    |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/All.txt:606:1
+    |
+606 | Frequence Geek;http://www.frequencegeek.com/;http://94.23.221.212:404
+    | ^^^^^^^^^
+    |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/All.txt:607:1
+    |
+607 | Frequence Orange;http://www.frequenceorange.com/v4.php?site=static&staticID=2;http://94.23.213.103:8000/
+    | ^^^^^^^^^
+    |
+error: `Activ` should be `Active`
+  --> ./Release/Win32/Radios/Imported.txt:1947:1
+     |
+1947 | Activ EFEM;http://89.44.232.19:8000/activefem.mp3;http://89.44.232.19:8000/activefem.mp3
+     | ^^^^^
+     |
+error: `INRO` should be `INTO`
+  --> ./Release/Win32/Radios/All.txt:753:1
+    |
+753 | INRO (sk);http://www.inro.sk;http://inro.tuzvo.sk:8800/inrohq
+    | ^^^^
+    |
+error: `inro` should be `into`
+  --> ./Release/Win32/Radios/All.txt:753:22
+    |
+753 | INRO (sk);http://www.inro.sk;http://inro.tuzvo.sk:8800/inrohq
+    |                      ^^^^
+    |
+error: `Lazer` should be `Laser`
+  --> ./Release/Win32/Radios/All.txt:837:1
+    |
+837 | Lazer Hot Hits - Belgium;http://www.shoutcast.com;http://46.18.35.19:3730
+    | ^^^^^
+    |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:2222:8
+     |
+2222 | La Voz Internacional;http://www.eleden.net/str3am/falcon24k.asx;http://www.eleden.net/str3am/falcon24k.asx
+     |        ^^^^^^^^^^^^^
+     |
+error: `Nostalgica` should be `Nostalgia`
+  --> ./Release/Win32/Radios/Imported.txt:2352:7
+     |
+2352 | Radio Nostalgica de Atacama;http://www.radionostalgica.cl/players/playfm.asx;http://www.radionostalgica.cl/players/playfm.asx
+     |       ^^^^^^^^^^
+     |
+error: `Ba` should be `By`, `Be`
+  --> ./Release/Win32/Radios/Imported.txt:2358:3
+     |
+2358 | MiBa-Piano;http://miba-piano.de:8200;http://miba-piano.de:8200
+     |   ^^
+     |
+error: `Sade` should be `Sad`
+  --> ./Release/Win32/Radios/Imported.txt:2359:11
+     |
+2359 | Radio ZET Sade;http://188.165.23.4:8500/listen.pls;http://188.165.23.4:8500/listen.pls
+     |           ^^^^
+     |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/All.txt:1023:1
+     |
+1023 | Puls Fm;http://www.pulsfm.de;http://87.230.82.41:80
+     | ^^^^
+     |
+error: `Apon` should be `Upon`, `Apron`
+  --> ./Release/Win32/Radios/Imported.txt:2432:7
+     |
+2432 | Radio Apon;http://99.198.118.250:8150;http://99.198.118.250:8150
+     |       ^^^^
+     |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:2479:1
+     |
+2479 | Frequence Sud;http://listen.radionomy.com/frequence-sud.m3u;http://listen.radionomy.com/frequence-sud.m3u
+     | ^^^^^^^^^
+     |
+error: `Brocken` should be `Broken`
+  --> ./Release/Win32/Radios/All.txt:1091:7
+     |
+1091 | Radio Brocken;http://ww2.radiobrocken.de;http://80.237.210.58
+     |       ^^^^^^^
+     |
+error: `Tuscon` should be `Tucson`
+  --> ./Release/Win32/Radios/Imported.txt:2609:14
+     |
+2609 | KFMA 92.1 FM Tuscon, AZ;http://provisioning.streamtheworld.com/pls/KFMAFMAAC.pls;http://provisioning.streamtheworld.com/pls/KFMAFMAAC.pls
+     |              ^^^^^^
+     |
+error: `Acces` should be `Access`
+  --> ./Release/Win32/Radios/Imported.txt:2625:13
+     |
+2625 | Listen it - Acces Club;http://listen.radionomy.com/acces-clubbing.m3u;http://listen.radionomy.com/acces-clubbing.m3u
+     |             ^^^^^
+     |
+error: `Acces` should be `Access`
+  --> ./Release/Win32/Radios/Imported.txt:2626:13
+     |
+2626 | Listen it - Acces Pop Rock;http://listen.radionomy.com/acces-poprock.m3u;http://listen.radionomy.com/acces-poprock.m3u
+     |             ^^^^^
+     |
+error: `Acces` should be `Access`
+  --> ./Release/Win32/Radios/Imported.txt:2627:13
+     |
+2627 | Listen it - Acces Lounge;http://listen.radionomy.com/acces-lounge.m3u;http://listen.radionomy.com/acces-lounge.m3u
+     |             ^^^^^
+     |
+error: `Acces` should be `Access`
+  --> ./Release/Win32/Radios/Imported.txt:2628:13
+     |
+2628 | Listen it - Acces Hits;http://listen.radionomy.com/acces-hits.m3u;http://listen.radionomy.com/acces-hits.m3u
+     |             ^^^^^
+     |
+error: `Claus` should be `Clause`
+  --> ./Release/Win32/Radios/All.txt:1199:13
+     |
+1199 | Radio Santa Claus;http://www.radiosantaclaus.com;http://75.126.107.126:9000
+     |             ^^^^^
+     |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:2736:21
+     |
+2736 | 10musica-Rock y Pop Internacional;mms://200.43.193.192/radio5/0000052.wsx;mms://200.43.193.192/radio5/0000052.wsx
+     |                     ^^^^^^^^^^^^^
+     |
+error: `Espace` should be `Escape`
+  --> ./Release/Win32/Radios/All.txt:1306:7
+     |
+1306 | RTS - Espace 2;http://www.rts.ch/espace-2/;http://stream.srg-ssr.ch/m/espace-2/mp3_128
+     |       ^^^^^^
+     |
+error: `Sideral` should be `Sidereal`
+  --> ./Release/Win32/Radios/Imported.txt:2807:7
+     |
+2807 | Radio Sideral AM 700Khz;http://75.125.114.34:8560;http://75.125.114.34:8560
+     |       ^^^^^^^
+     |
+error: `Espace` should be `Escape`
+  --> ./Release/Win32/Radios/Imported.txt:2912:7
+     |
+2912 | Radio Espace;http://broadcast.infomaniak.net/radioespace-high.mp3;http://broadcast.infomaniak.net/radioespace-high.mp3
+     |       ^^^^^^
+     |
+error: `Linz` should be `Lines`
+  --> ./Release/Win32/Radios/All.txt:1486:10
+     |
+1486 | Welle1 - Linz;http://www.welle1.at;http://live.welle1.at:7128/
+     |          ^^^^
+     |
+error: `Fiel` should be `Feel`, `Field`, `File`, `Phial`
+  --> ./Release/Win32/Radios/Imported.txt:3114:7
+     |
+3114 | Radio Fiel 106.5 Córdoba;http://www.radiofiel.com.ar/radiofiel.asx;http://www.radiofiel.com.ar/radiofiel.asx
+     |       ^^^^
+     |
+error: `Lokale` should be `Locale`
+  --> ./Release/Win32/Radios/Imported.txt:3274:1
+     |
+3274 | Lokale Omroep Baarle;http://wms12.streampartner.nl/lokaleomroepbaarle;http://wms12.streampartner.nl/lokaleomroepbaarle
+     | ^^^^^^
+     |
+error: `Lokale` should be `Locale`
+  --> ./Release/Win32/Radios/Imported.txt:3276:1
+     |
+3276 | Lokale Omroep Mill;http://data.cybox.nl:9000/listen.pls;http://data.cybox.nl:9000/listen.pls
+     | ^^^^^^
+     |
+error: `Pyramide` should be `Pyramid`
+  --> ./Release/Win32/Radios/Imported.txt:3300:1
+     |
+3300 | Pyramide FM;http://sc3.mystreamserver.com:8068;http://sc3.mystreamserver.com:8068
+     | ^^^^^^^^
+     |
+error: `Seperated` should be `Separated`
+  --> ./Release/Win32/changelog.txt:8:27
+  |
+8 | -Improved: [Music Player] Seperated options of loading and downloading lyric
+  |                           ^^^^^^^^^
+  |
+error: `Portugues` should be `Portuguese`
+  --> ./Release/Win32/Radios/Imported.txt:3488:26
+     |
+3488 | Lighthouse Network, Inc. Portugues;http://player.spacialnet.com/players/listen.asx.php?htmlview=no&stationID=118027;http://player.spacialnet.com/players/listen.asx.php?htmlview=no&stationID=118027
+     |                          ^^^^^^^^^
+     |
+error: `reseted` should be `reset`
+  --> ./Release/Win32/changelog.txt:68:45
+   |
+68 | -Fixed: Position text and lyric box weren't reseted after stoping in some cases
+   |                                             ^^^^^^^
+   |
+error: `stoping` should be `stopping`
+  --> ./Release/Win32/changelog.txt:68:59
+   |
+68 | -Fixed: Position text and lyric box weren't reseted after stoping in some cases
+   |                                                           ^^^^^^^
+   |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:3497:21
+     |
+3497 | KFBN 88.7 FM Fargo, ND;http://www.nwrnetwork.com/listen/dynamicasx.asp?station=KFBN-FM;http://www.nwrnetwork.com/listen/dynamicasx.asp?station=KFBN-FM
+     |                     ^^
+     |
+error: `MILLENIUM` should be `MILLENNIUM`
+  --> ./Release/Win32/Radios/Imported.txt:3626:9
+     |
+3626 | XHMBM - MILLENIUM BELLA MUSICA;http://66.7.201.163:8008/listen.pls;http://66.7.201.163:8008/listen.pls
+     |         ^^^^^^^^^
+     |
+error: `Emision` should be `Emission`
+  --> ./Release/Win32/Radios/Imported.txt:3673:1
+     |
+3673 | Emision Natural;http://sc2.spacialnet.com:16556/;http://sc2.spacialnet.com:16556/
+     | ^^^^^^^
+     |
+error: `Loca` should be `Local`
+  --> ./Release/Win32/Radios/Imported.txt:3691:1
+     |
+3691 | Loca FM La Mancha-;http://91.121.77.67:8106/listen.pls;http://91.121.77.67:8106/listen.pls
+     | ^^^^
+     |
+error: `Jornal` should be `Journal`
+  --> ./Release/Win32/Radios/Imported.txt:4052:7
+     |
+4052 | Radio Jornal 1520 AM Amambai, MG;http://idc5.radiowebtv.com:9125;http://idc5.radiowebtv.com:9125
+     |       ^^^^^^
+     |
+error: `BA` should be `BY`, `BE`
+  --> ./Release/Win32/Radios/Imported.txt:4082:31
+     |
+4082 | Rádio Piatã 94.3 FM Salvador, BA;Rádio Piatã 94.3 FM Salvador;Rádio Piatã 94.3 FM Salvador
+     |                               ^^
+     |
+error: `BA` should be `BY`, `BE`
+  --> ./Release/Win32/Radios/Imported.txt:4083:34
+     |
+4083 | Rádio Sociedade AM 740 Salvador, BA;http://www.radiosociedadeam.com.br/aspx/../windowsmedia.asx;http://www.radiosociedadeam.com.br/aspx/../windowsmedia.asx
+     |                                  ^^
+     |
+error: `Som` should be `Some`
+  --> ./Release/Win32/Radios/Imported.txt:4115:12
+     |
+4115 | Rádio Vibe Som;http://www.vibejovem.com.br/radio.asx;http://www.vibejovem.com.br/radio.asx
+     |            ^^^
+     |
+error: `Lern` should be `Learn`, `Lean`
+  --> ./Release/Win32/Radios/Imported.txt:4180:1
+     |
+4180 | LernRadio;http://193.197.85.26:8000;http://193.197.85.26:8000
+     | ^^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4275:8
+     |
+4275 | Cadena SER - Valencia;http://194.169.201.177:8085/stream/prisacom_Valencia;http://194.169.201.177:8085/stream/prisacom_Valencia
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4276:8
+     |
+4276 | Cadena SER - Ibiza;http://89.238.146.144:7020;http://89.238.146.144:7020
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4277:8
+     |
+4277 | Cadena SER - Sevilla;http://194.169.201.177:8085/stream/prisacom_Sevilla;http://194.169.201.177:8085/stream/prisacom_Sevilla
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4278:8
+     |
+4278 | Cadena SER - Almería;http://www.seralmeria.com/RadioSER.asx;http://www.seralmeria.com/RadioSER.asx
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4279:8
+     |
+4279 | Cadena SER - Cuenca;http://82.98.150.50:8050;http://82.98.150.50:8050
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4290:8
+     |
+4290 | Cadena SER - Alicante;mms://94.127.190.245/radioelche;mms://94.127.190.245/radioelche
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4291:8
+     |
+4291 | Cadena SER - Asturias;http://www.radioasturias.com/online/index.asp;http://www.radioasturias.com/online/index.asp
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4292:8
+     |
+4292 | Cadena SER - Burgos;http://94.75.206.136:8135/live;http://94.75.206.136:8135/live
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4293:8
+     |
+4293 | Cadena SER - Granada;http://www.radiogranada.es/modules/player/player_radiogranada.asx;http://www.radiogranada.es/modules/player/player_radiogranada.asx
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4294:8
+     |
+4294 | Cadena SER - Huesca;http://streaming.wdreams.com/radiohuescafm;http://streaming.wdreams.com/radiohuescafm
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4295:8
+     |
+4295 | Cadena SER - León;http://84.124.75.254:8000/radio;http://84.124.75.254:8000/radio
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4296:8
+     |
+4296 | Cadena SER - Zaragoza;http://194.169.201.177:8085/stream/prisacom_Zaragoza;http://194.169.201.177:8085/stream/prisacom_Zaragoza
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4297:8
+     |
+4297 | Cadena SER - Mallorca;http://194.169.201.177:8085/stream/prisacom_Mallorca;http://194.169.201.177:8085/stream/prisacom_Mallorca
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4298:8
+     |
+4298 | Cadena SER - Las Palmas;http://194.169.201.177:8085/laspalmas;http://194.169.201.177:8085/laspalmas
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4299:8
+     |
+4299 | Cadena SER - Santa Cruz De Tenerife;http://194.169.201.177:8085/stream/prisacom_Tenerife;http://194.169.201.177:8085/stream/prisacom_Tenerife
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4300:8
+     |
+4300 | Cadena SER - Toledo;http://194.169.201.177:8085/stream/prisacom_Toledo;http://194.169.201.177:8085/stream/prisacom_Toledo
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4301:8
+     |
+4301 | Cadena SER - Valladolid;http://194.169.201.177:8085/stream/prisacom_Valladolid;http://194.169.201.177:8085/stream/prisacom_Valladolid
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4302:8
+     |
+4302 | Cadena SER - Barcelona;http://194.169.201.177:8085/stream/prisacom_Barcelona;http://194.169.201.177:8085/stream/prisacom_Barcelona
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4303:8
+     |
+4303 | Cadena SER - Ceuta;http://194.169.201.177:8085/stream/prisacom_Ceuta;http://194.169.201.177:8085/stream/prisacom_Ceuta
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4304:8
+     |
+4304 | Cadena SER - Badajoz;http://194.169.201.177:8085/stream/prisacom_Badajoz;http://194.169.201.177:8085/stream/prisacom_Badajoz
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4305:8
+     |
+4305 | Cadena SER - Galicia;http://194.169.201.177:8085/stream/prisacom_Santiago;http://194.169.201.177:8085/stream/prisacom_Santiago
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4306:8
+     |
+4306 | Cadena SER - Melilla;http://194.169.201.177:8085/stream/prisacom_Melilla;http://194.169.201.177:8085/stream/prisacom_Melilla
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4307:8
+     |
+4307 | Cadena SER - Navarra;http://194.169.201.177:8085/stream/prisacom_Pamplona;http://194.169.201.177:8085/stream/prisacom_Pamplona
+     |        ^^^
+     |
+error: `ons` should be `owns`
+  --> ./BassUnits/bass.pas:63:72
+   |
+63 |   BASS_ERROR_VERSION      = 43;   // invalid BASS version (used by add-ons)
+   |                                                                        ^^^
+   |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4308:8
+     |
+4308 | Cadena SER - Vizcaya;http://194.169.201.177:8085/stream/prisacom_Bilbao;http://194.169.201.177:8085/stream/prisacom_Bilbao
+     |        ^^^
+     |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:4309:8
+     |
+4309 | Cadena SER - Murcia;http://194.169.201.177:8085/stream/prisacom_Murcia;http://194.169.201.177:8085/stream/prisacom_Murcia
+     |        ^^^
+     |
+error: `occured` should be `occurred`
+  --> ./BassUnits/bass.pas:777:32
+    |
+777 |     handle : The sync that has occured
+    |                                ^^^^^^^
+    |
+error: `occured` should be `occurred`
+  --> ./BassUnits/bass.pas:778:36
+    |
+778 |     channel: Channel that the sync occured in
+    |                                    ^^^^^^^
+    |
+error: `occurance` should be `occurrence`
+  --> ./BassUnits/bass.pas:779:57
+    |
+779 |     data   : Additional data associated with the sync's occurance
+    |                                                         ^^^^^^^^^
+    |
+error: `Parana` should be `Piranha`
+  --> ./Release/Win32/Radios/Imported.txt:4713:20
+     |
+4713 | Litoral FM 103.1 - Parana, Entre Rios;http://204.117.120.100:8882;http://204.117.120.100:8882
+     |                    ^^^^^^
+     |
+error: `encording` should be `encoding`
+  --> ./BassUnits/bassenc.pas:40:48
+   |
+40 |   BASS_ENCODE_PAUSE             = 32; // start encording paused
+   |                                                ^^^^^^^^^
+   |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:5009:17
+     |
+5009 | Radio Fortaleza Internacional;http://nyc04.egihosting.com/22052;http://nyc04.egihosting.com/22052
+     |                 ^^^^^^^^^^^^^
+     |
+error: `Millenium` should be `Millennium`
+  --> ./Release/Win32/Radios/Imported.txt:5068:7
+     |
+5068 | Radio Millenium MX;http://radiomx.streaming-pro.com:8120;http://radiomx.streaming-pro.com:8120
+     |       ^^^^^^^^^
+     |
+error: `Exite` should be `Exit`, `Excite`, `Exits`
+  --> ./Release/Win32/Radios/Imported.txt:5132:1
+     |
+5132 | Exite Radio;http://83.170.80.22:3779/listen.pls;http://83.170.80.22:3779/listen.pls
+     | ^^^^^
+     |
+error: `hights` should be `height`
+  --> ./Release/Win32/Radios/Imported.txt:5152:17
+     |
+5152 | Unity FM;http://hights.serverroom.us:4726;http://hights.serverroom.us:4726
+     |                 ^^^^^^
+     |
+error: `hights` should be `height`
+  --> ./Release/Win32/Radios/Imported.txt:5152:50
+     |
+5152 | Unity FM;http://hights.serverroom.us:4726;http://hights.serverroom.us:4726
+     |                                                  ^^^^^^
+     |
+error: `Fase` should be `Faze`, `Phase`
+  --> ./Release/Win32/Radios/Imported.txt:5161:8
+     |
+5161 | Sonido Fase 2 Radio;http://173.212.215.26:7931;http://173.212.215.26:7931
+     |        ^^^^
+     |
+error: `emision` should be `emission`
+  --> ./Release/Win32/Radios/Imported.txt:5589:51
+     |
+5589 | Casares Irratia - 107.4 FM - San Sebastián;http://emision.casaresirratia.com:8000;http://emision.casaresirratia.com:8000
+     |                                                   ^^^^^^^
+     |
+error: `emision` should be `emission`
+  --> ./Release/Win32/Radios/Imported.txt:5589:90
+     |
+5589 | Casares Irratia - 107.4 FM - San Sebastián;http://emision.casaresirratia.com:8000;http://emision.casaresirratia.com:8000
+     |                                                                                          ^^^^^^^
+     |
+error: `Limite` should be `Limit`
+  --> ./Release/Win32/Radios/Imported.txt:5830:7
+     |
+5830 | Rádio Limite (Castro Daire);mms://stream.radio.com.pt/ROLI-ENC-408;mms://stream.radio.com.pt/ROLI-ENC-408
+     |       ^^^^^^
+     |
+error: `Holliday` should be `Holiday`
+  --> ./Release/Win32/Radios/Imported.txt:5937:15
+     |
+5937 | KWFB 100.9 FM Holliday, TX;http://ice1.securenetsystems.net/KWFB;http://ice1.securenetsystems.net/KWFB
+     |               ^^^^^^^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:5953:22
+     |
+5953 | KMJO 104.7 FM Fargo, ND;http://asx.abacast.com/radiofm-kmjofm-64.asx;http://asx.abacast.com/radiofm-kmjofm-64.asx
+     |                      ^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:5974:17
+     |
+5974 | KQWB Q98 Fargo, ND;http://stream.radiotime.com/listen.stream?streamId=949636;http://stream.radiotime.com/listen.stream?streamId=949636
+     |                 ^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:5977:21
+     |
+5977 | WDAY 93.7 FM Fargo, ND;http://asx.abacast.com/radiofm-wdayfm-64.asx;http://asx.abacast.com/radiofm-wdayfm-64.asx
+     |                     ^^
+     |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:6091:1
+     |
+6091 | Frequence Attitude RADIO CLUBBING FRANCE;http://listen.radionomy.com/frequence-attitude-radio.m3u;http://listen.radionomy.com/frequence-attitude-radio.m3u
+     | ^^^^^^^^^
+     |
+error: `Indien` should be `Indian`, `Endian`
+  --> ./Release/Win32/Radios/Imported.txt:6201:13
+     |
+6201 | Radio Ocean Indien;http://stream.radiotime.com/listen.stream?streamId=1376866;http://stream.radiotime.com/listen.stream?streamId=1376866
+     |             ^^^^^^
+     |
+error: `unkown` should be `unknown`
+  --> ./Forms/UnitMain.pas:847:33
+    |
+847 |                     LArtist := 'unkown';
+    |                                 ^^^^^^
+    |
+error: `unkown` should be `unknown`
+  --> ./Forms/UnitMain.pas:852:32
+    |
+852 |                     LAlbum := 'unkown';
+    |                                ^^^^^^
+    |
+error: `Calle` should be `Called`
+  --> ./Release/Win32/Radios/Imported.txt:6254:10
+     |
+6254 | FM De La Calle;http://giss.tv:8000/fmdelacalle.mp3;http://giss.tv:8000/fmdelacalle.mp3
+     |          ^^^^^
+     |
+error: `unkown` should be `unknown`
+  --> ./Forms/UnitMain.pas:988:25
+    |
+988 |             LArtist := 'unkown';
+    |                         ^^^^^^
+    |
+error: `unkown` should be `unknown`
+  --> ./Forms/UnitMain.pas:993:24
+    |
+993 |             LAlbum := 'unkown';
+    |                        ^^^^^^
+    |
+error: `Stil` should be `Still`
+  --> ./Release/Win32/Radios/Imported.txt:6309:7
+     |
+6309 | Radio Stil;http://air-online2.radiostil.md/radiostil.mp3;http://air-online2.radiostil.md/radiostil.mp3
+     |       ^^^^
+     |
+error: `Unkown` should be `Unknown`
+  --> ./Forms/UnitMain.pas:1162:18
+     |
+1162 |       Result := 'Unkown error';
+     |                  ^^^^^^
+     |
+error: `seperate` should be `separate`
+  --> ./Forms/UnitMain.pas:1461:11
+     |
+1461 |     0: // seperate file for each file
+     |           ^^^^^^^^
+     |
+error: `Absolument` should be `Absolute`
+  --> ./Release/Win32/Radios/Imported.txt:6593:1
+     |
+6593 | Absolument Fabuleux;http://listen.radionomy.com/absolument-fabuleux.m3u;http://listen.radionomy.com/absolument-fabuleux.m3u
+     | ^^^^^^^^^^
+     |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:6601:9
+     |
+6601 | Formula Internacional;http://201.148.81.100:8300/listen.pls;http://201.148.81.100:8300/listen.pls
+     |         ^^^^^^^^^^^^^
+     |
+error: `reseted` should be `reset`
+  --> ./Forms/UnitMain.pas:2118:65
+     |
+2118 |   // FPlayListFiles[FSelectedPlaylistIndex].CurrentItemIndex is reseted to -1 above so we need to
+     |                                                                 ^^^^^^^
+     |
+error: `Ines` should be `Lines`
+  --> ./Release/Win32/Radios/Imported.txt:6741:1
+     |
+6741 | Ines de Suarez - 88.5 FM - Concepción;http://sc.digitalproserver.com:9534;http://sc.digitalproserver.com:9534
+     | ^^^^
+     |
+error: `compability` should be `compatibility`
+  --> ./Forms/UnitMain.pas:2879:64
+     |
+2879 |             // this values are added later so in order to keep compability with
+     |                                                                ^^^^^^^^^^^
+     |
+error: `compability` should be `compatibility`
+  --> ./Forms/UnitMain.pas:2966:62
+     |
+2966 |           // this values are added later so in onder to keep compability with
+     |                                                              ^^^^^^^^^^^
+     |
+error: `Biologia` should be `Biological`
+  --> ./Release/Win32/Radios/Imported.txt:7001:7
+     |
+7001 | Radio Biologia Cotidiana;http://www.biologiacotidiana.com/audio/programacion_biologiacotidiana.m3u;http://www.biologiacotidiana.com/audio/programacion_biologiacotidiana.m3u
+     |       ^^^^^^^^
+     |
+error: `Tha` should be `Than`, `That`, `The`
+  --> ./Release/Win32/Radios/Imported.txt:7038:15
+     |
+7038 | KBTT 103.7 FM Tha Beat Haughton, LA;http://lightningstream.surfernetwork.com/Media/player/scripts/player.aspx?call=KBTT;http://lightningstream.surfernetwork.com/Media/player/scripts/player.aspx?call=KBTT
+     |               ^^^
+     |
+error: `satelite` should be `satellite`
+  --> ./Release/Win32/Radios/Imported.txt:7318:7
+     |
+7318 | radio satelite;http://64.87.28.140:8050/listen.pls;http://64.87.28.140:8050/listen.pls
+     |       ^^^^^^^^
+     |
+error: `WROK` should be `WORK`
+  --> ./Release/Win32/Radios/Imported.txt:7432:1
+     |
+7432 | WROK - Eclectic Rock Radio;http://sc10.shoutcaststreaming.us:8104;http://sc10.shoutcaststreaming.us:8104
+     | ^^^^
+     |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:7435:12
+     |
+7435 | AvivaFuego Internacional » Cali;http://70.38.64.149:9968/;http://70.38.64.149:9968/
+     |            ^^^^^^^^^^^^^
+     |
+error: `Transito` should be `Transition`
+  --> ./Release/Win32/Radios/Imported.txt:7561:7
+     |
+7561 | Radio Transito - Curitiba, PR;http://www.radiotransitoweb.com.br/aovivo.asx?71;http://www.radiotransitoweb.com.br/aovivo.asx?71
+     |       ^^^^^^^^
+     |
+error: `sceen` should be `scene`, `seen`, `screen`, `scheme`
+  --> ./Release/Win32/Radios/Imported.txt:7624:1
+     |
+7624 | sceen.fm;http://www.sceen.fm/playlist.pls;http://www.sceen.fm/playlist.pls
+     | ^^^^^
+     |
+error: `wiil` should be `will`
+  --> ./Forms/UnitMain.pas:4641:29
+     |
+4641 |   // stop thread because we wiil run it again
+     |                             ^^^^
+     |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:7656:21
+     |
+7656 | RimixRadio Estrella Internacional » Medellín;http://radiolatina.info:7084/;http://radiolatina.info:7084/
+     |                     ^^^^^^^^^^^^^
+     |
+error: `Doble` should be `Double`
+  --> ./Release/Win32/Radios/Imported.txt:7657:14
+     |
+7657 | RimixRadio LaDobleRR » Medellín;http://radiolatina.info:7429/;http://radiolatina.info:7429/
+     |              ^^^^^
+     |
+error: `Unser` should be `Under`, `Unset`, `Unsure`, `User`
+  --> ./Release/Win32/Radios/Imported.txt:7700:10
+     |
+7700 | SR 103.7 UnserDing;http://streaming01.sr-online.de/unserding_2.m3u;http://streaming01.sr-online.de/unserding_2.m3u
+     |          ^^^^^
+     |
+error: `Unser` should be `Under`, `Unset`, `Unsure`, `User`
+  --> ./Release/Win32/Radios/Imported.txt:7701:10
+     |
+7701 | SR 103.7 UnserDing - Zukunft;http://streaming02.sr-online.de/unserding-zukunft.m3u;http://streaming02.sr-online.de/unserding-zukunft.m3u
+     |          ^^^^^
+     |
+error: `Unser` should be `Under`, `Unset`, `Unsure`, `User`
+  --> ./Release/Win32/Radios/Imported.txt:7702:10
+     |
+7702 | SR 103.7 UnserDing - Schwarz;http://streaming02.sr-online.de/unserding-schwarz.m3u;http://streaming02.sr-online.de/unserding-schwarz.m3u
+     |          ^^^^^
+     |
+error: `unkown` should be `unknown`
+  --> ./Forms/UnitMain.pas:5581:23
+     |
+5581 |           LArtist := 'unkown';
+     |                       ^^^^^^
+     |
+error: `unkown` should be `unknown`
+  --> ./Forms/UnitMain.pas:5586:22
+     |
+5586 |           LAlbum := 'unkown';
+     |                      ^^^^^^
+     |
+error: `tradicional` should be `traditional`
+  --> ./Release/Win32/Radios/Imported.txt:7801:5
+     |
+7801 | f m tradicional;http://89.130.13.169:8000/;http://89.130.13.169:8000/
+     |     ^^^^^^^^^^^
+     |
+error: `seperate` should be `separate`
+  --> ./Forms/UnitMain.pas:6296:10
+     |
+6296 |       // seperate file for each song
+     |          ^^^^^^^^
+     |
+error: `anme` should be `name`
+  --> ./Forms/UnitMain.pas:6341:30
+     |
+6341 |             Log('update meta anme');
+     |                              ^^^^
+     |
+error: `seperate` should be `separate`
+  --> ./Forms/UnitMain.pas:6389:14
+     |
+6389 |           // seperate file for each song
+     |              ^^^^^^^^
+     |
+error: `NED` should be `NEED`
+  --> ./Release/Win32/Radios/Imported.txt:7911:18
+     |
+7911 | Voel je Thuis! - NED fm - Overal & Altijd!;http://ice3.securenetsystems.net:80/NEDFM;http://ice3.securenetsystems.net:80/NEDFM
+     |                  ^^^
+     |
+error: `Overal` should be `Overall`
+  --> ./Release/Win32/Radios/Imported.txt:7911:27
+     |
+7911 | Voel je Thuis! - NED fm - Overal & Altijd!;http://ice3.securenetsystems.net:80/NEDFM;http://ice3.securenetsystems.net:80/NEDFM
+     |                           ^^^^^^
+     |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:7916:12
+     |
+7916 | Latinos FM Internacional;http://ns32380.ovh.net:6601/LISTEN.mp3;http://ns32380.ovh.net:6601/LISTEN.mp3
+     |            ^^^^^^^^^^^^^
+     |
+error: `Informate` should be `Informative`
+  --> ./Release/Win32/Radios/Imported.txt:7924:1
+     |
+7924 | Informate News » Los Angeles, CA;http://68.168.100.60:8844/;http://68.168.100.60:8844/
+     | ^^^^^^^^^
+     |
+error: `Ser` should be `Set`
+  --> ./Release/Win32/Radios/Imported.txt:8012:16
+     |
+8012 | 91.5 FM Cadena Ser, Gral. Deheza, Córdoba;mms://72.55.165.46/cadenaser;mms://72.55.165.46/cadenaser
+     |                ^^^
+     |
+error: `Adress` should be `Address`
+  --> ./Forms/UnitMain.dfm:644:31
+    |
+644 |             Caption = 'Stream Adress'
+    |                               ^^^^^^
+    |
+error: `seperately` should be `separately`
+  --> ./Forms/UnitMain.dfm:764:36
+    |
+764 |             'Try to save each song seperately'
+    |                                    ^^^^^^^^^^
+    |
+error: `Ultrason` should be `Ultrasound`
+  --> ./Release/Win32/Radios/Imported.txt:8416:1
+     |
+8416 | Ultrason;http://ultrason.ice.infomaniak.ch/ultrason-high.mp3;http://ultrason.ice.infomaniak.ch/ultrason-high.mp3
+     | ^^^^^^^^
+     |
+error: `Gard` should be `Guard`
+  --> ./Release/Win32/Radios/Imported.txt:8540:7
+     |
+8540 | Totem Gard;http://streaming.radio-totem.net:8000/gard;http://streaming.radio-totem.net:8000/gard
+     |       ^^^^
+     |
+error: `Corporacion` should be `Corporation`
+  --> ./Release/Win32/Radios/Imported.txt:8578:7
+     |
+8578 | Radio Corporacion - Concepcion 550 AM;http://190.196.10.89:8012;http://190.196.10.89:8012
+     |       ^^^^^^^^^^^
+     |
+error: `Ser` should be `Set`
+  --> ./Release/Win32/Radios/Imported.txt:8586:1
+     |
+8586 | Ser FM - 103.1 FM - San Felipe;http://200.24.229.253:8060/;http://200.24.229.253:8060/
+     | ^^^
+     |
+error: `BA` should be `BY`, `BE`
+  --> ./Forms/UnitMain.dfm:4519:69
+     |
+4519 |       00000000000000000000000000000000000028282832FFFFFFFFBA8456FFD6BA
+     |                                                                     ^^
+     |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:8840:15
+     |
+8840 | Extreme Radio Internacional;http://87.117.250.6/9144;http://87.117.250.6/9144
+     |               ^^^^^^^^^^^^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:8858:23
+     |
+8858 | KACL 98.7 FM Bismarck ND;http://live.cumulusstreaming.com/kacl-fm;http://live.cumulusstreaming.com/kacl-fm
+     |                       ^^
+     |
+error: `Tre` should be `Tree`
+  --> ./Release/Win32/Radios/Imported.txt:8890:10
+     |
+8890 | RSI Rete Tre;http://stream.rsi.ch/retetre.m3u;http://stream.rsi.ch/retetre.m3u
+     |          ^^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:9021:21
+     |
+9021 | KFNW 97.9 FM Fargo, ND;http://amber.streamguys.com:5500/kfnw-fm;http://amber.streamguys.com:5500/kfnw-fm
+     |                     ^^
+     |
+error: `Activ` should be `Active`
+  --> ./Release/Win32/Radios/Imported.txt:9046:7
+     |
+9046 | Radio Activ;http://radionolimit.no-ip.biz:7000;http://radionolimit.no-ip.biz:7000
+     |       ^^^^^
+     |
+error: `Rythm` should be `Rhythm`
+  --> ./Release/Win32/Radios/Imported.txt:9068:1
+     |
+9068 | Rythm n Groove radio;http://listen.radionomy.com/rythm-n--groove;http://listen.radionomy.com/rythm-n--groove
+     | ^^^^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:9083:22
+     |
+9083 | KHRT 106.9 FM Minot, ND;http://primcast.com/asx/listen255462.m3u;http://primcast.com/asx/listen255462.m3u
+     |                      ^^
+     |
+error: `Dinamic` should be `Dynamic`
+  --> ./Release/Win32/Radios/Imported.txt:9109:7
+     |
+9109 | Radio Dinamic Manele;http://77.36.67.95:8486;http://77.36.67.95:8486
+     |       ^^^^^^^
+     |
+error: `Exclusiv` should be `Exclusive`
+  --> ./Release/Win32/Radios/Imported.txt:9291:7
+     |
+9291 | Radio Exclusiv;http://77.36.67.76:9010;http://77.36.67.76:9010
+     |       ^^^^^^^^
+     |
+error: `Expresso` should be `Espresso`
+  --> ./Release/Win32/Radios/Imported.txt:9410:7
+     |
+9410 | Radio Expresso;http://173.249.145.57:7204/listen.pls;http://173.249.145.57:7204/listen.pls
+     |       ^^^^^^^^
+     |
+error: `Absolut` should be `Absolute`
+  --> ./Release/Win32/Radios/Imported.txt:9513:7
+     |
+9513 | Radio Absolut Manele;http://77.36.67.29:2012;http://77.36.67.29:2012
+     |       ^^^^^^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:9679:23
+     |
+9679 | KYYY 92.9 FM Bismarck ND;http://kyyy-fm.akacast.akamaistream.net/7/50/94970/v1/auth.akacast.akamaistream.net/kyyy-fm;http://kyyy-fm.akacast.akamaistream.net/7/50/94970/v1/auth.akacast.akamaistream.net/kyyy-fm
+     |                       ^^
+     |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:9781:18
+     |
+9781 | KNDS 96.3 Fargo, ND;http://134.129.70.192:88/broadwave.mp3;http://134.129.70.192:88/broadwave.mp3
+     |                  ^^
+     |
+error: `Tre` should be `Tree`
+  --> ./Release/Win32/Radios/Imported.txt:9953:8
+     |
+9953 | Studio Tre Radio;http://95.110.153.67:8006;http://95.110.153.67:8006
+     |        ^^^
+     |
+error: `Integracion` should be `Integration`
+  --> ./Release/Win32/Radios/Imported.txt:10008:4
+      |
+10008 | FM Integracion 101.5 - Acegua - Cerro Largo;http://gnstreammedia.com:6146;http://gnstreammedia.com:6146
+      |    ^^^^^^^^^^^
+      |
+error: `Absolut` should be `Absolute`
+  --> ./Release/Win32/Radios/Imported.txt:10324:1
+      |
+10324 | Absolut Radio;http://stream.hoerradar.de/absolutradio-mp3.m3u;http://stream.hoerradar.de/absolutradio-mp3.m3u
+      | ^^^^^^^
+      |
+error: `Meditaciones` should be `Medications`
+  --> ./Release/Win32/Radios/Imported.txt:10463:7
+      |
+10463 | Radio Meditaciones Cristianas;http://173.224.124.232:8406/;http://173.224.124.232:8406/
+      |       ^^^^^^^^^^^^
+      |
+error: `Mata` should be `Meta`, `Mater`
+  --> ./Release/Win32/Radios/Imported.txt:10489:15
+      |
+10489 | Rádio Boca da Mata 104.9 FM - Nossa Senhora da Glória, SE;http://streaming01.brlogic.com:8190/live;http://streaming01.brlogic.com:8190/live
+      |               ^^^^
+      |
+error: `Limite` should be `Limit`
+  --> ./Release/Win32/Radios/Imported.txt:10560:4
+      |
+10560 | Al Limite FM;http://server-uk1.radioseninternetuy.com:8122/listen.pls;http://server-uk1.radioseninternetuy.com:8122/listen.pls
+      |    ^^^^^^
+      |
+error: `Brocken` should be `Broken`
+  --> ./Release/Win32/Radios/Imported.txt:10618:7
+      |
+10618 | Radio Brocken;http://sites.radiobrocken.de/streams/mp3_128k.pls;http://sites.radiobrocken.de/streams/mp3_128k.pls
+      |       ^^^^^^^
+      |
+error: `Doble` should be `Double`
+  --> ./Release/Win32/Radios/Imported.txt:10647:4
+      |
+10647 | La Doble L » Villavicencio;http://www.ladoblel.com:8000/ladoblel;http://www.ladoblel.com:8000/ladoblel
+      |    ^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:10696:15
+      |
+10696 | Stereo Visión Internacional;http://74.63.71.126:9984;http://74.63.71.126:9984
+      |               ^^^^^^^^^^^^^
+      |
+error: `Som` should be `Some`
+  --> ./Release/Win32/Radios/Imported.txt:10959:7
+      |
+10959 | Radio Som Criolo;http://88.198.10.113:8859;http://88.198.10.113:8859
+      |       ^^^
+      |
+error: `Comision` should be `Commission`
+  --> ./Release/Win32/Radios/Imported.txt:11067:9
+      |
+11067 | La Gran Comision Radio (LGC);http://s4.streammonster.com/tunein.php/alexrosa/playlist.pls;http://s4.streammonster.com/tunein.php/alexrosa/playlist.pls
+      |         ^^^^^^^^
+      |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:11110:8
+      |
+11110 | Cadena SER - Castellón;http://82.223.240.47:8000/ser;http://82.223.240.47:8000/ser
+      |        ^^^
+      |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:11145:8
+      |
+11145 | Cadena SER - Cádiz;http://live.emisoras.cadenaser.com:8085/cadiz;http://live.emisoras.cadenaser.com:8085/cadiz
+      |        ^^^
+      |
+error: `SADE` should be `SAD`
+  --> ./Release/Win32/Radios/Imported.txt:11233:5
+      |
+11233 | RMF SADE;http://files.kusmierz.be/rmf/sade-1.mp3;http://files.kusmierz.be/rmf/sade-1.mp3
+      |     ^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11414:8
+      |
+11414 | Los 60 Principales;http://streamingraddios.com:8119/;http://streamingraddios.com:8119/
+      |        ^^^^^^^^^^^
+      |
+error: `Funcion` should be `Function`
+  --> ./Release/Win32/Radios/Imported.txt:11494:7
+      |
+11494 | Radio FuncionFM;http://188.165.58.191:12240/listen.pls;http://188.165.58.191:12240/listen.pls
+      |       ^^^^^^^
+      |
+error: `Frome` should be `From`
+  --> ./Release/Win32/Radios/Imported.txt:11819:1
+      |
+11819 | Frome FM 96.6;http://www.fromefm.co.uk/fromefm.pls;http://www.fromefm.co.uk/fromefm.pls
+      | ^^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11963:16
+      |
+11963 | Prisa - Los 40 Principales » Bogotá;http://provisioning.streamtheworld.com/pls/LOS40_COLUMBIAAAC.pls;http://provisioning.streamtheworld.com/pls/LOS40_COLUMBIAAAC.pls
+      |                ^^^^^^^^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11968:16
+      |
+11968 | Prisa - Los 40 Principales » Panamá;http://provisioning.streamtheworld.com/pls/LOS40_PANAAC.pls;http://provisioning.streamtheworld.com/pls/LOS40_PANAAC.pls
+      |                ^^^^^^^^^^^
+      |
+error: `ADN` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:11969:9
+      |
+11969 | Prisa - ADN Radio Costa Rica;http://lortel28.lorini.net:11000/ADN;http://lortel28.lorini.net:11000/ADN
+      |         ^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11980:16
+      |
+11980 | Prisa - Los 40 Principales » México;http://provisioning.streamtheworld.com/pls/LOS40_MEXICOAAC.pls;http://provisioning.streamtheworld.com/pls/LOS40_MEXICOAAC.pls
+      |                ^^^^^^^^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11984:16
+      |
+11984 | Prisa - Los 40 Principales » Buenos Aires;http://provisioning.streamtheworld.com/pls/LOS40_ARGENTINAAAC.pls;http://provisioning.streamtheworld.com/pls/LOS40_ARGENTINAAAC.pls
+      |                ^^^^^^^^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11985:16
+      |
+11985 | Prisa - Los 40 Principales » Madrid;http://provisioning.streamtheworld.com/pls/LOS40AAC.pls;http://provisioning.streamtheworld.com/pls/LOS40AAC.pls
+      |                ^^^^^^^^^^^
+      |
+error: `ADN` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:11988:9
+      |
+11988 | Prisa - ADN Radio » Santiago;http://provisioning.streamtheworld.com/pls/ADNAAC.pls;http://provisioning.streamtheworld.com/pls/ADNAAC.pls
+      |         ^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11993:16
+      |
+11993 | Prisa - Los 40 Principales » Ecuador;http://ecuadorstreaming.net:11112/los40principales;http://ecuadorstreaming.net:11112/los40principales
+      |                ^^^^^^^^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:11994:16
+      |
+11994 | Prisa - Los 40 Principales » Chile;http://provisioning.streamtheworld.com/pls/LOS40_CHILEAAC.pls;http://provisioning.streamtheworld.com/pls/LOS40_CHILEAAC.pls
+      |                ^^^^^^^^^^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./Release/Win32/Radios/Imported.txt:12007:7
+      |
+12007 | Radio BA international - Minsk104.6 fm;http://81.25.32.97:8000/BA.m3u;http://81.25.32.97:8000/BA.m3u
+      |       ^^
+      |
+error: `Transilvania` should be `Transylvania`
+  --> ./Release/Win32/Radios/Imported.txt:12043:7
+      |
+12043 | Radio Transilvania Bistriţa;http://86.35.4.198:8012/;http://86.35.4.198:8012/
+      |       ^^^^^^^^^^^^
+      |
+error: `Tre` should be `Tree`
+  --> ./Release/Win32/Radios/Imported.txt:12072:1
+      |
+12072 | Tre Raadio;http://tre.ee/listen/radiotre.pls;http://tre.ee/listen/radiotre.pls
+      | ^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:12349:10
+      |
+12349 | Colombia Internacional » Medellín;http://64.37.55.229:8066/;http://64.37.55.229:8066/
+      |          ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:12498:11
+      |
+12498 | Seven Day Internacional;http://184.171.242.78:7014/;http://184.171.242.78:7014/
+      |           ^^^^^^^^^^^^^
+      |
+error: `Essentiels` should be `Essentials`
+  --> ./Release/Win32/Radios/Imported.txt:12803:15
+      |
+12803 | Nostalgie Les Essentiels;http://adwzg.tdf-cdn.com/5110/nrj_120256.mp3;http://adwzg.tdf-cdn.com/5110/nrj_120256.mp3
+      |               ^^^^^^^^^^
+      |
+error: `Expresion` should be `Expression`
+  --> ./Release/Win32/Radios/Imported.txt:12844:7
+      |
+12844 | Radio Expresion 106.9 - Ilo;http://216.224.183.145:8060;http://216.224.183.145:8060
+      |       ^^^^^^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:13178:1
+      |
+13178 | Puls Radio;http://radiohost.no-ip.info:8100/pulsradio;http://radiohost.no-ip.info:8100/pulsradio
+      | ^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:13308:1
+      |
+13308 | Puls' Trance;http://www.pulsradio.com/pls/pulstrance-adsl.m3u;http://www.pulsradio.com/pls/pulstrance-adsl.m3u
+      | ^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:13309:1
+      |
+13309 | Puls' Version 8.0;http://www.pulsradio.com/pls/pulsV80-adsl.m3u;http://www.pulsradio.com/pls/pulsV80-adsl.m3u
+      | ^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:13310:1
+      |
+13310 | Puls' Version 9.0;http://www.pulsradio.com/pls/pulsV90-adsl.m3u;http://www.pulsradio.com/pls/pulsV90-adsl.m3u
+      | ^^^^
+      |
+error: `Nostalgija` should be `Nostalgia`
+  --> ./Release/Win32/Radios/Imported.txt:13379:7
+      |
+13379 | Radio Nostalgija;http://media017.net:8026/;http://media017.net:8026/
+      |       ^^^^^^^^^^
+      |
+error: `Enciclopedia` should be `Encyclopedia`
+  --> ./Release/Win32/Radios/Imported.txt:13453:7
+      |
+13453 | Radio Enciclopedia;http://media.enet.cu/radioenciclopedia;http://media.enet.cu/radioenciclopedia
+      |       ^^^^^^^^^^^^
+      |
+error: `Blindy` should be `Blindly`
+  --> ./Release/Win32/Radios/Imported.txt:13609:1
+      |
+13609 | Blindy.TV Comedy;http://streams.blindy.tv:8000/comedy.mp3;http://streams.blindy.tv:8000/comedy.mp3
+      | ^^^^^^
+      |
+error: `Blindy` should be `Blindly`
+  --> ./Release/Win32/Radios/Imported.txt:13610:1
+      |
+13610 | Blindy.TV Drama;http://streams.blindy.tv:8000/drama.mp3;http://streams.blindy.tv:8000/drama.mp3
+      | ^^^^^^
+      |
+error: `Blindy` should be `Blindly`
+  --> ./Release/Win32/Radios/Imported.txt:13611:1
+      |
+13611 | Blindy.TV Scifi;http://streams.blindy.tv:8000/scifi.mp3;http://streams.blindy.tv:8000/scifi.mp3
+      | ^^^^^^
+      |
+error: `Blindy` should be `Blindly`
+  --> ./Release/Win32/Radios/Imported.txt:13612:1
+      |
+13612 | Blindy.TV Brain;http://streams.blindy.tv:8000/brain.mp3;http://streams.blindy.tv:8000/brain.mp3
+      | ^^^^^^
+      |
+error: `Blindy` should be `Blindly`
+  --> ./Release/Win32/Radios/Imported.txt:13613:1
+      |
+13613 | Blindy.TV Etc;http://streams.blindy.tv:8000/etc.mp3;http://streams.blindy.tv:8000/etc.mp3
+      | ^^^^^^
+      |
+error: `Blindy` should be `Blindly`
+  --> ./Release/Win32/Radios/Imported.txt:13614:1
+      |
+13614 | Blindy.TV Onj's TV;http://onj2.andrelouis.com:8000/tv;http://onj2.andrelouis.com:8000/tv
+      | ^^^^^^
+      |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:13706:7
+      |
+13706 | Radio Frequence Caraibes;http://188.165.237.167:8088;http://188.165.237.167:8088
+      |       ^^^^^^^^^
+      |
+error: `Programm` should be `Program`, `Programme`
+  --> ./Release/Win32/Radios/Imported.txt:13847:30
+      |
+13847 | Radio Mi Amigo 1 - Deutsches Programm;http://www.radiomiamigo.es/listen.asx;http://www.radiomiamigo.es/listen.asx
+      |                              ^^^^^^^^
+      |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:13864:40
+      |
+13864 | KNOX 1310 AM and 107.9 FM Grand Forks, ND;http://eawe.vip.dendc.liquidcompass.net/KNOXAMAAC;http://eawe.vip.dendc.liquidcompass.net/KNOXAMAAC
+      |                                        ^^
+      |
+error: `Sie` should be `Size`, `Sigh`
+  --> ./Release/Win32/Radios/Imported.txt:14029:16
+      |
+14029 | Radio ZachochajSieNaCzacie;http://5.9.170.132:8000;http://5.9.170.132:8000
+      |                ^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:14067:1
+      |
+14067 | Puls Radio Yoshkar Ola 103.8 FM;http://r1.vmariel.ru:8000/puls?88;http://r1.vmariel.ru:8000/puls?88
+      | ^^^^
+      |
+error: `WROK` should be `WORK`
+  --> ./Release/Win32/Radios/Imported.txt:14093:1
+      |
+14093 | WROK 105.5 FM Macon, GA;http://provisioning.streamtheworld.com/pls/WROKFMAAC.pls;http://provisioning.streamtheworld.com/pls/WROKFMAAC.pls
+      | ^^^^
+      |
+error: `Nostalgija` should be `Nostalgia`
+  --> ./Release/Win32/Radios/Imported.txt:14298:1
+      |
+14298 | Nostalgija;http://media017.net:8026/listen.pls;http://media017.net:8026/listen.pls
+      | ^^^^^^^^^^
+      |
+error: `Mandarian` should be `Mandarin`
+  --> ./Release/Win32/Radios/Imported.txt:14315:22
+      |
+14315 | VOA Voice of America Mandarian Chinese;http://www.voanews.com/wm/live/live-mandarin-a.asx;http://www.voanews.com/wm/live/live-mandarin-a.asx
+      |                      ^^^^^^^^^
+      |
+error: `WROK` should be `WORK`
+  --> ./Release/Win32/Radios/Imported.txt:14351:1
+      |
+14351 | WROK 1440 AM Rockford, IL;http://provisioning.streamtheworld.com/pls/WROKAM.pls;http://provisioning.streamtheworld.com/pls/WROKAM.pls
+      | ^^^^
+      |
+error: `Tuscon` should be `Tucson`
+  --> ./Release/Win32/Radios/Imported.txt:14455:14
+      |
+14455 | KVOI 1030 AM Tuscon, AZ;http://kvoi.streamon.fm:8000/KVOI-24k.aac;http://kvoi.streamon.fm:8000/KVOI-24k.aac
+      |              ^^^^^^
+      |
+error: `Bulle` should be `Bullet`
+  --> ./Release/Win32/Radios/Imported.txt:14539:7
+      |
+14539 | Radio Bulle 93.6 FM;http://91.121.203.126:8000/stream.mp3;http://91.121.203.126:8000/stream.mp3
+      |       ^^^^^
+      |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:14556:7
+      |
+14556 | Radio Frequence Nimes;http://str81.streamakaci.com:7970/listen.pls;http://str81.streamakaci.com:7970/listen.pls
+      |       ^^^^^^^^^
+      |
+error: `Metropolys` should be `Metropolis`
+  --> ./Release/Win32/Radios/Imported.txt:14632:1
+      |
+14632 | Metropolys;http://mp3.live.tv-radio.com/rocfm/all/rocfm-128k.mp3;http://mp3.live.tv-radio.com/rocfm/all/rocfm-128k.mp3
+      | ^^^^^^^^^^
+      |
+error: `Raison` should be `Reason`, `Raisin`
+  --> ./Release/Win32/Radios/Imported.txt:14633:27
+      |
+14633 | Radio Notre Dame - Foi et Raison;http://windu.radionotredame.net/RadioNotreDame-FoiEtRaison.mp3;http://windu.radionotredame.net/RadioNotreDame-FoiEtRaison.mp3
+      |                           ^^^^^^
+      |
+error: `Philadelpha` should be `Philadelphia`
+  --> ./Release/Win32/Radios/Imported.txt:14684:15
+      |
+14684 | WPEN 97.5 HD2 Philadelpha, PA;http://provisioning.streamtheworld.com/pls/WPENHD2.pls;http://provisioning.streamtheworld.com/pls/WPENHD2.pls
+      |               ^^^^^^^^^^^
+      |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:14833:22
+      |
+14833 | KFYR 550 AM Bismark, ND;http://kfyr-am.akacast.akamaistream.net/7/536/26911/v1/auth.akacast.akamaistream.net/kfyr-am;http://kfyr-am.akacast.akamaistream.net/7/536/26911/v1/auth.akacast.akamaistream.net/kfyr-am
+      |                      ^^
+      |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:15004:21
+      |
+15004 | WZFG 1100 AM Fargo, ND;http://cp7.shoutcheap.com:8120/live.m3u;http://cp7.shoutcheap.com:8120/live.m3u
+      |                     ^^
+      |
+error: `Claus` should be `Clause`
+  --> ./Release/Win32/Radios/Imported.txt:15466:13
+      |
+15466 | Radio Santa Claus;http://www.myradiohd.com/radiosantaclaus/__WM__HD.asx;http://www.myradiohd.com/radiosantaclaus/__WM__HD.asx
+      |             ^^^^^
+      |
+error: `Wellingston` should be `Wellington`
+  --> ./Release/Win32/Radios/Imported.txt:15604:1
+      |
+15604 | Wellingston's Classic Hits 90.1 FM;http://radionetworknz-ice.streamguys.com/chonlinewn.mp3.m3u;http://radionetworknz-ice.streamguys.com/chonlinewn.mp3.m3u
+      | ^^^^^^^^^^^
+      |
+error: `Classe` should be `Class`, `Classes`
+  --> ./Release/Win32/Radios/Imported.txt:15626:10
+      |
+15626 | SCALA 99 Classe Especial;http://listen.radionomy.com/scala-99.m3u;http://listen.radionomy.com/scala-99.m3u
+      |          ^^^^^^
+      |
+error: `Optimaal` should be `Optimal`
+  --> ./Release/Win32/Radios/Imported.txt:15628:1
+      |
+15628 | Optimaal FM;http://radio.optimaal.fm:9000/listen.pls;http://radio.optimaal.fm:9000/listen.pls
+      | ^^^^^^^^
+      |
+error: `Ser` should be `Set`
+  --> ./Release/Win32/Radios/Imported.txt:15764:16
+      |
+15764 | 1179 AM Cadena Ser Radio Rioja, Logroño, La Rioja;http://emisoras.cadenaser.com:8085/liveser.mp3;http://emisoras.cadenaser.com:8085/liveser.mp3
+      |                ^^^
+      |
+error: `Linz` should be `Lines`
+  --> ./Release/Win32/Radios/Imported.txt:15791:9
+      |
+15791 | WELLE 1 Linz 91.8 FM;http://live.welle1.at:7128;http://live.welle1.at:7128
+      |         ^^^^
+      |
+error: `unser` should be `under`, `unset`, `unsure`, `user`
+  --> ./Release/Win32/Radios/Imported.txt:15821:1
+      |
+15821 | unserRadio;http://rs4.stream24.net/stream;http://rs4.stream24.net/stream
+      | ^^^^^
+      |
+error: `Tradicional` should be `Traditional`
+  --> ./Release/Win32/Radios/Imported.txt:15917:7
+      |
+15917 | HPR1: Tradicional Classic Country;http://hpr1.hpr.org/;http://hpr1.hpr.org/
+      |       ^^^^^^^^^^^
+      |
+error: `Jornal` should be `Journal`
+  --> ./Release/Win32/Radios/Imported.txt:15930:7
+      |
+15930 | Rádio Jornal AM 710 Alagoas;http://windows.streamingbrasil.com.br/ojornal;http://windows.streamingbrasil.com.br/ojornal
+      |       ^^^^^^
+      |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:15950:1
+      |
+15950 | Frequence-Plaisir Radio;http://192.155.89.55:80/1;http://192.155.89.55:80/1
+      | ^^^^^^^^^
+      |
+error: `Ultimae` should be `Ultimate`
+  --> ./Release/Win32/Radios/Imported.txt:16150:7
+      |
+16150 | Radio Ultimae: transmissions from a panoramic world;http://stream-06.shoutcast.com:8002/radio_ultimae_mp3_128kbps;http://stream-06.shoutcast.com:8002/radio_ultimae_mp3_128kbps
+      |       ^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:16210:16
+      |
+16210 | La Nueva Radio Internacional » Jackson Heights, NY;http://s2.voscast.com:7036/;http://s2.voscast.com:7036/
+      |                ^^^^^^^^^^^^^
+      |
+error: `Als` should be `Also`
+  --> ./Release/Win32/Radios/Imported.txt:16278:7
+      |
+16278 | Radio Als;http://108.166.161.210:8902/stream;http://108.166.161.210:8902/stream
+      |       ^^^
+      |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:16293:1
+      |
+16293 | Frequence3.fr (AAC+);http://ice.stream.frequence3.net/frequence3-64.aac;http://ice.stream.frequence3.net/frequence3-64.aac
+      | ^^^^^^^^^
+      |
+error: `Persan` should be `Person`
+  --> ./Release/Win32/Radios/Imported.txt:16449:5
+      |
+16449 | RFI Persan;http://stream.rfi.fr/2586/rfi_en_persan/rfipersan.mp3;http://stream.rfi.fr/2586/rfi_en_persan/rfipersan.mp3
+      |     ^^^^^^
+      |
+error: `PULS` should be `PULSE`, `PLUS`
+  --> ./Release/Win32/Radios/Imported.txt:16581:6
+      |
+16581 | BR - PULS DJ-Show;http://metafiles.gl-systemhaus.de/br/dj-show.m3u;http://metafiles.gl-systemhaus.de/br/dj-show.m3u
+      |      ^^^^
+      |
+error: `PULS` should be `PULSE`, `PLUS`
+  --> ./Release/Win32/Radios/Imported.txt:16582:6
+      |
+16582 | BR - PULS Lieblingsplatten;http://metafiles.gl-systemhaus.de/br/lieblingsplatten.m3u;http://metafiles.gl-systemhaus.de/br/lieblingsplatten.m3u
+      |      ^^^^
+      |
+error: `PULS` should be `PULSE`, `PLUS`
+  --> ./Release/Win32/Radios/Imported.txt:16583:6
+      |
+16583 | BR - PULS Kammerflimmern;http://metafiles.gl-systemhaus.de/br/kammerflimmern.m3u;http://metafiles.gl-systemhaus.de/br/kammerflimmern.m3u
+      |      ^^^^
+      |
+error: `PULS` should be `PULSE`, `PLUS`
+  --> ./Release/Win32/Radios/Imported.txt:16584:6
+      |
+16584 | BR - PULS Sounds Supreme mit Jay Scarlett;http://metafiles.gl-systemhaus.de/br/sounds-supreme.m3u;http://metafiles.gl-systemhaus.de/br/sounds-supreme.m3u
+      |      ^^^^
+      |
+error: `PULS` should be `PULSE`, `PLUS`
+  --> ./Release/Win32/Radios/Imported.txt:16585:6
+      |
+16585 | BR - PULS Der Zoo;http://metafiles.gl-systemhaus.de/br/der-zoo.m3u;http://metafiles.gl-systemhaus.de/br/der-zoo.m3u
+      |      ^^^^
+      |
+error: `itesm` should be `items`
+  --> ./Release/Win32/Radios/Imported.txt:16815:55
+      |
+16815 | XHTEC Frecuencia Tec 94.9 FM;http://frecuenciatec.mty.itesm.mx:8000;http://frecuenciatec.mty.itesm.mx:8000
+      |                                                       ^^^^^
+      |
+error: `itesm` should be `items`
+  --> ./Release/Win32/Radios/Imported.txt:16815:94
+      |
+16815 | XHTEC Frecuencia Tec 94.9 FM;http://frecuenciatec.mty.itesm.mx:8000;http://frecuenciatec.mty.itesm.mx:8000
+      |                                                                                              ^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:16911:14
+      |
+16911 | RADIO México Internacional;http://freestreams.alldigital.net:8000/freestream135;http://freestreams.alldigital.net:8000/freestream135
+      |              ^^^^^^^^^^^^^
+      |
+error: `PRINCIPALES` should be `PRINCIPLES`
+  --> ./Release/Win32/Radios/Imported.txt:16974:8
+      |
+16974 | LOS 40 PRINCIPALES - ENSENADA;http://stream2.dyndns.org:8000/xhat.mp3;http://stream2.dyndns.org:8000/xhat.mp3
+      |        ^^^^^^^^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:16975:8
+      |
+16975 | Los 40 Principales Irapuato;http://206.217.207.207:8052;http://206.217.207.207:8052
+      |        ^^^^^^^^^^^
+      |
+error: `principales` should be `principles`
+  --> ./Release/Win32/Radios/Imported.txt:16977:8
+      |
+16977 | Los 40 principales - Matamoros;http://radio.alphamx.net:8104;http://radio.alphamx.net:8104
+      |        ^^^^^^^^^^^
+      |
+error: `Jornal` should be `Journal`
+  --> ./Release/Win32/Radios/Imported.txt:17094:7
+      |
+17094 | Rádio Jornal AM Recife 780 KHZ;http://aovivo.ne10.uol.com.br/radiojornal/asx/jconline.asx;http://aovivo.ne10.uol.com.br/radiojornal/asx/jconline.asx
+      |       ^^^^^^
+      |
+error: `Radis` should be `Radix`
+  --> ./Release/Win32/Radios/Imported.txt:17116:1
+      |
+17116 | Radis Voice of ISRAEL;mms://s3dwm.castup.net/990310007-52.wmv?;mms://s3dwm.castup.net/990310007-52.wmv?
+      | ^^^^^
+      |
+error: `WATH` should be `WATCH`, `WRATH`, `WHAT`
+  --> ./Release/Win32/Radios/Imported.txt:17145:1
+      |
+17145 | WATH 970 AM Athens, OH;http://ice6.securenetsystems.net:80/WATH;http://ice6.securenetsystems.net:80/WATH
+      | ^^^^
+      |
+error: `IST` should be `IS`, `IT`, `ITS`, `SIT`, `LIST`
+  --> ./Release/Win32/Radios/Imported.txt:17224:19
+      |
+17224 | TeluguOne Radio - IST Stream;http://38.101.195.5:8132;http://38.101.195.5:8132
+      |                   ^^^
+      |
+error: `Comunicate` should be `Communicate`
+  --> ./Release/Win32/Radios/Imported.txt:17297:6
+      |
+17297 | RadioComunicate.com;http://190.144.31.82:8000/listen.pls;http://190.144.31.82:8000/listen.pls
+      |      ^^^^^^^^^^
+      |
+error: `Radis` should be `Radix`
+  --> ./Release/Win32/Radios/Imported.txt:17320:1
+      |
+17320 | Radis IN ISRAEL;http://212.29.254.129:8400/;http://212.29.254.129:8400/
+      | ^^^^^
+      |
+error: `Exemple` should be `Example`
+  --> ./Release/Win32/Radios/Imported.txt:17450:7
+      |
+17450 | Радио Exemple Radio онлайн;http://stream8.radiostyle.ru:8008/a0d64614;http://stream8.radiostyle.ru:8008/a0d64614
+      |       ^^^^^^^
+      |
+error: `Gard` should be `Guard`
+  --> ./Release/Win32/Radios/Imported.txt:17597:13
+      |
+17597 | France Bleu Gard Lozère;http://mp3lg4.tdf-cdn.com/6855/fbgardlozere-hd.mp3;http://mp3lg4.tdf-cdn.com/6855/fbgardlozere-hd.mp3
+      |             ^^^^
+      |
+error: `Corporacion` should be `Corporation`
+  --> ./Release/Win32/Radios/Imported.txt:17984:7
+      |
+17984 | Radio Corporacion 1380;http://s1.jcwebnew.com:8018;http://s1.jcwebnew.com:8018
+      |       ^^^^^^^^^^^
+      |
+error: `MILLENIUM` should be `MILLENNIUM`
+  --> ./Release/Win32/Radios/Imported.txt:18196:1
+      |
+18196 | MILLENIUM FM Electro Dj Web radio;http://milleniumfm.dyndns.org:8000/stream.mp3;http://milleniumfm.dyndns.org:8000/stream.mp3
+      | ^^^^^^^^^
+      |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:18198:1
+      |
+18198 | Frequence Luz;http://www.frequenceluz.com:8000/mobile;http://www.frequenceluz.com:8000/mobile
+      | ^^^^^^^^^
+      |
+error: `Tha` should be `Than`, `That`, `The`
+  --> ./Release/Win32/Radios/Imported.txt:18355:1
+      |
+18355 | Tha Afterparty Radio A-Side;http://173.193.205.96:9030/stream;http://173.193.205.96:9030/stream
+      | ^^^
+      |
+error: `Tha` should be `Than`, `That`, `The`
+  --> ./Release/Win32/Radios/Imported.txt:18356:1
+      |
+18356 | Tha Afterparty Radio B-Side;http://173.193.205.96:9087/stream;http://173.193.205.96:9087/stream
+      | ^^^
+      |
+error: `Worthing` should be `Worth`, `Meriting`
+  --> ./Release/Win32/Radios/Imported.txt:18448:17
+      |
+18448 | Splash 107.7 FM Worthing, UK;http://s3.xrad.io:8096/;http://s3.xrad.io:8096/
+      |                 ^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:18595:5
+      |
+18595 | RDP Internacional;http://195.245.168.21/rdpi;http://195.245.168.21/rdpi
+      |     ^^^^^^^^^^^^^
+      |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:18738:18
+      |
+18738 | Weather - Fargo, ND;http://audioplayer.wunderground.com/bigfloyd/Fargo.MP3.m3u;http://audioplayer.wunderground.com/bigfloyd/Fargo.MP3.m3u
+      |                  ^^
+      |
+error: `Maks` should be `Mask`, `Masks`, `Makes`, `Make`
+  --> ./Release/Win32/Radios/Imported.txt:18762:1
+      |
+18762 | Maks FM;http://mxsel.maksmedia.ru:8000/maksfm192.m3u;http://mxsel.maksmedia.ru:8000/maksfm192.m3u
+      | ^^^^
+      |
+error: `Compleet` should be `Complete`
+  --> ./Release/Win32/Radios/Imported.txt:18858:1
+      |
+18858 | Compleet FM;http://www.compleetfm.nl/content/16271/download/clnt/11737_mp_128kbps.asx;http://www.compleetfm.nl/content/16271/download/clnt/11737_mp_128kbps.asx
+      | ^^^^^^^^
+      |
+error: `Programm` should be `Program`, `Programme`
+  --> ./Release/Win32/Radios/Imported.txt:18862:23
+      |
+18862 | WDR Funkhaus Europa - Programm Na Russkomm Jayske;http://fhe-russisch.akacast.akamaistream.net/7/786/195509/v1/gnl.akacast.akamaistream.net/fhe-russisch;http://fhe-russisch.akacast.akamaistream.net/7/786/195509/v1/gnl.akacast.akamaistream.net/fhe-russisch
+      |                       ^^^^^^^^
+      |
+error: `Freee` should be `Free`
+  --> ./Release/Win32/Radios/Imported.txt:19157:7
+      |
+19157 | Radio Freee 89.9 FM;http://radiofreee.pl/streaming/radiofreeeacp.m3u;http://radiofreee.pl/streaming/radiofreeeacp.m3u
+      |       ^^^^^
+      |
+error: `INRO` should be `INTO`
+  --> ./Release/Win32/Radios/Imported.txt:19243:1
+      |
+19243 | INRO Zvolen;http://inro.tuzvo.sk:8800/inrohq.ogg;http://inro.tuzvo.sk:8800/inrohq.ogg
+      | ^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19298:16
+      |
+19298 | 100Radios - 80 Internacional;http://buecrplb01.cienradios.com.ar/80_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/80_Internacional_32000.aac
+      |                ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19300:27
+      |
+19300 | 100Radios - 90 Nacional e Internacional;http://buecrplb01.cienradios.com.ar/90_Nacional_E_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/90_Nacional_E_Internacional_32000.aac
+      |                           ^^^^^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19302:30
+      |
+19302 | 100Radios - Alejandro Sanz y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Alejandro_Sanz_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Alejandro_Sanz_y_Artistas_Relacionados_32000.aac
+      |                              ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19303:31
+      |
+19303 | 100Radios - Andres Calamaro y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Andres_Calamaro_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Andres_Calamaro_y_Artistas_Relacionados_32000.aac
+      |                               ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19306:26
+      |
+19306 | 100Radios - Bob Marley y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Bob_Marley_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Bob_Marley_y_Artistas_Relacionados_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Creedence` should be `Credence`
+  --> ./Release/Win32/Radios/Imported.txt:19314:13
+      |
+19314 | 100Radios - Creedence Clearwater Revival;http://buecrplb01.cienradios.com.ar/Creedence_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Creedence_y_Art_Rel_32000.aac
+      |             ^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19319:24
+      |
+19319 | 100Radios - Don Omar y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Don_Omar_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Don_Omar_y_Artistas_Relacionados_32000.aac
+      |                        ^^^^^^^^
+      |
+error: `artistas` should be `artists`
+  --> ./Release/Win32/Radios/Imported.txt:19326:25
+      |
+19326 | 100Radios - Fito Paez y artistas relacionados;http://buecrplb01.cienradios.com.ar/Fito_Paez_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Fito_Paez_y_Artistas_Relacionados_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `artistas` should be `artists`
+  --> ./Release/Win32/Radios/Imported.txt:19370:29
+      |
+19370 | 100Radios - Guns N' Roses y artistas relacionados;http://buecrplb01.cienradios.com.ar/Guns_N_Roses_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Guns_N_Roses_y_Artistas_Relacionados_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Satelite` should be `Satellite`
+  --> ./Release/Win32/Radios/Imported.txt:19380:5
+      |
+19380 | rockSatelite-MadridONE;http://listen.radionomy.com/rocksatelitemadridone.m3u;http://listen.radionomy.com/rocksatelitemadridone.m3u
+      |     ^^^^^^^^
+      |
+error: `Infinit` should be `Infinite`
+  --> ./Release/Win32/Radios/Imported.txt:19541:7
+      |
+19541 | Radio Infinit 87.8 FM;http://www.radioinfinit.ro:18000/infinit64.ogg;http://www.radioinfinit.ro:18000/infinit64.ogg
+      |       ^^^^^^^
+      |
+error: `Pont` should be `Point`
+  --> ./Release/Win32/Radios/Imported.txt:19659:7
+      |
+19659 | Rádió Pont1 FM 91.1;http://178.248.200.62:8000/radio.1.mp3;http://178.248.200.62:8000/radio.1.mp3
+      |       ^^^^
+      |
+error: `Som` should be `Some`
+  --> ./Release/Win32/Radios/Imported.txt:19660:7
+      |
+19660 | Rádió Som FM 99.5;http://87.229.45.44:8100/;http://87.229.45.44:8100/
+      |       ^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19662:13
+      |
+19662 | Radio Costa Internacional 101.2 FM;http://91.199.236.159:9898/;http://91.199.236.159:9898/
+      |             ^^^^^^^^^^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:19775:7
+      |
+19775 | Radio Puls Grocka;http://stream2.orion.rs:9000/;http://stream2.orion.rs:9000/
+      |       ^^^^
+      |
+error: `Repete` should be `Repeat`
+  --> ./Release/Win32/Radios/Imported.txt:19779:18
+      |
+19779 | tvojeRADIO.com - Repete;http://93.184.66.213:8100/;http://93.184.66.213:8100/
+      |                  ^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19874:20
+      |
+19874 | 100Radios - Abba y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Abba_y_Art_Relac_32000.aac;http://buecrplb01.cienradios.com.ar/Abba_y_Art_Relac_32000.aac
+      |                    ^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19877:19
+      |
+19877 | 100Radios - 80_90_Internacional;http://buecrplb01.cienradios.com.ar/80_90_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/80_90_Internacional_32000.aac
+      |                   ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19878:27
+      |
+19878 | 100Radios - 80_Nacional_E_Internacional;http://buecrplb01.cienradios.com.ar/80_Nacional_E_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/80_Nacional_E_Internacional_32000.aac
+      |                           ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19879:16
+      |
+19879 | 100Radios - 90 Internacional;http://buecrplb01.cienradios.com.ar/90_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/90_Internacional_32000.aac
+      |                ^^^^^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19881:27
+      |
+19881 | 100Radios - Frank Zappa y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Frank_Zappa_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Frank_Zappa_y_Artistas_Relacionados_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19882:22
+      |
+19882 | 100Radios - Juanes y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Juanes_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Juanes_y_Artistas_Relacionados_32000.aac
+      |                      ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19884:29
+      |
+19884 | 100Radios - Elvis Presley y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Elvis_Presley_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Elvis_Presley_y_Artistas_Relacionados_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19904:24
+      |
+19904 | 100Radios - Chayanne y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Chayanne_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Chayanne_y_Artistas_Relacionados_32000.aac
+      |                        ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19913:27
+      |
+19913 | 100Radios - John Lennon y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/John_Lennon_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/John_Lennon_y_Artistas_Relacionados_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19914:34
+      |
+19914 | 100Radios - Joan Manuel Serrat y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Joan_Manuel_Serrat_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Joan_Manuel_Serrat_y_Artistas_Relacionados_32000.aac
+      |                                  ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19915:31
+      |
+19915 | 100Radios - Julieta Venegas y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Julieta_Venegas_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Julieta_Venegas_y_Artistas_Relacionados_32000.aac
+      |                               ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19916:30
+      |
+19916 | 100Radios - Jonas Brothers y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Jonas_Brothers_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Jonas_Brothers_y_Artistas_Relacionados_32000.aac
+      |                              ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19937:30
+      |
+19937 | 100Radios - Paul McCartney y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Paul_McCartney_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Paul_McCartney_y_Artistas_Relacionados_32000.aac
+      |                              ^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19938:29
+      |
+19938 | 100Radios - Nuevos Clasicos Internacional;http://buecrplb01.cienradios.com.ar/Nuevos_Clasicos_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/Nuevos_Clasicos_Internacional_32000.aac
+      |                             ^^^^^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19939:40
+      |
+19939 | 100Radios - Nuevos Clasicos Nacional e Internacional;http://buecrplb01.cienradios.com.ar/Nuevos_Clasicos_Nacional_E_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/Nuevos_Clasicos_Nacional_E_Internacional_32000.aac
+      |                                        ^^^^^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19943:21
+      |
+19943 | 100Radios - Queen y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Queen_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Queen_y_Artistas_Relacionados_32000.aac
+      |                     ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19948:32
+      |
+19948 | 100Radios - Ricardo Montaner y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Ricardo_Montaner_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Ricardo_Montaner_y_Artistas_Relacionados_32000.aac
+      |                                ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19953:18
+      |
+19953 | 100Radios - U2 y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/U2_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/U2_y_Artistas_Relacionados_32000.aac
+      |                  ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19954:23
+      |
+19954 | 100Radios - Shakira y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Shakira_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Shakira_y_Artistas_Relacionados_32000.aac
+      |                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19956:27
+      |
+19956 | 100Radios - Soda Stereo y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Soda_Stereo_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Soda_Stereo_y_Artistas_Relacionados_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19957:26
+      |
+19957 | 100Radios - The Police y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/The_Police_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/The_Police_y_Artistas_Relacionados_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:19961:18
+      |
+19961 | 100Radios - Teen Internacional;http://buecrplb01.cienradios.com.ar/Teen_Internacional_32000.aac;http://buecrplb01.cienradios.com.ar/Teen_Internacional_32000.aac
+      |                  ^^^^^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19966:18
+      |
+19966 | 100radios Axel y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Axel_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Axel_y_Artistas_Relacionados_32000.aac
+      |                  ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19967:23
+      |
+19967 | 100radios Bob Dylan y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Bob_Dylan_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Bob_Dylan_y_Art_Rel_32000.aac
+      |                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19968:24
+      |
+19968 | 100radios Billy Joel y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Billy_Joel_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Billy_Joel_y_Art_Rel_32000.aac
+      |                        ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19969:25
+      |
+19969 | 100radios Bryan Adams y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Bryan_Adams_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Bryan_Adams_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19970:22
+      |
+19970 | 100radios Bon Jovi y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Bon_Jovi_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Bon_Jovi_y_Art_Rel_32000.aac
+      |                      ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19972:25
+      |
+19972 | 100radios Celine Dion y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Celine_Dion_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Celine_Dion_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19973:22
+      |
+19973 | 100radios Coldplay y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Coldplay_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Coldplay_y_Art_Rel_32000.aac
+      |                      ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19974:24
+      |
+19974 | 100radios Elton John y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Elton_John_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Elton_John_y_Art_Rel_32000.aac
+      |                        ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19975:25
+      |
+19975 | 100radios Demi Lovato y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Demi_Lovato_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Demi_Lovato_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19976:26
+      |
+19976 | 100radios Eric Clapton y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Eric_Clapton_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Eric_Clapton_y_Art_Rel_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19977:29
+      |
+19977 | 100radios Eros Ramazzotti y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Eros_Ramazzotti_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Eros_Ramazzotti_y_Art_Rel_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19979:21
+      |
+19979 | 100Radios Genesis y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Genesis_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Genesis_y_Art_Rel_32000.aac
+      |                     ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19980:18
+      |
+19980 | 100Radios Glee y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Glee_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Glee_y_Art_Rel_32000.aac
+      |                  ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19990:25
+      |
+19990 | 100Radios James Blunt y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/James_Blunt_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/James_Blunt_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19991:19
+      |
+19991 | 100Radios Keane y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Keane_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Keane_y_Art_Rel_32000.aac
+      |                   ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19992:34
+      |
+19992 | 100Radios La Oreja de Van Gogh y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/La_Oreja_de_Van_Gogh_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/La_Oreja_de_Van_Gogh_y_Art_Rel_32000.aac
+      |                                  ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19993:27
+      |
+19993 | 100Radios Lenny Kravitz y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Lenny_Kravitz_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Lenny_Kravitz_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19995:27
+      |
+19995 | 100Radios Michael Buble y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Michael_Buble_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Michael_Buble_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19996:19
+      |
+19996 | 100Radios Oasis y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Oasis_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Oasis_y_Art_Rel_32000.aac
+      |                   ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19997:27
+      |
+19997 | 100Radios Peter Gabriel y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Peter_Gabriel_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Peter_Gabriel_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:19999:27
+      |
+19999 | 100Radios One Direction y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/One_Direction_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/One_Direction_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20001:26
+      |
+20001 | 100radios David Bisbal y Artistas relacionados;http://buecrplb01.cienradios.com.ar/David_Bisbal_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/David_Bisbal_y_Art_Rel_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20002:24
+      |
+20002 | 100radios Beach Boys y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Beach_Boys_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Beach_Boys_y_Art_Rel_32000.aac
+      |                        ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20004:29
+      |
+20004 | 100radios Cristian Castro y Artistas relacionados;http://buecrplb01.cienradios.com.ar/Cristian_Castro_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Cristian_Castro_y_Art_Rel_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20015:26
+      |
+20015 | 100Radios - Pink Floyd y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Pink_Floyd_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Pink_Floyd_y_Artistas_Relacionados_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20022:39
+      |
+20022 | 100Radios - Los Fabulosos Cadillacs y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Los_Fabulosos_Cadillacs_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Los_Fabulosos_Cadillacs_y_Artistas_Relacionados_32000.aac
+      |                                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20024:29
+      |
+20024 | 100Radios - Carlos Gardel y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Carlos_Gardel_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Carlos_Gardel_y_Artistas_Relacionados_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20025:29
+      |
+20025 | 100Radios - Charly García y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Charly_Garcia_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Charly_Garcia_y_Artistas_Relacionados_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20026:28
+      |
+20026 | 100Radios - Diego_Torres_y_Artistas_Relacionados;http://buecrplb01.cienradios.com.ar/Diego_Torres_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Diego_Torres_y_Artistas_Relacionados_32000.aac
+      |                            ^^^^^^^^
+      |
+error: `Freez` should be `Frees`, `Freeze`
+  --> ./Release/Win32/Radios/Imported.txt:20129:1
+      |
+20129 | Freez FM;http://178.19.127.9:80;http://178.19.127.9:80
+      | ^^^^^
+      |
+error: `Nationaal` should be `National`
+  --> ./Release/Win32/Radios/Imported.txt:20290:15
+      |
+20290 | Radio Woerden Nationaal;http://178.19.116.3:8034/stream;http://178.19.116.3:8034/stream
+      |               ^^^^^^^^^
+      |
+error: `Internacional` should be `International`
+  --> ./Release/Win32/Radios/Imported.txt:20362:16
+      |
+20362 | Radio Amanecer Internacional;http://ice.eleden.com:8000/amanecer.mp3.m3u;http://ice.eleden.com:8000/amanecer.mp3.m3u
+      |                ^^^^^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:20383:29
+      |
+20383 | 100Radios George Harrison y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/George_Harrison_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/George_Harrison_y_Art_Rel_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./Release/Win32/Radios/Imported.txt:20399:16
+      |
+20399 | Radio Pricaona ba Sarajevo;http://50.7.158.42:8028/;http://50.7.158.42:8028/
+      |                ^^
+      |
+error: `Espace` should be `Escape`
+  --> ./Release/Win32/Radios/Imported.txt:20408:7
+      |
+20408 | RTS - Espace 2;http://stream.srg-ssr.ch/m/espace-2/aacp_96;http://stream.srg-ssr.ch/m/espace-2/aacp_96
+      |       ^^^^^^
+      |
+error: `ADN` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:20623:1
+      |
+20623 | ADN Trance;http://72.46.136.154:7073;http://72.46.136.154:7073
+      | ^^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./Release/Win32/Radios/Imported.txt:20771:35
+      |
+20771 | Radio Dzungla Doboj;http://mobile.ba:16000;http://mobile.ba:16000
+      |                                   ^^
+      |
+error: `ba` should be `by`, `be`
+  --> ./Release/Win32/Radios/Imported.txt:20771:58
+      |
+20771 | Radio Dzungla Doboj;http://mobile.ba:16000;http://mobile.ba:16000
+      |                                                          ^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:20935:7
+      |
+20935 | Radio Puls - Despotovac;http://178.79.25.9:8026/;http://178.79.25.9:8026/
+      |       ^^^^
+      |
+error: `Ot` should be `To`, `Of`, `Or`
+  --> ./Release/Win32/Radios/Imported.txt:20957:5
+      |
+20957 | RaDiOtOP.Cz;http://www.radiotop.cz/play/192.m3u;http://www.radiotop.cz/play/192.m3u
+      |     ^^
+      |
+error: `Austrija` should be `Austria`
+  --> ./Release/Win32/Radios/Imported.txt:21413:14
+      |
+21413 | Radio Mileva Austrija;http://s12.pop-stream.de:12070/;http://s12.pop-stream.de:12070/
+      |              ^^^^^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:21467:7
+      |
+21467 | Radio Puls Luxembourg;http://82.145.43.92:8312/stream;http://82.145.43.92:8312/stream
+      |       ^^^^
+      |
+error: `Passione` should be `Passionate`
+  --> ./Release/Win32/Radios/Imported.txt:21605:15
+      |
+21605 | RCB Radio Per Passione;http://37.187.79.56:3144/;stream.mp3;http://37.187.79.56:3144/;stream.mp3
+      |               ^^^^^^^^
+      |
+error: `Handel` should be `Handle`
+  --> ./Release/Win32/Radios/Imported.txt:21635:30
+      |
+21635 | Calm Radio - George Frideric Handel;http://calm11.calmradio.com:8486/stream;http://calm11.calmradio.com:8486/stream
+      |                              ^^^^^^
+      |
+error: `Tre` should be `Tree`
+  --> ./Release/Win32/Radios/Imported.txt:21724:11
+      |
+21724 | Radio GRP Tre;http://onair15.xdevel.com:8228;http://onair15.xdevel.com:8228
+      |           ^^^
+      |
+error: `Absolut` should be `Absolute`
+  --> ./Release/Win32/Radios/Imported.txt:22096:1
+      |
+22096 | Absolut relax;http://absolut.hoerradar.de/absolutradio-relax-mp3-128;http://absolut.hoerradar.de/absolutradio-relax-mp3-128
+      | ^^^^^^^
+      |
+error: `Absolut` should be `Absolute`
+  --> ./Release/Win32/Radios/Imported.txt:22097:1
+      |
+22097 | Absolut HOT;http://absolut.hoerradar.de/absolutradio-hot-mp3-128;http://absolut.hoerradar.de/absolutradio-hot-mp3-128
+      | ^^^^^^^
+      |
+error: `Doble` should be `Double`
+  --> ./Release/Win32/Radios/Imported.txt:22112:7
+      |
+22112 | Radio Doble Nueve;http://198.50.238.203:7014/;http://198.50.238.203:7014/
+      |       ^^^^^
+      |
+error: `Doble` should be `Double`
+  --> ./Release/Win32/Radios/Imported.txt:22114:7
+      |
+22114 | Radio Doble N;http://184.107.199.202:9095;http://184.107.199.202:9095
+      |       ^^^^^
+      |
+error: `Integracion` should be `Integration`
+  --> ./Release/Win32/Radios/Imported.txt:22389:4
+      |
+22389 | FM Integracion 99.3mhz;http://fmintegracion.com.ar:8000/;http://fmintegracion.com.ar:8000/
+      |    ^^^^^^^^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:22428:1
+      |
+22428 | Puls FM - Pure Dance Radio;http://tuner.pulsfm.de:80;http://tuner.pulsfm.de:80
+      | ^^^^
+      |
+error: `Oder` should be `Order`, `Odor`
+  --> ./Release/Win32/Radios/Imported.txt:22431:17
+      |
+22431 | Radio Frankfurt Oder 99.3;http://stream.telvi.de:8000/radio_frankfurtoder;http://stream.telvi.de:8000/radio_frankfurtoder
+      |                 ^^^^
+      |
+error: `Framwork` should be `Framework`
+  --> ./Release/Win32/Radios/Imported.txt:22465:12
+      |
+22465 | Radio NRW (Framwork program);http://osl.radionrw.de/osl;http://osl.radionrw.de/osl
+      |            ^^^^^^^^
+      |
+error: `Principales` should be `Principles`
+  --> ./Release/Win32/Radios/Imported.txt:22745:8
+      |
+22745 | Los 40 Principales FM 96.5 - La Plata;http://201.251.11.107:9000/;http://201.251.11.107:9000/
+      |        ^^^^^^^^^^^
+      |
+error: `BA` should be `BY`, `BE`
+  --> ./Release/Win32/Radios/Imported.txt:22762:6
+      |
+22762 | RadioBA;http://streaming.radioba.ba:10002/radio_Ba.m3u;http://streaming.radioba.ba:10002/radio_Ba.m3u
+      |      ^^
+      |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:22924:20
+      |
+22924 | KFGO 790 AM Fargo, ND;http://provisioning.streamtheworld.com/pls/KFGOAMAAC.pls;http://provisioning.streamtheworld.com/pls/KFGOAMAAC.pls
+      |                    ^^
+      |
+error: `nostalgija` should be `nostalgia`
+  --> ./Release/Win32/Radios/Imported.txt:23115:30
+      |
+23115 | Igokea Aleksandrovac - ex yu nostalgija;http://s9.voscast.com:7506;http://s9.voscast.com:7506
+      |                              ^^^^^^^^^^
+      |
+error: `Simle` should be `Simple`, `Smile`, `Simile`
+  --> ./Release/Win32/Radios/Imported.txt:23157:1
+      |
+23157 | Simle Sussex Radio;http://icy-e-04.sharp-stream.com:80/smilesussex.mp3;http://icy-e-04.sharp-stream.com:80/smilesussex.mp3
+      | ^^^^^
+      |
+error: `Austrija` should be `Austria`
+  --> ./Release/Win32/Radios/Imported.txt:23202:11
+      |
+23202 | Moj Radio Austrija;http://94.23.62.189:5692/;stream/1;http://94.23.62.189:5692/;stream/1
+      |           ^^^^^^^^
+      |
+error: `Vas` should be `Was`
+  --> ./Release/Win32/Radios/Imported.txt:23204:1
+      |
+23204 | Vas Radio Bosanka Radio;http://50.7.129.122:8311/;http://50.7.129.122:8311/
+      | ^^^
+      |
+error: `Ede` should be `Edge`
+  --> ./Release/Win32/Radios/Imported.txt:23256:1
+      |
+23256 | Ede FM;http://89.105.200.190:8032/;http://89.105.200.190:8032/
+      | ^^^
+      |
+error: `Socialy` should be `Socially`
+  --> ./Release/Win32/Radios/Imported.txt:23353:2
+      |
+23353 | TSocialy;http://streaming.radionomy.com/TSocialy;http://streaming.radionomy.com/TSocialy
+      |  ^^^^^^^
+      |
+error: `Ser` should be `Set`
+  --> ./Release/Win32/Radios/Imported.txt:23438:13
+      |
+23438 | Esencia del Ser;http://listen.radionomy.com/esencia-del-ser.m3u;http://listen.radionomy.com/esencia-del-ser.m3u
+      |             ^^^
+      |
+error: `Espace` should be `Escape`
+  --> ./Release/Win32/Radios/Imported.txt:23570:1
+      |
+23570 | Espace FM - 99.6 FM Conakry, Guinee;http://www.streamakaci.com/radios/espacefm.pls;http://www.streamakaci.com/radios/espacefm.pls
+      | ^^^^^^
+      |
+error: `Puls` should be `Pulse`, `Plus`
+  --> ./Release/Win32/Radios/Imported.txt:24043:1
+      |
+24043 | Puls Radio;http://www.pulsradio.com/pls/puls-wmp.asx;http://www.pulsradio.com/pls/puls-wmp.asx
+      | ^^^^
+      |
+error: `Ba` should be `By`, `Be`
+  --> ./Release/Win32/Radios/Imported.txt:24104:4
+      |
+24104 | NeTBaR Radio (Web);http://46.23.68.170:9980;http://46.23.68.170:9980
+      |    ^^
+      |
+error: `Austrija` should be `Austria`
+  --> ./Release/Win32/Radios/Imported.txt:24122:12
+      |
+24122 | Radio Mely Austrija;http://46.4.106.10:9992/;stream.mp3;http://46.4.106.10:9992/;stream.mp3
+      |            ^^^^^^^^
+      |
+error: `PULS` should be `PULSE`, `PLUS`
+  --> ./Release/Win32/Radios/Imported.txt:24163:6
+      |
+24163 | BR - PULS;http://streams.br-online.de/jugend-radio_2.m3u;http://streams.br-online.de/jugend-radio_2.m3u
+      |      ^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24192:21
+      |
+24192 | 100Radios - AC DC y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/AC_DC_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/AC_DC_y_Artistas_Relacionados_32000.aac
+      |                     ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24195:26
+      |
+24195 | 100Radios - Attaque 77 y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Attaque_77_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Attaque_77_y_Artistas_Relacionados_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24222:30
+      |
+24222 | 100Radios - Joaquin Sabina y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Joaquin_Sabina_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Joaquin_Sabina_y_Artistas_Relacionados_32000.aac
+      |                              ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24226:28
+      |
+24226 | 100Radios - Los Nocheros y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Los_Nocheros_y_Art_Relac_32000.aac;http://buecrplb01.cienradios.com.ar/Los_Nocheros_y_Art_Relac_32000.aac
+      |                            ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24227:27
+      |
+24227 | 100Radios - Los Pericos y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Los_Pericos_y_Art_Relac_32000.aac;http://buecrplb01.cienradios.com.ar/Los_Pericos_y_Art_Relac_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24232:34
+      |
+24232 | 100Radios - The Rolling Stones y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/The_Rolling_Stones_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/The_Rolling_Stones_y_Artistas_Relacionados_32000.aac
+      |                                  ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24233:27
+      |
+24233 | 100Radios - The Ramones y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/The_Ramones_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/The_Ramones_y_Artistas_Relacionados_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24235:22
+      |
+24235 | 100Radios - Sandro y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Sandro_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Sandro_y_Artistas_Relacionados_32000.aac
+      |                      ^^^^^^^^
+      |
+error: `Princesas` should be `Princess`
+  --> ./Release/Win32/Radios/Imported.txt:24249:13
+      |
+24249 | 100Radios - Princesas;http://buecrplb01.cienradios.com.ar/Princesas_32000.aac;http://buecrplb01.cienradios.com.ar/Princesas_32000.aac
+      |             ^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24250:55
+      |
+24250 | 100Radios - Patricio Rey y Sus Redonditos de Ricota y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Los_Redondos_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Los_Redondos_y_Artistas_Relacionados_32000.aac
+      |                                                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24268:27
+      |
+24268 | 100Radios - Miley Cyrus y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Miley_Cyrus_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Miley_Cyrus_y_Artistas_Relacionados_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24269:29
+      |
+24269 | 100Radios - Mercedes Sosa y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Mercedes_Sosa_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Mercedes_Sosa_y_Artistas_Relacionados_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24270:20
+      |
+24270 | 100Radios - Maná y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Mana_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Mana_y_Artistas_Relacionados_32000.aac
+      |                    ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24273:32
+      |
+24273 | 100Radios - Los_Chalchaleros_y_Artistas_Relacionados;http://buecrplb01.cienradios.com.ar/Los_Chalchaleros_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Los_Chalchaleros_y_Artistas_Relacionados_32000.aac
+      |                                ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24291:26
+      |
+24291 | 100Radios - Ivan Noble y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Ivan_Noble_y_Art_Relac_32000.aac;http://buecrplb01.cienradios.com.ar/Ivan_Noble_y_Art_Relac_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24292:25
+      |
+24292 | 100Radios - Divididos y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Divididos_y_Art_Relac_32000.aac;http://buecrplb01.cienradios.com.ar/Divididos_y_Art_Relac_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24294:34
+      |
+24294 | 100Radios - Bersuit Vergarabat y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Bersuit_Vergarabat_y_Art_Relac_32000.aac;http://buecrplb01.cienradios.com.ar/Bersuit_Vergarabat_y_Art_Relac_32000.aac
+      |                                  ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24296:27
+      |
+24296 | 100Radios - Los Tipitos y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Los_Tipitos_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Los_Tipitos_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24297:23
+      |
+24297 | 100Radios - Madonna y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Madonna_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Madonna_y_Artistas_Relacionados_32000.aac
+      |                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24298:32
+      |
+24298 | 100Radios - Los Chalchaleros y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Los_Chalchaleros_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Los_Chalchaleros_y_Artistas_Relacionados_32000.aac
+      |                                ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24299:25
+      |
+24299 | 100Radios - Metallica y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Metallica_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Metallica_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24301:23
+      |
+24301 | 100Radios - Miranda y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Miranda_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Miranda_y_Art_Rel_32000.aac
+      |                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24302:25
+      |
+24302 | 100Radios - Morrissey y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Morrissey_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Morrissey_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24305:20
+      |
+24305 | 100Radios - Muse y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Muse_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Muse_y_Art_Rel_32000.aac
+      |                    ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24306:23
+      |
+24306 | 100Radios - Nirvana y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Nirvana_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Nirvana_y_Art_Rel_32000.aac
+      |                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24307:31
+      |
+24307 | 100Radios - No Te Va Gustar y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/No_Te_Va_Gustar_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/No_Te_Va_Gustar_y_Art_Rel_32000.aac
+      |                               ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24308:26
+      |
+24308 | 100Radios - Leon Gieco y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Leon_Gieco_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Leon_Gieco_y_Art_Rel_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24311:25
+      |
+24311 | 100Radios - Pearl Jam y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Pearl_Jam_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Pearl_Jam_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24312:28
+      |
+24312 | 100Radios - Led Zeppelin y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Led_Zeppelin_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Led_Zeppelin_y_Art_Rel_32000.aac
+      |                            ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24315:25
+      |
+24315 | 100Radios - Pimpinela y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Pimpinela_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Pimpinela_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24317:30
+      |
+24317 | 100Radios - Gloria Estefan y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Gloria_Estefan_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Gloria_Estefan_y_Art_Rel_32000.aac
+      |                              ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24320:21
+      |
+24320 | 100Radios - Adele y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Adele_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Adele_y_Art_Rel_32000.aac
+      |                     ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24321:25
+      |
+24321 | 100Radios - Aerosmith y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Aerosmith_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Aerosmith_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24323:29
+      |
+24323 | 100Radios - Amy Winehouse y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Amy_Winehouse_32000.aac;http://buecrplb01.cienradios.com.ar/Amy_Winehouse_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24325:27
+      |
+24325 | 100Radios - Babasónicos y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Babasonicos_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Babasonicos_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24327:23
+      |
+24327 | 100Radios - Beyonce y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Beyonce_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Beyonce_y_Art_Rel_32000.aac
+      |                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24328:29
+      |
+24328 | 100Radios - Big Time Rush y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Big_Time_Rush_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Big_Time_Rush_y_Art_Rel_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24329:31
+      |
+24329 | 100Radios - Black Eyed Peas y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Black_Eyed_Peas_32000.aac;http://buecrplb01.cienradios.com.ar/Black_Eyed_Peas_32000.aac
+      |                               ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24330:29
+      |
+24330 | 100Radios - Cacho Castana y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Cacho_Castana_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Cacho_Castana_y_Art_Rel_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24333:30
+      |
+24333 | 100Radios - Catupecu Machu y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Catupecu_Machu_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Catupecu_Machu_y_Art_Rel_32000.aac
+      |                              ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24334:27
+      |
+24334 | 100Radios - David Bowie y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/David_Bowie_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/David_Bowie_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24335:28
+      |
+24335 | 100Radios - David Guetta y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/David_Guetta_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/David_Guetta_y_Art_Rel_32000.aac
+      |                            ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24336:27
+      |
+24336 | 100Radios - Deep Purple y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Deep_Purple_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Deep_Purple_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24337:28
+      |
+24337 | 100Radios - Depeche Mode y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Depeche_Mode_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Depeche_Mode_y_Art_Rel_32000.aac
+      |                            ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24338:32
+      |
+24338 | 100Radios - Enrique Iglesias y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Enrique_Iglesias_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Enrique_Iglesias_y_Art_Rel_32000.aac
+      |                                ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24339:23
+      |
+24339 | 100Radios - Erasure y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Erasure_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Erasure_y_Art_Rel_32000.aac
+      |                       ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24340:31
+      |
+24340 | 100Radios - Fabiana Cantilo y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Fabiana_Cantilo_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Fabiana_Cantilo_y_Art_Rel_32000.aac
+      |                               ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24343:29
+      |
+24343 | 100Radios - Juan L Guerra y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Juan_L_Guerra_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Juan_L_Guerra_y_Art_Rel_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24344:29
+      |
+24344 | 100Radios - Justin Bieber y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Justin_Bieber_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Justin_Bieber_y_Art_Rel_32000.aac
+      |                             ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24345:20
+      |
+24345 | 100Radios - Kiss y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Kiss_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Kiss_y_Art_Rel_32000.aac
+      |                    ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24346:26
+      |
+24346 | 100Radios - Katy Perry y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Katy_Perry_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Katy_Perry_y_Art_Rel_32000.aac
+      |                          ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24347:24
+      |
+24347 | 100Radios - La Renga y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/La_Renga_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/La_Renga_y_Art_Rel_32000.aac
+      |                        ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24348:25
+      |
+24348 | 100Radios - Lady Gaga y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Lady_Gaga_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Lady_Gaga_y_Art_Rel_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24349:25
+      |
+24349 | 100Radios - Piazzolla y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Piazzolla_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Piazzolla_y_Artistas_Relacionados_32000.aac
+      |                         ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24370:22
+      |
+24370 | 100Radios - Prince y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Prince_y_Artistas_Relacionados_32000.aac;http://buecrplb01.cienradios.com.ar/Prince_y_Artistas_Relacionados_32000.aac
+      |                      ^^^^^^^^
+      |
+error: `Meditacion` should be `Medications`
+  --> ./Release/Win32/Radios/Imported.txt:24404:21
+      |
+24404 | 100Radios - Relax_y_Meditacion;http://buecrplb01.cienradios.com.ar/Relax_y_Meditacion_32000.aac;http://buecrplb01.cienradios.com.ar/Relax_y_Meditacion_32000.aac
+      |                     ^^^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24406:24
+      |
+24406 | 100Radios - Bee Gees y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Bee_Gees_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Bee_Gees_y_Art_Rel_32000.aac
+      |                        ^^^^^^^^
+      |
+error: `Artistas` should be `Artists`
+  --> ./Release/Win32/Radios/Imported.txt:24407:27
+      |
+24407 | 100Radios - Duran Duran y Artistas Relacionados;http://buecrplb01.cienradios.com.ar/Duran_Duran_y_Art_Rel_32000.aac;http://buecrplb01.cienradios.com.ar/Duran_Duran_y_Art_Rel_32000.aac
+      |                           ^^^^^^^^
+      |
+error: `Lokale` should be `Locale`
+  --> ./Release/Win32/Radios/Imported.txt:24457:1
+      |
+24457 | Lokale Omroep Goirle;http://5.39.79.33:8015/;&topspeed=on;http://5.39.79.33:8015/;&topspeed=on
+      | ^^^^^^
+      |
+error: `Lokale` should be `Locale`
+  --> ./Release/Win32/Radios/Imported.txt:24458:1
+      |
+24458 | Lokale Omroep Landsmeer;http://stream.zxp.nl:8000/lolradio?type=.mp3;http://stream.zxp.nl:8000/lolradio?type=.mp3
+      | ^^^^^^
+      |
+error: `SER` should be `SET`
+  --> ./Release/Win32/Radios/Imported.txt:24666:2
+      |
+24666 | 2SER 107.3FM;http://stream.2ser.com:8080/broadwave.mp3?src=1&kbps=128;http://stream.2ser.com:8080/broadwave.mp3?src=1&kbps=128
+      |  ^^^
+      |
+error: `Lokale` should be `Locale`
+  --> ./Release/Win32/Radios/Imported.txt:24750:5
+      |
+24750 | LRL Lokale Radio Lanaken;http://srv02.upthecloud.be:9010/;http://srv02.upthecloud.be:9010/
+      |     ^^^^^^
+      |
+error: `Programm` should be `Program`, `Programme`
+  --> ./Release/Win32/Radios/Imported.txt:24811:51
+      |
+24811 | MDR Landesfunkhaus Sachsen, Studio Bautzen (sorb. Programm);http://c22033-ls.i.core.cdn.streamfarm.net/mOFDDgLT69922033/22033mdr/live/app2128740352/w2128904200/live_de_128.mp3;http://c22033-ls.i.core.cdn.streamfarm.net/mOFDDgLT69922033/22033mdr/live/app2128740352/w2128904200/live_de_128.mp3
+      |                                                   ^^^^^^^^
+      |
+error: `Lokale` should be `Locale`
+  --> ./Release/Win32/Radios/Imported.txt:24967:1
+      |
+24967 | Lokale Radio Zaanstad;http://95.211.195.194:8020;http://95.211.195.194:8020
+      | ^^^^^^
+      |
+error: `vas` should be `was`
+  --> ./Release/Win32/Radios/Imported.txt:25002:10
+      |
+25002 | RadioHit vas Online Radio;http://80.86.82.62:20000/stream;http://80.86.82.62:20000/stream
+      |          ^^^
+      |
+error: `Frome` should be `From`
+  --> ./Release/Win32/Radios/Imported.txt:25223:18
+      |
+25223 | The Breeze 107.5 Frome and West Wiltshire;http://stream2.radiomonitor.com:80/Breeze-Warminster-128;http://stream2.radiomonitor.com:80/Breeze-Warminster-128
+      |                  ^^^^^
+      |
+error: `Classicos` should be `Classics`
+  --> ./Release/Win32/Radios/Imported.txt:25637:1
+      |
+25637 | Classicos e Novidades;http://199.217.119.49:18268;http://199.217.119.49:18268
+      | ^^^^^^^^^
+      |
+error: `WIHT` should be `WITH`
+  --> ./Release/Win32/Radios/Imported.txt:25663:1
+      |
+25663 | WIHT 99.5 FM Washington, DC;http://wiht-fm.akacast.akamaistream.net/7/183/20127/v1/auth.akacast.akamaistream.net/wiht-fm;http://wiht-fm.akacast.akamaistream.net/7/183/20127/v1/auth.akacast.akamaistream.net/wiht-fm
+      | ^^^^
+      |
+error: `Tre` should be `Tree`
+  --> ./Release/Win32/Radios/Imported.txt:25699:18
+      |
+25699 | Radio Punto Zero Tre Venezie;http://players.fluidstream.net/rpzfluidstream.pls;http://players.fluidstream.net/rpzfluidstream.pls
+      |                  ^^^
+      |
+error: `Industrail` should be `Industrial`
+  --> ./Release/Win32/Radios/Imported.txt:26245:7
+      |
+26245 | Radio Industrail;http://stream2.radiostyle.ru:8002/industrial;http://stream2.radiostyle.ru:8002/industrial
+      |       ^^^^^^^^^^
+      |
+error: `Mississipi` should be `Mississippi`
+  --> ./Release/Win32/Radios/Imported.txt:26310:7
+      |
+26310 | Radio Mississipi Blues;http://mississipiblues.altervista.org/streaming;http://mississipiblues.altervista.org/streaming
+      |       ^^^^^^^^^^
+      |
+error: `Momentos` should be `Moments`
+  --> ./Release/Win32/Radios/Imported.txt:26391:7
+      |
+26391 | Radio Momentos de Costa Rica;http://184.154.43.106:8016;http://184.154.43.106:8016
+      |       ^^^^^^^^
+      |
+error: `Nin` should be `Inn`, `Min`, `Bin`, `Nine`
+  --> ./Release/Win32/Radios/Imported.txt:26686:7
+      |
+26686 | Radio Nin64;http://stream2.laut.fm/radio_nin64;http://stream2.laut.fm/radio_nin64
+      |       ^^^
+      |
+error: `Amercia` should be `America`
+  --> ./Release/Win32/Radios/Imported.txt:27057:27
+      |
+27057 | Radio Bennett (Morning in Amercia);http://provisioning.streamtheworld.com/pls/BENNIRAAC.pls;http://provisioning.streamtheworld.com/pls/BENNIRAAC.pls
+      |                           ^^^^^^^
+      |
+error: `Portugese` should be `Portuguese`
+  --> ./Release/Win32/Radios/Imported.txt:27102:19
+      |
+27102 | NHK Radio Japan - Portugese;mms://wm.nhk.or.jp/rj/on_demand/wma/portuguese.wma;mms://wm.nhk.or.jp/rj/on_demand/wma/portuguese.wma
+      |                   ^^^^^^^^^
+      |
+error: `Frequence` should be `Frequencies`
+  --> ./Release/Win32/Radios/Imported.txt:27323:11
+      |
+27323 | Radio RFR Frequence Retro;http://37.59.53.200:10027/stream;http://37.59.53.200:10027/stream
+      |           ^^^^^^^^^
+      |
+error: `ND` should be `AND`
+  --> ./Release/Win32/Radios/Imported.txt:27340:19
+      |
+27340 | KLXX AM Bismarck, ND;http://provisioning.streamtheworld.com/pls/KLXXAMAAC.pls;http://provisioning.streamtheworld.com/pls/KLXXAMAAC.pls
+      |                   ^^
+      |

@@ -1,0 +1,25 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:78ed7512-a7ab-4f14-b9e0-cbaf88a1ceee",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-02-21T08:31:24.152Z",
+    "tools": [
+      {
+        "vendor": "cyclonedx",
+        "name": "cdxgen",
+        "version": "8.0.5"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Prabhu Subramanian",
+        "email": "prabhu@appthreat.com"
+      }
+    ]
+  },
+  "components": [],
+  "services": [],
+  "dependencies": []
+}
