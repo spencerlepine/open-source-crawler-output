@@ -1,0 +1,151 @@
+{
+  "generated_at": "2023-02-22T08:32:43Z",
+  "vulnerabilities": [
+    {
+      "rule_id": "taint-rce",
+      "rule_name": "Remote Code Execution",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-78",
+      "owasp_category": "a1-injection",
+      "source": {
+        "label": "s",
+        "line_number": 239,
+        "path": "/github/workspace/plugins/webremote/siphash.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "s",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_1 = ret_eval(s)",
+        "line_number": 241,
+        "path": "/github/workspace/plugins/webremote/siphash.py"
+      },
+      "sink_trigger_word": "eval(",
+      "sink_label": "~call_1 = ret_eval(s)",
+      "sink_type": "RemoteCodeExecution",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "Remote Code Execution via shell with user data from `s in siphash.py:239` used for constructing the command at `siphash.py:241`.",
+      "short_description": "Remote Code Execution via shell with user data from `s in siphash.py:239` used for constructing the command at `siphash.py:241`."
+    },
+    {
+      "rule_id": "taint-traversal",
+      "rule_name": "Directory Traversal",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-22",
+      "owasp_category": "a5-broken-access-control",
+      "source": {
+        "label": "filename",
+        "line_number": 387,
+        "path": "/github/workspace/plugins/webremote/webremote.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "filename",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_1 = ret_open(filename, rb)",
+        "line_number": 389,
+        "path": "/github/workspace/plugins/webremote/webremote.py"
+      },
+      "sink_trigger_word": "open(",
+      "sink_label": "~call_1 = ret_open(filename, rb)",
+      "sink_type": "Exfiltration",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "Exfiltration of data (Path Traversal) due to user data from `filename in webremote.py:387` influencing file operations in `webremote.py:389`.",
+      "short_description": "Exfiltration of data (Path Traversal) due to user data from `filename in webremote.py:387` influencing file operations in `webremote.py:389`."
+    },
+    {
+      "rule_id": "taint-file-write",
+      "rule_name": "File Write",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a5-broken-access-control",
+      "source": {
+        "label": "data",
+        "line_number": 144,
+        "path": "/github/workspace/plugins/rb/URLCache.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "data",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_4 = ret_f.write(data)",
+        "line_number": 156,
+        "path": "/github/workspace/plugins/rb/URLCache.py"
+      },
+      "sink_trigger_word": "f.write(",
+      "sink_label": "~call_4 = ret_f.write(data)",
+      "sink_type": "FileSystem",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "User data from `data in URLCache.py:144` is used in `URLCache.py:156` for file operations.",
+      "short_description": "User data from `data in URLCache.py:144` is used in `URLCache.py:156` for file operations."
+    },
+    {
+      "rule_id": "taint-file-write",
+      "rule_name": "File Write",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a5-broken-access-control",
+      "source": {
+        "label": "artist",
+        "line_number": 119,
+        "path": "/github/workspace/plugins/lyrics/lyrics.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "artist",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_7 = ret_os.mkdir(artist_folder)",
+        "line_number": 131,
+        "path": "/github/workspace/plugins/lyrics/lyrics.py"
+      },
+      "sink_trigger_word": "os.mkdir(",
+      "sink_label": "~call_7 = ret_os.mkdir(artist_folder)",
+      "sink_type": "FileSystem",
+      "type": "Vulnerability",
+      "reassignment_nodes": [
+        {
+          "label": "~call_6 = ret_os.path.join(lyrics_folder, artist[128])",
+          "line_number": 129,
+          "path": "/github/workspace/plugins/lyrics/lyrics.py"
+        },
+        {
+          "label": "artist_folder = ~call_6",
+          "line_number": 129,
+          "path": "/github/workspace/plugins/lyrics/lyrics.py"
+        }
+      ],
+      "description": "User data from `artist in lyrics.py:119` is used in `lyrics.py:131` for file operations.",
+      "short_description": "User data from `artist in lyrics.py:119` is used in `lyrics.py:131` for file operations."
+    },
+    {
+      "rule_id": "taint-file-write",
+      "rule_name": "File Write",
+      "severity": "CRITICAL",
+      "cwe_category": "CWE-732",
+      "owasp_category": "a5-broken-access-control",
+      "source": {
+        "label": "text",
+        "line_number": 230,
+        "path": "/github/workspace/plugins/lyrics/lyrics.py"
+      },
+      "source_trigger_word": "Framework function URL parameter",
+      "source_label": "text",
+      "source_type": "Framework_Parameter",
+      "sink": {
+        "label": "~call_2 = ret_f.write(text)",
+        "line_number": 232,
+        "path": "/github/workspace/plugins/lyrics/lyrics.py"
+      },
+      "sink_trigger_word": "f.write(",
+      "sink_label": "~call_2 = ret_f.write(text)",
+      "sink_type": "FileSystem",
+      "type": "Vulnerability",
+      "reassignment_nodes": [],
+      "description": "User data from `text in lyrics.py:230` is used in `lyrics.py:232` for file operations.",
+      "short_description": "User data from `text in lyrics.py:230` is used in `lyrics.py:232` for file operations."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "baseline_fingerprints": {
+    "scanPrimaryLocationHash": [
+      "8e129c3194d18599",
+      "af52ac6c1d8c7742",
+      "9a9382839a3e1373",
+      "a541855ffb7a5ce5",
+      "e77b24ab4c24cf2f",
+      "8ce0e3e0f924c6a2",
+      "ace693e453ef5296",
+      "c9558570234d0134",
+      "d29ab106b256255d",
+      "1d1c2da8d5dd1d46",
+      "346c8534d87f0617",
+      "42813b0faaa85489",
+      "8b0e91938f2173e1",
+      "605855929a396e9d",
+      "edc36b95e6018c59"
+    ],
+    "scanTagsHash": [
+      "ef18d5f74250ed2f",
+      "ca48ec4ec59195c0",
+      "535f943b8896e2f2",
+      "7dcefa7a0014341a",
+      "517439922300a9a4"
+    ]
+  },
+  "created_at": "2023-02-22 08:33:38.044258"
+}
