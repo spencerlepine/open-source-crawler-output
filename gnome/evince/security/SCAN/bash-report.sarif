@@ -1,0 +1,79 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Shell Script Analysis",
+          "version": "1.0.0-scan",
+          "fullName": "Shell Script Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-a",
+            "--shell=bash",
+            "-f",
+            "json",
+            "-S",
+            "error",
+            "--color=never",
+            "/github/workspace/cut-n-paste/update-from-egg.sh",
+            "/github/workspace/cut-n-paste/synctex/update-synctex-from-TL.sh"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-a --shell=bash -f json -S error --color=never /github/workspace/cut-n-paste/update-from-egg.sh /github/workspace/cut-n-paste/synctex/update-synctex-from-TL.sh",
+          "endTimeUtc": "2023-02-23T08:31:54Z",
+          "workingDirectory": {
+            "uri": "https://github.com/gnome/evince"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-23T08:31:54Z",
+          "workingDirectory": {
+            "uri": "https://github.com/gnome/evince"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "8c0974be-0789-4886-99f1-281cbf597ef4"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "8c0974be-0789-4886-99f1-281cbf597ef4",
+      "runGuid": "9a0fd91e-c8d8-480b-be59-eb16a380b3eb"
+    }
+  ]
+}
