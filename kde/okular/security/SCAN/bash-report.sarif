@@ -1,0 +1,96 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Shell Script Analysis",
+          "version": "1.0.0-scan",
+          "fullName": "Shell Script Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-a",
+            "--shell=bash",
+            "-f",
+            "json",
+            "-S",
+            "error",
+            "--color=never",
+            "/github/workspace/Messages.sh",
+            "/github/workspace/generators/xps/Messages.sh",
+            "/github/workspace/generators/markdown/Messages.sh",
+            "/github/workspace/generators/dvi/Messages.sh",
+            "/github/workspace/generators/txt/Messages.sh",
+            "/github/workspace/generators/mobipocket/Messages.sh",
+            "/github/workspace/generators/plucker/Messages.sh",
+            "/github/workspace/generators/kimgio/Messages.sh",
+            "/github/workspace/generators/poppler/Messages.sh",
+            "/github/workspace/generators/fictionbook/Messages.sh",
+            "/github/workspace/generators/epub/Messages.sh",
+            "/github/workspace/generators/tiff/Messages.sh",
+            "/github/workspace/generators/djvu/Messages.sh",
+            "/github/workspace/generators/chm/Messages.sh",
+            "/github/workspace/generators/comicbook/Messages.sh",
+            "/github/workspace/generators/spectre/Messages.sh",
+            "/github/workspace/generators/fax/Messages.sh",
+            "/github/workspace/mobile/app/Messages.sh",
+            "/github/workspace/mobile/components/Messages.sh"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-a --shell=bash -f json -S error --color=never /github/workspace/Messages.sh /github/workspace/generators/xps/Messages.sh /github/workspace/generators/markdown/Messages.sh /github/workspace/generators/dvi/Messages.sh /github/workspace/generators/txt/Messages.sh /github/workspace/generators/mobipocket/Messages.sh /github/workspace/generators/plucker/Messages.sh /github/workspace/generators/kimgio/Messages.sh /github/workspace/generators/poppler/Messages.sh /github/workspace/generators/fictionbook/Messages.sh /github/workspace/generators/epub/Messages.sh /github/workspace/generators/tiff/Messages.sh /github/workspace/generators/djvu/Messages.sh /github/workspace/generators/chm/Messages.sh /github/workspace/generators/comicbook/Messages.sh /github/workspace/generators/spectre/Messages.sh /github/workspace/generators/fax/Messages.sh /github/workspace/mobile/app/Messages.sh /github/workspace/mobile/components/Messages.sh",
+          "endTimeUtc": "2023-02-24T08:32:22Z",
+          "workingDirectory": {
+            "uri": "https://github.com/kde/okular"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-24T08:32:22Z",
+          "workingDirectory": {
+            "uri": "https://github.com/kde/okular"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "d274ec27-92ee-4bb4-a820-e1f2d7086dda"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "d274ec27-92ee-4bb4-a820-e1f2d7086dda",
+      "runGuid": "3f038183-f41e-438f-bfc8-264f4cd907eb"
+    }
+  ]
+}
