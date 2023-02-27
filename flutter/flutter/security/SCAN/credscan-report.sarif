@@ -1,0 +1,1168 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Secrets Audit",
+          "rules": [
+            {
+              "id": "CWE-312",
+              "help": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information.",
+                "markdown": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.\nBecause the information is stored in cleartext, attackers could potentially read it. Even if the information is encoded in a way that is not human-readable, certain techniques could determine which encoding is being used, then decode the information."
+              },
+              "name": "High Entropy",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "very-high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere."
+              },
+              "helpUri": "https://cwe.mitre.org/data/definitions/312.html",
+              "shortDescription": {
+                "text": "Cleartext Storage of Sensitive Information."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Secrets Audit"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "--config-path=/usr/local/src/lib/../credscan-config.toml",
+            "--path=/github/workspace",
+            "--leaks-exit-code=0",
+            "--no-git",
+            "--report=/github/workspace/reports/credscan-report.json"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "--config-path=/usr/local/src/lib/../credscan-config.toml --path=/github/workspace --leaks-exit-code=0 --no-git --report=/github/workspace/reports/credscan-report.json",
+          "endTimeUtc": "2023-02-27T08:36:32Z",
+          "workingDirectory": {
+            "uri": "https://github.com/flutter/flutter"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-27T08:36:32Z",
+          "workingDirectory": {
+            "uri": "https://github.com/flutter/flutter"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 26,
+          "critical": 0,
+          "high": 26,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine: 61aeJQ9laGfEFF_Vlc_u0MCkqB6xb2hAYHRBxKH-Uw4C\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "61aeJQ9laGfEFF_Vlc_u0MCkqB6xb2hAYHRBxKH-Uw4C"
+                  },
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/bin/internal/canvaskit.version"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "61aeJQ9laGfEFF_Vlc_u0MCkqB6xb2hAYHRBxKH-Uw4C"
+                  },
+                  "endLine": 1,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "97f0969d850f4c46",
+            "scanFileHash": "2c15d424e8fd526d"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:     'Cg9DaGVycnlwaWNrU3RhdGUSCwoHUEVORElORxAAEhkKFVBFTkRJTkdfV0lUSF9DT05GTElDVBABEg0KCUNPTVBMRVRFRBACEg0KCUFCQU5ET05FRBAD');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    'Cg9DaGVycnlwaWNrU3RhdGUSCwoHUEVORElORxAAEhkKFVBFTkRJTkdfV0lUSF9DT05GTElDVBABEg0KCUNPTVBMRVRFRBACEg0KCUFCQU5ET05FRBAD');"
+                  },
+                  "startLine": 46
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/conductor/core/lib/src/proto/conductor_state.pbjson.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    'Cg9DaGVycnlwaWNrU3RhdGUSCwoHUEVORElORxAAEhkKFVBFTkRJTkdfV0lUSF9DT05GTElDVBABEg0KCUNPTVBMRVRFRBACEg0KCUFCQU5ET05FRBAD');"
+                  },
+                  "endLine": 46,
+                  "startLine": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "3b919dbd0d317b55",
+            "scanFileHash": "2d561b02b5abf6b5"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:     'CgtSZWxlYXNlVHlwZRISCg5TVEFCTEVfSU5JVElBTBAAEhEKDVNUQUJMRV9IT1RGSVgQARIQCgxCRVRBX0lOSVRJQUwQAhIPCgtCRVRBX0hPVEZJWBAD');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    'CgtSZWxlYXNlVHlwZRISCg5TVEFCTEVfSU5JVElBTBAAEhEKDVNUQUJMRV9IT1RGSVgQARIQCgxCRVRBX0lOSVRJQUwQAhIPCgtCRVRBX0hPVEZJWBAD');"
+                  },
+                  "startLine": 60
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/conductor/core/lib/src/proto/conductor_state.pbjson.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    'CgtSZWxlYXNlVHlwZRISCg5TVEFCTEVfSU5JVElBTBAAEhEKDVNUQUJMRV9IT1RGSVgQARIQCgxCRVRBX0lOSVRJQUwQAhIPCgtCRVRBX0hPVEZJWBAD');"
+                  },
+                  "endLine": 60,
+                  "startLine": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "796d88a2d5be0681",
+            "scanFileHash": "2d561b02b5abf6b5"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:     'CgpDaGVycnlwaWNrEiQKDXRydW5rUmV2aXNpb24YASABKAlSDXRydW5rUmV2aXNpb24SKAoPYXBwbGllZFJldmlzaW9uGAIgASgJUg9hcHBsaWVkUmV2aXNpb24SNgoFc3RhdGUYAyABKA4yIC5jb25kdWN0b3Jfc3RhdGUuQ2hlcnJ5cGlja1N0YXRlUgVzdGF0ZQ==');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    'CgpDaGVycnlwaWNrEiQKDXRydW5rUmV2aXNpb24YASABKAlSDXRydW5rUmV2aXNpb24SKAoPYXBwbGllZFJldmlzaW9uGAIgASgJUg9hcHBsaWVkUmV2aXNpb24SNgoFc3RhdGUYAyABKA4yIC5jb25kdWN0b3Jfc3RhdGUuQ2hlcnJ5cGlja1N0YXRlUgVzdGF0ZQ==');"
+                  },
+                  "startLine": 85
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/conductor/core/lib/src/proto/conductor_state.pbjson.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    'CgpDaGVycnlwaWNrEiQKDXRydW5rUmV2aXNpb24YASABKAlSDXRydW5rUmV2aXNpb24SKAoPYXBwbGllZFJldmlzaW9uGAIgASgJUg9hcHBsaWVkUmV2aXNpb24SNgoFc3RhdGUYAyABKA4yIC5jb25kdWN0b3Jfc3RhdGUuQ2hlcnJ5cGlja1N0YXRlUgVzdGF0ZQ==');"
+                  },
+                  "endLine": 85,
+                  "startLine": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "801496a82f10c6ee",
+            "scanFileHash": "2d561b02b5abf6b5"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:     'CgpSZXBvc2l0b3J5EigKD2NhbmRpZGF0ZUJyYW5jaBgBIAEoCVIPY2FuZGlkYXRlQnJhbmNoEigKD3N0YXJ0aW5nR2l0SGVhZBgCIAEoCVIPc3RhcnRpbmdHaXRIZWFkEiYKDmN1cnJlbnRHaXRIZWFkGAMgASgJUg5jdXJyZW50R2l0SGVhZBIiCgxjaGVja291dFBhdGgYBCABKAlSDGNoZWNrb3V0UGF0aBIzCgh1cHN0cmVhbRgFIAEoCzIXLmNvbmR1Y3Rvcl9zdGF0ZS5SZW1vdGVSCHVwc3RyZWFtEi8KBm1pcnJvchgGIAEoCzIXLmNvbmR1Y3Rvcl9zdGF0ZS5SZW1vdGVSBm1pcnJvchI9CgtjaGVycnlwaWNrcxgHIAMoCzIbLmNvbmR1Y3Rvcl9zdGF0ZS5DaGVycnlwaWNrUgtjaGVycnlwaWNrcxIiCgxkYXJ0UmV2aXNpb24YCCABKAlSDGRhcnRSZXZpc2lvbhIkCg13b3JraW5nQnJhbmNoGAkgASgJUg13b3JraW5nQnJhbmNo');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    'CgpSZXBvc2l0b3J5EigKD2NhbmRpZGF0ZUJyYW5jaBgBIAEoCVIPY2FuZGlkYXRlQnJhbmNoEigKD3N0YXJ0aW5nR2l0SGVhZBgCIAEoCVIPc3RhcnRpbmdHaXRIZWFkEiYKDmN1cnJlbnRHaXRIZWFkGAMgASgJUg5jdXJyZW50R2l0SGVhZBIiCgxjaGVja291dFBhdGgYBCABKAlSDGNoZWNrb3V0UGF0aBIzCgh1cHN0cmVhbRgFIAEoCzIXLmNvbmR1Y3Rvcl9zdGF0ZS5SZW1vdGVSCHVwc3RyZWFtEi8KBm1pcnJvchgGIAEoCzIXLmNvbmR1Y3Rvcl9zdGF0ZS5SZW1vdGVSBm1pcnJvchI9CgtjaGVycnlwaWNrcxgHIAMoCzIbLmNvbmR1Y3Rvcl9zdGF0ZS5DaGVycnlwaWNrUgtjaGVycnlwaWNrcxIiCgxkYXJ0UmV2aXNpb24YCCABKAlSDGRhcnRSZXZpc2lvbhIkCg13b3JraW5nQnJhbmNoGAkgASgJUg13b3JraW5nQnJhbmNo');"
+                  },
+                  "startLine": 104
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/conductor/core/lib/src/proto/conductor_state.pbjson.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    'CgpSZXBvc2l0b3J5EigKD2NhbmRpZGF0ZUJyYW5jaBgBIAEoCVIPY2FuZGlkYXRlQnJhbmNoEigKD3N0YXJ0aW5nR2l0SGVhZBgCIAEoCVIPc3RhcnRpbmdHaXRIZWFkEiYKDmN1cnJlbnRHaXRIZWFkGAMgASgJUg5jdXJyZW50R2l0SGVhZBIiCgxjaGVja291dFBhdGgYBCABKAlSDGNoZWNrb3V0UGF0aBIzCgh1cHN0cmVhbRgFIAEoCzIXLmNvbmR1Y3Rvcl9zdGF0ZS5SZW1vdGVSCHVwc3RyZWFtEi8KBm1pcnJvchgGIAEoCzIXLmNvbmR1Y3Rvcl9zdGF0ZS5SZW1vdGVSBm1pcnJvchI9CgtjaGVycnlwaWNrcxgHIAMoCzIbLmNvbmR1Y3Rvcl9zdGF0ZS5DaGVycnlwaWNrUgtjaGVycnlwaWNrcxIiCgxkYXJ0UmV2aXNpb24YCCABKAlSDGRhcnRSZXZpc2lvbhIkCg13b3JraW5nQnJhbmNoGAkgASgJUg13b3JraW5nQnJhbmNo');"
+                  },
+                  "endLine": 104,
+                  "startLine": 104
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "fb63a5197f9dbfbb",
+            "scanFileHash": "2d561b02b5abf6b5"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:     'Cg5Db25kdWN0b3JTdGF0ZRImCg5yZWxlYXNlQ2hhbm5lbBgBIAEoCVIOcmVsZWFzZUNoYW5uZWwSJgoOcmVsZWFzZVZlcnNpb24YAiABKAlSDnJlbGVhc2VWZXJzaW9uEjMKBmVuZ2luZRgEIAEoCzIbLmNvbmR1Y3Rvcl9zdGF0ZS5SZXBvc2l0b3J5UgZlbmdpbmUSOQoJZnJhbWV3b3JrGAUgASgLMhsuY29uZHVjdG9yX3N0YXRlLlJlcG9zaXRvcnlSCWZyYW1ld29yaxIgCgtjcmVhdGVkRGF0ZRgGIAEoA1ILY3JlYXRlZERhdGUSKAoPbGFzdFVwZGF0ZWREYXRlGAcgASgDUg9sYXN0VXBkYXRlZERhdGUSEgoEbG9ncxgIIAMoCVIEbG9ncxJBCgxjdXJyZW50UGhhc2UYCSABKA4yHS5jb25kdWN0b3Jfc3RhdGUuUmVsZWFzZVBoYXNlUgxjdXJyZW50UGhhc2USKgoQY29uZHVjdG9yVmVyc2lvbhgKIAEoCVIQY29uZHVjdG9yVmVyc2lvbhI+CgtyZWxlYXNlVHlwZRgLIAEoDjIcLmNvbmR1Y3Rvcl9zdGF0ZS5SZWxlYXNlVHlwZVILcmVsZWFzZVR5cGU=');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    'Cg5Db25kdWN0b3JTdGF0ZRImCg5yZWxlYXNlQ2hhbm5lbBgBIAEoCVIOcmVsZWFzZUNoYW5uZWwSJgoOcmVsZWFzZVZlcnNpb24YAiABKAlSDnJlbGVhc2VWZXJzaW9uEjMKBmVuZ2luZRgEIAEoCzIbLmNvbmR1Y3Rvcl9zdGF0ZS5SZXBvc2l0b3J5UgZlbmdpbmUSOQoJZnJhbWV3b3JrGAUgASgLMhsuY29uZHVjdG9yX3N0YXRlLlJlcG9zaXRvcnlSCWZyYW1ld29yaxIgCgtjcmVhdGVkRGF0ZRgGIAEoA1ILY3JlYXRlZERhdGUSKAoPbGFzdFVwZGF0ZWREYXRlGAcgASgDUg9sYXN0VXBkYXRlZERhdGUSEgoEbG9ncxgIIAMoCVIEbG9ncxJBCgxjdXJyZW50UGhhc2UYCSABKA4yHS5jb25kdWN0b3Jfc3RhdGUuUmVsZWFzZVBoYXNlUgxjdXJyZW50UGhhc2USKgoQY29uZHVjdG9yVmVyc2lvbhgKIAEoCVIQY29uZHVjdG9yVmVyc2lvbhI+CgtyZWxlYXNlVHlwZRgLIAEoDjIcLmNvbmR1Y3Rvcl9zdGF0ZS5SZWxlYXNlVHlwZVILcmVsZWFzZVR5cGU=');"
+                  },
+                  "startLine": 124
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/conductor/core/lib/src/proto/conductor_state.pbjson.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    'Cg5Db25kdWN0b3JTdGF0ZRImCg5yZWxlYXNlQ2hhbm5lbBgBIAEoCVIOcmVsZWFzZUNoYW5uZWwSJgoOcmVsZWFzZVZlcnNpb24YAiABKAlSDnJlbGVhc2VWZXJzaW9uEjMKBmVuZ2luZRgEIAEoCzIbLmNvbmR1Y3Rvcl9zdGF0ZS5SZXBvc2l0b3J5UgZlbmdpbmUSOQoJZnJhbWV3b3JrGAUgASgLMhsuY29uZHVjdG9yX3N0YXRlLlJlcG9zaXRvcnlSCWZyYW1ld29yaxIgCgtjcmVhdGVkRGF0ZRgGIAEoA1ILY3JlYXRlZERhdGUSKAoPbGFzdFVwZGF0ZWREYXRlGAcgASgDUg9sYXN0VXBkYXRlZERhdGUSEgoEbG9ncxgIIAMoCVIEbG9ncxJBCgxjdXJyZW50UGhhc2UYCSABKA4yHS5jb25kdWN0b3Jfc3RhdGUuUmVsZWFzZVBoYXNlUgxjdXJyZW50UGhhc2USKgoQY29uZHVjdG9yVmVyc2lvbhgKIAEoCVIQY29uZHVjdG9yVmVyc2lvbhI+CgtyZWxlYXNlVHlwZRgLIAEoDjIcLmNvbmR1Y3Rvcl9zdGF0ZS5SZWxlYXNlVHlwZVILcmVsZWFzZVR5cGU=');"
+                  },
+                  "endLine": 124,
+                  "startLine": 124
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "6562151b886f23e5",
+            "scanFileHash": "2d561b02b5abf6b5"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine: ///  * https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "///  * https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview"
+                  },
+                  "startLine": 414
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/devicelab/lib/framework/browser.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "///  * https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview"
+                  },
+                  "endLine": 414,
+                  "startLine": 414
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "dfac238cb9d47de6",
+            "scanFileHash": "b56d36a9a2c55fbb"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:   /// https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  /// https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview"
+                  },
+                  "startLine": 451
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/devicelab/lib/framework/browser.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  /// https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview"
+                  },
+                  "endLine": 451,
+                  "startLine": 451
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d2d569af6b533b67",
+            "scanFileHash": "b56d36a9a2c55fbb"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData password = IconData(0xe47a, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData password = IconData(0xe47a, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 16896
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData password = IconData(0xe47a, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 16896,
+                  "startLine": 16896
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "44fca97640f6d778",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData password_sharp = IconData(0xeb71, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData password_sharp = IconData(0xeb71, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 16899
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData password_sharp = IconData(0xeb71, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 16899,
+                  "startLine": 16899
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f6810607975ac7b4",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData password_rounded = IconData(0xf0050, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData password_rounded = IconData(0xf0050, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 16902
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData password_rounded = IconData(0xf0050, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 16902,
+                  "startLine": 16902
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d9c60b2ebe8d06d6",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData password_outlined = IconData(0xf25e, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData password_outlined = IconData(0xf25e, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 16905
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData password_outlined = IconData(0xf25e, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 16905,
+                  "startLine": 16905
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e4aede5ffb3f4074",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData wifi_password = IconData(0xf05a9, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password = IconData(0xf05a9, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 26325
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password = IconData(0xf05a9, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 26325,
+                  "startLine": 26325
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "93b31539589d9c57",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData wifi_password_sharp = IconData(0xf04ae, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password_sharp = IconData(0xf04ae, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 26328
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password_sharp = IconData(0xf04ae, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 26328,
+                  "startLine": 26328
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c0a22fb8f3447392",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData wifi_password_rounded = IconData(0xf03bb, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password_rounded = IconData(0xf03bb, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 26331
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password_rounded = IconData(0xf03bb, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 26331,
+                  "startLine": 26331
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "624d700bda9662ee",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:   static const IconData wifi_password_outlined = IconData(0xf069c, fontFamily: 'MaterialIcons');\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password_outlined = IconData(0xf069c, fontFamily: 'MaterialIcons');"
+                  },
+                  "startLine": 26334
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter/lib/src/material/icons.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  static const IconData wifi_password_outlined = IconData(0xf069c, fontFamily: 'MaterialIcons');"
+                  },
+                  "endLine": 26334,
+                  "startLine": 26334
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f2b0980baac1adce",
+            "scanFileHash": "30a97652b7df1b12"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:   /// See https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  /// See https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview"
+                  },
+                  "startLine": 12
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter_driver/lib/src/driver/timeline.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  /// See https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview"
+                  },
+                  "endLine": 12,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "f3f5b6040ee8671b",
+            "scanFileHash": "c35e8e14395c3938"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: High Entropy\nLine:   /// See: https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "  /// See: https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU"
+                  },
+                  "startLine": 397
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter_driver/lib/src/driver/timeline_summary.dart"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "  /// See: https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU"
+                  },
+                  "endLine": 397,
+                  "startLine": 397
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "b01f1918b65a0d18",
+            "scanFileHash": "31ccede3148fa5df"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\","
+                  },
+                  "startLine": 731
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\","
+                  },
+                  "endLine": 731,
+                  "startLine": 731
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9a9382839a3e1373",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\""
+                  },
+                  "startLine": 732
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear-text logging of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n* Common Weakness Enumeration: [CWE-532](https://cwe.mitre.org/data/definitions/532.html).\\n\""
+                  },
+                  "endLine": 732,
+                  "startLine": 732
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "a541855ffb7a5ce5",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\","
+                  },
+                  "startLine": 758
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\","
+                  },
+                  "endLine": 758,
+                  "startLine": 758
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "e77b24ab4c24cf2f",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\""
+                  },
+                  "startLine": 759
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Clear text storage of sensitive information\\nSensitive information that is stored unencrypted is accessible to an attacker who gains access to the storage. This is particularly important for cookies, which are stored on the machine of the end-user.\\n\\n\\n## Recommendation\\nEnsure that sensitive information is always encrypted before being stored. If possible, avoid placing sensitive information in cookies altogether. Instead, prefer storing, in the cookie, a key that can be used to look up the sensitive information.\\n\\nIn general, decrypt sensitive information only at the point where it is necessary for it to be used in cleartext.\\n\\nBe aware that external processes often store the `standard out` and `standard error` streams of the application, causing logged sensitive information to be stored as well.\\n\\n\\n## Example\\nThe following example code stores user credentials (in this case, their password) in a cookie in plain text:\\n\\n\\n```javascript\\nvar express = require('express');\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // BAD: Setting a cookie value with cleartext sensitive data.\\n  res.cookie(\\\"password\\\", pw);\\n});\\n\\n```\\nInstead, the credentials should be encrypted, for instance by using the Node.js `crypto` module:\\n\\n\\n```javascript\\nvar express = require('express');\\nvar crypto = require('crypto'),\\n    password = getPassword();\\n\\nfunction encrypt(text){\\n  var cipher = crypto.createCipher('aes-256-ctr', password);\\n  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');\\n}\\n\\nvar app = express();\\napp.get('/remember-password', function (req, res) {\\n  let pw = req.param(\\\"current_password\\\");\\n  // GOOD: Encoding the value before setting it.\\n  res.cookie(\\\"password\\\", encrypt(pw));\\n});\\n\\n```\\n\\n## References\\n* M. Dowd, J. McDonald and J. Schuhm, *The Art of Software Security Assessment*, 1st Edition, Chapter 2 - 'Common Vulnerabilities of Encryption', p. 43. Addison Wesley, 2006.\\n* M. Howard and D. LeBlanc, *Writing Secure Code*, 2nd Edition, Chapter 9 - 'Protecting Secret Data', p. 299. Microsoft, 2002.\\n* Common Weakness Enumeration: [CWE-312](https://cwe.mitre.org/data/definitions/312.html).\\n* Common Weakness Enumeration: [CWE-315](https://cwe.mitre.org/data/definitions/315.html).\\n* Common Weakness Enumeration: [CWE-359](https://cwe.mitre.org/data/definitions/359.html).\\n\""
+                  },
+                  "endLine": 759,
+                  "startLine": 759
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "8ce0e3e0f924c6a2",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\","
+                  },
+                  "startLine": 1622
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\","
+                  },
+                  "endLine": 1622,
+                  "startLine": 1622
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "ace693e453ef5296",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\""
+                  },
+                  "startLine": 1623
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Host header poisoning in email generation\\nUsing the HTTP Host header to construct a link in an email can facilitate phishing attacks and leak password reset tokens. A malicious user can send an HTTP request to the targeted web site, but with a Host header that refers to his own web site. This means the emails will be sent out to potential victims, originating from a server they trust, but with links leading to a malicious web site.\\n\\nIf the email contains a password reset link, and should the victim click the link, the secret reset token will be leaked to the attacker. Using the leaked token, the attacker can then construct the real reset link and use it to change the victim's password.\\n\\n\\n## Recommendation\\nObtain the server's host name from a configuration file and avoid relying on the Host header.\\n\\n\\n## Example\\nThe following example uses the `req.host` to generate a password reset link. This value is derived from the Host header, and can thus be set to anything by an attacker:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${req.host}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\nTo ensure the link refers to the correct web site, get the host name from a configuration file:\\n\\n\\n```javascript\\nlet nodemailer = require('nodemailer');\\nlet express = require('express');\\nlet backend = require('./backend');\\n\\nlet app = express();\\n\\nlet config = JSON.parse(fs.readFileSync('config.json', 'utf8'));\\n\\napp.post('/resetpass', (req, res) => {\\n  let email = req.query.email;\\n  let transport = nodemailer.createTransport(config.smtp);\\n  let token = backend.getUserSecretResetToken(email);\\n  transport.sendMail({\\n    from: 'webmaster@example.com',\\n    to: email,\\n    subject: 'Forgot password',\\n    text: `Click to reset password: https://${config.hostname}/resettoken/${token}`,\\n  });\\n});\\n\\n```\\n\\n## References\\n* Mitre: [CWE-640: Weak Password Recovery Mechanism for Forgotten Password](https://cwe.mitre.org/data/definitions/640.html).\\n* Ian Muscat: [What is a Host Header Attack?](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/).\\n* Common Weakness Enumeration: [CWE-640](https://cwe.mitre.org/data/definitions/640.html).\\n\""
+                  },
+                  "endLine": 1623,
+                  "startLine": 1623
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "c9558570234d0134",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"text\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\",\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\","
+                  },
+                  "startLine": 1784
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"text\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\","
+                  },
+                  "endLine": 1784,
+                  "startLine": 1784
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "d29ab106b256255d",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Credential in plaintext?\n\nRule: Env Var\nLine:             \"markdown\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\"\n\nCommit: ."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\""
+                  },
+                  "startLine": 1785
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/security/codeql/javascript.sarif"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            \"markdown\" : \"# Sensitive data read from GET request\\nSensitive information such as user passwords should not be transmitted within the query string of the requested URL. Sensitive information within URLs may be logged in various locations, including the user's browser, the web server, and any forward or reverse proxy servers between the two endpoints. URLs may also be displayed on-screen, bookmarked or emailed around by users. They may be disclosed to third parties via the Referer header when any off-site links are followed. Placing sensitive information into the URL therefore increases the risk that it will be captured by an attacker.\\n\\n\\n## Recommendation\\nUse HTTP POST to send sensitive information as part of the request body; for example, as form data.\\n\\n\\n## Example\\nThe following example shows two route handlers that both receive a username and a password. The first receives this sensitive information from the query parameters of a GET request, which is transmitted in the URL. The second receives this sensitive information from the request body of a POST request.\\n\\n\\n```javascript\\nconst express = require('express');\\nconst app = express();\\napp.use(require('body-parser').urlencoded({ extended: false }))\\n\\n// bad: sensitive information is read from query parameters\\napp.get('/login1', (req, res) => {\\n    const user = req.query.user;\\n    const password = req.query.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n// good: sensitive information is read from post body\\napp.post('/login2', (req, res) => {\\n    const user = req.body.user;\\n    const password = req.body.password;\\n    if (checkUser(user, password)) {\\n        res.send('Welcome');\\n    } else {\\n        res.send('Access denied');\\n    }\\n});\\n\\n```\\n\\n## References\\n* CWE: [CWE-598: Use of GET Request Method with Sensitive Query Strings](https://cwe.mitre.org/data/definitions/598.html)\\n* PortSwigger (Burp): [Password Submitted using GET Method](https://portswigger.net/kb/issues/00400300_password-submitted-using-get-method)\\n* OWASP: [Information Exposure through Query Strings in URL](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url)\\n* Common Weakness Enumeration: [CWE-598](https://cwe.mitre.org/data/definitions/598.html).\\n\""
+                  },
+                  "endLine": 1785,
+                  "startLine": 1785
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1d1c2da8d5dd1d46",
+            "scanFileHash": "8514be18aa28ef3f"
+          },
+          "ruleId": "CWE-312",
+          "ruleIndex": 0
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "4ff13efd-d774-4bd7-9042-d602760683f4"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "4ff13efd-d774-4bd7-9042-d602760683f4",
+      "runGuid": "ea0a83a2-905c-4141-b0de-9c387ffdacbb"
+    }
+  ]
+}

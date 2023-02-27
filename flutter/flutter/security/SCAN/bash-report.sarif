@@ -1,0 +1,266 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Shell Script Analysis",
+          "rules": [
+            {
+              "id": "2242",
+              "help": {
+                "text": "Can only exit with status 0-255. Other data should be written to stdout/stderr.",
+                "markdown": "Can only exit with status 0-255. Other data should be written to stdout/stderr."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Can only exit with status 0-255. Other data should be written to stdout/stderr."
+              },
+              "helpUri": "https://github.com/koalaman/shellcheck/wiki/SC2242",
+              "shortDescription": {
+                "text": "Can only exit with status 0-255"
+              }
+            },
+            {
+              "id": "2045",
+              "help": {
+                "text": "Iterating over ls output is fragile. Use globs.",
+                "markdown": "Iterating over ls output is fragile. Use globs."
+              },
+              "name": "",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "fullDescription": {
+                "text": "Iterating over ls output is fragile. Use globs."
+              },
+              "helpUri": "https://github.com/koalaman/shellcheck/wiki/SC2045",
+              "shortDescription": {
+                "text": "Iterating over ls output is fragile"
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Shell Script Analysis"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-a",
+            "--shell=bash",
+            "-f",
+            "json",
+            "-S",
+            "error",
+            "--color=never",
+            "/github/workspace/dev/bots/docs.sh",
+            "/github/workspace/dev/bots/codelabs_build_test.sh",
+            "/github/workspace/dev/bots/accept_android_sdk_licenses.sh",
+            "/github/workspace/dev/tools/repackage_gradle_wrapper.sh",
+            "/github/workspace/dev/customer_testing/ci.sh",
+            "/github/workspace/dev/integration_tests/ios_add2app_life_cycle/build_and_test.sh",
+            "/github/workspace/dev/integration_tests/deferred_components_test/run_release_test.sh",
+            "/github/workspace/dev/integration_tests/deferred_components_test/download_assets.sh",
+            "/github/workspace/dev/integration_tests/flutter_gallery/tool/run_instrumentation_test.sh",
+            "/github/workspace/dev/conductor/core/lib/src/proto/compile_proto.sh",
+            "/github/workspace/bin/internal/update_dart_sdk.sh",
+            "/github/workspace/bin/internal/shared.sh",
+            "/github/workspace/packages/flutter_tools/bin/xcode_backend.sh",
+            "/github/workspace/packages/flutter_tools/bin/macos_assemble.sh",
+            "/github/workspace/packages/flutter_tools/bin/tool_backend.sh"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-a --shell=bash -f json -S error --color=never /github/workspace/dev/bots/docs.sh /github/workspace/dev/bots/codelabs_build_test.sh /github/workspace/dev/bots/accept_android_sdk_licenses.sh /github/workspace/dev/tools/repackage_gradle_wrapper.sh /github/workspace/dev/customer_testing/ci.sh /github/workspace/dev/integration_tests/ios_add2app_life_cycle/build_and_test.sh /github/workspace/dev/integration_tests/deferred_components_test/run_release_test.sh /github/workspace/dev/integration_tests/deferred_components_test/download_assets.sh /github/workspace/dev/integration_tests/flutter_gallery/tool/run_instrumentation_test.sh /github/workspace/dev/conductor/core/lib/src/proto/compile_proto.sh /github/workspace/bin/internal/update_dart_sdk.sh /github/workspace/bin/internal/shared.sh /github/workspace/packages/flutter_tools/bin/xcode_backend.sh /github/workspace/packages/flutter_tools/bin/macos_assemble.sh /github/workspace/packages/flutter_tools/bin/tool_backend.sh",
+          "endTimeUtc": "2023-02-27T08:35:01Z",
+          "workingDirectory": {
+            "uri": "https://github.com/flutter/flutter"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2023-02-27T08:35:01Z",
+          "workingDirectory": {
+            "uri": "https://github.com/flutter/flutter"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 3,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 3
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Can only exit with status 0-255. Other data should be written to stdout/stderr."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "      exit -1;;\n"
+                  },
+                  "startLine": 41
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter_tools/bin/macos_assemble.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "      EchoError \"========================================================================\"\n      exit -1;;\n"
+                  },
+                  "endLine": 41,
+                  "startLine": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "9fec5b748f7b3e0c",
+            "scanFileHash": "53221706c90be9aa"
+          },
+          "ruleId": "2242",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Can only exit with status 0-255. Other data should be written to stdout/stderr."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "      exit -1\n"
+                  },
+                  "startLine": 73
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/packages/flutter_tools/bin/macos_assemble.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "      EchoError \"========================================================================\"\n      exit -1\n"
+                  },
+                  "endLine": 73,
+                  "startLine": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "1d50c94f6f14c095",
+            "scanFileHash": "53221706c90be9aa"
+          },
+          "ruleId": "2242",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Iterating over ls output is fragile. Use globs."
+          },
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "for SOURCE_FILE in $(ls \"$DIR\"/*.pb*.dart); do\n"
+                  },
+                  "startLine": 29
+                },
+                "artifactLocation": {
+                  "uri": "https://github.com/flutter/flutter/dev/conductor/core/lib/src/proto/compile_proto.sh"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\nfor SOURCE_FILE in $(ls \"$DIR\"/*.pb*.dart); do\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "LOW",
+            "issue_tags": {}
+          },
+          "baselineState": "new",
+          "partialFingerprints": {
+            "scanPrimaryLocationHash": "577611e43344abe0",
+            "scanFileHash": "32c70f440b6b1021"
+          },
+          "ruleId": "2045",
+          "ruleIndex": 1
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "abc6b493-1945-4622-84a8-ae47484e7ad9"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "main",
+          "repositoryUri": "https://github.com/spencerlepine/open-source-crawler",
+          "revisionId": "735748ce709a4271f6944b183a2c0a8c2573b40f"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "abc6b493-1945-4622-84a8-ae47484e7ad9",
+      "runGuid": "ea0a83a2-905c-4141-b0de-9c387ffdacbb"
+    }
+  ]
+}
